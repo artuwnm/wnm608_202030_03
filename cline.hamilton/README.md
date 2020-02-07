@@ -1,4 +1,15 @@
 # Hamilton Cline
 
+## Links
+
 - https://hdraws.com
 - https://hdraws.com/aau/wnm608_03/cline.hamilton
+- https://hdraws.com/aau/wnm608_03/cline.hamilton/recipes
+
+## Git
+
+- git clone [url]
+- git status
+- git add .
+- git commit -m "[message]"
+- git push origin master
