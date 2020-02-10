@@ -1,0 +1,118 @@
+h1{
+	font-size:20px;
+	margin:2px;
+
+}
+
+h2{
+	width:300px;
+	padding:10px;
+	margin:20px auto;
+	text-align: center;
+	width:60%;
+	font-family: 'Playfair Display', serif;
+}
+
+h3{
+	width:0px;
+	padding:0px;
+	margin:5px auto;
+	text-align: center;
+	width:60%;
+	font-size:15px;
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	color: #9D9C9C;
+}
+
+h4{
+	font-size:15px;
+	margin:2px;
+}
+
+ul{
+	list-style-type: circle;
+	font-family: 'Cabin Sketch', cursive;
+	font-size:25px;
+}
+
+ol{
+	font-size:14px;
+	margin-right:50px;
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+
+.steak img{
+    float:left;
+    margin-top:20px;
+    margin-left:50px;
+    margin-right:50px;
+    margin-bottom:20px;
+}
+.steak{
+  background-color:#F0CCA2;
+  width: 700px auto;
+  border:3px solid #060B2F;;
+  padding: 50px;
+  margin: 20px;
+  text-align: justify;
+}
+
+
+.fish img{
+	float:right;
+    margin-top:20px;
+    margin-left:50px;
+    margin-right:50px;
+    margin-bottom:20px;
+}
+.fishname{
+	list-style-type: circle;
+	font-family: 'Cabin Sketch', cursive;
+	font-size:25px;
+	color:black;
+	margin:5px;
+}
+
+.fish ul{
+	list-style-type: square;
+	font-family:'Roboto', sans-serif;
+	font-size:14px;
+	color:#28623C;
+	margin-top:0px;
+}
+.fish ol{
+	font-size:14px;
+	list-style-type: upper-roman;
+}
+
+.fish{
+  font-size:12px;
+  background-color:#C1D2DC;
+  width: 700px auto;
+  border:3px solid #F99C23;;
+  padding: 50px;
+  margin: 20px;
+  text-align: justify;
+}
+
+.dumpling img{
+    margin-left: auto; 
+    margin-right:auto; 
+    display:block;
+}
+
+.dumpling{
+  font-size:12px;
+  background-color:#FED9D9;
+  width: 700px auto;
+  border:3px solid #225095;;
+  padding: 50px;
+  margin: 20px;
+  text-align: justify;
+}
+.dumpling ol{
+	font-size:14px;
+	list-style-type: upper-alpha;
+}
