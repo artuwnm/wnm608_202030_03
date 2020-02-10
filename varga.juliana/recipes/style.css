@@ -1,29 +1,39 @@
 body {
   margin: 0em;
-  background-color:Teal;
-  color: white;
+  color: black;
   font-family: sans-serif;
   font: helvetica
 }
 
+#logo{
+    width: 100%;
+    margin: 0;
+    height: auto;
+    padding: 0;
+}
+
 header h1 {
-    color: cornsilk;
+  width: 100%;
+    color: teal;
     font-size: 40px;
     font-weight: 2000;
-    margin-top:30px;
+    margin-top:-113px;
     margin-bottom:0px;
+    height: auto;
   }
 
 header p {
+  width: 100%;
 	font-size: 22px;
-	color: #fff;
+	color: teal;
   letter-spacing: 2px;
   margin-top:0px;
   margin-bottom:20px;
+  height: auto;
 }
 
 h1 {
-  color: cornsilk;
+  color: teal;
   font-size: 22px;
 }
 
@@ -53,13 +63,13 @@ hr {
 .recipeName {
   width:300px;
   min-width:300px;
-  color: cornsilk;
+  color: teal;
 
 }
 
 .recipeInfo {
   width: 60%;
   margin: 0 auto;
-  display: flex;
+  display: block;
   align-items: center;
 }
