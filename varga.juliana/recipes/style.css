@@ -12,6 +12,10 @@ body {
     padding: 0;
 }
 
+img{
+  margin-top:50px;
+}
+
 header h1 {
   width: 100%;
     color: teal;
