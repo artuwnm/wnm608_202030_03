@@ -1,0 +1,20 @@
+body {
+  background-color: powderblue;
+}
+
+li { 
+  padding: 0.5px;
+  font-size: 20px; 
+  font-family: Avenir;
+}
+
+.title{ 
+    font-size: 35px; 
+    font-family: Avenir;
+    word-spacing: 5px;
+}
+
+.head{ 
+    font-size: 30px; 
+    font-family: Avenir;
+}
