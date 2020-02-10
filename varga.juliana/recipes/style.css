@@ -46,6 +46,10 @@ hr {
     margin-right: auto;
     margin-left: auto;
 }
+.img{
+  display: flex;
+  padding: 10px;
+}
 .row {
   display: flex;
   width: 80%;
