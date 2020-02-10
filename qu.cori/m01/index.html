@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>608-01</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="menu">
+	        <div class="menu-inner">
+	            <!-- <span class="menu-control-close" id="menuControlClose">Recipes</span> -->
+	            <span class="menu-title">Recipes</span>
+	            <nav>
+	                <ul>
+	                	<!-- <li><a href="/">CITYSCAPE</a></li>
+	                	<li><a href="/">LANDSCAPE</a></li>
+	                	<li><a href="/">PORTRAIT</a></li>
+	                	<li><a href="/">LIFE</a></li> -->
+	                	<li><a href="#">FOOD</a></li>
+	                	<li><a href="#">SOUP & SALAD</a></li>
+	                	<li><a href="#">DRINK</a></li>
+	                	<li><a href="#">DESSERT</a></li>
+	                </ul>
+	            </nav>
+	            <nav>
+	            	<ul>
+	                	<li><a href="#">ABOUT</a></li>
+	                </ul>
+	            </nav>
+	        </div>
+	    </div>
+		<div class="img-container">
+			<div class="img-box">
+				<img src="assets/img/1.jpg" alt="">
+			</div>
+			<div class="img-box">
+				<img src="assets/img/2.jpg" alt="">
+			</div>
+			<div class="img-box">
+				<img src="assets/img/3.jpg" alt="">
+			</div>
+			<div class="img-box">
+				<img src="assets/img/4.jpg" alt="">
+			</div>
+			<div class="img-box">
+				<img src="assets/img/5.jpg" alt="">
+			</div>
+			<div class="img-box">
+				<img src="assets/img/6.jpg" alt="">
+			</div>
+			<div class="img-steps">
+				<div>
+					<h2 >Recipes</h2>
+					<h3>STEP 1</h3>
+					<p>Fry the rice by lightly browning in a pan or wok.</p>
+					<h3>STEP 2</h3>
+					<p>Stir-fry the onions, garlic, and carrots until tender.</p>
+					<h3>STEP 3</h3>
+					<p>Make a large well in the center of the pan with the rice.</p>
+					<h3>STEP 4</h3>
+					<p>Pour in the whisked eggs and scramble until small curds form.</p>
+					<h3>STEP 5</h3>
+					<p>Soy sauce is optional but adds a savory flavor to the rice.</p>
+				</div>
+			</div>
+		</div>
+			
+	</div>
+	<script>
+		$(".img-container")[0].addEventListener('click',function(e) {
+			if(e.target&&e.target.nodeName.toUpperCase()=="IMG") {
+				
+       			let a = e.target;
+       			let index = $(".img-container img").index(a);
+       			// console.log("haha",a.className, index);
+       			if($('.img-container .img-box')[index].className == "img-box active") {
+       				$(".img-container")[0].className = "img-container";
+       				$('.img-container .img-box').removeClass('active');
+       			}
+       			else {
+       				$(".img-container")[0].className = "img-container open";
+       				$('.img-container .img-box').removeClass('active');
+       				$('.img-container .img-box')[index].className = "img-box active";
+       			}
+       			
+       		}
+			
+		})
+	</script>					
+</body>
+</html>
