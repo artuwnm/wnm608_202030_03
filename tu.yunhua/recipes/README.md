@@ -1,7 +1,7 @@
 # yunhua tu
 
 
-http://@badtrista.com
+http://badtrista.com
 
 http://badtrista.com/aau/wnm608/tu.yunhua/
 
