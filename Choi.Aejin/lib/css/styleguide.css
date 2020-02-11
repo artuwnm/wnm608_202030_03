@@ -1,0 +1,158 @@
+
+/* ELEMENT RESETS */
+
+
+*,*:: before,*::afer{
+
+	box-sizing: border-box;
+}
+
+
+
+:root{
+
+
+--color-neutral-dark:#333;
+--color-neutral-medium:#988c8c;
+--color-neutral-light:#ece7e7;
+
+--header-height:3rem;
+
+}
+
+body{
+	
+box-sizing: border-box;
+margin:0;
+font-size: 100%;
+font-family: Helvetoca, Arial,sans-serif;
+
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+	font-family: Georgia,"Times New Roman", serif;
+
+}
+
+a {
+
+color: inherit;
+font-weight: bold;
+text-decoration: none;
+
+}
+
+a:hover {
+
+text-decoration: underline;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SMALL CLASSES*/
+	
+.container{
+
+max-width: 100px;
+margin-right: auto;
+margin-left: auto;
+
+}
+
+
+
+
+
+
+/*ATOMIC C;ASSES*/
+
+.display-flex { display: flex;}
+
+.display-inline-flex { display: inline-flex;}
+
+.display-block { display: block;}
+
+
+.display-inline-block { display: inline-block;}
+
+
+
+/*COMPONENT CLASSES */
+
+.navbar {
+
+background-color: var(--color-neutral-dark);
+color:var(--color-neutral-light);
+line-height: var(--color)
+
+}
+
+
+
+.navbar h1{
+
+
+margin: 0;
+font-size: 1rem;
+
+
+}
+
+
+.nav a{
+
+padding: 0 1em;
+
+}
+
+
+
+
+.nav ul{
+
+
+list-style-type: none;
+margin-top: 0;
+margin-bottom: 0;
+padding-left: 0; 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
