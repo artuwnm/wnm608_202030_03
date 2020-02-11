@@ -1,0 +1,42 @@
+body {
+      background-color: #fffdd0;
+      font-family: 'Rubik', sans-serif;
+
+}
+
+h1 {
+	font-family: 'Acme', sans-serif;
+	position: relative;
+	font-size: 100px;
+	text-align: center;
+	background-color: grey;
+	color: white;
+}
+img {
+     size: 300x200px;
+} 
+
+h2 {
+	font-family: 'Acme', sans-serif;
+	text-decoration: underline;
+	font-size: 50px;
+	color: green;
+	padding: 5px;
+}
+
+h3 {
+	font-family: 'Acme', sans-serif;
+	text-decoration: underline;
+	font-size: 50px;
+	color: green;
+	padding: 5px;
+}
+
+h4 {
+	font-family: 'Acme', sans-serif;
+	text-decoration: underline;
+	font-size: 50px;
+	color: green;
+	padding: 5px;
+}
+
