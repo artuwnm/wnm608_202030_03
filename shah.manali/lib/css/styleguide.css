@@ -1,16 +1,20 @@
 /*Element resets*/
 
 *,*::before,*::after {
-	box-sizing:borderbox;
+	box-sizing:inherit;
 }
 
 :root {
-	--color-neutral-dark:#333;
-	--color-neutral-medium:#333;
-	--color-neutral-light:#333;
+	--color-neutral-dark:#332d2d;;
+	--color-neutral-medium:#988c8c;
+	--color-neutral-light:#ece7e7;
+
+	--header-height:3rem;
 	}
 
+
 body {
+	box-sizing: border-box;
 	margin:0;
 	font-size:100%; 
 	font-family:Helvetica,Arial,sans-serif;
@@ -35,29 +39,7 @@ a:hover {
 	text-decoration: underline;
 }
 
-/*card*/
-.card {
-	background-color: white;
-	overflow: hidden;
-	position :relative;
-	margin-top: 1em;
-	margin-bottom: 0;
 
-
-.card>:first-chile {margin-top:0;}
-.card>:first-chile {margin-bottom:0;}
-
-	.card.soft {
-
-	} 
-}
-.view-window {
-	height: 50vh;
-	overflow: hidden;
-	position: relative;
-	background-size: cover;
-	
-}
 
 
 
@@ -79,11 +61,21 @@ a:hover {
 .display-block {display:block;}
 .display-inline-block {display:inline-block;}
 
+.flex-strech { flex:1 1 auto; }
+.flex-none { flex:none; }
+
+.flex-align-center { align-items: center; }
+.flex-justify-center { justify-content: center; }
+
+
+
 /*component class*/
 
 
 .navbar {
          background-color: var(--color-neutral-dark);
+         color: var(--color-neutral-light);
+         line-height: var(--header-height);
          line-height: 3rem;
 }
 
@@ -92,6 +84,9 @@ a:hover {
 	font-size:1rem;
 }
 
+.navbar a {
+	padding: 0 1em;
+}
 
 .nav ul {
 	list-style-type: none;
@@ -100,8 +95,49 @@ a:hover {
 	padding-left: 0;
 }
 
-.nav a {
-	padding: 0 1em;
+
+/*card*/
+.card {
+	background-color: white;
+	overflow: hidden;
+	position :relative;
+	padding: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+
 }
+
+.card>:first-child { margin-top: 0; }
+.card>:first-child { margin-bottom:0; }
+
+	.card.soft {
+          box-shadow: 6px 5px 15px 10px rgba(0, 0, 0, 0.1);
+          border-radius: 0.3em;
+	}
+
+	.card.medium {
+         background-color: var(--color-neutral-medium);
+	}
+	.card.dark {
+		background-color: var(--color-neutral-dark);
+		color: var(--color-neutral-light);
+}
+.cold.flat {
+    padding:0;
+}
+
+/* view window */
+.view-window {
+	height: 50vh;
+	overflow: hidden;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+
+
+
 
 
