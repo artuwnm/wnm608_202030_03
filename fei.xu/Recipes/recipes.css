@@ -1,6 +1,6 @@
 h1{
 	font-size:20px;
-	margin:2px;
+	margin:7px;
 
 }
 
@@ -32,7 +32,7 @@ h4{
 
 ul{
 	list-style-type: circle;
-	font-family: 'Cabin Sketch', cursive;
+	font-family: 'Raleway', sans-serif;
 	font-size:25px;
 }
 
@@ -43,6 +43,26 @@ ol{
 	margin-bottom: 20px;
 }
 
+dt {
+  background-color:grey;
+  padding:0.2em 0.5em;
+  color:white;
+}
+dt~dt {
+  margin-top:0.5em;
+}
+dd {
+  padding:10px;
+  border:1px solid grey;
+  margin-left:0;
+  display:none;
+}
+dl, dt, dd {
+  width: 70%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
 .steak img{
     float:left;
     margin-top:20px;
@@ -51,7 +71,6 @@ ol{
     margin-bottom:20px;
 }
 .steak{
-  background-color:#F0CCA2;
   width: 700px auto;
   border:3px solid #060B2F;;
   padding: 50px;
@@ -62,35 +81,34 @@ ol{
 
 .fish img{
 	float:right;
-    margin-top:20px;
+    margin-top:150px;
     margin-left:50px;
-    margin-right:50px;
+    margin-right:0px;
     margin-bottom:20px;
 }
 .fishname{
 	list-style-type: circle;
-	font-family: 'Cabin Sketch', cursive;
+	font-family: 'Raleway', sans-serif;
 	font-size:25px;
 	color:black;
-	margin:5px;
+	margin:21px;
 }
 
 .fish ul{
 	list-style-type: square;
 	font-family:'Roboto', sans-serif;
-	font-size:14px;
+	font-size:15px;
 	color:#28623C;
 	margin-top:0px;
 }
+
 .fish ol{
 	font-size:14px;
 	list-style-type: upper-roman;
 }
 
 .fish{
-  font-size:12px;
-  background-color:#C1D2DC;
-  width: 700px auto;
+  font-size:15px;
   border:3px solid #F99C23;;
   padding: 50px;
   margin: 20px;
@@ -99,13 +117,14 @@ ol{
 
 .dumpling img{
     margin-left: auto; 
-    margin-right:auto; 
+    margin-right: auto; 
+    margin-top:100px;
+    margin-bottom:100px;
     display:block;
 }
 
 .dumpling{
   font-size:12px;
-  background-color:#FED9D9;
   width: 700px auto;
   border:3px solid #225095;;
   padding: 50px;
