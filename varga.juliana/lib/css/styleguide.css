@@ -5,9 +5,9 @@
 }
 
 :root {
-    --color-neutral-dark: #ec9898;
+    --color-neutral-dark: #332d2d;
     --color-neutral-medium: #988c8c;
-    --color-neutral-light: #e9f8fd;
+    --color-neutral-light: #ece7e7;
 
     --header-height:3rem;
 }
@@ -129,7 +129,7 @@ a:hover {
 
 /* view window */
 .view-window {
-	height:50vh;
+	height:100vh;
 	overflow:hidden;
 	position:relative;
 	background-size:cover;
