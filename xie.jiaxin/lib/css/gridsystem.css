@@ -1,0 +1,22 @@
+/* layout grid system */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+    .grid-10 {
+        grid-template-columns: repeat(10,1fr);
+    }
+
+
+/* command D to hightlight the next same element */
+.col-xs-1{grid-column: span 1;}
+.col-xs-2{grid-column: span 2;}    
+.col-xs-3{grid-column: span 3;}
+.col-xs-4{grid-column: span 4;}
+.col-xs-5{grid-column: span 5;}
+
+.grid.gap {
+    grid-gap: var(--grid-gap);
+    gap: var(--grid-gap);
+}

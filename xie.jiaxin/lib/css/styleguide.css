@@ -92,7 +92,7 @@ li {
 .card {
     background-color: white;
     overflow: hidden;
-    position: relative;
+    /* position: relative; */
     padding: 1em;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -101,7 +101,7 @@ li {
 .card>:last-child { margin-bottom:0; }
 
 .card.soft {
-    box-shadow: 6px 5px 15px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 6px 5px 15px 10px rgba(0, 0, 0, 0.1); */
 	border-radius:0.3em;
 }
 .card.medium {
@@ -145,8 +145,8 @@ li {
 }
 
 /* lorem */
-p {
+/* p {
 	padding-top: 80px;
 	width: 600px;
 	margin: auto;
-}
+} */
