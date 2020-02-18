@@ -122,7 +122,7 @@ a:hover {
 		background-color:var(--color-neutral-medium);
 	}
 	.card.dark {
-		background-color:#f3f3f3njr4;
+		background-color:#f3f3f3;
 		color:var(--color-neutral-light);
 	}
 	.card.flat {
