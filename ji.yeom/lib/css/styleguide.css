@@ -43,8 +43,6 @@ a:hover {
 
 
 
-
-
 /* SMALL CLASSES */
 
 .container {
@@ -74,9 +72,12 @@ a:hover {
 /* COMPONENT CLASSES */
 
 .navbar {
-	background-color: var(--color-neutral-dark);
+/* 	background-color: var(--color-neutral-dark);
 	color: var(--color-neutral-light);
-	line-height: var(--header-height);
+	line-height: var(--header-height);*/
+	background: #fff;
+	height: 80px;
+    padding: 30px;
 }
 .navbar h1 {
 	margin: 0;

@@ -8,3 +8,15 @@
 body {
 	background-color:var(--color-neutral-light);
 }
+
+h2 {
+	font-size: 1rem;
+}
+
+footer {
+	background: #fff;
+    padding: 30px 20px;
+	height: 80px;
+	font-style: italic;
+	text-align: center;
+}
