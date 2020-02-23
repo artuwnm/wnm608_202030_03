@@ -27,7 +27,7 @@ let PhotoAlbum = {
 
     nextPhoto: function() {
         console.log("right");
-        let next = document.getElementsByClassName("active")[0].nextElementSibling;
+        let next = $(".active")[0].nextElementSibling;
          // $('.active')[0].nextviousSibling;
         console.log(next);
         removeClass( $('.active')[0],'active');
@@ -35,9 +35,12 @@ let PhotoAlbum = {
     },
     prevPhoto: function() {
         console.log("left");
-        let pre = document.getElementsByClassName("active")[0].previousElementSibling;
+        let pre = $(".active")[0].previousElementSibling;
          // $('.active')[0].previousSibling;
         console.log(pre);
+        if (pre == null) {
+            pre =
+        }
         removeClass( $('.active')[0],'active');
         addClass(pre, "active")
     },

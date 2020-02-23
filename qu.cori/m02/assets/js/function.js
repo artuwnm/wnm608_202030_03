@@ -1,3 +1,6 @@
+const myPhotos = {
+    
+}
 let PhotoAlbum = {
 
     init: function() {
@@ -25,19 +28,29 @@ let PhotoAlbum = {
         $.delegate($("#middle")[0], "div", "click", this.showThumbnail);
     },
 
+    readFromFolder: function() {
+        
+
+    }, 
     nextPhoto: function() {
         console.log("right");
-        let next = document.getElementsByClassName("active")[0].nextElementSibling;
-         // $('.active')[0].nextviousSibling;
+        let next = $(".active")[0].nextElementSibling;
         console.log(next);
+        if (next == null || next.className !== "img-box") {
+            next = $('.img-box')[0];
+        }
         removeClass( $('.active')[0],'active');
         addClass(next, "active")
     },
     prevPhoto: function() {
         console.log("left");
-        let pre = document.getElementsByClassName("active")[0].previousElementSibling;
-         // $('.active')[0].previousSibling;
-        console.log(pre);
+        let pre = $(".active")[0].previousElementSibling;
+        // console.log(pre);
+        if (pre.className !== "img-box") {
+            let imgBoxs = $('.img-box');
+            let leng = imgBoxs.length;
+            pre = $('.img-box')[leng-1];
+        }
         removeClass( $('.active')[0],'active');
         addClass(pre, "active")
     },
@@ -48,7 +61,7 @@ let PhotoAlbum = {
 
     },
     addSidebar: function() {
-
+        
     }
 }
 window.onload = function() {

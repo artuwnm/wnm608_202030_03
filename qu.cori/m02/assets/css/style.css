@@ -19,7 +19,7 @@ ul,li {
     text-transform: uppercase;
     letter-spacing: 2px;
     line-height: 2.0em;
-    font-size: 13px;
+    font-size: 12px;
     list-style: none;
 }
 a {
@@ -81,7 +81,7 @@ a {
     /*position: absolute;*/
     z-index: 1;
     flex: 1;
-    border: 5px solid green;
+    /*border: 5px solid green;*/
 }
 .img-container.open .img-cover>div.left:hover {
     cursor: w-resize;
@@ -123,7 +123,7 @@ a {
 .img-container>div.img-box::before {
     content: '';
     display: block;
-    padding-top: 100%;
+    padding-top: 120%;
 }
 .img-container>div.img-box img {
     position: absolute;
@@ -135,6 +135,13 @@ a {
     width: 100%;
     /*opacity: 0.9;*/
 
+}
+img {
+    opacity: 1;
+    -webkit-transition: opacity .3s ease-out;
+    -moz-transition: opacity .3s ease-out;
+    -o-transition: opacity .3s ease-out;
+    transition: opacity .3s ease-out;
 }
 .img-container>div.img-box img.horizontal {
     margin: auto;
@@ -266,6 +273,14 @@ a {
         width: 100%;
         /*height: auto;*/
         
+
+    }
+    .img-container>div.img-box img.horizontal {
+        /*margin: auto;
+
+        height: 100%;*/
+        width: 100%;
+        /*opacity: 0.9;*/
 
     }
 }
