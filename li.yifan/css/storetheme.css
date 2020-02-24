@@ -7,3 +7,15 @@
 body {
 	background-color: var(--color-neutral-light);
 }
+
+[class*='col-']>.card {
+	height: 100%;
+	margin:0;
+}
+
+
+@media (max-width: 600px) {
+	.navbar .display-flex {
+		display: block;
+	}
+}

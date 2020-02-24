@@ -9,7 +9,8 @@
 	--color-neutral-medium:#988c8c;
 	--color-neutral-light:#ece7e7;
 
-    --header-height:inherit;
+    /* --header-height:inherit;*/
+    --header-height:3rem;
 }
 
 
@@ -83,7 +84,7 @@ a:hover {
 	padding-left: 0;
 }
 
-.nav a {
+.navbar a {
 	padding:0 1em;
 }
 
@@ -114,7 +115,7 @@ a:hover {
 }
 
 .card.dark {
-	background-color: var(--color-neutral-medium);
+	background-color: var(--color-neutral-dark);
 	color:var(--color-neutral-light);
 }
 
@@ -125,7 +126,8 @@ a:hover {
 
 /* VIEW WINDOW */
 .view-window {
-	height: 50vh;
+	/* height: 50vh; */
+	height: 100vh;
 	overflow: hidden;
 	position: relative;
 	background-size: cover;
