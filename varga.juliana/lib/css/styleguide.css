@@ -16,7 +16,7 @@ body {
 	box-sizing:border-box;
 	margin:0;
 	font-size:100%;
-	font-family:Helvetica,Arial,sans-serif;
+	font-family:Montserrat,Helvetica,sans-serif;
 }
 
 h1,
@@ -25,27 +25,27 @@ h3,
 h4,
 h5,
 h6 {
-	font-family:Georgia,"Times New Roman",serif;
+	font-family:Montserrat,"Helvetica",sans-serif;
 }
 
 
 a {
 	color:inherit;
-	font-weight:bold;
+	font-weight:medium;
 	text-decoration: none;
 }
 a:hover {
-	text-decoration: underline;
+	font-weight:bold;
 }
 
 
 
 #logo{
     width: 200px;
-    align-self: center;
-    margin: 0;
+    margin: 0 auto;
     height: auto;
-    padding: 0;
+   	padding-bottom: 20px;
+   	padding-top: 20px;
 }
 
 
@@ -93,8 +93,8 @@ a:hover {
 
 .nav ul {
 	list-style-type:none;
-	margin-top: 0;
-	margin-bottom: 0;
+	margin:0 auto;
+	max-width:400px;
 	padding-left: 0;
 }
 
@@ -133,7 +133,7 @@ a:hover {
 
 /* view window */
 .view-window {
-	height:50vh;
+	height:450px;
 	overflow:hidden;
 	position:relative;
 	background-size:cover;
