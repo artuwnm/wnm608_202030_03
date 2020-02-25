@@ -3,4 +3,4 @@
 - http://julimdesign.co
 - http://julimdesign.co/aau/wnm608/varga.juliana
 - http://julimdesign.co/aau/wnm608/varga.juliana/recipes
-- http://julimdesign.co/aau/wnm608/varga.juliana/jvjewelry
+- http://julimdesign.co/aau/wnm608/varga.juliana/jvjewelry.html
