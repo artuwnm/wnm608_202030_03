@@ -1,4 +1,4 @@
 # Ji Yeom
 
-- https://jiwonyeom.com
-- https://jiwonyeom.com/aau/wnm608/ji.yeom
+- http://jiwonyeom.com
+- http://jiwonyeom.com/aau/wnm608/ji.yeom/index.html

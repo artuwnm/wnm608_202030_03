@@ -1,16 +1,16 @@
 :root {
-    --color-neutral-dark: #333;
-    --color-neutral-medium: #999;
+    --color-neutral-dark: #000;
+    --color-neutral-medium: #797979;
     --color-neutral-light: #eee;
 }
 
 
 body {
-	background-color:var(--color-neutral-light);
+	/*background-color:var(--color-neutral-light);*/
 }
 
 h2 {
-	font-size: 1rem;
+	font-size: 1.5rem;
 }
 
 [class*='col-']>.card {
@@ -28,16 +28,11 @@ h2 {
 
 
 footer {
-	background: #fff;
+	background-color: #000;
+	color: #fff;
     padding: 30px 20px;
 	height: 80px;
+	font-size: 0.75rem;
 	font-style: italic;
 	text-align: center;
-}
-
-.img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
 }
