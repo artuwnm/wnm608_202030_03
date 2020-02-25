@@ -5,9 +5,9 @@
 }
 
 :root {
-    --color-neutral-dark: #332d2d;
+    --color-neutral-dark: #F2B6A0;
     --color-neutral-medium: #988c8c;
-    --color-neutral-light: #ece7e7;
+    --color-neutral-light: #F3FAFD;
 
     --header-height:3rem;
 }
@@ -40,9 +40,13 @@ a:hover {
 
 
 
-
-
-
+#logo{
+    width: 200px;
+    align-self: center;
+    margin: 0;
+    height: auto;
+    padding: 0;
+}
 
 
 /* SMALL CLASSES */
@@ -129,7 +133,7 @@ a:hover {
 
 /* view window */
 .view-window {
-	height:100vh;
+	height:50vh;
 	overflow:hidden;
 	position:relative;
 	background-size:cover;
