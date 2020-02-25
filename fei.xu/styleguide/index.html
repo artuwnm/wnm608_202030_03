@@ -29,7 +29,15 @@
 				<li><a href="#paragraphs">Paragraphs</a></li>
 				
 			</ul>
+			<li><a href="#images">Images</a></li>
+			<li><a href="#cards">Cards</a></li>
+			<li><a href="#viewwindow">View Window</a></li>
 			<li><a href="#navigations">Navigations</a></li>
+			<li><a href="#tables">Tables</a></li>
+			<li><a href="#forms">Forms</a></li>
+			<li><a href="#flex">Flex System</a></li>
+			<li><a href="#grid">Grid System</a></li>
+
 		</ul>
 	</nav>
 
@@ -81,7 +89,9 @@
 			<nav class="${classes}">
 				<ul>
 				${links.reduce((r,o,i)=>{
-					return r+`<li><a href="#">${o}</a></li>`;
+				return r+`<li class="${ran==i?'active':''}">
+				<a href="#">${o}</a>
+				</li>`;
 				},'')}
 				</ul>
 			</nav>
@@ -116,6 +126,27 @@
 			<script>document.write(makeNav("nav-crumbs"))</script>
 		</div>
 	</section>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<script>
+	$("[class^='nav'] a").on("click",function(e){
+		e.preventDefault();
+		$(this).closest('li').addClass("active")
+			.siblings().removeClass("active")
+	})
+	// document.querySelectorAll('nav a').forEach(o=>{
+	// 	o.addEventListener("click",function(e){
+	// 		e.preventDefault();
+	// 		this.classList.add("active");
+	// 		[...this.parentElement.children].forEach(a=>{
+	// 			console.log(a,o)
+	// 			if(a!==o) a.classList.remove("active")
+	// 		})
+	// 	})
+	// })
+	</script>
 	
 </body>
 </html>
