@@ -13,3 +13,5 @@ http://badtrista.com/aau/wnm608/tu.yunhua/recipes/index.html
 
 http://tristatu@badtrista.com/aau/wnm608/tu.yunhua
 
+http://www.badtrista.com/aau/wnm608/tu.yunhua/Otoro/
+
