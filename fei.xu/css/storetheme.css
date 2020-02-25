@@ -2,11 +2,10 @@
     --color-neutral-dark: #333;
     --color-neutral-medium: #999;
     --color-neutral-light: #eee;
-
-    --head-height:3rem;
 }
 
-body{
+
+body {
 	background-color:var(--color-neutral-light);
 	padding-bottom:10em;
 }
@@ -14,8 +13,7 @@ body{
 
 
 
-
-[class*='col-']>.card{
+[class*='col-']>.card {
 	height:100%;
 	margin:0;
 }

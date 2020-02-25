@@ -9,6 +9,13 @@
     --color-neutral-medium: #988c8c;
     --color-neutral-light: #ece7e7;
 
+    --color-main-light:blue;
+    --color-main-medium:blue;
+    --color-main-dark:blue;
+
+    --color-black:black;
+    --color-white:white;
+
     --header-height:3rem;
 }
 
@@ -36,6 +43,13 @@ a {
 }
 a:hover {
 	text-decoration: underline;
+}
+
+
+
+code {
+	white-space:pre-wrap;
+	text-align:left;
 }
 
 
@@ -87,11 +101,49 @@ a:hover {
 	padding: 0 1em;
 }
 
+
+
+/* NAV */
+.nav-pills ul,
+.nav-stretch ul,
+.nav-flex ul,
 .nav ul {
 	list-style-type:none;
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
+}
+
+.nav-pills a,
+.nav-stretch a,
+.nav-flex a,
+.nav a {
+	display:block;
+	padding:0.2em 0.5em;
+}
+	.nav-pills a:hover,
+	.nav-stretch a:hover,
+	.nav-flex a:hover,
+	.nav a:hover {
+		background-color:var(--color-main-medium);
+		color:var(--color-white);
+		text-decoration:none;
+	}
+
+.nav-pills ul,
+.nav-stretch ul,
+.nav-flex ul {
+	display:flex;
+}
+
+.nav-stretch li {
+	flex: 1 1 auto;
+	text-align:center;
+}
+
+.nav-pills a {
+	border-radius:2em;
+	padding:0.5em 1em;
 }
 
 
@@ -129,7 +181,7 @@ a:hover {
 
 /* view window */
 .view-window {
-	height:50vh;
+	height:100vh;
 	overflow:hidden;
 	position:relative;
 	background-size:cover;
