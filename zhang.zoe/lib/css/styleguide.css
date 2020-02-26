@@ -5,11 +5,18 @@
 	box-sizing: inherit;
 }
 
+:root{
+	--color-neutral-dark: #332d2d;
+    --color-neutral-medium: #988c8c;
+    --color-neutral-light: #ece7e7;
+    --header-height: 3rem;
+}
+
 body{
 	box-sizing: border-box;
 	margin:0;
 	font-size: 100%;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: Karla, sans-serif;
 }
 
 h1,
@@ -18,7 +25,7 @@ h3,
 h4,
 h5,
 h6{
-	font-family:Georgia,"Times New Roman",serif;
+	font-family:Montserrat,sans-serif;
 }
 
 a {
@@ -38,4 +45,87 @@ a:hover {
 	margin-right: auto;
 	margin-right: auto;
 }
+
+
+
+/* ATOMIC CLASSES*/
+.display-flex{display:flex;}
+.display-inline-flex{}
+
+
+
+
+.flex-stretch { flex: 1 1 auto; }
+.flex-none{ flex；none; }
+
+
+
+.flex-aligh-center{
+	align-items
+}
+
+
+
+
+/* COMPONENT CLASS*/
+
+.navbar{
+	background-color: var(--color-neutral-dark);
+
+}
+
+.navbar h1{
+	margin:0;
+	font-size:1rem;
+}
+
+.nav ul{
+	list-style-type:none;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+.nav a{
+	padding: 0 1em;
+}
+
+
+
+/* CARD*/
+
+.card {
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.card>:first-child {margin-top:0;}
+.card>:last-child {margin-bottom:0}
+
+
+
+.card.soft {
+    box-shadow: 6px 5px 15px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.3em;
+}
+
+.card.dark {
+    background-color: var(--color-neutral-dark);
+    color: var(--color-neutral-light);
+}
+
+/*VIEW WINDOW*/
+.view-window{
+	height:80vh;
+	overflow:hidden;
+	position:relative;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
 
