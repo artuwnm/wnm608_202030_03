@@ -4,7 +4,6 @@
     --color-neutral-light: #eee;
 }
 
-<<<<<<< HEAD
 
 body {
 	background-color:var(--color-neutral-light);
@@ -27,13 +26,4 @@ body {
 	}
 }
 
-=======
-body {
-    background-color: var(--color-neutral-light);
-}
 
-[class+='col-']>.card {
-    height: 100%;
-    margin: 
-}
->>>>>>> c2d6ea859766ff826b5096cb93775e1f05849351
