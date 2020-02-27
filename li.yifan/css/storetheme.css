@@ -13,7 +13,6 @@ body {
 	padding-bottom: 10em;
 }
 
-
 [class*='col-']>.card {
 	height: 100%;
 	margin:0;
