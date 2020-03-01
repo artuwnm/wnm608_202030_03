@@ -2,36 +2,122 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/style.css">
+	<title>Style Guide</title>
+
+	<!-- meta:vp -->
+	<meta name="viewport" content="width=device-width">
+
+
+	<link rel="stylesheet" href="../lib/css/styleguide.css">
+	<link rel="stylesheet" href="../lib/css/gridsystem.css">
+	<link rel="stylesheet" href="../css/storetheme.css">
 </head>
 <body>
-	<header class="navbar">
-		<div class="container display-flex">
-			<div class="flex-stretch">
-				<h1>Lorem ipsum dolor.</h1>
-			</div>
-			<nav class="navbar">
-				<!-- ul>li*3>a[href=#]>{Link $} -->
-				<ul>
-					<li><a href="#">Shop</a></li>
-					<li><a href="#">Membership</a></li>
-					<li><a href="#">Locations</a></li>
-				</ul>
-			</nav>
+
+	<header class="container">
+		<div class="card">
+			<h1>Begari | Buy men's clothing</h1>
 		</div>
 	</header>
 
+	<nav class="container">
+		<h2>Items</h2>
+		<ul>
+			<li><a href="Buy used clothing"></a></li>
+			<ul>
+				<li><a href="#formal">Formal</a></li>
+				<li><a href="#casual">Casual</a></li>
+			</ul>
+			
 
-	<div class="container">
+		</ul>
+	</nav>
+
+	<section class="container">
+		<h2 id="clothing">Sell your formal clothing</h2>
+
 		<div class="card">
-		<h2>About Us</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, illum magni dolor aspernatur vero repudiandae porro ab accusamus nostrum, quibusdam, possimus vel dolorem nemo eos exercitationem. Impedit laboriosam commodi, at.</p>
-		<p>Sed atque, molestiae aperiam voluptatum deleniti quis amet mollitia! Aliquam amet eius molestias dignissimos nesciunt tempore voluptate sunt voluptatibus praesentium, aut deleniti animi officiis ipsa quam unde, similique quasi adipisci.</p>
+			<h3 id="headings"></h3>
+			<hr>
+			<!-- h$*6>{Heading $} -->
+			<h1>How to start</h1>
+			<ul>
+				<li>Lorem ipsum dolor sit amet.</li>
+				<li>Lorem ipsum dolor sit amet.</li>
+				<li>Lorem ipsum dolor sit amet.</li>
+				<li>Lorem ipsum dolor sit amet.</li>
+				<li>Lorem ipsum dolor sit amet.</li>
+			</ul>
 		</div>
-	</div>
+
+		<div class="card">
+			<h3 id="about">About us</h3>
+			<hr>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit suscipit consectetur illo voluptas fuga ipsam labore veniam unde, excepturi at voluptate mollitia officiis aut soluta eaque necessitatibus ab a in et quos enim molestiae nulla. Blanditiis quos molestias, rem ipsam delectus veniam, voluptates voluptas ex illo explicabo fugit praesentium minima.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, explicabo aperiam ipsa illum enim id impedit eius repellendus veritatis rem perspiciatis quas ex libero ipsam animi cumque quos, perferendis quo eum debitis quasi quam veniam neque. Omnis excepturi obcaecati nisi repudiandae, eum possimus modi. Illo eligendi exercitationem, iusto saepe eos!</p>
+		</div>
+	</section>
 
 
 
+	<section class="container">
+		<h2 id="navigations">Navigations</h2>
+
+	<script>
+	const makeNav = (classes='') => {
+		const links = ['home','store','about'];
+		let ran = Math.floor(Math.random()*links.length);
+		return `
+		<div>
+			<nav class="${classes}">
+				<ul>
+				${links.reduce((r,o,i)=>{
+				return r+`<li class="${ran==i?'active':''}">
+				<a href="#">${o}</a>
+				</li>`;
+				},'')}
+				</ul>
+			</nav>
+		</div>
+		`;
+	}
+	</script>
+
+		<div class="card">
+			<h3>Basic Nav</h3>
+
+			<script>document.write(makeNav("nav"))</script>
+		</div>
+		<div class="card">
+			<h3>Flex Nav</h3>
+
+			<script>document.write(makeNav("nav-flex"))</script>
+		</div>
+		<div class="card">
+			<h3>Stretch Nav</h3>
+
+			<script>document.write(makeNav("nav-stretch"))</script>
+		</div>
+		<div class="card">
+			<h3>Pills Nav</h3>
+
+			<script>document.write(makeNav("nav-pills"))</script>
+		</div>
+		<div class="card">
+			<h3>Breadcrumb Nav</h3>
+
+			<script>document.write(makeNav("nav-crumbs"))</script>
+		</div>
+	</section>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<script>
+	$("[class^='nav'] a").on("click",function(e){
+		e.preventDefault();
+		$(this).closest('li').addClass("active")
 	
-</body>
+	</body>
 </html>
