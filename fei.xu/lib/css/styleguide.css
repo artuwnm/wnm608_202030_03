@@ -104,6 +104,7 @@ code {
 
 
 /* NAV */
+.nav-crumbs ul,
 .nav-pills ul,
 .nav-stretch ul,
 .nav-flex ul,
@@ -129,7 +130,15 @@ code {
 		color:var(--color-white);
 		text-decoration:none;
 	}
+	.nav-pills li.active a,
+	.nav-stretch li.active a,
+	.nav-flex li.active a,
+	.nav li.active a {
+		background-color:var(--color-main-light);
+		color:inherit;
+	}
 
+.nav-crumbs ul,
 .nav-pills ul,
 .nav-stretch ul,
 .nav-flex ul {
@@ -144,6 +153,12 @@ code {
 .nav-pills a {
 	border-radius:2em;
 	padding:0.5em 1em;
+}
+
+
+.nav-crumbs li:not(:first-child)::before {
+	content:'/';
+	margin:0 0.4em;
 }
 
 
@@ -187,6 +202,23 @@ code {
 	background-size:cover;
 	background-position:center;
 	background-attachment:fixed;
+}
+
+
+
+
+
+
+
+/* TABLE */
+.table {
+	width:100%;
+	border-collapse:collapse;
+}
+.table th,
+.table td {
+	text-align:left;
+	padding:0.2em 0.5em;
 }
 
 
