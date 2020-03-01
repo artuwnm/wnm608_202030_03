@@ -26,13 +26,26 @@ body {
 	font-family:Helvetica,Arial,sans-serif;
 }
 
-h1,
+ul{
+	line-height: 40px;
+	padding-left: 80px;
+}
+
+li{
+	line-height: 40px;
+}
+
+h1{
+	font-family: 'Cormorant Garamond';
+	color:#26686c;
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-	font-family:Georgia,"Times New Roman",serif;
+	font-family: 'Open Sans';
 }
 
 
@@ -113,6 +126,7 @@ code {
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
+	font-family: 'Open Sans'
 }
 
 .nav-pills a,
@@ -129,11 +143,13 @@ code {
 		background-color:var(--color-main-medium);
 		color:var(--color-white);
 		text-decoration:none;
+
 	}
 	.nav-pills li.active a,
 	.nav-stretch li.active a,
 	.nav-flex li.active a,
 	.nav li.active a {
+		font-family: 'Open Sans';
 		background-color:var(--color-main-light);
 		color:inherit;
 	}
