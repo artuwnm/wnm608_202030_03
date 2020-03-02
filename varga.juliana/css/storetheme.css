@@ -1,7 +1,11 @@
 :root {
-    --color-neutral-dark: #F2B6A0;
+    --color-neutral-dark: #333;
     --color-neutral-medium: #999;
-    --color-neutral-light: #F3FAFD;
+    --color-neutral-light: #eee;
+
+    --color-main-light: #eac3fa;
+    --color-main-medium: #8d39b0;
+    --color-main-dark: #44105a;
 }
 
 
@@ -17,6 +21,8 @@ body {
 	height:100%;
 	margin:0;
 }
+
+
 
 @media (max-width:600px) {
 	.navbar .display-flex {

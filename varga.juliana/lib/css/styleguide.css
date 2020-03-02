@@ -5,9 +5,16 @@
 }
 
 :root {
-    --color-neutral-dark: #F2B6A0;
+    --color-neutral-dark: #332d2d;
     --color-neutral-medium: #988c8c;
-    --color-neutral-light: #F3FAFD;
+    --color-neutral-light: #ece7e7;
+
+    --color-main-light:blue;
+    --color-main-medium:blue;
+    --color-main-dark:blue;
+
+    --color-black:black;
+    --color-white:white;
 
     --header-height:3rem;
 }
@@ -16,7 +23,7 @@ body {
 	box-sizing:border-box;
 	margin:0;
 	font-size:100%;
-	font-family:Montserrat,Helvetica,sans-serif;
+	font-family:Helvetica,Arial,sans-serif;
 }
 
 h1,
@@ -25,28 +32,31 @@ h3,
 h4,
 h5,
 h6 {
-	font-family:Montserrat,"Helvetica",sans-serif;
+	font-family:Georgia,"Times New Roman",serif;
 }
 
 
 a {
 	color:inherit;
-	font-weight:medium;
+	font-weight:bold;
 	text-decoration: none;
 }
 a:hover {
-	font-weight:bold;
+	text-decoration: underline;
 }
 
 
 
-#logo{
-    width: 200px;
-    margin: 0 auto;
-    height: auto;
-   	padding-bottom: 20px;
-   	padding-top: 20px;
+code {
+	white-space:pre-wrap;
+	text-align:left;
 }
+
+
+
+
+
+
 
 
 /* SMALL CLASSES */
@@ -91,11 +101,64 @@ a:hover {
 	padding: 0 1em;
 }
 
+
+
+/* NAV */
+.nav-crumbs ul,
+.nav-pills ul,
+.nav-stretch ul,
+.nav-flex ul,
 .nav ul {
 	list-style-type:none;
-	margin:0 auto;
-	max-width:400px;
+	margin-top: 0;
+	margin-bottom: 0;
 	padding-left: 0;
+}
+
+.nav-pills a,
+.nav-stretch a,
+.nav-flex a,
+.nav a {
+	display:block;
+	padding:0.2em 0.5em;
+}
+	.nav-pills a:hover,
+	.nav-stretch a:hover,
+	.nav-flex a:hover,
+	.nav a:hover {
+		background-color:var(--color-main-medium);
+		color:var(--color-white);
+		text-decoration:none;
+	}
+	.nav-pills li.active a,
+	.nav-stretch li.active a,
+	.nav-flex li.active a,
+	.nav li.active a {
+		background-color:var(--color-main-light);
+		color:inherit;
+	}
+
+.nav-crumbs ul,
+.nav-pills ul,
+.nav-stretch ul,
+.nav-flex ul {
+	display:flex;
+}
+
+.nav-stretch li {
+	flex: 1 1 auto;
+	text-align:center;
+}
+
+.nav-pills a {
+	border-radius:2em;
+	padding:0.5em 1em;
+}
+
+
+.nav-crumbs li:not(:first-child)::before {
+	content:'/';
+	margin:0 0.4em;
 }
 
 
@@ -133,10 +196,27 @@ a:hover {
 
 /* view window */
 .view-window {
-	height:450px;
+	height:100vh;
 	overflow:hidden;
 	position:relative;
 	background-size:cover;
 	background-position:center;
 	background-attachment:fixed;
+}
+
+
+
+
+
+
+
+/* TABLE */
+.table {
+	width:100%;
+	border-collapse:collapse;
+}
+.table th,
+.table td {
+	text-align:left;
+	padding:0.2em 0.5em;
 }

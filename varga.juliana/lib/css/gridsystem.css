@@ -14,7 +14,13 @@
 	grid-gap:var(--grid-gap);
 	gap:var(--grid-gap);
 }
+	.gap.large { --grid-gap:2em; }
+	.gap.small { --grid-gap:0.5em; }
 
+
+
+
+.col-0 { display:none; }
 .col-1 { grid-column: span 1; }
 .col-2 { grid-column: span 2; }
 .col-3 { grid-column: span 3; }
