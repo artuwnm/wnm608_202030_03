@@ -5,14 +5,16 @@
 }
 
 :root {
-	--color-neutral-dark:#332d2d;;
-	--color-neutral-medium:#988c8c;
-	--color-neutral-light:#ece7e7;
+	--color-neutral-dark:#333;;
+	--color-neutral-medium:#999;
+	--color-neutral-light:#eee;
 
-	 --color-main-light: #eac3fa;
-    --color-main-medium: #8d39b0;
-    --color-main-dark: #44105a;
-}
+	 --color-main-light: #dfe6a2;
+    --color-main-medium: #bcce26;
+    --color-main-dark: #505807;
+
+    --color-black:black;
+    --color-white:white;
 
 	--header-height:3rem;
 	}
@@ -22,7 +24,7 @@ body {
 	box-sizing: border-box;
 	margin:0;
 	font-size:100%; 
-	font-family:Helvetica,Arial,sans-serif;
+	font-family: 'Cardo', serif; 
 }
 
 h1,
@@ -31,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family:Georgia, "Times New Roman",serif;
+	font-family: 'Montserrat', sans-serif ;
 }
 
 a {
@@ -42,6 +44,11 @@ a {
 
 a:hover {
 	text-decoration: underline;
+}
+
+code {
+	white-space:pre-wrap;
+	text-align:left;
 }
 
 
@@ -93,12 +100,63 @@ a:hover {
 	padding: 0 1em;
 }
 
+.nav-crumbs ul,
+.nav-pills ul,
+.nav-stretch ul,
+.nav-flex ul,
 .nav ul {
-	list-style-type: none;
+	list-style-type:none;
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
 }
+
+.nav-pills a,
+.nav-stretch a,
+.nav-flex a,
+.nav a {
+	display:block;
+	padding:0.2em 0.5em;
+}
+	.nav-pills a:hover,
+	.nav-stretch a:hover,
+	.nav-flex a:hover,
+	.nav a:hover {
+		background-color:var(--color-main-medium);
+		color:var(--color-white);
+		text-decoration:none;
+	}
+	.nav-pills li.active a,
+	.nav-stretch li.active a,
+	.nav-flex li.active a,
+	.nav li.active a {
+		background-color:var(--color-main-light);
+		color:inherit;
+	}
+
+.nav-crumbs ul,
+.nav-pills ul,
+.nav-stretch ul,
+.nav-flex ul {
+	display:flex;
+}
+
+.nav-stretch li {
+	flex: 1 1 auto;
+	text-align:center;
+}
+
+.nav-pills a {
+	border-radius:2em;
+	padding:0.5em 1em;
+}
+
+
+.nav-crumbs li:not(:first-child)::before {
+	content:'/';
+	margin:0 0.4em;
+}
+
 
 
 /*card*/
@@ -133,7 +191,7 @@ a:hover {
 
 /* view window */
 .view-window {
-	height: 50vh;
+	height: 100vh;
 	overflow: hidden;
 	position: relative;
 	background-size: cover;
@@ -141,7 +199,23 @@ a:hover {
 	background-attachment: fixed;
 }
 
+/* TABLE */
+.table {
+	width:100%;
+	border-collapse:collapse;
+}
+.table th,
+.table td {
+	text-align:left;
+	padding:0.2em 0.5em;
+}
 
+.table.striped tbody tr:nth-child(odd) {
+	background-color:rgba(0,0,0,0.1);
+}
+.table.striped tr:hover {
+	background-color:rgba(0,0,0,0.2);
+}
 
 
 
