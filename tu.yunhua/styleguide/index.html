@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Style Guide</title>
+
+	<!-- meta:vp -->
+	<meta name="viewport" content="width=device-width">
+
+
+	<link rel="stylesheet" href="lib/css/styleguide.css">
+	<link rel="stylesheet" href="lib/css/gridsystem.css">
+	<link rel="stylesheet" href="css/storetheme.css">
+</head>
+<body>
+
+	<header class="container">
+		<div class="card">
+			<h1>Otoro Site Style Guide</h1>
+
+
+		</div>
+	</header>
+
+	<nav class="container">
+		<h2>Table of Contents</h2>
+		<ul>
+			<li><a href="#typography">Typography</a></li>
+			<ul>
+				<li><a href="#headings">Headings</a></li>
+				<li><a href="#paragraphs">Paragraphs</a></li>
+				
+			</ul>			
+			<li><a href="#images">Images</a></li>
+			<li><a href="#cards">Cards</a></li>
+			<li><a href="#viewwindow">View Window</a></li>
+			<li><a href="#navigations">Navigations</a></li>
+			<li><a href="#tables">Tables</a></li>
+			<li><a href="#forms">Forms</a></li>
+			<li><a href="#flex">Flex System</a></li>
+			<li><a href="#grid">Grid System</a></li>		
+		</ul>
+	</nav>
+
+	<section class="container">
+		<h2 id="typography">Typography</h2>
+
+		<div class="card">
+			<h3 id="headings">Headings</h3>
+			<hr>
+			<!-- h$*6>{Heading $} -->
+			<h1>Heading 1</h1>
+			<h2>Heading 2</h2>
+			<h3>Heading 3</h3>
+			<h4>Heading 4</h4>
+			<h5>Heading 5</h5>
+			<h6>Heading 6</h6>
+
+			<code>
+&lt;h1>Heading 1&lt;/h1>
+&lt;h2>Heading 2&lt;/h2>
+&lt;h3>Heading 3&lt;/h3>
+&lt;h4>Heading 4&lt;/h4>
+&lt;h5>Heading 5&lt;/h5>
+&lt;h6>Heading 6&lt;/h6>
+			</code>
+		</div>
+
+		<div class="card">
+			<h3 id="paragraphs">Paragraphs</h3>
+			<hr>
+			<!-- p*3>lorem20 -->
+			<p>Otoro Picture Store is an online food photography store with new-age sales content. It originated in San Francisco, California, the city with the most Michelin restaurants in the United States.</p>
+			<p>Otoro food photography was taken by the founder of the website in person. For just $ 5 each, you can get the right to use this photography (except for commercial use). At the same time, you can also open your own account and upload your own food photography in high definition. It will also be available for $ 5 each. After you upload your picture, you can exchange it for any HD picture you like.</p>
+			<p>Thank you for joining, this will be an interesting and very futuristic way to share and exchange. If you have any questions or ideas, please contact us.</p>
+		</div>
+	</section>
+
+
+
+	<section class="container">
+		<h2 id="navigations">Navigations</h2>
+
+	<script>
+	const makeNav = (classes='') => {
+		const links = ['home','store','about'];
+		let ran = Math.floor(Math.random()*links.length);
+		return `
+		<div>
+			<nav class="${classes}">
+				<ul>
+				${links.reduce((r,o,i)=>{
+				return r+`<li class="${ran==i?'active':''}">
+				<a href="#">${o}</a>
+				</li>`;
+				},'')}
+				</ul>
+			</nav>
+		</div>
+		`;
+	}
+	</script>
+
+		<div class="card">
+			<h3>Basic Nav</h3>
+
+			<script>document.write(makeNav("nav"))</script>
+		</div>
+		<div class="card">
+			<h3>Flex Nav</h3>
+
+			<script>document.write(makeNav("nav-flex"))</script>
+		</div>
+		<div class="card">
+			<h3>Stretch Nav</h3>
+
+			<script>document.write(makeNav("nav-stretch"))</script>
+		</div>
+		<div class="card">
+			<h3>Pills Nav</h3>
+
+			<script>document.write(makeNav("nav-pills"))</script>
+		</div>
+		<div class="card">
+			<h3>Breadcrumb Nav</h3>
+
+			<script>document.write(makeNav("nav-crumbs"))</script>
+		</div>
+	</section>
+	
+</body>
+</html>

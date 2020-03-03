@@ -1,0 +1,58 @@
+/* layout gridsystem */
+
+.grid{
+	display: grid;
+	--grid-gap: 1em;
+	grid-template-columns: repeat(12,1fr);	
+}
+
+.gird-10{
+	grid-template-columns: repeat(10,1fr);	
+}
+
+.grid.gap{
+	grid-gap: var(--grid-gap);
+	gap: var(--grid-gap);
+}
+
+
+
+/* The minimum height of the display area, such as a browser window */
+/* command + d + number */
+/* 长按 command + d 可以改变名称 */
+
+@media (min-width:  320px) {	
+}
+.col-sm-1{ grid-column: span1; }
+.col-sm-2{ grid-column: span2; }
+.col-sm-3{ grid-column: span3; }
+.col-sm-4{ grid-column: span4; }
+.col-sm-5{ grid-column: span5; }
+.col-sm-6{ grid-column: span6; }
+.col-sm-7{ grid-column: span7; }
+.col-sm-8{ grid-column: span8; }
+.col-sm-9{ grid-column: span9; }
+.col-sm-10{ grid-column: span10; }
+.col-sm-11{ grid-column: span11; }
+.col-sm-12{ grid-column: span12; }
+
+
+@media (min-width:  600px) {	
+}
+.col-sm-1{ grid-column: span1; }
+.col-sm-2{ grid-column: span2; }
+.col-sm-3{ grid-column: span3; }
+.col-sm-4{ grid-column: span4; }
+.col-sm-5{ grid-column: span5; }
+.col-sm-6{ grid-column: span6; }
+.col-sm-7{ grid-column: span7; }
+.col-sm-8{ grid-column: span8; }
+.col-sm-9{ grid-column: span9; }
+.col-sm-10{ grid-column: span10; }
+.col-sm-11{ grid-column: span11; }
+.col-sm-12{ grid-column: span12; }
+
+
+
+
+

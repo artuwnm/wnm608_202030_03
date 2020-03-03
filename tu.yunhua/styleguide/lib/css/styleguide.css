@@ -1,0 +1,286 @@
+/* ELEMENT RESETS */
+
+*,*::before,*::after {
+    box-sizing:inherit;
+}
+
+:root {
+    --color-neutral-dark: #332d2d;
+    --color-neutral-medium: #988c8c;
+    --color-neutral-light: #ece7e7;
+
+    --color-main-light:blue;
+    --color-main-medium:blue;
+    --color-main-dark:blue;
+
+    --color-black:black;
+    --color-white:white;
+
+    --header-height:3rem;
+}
+
+body {
+    box-sizing:border-box;
+    margin:0;
+    font-size:100%;
+    font-family:Helvetica,Arial,sans-serif;
+}
+body {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7; 
+    color: white;
+    background:#000;
+}
+
+h1{
+    color: black;
+    font-family:Georgia,"Times New Roman",serif;
+}
+
+
+h2 {
+    color: white;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h3{
+    color: black;
+}
+
+h4{
+    color: black;
+}
+
+h5{
+    color: black;
+}
+
+h6 {
+    color: black;
+    font-family:Georgia,"Times New Roman",serif;
+}
+
+ul {
+    line-height: 30px;
+    padding-left: 50px;
+}
+
+
+a {
+    color: white;
+    font-weight:bold;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+code {
+    color: black;
+    white-space:pre-wrap;
+    text-align:left;
+}
+
+
+
+
+p {
+    font-family:Playfair Display, serif;
+    font-weight:200;
+    color:#000;
+}
+
+
+
+
+
+/* SMALL CLASSES */
+
+.container {
+    max-width:1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+/* ATOMIC CLASSES */
+
+.display-flex { display:flex; }
+.display-inline-flex { display:inline-flex; }
+.display-block { display:block; }
+.display-inline-block { display:inline-block; }
+
+
+.flex-stretch { flex: 1 1 auto; }
+.flex-none { flex: none; }
+
+.flex-align-center { align-items:center; }
+.flex-justify-center { justify-content:center; }
+
+
+
+
+/* COMPONENT CLASSES */
+
+
+.navbar {
+    background-color:var(--color-neutral-dark);
+    color:var(--color-neutral-light);
+    line-height: var(--header-height);
+}
+
+.navbar h1 {
+    margin:0;
+    font-size:1rem;
+}
+.navbar a {
+    padding: 0 1em;
+}
+
+
+
+/* NAV */
+.nav-crumbs ul,
+.nav-pills ul,
+.nav-stretch ul,
+.nav-flex ul,
+.nav ul {
+    list-style-type:none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.nav-pills a,
+.nav-stretch a,
+.nav-flex a,
+.nav a {
+    display:block;
+    padding:0.2em 0.5em;
+}
+
+    .nav-pills a:hover,
+    .nav-stretch a:hover,
+    .nav-flex a:hover,
+    .nav a:hover {
+        background-color:black;
+        color:var(--color-white);
+        text-decoration:none;
+    }
+    .nav-pills li.active a,
+    .nav-stretch li.active a,
+    .nav-flex li.active a,
+    .nav li.active a {
+        /*background-color:var(--color-main-light);*/
+        color:inherit;
+    }
+
+.nav-crumbs ul,
+.nav-pills ul,
+.nav-stretch ul,
+.nav-flex ul {
+    display:flex;
+}
+
+.nav-stretch li {
+    flex: 1 1 auto;
+    text-align:center;
+}
+
+.nav-pills a {
+    border-radius:2em;
+    padding:0.5em 1em;
+}
+
+
+.nav-crumbs li:not(:first-child)::before {
+    content:'/';
+    margin:0 0.4em;
+}
+
+
+
+
+/* card */
+
+.card {
+    background-color: #c72101;
+    overflow: hidden;
+    position: relative;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+    .card>:first-child { margin-top:0; }
+    .card>:last-child { margin-bottom:0; }
+
+    .card.soft {
+        box-shadow: 6px 5px 15px 10px rgba(0, 0, 0, 0.1);
+        border-radius:0.3em;
+    }
+    .card.medium {
+        background-color:var(--color-neutral-medium);
+    }
+    .card.dark {
+        background-color:var(--color-neutral-dark);
+        color:var(--color-neutral-light);
+    }
+    .card.flat {
+        padding:0;
+    }
+
+
+
+/* view window */
+.view-window {
+    height:100vh;
+    overflow:hidden;
+    position:relative;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+
+
+
+
+
+
+/* TABLE */
+.table {
+    width:100%;
+    border-collapse:collapse;
+}
+
+.table th,
+.table td {
+    text-align:left;
+    padding:0.2em 0.5em;
+}
+
+.table.striped tbody tr:nth-child(odd){
+    background-color:rgba(0,0,0,0,1);
+}
+
+.table.striped tbody tr:hover{
+    background-color:rgba(0,0,0,0,2);
+}
+
+
+
+
+
