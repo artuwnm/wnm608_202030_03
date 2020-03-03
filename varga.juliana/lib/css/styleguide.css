@@ -129,7 +129,7 @@ code {
 	.nav-stretch a:hover,
 	.nav-flex a:hover,
 	.nav a:hover {
-		background-color:var(--color-main-medium);
+		background-color:#50cffd8c;
 		color:var(--color-white);
 		text-decoration:none;
 	}
@@ -137,7 +137,7 @@ code {
 	.nav-stretch li.active a,
 	.nav-flex li.active a,
 	.nav li.active a {
-		background-color:var(--color-main-light);
+		background-color:#caf1ff8c;
 		color:inherit;
 	}
 
@@ -257,9 +257,9 @@ code {
 }
 
 .container {
-  background-color: #f2f2f2;
+  background-color: #00b9ff2b;
   padding: 5px 20px 15px 20px;
-  border: 1px solid lightgrey;
+  border: 1px #2f5cff24;
   border-radius: 3px;
 }
 
@@ -283,7 +283,7 @@ label {
 }
 
 .btn {
-  background-color: #4CAF50;
+  background-color: #50cffd8c;
   color: white;
   padding: 12px;
   margin: 10px 0;
@@ -295,7 +295,7 @@ label {
 }
 
 .btn:hover {
-  background-color: #45a049;
+  background-color: #17bbf78c;
 }
 
 span.price {
@@ -323,5 +323,8 @@ input[type=text] {
 
 /* When the input field gets focus, change its width to 100% */
 input[type=text]:focus {
-  width: 60%;
+  width: 50%;
 }
+
+
+
