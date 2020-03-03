@@ -23,7 +23,7 @@ body {
 	box-sizing:border-box;
 	margin:0;
 	font-size:100%;
-	font-family:Helvetica,Arial,sans-serif;
+	font-family:montserrat,Helvetica,sans-serif;
 }
 
 h1,
@@ -32,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family:Georgia,"Times New Roman",serif;
+	font-family:montserrat,Helvetica,sans-serif;
 }
 
 
@@ -53,9 +53,12 @@ code {
 }
 
 
+/* SQUARE */
 
-
-
+.square {
+    height: 100px;
+    width: 100px;
+}
 
 
 
@@ -208,8 +211,6 @@ code {
 
 
 
-
-
 /* TABLE */
 .table {
 	width:100%;
@@ -219,4 +220,108 @@ code {
 .table td {
 	text-align:left;
 	padding:0.2em 0.5em;
+}
+
+
+
+/* CHECK OUT  FORM */
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+/* SEARCH FORM */
+
+input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 60%;
 }

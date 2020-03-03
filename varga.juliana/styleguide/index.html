@@ -11,12 +11,14 @@
 	<link rel="stylesheet" href="../lib/css/styleguide.css">
 	<link rel="stylesheet" href="../lib/css/gridsystem.css">
 	<link rel="stylesheet" href="../css/storetheme.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
 	<header class="container">
 		<div class="card">
-			<h1>Site Style Guide</h1>
+			<h1>Juli's Site Style Guide</h1>
 		</div>
 	</header>
 
@@ -29,14 +31,17 @@
 				<li><a href="#paragraphs">Paragraphs</a></li>
 				
 			</ul>
+			<li><a href="#colors">Colors</a></li>
 			<li><a href="#images">Images</a></li>
 			<li><a href="#cards">Cards</a></li>
-			<li><a href="#viewwindow">View Window</a></li>
 			<li><a href="#navigations">Navigations</a></li>
-			<li><a href="#tables">Tables</a></li>
 			<li><a href="#forms">Forms</a></li>
-			<li><a href="#flex">Flex System</a></li>
-			<li><a href="#grid">Grid System</a></li>
+			<ul>
+				<li><a href="#checkout">Check out form</a></li>
+				<li><a href="#search">Search</a></li>
+				
+			</ul>
+			<li><a href="#tables">Tables</a></li>
 
 		</ul>
 	</nav>
@@ -68,16 +73,36 @@
 		<div class="card">
 			<h3 id="paragraphs">Paragraphs</h3>
 			<hr>
-			<!-- p*3>lorem20 -->
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quisquam saepe quae quam dolores rem omnis est recusandae ullam asperiores.</p>
-			<p>Saepe ratione quidem neque dolores nobis harum cum, numquam, unde pariatur rem possimus itaque non recusandae tempora amet laudantium et.</p>
-			<p>Ipsa officiis necessitatibus perspiciatis vero, porro soluta temporibus quod ut dignissimos earum a optio dolorum, pariatur sed harum quaerat! Deleniti.</p>
+		<!-- p*3>lorem40 -->
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum corporis aliquam molestias, autem distinctio et vel laboriosam adipisci, sequi maiores omnis. Earum quibusdam nostrum labore consequuntur temporibus voluptates, esse quis ea, libero atque voluptatem laborum nisi quod dignissimos vitae perferendis!</p>
+			<p>Iure pariatur, rerum tempora dignissimos cum aspernatur iste, suscipit reprehenderit optio autem numquam ipsa cupiditate, consequatur! Dolorum provident molestiae soluta at rem voluptatem, sunt alias aspernatur inventore eaque ipsam tenetur. Totam modi natus, ipsam veniam quasi consectetur reiciendis facilis consequuntur?</p>
+			<p>Aliquid, expedita minus veritatis repellat, provident autem itaque laboriosam, assumenda, similique molestias quis odit. Hic, repudiandae molestias! Deserunt consequatur perferendis quo voluptas quia vero, in labore tempora consequuntur corporis, esse sit incidunt illum voluptatum pariatur dignissimos! Temporibus, neque sunt ipsam!</p>
+
+			
 		</div>
 	</section>
 
 
-
 	<section class="container">
+		<h2 id="colors">Colors</h2>
+
+		<div class="card">
+
+			<div class="square" style="border-radius:50%;background-color: #5aff5a"></div>
+				<p>Primary Color:<br>
+				#5AFF5A</p>
+			
+
+		<div class="square" style="border-radius:50%;background-color: #76af75"></div>
+				<p>Primary Color:<br>
+				#5AFF5A</p>
+			
+		</div>
+	</section>
+
+
+		<section class="container">
 		<h2 id="navigations">Navigations</h2>
 
 	<script>
@@ -126,6 +151,108 @@
 			<script>document.write(makeNav("nav-crumbs"))</script>
 		</div>
 	</section>
+
+
+	<section class="container">
+		<h2 id="forms">Forms</h2>
+		
+		<div class="card">
+
+			<h2 id="checkout">Check out forms</h2>
+
+			<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="New York">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart
+        <span class="price" style="color:black">
+          <i class="fa fa-shopping-cart"></i>
+          <b>4</b>
+        </span>
+      </h4>
+      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+    </div>
+  </div>
+</div>
+			
+		</div>
+
+	<div class="card">
+			<h3 id="search">Search</h3>
+
+			<input type="text" name="search" placeholder="Search..">
+		</div>
+	</section>	
+
 
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
