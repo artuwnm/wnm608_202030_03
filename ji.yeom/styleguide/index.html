@@ -27,9 +27,11 @@
 		<h2>Table of Contents</h2>
 		<ul>
 			<li><a href="#cards">Cards</a></li>
+			<li><a href="#checkboxes">Check Boxes</a></li>
 			<li><a href="#colors">Colors</a></li>
 			<!-- <li><a href="#grid">Grid System</a></li> -->
 			<!-- <li><a href="#flex">Flex System</a></li> -->
+			<li><a href="#figures">Figures</a></li>
 			<li><a href="#forms">Forms</a></li>
 			<!-- <li><a href="#images">Images</a></li> -->
 			<li><a href="#navigations">Navigations</a></li>
@@ -48,7 +50,7 @@
 <br>
 	<section class="container">
 		<h2 id="cards">Cards</h2>
-		<div class="card soft nav-flex">
+		<div class="card soft">
 			<div class="card soft square">
 				<p>Card Soft</p>
 			</div>
@@ -61,6 +63,43 @@
 			<div class="card flat square">
 				<p>Card Flat</p>
 			</div>
+		</div>
+	</section>
+
+
+<br>
+	<section class="container">
+		<h2 id="checkboxes">Check Boxes</h2>
+		<div class="card soft">
+			<h3>Basic Checkbox</h3>
+			<div>
+				<label for="check-example1"></label>
+				<label>
+					<input type="checkbox" id="check-example1">
+					Subscribtion
+				</label>
+			</div>
+
+			<h3>Heart Checkbox</h3>
+			<div>
+				<div class="heart-toggle" data-children-count="1">
+					<input type="checkbox" id="heart-example" class="hidden">
+					<label for="heart-example">♥</label>
+				</div>
+			</div>
+
+			<h3>Toggle Checkbox</h3>
+			<div>
+				<div class="toggle" data-children-count="1">
+					<input type="checkbox" id="toggle1" class="hidden">
+					<label for="toggle1"></label>
+				</div>
+<!-- 				<div class="toggle" style="font-size:2em" data-children-count="1">
+					<input type="checkbox" id="toggle2" class="hidden">
+					<label for="toggle2"></label>
+				</div>
+ -->			</div>
+
 		</div>
 	</section>
 
@@ -100,9 +139,90 @@
 
 <br>
 	<section class="container">
+		<h2 id="figures">Figures</h2>
+		<div class="card soft">
+			<h3>Basic Figure</h3>
+			<div>
+				<!-- figure>img+figcaption -->
+				<figure class="product-figure">
+					<img src="https://via.placeholder.com/300" alt="">
+					<figcaption>
+						Product
+					</figcaption>
+				</figure>
+			</div>
+
+			<h3>Soft Figure</h3>
+			<div>
+				<!-- figure>img+figcaption -->
+				<figure class="product-figure soft">
+					<img src="https://via.placeholder.com/300" alt="">
+					<figcaption>
+						Product
+					</figcaption>
+				</figure>
+			</div>
+
+			<h3>Overlay Figure</h3>
+			<a href="#" class="display-block">
+			<div>
+				<!-- figure>img+figcaption -->
+				<figure class="product-figure overlay">
+					<img src="https://via.placeholder.com/300" alt="">
+					<figcaption>
+						Product
+					</figcaption>
+				</figure>
+			</div>
+
+			<h3>Gridded Figures</h3>
+			<div class="grid gap">
+
+				<div class="col-xs-12 col-md-4">
+					<div>
+						<figure class="product-figure soft">
+							<img src="https://via.placeholder.com/300" alt="">
+							<figcaption>
+							Product
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-md-4">
+					<div>
+						<figure class="product-figure soft">
+							<img src="https://via.placeholder.com/300" alt="">
+							<figcaption>
+							Product
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-md-4">
+					<div>
+						<figure class="product-figure soft">
+							<img src="https://via.placeholder.com/300" alt="">
+							<figcaption>
+							Product
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			
+			</div>
+
+		</div>
+	</section>
+
+
+<br>
+	<section class="container">
 		<h2 id="forms">Forms</h2>
 		<div class="card soft">
 			<h3>Form Title</h3>
+
 			<form>
 				<input type="text" id="fname" name="fname" placeholder="First name">
 				<input type="text" id="lname" name="lname" placeholder="Last name">
@@ -246,21 +366,11 @@
 			$(this).closest('li').addClass("active")
 				.siblings().removeClass("active")
 		})
-	// document.querySelectorAll('nav a').forEach(o=>{
-	// 	o.addEventListener("click",function(e){
-	// 		e.preventDefault();
-	// 		this.classList.add("active");
-	// 		[...this.parentElement.children].forEach(a=>{
-	// 			console.log(a,o)
-	// 			if(a!==o) a.classList.remove("active")
-	// 		})
-	// 	})
-	// })
 	</script>
 
 	<script>
 		const makeTable = (classes='') => {
-			const head = ['Product No.','Product Name','Type','Price','Stock'];
+			const head = ['ID', 'Product No.','Product Name','Type','Price','Stock'];
 			const body = [
 			['142',"Pin 1",'Pin','$3.99','50'],
 			['143',"Pin 2",'Pin','$3.99','50'],
@@ -288,40 +398,21 @@
 		<div class="card soft">
 			<h3>Basic Table</h3>
 			<script>document.write(makeTable('table'))</script>
-			<table class="table">
-				<thead>
-					<tr>
-						<th>Product No.</th>
-						<th>Product Name</th>
-						<th>Type</th>
-						<th>Price</th>
-						<th>Stock</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>142</td>
-						<td>Pin 1</td>
-						<td>Pin</td>
-						<td>$3.99</td>
-						<td>50</td>
-					</tr>
-					<tr>
-						<td>143</td>
-						<td>Pin 2</td>
-						<td>Pin</td>
-						<td>$3.99</td>
-						<td>50</td>
-					</tr>
-					<tr>
-						<td>144</td>
-						<td>Patch 1</td>
-						<td>Patch</td>
-						<td>$7.99</td>
-						<td>10</td>
-					</tr>
-				</tbody>
-			</table>
+		</div>
+
+		<div class="card soft">
+			<h3>Horizontal Lined Table</h3>
+			<script>document.write(makeTable('table lined horizontal'))</script>
+		</div>
+
+		<div class="card soft">
+			<h3>All Lined Table</h3>
+			<script>document.write(makeTable('table lined all'))</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Striped with Vertical and Outlines Table</h3>
+			<script>document.write(makeTable('table lined vertical outline striped'))</script>
 		</div>
 	</section>
 

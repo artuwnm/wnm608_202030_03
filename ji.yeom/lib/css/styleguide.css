@@ -45,11 +45,22 @@ h3 {
 p {
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 1rem;
+	font-weight: normal;
 }
 caption {
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 0.75rem;
     text-transform: lowercase;
+}
+
+footer {
+	background-color: #000;
+	color: #fff;
+    padding: 30px 20px;
+	height: 80px;
+	font-size: 0.75rem;
+	font-style: italic;
+	text-align: center;
 }
 
 a {
@@ -66,6 +77,10 @@ a:hover {
 code {
 	white-space:pre-wrap;
 	text-align:left;
+	background-color:var(--color-neutral-light);
+	padding:1em;
+	width:100%;
+	display:block;
 }
 
 img:hover {
@@ -83,6 +98,8 @@ img:hover {
 	margin-right: auto;
 	margin-left: auto;
 }
+
+.hidden { display:none; }
 
 .square {
   height: 100px;
@@ -260,10 +277,81 @@ img:hover {
 }
 
 
+.table.striped tbody tr:nth-child(odd) {
+	background-color:rgba(0,0,0,0.1);
+}
+.table.striped tbody tr:hover {
+	background-color:rgba(0,0,0,0.2);
+}
+
+
+.table.lined.all tbody tr,
+.table.lined.horizontal tbody tr {
+	border-top:1px solid var(--color-neutral-light);
+}
+
+.table.lined.all th:not(:first-child),
+.table.lined.all td:not(:first-child),
+.table.lined.vertical th:not(:first-child),
+.table.lined.vertical td:not(:first-child) {
+	border-left:1px solid var(--color-neutral-light);
+}
+
+.table.lined.all,
+.table.lined.outline {
+	border:1px solid var(--color-neutral-light);
+}
 
 
 
-/*Form*/
+
+
+/*CHECKBOX*/
+.heart-toggle label {
+	color: var(--color-neutral-medium);
+	transform: scale(1,1);
+	transition: all 0.3s;
+	display: inline-block;
+}
+.heart-toggle input:checked + label {
+	color: red;
+	transform: scale(1.3,1.3);
+}
+.toggle label {
+    display: inline-block;
+    width: 2em;
+    height: 1em;
+    border: 0.1em solid var(--color-neutral-dark);
+    border-radius: 1em;
+    box-sizing: content-box;
+    position: relative;
+    background-color: var(--color-neutral-light);
+    transition: all 0.3s;
+}
+.toggle input:checked+label {
+	background-color: var(--color-main-light);
+}
+.toggle label::before {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1em;
+	height: 1em;
+	background-color: var(--color-neutral-dark);
+	border-radius: 1em;
+	transition: all 0.3s;
+	transform: translateX(0);
+}
+.toggle input:checked + label::before {
+	transform: translateX(1em);
+}
+
+
+
+
+
+/*FORM*/
 input[type=text] {
   width: 100%;
   padding: 12px 20px;
