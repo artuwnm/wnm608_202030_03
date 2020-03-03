@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Throw Pillows</title>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:300|Oxanium:600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lib/css/styleguide.css">
+	<link rel="stylesheet" href="lib/css/gridsystem.css">
+    <link rel="stylesheet" href="css/storetheme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- header.navbar>h1+nav.nav -->
+	<header class="navbar" id="navbar">
+        <!-- remove container class here -->
+		<div class="display-flex">
+			<nav class="nav flex-none">
+				<div class="logo">
+					<a href="index.html">
+                        <img src="img/logo-white.png" alt="" style="width: 15%;">
+                    </a>
+				</div>
+				<div class="Search">
+					<input type="text" placeholder="Search..">
+				</div>
+				<!-- moved the search div out of the unordered list tag. having it inside the tag was preventing spacing -->
+				<ul  class="display-flex">
+					<li  class="dropdown">
+						<a href="home-decor.html" class="dropbtn">Home Decor</a>
+						<div  class="dropdown-content">
+							<a href="throw-pillows.html">Throw Pillows</a>
+							<a href="">Wall Clocks</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropbtn">Tech</a>
+						<div  class="dropdown-content">
+							<a href="#">Phone Cases</a>
+							<a href="#">Pad Cases</a>
+							<a href="#">Mouse Pad</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropbtn">Tabletop</a>
+						<div  class="dropdown-content">
+							<a href="#">Mugs</a>
+							<a href="#">Placemats</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropbtn">Stationery</a>
+						<div  class="dropdown-content">
+							<a href="#">Notebooks</a>
+							<a href="#">Postercards</a>
+							<a href="#">Stickers</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropbtn">Wall Art</a>
+					</li>
+				</ul>
+			</nav>	
+		</div>
+    </header>
+    <!-- dropdown -->
+	<div class="content">
+        <ul class="breadcrumb">
+            <li><a href="#">Home Decor</a></li>
+            <li><a href="#">Throw Pillows</a></li>    
+            <li>Mango Planet</li>   
+        </ul>
+        <dl class="better">
+            <dt><h4>Price<i class="down"></i></h4></dt>
+                <dd>
+                    <div class="slidecontainer">
+                        <p>Value: <span id="demo"></span></p>
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">    
+                    </div>
+                </dd>
+        </dl>
+        <dl class="better">
+            <dt><h4>Color<i class="down"></i></h4></dt>
+                <dd>
+                    <ul id="filter-options">
+                        <li><input type="checkbox" value="filter_red" data-filter_id="red"> Red</li>
+                        <li><input type="checkbox" value="filter_green" data-filter_id="green"> Green</li>
+                        <li><input type="checkbox" value="filter_blue" data-filter_id="blue"> Blue</li>
+                        <li><input type="checkbox" value="filter_orange" data-filter_id="orange"> Orange</li>
+                        <li><input type="checkbox" value="filter_yellow" data-filter_id="yellow"> Yellow</li>
+                    </ul>
+                </dd>
+        </dl>
+        <div class="product-list">
+            <div class="container">
+                <div class="grid gap">
+                    <div class="col-xs-3">     
+                        <div class="card soft">
+                            <a href="t-p-1.html">
+                                <img src="img/throw-pillow-1.jpg" alt="">
+                                <h4>Mango Planet</h4>
+                                <h5>$20</h5>
+                            </a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="grid gap">
+                    <div class="col-xs-3">     
+                        <div class="card soft">
+                            <a href="">
+                                <img src="img/throw-pillow-1.jpg" alt="">
+                                <h4>Mango Planet</h4>
+                                <h5>$20</h5>
+                            </a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="grid gap">
+                    <div class="col-xs-3">     
+                        <div class="card soft">
+                            <a href="">
+                                <img src="img/throw-pillow-1.jpg" alt="">
+                                <h4>Mango Planet</h4>
+                                <h5>$20</h5>
+                            </a>
+                        </div>  
+                    </div>
+                </div>
+            </div>	   	
+        </div>
+    </div>
+
+<script src="js/slider.js"></script>
+<script src="js/accordion.js"></script>
+<script src="js/filterbycolor.js"></script>
+</body>
+</html>

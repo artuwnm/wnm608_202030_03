@@ -41,8 +41,8 @@
 @media (min-width: 0) {
 	.col-xs-1 { grid-column: span 1; }
 	.col-xs-2 { grid-column: span 2; }
-	/* 3 */
-	.col-xs-3 { grid-column: span 12; }
+	 /* 12 */
+	.col-xs-3 { grid-column: span 3; }
 	.col-xs-4 { grid-column: span 4; }
 	.col-xs-5 { grid-column: span 5; }
 	.col-xs-6 { grid-column: span 6; }
