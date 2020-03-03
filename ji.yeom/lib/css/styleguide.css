@@ -9,6 +9,14 @@
 	--color-neutral-medium: #797979;
 	--color-neutral-light: #eee;
 
+	--color-main-light:#5AFF5A;
+    --color-main-medium:#5AFF5A;
+    --color-main-dark:#5AFF5A;
+
+    --color-black:black;
+    --color-white:white;
+    --color-blue:#1155CC;
+
 	--header-height: 3rem;
 }
 
@@ -19,15 +27,30 @@ body {
 	font-family: 'Ubuntu', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
 	font-family: 'Ubuntu', sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
 }
-
+h2 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+h3 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.25rem;
+	font-weight: bold;	
+}
+p {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1rem;
+}
+caption {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 0.75rem;
+    text-transform: lowercase;
+}
 
 a {
 	color: inherit;
@@ -40,23 +63,38 @@ a:hover {
 	text-decoration: none;
 }
 
+code {
+	white-space:pre-wrap;
+	text-align:left;
+}
+
+img:hover {
+	background-color: var(--color-main-light);
+	opacity: 0.5;
+}
 
 
 
 
 
 /* SMALL CLASSES */
-
 .container {
 	max-width: 1000px;
 	margin-right: auto;
 	margin-left: auto;
 }
 
+.square {
+  height: 100px;
+  width: 100px;
+/*  background-color: var(--color-main-medium);*/
+}
+
+
+
 
 
 /* ATOMIC CLASSES */
-
 .display-flex { display:flex; }
 .display-inline-flex { display:inline-flex; }
 .display-block { display:block; }
@@ -71,19 +109,20 @@ a:hover {
 
 
 
-/* COMPONENT CLASSES */
 
+
+/* COMPONENT CLASSES */
 .navbar {
-/*	color: var(--color-neutral-light);*/
+	color: var(--color-neutral-light);
 	background-color: var(--color-neutral-dark);
 	line-height: var(--header-height);
-	height: 80px;
-    padding: 30px;
+	height: 90px;
+    padding: 20px;
 }
 .navbar h1 {
 	margin: 0;
 	background-color: #fff;
-	font-color: #000;
+	color: #000;
 	font-size: 1rem;
 }
 .navbar a {
@@ -92,7 +131,6 @@ a:hover {
 .navbar a:hover {
 	color: #5AFF5A;
 }
-
 .nav ul {
 	list-style-type: none;
 	margin-top: 0;
@@ -103,8 +141,69 @@ a:hover {
 
 
 
-/* card */
 
+/* NAV */
+.nav-crumbs ul,
+.nav-pills ul,
+.nav-stretch ul,
+.nav-flex ul,
+.nav ul {
+	list-style-type: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+.nav-pills a,
+.nav-stretch a,
+.nav-flex a,
+.nav a {
+	display: block;
+	padding: 1.2em 2.5em;
+}
+	.nav-pills a:hover,
+	.nav-stretch a:hover,
+	.nav-flex a:hover,
+	.nav a:hover {
+		background-color: var(--color-main-medium);
+		color: var(--color-blue);
+		text-decoration: none;
+	}
+	.nav-pills li.active a,
+	.nav-stretch li.active a,
+	.nav-flex li.active a,
+	.nav li.active a {
+		background-color: var(--color-main-light);
+		color: inherit;
+	}
+
+.nav-crumbs ul,
+.nav-pills ul,
+.nav-stretch ul,
+.nav-flex ul {
+	display: flex;
+}
+
+.nav-stretch li {
+	flex: 1 1 auto;
+	text-align: center;
+}
+
+.nav-pills a {
+	border-radius: 2em;
+	padding: 0.5em 1em;
+}
+
+.nav-crumbs li:not(:first-child)::before {
+	content: '/';
+	margin: 0 0.4em;
+}
+
+
+
+
+
+/* CARD */
 .card {
 	background-color: #fff;
 	overflow: hidden;
@@ -113,31 +212,68 @@ a:hover {
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
-.card>:first-child { margin-top:0; }
-.card>:last-child { margin-bottom:0; }
+	.card>:first-child { margin-top:0; }
+	.card>:last-child { margin-bottom:0; }
 
-.card.soft {
-	box-shadow: 3px 3px 6px 6px rgba(0, 0, 0, 0.05);
-	border-radius: 0.25em;
-}
-.card.medium {
-	background-color: var(--color-neutral-medium);
-}
-.card.dark {
-	background-color: var(--color-neutral-dark);
-	color: var(--color-neutral-light);
-}
-.card.flat {
-	padding: 0;
-}
+	.card.soft {
+		box-shadow: 3px 3px 6px 6px rgba(0, 0, 0, 0.05);
+		border-radius: 0.25em;
+	}
+	.card.medium {
+		background-color: var(--color-neutral-medium);
+	}
+	.card.dark {
+		background-color: var(--color-neutral-dark);
+		color: var(--color-neutral-light);
+	}
+	.card.flat {
+		padding: 0;
+	}
 
 
-/* view window */
+
+
+
+/* VIEW WINDOW */
 .view-window {
-	height: 70vh;
+	height: 80vh;
 	overflow: hidden;
 	position: relative;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 }
+
+
+
+
+
+/* TABLE */
+.table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.table th,
+.table td {
+	text-align: left;
+	padding: 0.2em 0.5em;
+}
+
+
+
+
+
+/*Form*/
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=text]:focus {
+  background-color: var(--color-main-light);
+  /*border: 2px solid var(--color-main-light);*/
+}
+
+

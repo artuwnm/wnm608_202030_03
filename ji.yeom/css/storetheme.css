@@ -9,9 +9,10 @@ body {
 	/*background-color:var(--color-neutral-light);*/
 }
 
-h2 {
+/*h2 {
 	font-size: 1.5rem;
 }
+*/
 
 [class*='col-']>.card {
 	height:100%;
@@ -23,7 +24,6 @@ h2 {
 		display: block;
 	}
 }
-
 
 
 
