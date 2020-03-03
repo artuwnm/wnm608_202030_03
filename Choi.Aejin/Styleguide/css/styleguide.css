@@ -1,0 +1,284 @@
+body {
+	box-sizing:border-box;
+	margin:0;
+	font-size:100%;
+	font-family:'Source Serif Pro',serif;
+}
+
+h1{
+
+
+font-family: 'Source Serif Pro',serif;
+
+
+
+}
+
+
+
+h2{
+
+}
+h3,
+h4,
+h5,
+h6 {
+	
+font-family: 'Roboto', ;
+font color: red;
+
+}
+
+
+
+
+
+
+
+
+.container {
+	max-width:1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+.card {
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+	.card>:first-child { margin-top:0; }
+	.card>:last-child { margin-bottom:0; }
+
+	.card.soft {
+	    box-shadow: 6px 5px 15px 10px rgba(0, 0, 0, 0.1);
+		border-radius:0.3em;
+	}
+	.card.medium {
+		background-color:var(--color-neutral-medium);
+	}
+	.card.dark {
+		background-color:var(--color-neutral-dark);
+		color:var(--color-neutral-light);
+	}
+	.card.flat {
+		padding:0;
+	}
+
+
+
+
+
+.card1{
+
+
+    background-color: #817e32;
+    overflow: hidden;
+    position: relative;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+}
+
+.card2{
+
+
+
+
+    background-color: #2d2d2b;
+    overflow: hidden;
+    position: relative;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+
+}
+
+
+
+
+
+
+
+
+.navbar {
+  width: 100%;
+  background-color: white;
+  overflow: auto;
+  
+
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: #2d2d2b;
+  text-decoration: none;
+  font-size: 19px;
+  width: 18%; /* Four links of equal widths */
+  text-align: center;
+  
+
+
+}
+
+.navbar a:hover {
+  background-color: #f6f5f0;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+
+
+
+
+
+.pill-nav a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.pill-nav a:hover {
+  background-color: #f0e4d8;
+  color: white;
+}
+
+
+
+
+
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #2d2d2b;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #e2cabf;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+/* Add a black background color to the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #2d2d2b;
+  color: white;
+}
+
+/* Style the "active" element to highlight the current page */
+
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
