@@ -1,0 +1,31 @@
+:root {
+    --color-neutral-dark: #333;
+    --color-neutral-medium: #999;
+    --color-neutral-light: white;
+
+    --color-main-light: #eac3fa;
+    --color-main-medium: #8d39b0;
+    --color-main-dark: #44105a;
+}
+
+
+body {
+	background-color:white;
+	padding-bottom:10em;
+}
+
+
+
+
+[class*='col-']>.card {
+	height:100%;
+	margin:0;
+}
+
+
+
+@media (max-width:600px) {
+	.navbar .display-flex {
+		display:block;
+	}
+}
