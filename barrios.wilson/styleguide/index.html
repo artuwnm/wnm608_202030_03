@@ -11,6 +11,16 @@
 	<link rel="stylesheet" href="../lib/css/styleguide.css">
 	<link rel="stylesheet" href="../lib/css/gridsystem.css">
 	<link rel="stylesheet" href="../css/storetheme.css">
+
+
+	<style>
+	h2 {
+		margin-top:6em;
+		border-bottom:1px solid var(--color-neutral-medium);
+		margin-bottom:1em;
+	}
+	</style>
+
 </head>
 <body>
 
@@ -37,7 +47,8 @@
 			<li><a href="#forms">Forms</a></li>
 			<li><a href="#flex">Flex System</a></li>
 			<li><a href="#grid">Grid System</a></li>
-
+			<li><a href="#checkboxes">CheckBoxes</a></li>
+			<li><a href="#figures">Figures</a></li>
 		</ul>
 	</nav>
 
@@ -183,81 +194,266 @@
 
 			<script>document.write(makeTable('table'))</script>
 		</div>
+
+
+		<div class="card">
+			<h3>Striped Table</h3>
+
+			<script>document.write(makeTable('table striped'))</script>
+		</div>
+
+
+		<div class="card">
+			<h3>Horizontal Lined Table</h3>
+
+			<script>document.write(makeTable('table lined horizontal'))</script>
+		</div>
+
+
+		<div class="card">
+			<h3>Vertical Lined Table</h3>
+
+			<script>document.write(makeTable('table lined vertical'))</script>
+		</div>
+
+
+		<div class="card">
+			<h3>Horizontal Outlined Lined Table</h3>
+
+			<script>document.write(makeTable('table lined outline horizontal'))</script>
+		</div>
+
+		<div class="card">
+			<h3>All Lined Table</h3>
+
+			<script>document.write(makeTable('table lined all'))</script>
+		</div>
+
+		<div class="card">
+			<h3>Striped with Vertical and Outlines Table</h3>
+
+			<script>document.write(makeTable('table lined vertical outline striped'))</script>
+		</div>
 	</section>
+
+
 
 	<section class="container">
 		<h2 id="forms">Forms</h2>
 
-	<div class="card">
+		<div class="card">
+			<h2>Form Input</h2>
 
-		
-<ul class="form-style-1">
-    <li><label>Full Name <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" /> <input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
-    <li>
-        <label>Email <span class="required">*</span></label>
-        <input type="email" name="field3" class="field-long" />
-    </li>
-    <li>
-        <label>Subject</label>
-        <select name="field4" class="field-select">
-        <option value="Advertise">Advertise</option>
-        <option value="Partnership">Partnership</option>
-        <option value="General Question">General</option>
-        </select>
-    </li>
-    <li>
-        <label>Your Message <span class="required">*</span></label>
-        <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
-    </li>
-    <li>
-        <input type="submit" value="Submit" />
-    </li>
-</ul>
-</form>
-</div>
-</section>
-
-<section class="container">
-		<h2 id="flex">Flex System</h2>grid
+			<input type="text" class="form-input" placeholder="Text">
+			<input type="password" class="form-input" placeholder="Password">
+			<input type="number" class="form-input" placeholder="Number">
+			<input type="search" class="form-input" placeholder="Search">
+		</div>
 
 		<div class="card">
+			<h2>Form Label</h2>
 
-		<div class="flex-grid">
-  <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quisquam saepe quae quam dolores rem omnis est recusandae ullam asperiores..</div>
-  <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quisquam saepe quae quam dolores rem omnis est recusandae ullam asperiores..</div>
-  <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quisquam saepe quae quam dolores rem omnis est recusandae ullam asperiores..</div>
-</div>
+			<label class="form-label" for="input-example1">Example</label>
+			<input type="text" class="form-input" placeholder="Text" id="input-example1">
 
-<div class="flex-grid">
-  <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quisquam saepe quae quam dolores rem omnis est recusandae ullam asperiores..</div>
-  <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quisquam saepe quae quam dolores rem omnis est recusandae ullam asperiores.</div>
-  <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quisquam saepe quae quam dolores rem omnis est recusandae ullam asperiores.</div>
-  <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quisquam saepe quae quam dolores rem omnis est recusandae ullam asperiores.</div>
-  <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quisquam saepe quae quam dolores rem omnis est recusandae ullam asperiores.</div>
-</div>
+			<label class="form-label" for="input-example2">Example</label>
+			<input type="text" class="form-input" placeholder="Text" id="input-example2">
 
-<div class="flex-grid-thirds">
-  <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quisquam saepe quae quam dolores rem omnis est recusandae ullam asperiores.</div>
-  <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quisquam saepe quae quam dolores rem omnis est recusandae ullam asperiores.</div>
-  <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quisquam saepe quae quam dolores rem omnis est recusandae ullam asperiores..</div>
-</div>
-
-</div>
-</section>
-
-<section class="container">
-		<h2 id="grid">Grid</h2>
+			<label class="form-label" for="input-example3">Example</label>
+			<input type="text" class="form-input" placeholder="Text" id="input-example3">
+		</div>
 
 		<div class="card">
+			<h2>Form Control</h2>
 
-
-
-
+			<div class="form-control">
+				<label class="form-label" for="input-example1">Example</label>
+				<input type="text" class="form-input" placeholder="Text" id="input-example1">
 			</div>
-</section>
+
+			<div class="form-control">
+				<label class="form-label" for="input-example2">Example</label>
+				<input type="text" class="form-input" placeholder="Text" id="input-example2">
+			</div>
+
+			<div class="form-control">
+				<label class="form-label" for="input-example3">Example</label>
+				<input type="text" class="form-input" placeholder="Text" id="input-example3">
+			</div>
+		</div>
+
+		<div class="card">
+			<h2>Form Button</h2>
+
+			<div class="form-control">
+				<input type="submit" class="form-button" />
+			</div>
+
+			<div class="form-control">
+				<button type="button" class="form-button">Button</button>
+			</div>
+
+			<div class="form-control">
+				<a href="#" class="form-button">Anchor</a>
+			</div>
+		</div>
+
+		<div class="card">
+			<h2>Hotdog</h2>
+			
+			<div class="form-control">
+				<input type="search" class="hotdog" placeholder="Search" />
+			</div>
+			
+			<div class="form-control">
+				<label class="hotdog">
+					<div class="flex-none icon">
+						🔍
+					</div>
+					<div class="flex-stretch">
+						<input type="search" placeholder="Search" />
+					</div>
+				</label>
+			</div>
+
+			<div class="display-flex">
+				<div class="flex-stretch"></div>
+				<div class="flex-none">
+					<div class="form-control">
+						<input type="search" class="hotdog" placeholder="Search" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
+	<section class="container">
+		<h2 id="checkboxes">Check Boxes</h2>
+
+		<div class="card">
+			<h3>Basic Checkbox</h3>
+
+			<div>
+				<label for="check-example1">Checkbox</label>
+				<label>
+					<input type="checkbox" id="check-example1">
+					Checkbox
+				</label>
+			</div>
+
+			<h3>Heart Checkbox</h3>
+
+			<div>
+				<div class="heart-toggle">
+					<input type="checkbox" id="heart-example" class="hidden">
+					<label for="heart-example">&hearts;</label>
+				</div>
+			</div>
+
+			<h3>Toggle Checkbox</h3>
+
+			<div>
+				<div class="toggle">
+					<input type="checkbox" id="toggle1" class="hidden">
+					<label for="toggle1"></label>
+				</div>
+				<div class="toggle" style="font-size:2em">
+					<input type="checkbox" id="toggle2" class="hidden">
+					<label for="toggle2"></label>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
-	</body>
+	<section class="container">
+		<h2 id="figures">Figures</h2>
+
+		<div class="card">
+			<h3>Basic Figure</h3>
+
+			<div>
+				<!-- figure>img+figcaption -->
+				<figure class="product-figure">
+					<img src="https://via.placeholder.com/300" alt="">
+					<figcaption>
+						Product
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+		<div class="card">
+			<h3>Soft Figure</h3>
+
+			<div>
+				<!-- figure>img+figcaption -->
+				<figure class="product-figure soft">
+					<img src="https://via.placeholder.com/300" alt="">
+					<figcaption>
+						Product
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+		<div class="card">
+			<h3>Overlay Figure</h3>
+
+			<a href="#" class="display-block">
+				<!-- figure>img+figcaption -->
+				<figure class="product-figure overlay">
+					<img src="https://via.placeholder.com/300" alt="">
+					<figcaption>
+						Product
+					</figcaption>
+				</figure>
+			</a>
+		</div>
+
+		<h3>Gridded Figures</h3>
+
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				
+
+			<div>
+				<!-- figure>img+figcaption -->
+				<figure class="product-figure soft">
+					<img src="https://via.placeholder.com/300" alt="">
+					<figcaption>
+						Product
+					</figcaption>
+				</figure>
+			</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				
+
+			<div>
+				<!-- figure>img+figcaption -->
+				<figure class="product-figure soft">
+					<img src="https://via.placeholder.com/300" alt="">
+					<figcaption>
+						Product
+					</figcaption>
+				</figure>
+			</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				
+
+			<div>
+				<!-- figure>img+figcaption -->
+				<figure class="product-figure soft">
+					<img src="https://via.placeholder.com/300" alt="">
+					<figcaption>
+						Product
+					</figcaption>
+				</figure>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+</body>
 </html>
