@@ -4,9 +4,9 @@
 	box-sizing:inherit;
 }
 
-:root {
+/*:root {
     --color-neutral-dark: #332d2d;
-    --color-neutral-medium: #988c8c;
+    --color-neutral-medium: #000000;
     --color-neutral-light: #ece7e7;
 
     --color-main-light:blue;
@@ -17,13 +17,14 @@
     --color-white:white;
 
     --header-height:3rem;
-}
+}*/
 
 body {
 	box-sizing:border-box;
 	margin:0;
 	font-size:100%;
-	font-family:Helvetica,Arial,sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	background-color: black;
 }
 
 h1,
@@ -32,7 +33,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-family:Georgia,"Times New Roman",serif;
+	font-family:Didot;
+	font-variant-caps: all-small-caps;
 }
 
 
@@ -194,7 +196,7 @@ code {
 
 
 
-/* view window */
+/* view window */a
 .view-window {
 	height:100vh;
 	overflow:hidden;
@@ -208,15 +210,71 @@ code {
 
 
 
+/* FORMS */
 
-
-/* TABLE */
-.table {
+.form-input {
+	display:block;
 	width:100%;
-	border-collapse:collapse;
+	border-width:0;
+	border-bottom:1px solid var(--color-neutral-light);
+	color:inherit;
+	font:inherit;
+	padding:0.5em 1em;
+	-webkit-appearance:none;
+	outline:0;
 }
-.table th,
-.table td {
-	text-align:left;
-	padding:0.2em 0.5em;
+.form-label {
+	display:block;
+	width:100%;
+	font-size:0.8em;
+	color:var(--color-neutral-medium);
 }
+.form-control {
+	margin:1em 0;
+}
+
+.form-button {
+	display:block;
+	width:100%;
+	border-width:0;
+	color:inherit;
+	font:inherit;
+	padding:0.5em 1em;
+	-webkit-appearance:none;
+	outline:0;
+	text-align:center;
+	background-color:var(--color-neutral-secondbreakfast);
+	border-radius:0.3em;
+	text-decoration:none;
+	cursor:pointer;
+}
+.form-button:hover {
+	text-decoration:none;
+}
+
+
+.hotdog {
+	display:block;
+	width:100%;
+	padding:0.5em 1em;
+	background-color:var(--color-neutral-light);
+	border-radius:2em;
+	border-width:0;
+	font:inherit;
+	color:inherit;
+	outline:0;
+	display:flex;
+}
+.hotdog input {
+	border-width:0;
+	display:block;
+	color:inherit;
+	font:inherit;
+	background-color:transparent;
+	outline:0;
+	width:100%;
+}
+.hotdog .icon {
+	padding:0 1em;
+}
+
