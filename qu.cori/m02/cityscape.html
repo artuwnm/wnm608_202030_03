@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>608-01</title>
+	<link rel="stylesheet" href="assets/css/gridsystem.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="menu">
+	        <div class="menu-inner">
+	            <span class="menu-title">coriq_</span>
+	            <nav>
+	                <ul>
+	                	<li><a class="active" href="cityscape.html">CITYSCAPE</a></li>
+	                	<li><a href="landscape.html">LANDSCAPE</a></li>
+	                	<li><a href="portrait.html">PORTRAIT</a></li>
+	                	<li><a href="life.html">LIFE</a></li>
+	                </ul>
+	            </nav>
+	            <nav>
+	            	<ul>
+	            		<li><a href="shop.html">SHOP</a></li>
+	                	<li><a href="about.html">ABOUT</a></li>
+	                </ul>
+	            </nav>
+	        </div>
+	    </div>
+
+		<div class="img-container grid grid-3">
+			<div class="img-cover">
+				<div class="left" id="left"></div>
+				<div class="middle" id="middle"></div>
+				<div class="right" id="right"></div>
+			</div>
+			<div class="img-box">
+				<img src="assets/img/cityscape/1.JPG" alt="">
+			</div>
+			<div class="img-box">
+				<img src="assets/img/cityscape/2.JPG" alt="">
+			</div>
+			<div class="img-box">
+				<img src="assets/img/cityscape/3.JPG" alt="">
+			</div>
+			<div class="img-box">
+				<img class="horizontal" src="assets/img/cityscape/4.JPG" alt="">
+			</div>
+			<!-- <div class="img-box">
+				<img class="horizontal" src="assets/img/cityscape/5.JPG" alt="">
+			</div>
+			<div class="img-box">
+				<img src="assets/img/cityscape/4.JPG" alt="">
+			</div> -->
+			<div class="img-box">
+				<img src="assets/img/cityscape/5.JPG" alt="">
+			</div>
+			<div class="img-box">
+				<img class="horizontal" src="assets/img/cityscape/6.JPG" alt="">
+			</div>
+			<div class="img-box">
+				<img src="assets/img/cityscape/7.JPG" alt="">
+			</div>
+			<div class="img-box">
+				<img src="assets/img/cityscape/8.JPG" alt="">
+			</div>
+			<!-- <div class="img-box">
+				<img src="assets/img/cityscape/9.JPG" alt="">
+			</div>
+			<div class="img-box">
+				<img src="assets/img/cityscape/10.JPG" alt="">
+			</div> -->
+			
+		</div>
+		<div id="photo-nav">
+			<!-- <ul>
+				<li></li>
+			</ul> -->
+		</div>	
+	</div>
+	<!-- <div class="a">
+		<div class="b"></div>
+	</div> -->
+
+
+
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/function.js"></script>
+	<!-- <script src="assets/js/jquery.js"></script>
+	<script>
+		$(".img-container")[0].addEventListener('click',function(e) {
+			if(e.target&&e.target.nodeName.toUpperCase()=="IMG") {
+				
+       			let a = e.target;
+       			let index = $(".img-container img").index(a);
+       			if($('.img-container .img-box')[index].className == "img-box active") {
+       				$(".img-container")[0].className = "img-container";
+       				$('.img-container .img-box').removeClass('active');
+       			}
+       			else {
+       				$(".img-container")[0].className = "img-container open";
+       				$('.img-container .img-box').removeClass('active');
+       				$('.img-container .img-box')[index].className = "img-box active";
+       			}
+       			
+       		}
+			
+		})
+	</script> -->					
+</body>
+</html>

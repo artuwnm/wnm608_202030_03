@@ -1,3 +1,5 @@
+
+
 [class*='col-']>.card {
 	height: 100%;
 }
@@ -76,6 +78,9 @@
 	.col-xl-12 {grid-column: span 12;	}
 }
 
+.card {
+	background-color: #ccc;
+}
 
 
 
