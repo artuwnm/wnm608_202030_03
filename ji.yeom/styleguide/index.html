@@ -18,21 +18,26 @@
 
 <body>
 	<header class="container">
-		<div class="card soft">
-			<h1>Style Guide of <span style="font color: #5AFF5A">PIN YOUR PINS</span></h1>
+		<div class="card soft" style="background-color: #000">
+			<h1 style="color: #fff">Style Guide of <span style="color: #5AFF5A">PIN YOUR PINS</span></h1>
 		</div>
 	</header>
 
 	<nav class="container">
 		<h2>Table of Contents</h2>
 		<ul>
+			<li><a href="#buttons">Buttons</a></li>
 			<li><a href="#cards">Cards</a></li>
 			<li><a href="#checkboxes">Check Boxes</a></li>
 			<li><a href="#colors">Colors</a></li>
-			<!-- <li><a href="#grid">Grid System</a></li> -->
+			<li><a href="#grids">Grid System</a></li>
 			<!-- <li><a href="#flex">Flex System</a></li> -->
 			<li><a href="#figures">Figures</a></li>
 			<li><a href="#forms">Forms</a></li>
+			<ul>
+				<li><a href="#checkout">Checkout Form</a></li>
+				<li><a href="#search">Search Bar</a></li>
+			</ul>
 			<!-- <li><a href="#images">Images</a></li> -->
 			<li><a href="#navigations">Navigations</a></li>
 			<li><a href="#tables">Tables</a></li>
@@ -40,13 +45,32 @@
 			<ul>
 				<li><a href="#headings">Headings</a></li>
 				<li><a href="#paragraphs">Paragraphs</a></li>
-				<li><a href="#caption">Caption</li>
+				<li><a href="#smalltext">Small Text</a></li>
 			</ul>
 			<!-- <li><a href="#viewwindow">View Window</a></li> -->
 		</ul>
 	</nav>
 
+<br>
+<br>
+	<section class="container">
+		<h2 id="buttons">Buttons</h2>
+		<div class="card soft">
+			<h3>Primary Button</h3>
+			<button class="button primary">CHECKOUT</button>
 
+			<h3>Secondary Button</h3>
+			<button class="button secondary">SHOP ALL</button>
+
+			<h3>Wishlist Button</h3>
+			<button class="button secondary heart-toggle" data-children-count="1">
+				<input type="checkbox" id="heart-example" class="hidden">
+				<label for="heart-example">WISHLIST ♥</label>
+			</button>
+		</div>
+	</section>
+
+<br>
 <br>
 	<section class="container">
 		<h2 id="cards">Cards</h2>
@@ -66,27 +90,24 @@
 		</div>
 	</section>
 
-
+<br>
 <br>
 	<section class="container">
 		<h2 id="checkboxes">Check Boxes</h2>
 		<div class="card soft">
 			<h3>Basic Checkbox</h3>
 			<div>
-				<label for="check-example1"></label>
 				<label>
 					<input type="checkbox" id="check-example1">
 					Subscribtion
 				</label>
 			</div>
 
-			<h3>Heart Checkbox</h3>
-			<div>
-				<div class="heart-toggle" data-children-count="1">
-					<input type="checkbox" id="heart-example" class="hidden">
-					<label for="heart-example">♥</label>
-				</div>
-			</div>
+<!-- 			<h3>Heart Checkbox</h3>
+			<div class="heart-toggle">
+				<input type="checkbox" id="heart-example" class="hidden">
+				<label for="heart-example">♥</label>
+			</div> -->
 
 			<h3>Toggle Checkbox</h3>
 			<div>
@@ -94,49 +115,122 @@
 					<input type="checkbox" id="toggle1" class="hidden">
 					<label for="toggle1"></label>
 				</div>
-<!-- 				<div class="toggle" style="font-size:2em" data-children-count="1">
-					<input type="checkbox" id="toggle2" class="hidden">
-					<label for="toggle2"></label>
-				</div>
- -->			</div>
-
+			</div>
 		</div>
 	</section>
 
-
+<br>
 <br>
 	<section class="container">
 		<h2 id="colors">Colors</h2>
-		<div class="card soft nav-flex">
-			<div class="card">
-				<div class="square" style="background-color: #5aff5a"></div>
-				<p>Primary Color:<br>
-				#5AFF5A</p>
-			</div>
-			<div class="card">
-				<div class="square" style="background-color: #1155cc"></div>
-				<p>Secondary Color:<br>
-				#1155CC</p>
-			</div>
-			<div class="card">
-				<div class="square" style="background-color: #eeeeee"></div>
-				<p>Text & Background:<br>
-				#EEEEEE</p>
-			</div>
-			<div class="card">
-				<div class="square" style="background-color: #797979"></div>
-				<p>Text & Background:<br>
-				#797979</p>
-			</div>
-			<div class="card">
-				<div class="square" style="background-color: #000"></div>
-				<p>Text & Background:<br>
-				#000</p>
-			</div>						
+		<div class="card soft">
+<!-- 			<div class="card"> -->
+			<h3>Primary Color</h3>
+				<div class="card square" style="background-color: #5aff5a">
+					<p>#5AFF5A</p>
+				</div>
+			
+			<h3>Seconday Color</h3>
+				<div class="card square" style="background-color: #1155cc">
+					<p>#1155CC</p>
+				</div>
+
+			<h3>Text & Background Color</h3>
+				<div class="card square" style="background-color: #eeeeee">
+					<p>#EEEEEE</p>
+				</div>
+				<div class="card square" style="background-color: #797979">
+					<p>#797979</p>
+				</div>
+				<div class="card square" style="background-color: #000">
+					<p style="color: white">#000</p>
+				</div>					
 		</div>
 	</section>
 
+<br>
+<br>
+	<section class="container">
+		<h2 id="grids">Grid System</h2>
 
+		<div class="card soft">
+			<h3>Grid column 2</h3>
+			<div class="grid gap">
+				<div class="col-xs-12 col-md-6">
+					<div class="rectangle"></div>
+				</div>
+				<div class="col-xs-12 col-md-6">				
+					<div>
+					<div class="rectangle"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card soft">
+			<h3>Grid column 4</h3>
+			<div class="grid gap">
+				<div class="col-xs-12 col-md-3">
+					<div>
+					<div class="rectangle"></div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3">				
+					<div>
+					<div class="rectangle"></div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3">				
+					<div>
+					<div class="rectangle"></div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3">				
+					<div>
+					<div class="rectangle"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card soft">
+			<h3>Grid column 6</h3>
+			<div class="grid gap">
+				<div class="col-xs-12 col-md-2">
+					<div>
+					<div class="rectangle"></div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-2">				
+					<div>
+					<div class="rectangle"></div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-2">				
+					<div>
+					<div class="rectangle"></div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-2">				
+					<div>
+					<div class="rectangle"></div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-2">				
+					<div>
+					<div class="rectangle"></div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-2">				
+					<div>
+					<div class="rectangle"></div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+<br>
 <br>
 	<section class="container">
 		<h2 id="figures">Figures</h2>
@@ -146,100 +240,103 @@
 				<!-- figure>img+figcaption -->
 				<figure class="product-figure">
 					<img src="https://via.placeholder.com/300" alt="">
-					<figcaption>
-						Product
-					</figcaption>
+					<figcaption>Product</figcaption>
 				</figure>
 			</div>
 
 			<h3>Soft Figure</h3>
 			<div>
-				<!-- figure>img+figcaption -->
 				<figure class="product-figure soft">
 					<img src="https://via.placeholder.com/300" alt="">
-					<figcaption>
-						Product
-					</figcaption>
+					<figcaption>Product</figcaption>
 				</figure>
 			</div>
 
 			<h3>Overlay Figure</h3>
-			<a href="#" class="display-block">
+			<a href="#" class="display-block"></a>
 			<div>
 				<!-- figure>img+figcaption -->
 				<figure class="product-figure overlay">
 					<img src="https://via.placeholder.com/300" alt="">
-					<figcaption>
-						Product
-					</figcaption>
+					<figcaption>Product</figcaption>
 				</figure>
 			</div>
 
 			<h3>Gridded Figures</h3>
 			<div class="grid gap">
-
-				<div class="col-xs-12 col-md-4">
-					<div>
-						<figure class="product-figure soft">
-							<img src="https://via.placeholder.com/300" alt="">
-							<figcaption>
-							Product
-							</figcaption>
-						</figure>
-					</div>
+			<div class="col-xs-12 col-md-3">				
+				<div>
+					<figure class="product-figure">
+						<img src="https://via.placeholder.com/300" alt="">
+						<figcaption>Product</figcaption>
+					</figure>
 				</div>
-
-				<div class="col-xs-12 col-md-4">
-					<div>
-						<figure class="product-figure soft">
-							<img src="https://via.placeholder.com/300" alt="">
-							<figcaption>
-							Product
-							</figcaption>
-						</figure>
-					</div>
-				</div>
-
-				<div class="col-xs-12 col-md-4">
-					<div>
-						<figure class="product-figure soft">
-							<img src="https://via.placeholder.com/300" alt="">
-							<figcaption>
-							Product
-							</figcaption>
-						</figure>
-					</div>
-				</div>
-			
 			</div>
-
+			<div class="col-xs-12 col-md-3">				
+				<div>
+					<figure class="product-figure">
+						<img src="https://via.placeholder.com/300" alt="">
+						<figcaption>Product</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-3">				
+				<div>
+					<figure class="product-figure">
+						<img src="https://via.placeholder.com/300" alt="">
+						<figcaption>Product</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-3">				
+				<div>
+					<figure class="product-figure">
+						<img src="https://via.placeholder.com/300" alt="">
+						<figcaption>Product</figcaption>
+					</figure>
+				</div>
+			</div>
+			
 		</div>
 	</section>
 
-
+<br>
 <br>
 	<section class="container">
 		<h2 id="forms">Forms</h2>
-		<div class="card soft">
-			<h3>Form Title</h3>
 
-			<form>
-				<input type="text" id="fname" name="fname" placeholder="First name">
-				<input type="text" id="lname" name="lname" placeholder="Last name">
-				<input type="text" id="lname" name="lname" placeholder="Email">
-				<input type="submit">
-			</form>
+		<div class="card soft">
+			<h3 id="checkout">Form Input</h3>
+				<div class="grid gap">
+				<div class="col-4">
+				<input type="fname" class="form-input" placeholder="First Name">
+				<input type="lname" class="form-input" placeholder="Last Name">
+				<input type="email" class="form-input" placeholder="Email">
+				<input type="phone" class="form-input" placeholder="Phone">
+				</div>
+			</div>
 		</div>
+
+		<div class="card soft">
+			<h3 id="search">Search Bar</h3>
+			<div class="display-flex">
+				<div class="flex-stretch"></div>
+				<div class="flex-none">
+					<div class="form-control" data-children-count="1">
+						<input type="search" class="hotdog" placeholder="Search">
+					</div>
+				</div>
+			</div>
 	</section>
 
-
+<br>
 <br>
 	<section class="container">
 		<h2 id="navigations">Navigations</h2>
 
 		<script>
 			const makeNav = (classes='') => {
-				const links = ['store','about','account', ''cart];
+				const links = ['STORE','ABOUT','ACCOUNT','CART'];
 				let ran = Math.floor(Math.random()*links.length);
 				return `
 				<div>
@@ -257,29 +354,10 @@
 			}
 		</script>
 
-<!-- 	<div class="card">
-			<h3>Basic Nav</h3>
-			<script>document.write(makeNav("nav"))</script>
-			<div>
-				<nav class="nav">
-					<ul>
-						<li class="">
-							<a href="#">home</a>
-						</li>
-						<li class="">
-							<a href="#">store</a>
-						</li>
-						<li class="active">
-							<a href="#">about</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</div> -->
-		<div class="card soft">
-			<h3>Flex Nav</h3>
+	<div class="card soft">
+		<h3>Flex Nav</h3>
 			<script>document.write(makeNav("nav-flex"))</script>
-			<div>
+<!-- 		<div>
 				<nav class="nav-flex">
 					<ul>
 						<li class="active">
@@ -296,69 +374,21 @@
 						</li>
 					</ul>
 				</nav>
-			</div>
-		</div>
-		<div class="card soft">
-			<h3>Stretch Nav</h3>
-			<script>document.write(makeNav("nav-stretch"))</script>
-			<div>
-				<nav class="nav-stretch">
-					<ul>
-						<li class="active">
-							<a href="#">STORE</a>
-						</li>
-						<li class="">
-							<a href="#">ABOUT</a>
-						</li>
-						<li class="">
-							<a href="#">ACCOUT</a>
-						</li>
-						<li class="">
-							<a href="#">CART</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-<!-- 		<div class="card">
-			<h3>Pills Nav</h3>
-			<script>document.write(makeNav("nav-pills"))</script>
-			<div>
-				<nav class="nav-pills">
-					<ul>
-						<li class="active">
-							<a href="#">home</a>
-						</li>
-						<li class="">
-							<a href="#">store</a>
-						</li>
-						<li class="">
-							<a href="#">about</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</div> -->
+			</div> -->
+	</div>
 	<div class="card soft">
-			<h3>Breadcrumb Nav</h3>
+		<h3>Stretch Nav</h3>
+			<script>document.write(makeNav("nav-stretch"))</script>
+	</div>
+	<div class="card soft">
+		<h3>Breadcrumb Nav</h3>
 			<script>document.write(makeNav("nav-crumbs"))</script>
 			<div>
-				<nav class="nav-crumbs">
-					<ul>
-						<li class="active">
-							<a href="#">HOME</a>
-						</li>
-						<li class="">
-							<a href="#">STORE</a>
-						</li>
-						<li class="">
-							<a href="#">PIN</a>
-						</li>
-					</ul>
-				</nav>
+				<nav class="nav-crumbs"></nav>
 			</div>
 		</div>
 	</section>
+
 
 	<script>
 		$("[class^='nav'] a").on("click",function(e){
@@ -389,34 +419,29 @@
 		</table>
 		`;
 	}
-	</script>
+	</script>	
 
-
+<br>
 <br>
 	<section class="container">
 		<h2 id="tables">Tables</h2>
-		<div class="card soft">
+<!-- 		<div class="card soft">
 			<h3>Basic Table</h3>
-			<script>document.write(makeTable('table'))</script>
-		</div>
+			<script>document.write(makeTable('table striped'))</script>
+		</div> -->
 
-		<div class="card soft">
+<!-- 		<div class="card soft">
 			<h3>Horizontal Lined Table</h3>
-			<script>document.write(makeTable('table lined horizontal'))</script>
-		</div>
+			<script>document.write(makeTable('table lined horizontal striped'))</script>
+		</div> -->
 
 		<div class="card soft">
-			<h3>All Lined Table</h3>
-			<script>document.write(makeTable('table lined all'))</script>
-		</div>
-
-		<div class="card soft">
-			<h3>Striped with Vertical and Outlines Table</h3>
-			<script>document.write(makeTable('table lined vertical outline striped'))</script>
+			<h3>Administration Table</h3>
+			<script>document.write(makeTable('table lined all striped'))</script>
 		</div>
 	</section>
 
-
+<br>
 <br>
 	<section class="container">
 		<h2 id="typography">Typography</h2>
@@ -441,9 +466,9 @@
 			<p>Ipsa officiis necessitatibus perspiciatis vero, porro soluta temporibus quod ut dignissimos earum a optio dolorum, pariatur sed harum quaerat! Deleniti.</p>
 		</div>
 		<div class="card soft">
-			<h3 id="caption">Caption</h3>
+			<h3 id="smalltext">Small Text</h3>
 			<hr>
-			<caption>Lorem ipsum dolor sit amet</caption>
+			<small-text>Lorem ipsum dolor sit amet</small-text>
 		</div>
 	</section>
 

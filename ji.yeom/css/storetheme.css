@@ -5,11 +5,11 @@
 }
 
 
-/*body {
-	background-color:var(--color-neutral-light);
-	padding-bottom:10em;
+body {
+/*	background-color: var(--color-neutral-light);
+*/	padding-bottom: 5em;
 }
-*/
+
 
 [class*='col-']>.card {
 	height:100%;
@@ -33,14 +33,13 @@
 	background-color: #fff;
 }
 	.product-figure.soft {
-		border-radius: 1em;
+		border-radius: .5em;
 		overflow: hidden;
 		box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 	}
 	.product-figure.overlay {
 		position: relative;
 		overflow: hidden;
-		border-radius: 1em;
 	}
 	.product-figure.overlay figcaption {
 		position: absolute;
