@@ -1,0 +1,14 @@
+:root {
+    --color-neutral-dark: #333;
+    --color-neutral-medium: #999;
+    --color-neutral-light: #2E4C69;
+
+    --color-main-light: #F0E9E9;
+    --color-main-medium: #E4D8D7;
+    --color-main-dark: #44105a;
+}
+
+[class*='col-']>.card {
+	height:100%;
+	margin:0;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Caliwater Style Guide</title>
+
+<!-- meta:vp -->
+	<meta name="viewport" content="width=device-width">
+
+
+	<link rel="stylesheet" href="../lib/css/styleguide1.css">
+	<link rel="stylesheet" href="../lib/css/gridsystem.css">
+	<link rel="stylesheet" href="../css/storetheme1.css">
+
+<!-- font family -->
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<h1> Table of Contents</h1>
+	<nav class="container1">
+		<ul>
+			<li><a href="#typography">Typography</a></li>
+			<li><a href="#images">Images</a></li>
+			<!-- <li><a href="#cards">Cards</a></li> -->
+			<li><a href="#viewwindow">View Window</a></li>
+			<li><a href="#navigations">Navigations</a></li>
+			<li><a href="#tables">Tables</a></li>
+			<li><a href="#forms">Forms</a></li>
+			<li><a href="#flex">Flex System</a></li>
+			<li><a href="#grid">Grid System</a></li>
+
+		</ul>
+	</nav>
+
+
+<h1 id="typography">1. Typography</h2>
+<section class="container2">
+
+			<div class="card">
+				<h1 id="Heading">Heading</h1>
+			<hr>
+			<!-- h$*6>{Heading $} --> 
+			<h1 id="headingexample">Heading 1: 'Raleway', Semibold, 30px</h1>
+			<h2>Heading 2: 'Raleway', Regular, 20px</h2>
+			<h3>Heading 3: 'Raleway', Bold, 16px</h3>
+
+			<code>
+&lt;h1>Heading 1&lt;/h1>
+&lt;h2>Heading 2&lt;/h2>
+&lt;h3>Heading 3&lt;/h3>
+
+			</code>
+
+		</div>
+			<div class="card">
+			<h1 id="paragraphs">Paragraphs</h1>
+			<hr>
+			<!-- p*3>lorem20 -->
+			<p><strong>Body Font Style: padding-left: 10px; 'Raleway', Regular, 14px; </strong></p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quisquam saepe quae quam dolores rem omnis est recusandae ullam asperiores.</p>
+			<p>Saepe ratione quidem neque dolores nobis harum cum, numquam, unde pariatur rem possimus itaque non recusandae tempora amet laudantium et.</p>
+			<p>Ipsa officiis necessitatibus perspiciatis vero, porro soluta temporibus quod ut dignissimos earum a optio dolorum, pariatur sed harum quaerat! Deleniti.</p>
+			<br>
+			<p><strong>Body Bold Font 2 Style: padding-left: 10px; 'Raleway', Bold, 14px; </strong></p>
+			<p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quisquam saepe quae quam dolores rem omnis est recusandae ullam asperiores.</strong></p>
+			<p><strong>Saepe ratione quidem neque dolores nobis harum cum, numquam, unde pariatur rem possimus itaque non recusandae tempora amet laudantium et.</strong></p>
+			<p><strong>Ipsa officiis necessitatibus perspiciatis vero, porro soluta temporibus quod ut dignissimos earum a optio dolorum, pariatur sed harum quaerat! Deleniti.</strong></p>
+		</div>
+
+</section>
+
+<h1 id="images">2. Images</h1>
+
+		<div class="table">
+			<img class="watermelon" src="Watermelon.jpeg">
+			<img class="watermelon" src="Watermelon.jpeg">
+			<img class="watermelon" src="Watermelon.jpeg">
+			<img class="watermelon" src="Watermelon.jpeg">
+		</div>
+	<div class="card1">
+		<code>
+border:1px solid grey;
+border-radius:8px;
+margin:3px;
+		</code>
+	</div>	
+<br>
+<br>
+
+<h1 id="viewwindow">3. Viewwindow</h1>
+<div class="card1">
+<h1 id="Codes">Code</h1>
+<code>
+.view-window {
+height:100vh;
+overflow:hidden;
+position:relative;
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+}
+</code>
+</div>
+<h1 id="navigations">4. Navigation Bar</h1>
+<br>
+		<header>
+			<img class="logo" src="Logo.png">
+		
+		<nav>
+			<ul>
+				<li class=shopping><a href="">Shopping Bag</a></li>
+				<li><a href="">Login</a></li>
+				<li><a href="">Contact</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Product</a></li>
+				<li><a class="active" href="">Home</a></li>
+
+			</ul>
+		</nav>
+	
+	</header>
+
+<br>
+<br>
+<br>
+
+<h1 id="tables">5. Tables</h1>
+<div class="card1">
+	<h1 id="StripedTable">Striped Table</h1>
+	<hr>
+		<script>
+	const makeTable = (classes='') => {
+		const head = ['Product ID','Name','Type','Price','In Stock'];
+		const body = [
+			['Orange',"Water",'3,99','100'],
+			['Lemon',"Water",'3,99','150'],
+			['Watermelon',"Water",'3,99','94'],
+			['Peach',"Water",'3,99','100'],
+			['Banana',"Water",'3,99','200'],
+		];
+		// let ran = Math.floor(Math.random()*links.length);
+		return `
+		<table class="${classes}">
+			<thead><tr>${head.reduce((r,o)=>r+`<th>${o}</th>`,'')}</tr></thead>
+			<tbody>${body.reduce((r,o,i)=>r+
+				`<tr>${
+					[i+1,...o].reduce((r,o)=>r+`<td>${o}</td>`,'')
+				}</tr>`,'')
+			}</tbody>
+		</table>
+		`;
+	}
+	</script>
+
+		<div class="card">
+
+			<script>document.write(makeTable('table striped'))</script>
+		</div>
+<p> * This table will be used in Product Administration page. </p>
+</div>	
+
+	<h1 id="forms">6. Forms</h1>
+<div class="card1">
+	<h1 id="FormInput">Form Input</h1>
+
+			<input type="text" class="form-input" placeholder="Username/Email Address">
+			<input type="password" class="form-input" placeholder="Password">
+	<h1 id="FormButton">Form Button</h2>
+
+			<div class="form-control">
+				<input type="submit" class="form-button" value="Submit">
+			</div>
+
+			<div class="form-control">
+				<button type="button" class="form-button">Button</button>
+			</div>
+
+			<div class="form-control">
+				<a href="#" class="form-button">Anchor</a>
+			</div>
+</div>
+</body>
+</html>
