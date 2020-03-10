@@ -9,9 +9,9 @@
 	--color-neutral-medium:#999;
 	--color-neutral-light:#eee;
 
-	 --color-main-light: #dfe6a2;
-    --color-main-medium: #bcce26;
-    --color-main-dark: #505807;
+	 --color-main-light: #cddfe0;
+    --color-main-medium: #41253c;
+    --color-main-dark: #0d1722;
 
     --color-black:black;
     --color-white:white;
@@ -21,6 +21,7 @@
 
 
 body {
+	background-color:var(--color-main-light);
 	box-sizing: border-box;
 	margin:0;
 	font-size:100%; 
@@ -31,6 +32,7 @@ body {
 h1,
 h2
 {
+	color:var(--color-main-medium);
 	font-family: 'Benton', sans-serif ;
 }
 
@@ -106,11 +108,8 @@ code {
 	padding: 0 1em;
 }
 
-.nav-crumbs ul,
-.nav-pills ul,
 .nav-stretch ul,
-.nav-flex ul,
-.nav ul {
+ {
 	list-style-type:none;
 	margin-top: 0;
 	margin-bottom: 0;
