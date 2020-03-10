@@ -5,6 +5,9 @@
 	<title>Site Style Guide</title>
 	<!-- meta:vp -->
 	<meta name="viewport" content="width=device-width">
+	<!-- Icon library -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
@@ -24,235 +27,422 @@
 	</header>
 
 	<nav class="container">
-		<h2>Table of Contents</h2>
+		<h3>Table of Contents</h3>
 		<ul>
-			<li><a href="#buttons">Buttons</a></li>
-			<li><a href="#cards">Cards</a></li>
-			<li><a href="#checkboxes">Check Boxes</a></li>
 			<li><a href="#colors">Colors</a></li>
-			<li><a href="#grids">Grid System</a></li>
-			<!-- <li><a href="#flex">Flex System</a></li> -->
-			<li><a href="#figures">Figures</a></li>
-			<li><a href="#forms">Forms</a></li>
-			<ul>
-				<li><a href="#checkout">Checkout Form</a></li>
-				<li><a href="#search">Search Bar</a></li>
-			</ul>
-			<!-- <li><a href="#images">Images</a></li> -->
-			<li><a href="#navigations">Navigations</a></li>
-			<li><a href="#tables">Tables</a></li>
 			<li><a href="#typography">Typography</a></li>
-			<ul>
-				<li><a href="#headings">Headings</a></li>
-				<li><a href="#paragraphs">Paragraphs</a></li>
-				<li><a href="#smalltext">Small Text</a></li>
-			</ul>
-			<!-- <li><a href="#viewwindow">View Window</a></li> -->
+			<li><a href="#grids">Grid Systems</a></li>	
+			<li><a href="#components">Components</a></li>
+				<ul>		
+					<li><a href="#buttons">Buttons</a></li>
+					<li><a href="#forms">Input Forms</a></li>
+<!-- 						<ul>
+							<li>Text Box</li>
+							<li>Dropdown</li>
+							<li>Search Bar</li>
+
+						</ul>	 -->
+					<li><a href="#others">Other Components</a></li>
+						<ul>
+							<li>Boxes</li>
+<!-- 							<li><a href="#paginationPage">Pagination Page</a></li>
+							<li><a href="#paginationDot">Pagination Dot</a></li> -->
+							<li>Cards</li>
+							<li>Figures</li>
+						</ul>
+				</ul>
+			<!-- <li><a href="#icons">Iconography</a></li>		 -->
+			<li><a href="#ui">UI Elements</a></li>
+				<ul>
+					<li>Account Form</li>
+					<li>Administration Table</li>
+					<li>Navigation Bar</li>
+				</ul>
+
 		</ul>
 	</nav>
 
-<br>
-<br>
-	<section class="container">
-		<h2 id="buttons">Buttons</h2>
-		<div class="card soft">
-			<h3>Primary Button</h3>
-			<button class="button primary">CHECKOUT</button>
-
-			<h3>Secondary Button</h3>
-			<button class="button secondary">SHOP ALL</button>
-
-			<h3>Wishlist Button</h3>
-			<button class="button secondary heart-toggle" data-children-count="1">
-				<input type="checkbox" id="heart-example" class="hidden">
-				<label for="heart-example">WISHLIST ♥</label>
-			</button>
-		</div>
-	</section>
-
-<br>
-<br>
-	<section class="container">
-		<h2 id="cards">Cards</h2>
-		<div class="card soft">
-			<div class="card soft square">
-				<p>Card Soft</p>
-			</div>
-			<div class="card medium square">
-				<p>Card Medium</p>
-			</div>
-			<div class="card dark square">
-				<p>Card Dark</p>
-			</div>
-			<div class="card flat square">
-				<p>Card Flat</p>
-			</div>
-		</div>
-	</section>
-
-<br>
-<br>
-	<section class="container">
-		<h2 id="checkboxes">Check Boxes</h2>
-		<div class="card soft">
-			<h3>Basic Checkbox</h3>
-			<div>
-				<label>
-					<input type="checkbox" id="check-example1">
-					Subscribtion
-				</label>
-			</div>
-
-<!-- 			<h3>Heart Checkbox</h3>
-			<div class="heart-toggle">
-				<input type="checkbox" id="heart-example" class="hidden">
-				<label for="heart-example">♥</label>
-			</div> -->
-
-			<h3>Toggle Checkbox</h3>
-			<div>
-				<div class="toggle" data-children-count="1">
-					<input type="checkbox" id="toggle1" class="hidden">
-					<label for="toggle1"></label>
-				</div>
-			</div>
-		</div>
-	</section>
 
 <br>
 <br>
 	<section class="container">
 		<h2 id="colors">Colors</h2>
 		<div class="card soft">
-<!-- 			<div class="card"> -->
-			<h3>Primary Color</h3>
-				<div class="card square" style="background-color: #5aff5a">
+			<div class="grid gap">
+				<div class="col-xs-12 col-md-3">
+				<h5>Primary Color</h5>
+					<div>
+						<div class="square" style="background-color: #5aff5a">
+					</div>
 					<p>#5AFF5A</p>
-				</div>
-			
-			<h3>Seconday Color</h3>
-				<div class="card square" style="background-color: #1155cc">
-					<p>#1155CC</p>
+					</div>
 				</div>
 
-			<h3>Text & Background Color</h3>
-				<div class="card square" style="background-color: #eeeeee">
-					<p>#EEEEEE</p>
+				<div class="col-xs-12 col-md-3">
+				<h5>Seconday Color</h5>
+					<div>
+						<div class="square" style="background-color: #1155cc">
+					</div>
+					<p>#1155CC</p>
+					</div>
 				</div>
-				<div class="card square" style="background-color: #797979">
-					<p>#797979</p>
+			</div>
+
+			<br>
+			<h5>Text & Background Color</h5>
+				<div class="grid gap">
+					<div class="col-xs-12 col-md-3">
+						<div>
+							<div class="square" style="background-color: #eeeeee">
+						</div>
+						<p>#EEEEEE</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-3">
+						<div>
+							<div class="square" style="background-color: #797979">
+						</div>
+						<p>#797979</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-3">
+						<div>
+							<div class="square" style="background-color: #000">
+						</div>
+						<p>#000</p>
+						</div>	
+					</div>
+			</div>				
+		</div>
+	</section>
+
+
+<br>
+<br>
+	<section class="container">
+		<h2 id="typography">Typography</h2>
+		<div class="card soft">
+			<h1 style="text-align: center">Ubuntu</h1>
+			<hr>
+			<div class="grid gap">
+				<div class="col-xs-12 col-md-3">
+					<div class="card">
+						<h1>Heading 1</h1>
+						<p>Bold<br>32px</p>
+					</div>
+				</div>			
+				<div class="col-xs-12 col-md-3">
+					<div class="card">
+						<h2>Heading 2</h2>
+						<p>Bold<br>24px</p>			
+					</div>
 				</div>
-				<div class="card square" style="background-color: #000">
-					<p style="color: white">#000</p>
+				<div class="col-xs-12 col-md-3">
+					<div class="card">
+						<h3>Heading 3</h3>
+						<p>Bold<br>24px</p>					
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3">
+					<div class="card">
+						<h4>Heading 4</h4>
+						<p>Bold<br>20px</p>				
+					</div>
+				</div>
+
+<!-- 				<div class="col-xs-12 col-md-3">
+					<div class="card">						
+						<p>Bold<br>32px</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3">
+					<div class="card">						
+						<p>Bold<br>24px</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3">
+					<div class="card">						
+						<p>Bold<br>24px</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3">
+					<div class="card">	
+						<p>Bold<br>20px</p>	
+					</div>											
+				</div>	 -->
+
+				<div class="col-xs-12 col-md-3">
+					<div class="card">
+						<h5>Heading 5</h5>
+						<p>Bold<br>16px</p>					
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3">
+					<div class="card">
+						<p>Paragraphs</p>
+						<p>Regular<br>16px</p>					
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3">
+					<div class="card">
+						<p class="small-text">Small Text</p>
+						<p>Regular<br>12.8px</p>					
+					</div>
 				</div>					
+			</div>		
+		</div>	
+<!-- 		<div class="card soft">
+			<h4 id="paragraphs">Paragraphs</h4>
+			<hr>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quisquam saepe quae quam dolores rem omnis est recusandae ullam asperiores.</p>
+			<p>Saepe ratione quidem neque dolores nobis harum cum, numquam, unde pariatur rem possimus itaque non recusandae tempora amet laudantium et.</p>
+			<p>Ipsa officiis necessitatibus perspiciatis vero, porro soluta temporibus quod ut dignissimos earum a optio dolorum, pariatur sed harum quaerat! Deleniti.</p>
+		</div>
+		<div class="card soft">
+			<h4 id="smalltext">Small Text</h4>
+			<hr>
+			<p class="small-text">Lorem ipsum dolor sit amet</p>
+		</div> -->
+	</section>
+
+
+<br>
+<br>
+	<section class="container">
+		<h2 id="grids">Grid Systems</h2>
+		<div class="card soft">
+			<h5>Grid-Column-2</h5>
+				<div class="grid gap">
+					<div class="col-xs-12 col-md-6">
+						<div class="rectangle"></div>
+					</div>
+					<div class="col-xs-12 col-md-6">				
+						<div class="rectangle"></div>
+					</div>
+				</div>
+
+			<br>
+			<h5>Grid-Column-4</h5>
+				<div class="grid gap">
+					<div class="col-xs-12 col-md-3">
+						<div class="rectangle"></div>
+					</div>
+					<div class="col-xs-12 col-md-3">				
+						<div class="rectangle"></div>
+					</div>
+					<div class="col-xs-12 col-md-3">				
+						<div class="rectangle"></div>
+					</div>
+					<div class="col-xs-12 col-md-3">				
+						<div class="rectangle"></div>
+					</div>
+				</div>
+
+			<br>
+			<h5>Grid-Column-6</h5>
+				<div class="grid gap">
+					<div class="col-xs-12 col-md-2">
+						<div class="rectangle"></div>
+					</div>
+					<div class="col-xs-12 col-md-2">				
+						<div class="rectangle"></div>
+					</div>
+					<div class="col-xs-12 col-md-2">				
+						<div class="rectangle"></div>
+					</div>
+					<div class="col-xs-12 col-md-2">				
+						<div class="rectangle"></div>
+					</div>
+					<div class="col-xs-12 col-md-2">				
+						<div class="rectangle"></div>
+					</div>
+					<div class="col-xs-12 col-md-2">				
+						<div class="rectangle"></div>
+					</div>
+				</div>
+		</div>
+	</section>
+
+
+<br>
+<br>
+	<section class="container">
+		<h2 id="components">Components</h2>
+			<h3 id="buttons">Buttons</h3>		
+			<div class="card soft">
+				<h4>LARGE BUTTONS</h4>
+				<hr>
+				<div class="grid gap">
+					<div class="col-xs-12 col-md-6">
+						<h5>Primary Button</h5>
+<!-- 						<p class="small-text">Usage: Add, Checkout, Continue</p> -->
+						<button class="button primary">ADD TO CART</button>
+					</div>
+
+					<div class="col-xs-12 col-md-6">
+						<h5>Secondary Button</h5>
+<!-- 						<p class="small-text">Usage: Shop All, Remove, Apply</p> -->
+						<button class="button secondary">SHOP ALL</button>
+					</div>
+
+					<div class="col-xs-12 col-md-6">
+						<h5>Wishlist Button</h5>
+<!-- 						<p class="small-text">Usage: Only for Wishlist 	button</p> -->
+						<button class="button secondary heart-toggle" 	data-children-count="1">
+							<input type="checkbox" id="heart-example" class="hidden">
+							<label for="heart-example">WISHLIST ♥</label>
+						</button>
+					</div>
+				</div>
+
+<br>
+<br>
+				<h4>SMALL BUTTONS</h4>
+				<hr>
+				<div class="grid gap">
+					<div class="col-xs-12 col-md-3">
+						<h5>Primary Button</h5>
+						<button class="button-small primary">ADD TO CART</button>
+					</div>
+
+					<div class="col-xs-12 col-md-3">
+						<h5>Secondary Button</h5>
+						<button class="button-small secondary">SHOP ALL</button>
+					</div>
+
+					<div class="col-xs-12 col-md-3">
+						<h5>Wishlist Button</h5>
+						<button class="button-small secondary heart-toggle" data-children-count="1">
+							<input type="checkbox" id="heart-example2" class="hidden">
+						<label for="heart-example2">WISHLIST</label>
+						<!-- <button class="button-small wishlist">WISHLIST ♥</button> -->
+				</div>
+			</div>
 		</div>
 	</section>
 
 <br>
-<br>
 	<section class="container">
-		<h2 id="grids">Grid System</h2>
-
+		<h3 id="forms">Input Forms</h3>
 		<div class="card soft">
-			<h3>Grid column 2</h3>
 			<div class="grid gap">
 				<div class="col-xs-12 col-md-6">
-					<div class="rectangle"></div>
+					<h5>Text Box</h5>
+					<input type="text" class="form-input" placeholder="Placeholder">
 				</div>
-				<div class="col-xs-12 col-md-6">				
-					<div>
-					<div class="rectangle"></div>
+
+<!-- 				<div class="col-xs-12 col-md-3">
+					<h5>Dropdown</h5>
+					<div class="dropdown">
+    					<button class="form-input">Dropdown 
+    						<i class="fa fa-caret-down"></i>
+						</button>
+					    <div class="dropdown-content">
+    						<a href="#">Link 1</a>
+    						<a href="#">Link 2</a>
+    						<a href="#">Link 3</a>
+						</div>
 					</div>
+				</div> -->
+
+				<div class="col-xs-12 col-md-6">
+					<h5>Search Bar</h5>
+					<label class="hotdog">
+						<i class="material-icons">search</i>
+						<div class="flex-stretch">
+							<input type="search" placeholder="Search" />
+						</div>
+					</label>
 				</div>
 			</div>
 		</div>
+	</section>
 
+<br>
+	<section class="container">
+		<h3 id="others">Other Components</h3>
 		<div class="card soft">
-			<h3>Grid column 4</h3>
+			<h4 id="boxes">BOXES</h4>
+			<hr>	
+			<div class="grid gap">
+				<div class="col-xs-12 col-md-3">					
+					<h5>Checkbox</h5>
+					<div>
+						<label class="checkbox">Subscription
+							<input type="checkbox" checked="checked">
+							<span class="checkmark"></span>
+							</label>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-md-3">
+					<h5>Switch/Toggle</h5>
+					<div>
+						<div class="toggle" data-children-count="1">
+							<input type="checkbox" id="toggle1" class="hidden">
+							<label for="toggle1"></label>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-md-3">
+					<h5>Remove/Close</h5>
+					<button class="xbox">
+						<i class="fa fa-close"></i>
+					</button>
+				</div>	
+
+			</div>
+
+<br>
+<br>
+			<h4 id="cards">CARDS</h4>
+			<hr>
 			<div class="grid gap">
 				<div class="col-xs-12 col-md-3">
 					<div>
-					<div class="rectangle"></div>
+					<div class="card soft square">
+					</div>
+					<p>Card Soft</p>
 					</div>
 				</div>
-				<div class="col-xs-12 col-md-3">				
+				<div class="col-xs-12 col-md-3">
 					<div>
-					<div class="rectangle"></div>
+					<div class="card medium square">
+					</div>
+					<p>Card Medium</p>
 					</div>
 				</div>
-				<div class="col-xs-12 col-md-3">				
+				<div class="col-xs-12 col-md-3">
 					<div>
-					<div class="rectangle"></div>
+					<div class="card dark square">
+					</div>
+					<p>Card Dark</p>
 					</div>
 				</div>
-				<div class="col-xs-12 col-md-3">				
+				<div class="col-xs-12 col-md-3">
 					<div>
-					<div class="rectangle"></div>
+					<div class="card flat square">
+					</div>
+					<p>Card Flat</p>
 					</div>
 				</div>
 			</div>
-		</div>
-
-		<div class="card soft">
-			<h3>Grid column 6</h3>
-			<div class="grid gap">
-				<div class="col-xs-12 col-md-2">
-					<div>
-					<div class="rectangle"></div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-md-2">				
-					<div>
-					<div class="rectangle"></div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-md-2">				
-					<div>
-					<div class="rectangle"></div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-md-2">				
-					<div>
-					<div class="rectangle"></div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-md-2">				
-					<div>
-					<div class="rectangle"></div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-md-2">				
-					<div>
-					<div class="rectangle"></div>
-					</div>
-				</div>
-
-			</div>
-		</section>
 
 <br>
 <br>
-	<section class="container">
-		<h2 id="figures">Figures</h2>
-		<div class="card soft">
-			<h3>Basic Figure</h3>
-			<div>
-				<!-- figure>img+figcaption -->
-				<figure class="product-figure">
-					<img src="https://via.placeholder.com/300" alt="">
-					<figcaption>Product</figcaption>
-				</figure>
-			</div>
+			<h4 id="figures">FIGURES</h4>
+			<hr>
+				<h5>Basic Figure</h5>
+				<div>
+					<figure class="product-figure">
+						<img src="https://via.placeholder.com/300" alt="">
+						<figcaption>Product</figcaption>
+					</figure>
+				</div>
 
-			<h3>Soft Figure</h3>
-			<div>
-				<figure class="product-figure soft">
-					<img src="https://via.placeholder.com/300" alt="">
-					<figcaption>Product</figcaption>
-				</figure>
-			</div>
-
-			<h3>Overlay Figure</h3>
+			<br>
+			<h5>Overlay Figure</h5>
 			<a href="#" class="display-block"></a>
 			<div>
 				<!-- figure>img+figcaption -->
@@ -262,7 +452,8 @@
 				</figure>
 			</div>
 
-			<h3>Gridded Figures</h3>
+			<br>
+			<h5>Gridded Figures</h5>
 			<div class="grid gap">
 			<div class="col-xs-12 col-md-3">				
 				<div>
@@ -300,103 +491,23 @@
 		</div>
 	</section>
 
-<br>
+
+<!-- <br>
 <br>
 	<section class="container">
-		<h2 id="forms">Forms</h2>
+		<h2 id="#icons">Iconography</h2>
+		<div class="card soft">	
+			<h3>Icon</h3>
 
-		<div class="card soft">
-			<h3 id="checkout">Form Input</h3>
-				<div class="grid gap">
-				<div class="col-4">
-				<input type="fname" class="form-input" placeholder="First Name">
-				<input type="lname" class="form-input" placeholder="Last Name">
-				<input type="email" class="form-input" placeholder="Email">
-				<input type="phone" class="form-input" placeholder="Phone">
-				</div>
-			</div>
 		</div>
+	</section> -->
 
-		<div class="card soft">
-			<h3 id="search">Search Bar</h3>
-			<div class="display-flex">
-				<div class="flex-stretch"></div>
-				<div class="flex-none">
-					<div class="form-control" data-children-count="1">
-						<input type="search" class="hotdog" placeholder="Search">
-					</div>
-				</div>
-			</div>
-	</section>
 
 <br>
 <br>
 	<section class="container">
-		<h2 id="navigations">Navigations</h2>
-
-		<script>
-			const makeNav = (classes='') => {
-				const links = ['STORE','ABOUT','ACCOUNT','CART'];
-				let ran = Math.floor(Math.random()*links.length);
-				return `
-				<div>
-					<nav class="${classes}">
-						<ul>
-						${links.reduce((r,o,i)=>{
-						return r+`<li class="${ran==i?'active':''}">
-						<a href="#">${o}</a>
-						</li>`;
-						},'')}
-						</ul>
-					</nav>
-				</div>
-				`;
-			}
-		</script>
-
-	<div class="card soft">
-		<h3>Flex Nav</h3>
-			<script>document.write(makeNav("nav-flex"))</script>
-<!-- 		<div>
-				<nav class="nav-flex">
-					<ul>
-						<li class="active">
-							<a href="#">STORE</a>
-						</li>
-						<li class="">
-							<a href="#">ABOUT</a>
-						</li>
-						<li class="">
-							<a href="#">ACCOUT</a>
-						</li>
-						<li class="">
-							<a href="#">CART</a>
-						</li>
-					</ul>
-				</nav>
-			</div> -->
-	</div>
-	<div class="card soft">
-		<h3>Stretch Nav</h3>
-			<script>document.write(makeNav("nav-stretch"))</script>
-	</div>
-	<div class="card soft">
-		<h3>Breadcrumb Nav</h3>
-			<script>document.write(makeNav("nav-crumbs"))</script>
-			<div>
-				<nav class="nav-crumbs"></nav>
-			</div>
-		</div>
-	</section>
-
-
-	<script>
-		$("[class^='nav'] a").on("click",function(e){
-			e.preventDefault();
-			$(this).closest('li').addClass("active")
-				.siblings().removeClass("active")
-		})
-	</script>
+		<h2 id="ui">UI Elements</h2>
+		<div class="card soft">
 
 	<script>
 		const makeTable = (classes='') => {
@@ -421,57 +532,106 @@
 	}
 	</script>	
 
-<br>
-<br>
-	<section class="container">
-		<h2 id="tables">Tables</h2>
+			<h5>Account Form</h5>
+				<div class="grid gap">
+					<div class="col-4">
+					<input type="fname" class="form-input" placeholder="First Name">
+					<input type="lname" class="form-input" placeholder="Last Name">
+					<input type="email" class="form-input" placeholder="Email">
+					<input type="phone" class="form-input" placeholder="Phone">
+					<input type="address" class="form-input" placeholder="Address">
+					<input type="city" class="form-input" placeholder="City">
+					<input type="state" class="form-input" placeholder="State">
+					<input type="zipcode" class="form-input" placeholder="Zipcode">				
+				</div>
+			</div>
+
 <!-- 		<div class="card soft">
 			<h3>Basic Table</h3>
 			<script>document.write(makeTable('table striped'))</script>
 		</div> -->
 
 <!-- 		<div class="card soft">
-			<h3>Horizontal Lined Table</h3>
+			<h4>Checkout Table</h4>
 			<script>document.write(makeTable('table lined horizontal striped'))</script>
 		</div> -->
 
-		<div class="card soft">
-			<h3>Administration Table</h3>
+<br>
+<br>
+		<h5>Administration Table</h5>
 			<script>document.write(makeTable('table lined all striped'))</script>
-		</div>
-	</section>
+
+		<script>
+			const makeNav = (classes='') => {
+				const links = ['STORE','ABOUT','ACCOUNT','CART'];
+				let ran = Math.floor(Math.random()*links.length);
+				return `
+				<div>
+					<nav class="${classes}">
+						<ul>
+						${links.reduce((r,o,i)=>{
+						return r+`<li class="${ran==i?'active':''}">
+						<a href="#">${o}</a>
+						</li>`;
+						},'')}
+						</ul>
+					</nav>
+				</div>
+				`;
+			}
+		</script>
 
 <br>
 <br>
-	<section class="container">
-		<h2 id="typography">Typography</h2>
-		<div class="card soft">
-			<h3 id="headings">Headings</h3>
-			<hr>
-			<h1>Heading 1</h1>
-			<h2>Heading 2</h2>
-			<h3>Heading 3</h3>
-			<code>
-&lt;h1&gt;Heading 1&lt;/h1&gt;
-&lt;h2&gt;Heading 2&lt;/h2&gt;
-&lt;h3&gt;Heading 3&lt;/h3&gt;
-			</code>
-		</div>
-		<div class="card soft">
-			<h3 id="paragraphs">Paragraphs</h3>
-			<hr>
-			<!-- p*3>lorem20 -->
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quisquam saepe quae quam dolores rem omnis est recusandae ullam asperiores.</p>
-			<p>Saepe ratione quidem neque dolores nobis harum cum, numquam, unde pariatur rem possimus itaque non recusandae tempora amet laudantium et.</p>
-			<p>Ipsa officiis necessitatibus perspiciatis vero, porro soluta temporibus quod ut dignissimos earum a optio dolorum, pariatur sed harum quaerat! Deleniti.</p>
-		</div>
-		<div class="card soft">
-			<h3 id="smalltext">Small Text</h3>
-			<hr>
-			<small-text>Lorem ipsum dolor sit amet</small-text>
+		<h4>NAVIGATION BARS</h4>
+		<hr>
+			<h5>Flex Nav</h5>
+				<script>document.write(makeNav("nav-flex"))</script>
+<!-- 		<div>
+				<nav class="nav-flex">
+					<ul>
+						<li class="active">
+							<a href="#">STORE</a>
+						</li>
+						<li class="">
+							<a href="#">ABOUT</a>
+						</li>
+						<li class="">
+							<a href="#">ACCOUT</a>
+						</li>
+						<li class="">
+							<a href="#">CART</a>
+						</li>
+					</ul>
+				</nav>
+			</div> -->
+<br>
+<br>
+			<h5>Stretch Nav</h5>
+				<script>document.write(makeNav("nav-stretch"))</script>
+<br>
+<br>
+			<h5>Breadcrumb Nav</h5>
+				<script>document.write(makeNav("nav-crumbs"))</script>
+					<br>
+					<nav class="nav-crumbs"></nav>	
+
+		<script>
+			$("[class^='nav'] a").on("click",function(e){
+				e.preventDefault();
+				$(this).closest('li').addClass("active")
+					.siblings().removeClass("active")
+			})
+		</script>
+
 		</div>
 	</section>
 
 
+<footer class="container">
+	<div class="card soft" style="background-color: #000">
+		<p style="color: #fff">Designed by Ji Yeom</p>
+	</div>
+</footer>
 </body>
 </html>
