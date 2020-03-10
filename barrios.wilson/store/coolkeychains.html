@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cool Keychains</title>
+
+
+	<!-- meta:vp -->
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="icon" href="../img/favicon.png" sizes="32x32" type="image/png">
+	<link rel="stylesheet" href="../lib/css/styleguide.css">
+	<link rel="stylesheet" href="../lib/css/gridsystem.css">
+	<link rel="stylesheet" href="../css/storetheme.css">
+
+	<style>
+	h2 {
+		margin-top:1em;
+		border-bottom:1px solid var(--color-neutral-medium);
+		margin-bottom:1em;
+	}
+	</style>
+
+</head>
+<body>
+<header class="navbar-top">
+		<div class="container display-flex">
+			<div class="flex-stretch">
+			</div>
+			<nav class="navbar-top flex-none">
+				<!-- ul>li*3>a[href=#]>{Link $} -->
+				<ul class="display-flex">
+					<li><a href="#"><img class="icon" src="../img/user.png" alt="user"></a></li>
+					<li><a href="#"><img class="icon" src="../img/shopping-cart.png" alt="user"></a></li>
+					<li><a href="#"><img class="icon" src="../img/search.png" alt=""></a></li>
+				</ul>
+			</navbar-top>
+		</div>
+	</header>
+	<header class="navbar">
+		<div class="container display-flex">
+			<div class="flex-stretch">
+				<p><img class="logo" src="../img/coolkeychains-logo.png" alt="CoolKeychains"></p>
+			</div>
+			<nav class="nav flex-none">				
+				<script>
+	const makeNav = (classes='') => {
+		const links = ['HOME','ABOUT','STORE','CONTACT US'];
+		let ran = Math.floor(Math.random()*links.length);
+		return `
+		<div>
+			<nav class="${classes}">
+				<ul>
+				${links.reduce((r,o,i)=>{
+				return r+`<li class="${ran==i?'active':''}">
+				<a href="#">${o}</a>
+				</li>`;
+				},'')}
+				</ul>
+			</nav>
+		</div>
+		`;
+	}
+	</script>
+	<script>document.write(makeNav("nav-pills"))</script>
+			</nav>
+		</div>
+	</header>
+
+	<div class="wrapper">
+  <div class="nested-wrapper1">
+    <div class="1">
+      <h2>PIC 1 <BR>CALL TO ACTION</h2>
+    </div>
+  </div>
+  <div class="nested-wrapper2">
+    <div class="2">
+      <h2>PIC 2 <BR>CALL TO ACTION</h2>
+    </div>
+    <div class="3">
+      <h2>PIC 3 <BR>CALL TO ACTION</h2>
+    </div>
+  </div>
+</div>
+
+<div class="grid gap">
+			<div class="col-xs-12 col-md-3">
+				
+<div>
+				<!-- figure>img+figcaption -->
+				<figure class="product-figure soft">
+					<img src="https://via.placeholder.com/300" alt="">
+					<figcaption>
+						Product
+					</figcaption>
+				</figure>
+			</div>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+
+			<div>
+				<!-- figure>img+figcaption -->
+				<figure class="product-figure soft">
+					<img src="https://via.placeholder.com/300" alt="">
+					<figcaption>
+						Product
+					</figcaption>
+				</figure>
+			</div>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+
+			<div>
+				<!-- figure>img+figcaption -->
+				<figure class="product-figure soft">
+					<img src="https://via.placeholder.com/300" alt="">
+					<figcaption>
+						Product
+					</figcaption>
+				</figure>
+			</div>
+			</div>
+
+			<div class="col-xs-12 col-md-3">
+				
+
+			<div>
+				<!-- figure>img+figcaption -->
+				<figure class="product-figure soft">
+					<img src="https://via.placeholder.com/300" alt="">
+					<figcaption>
+						Product
+					</figcaption>
+				</figure>
+			</div>
+			</div>
+		</div>
+
+  <div class="footer">
+  	<p><img class="logo-footer" src="../img/coolkeychains-logo.png" alt="CoolKeychains"></p>
+	<h5>Cool Keychains.com ©2020 by Wilson Barrios | MFA-CA | #04389249 </h5>
+  </div>
+    </div>
+
+
+
+</body>
+</html>

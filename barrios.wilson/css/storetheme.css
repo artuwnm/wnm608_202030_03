@@ -1,11 +1,11 @@
 :root {
     --color-neutral-dark: #333;
     --color-neutral-medium: #999;
-    --color-neutral-light: #eee;
+    --color-neutral-light: #edebf0;
 
-    --color-main-light: #eac3fa;
-    --color-main-medium: #8d39b0;
-    --color-main-dark: #44105a;
+    --color-main-light:#f7b733;
+    --color-main-medium:#fc4a1a;
+    --color-main-dark:#606062;
 }
 
 
@@ -42,15 +42,15 @@ body {
 }
 
 	.product-figure.soft {
-		border-radius:1em;
+		
 		overflow:hidden;
-		box-shadow:0 2px 5px rgba(0,0,0,0.1);
+		box-shadow:0 2px 2px rgba(0,0,0,0.1);
 	}
 
 	.product-figure.overlay {
 		position:relative;
 		overflow:hidden;
-		border-radius:1em;
+		border-radius:0em;
 	}
 	.product-figure.overlay figcaption {
 		position:absolute;
