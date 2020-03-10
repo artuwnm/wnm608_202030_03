@@ -5,13 +5,19 @@
 	<title>Style Guide</title>
 	<!-- meta:vp -->
 	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="../lib/css/styleguide.css">
     <link rel="stylesheet" href="../lib/css/gridsystem.css">
-    <link rel="stylesheet" href="../lib/css/styleguide.css">
     <link rel="stylesheet" href="../css/storetheme.css">
+    <style>
+	h2 {
+		margin-top:1em;
+		border-bottom:2px solid var(--color-neutral-medium);
+		margin-bottom:2em;
+	}
+	</style>
 </head>
 <body>
-
-	<header class="container">
+<header class="container">
 		<div class="card">
 			<h1>Site Style Guide</h1>
 		</div>
@@ -34,7 +40,8 @@
 			<li><a href="#forms">Forms</a></li>
 			<li><a href="#flex">Flex System</a></li>
 			<li><a href="#grid">Grid System</a></li>
-
+			<li><a href="#checkboxes">CheckBoxes</a></li>
+			<li><a href="#figures">Figures</a></li>
 		</ul>
 	</nav>
 
@@ -53,12 +60,12 @@
 			<h6>Heading 6</h6>
 
 			<code>
-&lt;h1>Heading 1&lt;/h1>
-&lt;h2>Heading 2&lt;/h2>
-&lt;h3>Heading 3&lt;/h3>
-&lt;h4>Heading 4&lt;/h4>
-&lt;h5>Heading 5&lt;/h5>
-&lt;h6>Heading 6&lt;/h6>
+			&lt;h1>Heading 1&lt;/h1>
+			&lt;h2>Heading 2&lt;/h2>
+			&lt;h3>Heading 3&lt;/h3>
+			&lt;h4>Heading 4&lt;/h4>
+			&lt;h5>Heading 5&lt;/h5>
+			&lt;h6>Heading 6&lt;/h6>
 			</code>
 		</div>
 
@@ -179,6 +186,304 @@
 			<h3>Basic Table</h3>
 
 			<script>document.write(makeTable('table'))</script>
+		</div>
+
+
+		<div class="card">
+			<h3>Striped Table</h3>
+
+			<script>document.write(makeTable('table striped'))</script>
+		</div>
+
+
+		<div class="card">
+			<h3>Horizontal Lined Table</h3>
+
+			<script>document.write(makeTable('table lined horizontal'))</script>
+		</div>
+
+
+		<div class="card">
+			<h3>Vertical Lined Table</h3>
+
+			<script>document.write(makeTable('table lined vertical'))</script>
+		</div>
+
+
+		<div class="card">
+			<h3>Horizontal Outlined Lined Table</h3>
+
+			<script>document.write(makeTable('table lined outline horizontal'))</script>
+		</div>
+
+		<div class="card">
+			<h3>All Lined Table</h3>
+
+			<script>document.write(makeTable('table lined all'))</script>
+		</div>
+
+		<div class="card">
+			<h3>Striped with Vertical and Outlines Table</h3>
+
+			<script>document.write(makeTable('table lined vertical outline striped'))</script>
+		</div>
+	</section>
+
+
+
+	<section class="container">
+		<h2 id="forms">Forms</h2>
+
+		<div class="card">
+			<h2>Form Input</h2>
+
+			<input type="text" class="form-input" placeholder="Text">
+			<input type="password" class="form-input" placeholder="Password">
+			<input type="number" class="form-input" placeholder="Number">
+			<input type="search" class="form-input" placeholder="Search">
+		</div>
+
+		<div class="card">
+			<h2>Form Label</h2>
+
+			<label class="form-label" for="input-example1">Example</label>
+			<input type="text" class="form-input" placeholder="Text" id="input-example1">
+
+			<label class="form-label" for="input-example2">Example</label>
+			<input type="text" class="form-input" placeholder="Text" id="input-example2">
+
+			<label class="form-label" for="input-example3">Example</label>
+			<input type="text" class="form-input" placeholder="Text" id="input-example3">
+		</div>
+
+		<div class="card">
+			<h2>Form Control</h2>
+
+			<div class="form-control">
+				<label class="form-label" for="input-example1">Example</label>
+				<input type="text" class="form-input" placeholder="Text" id="input-example1">
+			</div>
+
+			<div class="form-control">
+				<label class="form-label" for="input-example2">Example</label>
+				<input type="text" class="form-input" placeholder="Text" id="input-example2">
+			</div>
+
+			<div class="form-control">
+				<label class="form-label" for="input-example3">Example</label>
+				<input type="text" class="form-input" placeholder="Text" id="input-example3">
+			</div>
+		</div>
+
+		<div class="card">
+			<h2>Form Button</h2>
+
+			<div class="form-control">
+				<input type="submit" class="form-button" />
+			</div>
+
+			<div class="form-control">
+				<button type="button" class="form-button">Button</button>
+			</div>
+
+			<div class="form-control">
+				<a href="#" class="form-button">Anchor</a>
+			</div>
+		</div>
+
+		<div class="card">
+			<h2>Hotdog</h2>
+			
+			<div class="form-control">
+				<input type="search" class="hotdog" placeholder="Search" />
+			</div>
+			
+			<div class="form-control">
+				<label class="hotdog">
+					<div class="flex-none icon">
+						🔍
+					</div>
+					<div class="flex-stretch">
+						<input type="search" placeholder="Search" />
+					</div>
+				</label>
+			</div>
+
+			<div class="display-flex">
+				<div class="flex-stretch"></div>
+				<div class="flex-none">
+					<div class="form-control">
+						<input type="search" class="hotdog" placeholder="Search" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="container">
+		<h2 id="checkboxes">Check Boxes</h2>
+
+		<div class="card">
+			<h3>Basic Checkbox</h3>
+
+			<div>
+				<label for="check-example1">Checkbox</label>
+				<label>
+					<input type="checkbox" id="check-example1">
+					Checkbox
+				</label>
+			</div>
+
+			<h3>Heart Checkbox</h3>
+
+			<div>
+				<div class="heart-toggle">
+					<input type="checkbox" id="heart-example" class="hidden">
+					<label for="heart-example">&hearts;</label>
+				</div>
+			</div>
+
+			<h3>Toggle Checkbox</h3>
+
+			<div>
+				<div class="toggle">
+					<input type="checkbox" id="toggle1" class="hidden">
+					<label for="toggle1"></label>
+				</div>
+				<div class="toggle" style="font-size:2em">
+					<input type="checkbox" id="toggle2" class="hidden">
+					<label for="toggle2"></label>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="container">
+		<h2 id="figures">Figures</h2>
+
+		<div class="card">
+			<h3>Basic Figure</h3>
+
+			<div>
+				<!-- figure>img+figcaption -->
+				<figure class="product-figure">
+					<img src="../img/1.png" alt="">
+					<figcaption>
+						Product
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+		<div class="card">
+			<h3>Soft Figure</h3>
+
+			<div>
+				<!-- figure>img+figcaption -->
+				<figure class="product-figure soft">
+					<img src="../img/1.png" alt="">
+					<figcaption>
+						Product
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+		<div class="card">
+			<h3>Overlay Figure</h3>
+
+			<a href="#" class="display-block">
+				<!-- figure>img+figcaption -->
+				<figure class="product-figure overlay">
+					<img src="../img/1.png" alt="">
+					<figcaption>
+						Product
+					</figcaption>
+				</figure>
+			</a>
+		</div>
+
+		<h3>Gridded Figures</h3>
+
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				
+
+			<div>
+				<!-- figure>img+figcaption -->
+				<figure class="product-figure soft">
+					<img src="../img/Pin1mockup.png" alt="">
+					<figcaption>
+						Product
+					</figcaption>
+				</figure>
+			</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				
+
+			<div>
+				<!-- figure>img+figcaption -->
+				<figure class="product-figure soft">
+					<img src="../img/Pin1mockup.png" alt="">
+					<figcaption>
+						Product
+					</figcaption>
+				</figure>
+			</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				
+
+			<div>
+				<!-- figure>img+figcaption -->
+				<figure class="product-figure soft">
+					<img src="../img/Pin1mockup.png" alt="">
+					<figcaption>
+						Product
+					</figcaption>
+				</figure>
+			</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				
+
+			<div>
+				<!-- figure>img+figcaption -->
+				<figure class="product-figure soft">
+					<img src="../img/Pin1mockup.png" alt="">
+					<figcaption>
+						Product
+					</figcaption>
+				</figure>
+			</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				
+
+			<div>
+				<!-- figure>img+figcaption -->
+				<figure class="product-figure soft">
+					<img src="../img/Pin1mockup.png" alt="">
+					<figcaption>
+						Product
+					</figcaption>
+				</figure>
+			</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				
+
+			<div>
+				<!-- figure>img+figcaption -->
+				<figure class="product-figure soft">
+					<img src="../img/Pin1mockup.png" alt="">
+					<figcaption>
+						Product
+					</figcaption>
+				</figure>
+			</div>
+			</div>
 		</div>
 	</section>
 	
