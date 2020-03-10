@@ -9,14 +9,24 @@
     --color-neutral-medium: #988c8c;
     --color-neutral-light: #ece7e7;
 
+    --color-main-light:blue;
+    --color-main-medium:blue;
+    --color-main-dark:blue;
+
+    --color-black:black;
+    --color-white:white;
+
     --header-height:3rem;
 }
 
 body {
 	box-sizing:border-box;
 	margin:0;
-	font-size:100%;
-	font-family:Avenir,sans-serif;
+	font-family:Avenir;
+}
+
+section {
+	margin-bottom: 80px;
 }
 
 h1,
@@ -25,9 +35,20 @@ h3,
 h4,
 h5,
 h6 {
-	font-family:Avenir,serif;
+	font-family:Avenir;
 }
 
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 18px;
+}
 
 a {
 	color:inherit;
@@ -38,11 +59,10 @@ a:hover {
 	text-decoration: underline;
 }
 
-
-
-
-
-
+code {
+	white-space:pre-wrap;
+	text-align:left;
+}
 
 
 /* SMALL CLASSES */
@@ -53,7 +73,16 @@ a:hover {
 	margin-left: auto;
 }
 
-
+#overlayfigure{
+	font-size:20px;
+	color:#2E4C69;
+	text-decoration:none;
+}
+#griddedfigures{
+	font-size:20px;
+	color:#2E4C69;
+	text-decoration:none;
+}
 
 /* ATOMIC CLASSES */
 
@@ -86,15 +115,78 @@ a:hover {
 .navbar a {
 	padding: 0 1em;
 }
+#nav-logo {
+    position: absolute;
+    left: 2em;
+    height: 60px;
+    margin-top: 0.95em;
+}
 
-.nav ul {
-	list-style-type:none;
-	margin-top: 0;
-	margin-bottom: 0;
-	padding-left: 0;
+.logo-text {
+    font-family: "Amatic SC";
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.menu-text {
+    font-family: "Amatic SC";
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.body-text {
+	font-family: Avenir;
+	font-size: 16px;
 }
 
 
+
+/* NAV */
+
+.nav ul {
+	list-style-type: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	overflow: hidden;
+	padding-bottom: 16px;
+	border-bottom: 1.25px solid;
+	border-color: #434343;
+}
+
+.nav a {
+    font-family: "Amatic SC";
+    font-weight: bold;
+    color: #434343;
+	display: block;
+  	padding-left: 16px;
+  	padding-right: 16px;
+}
+
+.nav .logo-text {
+	float: left;
+}
+
+.nav .menu-text {
+	float: right;
+	margin-left: 16px;
+	margin-right: 16px;
+	padding-top: 24px;
+}
+
+.nav a:hover {
+	text-decoration: none;
+}
+
+.nav .menu-text a:hover {
+	text-decoration: underline;
+	text-decoration-color: #9C5377;
+}
+
+.nav li.active a {
+	text-decoration: underline;
+	text-decoration-color: #9C5377;
+}
 
 
 /* card */
@@ -135,4 +227,88 @@ a:hover {
 	background-size:cover;
 	background-position:center;
 	background-attachment:fixed;
+}
+
+
+
+/* BUTTON */
+.button {
+	background-color: #434343;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	font-size: 16px;
+	cursor: pointer;
+	padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/* FORM */
+.form-label {
+	font-family: Avenir;
+	font-size: 16px;
+}
+
+.form-input {
+	
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=password], select {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.hotdog {
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 4px;
+    border: solid #000;
+    border-width: 1.25px;
+    outline: 0;
+    display: flex;
+}
+
+.hotdog input {
+	border-width: 0;
+	display:block;
+	background-color:transparent;
+	outline:0;
+	width:100%;
+	font-family: Avenir;
+	font-size: 16px;
+}
+
+.hotdog .icon {
+	padding:0 4px;
+}
+
+/* TABLE */
+.table {
+	width:100%;
+	border-collapse:collapse;
+}
+.table th,
+.table td {
+	text-align:left;
+	padding:0.2em 0.5em;
 }
