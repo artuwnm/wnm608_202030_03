@@ -312,3 +312,44 @@ input[type=password], select {
 	text-align:left;
 	padding:0.2em 0.5em;
 }
+.product-figure.overlay {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+.product-figure.overlay img {
+    transition: all 0.5s;
+    transform: scale(1,1);
+}
+
+
+.product-figure img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 30vh;
+    vertical-align: text-bottom;
+}
+
+.product-figure.overlay figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    transition: all 0.3s;
+	opacity: 0;
+	text-align: center;
+}
+
+.product-figure.soft figcaption {
+    padding: 1em;
+	background-color: #3042AD;
+	color: white;
+}
+
+.product-figure.overlay:hover {
+	transition: all 0.5s;
+	transform: scale(1.1);
+}
