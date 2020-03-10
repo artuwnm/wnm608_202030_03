@@ -10,6 +10,7 @@
     --color-white:white;
 
 }
+.hidden { display:none; }
 
 h1{
 	font-family: 'Raleway', sans-serif;
@@ -51,14 +52,16 @@ body{
 	margin:0;
 	font-size:100%;
 	font-family: 'Raleway', sans-serif;
+	padding:8em;
 
 }
 
 code {
 	white-space:pre-wrap;
 	text-align:center;
-	background-color:white;
-	padding:1em;
+	background-color:#F0E9E9;
+	border:solid 1px;
+	padding:2em;
 	width:100%;
 	display:block;
 }
@@ -188,6 +191,11 @@ p{
 	background-color:#F0E9E9 ;
 }
 
+.container3{
+	max-width:1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
 
 .card {
     overflow: hidden;
@@ -195,6 +203,23 @@ p{
     padding: 3em;
     margin-top: 1em;
     margin-bottom: 1em;
+}
+.card2{
+	background-color:#F0E9E9;
+	overflow: hidden;
+    position: relative;
+    padding: 3em;
+    padding-left:15em; 
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.card3{
+	background-color:#F0E9E9;
+	overflow: hidden;
+    position: relative;
+    padding: 3em;
+	margin-left:10em;
+	margin-right:10em;
 }
 
 .card1{
@@ -205,6 +230,19 @@ p{
     margin-top: 1em;
     margin-bottom: 1em;
 }
+	.card>:first-child { margin-top:0; }
+	.card>:last-child { margin-bottom:0; }
+
+	.card.soft{
+	box-shadow: 10px 11px 6px 0px rgba(0, 0, 0, 0.1);
+	border-radius:0.3em;
+	font-family: 'Raleway', sans-serif;
+	font-size:11px;
+}
+.col-4{
+		background-color:#F0E9E9;
+}
+
 #Heading{
 	font-size:20px;
 	color:#2E4C69;
@@ -218,8 +256,13 @@ p{
 #tables{
 	font-size:25px;
 	font-weight:400;
-	text-align:left
+	text-align:left;
 
+}
+#figures{
+	font-size:25px;
+	font-weight:400;
+	text-align:left;
 }
 
 #paragraphs{
@@ -228,7 +271,45 @@ p{
 	text-decoration:none;
 }
 
+#grid{
+	font-size:25px;
+	font-weight:400;
+	text-align:left;
+}
+#viewwindow{
+	font-size:25px;
+	font-weight:400;
+	text-align:left;
+}
+#Grids{
+	font-size:20px;
+	color:#2E4C69;
+	text-decoration:none;
+}
+#overlayfigure{
+	font-size:20px;
+	color:#2E4C69;
+	text-decoration:none;
+}
+#griddedfigures{
+	font-size:20px;
+	color:#2E4C69;
+	text-decoration:none;
+}
+}
 #Codes{
+	font-size:20px;
+	color:#2E4C69;
+	text-decoration:none;
+}
+
+#ResponsiveGrids{
+	font-size:20px;
+	color:#2E4C69;
+	text-decoration:none;
+}
+
+#basiccheckbox{
 	font-size:20px;
 	color:#2E4C69;
 	text-decoration:none;
@@ -255,7 +336,12 @@ p{
 	font-weight:400;
 	text-align:left;
 }
-
+#checkboxes{
+	font-size:25px;
+	font-weight:400;
+	text-align:left;
+}
+}
 #viewwindow{
 	font-size:25px;
 	font-weight:400;
@@ -332,10 +418,12 @@ p{
 /* FORMS */
 
 .form-input {
+	margin: 30px auto 0;
 	display:block;
-	width:100%;
+	width:40%;
 	border-width:0;
-	border-bottom:1px solid var(--color-neutral-medium);
+	border:1px solid var(--color-neutral-medium);
+	border-radius:0.3em;
 	color:inherit;
 	font:inherit;
 	padding:0.5em 1em;
@@ -349,8 +437,9 @@ p{
 
 
 .form-button {
+	margin: 30px auto 0;
 	display:block;
-	width:50%;
+	width:25%;
 	border-width:0;
 	color:inherit;
 	font:inherit;
@@ -367,3 +456,59 @@ p{
 .form-button:hover {
 	text-decoration:underline;
 }
+
+/* CHECKBOXES */
+
+.heart-toggle label {
+	color:gray;
+	transform:scale(2,2);
+	transition:all 0.3s;
+	display:inline-block;
+}
+.heart-toggle input:checked + label {
+	color:orange;
+	transform:scale(3,3);
+}
+
+
+.toggle label {
+    display: inline-block;
+    width: 2em;
+    height: 1em;
+    border: 0.1em solid var(--color-neutral-medium);
+    border-radius: 1em;
+    box-sizing: content-box;
+    position:relative;
+    background-color:#4D4A4A;
+    transition:all 0.3s;
+}
+.toggle input:checked+label {
+	background-color:#F89736;
+}
+.toggle label::before {
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	width:1em;
+	height:1em;
+	background-color:var(--color-neutral-secondbreakfast);
+	border-radius:1em;
+	transition:all 0.3s;
+	transform:translateX(0);
+}
+.toggle input:checked + label::before {
+	transform:translateX(1em);
+}
+.checkbox1{
+	margin-left:20em;
+}
+.heart-toggle{
+	margin-left:25em;
+}
+.toggle{
+	
+}
+
+
+
