@@ -24,17 +24,23 @@ body {
 	box-sizing: border-box;
 	margin:0;
 	font-size:100%; 
-	font-family: 'Cardo', serif; 
+	font-family: 'Clarendon', serif;
+	color:var(--color-main-dark);
 }
 
 h1,
-h2,
+h2
+{
+	font-family: 'Benton', sans-serif ;
+}
+
 h3,
 h4,
 h5,
 h6 {
-	font-family: 'Montserrat', sans-serif ;
+	font-family: 'Clarendon', serif ;
 }
+
 
 a {
 	color:inherit;
@@ -216,6 +222,30 @@ code {
 .table.striped tr:hover {
 	background-color:rgba(0,0,0,0.2);
 }
+.form-control {
+	margin:1em 0;
+}
+.form-label {
+	display:block;
+	width:100%;
+	font-size:1em;
+	color:var(--color-main-dark);
+}
+.form-button:hover {
+	text-decoration:none;
+}
+
+.product-figure.overlay figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    transition: all 0.3s;
+    opacity: 0;
+}
+
 
 
 

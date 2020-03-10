@@ -10,7 +10,7 @@
 
 	<link rel="stylesheet" href="../lib/css/styleguide.css">
 	<link rel="stylesheet" href="../lib/css/gridsystem.css">
-	<!-- <link rel="stylesheet" href="../css/storetheme.css"> -->
+	<link rel="stylesheet" href="../css/storetheme.css">
 </head>
 <body>
 
@@ -122,7 +122,7 @@
 	})
 
 
-<script>
+
 	const makeTable = (classes='') => {
 		const head = ['ID','Office','Name','Email','Phone'];
 		const body = [
@@ -164,5 +164,53 @@
 			<script>document.write(makeTable('table striped'))</script>
 		</div>
 	</section>
+
+	<div class="card">
+			<h2>Form Label</h2>
+
+			<label class="form-label" for="input-example1">Example</label>
+			<input type="text" class="form-input" placeholder="Text" id="input-example1">
+
+			<label class="form-label" for="input-example2">Example</label>
+			<input type="text" class="form-input" placeholder="Text" id="input-example2">
+
+			<label class="form-label" for="input-example3">Example</label>
+			<input type="text" class="form-input" placeholder="Text" id="input-example3">
+		</div>
+
+
+<div class="card">
+			<h2>Form Button</h2>
+
+			<div class="form-control">
+				<input type="submit" class="form-button" />
+			</div>
+
+			<div class="form-control">
+				<button type="button" class="form-button">Button</button>
+			</div>
+
+			<div class="form-control">
+				<a href="#" class="form-button">Anchor</a>
+			</div>
+		</div>
+
+<section class="container">
+		<h2 id="figures">Figures</h2>
+
+		<div class="card">
+			<h3>Overlay Figure</h3>
+
+			<a href="#" class="display-block">
+				<!-- figure>img+figcaption -->
+				<figure class="product-figure overlay">
+					<img src='img/Page 1.png' alt="">
+					<figcaption>
+						Product
+					</figcaption>
+				</figure>
+			</a>
+		</div>
+
 </body>
 </html>
