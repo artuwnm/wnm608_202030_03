@@ -1,2 +1,8 @@
 # wnm608_202030_03
-WNM 608 Section 03 in 2020 Semester 30
+
+
+- http://franniepan.com
+- http://franniepan.com/aau/wnm608/frannie.pan/recipes
+- http://franniepan.com/aau/wnm608/m02
+- http://franniepan.com/aau/wnm608/24solarterms
+- http://franniepan.com/aau/wnm608/styleguide
