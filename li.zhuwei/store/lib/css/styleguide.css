@@ -9,7 +9,7 @@
   --color-neutral-secondbreakfast: #cdc6c6;
   --color-neutral-medium: #988c8c;
   --color-neutral-light: #ece7e7;
-  --colo-theme-color:#d1efaa;
+  --colo-theme-color:#f3cfd5;
   --color-main-light:#cfe6a4;
   --color-main-medium:#eb1eb2;
   --color-main-dark:#44105a;
@@ -298,17 +298,18 @@ code {
 
 .form-button {
   display:block;
-  width:100%;
+  /*width:100%;*/
   border-width:0;
-  color:inherit;
+  color:black;
   font:inherit;
   padding:0.5em 1em;
   -webkit-appearance:none;
   outline:0;
   text-align:center;
-  background-color:var(--color-neutral-secondbreakfast);
-  border-radius:0.3em;
+  background-color:black;
+  /*border-radius:1em;*/
   text-decoration:none;
+  text-color:white;
   cursor:pointer;
 }
 .form-button:hover {
