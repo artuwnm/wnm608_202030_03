@@ -1,32 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
 	<title>Landing Page</title>
+	
+	<?php include "parts/meta.php" ?>
 
-	<meta name="viewport" content="width=device-width">
-
-	<link rel="stylesheet" href="lib/css/styleguide.css">
-	<link rel="stylesheet" href="lib/css/gridsystem.css">
-	<link rel="stylesheet" href="css/storetheme.css">
 </head>
 <body>
-	<!-- header.navbar>h1+nav.nav -->
-	<header class="navbar">
-		<div class="container display-flex">
-			<div class="flex-stretch">
-				<h1>Store Page</h1>
-			</div>
-			<nav class="nav flex-none">
-				<!-- ul>li*3>a[href=#]>{Link $} -->
-				<ul class="display-flex">
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 2</a></li>
-					<li><a href="#">Link 3</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+	
+	<?php include "parts/navbar.php" ?>
+	
 
 	<!-- .container>p*2>lorem30 -->
 	<div class="container">
@@ -42,7 +25,7 @@
 
 
 
-	<div class="view-window display-flex flex-align-center flex-justify-center" style="background-image:url('img/sea.jpg')">
+	<div class="view-window display-flex flex-align-center flex-justify-center" style="background-image:url('img/mountains_01.jpg')">
 		<div class="card soft">
 			<h2>COOL CONTENT</h2>
 		</div>
@@ -51,7 +34,6 @@
 
 
 	<div class="container">
-
 		<h2>Grid</h2>
 		<div class="grid gap">
 			<div class="col-4">
@@ -68,15 +50,16 @@
 					<p>Id voluptatibus, ipsa debitis sint, vel nulla dignissimos quis cupiditate tempora similique accusamus facilis facere inventore laborum porro quo sapiente?</p>
 				</div>
 			</div>
-
-				<div class="col-4">
+			<div class="col-4">
 				<div class="card soft">
 					<!-- p*2>lorem20 -->
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veritatis sequi fugit eum iste cumque molestias eveniet at quasi alias!</p>
 					<p>Id voluptatibus, ipsa debitis sint, vel nulla dignissimos quis cupiditate tempora similique accusamus facilis facere inventore laborum porro quo sapiente?</p>
 				</div>
 			</div>
-	
+
+
+
 			<div class="col-3">
 				<div class="card soft">
 					<!-- p*2>lorem20 -->
@@ -91,36 +74,25 @@
 					<p>Id voluptatibus, ipsa debitis sint, vel nulla dignissimos quis cupiditate tempora similique accusamus facilis facere inventore laborum porro quo sapiente?</p>
 				</div>
 			</div>
-
-				<div class="col-3">
+			<div class="col-3">
 				<div class="card soft">
 					<!-- p*2>lorem20 -->
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veritatis sequi fugit eum iste cumque molestias eveniet at quasi alias!</p>
 					<p>Id voluptatibus, ipsa debitis sint, vel nulla dignissimos quis cupiditate tempora similique accusamus facilis facere inventore laborum porro quo sapiente?</p>
 				</div>
 			</div>
-	
+
+
 			<div class="col-3">
-
-		<div class="display-flex">
-			<div class="flex-stretch">
-
 				<div class="card soft">
 					<!-- p*2>lorem20 -->
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam perspiciatis, ipsa! Dicta dolor blanditiis, velit iure, distinctio perferendis nisi impedit.</p>
 					<p>Unde, iste neque laborum, aperiam quod dignissimos voluptatum facere! Voluptatibus, distinctio, in. Vitae qui, reprehenderit facere rerum ad dolorem doloremque!</p>
 				</div>
 			</div>
-
 			<div class="col-6">
-
 			</div>
-
-				<div class="col-3">
-
-			<div class="flex-none" style="width:1em"></div>
-			<div class="flex-stretch">
-
+			<div class="col-3">
 				<div class="card soft">
 					<!-- p*2>lorem20 -->
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veritatis sequi fugit eum iste cumque molestias eveniet at quasi alias!</p>
@@ -128,9 +100,8 @@
 				</div>
 			</div>
 		</div>
-
-
 	</div>
+
 	<div class="container">
 		<h2>Responsive Grid</h2>
 
@@ -207,7 +178,6 @@
 				<div class="card soft">Animi tempore ab asperiores iste natus illum quasi cum eius, non vel obcaecati voluptates quaerat in, ad. Possimus veniam libero esse tempora velit. Natus tenetur cumque, optio, dolorem impedit fugiat!</div>
 			</div>
 		</div>
-
 	</div>
 </body>
 </html>
