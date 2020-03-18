@@ -7,6 +7,7 @@
 - https://hdraws.com/aau/wnm608_03/cline.hamilton/emmet.html
 - https://hdraws.com/aau/wnm608_03/cline.hamilton/recipes
 - https://hdraws.com/aau/wnm608_03/cline.hamilton/styleguide
+- https://hdraws.com/aau/wnm608_03/cline.hamilton/notes
 
 ## Git
 

@@ -1,32 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
 	<title>Landing Page</title>
+	
+	<?php include "parts/meta.php" ?>
 
-	<meta name="viewport" content="width=device-width">
-
-	<link rel="stylesheet" href="lib/css/styleguide.css">
-	<link rel="stylesheet" href="lib/css/gridsystem.css">
-	<link rel="stylesheet" href="css/storetheme.css">
 </head>
 <body>
-	<!-- header.navbar>h1+nav.nav -->
-	<header class="navbar">
-		<div class="container display-flex">
-			<div class="flex-stretch">
-				<h1>Store Page</h1>
-			</div>
-			<nav class="nav flex-none">
-				<!-- ul>li*3>a[href=#]>{Link $} -->
-				<ul class="display-flex">
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 2</a></li>
-					<li><a href="#">Link 3</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+	
+	<?php include "parts/navbar.php" ?>
+	
 
 	<!-- .container>p*2>lorem30 -->
 	<div class="container">
