@@ -31,14 +31,16 @@
 				<li><a href="#paragraphs">Paragraphs</a></li>
 				
 			</ul>			
-			<li><a href="#images">Images</a></li>
-			<li><a href="#cards">Cards</a></li>
-			<li><a href="#viewwindow">View Window</a></li>
 			<li><a href="#navigations">Navigations</a></li>
 			<li><a href="#tables">Tables</a></li>
 			<li><a href="#forms">Forms</a></li>
+			<li><a href="#ordersummary">Order Summary</a></li>
+			<li><a href="#checkboxes">Check Boxes</a></li>
+			<li><a href="#figures">Figures</a></li>
 			<li><a href="#flex">Flex System</a></li>
-			<li><a href="#grid">Grid System</a></li>		
+			<li><a href="#grid">Grid System</a></li>	
+			<li><a href="#images">Images</a></li>
+			<li><a href="#cards">Cards</a></li>	
 		</ul>
 	</nav>
 
@@ -142,18 +144,6 @@
 			<input type="search" class="form-input" placeholder="Search">
 		</div>
 
-		<div class="card">
-			<h2>Form Label</h2>
-
-			<label class="form-label" for="input-example1">Example</label>
-			<input type="text" class="form-input" placeholder="Text" id="input-example1">
-
-			<label class="form-label" for="input-example2">Example</label>
-			<input type="text" class="form-input" placeholder="Text" id="input-example2">
-
-			<label class="form-label" for="input-example3">Example</label>
-			<input type="text" class="form-input" placeholder="Text" id="input-example3">
-		</div>
 
 		<div class="card">
 			<h2>Form Control</h2>
@@ -220,6 +210,118 @@
 	</section>
 
 
+
+	<script>
+	const makeTable = (classes='') => {
+		const head = ['ID','Office','Name','Email','Phone'];
+		const body = [
+			['522',"Hamilton Cline",'hcline@academyart.edu','555-2424'],
+			['512',"Fred McHale",'fmchale@academyart.edu','555-2424'],
+			['522',"Michael Catanzaro",'mcatanzaro@academyart.edu','555-2424'],
+			['514',"Andrea Pimentel",'apimentel@academyart.edu','555-2424'],
+			['516',"DC Scarpelli",'dscarpelli@academyart.edu','555-2424'],
+		];
+
+		// let ran = Math.floor(Math.random()*links.length);
+		return `
+		<table class="${classes}">
+			<thead><tr>${head.reduce((r,o)=>r+`<th>${o}</th>`,'')}</tr></thead>
+			<tbody>${body.reduce((r,o,i)=>r+
+				`<tr>${
+					[i+1,...o].reduce((r,o)=>r+`<td>${o}</td>`,'')
+				}</tr>`,'')
+			}</tbody>
+		</table>
+		`;
+	}
+	</script>
+	<section class="container">
+		<h2 id="tables">Tables</h2>
+
+
+		<div class="card">
+			<h3>Basic Table</h3>
+
+			<script>document.write(makeTable('table'))</script>
+		</div>
+
+
+		<div class="card">
+			<h3>Striped Table</h3>
+
+			<script>document.write(makeTable('table striped'))</script>
+		</div>
+
+
+		<div class="card">
+			<h3>Horizontal Lined Table</h3>
+
+			<script>document.write(makeTable('table lined horizontal'))</script>
+		</div>
+
+
+		<div class="card">
+			<h3>Vertical Lined Table</h3>
+
+			<script>document.write(makeTable('table lined vertical'))</script>
+		</div>
+
+
+		<div class="card">
+			<h3>Horizontal Outlined Lined Table</h3>
+
+			<script>document.write(makeTable('table lined outline horizontal'))</script>
+		</div>
+
+		<div class="card">
+			<h3>All Lined Table</h3>
+
+			<script>document.write(makeTable('table lined all'))</script>
+		</div>
+
+		<div class="card">
+			<h3>Striped with Vertical and Outlines Table</h3>
+
+			<script>document.write(makeTable('table lined vertical outline striped'))</script>
+		</div>
+	</section>
+
+
+
+	<section class="container">
+		<h2 id="ordersummary">Order Summery</h2>
+			<div class="card">
+				<div class="checkout-form-section">
+					<div class="">
+						<img src="" alt="">
+					</div>
+					<div>
+						<div class="checkout-total-container">
+							<div class="grid">
+								<div class="col-12 flex-justify-between">
+									<span class="checkout-value-label">Subtotal</span>
+									<span class="checkout-value">$00.00</span>
+								</div>
+								<div class="col-12 flex-justify-between">
+									<span class="checkout-value-label">Tax</span>
+									<span class="checkout-value">--</span>
+								</div>
+								<div class="col-12 flex-justify-between">
+									<span class="checkout-value-label">Shipping</span>
+									<span class="checkout-value">--</span>
+								</div>
+								<div class="col-12 flex-justify-between">
+									<span class="checkout-value-label">Order Total</span>
+									<span class="checkout-value">$00.00</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-add-bag-xl" data-test="button">Check Out</button>
+			</div>
+		</div>
+	</section>
+
 	<section class="container">
 		<h2 id="checkboxes">Check Boxes</h2>
 
@@ -268,18 +370,22 @@
 			<div>
 				<!-- figure>img+figcaption -->
 				<figure class="product-figure">
-					<img src="https://via.placeholder.com/300" alt="">
+					<img src="img/product 1.jpg" alt>
 					<figcaption>
 						Product
 					</figcaption>
 				</figure>
 			</div>
 		</div>
-		<div class="card">
+
+
+				<!-- figure>img+figcaption -->
+		
+		<!-- <div class="card">
 			<h3>Soft Figure</h3>
 
 			<div>
-				<!-- figure>img+figcaption -->
+
 				<figure class="product-figure soft">
 					<img src="https://via.placeholder.com/300" alt="">
 					<figcaption>
@@ -287,14 +393,15 @@
 					</figcaption>
 				</figure>
 			</div>
-		</div>
+		</div> -->
+
 		<div class="card">
 			<h3>Overlay Figure</h3>
 
 			<a href="#" class="display-block">
 				<!-- figure>img+figcaption -->
 				<figure class="product-figure overlay">
-					<img src="https://via.placeholder.com/300" alt="">
+					<img src="img/product 1.jpg" alt>
 					<figcaption>
 						Product
 					</figcaption>
@@ -311,7 +418,7 @@
 			<div>
 				<!-- figure>img+figcaption -->
 				<figure class="product-figure soft">
-					<img src="https://via.placeholder.com/300" alt="">
+					<img src="img/product 2.jpg" alt="">
 					<figcaption>
 						Product
 					</figcaption>
@@ -324,7 +431,7 @@
 			<div>
 				<!-- figure>img+figcaption -->
 				<figure class="product-figure soft">
-					<img src="https://via.placeholder.com/300" alt="">
+					<img src="img/product 2.jpg" alt="">
 					<figcaption>
 						Product
 					</figcaption>
@@ -337,7 +444,7 @@
 			<div>
 				<!-- figure>img+figcaption -->
 				<figure class="product-figure soft">
-					<img src="https://via.placeholder.com/300" alt="">
+					<img src="img/product 2.jpg" alt="">
 					<figcaption>
 						Product
 					</figcaption>
