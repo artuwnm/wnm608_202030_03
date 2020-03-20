@@ -93,8 +93,6 @@ code {
 }
 
 
-
-
 p {
     font-family:Playfair Display, serif;
     font-weight:200;
@@ -113,6 +111,7 @@ p {
     margin-left: auto;
 }
 
+.hidden { display:none; }
 
 
 /* ATOMIC CLASSES */
@@ -255,6 +254,160 @@ p {
 }
 
 
+/* TABLE */
+.table {
+    width:100%;
+    border-collapse:collapse;
+}
+.table th,
+.table td {
+    text-align:left;
+    padding:0.5em;
+}
+
+.table.striped tbody tr:nth-child(odd) {
+    background-color:rgba(0,0,0,0.1);
+}
+.table.striped tbody tr:hover {
+    background-color:rgba(0,0,0,0.2);
+}
+
+
+.table.lined.all tbody tr,
+.table.lined.horizontal tbody tr {
+    border-top:1px solid var(--color-neutral-light);
+}
+
+.table.lined.all th:not(:first-child),
+.table.lined.all td:not(:first-child),
+.table.lined.vertical th:not(:first-child),
+.table.lined.vertical td:not(:first-child) {
+    border-left:1px solid var(--color-neutral-light);
+}
+
+.table.lined.all,
+.table.lined.outline {
+    border:1px solid var(--color-neutral-light);
+}
+
+
+
+/* CHECKBOXES */
+
+.heart-toggle label {
+    color:gray;
+    transform:scale(1,1);
+    transition:all 0.3s;
+    display:inline-block;
+}
+.heart-toggle input:checked + label {
+    color:red;
+    transform:scale(1.3,1.3);
+}
+
+
+.toggle label {
+    display: inline-block;
+    width: 2em;
+    height: 1em;
+    border: 0.1em solid #000;
+    border-radius: 1em;
+    box-sizing: content-box;
+    position:relative;
+    background-color:white;
+    transition:all 0.3s;
+}
+.toggle input:checked+label {
+    background-color:#c72101;
+}
+.toggle label::before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:1em;
+    height:1em;
+    background-color:black;
+    border-radius:1em;
+    transition:all 0.3s;
+    transform:translateX(0);
+}
+.toggle input:checked + label::before {
+    transform:translateX(1em);
+}
+
+
+
+
+
+
+/* FORMS */
+
+.form-input {
+    display:block;
+    width:100%;
+    border-width:0;
+    border-bottom:1px solid var(--color-neutral-light);
+    color:inherit;
+    font:inherit;
+    padding:0.5em 1em;
+    -webkit-appearance:none;
+    outline:0;
+}
+.form-label {
+    display:block;
+    width:100%;
+    font-size:0.8em;
+    color:var(--color-neutral-medium);
+}
+.form-control {
+    margin:1em 0;
+}
+
+.form-button {
+    display:block;
+    width:100%;
+    border-width:0;
+    color:inherit;
+    font:inherit;
+    padding:0.5em 1em;
+    -webkit-appearance:none;
+    outline:0;
+    text-align:center;
+    background-color:var(--color-neutral-secondbreakfast);
+    border-radius:0.3em;
+    text-decoration:none;
+    cursor:pointer;
+}
+.form-button:hover {
+    text-decoration:none;
+}
+
+
+.hotdog {
+    display:block;
+    width:100%;
+    padding:0.5em 1em;
+    background-color:var(--color-neutral-light);
+    border-radius:2em;
+    border-width:0;
+    font:inherit;
+    color:inherit;
+    outline:0;
+    display:flex;
+}
+.hotdog input {
+    border-width:0;
+    display:block;
+    color:inherit;
+    font:inherit;
+    background-color:transparent;
+    outline:0;
+    width:100%;
+}
+.hotdog .icon {
+    padding:0 1em;
+}
 
 
 
@@ -265,20 +418,99 @@ p {
     width:100%;
     border-collapse:collapse;
 }
-
 .table th,
 .table td {
     text-align:left;
-    padding:0.2em 0.5em;
+    padding:0.5em;
 }
 
-.table.striped tbody tr:nth-child(odd){
-    background-color:rgba(0,0,0,0,1);
+.table.striped tbody tr:nth-child(odd) {
+    background-color:rgba(0,0,0,0.1);
+}
+.table.striped tbody tr:hover {
+    background-color:rgba(0,0,0,0.2);
 }
 
-.table.striped tbody tr:hover{
-    background-color:rgba(0,0,0,0,2);
+
+.table.lined.all tbody tr,
+.table.lined.horizontal tbody tr {
+    border-top:1px solid var(--color-neutral-light);
 }
+
+.table.lined.all th:not(:first-child),
+.table.lined.all td:not(:first-child),
+.table.lined.vertical th:not(:first-child),
+.table.lined.vertical td:not(:first-child) {
+    border-left:1px solid var(--color-neutral-light);
+}
+
+.table.lined.all,
+.table.lined.outline {
+    border:1px solid var(--color-neutral-light);
+}
+
+
+
+
+
+/* Order Summary */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 0;
+}
+
+.col-12 {
+    grid-column: span 12;
+    grid-column-start: span 12;
+    grid-column-end: auto;
+}
+
+.flex-justify-between {
+    display: flex;
+}
+
+
+.checkout-value-label, 
+.checkout-value {
+    font-size: 14px;
+    color: var(--color-font-light);
+}
+
+
+.checkout-total-container>div div:last-child span.checkout-value-label,
+.checkout-total-container>div div:last-child span.checkout-value {
+    width: 700;
+    color: var(--color-font-dark);
+}
+
+
+.checkout-total-container>div div:last-child {
+    margin: 1rem 0;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-font-light);
+}
+
+
+.btn {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+    margin-top: 14px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: .0625rem solid;
+    font-size: .875rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn-add-bag-xl {
+    min-height: 45px;
+
+
+
 
 
 
