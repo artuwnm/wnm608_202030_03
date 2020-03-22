@@ -1,10 +1,10 @@
 # Ji Yeom
 
 ## Links
-
-- http://jiwonyeom.com/aau/wnm608/ji.yeom/index.html
+- http://jiwonyeom.com/aau/wnm608/ji.yeom
 - http://jiwonyeom.com/aau/wnm608/ji.yeom/recipes/index.html
 - http://jiwonyeom.com/aau/wnm608/ji.yeom/styleguide/index.html
+
 
 
 ## How to commit on Git via Terminal

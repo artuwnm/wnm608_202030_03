@@ -1,39 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
 	<title>PIN YOUR PINS</title>
 
-	<meta name="viewport" content="width=device-width">
-	<!-- Icon library -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<?php include "parts/meta.php" ?>
 
-	<link rel="stylesheet" href="lib/css/styleguide.css">
-	<link rel="stylesheet" href="lib/css/gridsystem.css">
-	<link rel="stylesheet" href="css/storetheme.css">
-
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
-	<!-- header.navbar>h1+nav.nav -->
-	<header class="navbar">
-		<div class="container display-flex">
-			<div class="flex-none">
-				<h1>PIN YOUR PINS</h1>
-			</div>
-			<nav class="nav flex-none">
-				<ul class="display-inline-flex">
-					<li><a href="#">Store</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">Account</a></li>
-					<li><a href="#">Cart</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+	<?php include "parts/navbar.php" ?>
 
 	<div class="view-window display-flex flex-line-center flex-justify-center" style="background-image:url('img/pin-main.png')">
 	</div>
@@ -115,11 +91,6 @@
 	</div>
 
 <br>
-<footer>
-	<div class="card" style="background-color: #000">
-		<p style="color: #fff; font-size: 0.75em;">Designed by Ji Yeom</p>
-	</div>
-</footer>
+	<?php include "parts/footer.php" ?>
 </body>
-
 </html>
