@@ -126,17 +126,19 @@
 
 		<div class="card">
 			<h3>Flex Nav</h3>
-			<script>document.write(makeNav("nav-flex"))</script>
+			<!-- <script>document.write(makeNav("nav-flex"))</script> -->
 			<!-- nav.nav>ul>li*3>a[href=#]>{Link $} -->
-			<!-- <div>
+			 <div>
 				<nav class="nav-flex">
 					<ul>
-						<li class><a href="#">home</a></li>
-						<li class="active"><a href="#">store</a></li>
-						<li class><a href="#">about</a></li>
+						<li class><a href="#">Home</a></li>
+						<li class><a href="#">Product</a></li>
+						<li class><a href="#">Cart</a></li>
+						<li class><a href="#">About</a></li>
+						<li class><a href="#">Log in</a></li>
 					</ul>
 				</nav>
-			</div> -->
+			</div> 
 		</div>
 
 		<div class="card">
@@ -359,15 +361,27 @@
 
 		<div class="card">
 			<h2>Form Button</h2>
-			<div class="form-control">
+			<!-- <div class="form-control">
 				<input type="submit" class="form-button">
+			</div> -->
+
+			
+			<div class="form-control" style="padding: 0 5em;">
+				<button type="button" class="form-button">EXPLORE THE LOOK</button>
 			</div>
-			<div class="form-control">
-				<button type="button" class="form-button">Button</button>
+			<div class="form-control display-flex">
+				<div class="flex-stretch"></div>
+				<div class="flex-none" style="width: 33%;">
+					<button type="button" class="buy form-button">EXPLORE MORE</button>
+				</div>
 			</div>
-			<div class="form-control">
+			<div class="display-flex">
+				<button type="button" class="form-button">ADD TO CART</button>
+				<button type="button" class="wish form-button">WISHLIST</button>
+			</div>
+			<!-- <div class="form-control">
 				<a href="#" class="form-button">Anchor</a>
-			</div>
+			</div> -->
 			
 		</div>
 
@@ -459,7 +473,7 @@
     		<h3>Overlay Figure</h3>
     		<a href="#" class="display-block">
     			<figure class="product-figure overlay">
-    				<img src="https://via.placeholder.com/300" alt>
+    				<img src="images/fabric.jpg" alt>
     				<figcaption>Product</figcaption>
     			</figure>
     		</a>
@@ -470,7 +484,7 @@
 			<div class="col-xs-12 col-md-4">
 				<div>
 					<figure class="product-figure soft">
-	    				<img src="https://via.placeholder.com/300" alt>
+	    				<img src="images/fabric1.jpg" alt>
 	    				<figcaption>Product</figcaption>
 	    			</figure>
 				</div>

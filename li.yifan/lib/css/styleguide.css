@@ -10,9 +10,9 @@
 	--color-neutral-medium:#988c8c;
 	--color-neutral-light:#ece7e7;
 
-	--color-main-dark:blue;
-	--color-main-medium:blue;
-	--color-mainl-light:blue;
+	--color-main-dark:#CA7E70;
+	--color-main-medium:#E4A6A9;
+	--color-main-light:#E8E5E2;
 
 	--color-black:black;
 	--color-white:white;
@@ -27,7 +27,7 @@ body {
 	box-sizing: border-box;
 	margin:0;
 	font-size: 100%;
-	font-family: Helvetica,Arial,sans-serif;
+	font-family: Gill Sans,Helvetica,Arial,sans-serif;
 }
 
 h1,
@@ -36,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: Georgia,"Times New Roman",serif;
+	font-family: Gill Sans,Georgia,"Times New Roman",serif;
 
 }
 
@@ -77,20 +77,27 @@ code {
 /* TOP SQUARE KIND PART */
 
 .topads {
-	max-width: 1000px;
 	margin-right: auto;
 	margin-left: auto;
 
 }
 
 .ads {
-	background-color: white;
+	background-image: linear-gradient(to bottom, #fff 50%, #5F4E3D 50%, #5F4E3D 100%);
 	overflow: hidden;
 	position: relative;
 	padding: 1em;
 	margin-top: 1em;
 	margin-bottom: 1em;
-	display: inline-flex;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.ads img {
+	width: 680px;
+
 }
 
 
@@ -121,8 +128,8 @@ code {
 /* COMPONENT CLASSES*/
 
 .navbar {
-	background-color: var(--color-neutral-dark);
-	color: var(--color-neutral-light);
+	background-color: var(--color-main-light);
+	color: var(--color-neutral-dark);
 	line-height: var(--header-height);
 	/* background-color: var(--color-neutral-medium);
 	   background-color: var(--color-neutral-light); */
@@ -174,7 +181,7 @@ code {
 .nav-stretch li.active a,
 .nav-flex li.active a,
 .nav li.active a {
-	background-color: var(--color-mainl-light);
+	background-color: var(--color-main-light);
 	color: inherit;
 }
 
@@ -370,22 +377,37 @@ table {
 
 .form-control {
 	margin: 1em 0;
+	/* padding: 0 5em; */
 }
+
+
 
 .form-button {
 	display: block;
 	width: 100%;
 	border-width: 0;
-	color: inherit;
+	color: White;
 	font: inherit;
 	padding: 0.5em 1em;
+	/* margin: 0 5em; */
 	-webkit-appearance: none;
 	outline: 0;
 	text-align: center;
-	background-color: var(--color-neutral-secondbreakfast);
+	background-color: #364127;
 	border-radius: 0.3em;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+.form-button.buy {
+	background-color: #9C5003;
+}
+
+.form-button.wish {
+	background-color: #F7F7F7;
+	color: black;
+	width: 33%;
+	padding: 0 5em;
 }
 
 .form-button:hover {
@@ -395,6 +417,7 @@ table {
 .hotdog {
 	display: block;
 	width: 100%;
+	height: 2em;
 	padding: 0.5em 1em;
 	background-color: var(--color-neutral-light);
 	border-radius: 2em;

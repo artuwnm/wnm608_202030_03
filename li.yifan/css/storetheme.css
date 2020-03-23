@@ -1,11 +1,11 @@
 :root {
 	--color-neutral-dark:#4B5053;
 	--color-neutral-medium:#9FABA4;
-	--color-neutral-light:#eee;
+	--color-neutral-light:#F7F7F7;
 
 	--color-main-dark:#CA7E70;
 	--color-main-medium:#E4A6A9;
-	--color-mainl-light:#D8D3E2;
+	--color-main-light:#E8E5E2;
 }
 
 body {
