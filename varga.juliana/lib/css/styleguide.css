@@ -109,7 +109,7 @@ code {
 
 /* ATOMIC CLASSES */
 
-.display-flex { display:flex; }
+.display-flex { display:inline-flex; }
 .display-inline-flex { display:inline-flex; }
 .display-block { display:block; }
 .display-inline-block { display:inline-block; }
@@ -127,8 +127,7 @@ code {
 /* COMPONENT CLASSES */
 
 .navbar {
-	background-color:var(--color-neutral-dark);
-	color:var(--color-neutral-light);
+	color:var(--color-neutral-dark);
 	line-height: var(--header-height);
 }
 .navbar h1 {

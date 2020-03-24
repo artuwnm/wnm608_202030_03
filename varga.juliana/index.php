@@ -10,23 +10,16 @@
 </head>
 <body>
 	<!-- header.navbar>h1+nav.nav -->
-	<header>
-		<div width="100%" align="center" padding="10px">
-			<img align="center" id="logo" src="img/jvlogo.png">
-		</div>
-		
-	</header>
 	<header class="navbar">
 
-			<nav align="center" class="nav flex-none">
-				<!-- ul>li*3>a[href=#]>{Link $} -->
-				<ul class="display-flex">
-					<li><a href="#">Earings</a></li>
-					<li><a href="#">Rings</a></li>
-					<li><a href="#">Bracelets</a></li>
-					<li><a href="#">About Us</a></li>
-				</ul>
-			</nav>
+			<nav class="navigation-bar">
+    <img class="logo" src="img/jvlogo.png">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</nav>
 	</header>
   <br>
   <br>
