@@ -13,7 +13,7 @@
 	<header class="navbar">
 
 			<nav class="navigation-bar">
-    <img class="logo" src="img/jvlogo.png">
+    <img class="logo" src="img/logo.png">
     <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Products</a></li>
