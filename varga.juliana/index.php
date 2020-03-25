@@ -7,27 +7,34 @@
 	<link rel="stylesheet" href="lib/css/styleguide.css">
 	<link rel="stylesheet" href="lib/css/gridsystem.css">
 	<link rel="stylesheet" href="css/storetheme.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
+
 	<!-- header.navbar>h1+nav.nav -->
 	<header class="navbar">
+	<div class="container display-flex">
+		
+		<div class="flex-stretch">
+			<img src="img/logo.png">
+		</div>
+		
+		<nav class="nav-flex flex-none">
+			<ul>
+				<!-- li*3>a[href=#]>{Link $} -->
+				<li><a href="index.php">Home</a></li>
+				<li><a href="product_list.php">Store</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+		</nav>
+	
 
-			<nav class="navigation-bar">
-    <img class="logo" src="img/logo.png">
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">About</a></li>
-    </ul>
-</nav>
-	</header>
-  <br>
-  <br>
-	<div class="view-window display-flex flex-align-center flex-justify-center" style="background-image:url('img/jv.jpg')">
 	</div>
-  <br>
+</header>
   <br>
 
+ 
 	<div class="container">
 		
 		<div class="grid gap">

@@ -1,7 +1,7 @@
 :root {
-    --color-neutral-dark: #316a8a;
+    --color-neutral-dark: #316a8a; 
     --color-neutral-medium: #999;
-    --color-neutral-light: #eee;
+    --color-neutral-light: #fff;
 
     --color-main-light: #eac3fa;
     --color-main-medium: #8d39b0;
@@ -10,7 +10,7 @@
 
 
 body {
-	background-color:var(--color-neutral-light);
+	background-color:white;
 	padding-bottom:10em;
 }
 
@@ -21,6 +21,60 @@ body {
 	height:100%;
 	margin:0;
 }
+
+
+
+
+/* FIGURE */
+.product-figure {
+	margin:0;
+}
+.product-figure img {
+	width:100%;
+	object-fit:cover;
+	max-height:30vh;
+	vertical-align: text-bottom;
+
+}
+.product-figure figcaption {
+	padding:1em;
+	background-color:white;
+}
+
+	.product-figure.soft {
+		border-radius:1em;
+		overflow:hidden;
+		box-shadow:0 2px 5px rgba(0,0,0,0.1);
+	}
+
+	.product-figure.overlay {
+		position:relative;
+		overflow:hidden;
+		border-radius:1em;
+	}
+	.product-figure.overlay figcaption {
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background-color:rgba(0,0,0,0.5);
+		transition:all 0.3s;
+		opacity:0;
+	}
+	.product-figure.overlay:hover figcaption {
+		opacity:1;
+	}
+	.product-figure.overlay img {
+		transition:all 0.5s;
+		transform:scale(1,1);
+	}
+	.product-figure.overlay:hover img {
+		transform:scale(1.4,1.4);
+	}
+
+
+
 
 
 
