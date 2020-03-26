@@ -25,7 +25,7 @@
 				<!-- li*3>a[href=#]>{Link $} -->
 				<li><a href="index.php">Home</a></li>
 				<li><a href="product_list.php">Store</a></li>
-				<li><a href="#">About</a></li>
+				<li><a href="about.php">About</a></li>
 			</ul>
 		</nav>
 	
