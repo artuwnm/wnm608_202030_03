@@ -55,11 +55,8 @@
 		<div class="card">
 			<h3 id="about">About us</h3>
 			<hr>
-			<p>At Begari, we believe in sharing in the best clothing and footwear that anyone can find within reasonable prices. We give a brand new look to our items that made it off the shelves too quickly. We offer items ranging from Nike to H&M and Express that you may have once saw in store but didn't have the chance to buy before it was too late.</p>
-
-			<p>Customers all over the country appreciate our name brand items at their discounted rates. They're happy to finally add a new look to their wardrobe that they never thought they would be able to have. Browse through and see if you can treat yourself to that jacket that you once wanted!</p>
-
-			<p>Because we have many satisfied customers, our items do sell out quick. Make sure to check out any items in our <a href="lastcall">last call</a> section before they're gone forever!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ducimus omnis nam dolores explicabo eum, ab provident unde quas atque.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis officiis et eos illum in. Quis velit itaque reiciendis minima, asperiores.</p>
 		</div>
 	</section>
 
