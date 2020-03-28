@@ -60,8 +60,8 @@
 	<div>This is my name</div>
 	<div>
 	<?php
-	$firstname = "TING";
-	$lastname = "WEI";
+	$firstname = "Hamilton";
+	$lastname = "Cline";
 
 	$fullname = $firstname.$lastname;
 	$fullname = "$firstname $lastname";
@@ -137,21 +137,24 @@
 	echo $colorsAssociative['red']."<br>";
 	echo $colorsAssociative[$colors[0]]."<br>";
 
+	// Object Property Notation
+	echo $colorsObject->red."<br>";
+	echo $colorsObject->{$colors[0]}."<br>";
+
 	?>
 
 	<hr>
 
 	<?php
-    
-    print_r($colors);
-    echo "<hr>";
-    print_r($colorsAssociative);
-    echo "<hr>";
-    echo "<pre>",print_r($colorsObject),"</pre>";
 
-   
+	print_r($colors);
+	echo "<hr>";
+	print_r($colorsAssociative);
+	echo "<hr>";
+	echo "<pre>",print_r($colorsObject),"</pre>";
 
-    // Functions
+
+	// Functions
 	function print_p($v) {
 		echo "<pre>",print_r($v),"</pre>";
 	}
