@@ -11,14 +11,34 @@
 	<link rel="stylesheet" href="../lib/css/gridsystem.css">
 	<link rel="stylesheet" href="../css/storetheme.css">
 </head>
-
 <body>
-
-	<header class="container">
-		<div class="card">
-			<h1>Site Style Guide</h1>
-		</div>
-	</header>
+	<header class="navbar" id="navbar">
+        <div class="top-menu">
+			<a href="#">join/log in to member profile </a>
+			<a href="#">about us</a>
+            <ul class="flash-right">
+				<li><a href="#">cart</a></li>
+                <li><a href="#">search</a></li>               
+            </ul>
+        </div>
+        <hr>
+        <div class="container display-flex">
+            <nav class="nav flex-none">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/img/logo.png" alt="" style="width: 10%;">
+                    </a>
+				</div>
+				<ul  class="display-flex product-nav">
+					<li ><a href="home-decor.html">Throw Pillows</a></li>
+					<li ><a href="#">Wall Clocks</a></li>
+					<li ><a href="#">Placemats</a></li>
+					<li ><a href="#">Framed Art</a></li>						
+				</ul>
+            </nav>
+            
+        </div>
+    </header>
 
 	<nav class="container card">
 		<h2>Table of Contents</h2>
@@ -77,53 +97,28 @@
 
 
 	<section class="container card">
-		<h2 id="navigations">Navigations</h2>
+		<h2 id="navigations">Breadcrumb Navigations</h2>
 
-	<script>
-	const makeNav = (classes='') => {
-		const links = ['home','store','about'];
-		let ran = Math.floor(Math.random()*links.length);
-		return `
-		<div>
-			<nav class="${classes}">
-				<ul>
-				${links.reduce((r,o,i)=>{
-				return r+`<li class="${ran==i?'active':''}">
-				<a href="#">${o}</a>
-				</li>`;
-				},'')}
-				</ul>
-			</nav>
-		</div>
-		`;
-	}
-	</script>
-
-		<!-- <div class="card"> -->
-			<h3>Basic Nav</h3>
-
-			<script>document.write(makeNav("nav"))</script>
-		</div>
-		<!-- <div class="card"> -->
-			<h3>Flex Nav</h3>
-
-			<script>document.write(makeNav("nav-flex"))</script>
-		</div>
-		<!-- <div class="card"> -->
-			<h3>Stretch Nav</h3>
-
-			<script>document.write(makeNav("nav-stretch"))</script>
-		</div>
-		<!-- <div class="card"> -->
-			<h3>Pills Nav</h3>
-
-			<script>document.write(makeNav("nav-pills"))</script>
-		</div>
-		<!-- <div class="card"> -->
-			<h3>Breadcrumb Nav</h3>
-
-			<script>document.write(makeNav("nav-crumbs"))</script>
-		</div>
+		<script>
+		const makeNav = (classes='') => {
+			const links = ['home','store','about'];
+			let ran = Math.floor(Math.random()*links.length);
+			return `
+			<div>
+				<nav class="${classes}">
+					<ul>
+					${links.reduce((r,o,i)=>{
+					return r+`<li class="${ran==i?'active':''}">
+					<a href="#">${o}</a>
+					</li>`;
+					},'')}
+					</ul>
+				</nav>
+			</div>
+			`;
+		}
+		</script>
+		<script>document.write(makeNav("nav-crumbs"))</script>
 	</section>
 
 
@@ -135,16 +130,6 @@
 		$(this).closest('li').addClass("active")
 			.siblings().removeClass("active")
 	})
-	// document.querySelectorAll('nav a').forEach(o=>{
-	// 	o.addEventListener("click",function(e){
-	// 		e.preventDefault();
-	// 		this.classList.add("active");
-	// 		[...this.parentElement.children].forEach(a=>{
-	// 			console.log(a,o)
-	// 			if(a!==o) a.classList.remove("active")
-	// 		})
-	// 	})
-	// })
 	</script>
 
 
@@ -442,6 +427,5 @@
 			</div>
 		</div>
 	</section>
-	
 </body>
 </html>

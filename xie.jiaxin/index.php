@@ -10,7 +10,6 @@
 	<link rel="stylesheet" href="/js/sticky-navbar.js">
 </head>
 <body>
-	<!-- header.navbar>h1+nav.nav -->
 	<header class="navbar" id="navbar">
 		<div class="container display-flex">
 			<nav class="nav flex-none">
@@ -19,14 +18,9 @@
                         <img src="img/logo-white.png" alt="" style="width: 15%;">
                     </a>
 				</div>
-			<!-- <nav class="nav flex-none">
-				<div class="logo">
-					<img src="img/logo-white.png" alt="">
-				</div> -->
 				<div class="Search">
 					<input type="text" placeholder="Search..">
 				</div>
-				<!-- moved the search div out of the unordered list tag. having it inside the tag was preventing spacing -->
 				<ul  class="display-flex">
 					<li  class="dropdown">
 						<a href="home-decor.html" class="dropbtn">Home Decor</a>
@@ -35,7 +29,7 @@
 							<a href="">Wall Clocks</a>
 						</div>
 					</li>
-					<li class="dropdown">
+					<!-- <li class="dropdown">
 						<a href="#" class="dropbtn">Tech</a>
 						<div  class="dropdown-content">
 							<a href="#">Phone Cases</a>
@@ -57,7 +51,7 @@
 							<a href="#">Postercards</a>
 							<a href="#">Stickers</a>
 						</div>
-					</li>
+					</li> -->
 					<li class="dropdown">
 						<a href="#" class="dropbtn">Wall Art</a>
 						<!-- <div  class="dropdown-content">
