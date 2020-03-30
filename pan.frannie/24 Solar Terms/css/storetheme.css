@@ -1,9 +1,12 @@
 :root {
-    --color-neutral-dark: #02091F;
-    --color-neutral-medium: #666666;
-    --color-neutral-light: #F6FAFB;
-}
+    --color-neutral-dark: #5B76A1;
+    --color-neutral-medium: #999;
+    --color-neutral-light: white;
 
+    --color-main-light: #eac3fa;
+    --color-main-medium: #8d39b0;
+    --color-main-dark: #44105a;
+}
 
 body {
 	background-color:var(--color-white);

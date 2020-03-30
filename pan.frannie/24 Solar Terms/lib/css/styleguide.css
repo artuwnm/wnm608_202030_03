@@ -1,0 +1,285 @@
+/* ELEMENT RESETS */
+
+*,*::before,*::after {
+	box-sizing:inherit;
+}
+
+:root {
+    --color-neutral-dark: #5B76A1;
+    --color-neutral-medium: #7184A2;
+    --color-neutral-light: #F6FAFB;
+
+    --header-height:3rem;
+}
+
+body {
+	box-sizing:border-box;
+	margin:0;
+	font-size:100%;
+	font-family:Montserrat;
+	font-weight:400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family:Montserrat;
+	font-weight:600;
+	color:#5B76A1;
+}
+
+
+a {
+	color:#7184A2;
+	font-weight:500;
+	text-decoration: none;
+}
+
+a:hover {
+	font-weight:700;
+}
+
+p {
+	font-family:Montserrat;
+	font-weight:400;
+	color:#7184A2;
+	font-size: 18px;
+	line-height: 200%;
+}
+
+
+
+
+
+
+
+/* SMALL CLASSES */
+
+.navbarlogo{
+	margin-top:10px;
+}
+
+
+
+.container {
+	max-width:1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+/* ATOMIC CLASSES */
+
+.display-flex { display:flex; }
+.display-inline-flex { display:inline-flex; }
+.display-block { display:block; }
+.display-inline-block { display:inline-block; }
+
+
+.flex-stretch { flex: 1 1 auto; }
+.flex-none { flex: none; }
+
+.flex-align-center { align-items:center; }
+.flex-justify-center { justify-content:center; }
+
+
+
+
+/* COMPONENT CLASSES */
+
+.navbar {
+	background-color:var(--color-white);
+	color:var(--color-neutral-light);
+	line-height: var(--header-height);
+}
+.navbar h1 {
+	margin:0;
+	font-size:1rem;
+}
+.navbar a {
+	padding: 0 1em;
+}
+
+.nav ul {
+	list-style-type:none;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+
+.navigation{
+	margin-right:auto;
+	margin-left:auto;
+	width:550px;
+}
+
+
+
+
+.nav a{
+	display:block;
+	padding:0.6em 1em;
+}
+
+	.nav a:hover{
+
+		text-decoration:none;
+		font-weight:700;
+		color:#5B76A1;
+
+	}
+
+
+	.active {
+		border-style: solid;
+		border-color:#5B76A1;
+		border-width:1px;
+		color:#5B76A1;
+	}
+
+
+.nav ul {
+	display:flex;
+}
+
+
+
+
+
+/* Search Bar –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+.wrap {
+/*  margin: 50px 100px;*/
+  display: inline-flex;
+  position: relative;
+  float: right;
+  height: 35px;
+  padding: 0;
+  margin-top: 15px;
+}
+
+
+
+
+input[type="text"] {
+  height: 30px;
+  font-size: 15px;
+  display: inline-block;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  color: #7184A2;
+  padding: 2px;
+  padding-right: 60px;
+  width: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  z-index: 3;
+  transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+  cursor: pointer;
+}
+
+input[type="text"]:focus:hover {
+  border-bottom: 1px solid #CACACA;
+}
+
+input[type="text"]:focus {
+  width: 200px;
+  z-index: 1;
+  border-bottom: 1px solid #CACACA;
+  cursor: text;
+}
+
+
+
+
+input[type="go"] {
+  height: 35px;
+  width: 40px;
+/*  display: inline-block;*/
+  float: right;
+  background-image:url("search-icon.png");
+  background-repeat:no-repeat; 
+  background-size: 60%;
+  text-indent: -1000px;
+  border: none;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+/*  opacity: 0.6;*/
+  cursor: pointer;
+  transition: opacity .4s ease;
+}
+
+input[type="go"]:hover {
+  opacity: 0.8;
+
+}
+
+
+
+
+
+/*introtext ______________________________________________________________________________*/
+
+
+.introtext {
+	margin-top:80px;
+	margin-bottom:80px;
+}
+
+
+
+
+
+
+/* card */
+
+.card {
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+	.card>:first-child { margin-top:0; }
+	.card>:last-child { margin-bottom:0; }
+
+	.card.soft {
+	    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+		border-radius:0.3em;
+		color:var(--color-neutral-medium);
+
+	}
+	.card.medium {
+		background-color:var(--color-neutral-medium);
+	}
+	.card.dark {
+		background-color:var(--color-neutral-dark);
+		color:var(--color-neutral-light);
+	}
+	.card.flat {
+		padding:0;
+	}
+
+
+
+/* view window */
+.view-window {
+	height:100vh;
+	overflow:hidden;
+	position:relative;
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+}

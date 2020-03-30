@@ -1,32 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
 	<title>24 SOLAR TERMS</title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="lib/css/styleguide.css">
-	<link rel="stylesheet" href="lib/css/gridsystem.css">
-	<link rel="stylesheet" href="css/storetheme.css">
+
+	<?php include "parts/meta.php" ?>
+
 </head>
-<body>
-	<!-- header.navbar>h1+nav.nav -->
-	<header class="navbar">
-		<div class="container display-flex">
-			<div class="flex-stretch">
-				<h1>24 SOLAR TERMS</h1>
-			</div>
-			<nav class="nav flex-none">
-				<!-- ul>li*3>a[href=#]>{Link $} -->
-				<ul class="display-flex">
-					<li><a href="#">PRODUCT</a></li>
-					<li><a href="#">ABOUT</a></li>
-					<li><a href="#">CONTACT</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
 
+<body>
+
+    <?php include "parts/navbar.php" ?>
+
+
+
+
+    <!-- Big Advertisement -->
 
     <div class="view-window display-flex flex-align-center flex-justify-center" style="background-image:url('img/homead.jpg')">
 		<div class="theme">
@@ -42,8 +31,9 @@
 	<!-- .container>p*2>lorem30 -->
 	<div class="container">
 		
+		<div class="introtext">
 			<p>24 Solar Terms is a theme store located in downtown San Francisco, USA. The theme of the store is 24 solar terms, with the goal of cultural inheritance and integration into contemporary life. It integrates traditional culture with modern aesthetics to provide customers with a selection of specialty goods, such as calendars, clocks, canvas bags, and so on.</p>
-		
+		</div>
 
 	</div>
 
