@@ -11,6 +11,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
+    <!-- php -->
+    <?
+    include("part/header.php");
+    ?>
+    
     <!-- header.navbar>h1+nav.nav -->
 	<header class="navbar" id="navbar">
         <!-- remove container class here -->
