@@ -7,10 +7,10 @@
 				</div>
 			<nav class="nav-flex flex-none">
 			<ul class= "nav-pills">
-				<li><a href="home.php">HOME</a></li>
-				<li><a href="about.php">ABOUT US</a></li>
-				<li><a href="product_list.php">STORE</a></li>
-				<li><a href="contact.php">CONTACT US</a></li>
+				<li><a href="">HOME</a></li>
+				<li><a href="">ABOUT US</a></li>
+				<li><a href="">STORE</a></li>
+				<li><a href="">CONTACT US</a></li>
 				<li><a href="login.php"><img class="icon" src="img/user.png" alt="user"></a></li>
 					<li><a href="cart.php"><img class="icon" src="img/shopping-cart.png" alt="user"></a></li>
 					<li><a href="#"><img class="icon" src="img/search.png" alt=""></a>
