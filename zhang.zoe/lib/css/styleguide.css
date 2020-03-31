@@ -22,9 +22,7 @@ body{
 h1,
 h2,
 h3,
-h4,
-h5,
-h6{
+{
 	font-family:Montserrat,sans-serif;
 }
 
@@ -128,4 +126,48 @@ a:hover {
 	background-attachment: fixed;
 }
 
+.table.striped tbody tr:nth-child(odd){
+	background-color: rgba(0,0,0,0.1);
+}
 
+.table.striped tbody tr:hover{
+	background-color: rgba(0,0,0,0.2);
+}
+
+.table.lined.horizontal tbody tr {
+	border-top:1px solid var(--color-neutral-light);
+}
+
+.table.lined.vertical th:not(:first-child),
+.table.lined.vertical td:not(:first-child){
+	border-left: 1px solid var(--color--)
+}
+
+
+/* CHECKBOXES*/
+
+。heart-toggle label {
+	color:gray;
+	transform: scale(1,1);
+	transition: all 0.3s;
+	display: inline-block;
+}
+
+.toggle label{
+	display:inline-block;
+	width: 2em;
+	height: 1em;
+	border: 0.1em solid var(--color-neutral-medium);
+	border-radius: 1em;
+	box-sizing: content-box;
+}
+
+.toggle label: before{
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	width:1em;
+	height:1em;
+	border: ;
+}
