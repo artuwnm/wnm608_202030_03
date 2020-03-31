@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-		<!-- <?php include "parts/meta.php" ?> -->
-
 	<meta charset="UTF-8">
 	<title>Landing page</title>
 	<meta name="viewport content=width=device-width">
@@ -13,14 +10,10 @@
      <link rel="stylesheet" type="text/css" href="css/storetheme.css">
 </head>
 <body>
-
-  <?php include "parts/navbar.php" ?>
-
-
 <!-- body -->
 
 <!-- header.navbar>h1+nav.nav -->
-	<!-- <header class="navbar">
+	<header class="navbar">
 		<div class="container display-flex">
 			<div class="flex-stretch">
 
@@ -28,7 +21,7 @@
 	</div>
 		<nav class="nav flex-none">
 
-ul>li*3>a[href=#]{Link $}
+<!-- ul>li*3>a[href=#]{Link $} -->
 	<ul class="display-flex">
 		<li><a href="#">Link 1</a></li>
 		<li><a href="#">Link 2</a></li>
@@ -36,7 +29,7 @@ ul>li*3>a[href=#]{Link $}
 	</ul>
 </nav>
 </div>
-</header> -->
+</header>
 
 <!-- .container>p*2>lorem30 -->
 <div class="container">

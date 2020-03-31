@@ -46,3 +46,9 @@ body {
 	.product-figure.overlay:hover img {
 		transform:scale(1.4,1.4);
 	}
+
+	@media (max-width:600px) {
+	.navbar .display-flex {
+		display:block;
+	}
+}

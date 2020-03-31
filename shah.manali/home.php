@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
 
-		<!-- <?php include "parts/meta.php" ?> -->
+		<?php include "parts/meta.php" ?>
 
-	<meta charset="UTF-8">
+	<!-- <meta charset="UTF-8">
 	<title>Landing page</title>
 	<meta name="viewport content=width=device-width">
 
      <link rel="stylesheet" type="text/css" href="lib/css/styleguide.css">
      <link rel="stylesheet" type="text/css" href="lib/css/gridsystem.css">
-     <link rel="stylesheet" type="text/css" href="css/storetheme.css">
+     <link rel="stylesheet" type="text/css" href="css/storetheme.css"> -->
 </head>
 <body>
 
