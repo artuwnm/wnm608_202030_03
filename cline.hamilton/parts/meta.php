@@ -1,6 +1,8 @@
 
 <meta charset="UTF-8">
 
+<base href="https://hdraws.com/aau/wnm608_03/cline.hamilton/">
+
 <meta name="viewport" content="width=device-width">
 
 <link rel="stylesheet" href="lib/css/styleguide.css">
