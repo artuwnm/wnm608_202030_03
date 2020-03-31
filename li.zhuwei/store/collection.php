@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Landing Page</title>
+  <?php include "../parts/meta.php" ?>
+  <title>collection</title>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="lib/css/gridsystem.css">
   <link rel="stylesheet" href="lib/css/styleguide.css">
@@ -12,27 +12,7 @@
 </head>
 <body>
   <!-- header.navbar>h1+nav.nav -->
-  <header class="navbar">
-    <div class="container display-flex">
-      <div class="flex-stretch" onclick="window.location.replace('./index.html');">
-        <h1>JAN STUDIO</h1>
-      </div>
-      <nav class="nav flex-none">
-        <!-- ul>li*3>a[href=#]>{Link $} -->
-        <ul class="display-flex">
-          <li><a href="women.html">WOMEN</a></li>
-          <li><a href="men.html">MEN</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="contacts.html">CONTACT</a></li>
-          <li>
-            <a href="contacts.html">BAG
-              <i class="fas fa-shopping-bag"></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <?php include "../parts/navbar.php" ?>
 
   <main>
     <div class="home-images">
