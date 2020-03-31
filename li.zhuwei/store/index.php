@@ -38,7 +38,7 @@
           <div class="hero-text">
             <h1 style="font-size:50px">New Collection</h1>
             <h3>See what's coming</h3>
-            <button onclick="location.href='women.html'" type="button">Explore
+            <button onclick="location.href='collection.php'" type="button">Explore
             </button>
           </div>
         </div>

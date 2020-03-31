@@ -18,9 +18,9 @@
     <div class="home-images">
       <div class="img-container home-img2">
         <div class="hero-text">
-          <h1 style="font-size:50px">WOMEN'S</h1>
+          <h1 style="font-size:50px">COLLECTION'S</h1>
           <h3>CRUISE 2020</h3>
-          <button onclick="location.href='index.html'" type="button">Explore
+          <button onclick="location.href='index.php'" type="button">Explore
           </button>
         </div>
       </div>
