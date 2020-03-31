@@ -1,0 +1,26 @@
+[
+	{
+		"name":"Ariana Adili",
+		"type":"Student",
+		"email":"aadili243@gmail.com",
+		"classes":[608,613,605]
+	},
+	{ 
+		"name":"shifan yang", 
+		"type":"student", 
+		"email":"yangshifan21@gmail.com", 
+		"classes":[608,613,615]   
+	},
+	{ 
+		"name":"Jiaxin Xie", 
+		"type":"Student", 
+		"email":"jiaxinxiedesign@gamil.com" ,
+		"classes":[608,613,700] 
+	},
+	{ 
+		"name":"Manali Shah", 
+		"type":"Student", 
+		"email":"manalishah19691@gmail.com", 
+		"classes":[608,613,605] 
+	}
+]
