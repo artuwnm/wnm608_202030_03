@@ -1,0 +1,256 @@
+*,*::before,*::after {
+	box-sizing:inherit;
+}
+
+
+
+:root {
+    --color-neutral-secondbreakfast: #cdc6c6;
+
+    --color-black:black;
+    --color-white:white;
+
+}
+
+/* basic */
+
+.container {
+	max-width:1000px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+.hidden { display:none; }
+
+h1{
+	font-family: 'Raleway', sans-serif;
+	font-weight:600;
+	font-size:100%;
+
+}
+
+h2{
+	font-family: 'Raleway', sans-serif;
+	font-weight:600;
+	padding-left: 5%;
+}
+
+
+body{
+	box-sizing:border-box;
+	margin:0;
+	font-size:100%;
+	font-family: 'Raleway', sans-serif;
+	padding:0em;
+
+}
+
+/*/
+header{
+
+	background-color:#E4D8D7;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	overflow:hidden;
+
+}
+
+/* basic define */
+
+.display-flex { display:flex; }
+.display-inline-flex { display:inline-flex; }
+.display-block { display:block; }
+.display-inline-block { display:inline-block; }
+
+
+.flex-stretch { flex: 2 2 auto; }
+.flex-none { flex: none; }
+
+.flex-align-center { align-items:center; }
+.flex-justify-center { justify-content:center; }
+
+/* COMPONENT 1 */
+
+#logo{
+	
+	float:left;
+	display:inline-block;
+	padding-left:2em;
+	padding-top:1.5em;
+	padding-bottom:1.5em;
+}
+
+.clear{
+	clear:both;
+}
+
+#haha{
+	color:white;
+}
+
+#nav{
+	background-color:#E4D8D7;
+	color:black;
+	width:100%;
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,.2);
+
+
+}
+#shoppingbag{
+	background-color:#2E4C69;
+	color:white;
+}
+
+#shoppingbag li hover:{
+	border:0px;
+}
+
+#haha hover:{
+	border:0px;
+
+}
+#shoppingbag hover:{
+	border:0px;
+}
+.nav{
+	float:right;
+	list-style:none;
+	text-align: left;
+	margin: 0;
+	background-color:#F0E9E9;
+	padding-left:1.5em;
+	padding-right:0em;
+
+
+}
+.nav ul{
+	background-color:#2E4C69;
+
+}
+.nav li{
+	display:inline-block;
+	padding: 35px 15px 35px 15px;
+	
+	margin:0;
+}
+
+.nav li a{
+	display:block;
+	text-decoration:none;
+	color:black;
+	font-size:14px;
+	padding: 5px 0px 5px 0px;
+}
+
+.nav li:hover{
+	text-decoration:none;
+	 border-bottom: 1px solid black;
+	 padding-bottom: 4px;
+	transition: all 0.2s ease-in-out 0.2s;
+	/*background-color: #2E4C69;*/
+
+}
+/*.nav li a:hover{*/
+	color:white;
+}
+
+.container2{
+	position:relative;
+	padding:0;
+}
+
+
+
+/*slideshow*/
+.fling-minislide {width:100%; height:0px; padding-bottom: 33%; overflow:hidden; position:relative; }
+.fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;}
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.fling-minislide img:nth-child(4){animation-delay:0s;}
+.fling-minislide img:nth-child(3){animation-delay:5s;}
+.fling-minislide img:nth-child(2){animation-delay:10s;}
+.fling-minislide img:nth-child(1){animation-delay:15s;}
+
+/*button*/
+.container1 {
+  position: relative;
+  width: 49%;
+  display:inline-block;
+}
+
+/* Make the image responsive */
+.container1 img {
+  width: 100%;
+  height: auto;
+  padding-left:10%;
+   display:inline-block;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container1 .btn {
+  font-family: 'Raleway', sans-serif;
+  font-weight:600;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container1 .btn:hover {
+  background-color: black;
+}
+
+/*container right img*/
+
+/*button*/
+.container3 {
+  float:right;
+  display:inline-block;
+  position: relative;
+  width: 49%;
+}
+
+/* Make the image responsive */
+.container3 img {
+  display:inline-block;
+  float:right;
+  width: 100%;
+  height: auto;
+  padding-right:10%;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container3 .btn {
+  font-family: 'Raleway', sans-serif;
+  font-weight:600;
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container3 .btn:hover {
+  background-color: black;
+}
+
+/*second slideshow*/
+
+
+
