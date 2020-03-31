@@ -1,6 +1,8 @@
 
 <meta charset="UTF-8">
 
+<base href="http://asherrfei.com/aau/wnm608/fei.xu/">
+
 <meta name="viewport" content="width=device-width">
 
 <link rel="stylesheet" href="lib/css/styleguide.css">

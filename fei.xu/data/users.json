@@ -1,0 +1,38 @@
+[{
+		"name": "Fei Xu",
+		"type": "Student",
+		"email": "asherrfei@gmail.com",
+		"classes": [608, 613, 606]
+	},
+	{
+
+		"name": "Trista Tu",
+
+		"type": "Student",
+
+		"email": "tristatutu@gmail.com",
+
+		"classes": [608, 617, 820]
+
+
+	},
+	{
+		"name": "shifan yang",
+
+		"type": "student",
+
+		"email": "yangshifan21@gmail.com",
+
+		"classes": [608, 613, 615]
+	},
+	{
+		"name": "Mandy",
+
+		"type": "Student",
+
+		"email": "mandynwy1129@gmail.com",
+
+		"classes": [608, 617, 820]
+	}
+
+]
