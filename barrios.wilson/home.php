@@ -4,14 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Cool Keychains</title>
 
-
-	<!-- meta:vp -->
-	<meta name="viewport" content="width=device-width">
-
-	<link rel="icon" href="../img/favicon.png" sizes="32x32" type="image/png">
-	<link rel="stylesheet" href="../lib/css/styleguide.css">
-	<link rel="stylesheet" href="../lib/css/gridsystem.css">
-	<link rel="stylesheet" href="../css/storetheme.css">
+<?php include "parts/meta.php" ?>
 
 	<style>
 	h2 {
@@ -23,30 +16,8 @@
 
 </head>
 <body>
-<header class="navbar-top">
-			</navbar-top>
-		</div>
-	</header>
-	<header class="navbar">
-		<div class="container display-flex">
-			<div class="flex-stretch">
-				<p><img class="logo" src="../img/coolkeychains-logo.png" alt="CoolKeychains"></p>
-				</div>
-			<nav class="nav-flex flex-none">
-			<ul class= nav-pills>
-				<li><a href="#">HOME</a></li>
-				<li><a href="#">ABOUT</a></li>
-				<li><a href="#">STORE</a></li>
-				<li><a href="#">CONTACT US</a></li>
-				<li><a href="#"><img class="icon" src="../img/user.png" alt="user"></a></li>
-					<li><a href="#"><img class="icon" src="../img/shopping-cart.png" alt="user"></a></li>
-					<li><a href="#"><img class="icon" src="../img/search.png" alt=""></a>
-					</li>
+	<?php include "parts/navbar.php" ?>
 
-			</ul>
-		</nav>
-	</div>
-</header>
 
 	<div class="wrapper">
   <div class="nested-wrapper1">
@@ -119,10 +90,7 @@
 			</div>
 		</div>
 
-  <div class="footer">
-  	<p><img class="logo-footer" src="../img/coolkeychains-logo.png" alt="CoolKeychains"></p>
-	<h5>Cool Keychains.com ©2020 by Wilson Barrios | MFA-CA | #04389249 </h5>
-  </div>
+  <?php include "parts/footer.php" ?>
     </div>
 
 

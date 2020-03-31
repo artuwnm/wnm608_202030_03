@@ -136,6 +136,8 @@ padding: 3em;
 .navbar-top {
 	background-color:#4ABDAC;
 	color:var(--color-neutral-light);
+	height: 30px;
+
 	
 }
 .navbar-top h1 {
@@ -144,6 +146,7 @@ padding: 3em;
 }
 .navbar-top a {
 	padding: 0 1em;
+
 }
 
 .navbar-top ul {
