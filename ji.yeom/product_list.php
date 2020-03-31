@@ -2,31 +2,11 @@
 <html lang="en">
 <head>
 	<title>Store: Product List</title>
-
 	<?php include "parts/meta.php" ?>
 </head>
 
 <body>
-	
-	<?php include "parts/navber.php" ?>
-
-	<header class="navbar">
-		<div class="display-flex">
-			<div class="flex-strech">
-				<h1>Store</h1>
-			</div>
-			<nav class="nav-flex flex-none">
-				<ul>
-					<li><a href="#">Store</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">Account</a></li>
-					<li><a href="#">Cart</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-
+	<?php include "parts/navbar.php" ?>
 
 	<div class="containter">
 		<div class="card soft">

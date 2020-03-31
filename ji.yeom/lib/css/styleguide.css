@@ -5,17 +5,15 @@
 }
 
 :root {
+	--color-neutral-light: #eee;
 	--color-neutral-dark: #1212;
 	--color-neutral-medium: #797979;
-	--color-neutral-light: #eee;
 
-	--color-main-light: #5AFF5A;
-/*    --color-main-medium: #5AFF5A;
-    --color-main-dark: #5AFF5A;*/
-
+	--color-main: #5AFF5A;
     --color-blue: #1155CC;
 
 	--header-height: 3rem;
+	--footer-height: 1rem;
 }
 
 body {
@@ -70,13 +68,14 @@ p {
 }
 
 footer {
-	text-align: right;
+	text-align: center;
 	font-style: italic;
-/*	background-color: black;
-	color: #fff;
+	background-color: black;
+	color: #797979;
+	font-size: 0.75rem;
     padding: 30px 20px;
 	height: 80px;
-	*/
+    /*border-top: solid 1px black;*/
 }
 
 a {
@@ -99,11 +98,26 @@ code {
 	display: block;
 }
 
+img {
+	/*position: relative;*/
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: auto;
+ }
 img:hover {
-	background-color: var(--color-main-light);
+	background-color: #5AFF5A;
 	opacity: 0.5;
 }
-
+.logo img {
+	width: 22vh;
+	/*padding-left: 20vm;*/
+}
+.icon img {
+	width: 6vh;
+	margin: 0;
+	padding: 0;
+}
 
 
 
@@ -156,31 +170,30 @@ img:hover {
 
 /* COMPONENT CLASSES */
 .navbar {
-	color: var(--color-neutral-light);
-	background-color: black;
-	line-height: var(--header-height);
-	height: 100px;
-    padding: 20px;
+	color: #fff;
+	background-color: #000;
+	/*line-height: var(--header-height);*/
+	height: 70px;
+    padding: 10px;
 }
 .navbar h1 {
 	margin: 0;
 	background-color: #fff;
 	color: #000;
-	font-size: 1rem;
+	font-size: 1.1rem;
 }
 .navbar a {
 	padding: 0 1em;
 }
-.navbar a:hover {
+/*.navbar a:hover {
 	color: #5AFF5A;
-}
+}*/
 .nav ul {
 	list-style-type: none;
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
 }
-
 
 
 
@@ -191,12 +204,12 @@ img:hover {
 .nav-flex ul,
 .nav ul {
 	list-style-type: none;
+	text-align: center;
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
 }
 
-.nav-stretch a,
 .nav-flex a,
 .nav a {
 	display: block;
@@ -206,16 +219,16 @@ img:hover {
 	.nav-stretch a:hover,
 	.nav-flex a:hover,
 	.nav a:hover {
-		background-color: var(--color-main-light);
-		color: var(--color-blue);
+		color: #5AFF5A;
 		text-decoration: none;
 	}
 	.nav-crumbs li.active a,
 	.nav-stretch li.active a,
 	.nav-flex li.active a,
 	.nav li.active a {
-		background-color: var(--color-main-light);
+		background-color: #5AFF5A;
 		color: inherit;
+		float: right;
 	}
 
 .nav-crumbs ul,
@@ -299,7 +312,7 @@ img:hover {
 	background-color: rgba(0,0,0,0.1);
 }*/
 .table.striped tbody tr:hover {
-	background-color: var(--color-main-light);
+	background-color: #5AFF5A;
 }
 
 .table.lined.all tbody tr,
@@ -318,6 +331,8 @@ img:hover {
 .table.lined.outline {
 	border: 1px solid var(--color-neutral-light);
 }
+
+
 
 
 
@@ -390,7 +405,7 @@ img:hover {
     transition: all 0.3s;
 }
 .toggle input:checked+label {
-	background-color: var(--color-main-light);
+	background-color: #5AFF5A;
 }
 .toggle label::before {
 	content:'';
@@ -439,7 +454,7 @@ img:hover {
 .button {
 	background-color: #5AFF5A;
 	border: none;
-	color: black;
+	color: #000;
 	padding: 16px 32px;
 	text-align: center;
 	text-decoration: none;
@@ -454,29 +469,30 @@ img:hover {
 }
 .button.primary {
 	background-color: #5AFF5A; 
-	color: black; 
-	border: 0;
+	color: #000; 
+	border: 1px solid #5AFF5A;
 }
 .button.primary:hover {
-	background-color: black;
+	background-color: #000;
 	color: white;
+	border: 1px solid #000;
 }
 .button.secondary {
 	background-color: white; 
-	color: black; 
-	border: 1px solid black;
+	color: #000; 
+	border: 1px solid #000;
 }
 .button.secondary:hover {
 	background-color: #5AFF5A;
-	color: black;
-	border: 0;
+	color: #000;
+	border: 1px solid #5AFF5A;
 }
 
 
 .button-small {
 	background-color: #5AFF5A;
 	border: none;
-	color: black;
+	color: #000;
 	padding: 16px 16px;
 	text-align: center;
 	text-decoration: none;
@@ -491,62 +507,34 @@ img:hover {
 }
 .button-small.primary {
 	background-color: #5AFF5A; 
-	color: black; 
-	border: 0;
+	color: #000; 
+	border: 1px solid #5AFF5A;
 }
 .button-small.primary:hover {
-	background-color: black;
+	background-color: #000;
 	color: white;
+	border: 1px solid #000;
 }
 .button-small.secondary {
 	background-color: white; 
-	color: black; 
-	border: 1px solid black;
+	color: #000; 
+	border: 1px solid #000;
 }
 .button-small.secondary:hover {
 	background-color: #5AFF5A;
-	color: black;
-	border: 0;
+	color: #000;
+	border: 1px solid #000;
 }
 .button-small.wishlist {
 	background-color: white; 
-	color: black; 
-	border: 1px solid black;
+	color: #000; 
+	border: 1px solid #000;
 }
 .button-small.wishlist:hover {
 	background-color: #5AFF5A;
 	color: red;
-	border: 0;
+	border: 1px solid red;
 }
-
-/*.dropdown {
-	float: left;
-	overflow: hidden;
-	width: 100%;
-	font: ;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: var(--color-neutral-light);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-.dropdown:hover .dropdown-content {
-	display: block;
-}*/
 
 
 
