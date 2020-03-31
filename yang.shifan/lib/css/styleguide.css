@@ -104,7 +104,7 @@ code {
 /* COMPONENT CLASSES */
 
 .navbar {
-	background-color:var(--color-neutral-dark);
+	background-color:var(--color-white);
 	color:var(--color-neutral-light);
 	line-height: var(--header-height);
 }
