@@ -29,10 +29,7 @@ echo <<<HTML
 		<strong>Email</strong>
 		<span>$user->email</span>
 	</div>
-	<div>
-		<strong>Classes</strong>
-		<span>$classes</span>
-	</div>
+	
 </div>
 HTML;
 
@@ -67,7 +64,7 @@ HTML;
 
 
 <div class="container">
-	
+
 	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
 	  Name: <input type="text" name="name" value="<?php echo $name;?>">
 	  <span class="error">* <?php echo $nameErr;?></span>
