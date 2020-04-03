@@ -22,8 +22,8 @@ echo <<<HTML
 <div>
 	<h2>$user->name</h2>
 	<div>
-		<strong>Type</strong>
-		<span>$user->type</span>
+		<strong>Name/strong>
+		<span>$user->name</span>
 	</div>
 	<div>
 		<strong>Email</strong>
