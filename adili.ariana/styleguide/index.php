@@ -11,21 +11,19 @@
 	<link rel="stylesheet" href="../lib/css/styleguide.css">
 	<link rel="stylesheet" href="../lib/css/gridsystem.css">
 	<link rel="stylesheet" href="../css/storetheme.css">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
 	<header class="container">
 		<div class="card">
-			<h1>Begari</h1>
+			<h1>Begari | Buy men's clothing</h1>
 		</div>
 	</header>
 
 	<nav class="container">
 		<h2>Items</h2>
 		<ul>
-			<!-- <li><a href="Buy used clothing"></a></li> -->
-			<h2>Clothing & Footwear</h2>
+			<li><a href="Buy used clothing"></a></li>
 			<ul>
 				<li><a href="#formal">Formal</a></li>
 				<li><a href="#casual">Casual</a></li>
@@ -36,27 +34,28 @@
 	</nav>
 
 	<section class="container">
-		<h2 id="clothing">Sell your clothing</h2>
+		<h2 id="clothing">Sell your formal clothing</h2>
 
 		<div class="card">
 			<h3 id="headings"></h3>
 			<hr>
 			<!-- h$*6>{Heading $} -->
-			<h1>Affordable name brand items</h1>
+			<h1>How to start</h1>
 			<ul>
-				<li>Nike</li>
-				<li>Adidas</li>
-				<li>Express</li>
-				<li>Lacoste</li>
-				<li>H&M</li>
+				<li>Lorem ipsum dolor sit amet.</li>
+				<li>Lorem ipsum dolor sit amet.</li>
+				<li>Lorem ipsum dolor sit amet.</li>
+				<li>Lorem ipsum dolor sit amet.</li>
+				<li>Lorem ipsum dolor sit amet.</li>
 			</ul>
 		</div>
 
 		<div class="card">
 			<h3 id="about">About us</h3>
 			<hr>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ducimus omnis nam dolores explicabo eum, ab provident unde quas atque.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis officiis et eos illum in. Quis velit itaque reiciendis minima, asperiores.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit suscipit consectetur illo voluptas fuga ipsam labore veniam unde, excepturi at voluptate mollitia officiis aut soluta eaque necessitatibus ab a in et quos enim molestiae nulla. Blanditiis quos molestias, rem ipsam delectus veniam, voluptates voluptas ex illo explicabo fugit praesentium minima.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, explicabo aperiam ipsa illum enim id impedit eius repellendus veritatis rem perspiciatis quas ex libero ipsam animi cumque quos, perferendis quo eum debitis quasi quam veniam neque. Omnis excepturi obcaecati nisi repudiandae, eum possimus modi. Illo eligendi exercitationem, iusto saepe eos!</p>
 		</div>
 	</section>
 
@@ -67,7 +66,7 @@
 
 	<script>
 	const makeNav = (classes='') => {
-		const links = ['home','shop','last call'];
+		const links = ['home','store','about'];
 		let ran = Math.floor(Math.random()*links.length);
 		return `
 		<div>
@@ -95,75 +94,22 @@
 
 			<script>document.write(makeNav("nav-flex"))</script>
 		</div>
-		<!-- <div class="card">
+		<div class="card">
 			<h3>Stretch Nav</h3>
 
 			<script>document.write(makeNav("nav-stretch"))</script>
-		</div> -->
-		<!-- <div class="card">
+		</div>
+		<div class="card">
 			<h3>Pills Nav</h3>
 
 			<script>document.write(makeNav("nav-pills"))</script>
-		</div> -->
-		
-		<div class="card">
-			<h2>Form Control</h2>
-
-			<div class="form-control">
-				<label class="form-label" for="input-example1">Example</label>
-				<input type="text" class="form-input" placeholder="Text" id="input-example1">
-			</div>
-
-			<div class="form-control">
-				<label class="form-label" for="input-example2">Example</label>
-				<input type="text" class="form-input" placeholder="Text" id="input-example2">
-			</div>
-
-			<div class="form-control">
-				<label class="form-label" for="input-example3">Example</label>
-				<input type="text" class="form-input" placeholder="Text" id="input-example3">
-			</div>
 		</div>
-
 		<div class="card">
-			<h2>Form Button</h2>
+			<h3>Breadcrumb Nav</h3>
 
-			<div class="form-control">
-				<input type="submit" class="form-button"/>
-			</div>
-
-			<div class="form-control">
-				<button type="button" class="form-button">Preview</button>
-			</div>
-
-			<div class="form-control">
-				<button type="button" class="form-button">Submit</button>
-			</div>
-	</div>
-
-		<div class="card">
-			<h2>Search</h2>
-			
-			<div class="form-control">
-				<input type="search" class="hotdog" placeholder="Search" />
-			</div>
-			
-			<div class="form-control">
-				<label class="hotdog">
-					<div class="flex-none icon">
-						🔍
-					</div>
-					<div class="flex-stretch">
-						<input type="search" placeholder="Search" />
-					</div>
-				</label>
-			</div>
+			<script>document.write(makeNav("nav-crumbs"))</script>
 		</div>
 	</section>
-
-
-
-	
 
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -172,8 +118,6 @@
 	$("[class^='nav'] a").on("click",function(e){
 		e.preventDefault();
 		$(this).closest('li').addClass("active")
-	})
-	</script>
 	
 	</body>
 </html>
