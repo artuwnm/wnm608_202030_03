@@ -3,14 +3,14 @@
     --color-neutral-medium: #999;
     --color-neutral-light: #eee;
 
-    --color-main-light: #eac3fa;
-    --color-main-medium: #8d39b0;
-    --color-main-dark: #44105a;
+    --color-main-light: #000000;
+    --color-main-medium: #000000;
+    --color-main-dark: #000000;
 }
 
 
 body {
-	background-color:var(--color-neutral-light);
+	background-color: black;
 	padding-bottom:10em;
 }
 
