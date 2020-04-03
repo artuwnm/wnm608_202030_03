@@ -9,8 +9,8 @@
 	--color-neutral-dark: black;
 	--color-neutral-medium: black;
 
-	--color-main: #5AFF5A;
-    --color-blue: #1155CC;
+	--color-main: white;
+    --color-blue: white;
 
 	--header-height: 3rem;
 	--footer-height: 1rem;
@@ -32,7 +32,7 @@ h2 {
 	font-family: 'Monserrat', sans-serif;
 	font-size: 1.5rem;
 	font-weight: bold;
-	color: #1155CC;
+	color: white;
 	text-transform: uppercase;
 	border-left: 5px solid white;
 	padding-left: 10px;
