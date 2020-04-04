@@ -60,8 +60,8 @@
 	<div>This is my name</div>
 	<div>
 	<?php
-	$firstname = "Hamilton";
-	$lastname = "Cline";
+	$firstname = "Sean";
+	$lastname = "Xiao";
 
 	$fullname = $firstname.$lastname;
 	$fullname = "$firstname $lastname";
@@ -115,6 +115,51 @@
 	];
 
 	echo $colorsAssociative['red']."<br>";
+
+	?>
+
+	<hr>
+
+	<?php
+
+	// Casting
+	$c = "$a";
+	$d = $c*1;
+
+	$colorsObject = (object)$colorsAssociative;
+
+	// echo $colorsObject;
+
+	echo "<hr>";
+
+	// Array Index Notation
+	echo $colors[0]."<br>";
+	echo $colorsAssociative['red']."<br>";
+	echo $colorsAssociative[$colors[0]]."<br>";
+
+	// Object Property Notation
+	echo $colorsObject->red."<br>";
+	echo $colorsObject->{$colors[0]}."<br>";
+
+	?>
+
+	<hr>
+
+	<?php
+
+	print_r($colors);
+	echo "<hr>";
+	print_r($colorsAssociative);
+	echo "<hr>";
+	echo "<pre>",print_r($colorsObject),"</pre>";
+
+
+	// Functions
+	function print_p($v) {
+		echo "<pre>",print_r($v),"</pre>";
+	}
+
+	print_p($_GET);
 
 	?>
 
