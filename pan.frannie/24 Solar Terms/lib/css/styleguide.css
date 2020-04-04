@@ -104,6 +104,7 @@ p {
 	padding: 0 1em;
 }
 
+.nav-crumbs ul,
 .nav ul {
 	list-style-type:none;
 	margin-top: 0;
@@ -143,8 +144,15 @@ p {
 	}
 
 
+.nav-crumbs ul,
 .nav ul {
 	display:flex;
+}
+
+
+.nav-crumbs li:not(:first-child)::before {
+	content:'/';
+	margin:0 0.4em;
 }
 
 
