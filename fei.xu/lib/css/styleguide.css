@@ -27,8 +27,18 @@ body {
 	font-family:Helvetica,Arial,sans-serif;
 }
 
-h1,
-h2,
+h1{
+	font-family:Georgia,"Times New Roman",serif;
+	padding-left:1em;
+}
+
+h2{
+	font-family:Georgia,"Times New Roman",serif;
+	padding-left:0.3em;
+	font-size:20px;
+	color:#2d5986;
+	border-bottom:solid 1px var(--color-neutral-light); 
+}
 h3,
 h4,
 h5,
@@ -41,6 +51,7 @@ a {
 	color:inherit;
 	font-weight:bold;
 	text-decoration: none;
+
 }
 a:hover {
 	text-decoration: underline;
@@ -58,7 +69,10 @@ code {
 }
 
 
-
+#text{
+	padding:1em;
+	
+}
 
 
 
@@ -70,6 +84,7 @@ code {
 	max-width:1000px;
 	margin-right: auto;
 	margin-left: auto;
+
 }
 .hidden { display:none; }
 
@@ -94,14 +109,24 @@ code {
 
 /* COMPONENT CLASSES */
 
+li{
+	padding-left:3em;
+	padding-right:3em;
+	padding-top:1em;
+	padding-bottom:1em;
+}
+
+.navbar li{
+	padding:0;
+}
 .navbar {
-	background-color:var(--color-neutral-dark);
-	color:var(--color-neutral-light);
+	background-color: #ffd9cc;
+	color:black;
 	line-height: var(--header-height);
 }
 .navbar h1 {
 	margin:0;
-	font-size:1rem;
+	font-size:1.5em;
 }
 .navbar a {
 	padding: 0 1em;
@@ -110,7 +135,13 @@ code {
 
 
 /* NAV */
-.nav-crumbs ul,
+.nav-crumbs ul{
+	list-style-type:none;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
 .nav-pills ul,
 .nav-stretch ul,
 .nav-flex ul,
@@ -132,7 +163,7 @@ code {
 	.nav-stretch a:hover,
 	.nav-flex a:hover,
 	.nav a:hover {
-		background-color:var(--color-main-medium);
+		background-color:#ff9999;
 		color:var(--color-white);
 		text-decoration:none;
 	}
@@ -179,12 +210,13 @@ code {
     padding: 1em;
     margin-top: 1em;
     margin-bottom: 1em;
+
 }
 	.card>:first-child { margin-top:0; }
 	.card>:last-child { margin-bottom:0; }
 
 	.card.soft {
-	    box-shadow: 6px 5px 15px 10px rgba(0, 0, 0, 0.1);
+	    box-shadow: 4px 5px 6px 1px rgba(0, 0, 0, 0.1);
 		border-radius:0.3em;
 	}
 	.card.medium {
@@ -197,6 +229,7 @@ code {
 	.card.flat {
 		padding:0;
 	}
+
 
 
 
@@ -309,6 +342,121 @@ code {
 
 
 /* FORMS */
+
+.form2{
+	padding:1em;
+}
+
+.container2{
+	margin-top:2em;
+	float:center;
+}
+
+
+.int label{
+	width:100px;
+	float:left;
+	text-align:right;
+	padding-right:1em;
+	font-family:Helvetica,Arial,sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	margin:1em 1em;
+}
+
+.int input {
+	background-color:#D3D3D3;
+	padding:1em 1em;
+	margin:1em 1em;
+	border:1px solid #ccc;
+	border-radius:0.3em;
+	height:26px;
+	font-size:12px;
+
+}
+
+.sub{
+	padding-left:100px;
+	padding-top:1em;
+
+}
+.sub input{
+	margin-right:10px;
+	font-family:Helvetica,Arial,sans-serif;
+
+
+}
+
+
+#forms1{
+	font-family:Helvetica,Arial,sans-serif;
+	padding:0.5em 0.5em;
+	color:#2d5986;
+	border-bottom:solid 1px var(--color-neutral-light);
+}
+
+.card1 {      
+    text-align:center;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    padding:0.5em 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+   /*border-bottom:solid 1px var(--color-neutral-light);*/*/
+}
+.card3{
+	text-align:center;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    padding:0.5em 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left:6em;
+}
+.card4{
+	text-align:center;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    padding:0.5em 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left:4em;
+}
+
+
+
+.card2{
+	/*text-align:center;*/
+
+	background-color:grey;
+	color:white;
+	border:solid grey 1px;
+	margin-left:7em;
+	padding:5px 5px;
+	border-radius:0.3em; 
+}
+.card5{
+	background-color:grey;
+	color:white;
+	border:solid grey 1px;
+	margin-left:7em;
+	padding:5px 5px;
+	border-radius:0.3em; 
+}
+.card7{
+	background-color:grey;
+	color:white;
+	border:solid grey 1px;
+	margin-left:em;
+	padding:5px 5px;
+	border-radius:0.3em; 
+}
+
+
 
 .form-input {
 	display:block;

@@ -9,6 +9,8 @@ $users = getData("../data/users.json");
 
 
 
+
+
 function showUserPage($user) {
 
 $classes = implode(", ",$user->classes);
@@ -19,31 +21,47 @@ echo <<<HTML
 		<li><a href="admin/users.php">Back</a></li>
 	</ul>
 </nav>
-<div>
-	<h2>$user->name</h2>
-	<div>
-		<strong>Type</strong>
-		<span>$user->type</span>
+
+
+<div class=container2>
+
+<form class="form2" method="post" action="post.php">
+
+<div class="int">
+	<label for="username">Username</label>
+	<input type="text" name="username" value="$user->name" class="required">
+</div>
+
+<div class="int">
+		<label for="type">Type</label>
+		<input type="text" name="type" value="$user->type" class="required">
+</div>
+
+<div class="int">
+		<label for="email">Email</label>
+		<input type="text" name="email" value="$user->email" class="required">
+		
+</div>
+
+<div class="int">
+		<label for="classes">Classes</label>
+		<input type="text" name="classes" value="$classes" class="required">
 	</div>
-	<div>
-		<strong>Email</strong>
-		<span>$user->email</span>
+<div class="sub">
+		<input type="submit" value="submit" id="send">
+</div>
+
 	</div>
-	<div>
-		<strong>Classes</strong>
-		<span>$classes</span>
-	</div>
+
+</div>
+</form>
 </div>
 HTML;
 
 }
+?>
 
-
-
-
-
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Learning Data</title>
