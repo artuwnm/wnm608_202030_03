@@ -1,6 +1,8 @@
 
 <meta charset="UTF-8">
 
+<base href="http://julimdesign.co/aau/wnm608/varga.juliana/">
+
 <meta name="viewport" content="width=device-width">
 
 <link rel="stylesheet" href="lib/css/styleguide.css">
