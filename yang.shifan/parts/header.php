@@ -2,15 +2,13 @@
 <html lang="en">
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Fancy Flora</title>
-	<link rel="stylesheet" href="/lib/css/styleguide.css">
-	<link rel="stylesheet" href="/lib/css/storetheme.css">
-	<link rel="stylesheet" href="/lib/css/gridsystem.css">
+	<link rel="stylesheet" href="../lib/css/styleguide.css">
+	<link rel="stylesheet" href="../lib/css/storetheme.css">
+	<link rel="stylesheet" href="../lib/css/gridsystem.css">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Amatic+SC"/>
 </head>
 <body>
-	<header class="na
-
-	vbar">
+	<header class="navbar">
 		<div class="container">
 			<nav class="nav">
 				<ul>
