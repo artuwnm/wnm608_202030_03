@@ -17,7 +17,8 @@ body {
 	box-sizing:border-box;
 	margin:0;
 	font-size:100%;
-	font-family:Helvetica,Arial,sans-serif;
+/*	font-family:Helvetica,Arial,sans-serif;*/
+    font-family: Helvetica,Arial,sans-serif;
 }
 
 
@@ -39,7 +40,7 @@ html {
 
 h1{
 	color: #fff;
-	font-family:Georgia,"Times New Roman",serif;
+	font-family:"Poppins", sans-serif;
 }
 
 
@@ -61,20 +62,31 @@ h3,
 h4,
 h5,
 h6 {
-	font-family:Georgia,"Times New Roman",serif;
+    font-size: 12px;
+    font-family:Georgia,"Times New Roman",serif;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 1px;
+    margin-inline-end: 1px;
 }
 
 
 a {
 	color:#000;
-	font-weight:bold;
+	font-weight:600;
 	text-decoration: none;
+    font-family:"Poppins", sans-serif;
 }
+
+
 
 a:hover {
 	text-decoration: underline;
 }
 
+.text-center {
+    text-align: center;
+}
 
 
 /* logo */
@@ -98,11 +110,18 @@ a:hover {
 
 /* SMALL CLASSES */
 
+
 .container {
-	max-width:1280px;
-	margin-right: auto;
-	margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    padding-right: 0px;
 }
+
+.container {
+    width: 1280px;
+}
+
 
 
 
@@ -120,6 +139,7 @@ a:hover {
 	padding: 18px 0;
  }
 
+
 .flex-align-center { align-items:center; }
 .flex-justify-center { justify-content:center; }
 
@@ -127,11 +147,13 @@ a:hover {
 
 
 /* COMPONENT CLASSES */
+/* Basic Navbar */
 
 .navbar {
     background-color: #c72101;
     color: #fff;
-    line-height: 2em;
+    line-height: 2em
+    font-family:"Poppins", sans-serif;
 }
 
 
@@ -139,15 +161,43 @@ a:hover {
 	margin:0;
 	font-size:1rem;
 }
+
+
 .navbar a {
 	padding: 0 1em;
 }
+
+
+.nav a:hover {
+        background-color:none;
+        color:var(--color-white);
+        text-decoration:none;
+}
+
 
 .nav ul {
 	list-style-type:none;
 	margin-top: 0;
 	margin-bottom: 0;
 }
+
+
+
+ul {
+    line-height: 30px;
+    padding-left: 0px;
+}
+
+ul.display-flex1 {
+    display: flex;
+    float: left;
+}
+
+ul.display-flex2 {
+    display: flex;
+    float: right;
+}
+
 
 
 
@@ -205,10 +255,17 @@ a:hover {
     clear: both;
 }
 
+
 .row {
-    margin-left: -15px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-right: -15px;
+    margin-left: -15px;
 }
+
+
 
 .js .animate-box {
     opacity: 0;
@@ -279,6 +336,9 @@ a:hover {
     line-height: 1.8;
     color: #828282;
 }
+
+
+/* Paragraphs */
 
 p {
     margin-bottom: 80px;
@@ -374,6 +434,7 @@ h3 {
     height: 100%;
     margin: 0;
 } 
+
 
 /*[class*="col-"]
 选择所有类名中含有"col-"的元素

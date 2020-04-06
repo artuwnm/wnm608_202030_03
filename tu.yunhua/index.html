@@ -8,84 +8,359 @@
 	<meta name="viewport" content="width=device-width">
 
 
+
 	<link rel="stylesheet" href="lib/css/styleguide.css">
 	<link rel="stylesheet" href="lib/css/gridsystem.css">
 	<link rel="stylesheet" href="css/storetheme.css">
+	<link rel="stylesheet" href="lib/css/icomoon.css">
+
 </head>
 <body>
 
+
+
+
+
+<!-- Otoro Site Style Guide -->
 	<header class="container">
-		<div class="card">
+		<div class="card soft" style="background-color: #c72101">
 			<h1>Otoro Site Style Guide</h1>
-
-
 		</div>
 	</header>
 
+
+<!-- Table of Contents -->
+
 	<nav class="container">
-		<h2>Table of Contents</h2>
 		<ul>
+
+			<h3>
+			<li><a href="#colorpalette">Color Palette</a></li>
+			</h3>
+
+			<h3>
 			<li><a href="#typography">Typography</a></li>
+			</h3>
+			
 			<ul>
 				<li><a href="#headings">Headings</a></li>
-				<li><a href="#paragraphs">Paragraphs</a></li>
-				
-			</ul>			
-			<li><a href="#navigations">Navigations</a></li>
-			<li><a href="#tables">Tables</a></li>
+				<li><a href="#basicparagraphs">Basic Paragraphs</a></li>
+				<li><a href="#keyparagraphs">Key Paragraphs</a></li>
+
+			</ul>	
+
+			<h3>		
+			<li><a href="#navigations">Navigations</a></li>	
+			</h3>
+
+			<ul>
+				<li><a href="#basicnav">Basic Nav</a></li>
+				<li><a href="#flexnav">Flex Nav</a></li>
+				<li><a href="#breadcrumbnav">Breadcrumb Nav</a></li>
+			</ul>	
+
+			<h3>
+			<li><a href="#home">Home</a></li>
+			</h3>
+
+			<h3>
+			<li><a href="#about">About</a></li>
+			</h3>
+
+			<h3>
+			<li><a href="#contact">Contact</a></li>
+			</h3>
+
+			<h3>
+			<li><a href="#publish">Publish</a></li>
+			</h3>
+
+			<h3>
+			<li><a href="#cart">Cart</a></li>
+			</h3>
+
+			<h3>
 			<li><a href="#forms">Forms</a></li>
-			<li><a href="#ordersummary">Order Summary</a></li>
+			</h3>
+
+			<h3>
+			<li><a href="#buttons">Buttons</a></li>
+			</h3>
+
+			<h3>
+			<li><a href="#hotdog">Hotdog</a></li>
+			</h3>
+
+			<h3>
+			<li><a href="#tables">Tables</a></li>
+			</h3>
+
+			<h3>
 			<li><a href="#checkboxes">Check Boxes</a></li>
+			</h3>
+
+			<h3>	
 			<li><a href="#figures">Figures</a></li>
+			</h3>
+
+			<h3>	
 			<li><a href="#flex">Flex System</a></li>
-			<li><a href="#grid">Grid System</a></li>	
-			<li><a href="#images">Images</a></li>
+			</h3>
+
+			<h3>
+			<li><a href="#grid">Grid System</a></li>
+			</h3>
+
+			<h3>	
+			<li><a href="#images">Images</a></li
+			</h3>
+
+			<h3>
 			<li><a href="#cards">Cards</a></li>	
+			</h3>
+
+			<h3>
+			<li><a href="#footer">Footer</a></li>	
+			</h3>
+
+
 		</ul>
 	</nav>
 
+
+
+
+
+
+
+<!-- Color Palette -->
+
+	<section class="container">
+
+		<h2 id="colorpalette">Color Palette</h2>
+		<div class="card soft">	
+			<div class="grid gap">
+				<div class="col-xs-12 col-md-3">
+					<h3>Otoro Red</h3>
+					<div class="square" style="background-color: #c72101"></div>
+					<p>#c72101</p>
+				</div>
+				<div class="col-xs-12 col-md-3">
+					<h3>Otoro Grey</h3>
+					<div class="square" style="background-color: #828282"></div>
+					<p>#828282</p>
+				</div>
+				<div class="col-xs-12 col-md-3">
+					<h3>Otoro Black</h3>
+					<div class="square" style="background-color: #000"></div>
+					<p>#000</p>
+				</div>
+				<div class="col-xs-12 col-md-3">
+					<h3>Otoro White</h3>
+					<div class="square" style="background-color: #fff"></div>
+					<p>#fff</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+<!-- Typography -->
+
 	<section class="container">
 		<h2 id="typography">Typography</h2>
-
-		<div class="card">
+		<div class="card soft">	
 			<h3 id="headings">Headings</h3>
 			<hr>
 			<!-- h$*6>{Heading $} -->
-			<h1>Heading 1</h1>
-			<h2>Heading 2</h2>
-			<h3>Heading 3</h3>
-			<h4>Heading 4</h4>
-			<h5>Heading 5</h5>
-			<h6>Heading 6</h6>
+			<div class="grid gap">
+				<div class="col-xs-12 col-md-6">
+					<h1>Heading 1</h1>
+					<br>
+					<p>color: #000
+				    <br>font-size: 32px
+				    <br>font-family: "Poppins",sans-serif
+					</p>
+					<br>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h2>Heading 2</h2>
+					<p>color: #c72101
+				    <br>font-size: 22px
+				    <br>font-family:"Montserrat", Arial, sans-serif
+					</p>
+					<br>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h3>Heading 3</h3>
+					<br>
+			        <p>color: #000
+				    <br>font-size: 18px
+				    <br>font-family:"Montserrat", Arial, sans-serif
+					</p>
+					<br>
+					<br>
+					<br>
+				</div>
+				<div class="col-xs-12 col-md-6">
+			        <h4>Heading 4</h4>
+			        <br>
+					<br>
+			        <p>color: #000
+				    <br>font-size: 18px
+				    <br>font-family:"Montserrat", Arial, sans-serif
+					</p>
+					<br>
+					<br>
+					<br>
+				</div>
+				<div class="col-xs-12 col-md-6">
+			        <h5>Heading 5</h5>
+					<br>
+					<br>
+			        <p>color: #828282
+				    <br>font-size: 14px
+				    <br>font-family:"Montserrat", Arial, sans-serif
+					</p>
+					<br>
+					<br>
+					<br>
+				</div>
+				<div class="col-xs-12 col-md-6">
+			        <h6>Heading 6</h6>
+			        <br>
+					<br>
+			        <p>color: #000
+				    <br>font-size: 14px
+				    <br>font-family:Georgia,"Times New Roman",serif
+					</p>
+					<br>
+					<br>
+					<br>
+				</div>
+				<div class="col-xs-12 col-md-6">
+			        <h7>Heading 7</h7>
+					<br>
+					<br>
+			        <p>color: #c72101
+				    <br>font-size: 12px
+				    <br>font-family:"Montserrat", Arial, sans-serif
+					</p>
+					<br>
+					<br>
+					<br>
+				</div>
+				<div class="col-xs-12 col-md-6">
+			        <span>Span</span>
+			        <br>
+					<br>
+			        <p>color: #000
+				    <br>font-size: 14px
+				    <br>font-family:"Montserrat", Arial, sans-serif
+					</p>
+					<br>
+					<br>
+					<br>
+				</div>
+			</div>
 
-			<code>
+
+
+<!-- 			<code>
 &lt;h1>Heading 1&lt;/h1>
 &lt;h2>Heading 2&lt;/h2>
 &lt;h3>Heading 3&lt;/h3>
 &lt;h4>Heading 4&lt;/h4>
 &lt;h5>Heading 5&lt;/h5>
 &lt;h6>Heading 6&lt;/h6>
-			</code>
+			</code> -->
 		</div>
 
-		<div class="card">
-			<h3 id="paragraphs">Paragraphs</h3>
+
+		<div class="card soft">
+			<h3 id="basicparagraphs">Basic Paragraphs</h3>
 			<hr>
 			<!-- p*3>lorem20 -->
 			<p>Otoro Picture Store is an online food photography store with new-age sales content. It originated in San Francisco, California, the city with the most Michelin restaurants in the United States.</p>
 			<p>Otoro food photography was taken by the founder of the website in person. For just $ 5 each, you can get the right to use this photography (except for commercial use). At the same time, you can also open your own account and upload your own food photography in high definition. It will also be available for $ 5 each. After you upload your picture, you can exchange it for any HD picture you like.</p>
 			<p>Thank you for joining, this will be an interesting and very futuristic way to share and exchange. If you have any questions or ideas, please contact us.</p>
 		</div>
+
+		<div class="card soft">
+			<h3 id="keyparagraphs">Key Paragraphs</h3>
+			<hr>
+			<!-- p*3>lorem20 -->
+			<p><strong>Otoro Picture Store is an online food photography store with new-age sales content. It originated in San Francisco, California, the city with the most Michelin restaurants in the United States.</strong></p>
+			<p><strong>Otoro food photography was taken by the founder of the website in person. For just $ 5 each, you can get the right to use this photography (except for commercial use). At the same time, you can also open your own account and upload your own food photography in high definition. It will also be available for $ 5 each. After you upload your picture, you can exchange it for any HD picture you like.</strong></p>
+			<p><strong>Thank you for joining, this will be an interesting and very futuristic way to share and exchange. If you have any questions or ideas, please contact us.</strong></p>
+		</div>
 	</section>
 
 
 
-	<section class="container">
+
+
+
+<!-- Navigations -->
+	<!-- <section class="container"> -->
+		
 		<h2 id="navigations">Navigations</h2>
 
-	<script>
+		<!-- <div class="card soft"> -->
+			<h3 id="basicnav">Basic Nav</h3>
+		
+	<header class="navbar">
+		<div class="container display-flex">
+			<!-- <div class="flex-stretch">
+				<h1>Store Page</h1>
+			</div> -->
+			<nav class="nav flex-none">
+				<!-- ul>li*3>a[href=#]>{Link $} -->
+				
+				<div class="container">
+					
+					<div class="row">
+						<div class="col-md-3 col-xs-2 hidden-xs menu-1">
+							<ul class="display-flex1">
+								<li><a href="#">About</a></li>
+								<li><a href="#">Shop</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+
+
+						<div class="col-md-6 col-xs-6 text-center">
+							<div class="flex-stretch">
+								<!-- <img src="img/logo.png" alt=""> -->
+								<a href="http://www.badtrista.com/aau/wnm608/tu.yunhua/Otoro/"><img src="img/logo.png" alt=""></a>
+							</div>
+						</div>
+
+
+						<div class="col-md-3 col-xs-4 text-right hidden-xs menu-2">
+							<ul class="display-flex2">
+								<li><a href="#">Publish</a></li>
+								<li><a href="#">Login</a></li>
+								<li><a href="#">Cart</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+
+	<section class="container">
+
+		<script>
 	const makeNav = (classes='') => {
-		const links = ['home','store','about'];
+		const links = ['home','Shop','contact','search','login','cart'];
 		let ran = Math.floor(Math.random()*links.length);
 		return `
 		<div>
@@ -103,41 +378,650 @@
 	}
 	</script>
 
-		<div class="card">
-			<h3>Basic Nav</h3>
 
-			<script>document.write(makeNav("nav"))</script>
+		<div class="card soft">
+			<h3>Vertical Nav</h3>
+			<script>document.write(makeNav("nav-vertical"))</script>
 		</div>
-		<div class="card">
-			<h3>Flex Nav</h3>
 
+
+		<div class="card soft">
+			<h3 id="flexnav">Flex Nav</h3>
 			<script>document.write(makeNav("nav-flex"))</script>
 		</div>
-		<div class="card">
-			<h3>Stretch Nav</h3>
 
+<!-- 
+		<div class="card soft">
+			<h3>Stretch Nav</h3>
 			<script>document.write(makeNav("nav-stretch"))</script>
 		</div>
+ -->
+
+<!-- 
 		<div class="card">
 			<h3>Pills Nav</h3>
-
 			<script>document.write(makeNav("nav-pills"))</script>
 		</div>
-		<div class="card">
-			<h3>Breadcrumb Nav</h3>
-
+ -->
+ 
+		<div class="card soft">
+			<h3 id="breadcrumbnav">Breadcrumb Nav</h3>
 			<script>document.write(makeNav("nav-crumbs"))</script>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+<!-- Home -->
+
+<!-- <section class="container"> -->
+	<h2 id="home">HOME</h2>
+	<!-- <div class="card soft"> -->
+
+
+
+<!-- home only one -->
+
+
+
+		<section class="home">
+			<div class="home_slider_container">
+				<div class="owl-carousel owl-theme home_slider owl-loaded owl-drag">
+
+
+							<div class="owl-item active" style="">
+								<div class="owl-item home_slider_item">
+									<div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)">
+									</div>
+									<div class="home_slider_content_container">
+										<div class="container">
+											<!-- <div class="row"> -->
+												<!-- <div class="col"> -->
+													<div class="home_slider_content" data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
+														<div class="home_slider_title">Welcome To Otoro</div>
+														<div class="home_slider_subtitle">This is a new way online shop. </div>
+														<div class="button button_light home_button"><a href="#">Join Us</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+				</div>
+			</div>				
+		</section>
+
+
+
+
+
+
+
+<!-- HOME SLIDER THREE-->
+
+
+		<section class="home">
+			<div class="home_slider_container">
+				<div class="owl-carousel owl-theme home_slider owl-loaded owl-drag">
+					<div class="owl-stage-outer">
+						<div class="owl-stage" style="transform: translate3d(-4144px, 0px, 0px); transition: all 1.2s ease 0s; width: 7252px;">
+							
+
+
+							<div class="owl-item cloned" style="width: 1280px;">
+								<div class="owl-item home_slider_item">
+									<div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)">
+									</div>
+									<div class="home_slider_content_container">
+										<div class="container">
+											<div class="row">
+												<div class="col">
+													<div class="home_slider_content" data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
+														<div class="home_slider_title">A New Way Online Shop.</div>
+														<div class="home_slider_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed viverra velit venenatis fermentum luctus.</div>
+														<div class="button button_light home_button"><a href="#">Shop Now</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="owl-item cloned" style="width: 1280px;">
+								<div class="owl-item home_slider_item">
+									<div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)">					
+									</div>
+									<div class="home_slider_content_container">
+										<div class="container">
+											<div class="row">
+												<div class="col">
+													<div class="home_slider_content animated animate-out fadeOut fadeIn" data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
+														<div class="home_slider_title">A New Way Online Shop.</div>
+														<div class="home_slider_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed viverra velit venenatis fermentum luctus.</div>
+														<div class="button button_light home_button"><a href="#">Shop Now</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+
+							<div class="owl-item active" style="width: 1280px;">
+								<div class="owl-item home_slider_item">
+									<div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)">
+									</div>
+									<div class="home_slider_content_container">
+										<div class="container">
+											<div class="row">
+												<div class="col">
+													<div class="home_slider_content" data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
+														<div class="home_slider_title">A New Way Online Shop.</div>
+														<div class="home_slider_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed viverra velit venenatis fermentum luctus.</div>
+														<div class="button button_light home_button"><a href="#">Shop Now</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+							<div class="owl-item" style="width: 1280px;">
+								<div class="owl-item home_slider_item">
+									<div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)">
+									</div>
+									<div class="home_slider_content_container">
+										<div class="container">
+											<div class="row">
+												<div class="col">
+													<div class="home_slider_content" data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
+														<div class="home_slider_title">A New Way Online Shop.</div>
+														<div class="home_slider_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed viverra velit venenatis fermentum luctus.</div>
+														<div class="button button_light home_button"><a href="#">Shop Now</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+							<div class="owl-item" style="width: 1280px;">
+								<div class="owl-item home_slider_item">
+									<div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)">
+									</div>
+									<div class="home_slider_content_container">
+										<div class="container">
+											<div class="row">
+												<div class="col">
+													<div class="home_slider_content" data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
+														<div class="home_slider_title">A New Way Online Shop.</div>
+														<div class="home_slider_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed viverra velit venenatis fermentum luctus.</div>
+														<div class="button button_light home_button"><a href="#">Shop Now</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+
+
+							<div class="owl-item cloned" style="width: 1280px;">
+								<div class="owl-item home_slider_item">
+									<div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)">
+									</div>
+									<div class="home_slider_content_container">
+										<div class="container">
+											<div class="row">
+												<div class="col">
+													<div class="home_slider_content" data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
+														<div class="home_slider_title">A New Way Online Shop.</div>
+														<div class="home_slider_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed viverra velit venenatis fermentum luctus.</div>
+														<div class="button button_light home_button"><a href="#">Shop Now</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="owl-item cloned" style="width: 1280px;">
+								<div class="owl-item home_slider_item">
+									<div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)">
+									</div>
+									<div class="home_slider_content_container">
+										<div class="container">
+											<div class="row">
+												<div class="col">
+													<div class="home_slider_content" data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
+														<div class="home_slider_title">A New Way Online Shop.</div>
+														<div class="home_slider_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed viverra velit venenatis fermentum luctus.</div>
+														<div class="button button_light home_button"><a href="#">Shop Now</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+
+
+
+					<div class="owl-nav disabled">
+						<div class="owl-prev">prev</div>
+						<div class="owl-next">next</div>
+					</div>
+					<div class="owl-dots">
+						<div class="owl-dot"><span></span></div>
+						<div class="owl-dot"><span></span></div>
+						<div class="owl-dot active"><span></span>
+					</div>
+
+
+				</div>
+			</div>
+
+				
+
+
+				<div class="home_slider_dots_container">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<div class="home_slider_dots">
+									<ul id="home_slider_custom_dots" class="home_slider_custom_dots">
+									<li class="home_slider_custom_dot active">01.</li>
+									<li class="home_slider_custom_dot">02.</li>
+									<li class="home_slider_custom_dot">03.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>		
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- About -->
+
+	<section class="container">
+		<h2 id="about">About</h2>
+		<div class="card soft">
+
+			<section class="about-info-area section-gap">
+				<div class="container">
+					<div class="row align-items-center">
+
+						<div class="col-lg-6 info-left">
+							<img class="img" src="img/info.jpg" alt="">
+						</div>
+
+						<div class="col-lg-6 info-right">
+							<h6>About Us</h6>
+							<h1>Who We Are?</h1>
+							<p>
+								Otoro Picture Store is an online food photography store with new-age sales content. It originated in San Francisco, California, the city with the most Michelin restaurants in the United States.
+
+							</p>
+<!-- 							<p>
+
+								Otoro food photography was taken by the founder of the website in person. For just $ 5 each, you can get the right to use this photography (except for commercial use). At the same time, you can also open your own account and upload your own food photography in high definition. It will also be available for $ 5 each. 
+
+							</p> -->
+						</div>
+					</div>
+				</div>	
+			</section>
+
 		</div>
 	</section>
 
-	
+
+
+
+
+
+
+<!-- Contact -->
+
 
 	<section class="container">
+		<h2 id="contact">Contact</h2>
+		<div class="card soft">
+
+            <div class="row">
+            	<div class="col-12 col-lg-12 col-xl-12">
+                    <div class="contact-heading">
+                        <h6>Contact information</h6>
+                    </div>
+                </div>
+            </div>
+
+			<div class="row">
+
+                <div class="col-12 col-lg-6 col-xl-4">
+                    <div class="content-sidebar">
+                        <!-- Office Hours -->
+                        <div class="weekly-office-hours">
+                            <ul>
+                                <li class="d-flex align-items-center justify-content-between"><span>Monday - Friday</span> <span>09 AM - 20 PM</span></li>
+                                <li class="d-flex align-items-center justify-content-between"><span>Saturday</span> <span>09 AM - 19 PM</span></li>
+                                <li class="d-flex align-items-center justify-content-between"><span>Sunday</span> <span>09 AM - 14 PM</span></li>
+                            </ul>
+                        </div>
+                        <!-- Address -->
+                        <div class="address mt-30">
+                            <h6><img src="img/icons/phone-call.png" alt=""> +1 415-866-5774</h6>
+                            <h6><img src="img/icons/envelope.png" alt=""> tristatutu@gmail.com</h6>
+                            <h6><img src="img/icons/location.png" alt=""> 1 Hawthorne St, San Francisco, CA 94105</h6>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Contact Form Area -->
+                <div class="col-12 col-lg-6 col-xl-4">
+                    <div class="contact-form">
+                        <form action="#" method="post">
+                            <div class="form-group-contact">
+                                <input type="text" class="form-control" name="text" id="contact-name" placeholder="Your Name">
+                            </div>
+                            <div class="form-group-contact">
+                                <input type="number" class="form-control" name="number" id="contact-number" placeholder="Your Phone">
+                            </div>
+                            <div class="form-group-contact">
+                                <input type="email" class="form-control" name="email" id="contact-email" placeholder="Your Email">
+                            </div>
+                            <div class="form-group-contact">
+                                <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn south-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+			</div>
+
+        </div>
+	</section>
+
+
+
+
+
+
+
+<!-- Publish -->
+
+	<section class="container">
+		<h2 id="publish">Publish</h2>
+		<div class="card soft">
+		<h3></h3>
+
+
+			<div class="row align-items-center justify-content-between">
+
+				<div class="col-12 col-lg-6 col-xl-4">
+					<div class="casting-form-thumbnail mb-80">
+					<img src="img/A5.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-6 col-xl-4">
+					<div class="casting-form publish-contact-form mb-80">
+					<div class="contact-heading">
+						<h2>Do you want to be a Hot Publisher?</h2>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing esed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+					</div>
+						
+					<form action="#" method="post">
+					<div class="form-group">
+						<label for="fullName">Title:</label>
+						<input type="text" class="form-control" name="full-name" id="fullName">
+					</div>
+
+					<div class="form-group">
+						<label for="emailId">Photographer:</label>
+						<input type="email" class="form-control" name="email" id="emailId">
+					</div>
+
+					<div class="form-group">
+						<label for="resume">Describe Your Picture:</label>
+						<textarea class="form-control" name="message" rows="8" cols="80" id="resume"></textarea>
+					</div>
+					<button class="btn publish-btn btn-2 mt-15">Publish</button>
+				</form>
+				</div>
+				</div>
+			</div>
+
+
+        </div>
+	</section>
+
+
+
+
+
+
+
+
+<!-- Cart -->
+
+	<section class="container">
+		<h2 id="cart">Cart</h2>
+		<div class="card soft">
+		<div class="cart_section">
+
+
+		<!-- <div class="row"> -->
+		<div class="col">
+		<div class="cart_container">
+
+		<div class="cart_bar">
+			<ul class="cart_bar_list item_list d-flex flex-row align-items-center justify-content-end">
+				<li class="mr-auto">Product</li>
+				<li>Color</li>
+				<li>Size</li>
+				<li>Price</li>
+				<li>Quantity</li>
+				<li>Total</li>
+			</ul>
+		</div>
+
+		<div class="cart_items">
+			<ul class="cart_items_list">
+				<li class="cart_item item_list d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-end justify-content-start">
+					<div class="product d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start mr-auto">
+						<div>
+							<div class="product_number">1</div>
+						</div>
+
+						<div>
+							<div class="product_image"><img src="images/A5 Wagyu_3.jpg" alt=""></div>
+						</div>
+
+		<div class="product_name_container">
+			<div class="product_name"><a href="product.html">GOZU A5 Wagyu プレミアム黒毛和牛</a></div>
+				<div class="product_text">G O Z U 
+					<br>201 Spear St  #120, San Francisco, CA 94105
+				</div>
+			</div>
+		</div>
+					<div class="product_color product_text"><span>Color: </span>red</div>
+					<div class="product_size product_text"><span>Size: </span>medium</div>
+					<div class="product_price product_text"><span>Price: </span>$5.00</div>
+					<div class="product_quantity_container">
+					<div class="product_quantity ml-lg-auto mr-lg-auto text-center">
+					<span class="product_text product_num">1</span>
+					<div class="qty_sub qty_button trans_200 text-center"><span>-</span></div>
+					<div class="qty_add qty_button trans_200 text-center"><span>+</span></div>
+					</div>
+					</div>
+		<div class="product_total product_text"><span>Total: </span>$5.00</div>
+		</li>
+		</ul>
+		</div>
+
+		<div class="cart_buttons d-flex flex-row align-items-start justify-content-start">
+		<div class="cart_buttons_inner ml-sm-auto d-flex flex-row align-items-start justify-content-start flex-wrap">
+		<div class="button button_clear trans_200"><a href="categories.html">clear cart</a></div>
+		<div class="button button_continue trans_200"><a href="categories.html">continue shopping</a></div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		<div class="row cart_extra_row">
+		<div class="col-lg-6">
+		<div class="cart_extra cart_extra_1">
+		<div class="cart_extra_content cart_extra_coupon">
+		<div class="cart_extra_title">Coupon code</div>
+		<div class="coupon_form_container">
+		<form action="#" id="coupon_form" class="coupon_form">
+		<input type="text" class="coupon_input" required="required">
+		<button class="coupon_button">apply</button>
+		</form>
+		</div>
+		<div class="coupon_text">We will send the original HD pixel image to your mailbox, you can choose whether to expedite the shipment of this order.</div>
+		<div class="shipping">
+		<div class="cart_extra_title">Shipping Method</div>
+		<ul>
+		<li class="shipping_option d-flex flex-row align-items-center justify-content-start">
+		<label class="radio_container">
+		<input type="radio" id="radio_1" name="shipping_radio" class="shipping_radio">
+		<span class="radio_mark"></span>
+		<span class="radio_text">Next day delivery</span>
+		</label>
+		<div class="shipping_price ml-auto">$4.99</div>
+		</li>
+		<li class="shipping_option d-flex flex-row align-items-center justify-content-start">
+		<label class="radio_container">
+		<input type="radio" id="radio_2" name="shipping_radio" class="shipping_radio">
+		<span class="radio_mark"></span>
+		<span class="radio_text">Standard delivery</span>
+		</label>
+		<div class="shipping_price ml-auto">$1.99</div>
+		</li>
+		<li class="shipping_option d-flex flex-row align-items-center justify-content-start">
+		<label class="radio_container">
+		<input type="radio" id="radio_3" name="shipping_radio" class="shipping_radio" checked="">
+		<span class="radio_mark"></span>
+		<span class="radio_text">Personal Pickup</span>
+		</label>
+		<div class="shipping_price ml-auto">Free</div>
+		</li>
+		</ul>
+		</div>
+		</div>
+		</div>
+		</div>
+		<div class="col-lg-6 cart_extra_col">
+		<div class="cart_extra cart_extra_2">
+		<div class="cart_extra_content cart_extra_total">
+		<div class="cart_extra_title">Cart Total</div>
+		<ul class="cart_extra_total_list">
+		<li class="d-flex flex-row align-items-center justify-content-start">
+		<div class="cart_extra_total_title">Subtotal</div>
+		<div class="cart_extra_total_value ml-auto">$5.00</div>
+		</li>
+		<li class="d-flex flex-row align-items-center justify-content-start">
+		<div class="cart_extra_total_title">Shipping</div>
+		<div class="cart_extra_total_value ml-auto">Free</div>
+		</li>
+		<li class="d-flex flex-row align-items-center justify-content-start">
+		<div class="cart_extra_total_title">Total</div>
+		<div class="cart_extra_total_value ml-auto">$5.00</div>
+		</li>
+		</ul>
+		<div class="button checkout_button trans_200"><a href="checkout.html">proceed to checkout</a></div>
+		</div>
+		</div>
+		</div>
+		</div>
+
+	</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Forms -->
+	<section class="container">
 		<h2 id="forms">Forms</h2>
-
-		<div class="card">
-			<h2>Form Input</h2>
-
+		<div class="card soft">
+			<h3>Form Input</h3>
 			<input type="text" class="form-input" placeholder="Text">
 			<input type="password" class="form-input" placeholder="Password">
 			<input type="number" class="form-input" placeholder="Number">
@@ -145,8 +1029,8 @@
 		</div>
 
 
-		<div class="card">
-			<h2>Form Control</h2>
+		<div class="card soft">
+			<h3>Form Control</h3>
 
 			<div class="form-control">
 				<label class="form-label" for="input-example1">Example</label>
@@ -163,11 +1047,22 @@
 				<input type="text" class="form-input" placeholder="Text" id="input-example3">
 			</div>
 		</div>
+	</section>
 
-		<div class="card">
-			<h2>Form Button</h2>
 
-			<div class="form-control">
+
+
+
+
+<!-- Buttons -->
+	<section class="container">
+
+		<h2 id="buttons">Buttons</h2>
+		<div class="card soft">
+
+<!-- 3 ways of button -->
+
+<!-- 			<div class="form-control">
 				<input type="submit" class="form-button" />
 			</div>
 
@@ -177,12 +1072,32 @@
 
 			<div class="form-control">
 				<a href="#" class="form-button">Anchor</a>
-			</div>
+			</div> -->
+
+
+			<div class="form-control">
+
+		
+			<h3>Check Button</h3>
+			<button class="btn button primary">Check Out </button>
+			<h3>Cart Button</h3>
+			<button class="btn button cart">Add to Cart</button>
+			<h3>Shopping Button</h3>
+            <button class="btn button primary">Continue Shopping </button>
+
+			<h3>Learn More Button</h3>
+            <p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
+
+
+   			</div>
 		</div>
 
-		<div class="card">
+
+	
+
+
 			<h2>Hotdog</h2>
-			
+			<div class="card soft">
 			<div class="form-control">
 				<input type="search" class="hotdog" placeholder="Search" />
 			</div>
@@ -206,11 +1121,19 @@
 					</div>
 				</div>
 			</div>
+			</div>
+
 		</div>
 	</section>
 
 
 
+	
+
+
+
+
+<!-- Tables -->
 	<script>
 	const makeTable = (classes='') => {
 		const head = ['ID','Office','Name','Email','Phone'];
@@ -239,47 +1162,47 @@
 		<h2 id="tables">Tables</h2>
 
 
-		<div class="card">
+		<div class="card soft">
 			<h3>Basic Table</h3>
 
 			<script>document.write(makeTable('table'))</script>
 		</div>
 
 
-		<div class="card">
+		<div class="card soft">
 			<h3>Striped Table</h3>
 
 			<script>document.write(makeTable('table striped'))</script>
 		</div>
 
 
-		<div class="card">
+		<div class="card soft">
 			<h3>Horizontal Lined Table</h3>
 
 			<script>document.write(makeTable('table lined horizontal'))</script>
 		</div>
 
 
-		<div class="card">
+		<div class="card soft">
 			<h3>Vertical Lined Table</h3>
 
 			<script>document.write(makeTable('table lined vertical'))</script>
 		</div>
 
 
-		<div class="card">
+		<div class="card soft">
 			<h3>Horizontal Outlined Lined Table</h3>
 
 			<script>document.write(makeTable('table lined outline horizontal'))</script>
 		</div>
 
-		<div class="card">
+		<div class="card soft">
 			<h3>All Lined Table</h3>
 
 			<script>document.write(makeTable('table lined all'))</script>
 		</div>
 
-		<div class="card">
+		<div class="card soft">
 			<h3>Striped with Vertical and Outlines Table</h3>
 
 			<script>document.write(makeTable('table lined vertical outline striped'))</script>
@@ -288,51 +1211,24 @@
 
 
 
-	<section class="container">
-		<h2 id="ordersummary">Order Summery</h2>
-			<div class="card">
-				<div class="checkout-form-section">
-					<div class="">
-						<img src="" alt="">
-					</div>
-					<div>
-						<div class="checkout-total-container">
-							<div class="grid">
-								<div class="col-12 flex-justify-between">
-									<span class="checkout-value-label">Subtotal</span>
-									<span class="checkout-value">$00.00</span>
-								</div>
-								<div class="col-12 flex-justify-between">
-									<span class="checkout-value-label">Tax</span>
-									<span class="checkout-value">--</span>
-								</div>
-								<div class="col-12 flex-justify-between">
-									<span class="checkout-value-label">Shipping</span>
-									<span class="checkout-value">--</span>
-								</div>
-								<div class="col-12 flex-justify-between">
-									<span class="checkout-value-label">Order Total</span>
-									<span class="checkout-value">$00.00</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<button type="submit" class="btn btn-add-bag-xl" data-test="button">Check Out</button>
-			</div>
-		</div>
-	</section>
 
+
+
+
+
+
+<!-- Check Boxes -->
 	<section class="container">
 		<h2 id="checkboxes">Check Boxes</h2>
-
-		<div class="card">
+ 
+		<div class="card soft">
 			<h3>Basic Checkbox</h3>
 
 			<div>
-				<label for="check-example1">Checkbox</label>
+				<!-- <label for="check-example1">Checkbox</label> -->
 				<label>
 					<input type="checkbox" id="check-example1">
-					Checkbox
+					I agree with ……
 				</label>
 			</div>
 
@@ -348,10 +1244,11 @@
 			<h3>Toggle Checkbox</h3>
 
 			<div>
-				<div class="toggle">
+<!-- 				<div class="toggle">
 					<input type="checkbox" id="toggle1" class="hidden">
 					<label for="toggle1"></label>
-				</div>
+				</div> -->
+
 				<div class="toggle" style="font-size:2em">
 					<input type="checkbox" id="toggle2" class="hidden">
 					<label for="toggle2"></label>
@@ -361,10 +1258,13 @@
 	</section>
 
 
+
+
+<!-- Figures -->
 	<section class="container">
 		<h2 id="figures">Figures</h2>
 
-		<div class="card">
+		<div class="card soft">
 			<h3>Basic Figure</h3>
 
 			<div>
@@ -378,24 +1278,7 @@
 			</div>
 		</div>
 
-
-				<!-- figure>img+figcaption -->
-		
-		<!-- <div class="card">
-			<h3>Soft Figure</h3>
-
-			<div>
-
-				<figure class="product-figure soft">
-					<img src="https://via.placeholder.com/300" alt="">
-					<figcaption>
-						Product
-					</figcaption>
-				</figure>
-			</div>
-		</div> -->
-
-		<div class="card">
+		<div class="card soft">
 			<h3>Overlay Figure</h3>
 
 			<a href="#" class="display-block">
@@ -409,50 +1292,225 @@
 			</a>
 		</div>
 
-		<h3>Gridded Figures</h3>
 
-		<div class="grid gap">
-			<div class="col-xs-12 col-md-4">
-				
 
-			<div>
-				<!-- figure>img+figcaption -->
-				<figure class="product-figure soft">
-					<img src="img/product 2.jpg" alt="">
-					<figcaption>
-						Product
-					</figcaption>
-				</figure>
-			</div>
-			</div>
-			<div class="col-xs-12 col-md-4">
-				
 
-			<div>
-				<!-- figure>img+figcaption -->
-				<figure class="product-figure soft">
-					<img src="img/product 2.jpg" alt="">
-					<figcaption>
-						Product
-					</figcaption>
-				</figure>
-			</div>
-			</div>
-			<div class="col-xs-12 col-md-4">
-				
+<div class="card">
+	<h3>Main Gridded Figures</h3>
 
-			<div>
-				<!-- figure>img+figcaption -->
-				<figure class="product-figure soft">
-					<img src="img/product 2.jpg" alt="">
-					<figcaption>
-						Product
-					</figcaption>
-				</figure>
+		<!-- <div id="fh5co-product"> -->
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-4 text-center animate-box">
+					<div class="product">
+						<div class="product-grid" style="background-image:url(images/1.jpg);">
+						</div>
+						<div class="desc">
+							<h3><a href="single.html">PIC</a></h3>
+							<span class="price">$5</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center animate-box">
+					<div class="product">
+						<div class="product-grid" style="background-image:url(images/2.jpg);">
+						</div>
+						<div class="desc">
+							<h3><a href="single.html">PIC</a></h3>
+							<span class="price">$5</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center animate-box">
+					<div class="product">
+						<div class="product-grid" style="background-image:url(images/3.jpg);">
+						</div>
+						<div class="desc">
+							<h3><a href="single.html">PIC</a></h3>
+							<span class="price">$5</span>
+						</div>
+					</div>
+				</div>
 			</div>
+			<div class="row">
+				<div class="col-md-4 text-center animate-box">
+					<div class="product">
+						<div class="product-grid" style="background-image:url(images/7.jpg);">
+						</div>
+						<div class="desc">
+							<h3><a href="single.html">PIC</a></h3>
+							<span class="price">$5</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center animate-box">
+					<div class="product">
+						<div class="product-grid" style="background-image:url(images/10.jpg);">
+						</div>
+						<div class="desc">
+							<h3><a href="single.html">PIC</a></h3>
+							<span class="price">$5</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center animate-box">
+					<div class="product">
+						<div class="product-grid" style="background-image:url(images/8.jpg);">
+						</div>
+						<div class="desc">
+							<h3><a href="single.html">PIC</a></h3>
+							<span class="price">$5</span>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
+
+			<div class="row">
+				<div class="col-md-4 text-center animate-box">
+					<div class="product">
+						<div class="product-grid" style="background-image:url(images/5.jpg);">
+						</div>
+						<div class="desc">
+							<h3><a href="single.html">PIC</a></h3>
+							<span class="price">$5</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center animate-box">
+					<div class="product">
+						<div class="product-grid" style="background-image:url(images/4.jpg);">
+						</div>
+						<div class="desc">
+							<h3><a href="single.html">PIC</a></h3>
+							<span class="price">$5</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center animate-box">
+					<div class="product">
+						<div class="product-grid" style="background-image:url(images/0.jpg);">
+						</div>
+						<div class="desc">
+							<h3><a href="single.html">PIC</a></h3>
+							<span class="price">$5</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 text-center animate-box">
+					<div class="product">
+						<div class="product-grid" style="background-image:url(images/27.jpg);">
+						</div>
+						<div class="desc">
+							<h3><a href="single.html">PIC</a></h3>
+							<span class="price">$5</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center animate-box">
+					<div class="product">
+						<div class="product-grid" style="background-image:url(images/31.jpg);">
+						</div>
+						<div class="desc">
+							<h3><a href="single.html">PIC</a></h3>
+							<span class="price">$5</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center animate-box">
+					<div class="product">
+						<div class="product-grid" style="background-image:url(images/21.jpg);">
+						</div>
+						<div class="desc">
+							<h3><a href="single.html">PIC</a></h3>
+							<span class="price">$5</span>
+						</div>
+					</div>
+				</div>
+	</div>
+</div>
+
+
+
+
+
 	</section>
+
+
+
+
+
+
+<!-- Footer -->
+<footer>
+	<section class="footer">
+		<h2 id="footer">Footer</h2>	
+			<div class="card footer">
+
+				<br>
+
+				<div class="Anues hd logo"></div>	
+					<div style="text-align: center;">
+						<img src="img/otoro 1.png" alt="">
+					</div>
+
+				<br><br>
+
+				<div class="footer-credits ">
+					<div style="text-align: center;">© 2020 All rights reserved | <a href="https://tristatu.com//">Trista</a>
+					</div>
+				</div>
+
+				<br>
+
+				<div style="text-align: center;">
+				<ul class="footer-icons">
+				
+					<!-- <i class="icon example">&#xf048;</i> -->
+
+					<!-- <a href="#"><i class="icon-twitter-with-circle"></i></a>
+					<a href="#"><i class="icon-facebook-with-circle"></i></a>
+					<a href="#"><i class="icon-instagram-with-circle"></i></a> -->
+
+					<li><a href=""><img src="img/icons/footer/facebook.png" alt></a></li>
+
+					<li><a href=""><img src="img/icons/footer/behance.png" alt></a></li>
+
+					<li><a href=""><img src="img/icons/footer/instagram.png" alt></a></li>
+
+					<li><a href=""><img src="img/icons/footer/vimeo.png" alt></a></li>
+
+					<li><a href=""><img src="img/icons/footer/tumblr.png" alt></a></li>
+
+					<!-- <a href=""><img src="img/icons/footer/linkedin.png" alt></a> -->
+
+
+				</ul>
+				</div>
+
+				<br>
+
+			</div>
+	</section>
+</footer>
+
+
+
+
+
+<!-- GOTOTOP -->
+	<a class="gototop" href="#"><i class="fas fa-arrow-up"></i></a>
+
+
+
+
+
+
+
 	
 </body>
 </html>
