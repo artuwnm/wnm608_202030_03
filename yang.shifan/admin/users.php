@@ -1,5 +1,4 @@
 <?php include('../parts/header.php') ?>
-
 <?php include('../lib/php/functions.php')?>
 
 <style>
@@ -17,15 +16,14 @@ th, td {
 <table style="width:100%">
   <tr>
     <th>User List</th>
-   </tr>
+  </tr>
   <?php
     $users_array = getData();
-    foreach ($users_array as $user) {
+    foreach ($users_array as $index => $user) {
       $name = $user['name'];
-      echo "<tr><td>$name</td></tr>";
+      echo "<tr><td><a href=\"edit_user.php?user=$index\">$name</a></td></tr>";
     }
   ?>
 </table>
-</body>
 
 <?php include('../parts/footer.php') ?>
