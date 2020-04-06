@@ -35,9 +35,11 @@ h1{
 h2{
 	font-family:Georgia,"Times New Roman",serif;
 	padding-left:0.3em;
+	padding-bottom:0.5em;
 	font-size:20px;
 	color:#2d5986;
-	border-bottom:solid 1px var(--color-neutral-light); 
+	border-bottom:solid 1px var(--color-neutral-light);
+	text-align:center; 
 }
 h3,
 h4,
@@ -51,6 +53,8 @@ a {
 	color:inherit;
 	font-weight:bold;
 	text-decoration: none;
+
+
 
 }
 a:hover {
@@ -71,12 +75,22 @@ code {
 
 #text{
 	padding:1em;
-	
+
 }
 
+.datadeleted a{
+	text-align:center;
 
+}
 
-
+.back{
+	float:right;
+	padding-left:1em;
+	padding-right:0;
+	padding-top:0;
+	padding-bottom:0;
+	text-decoration:underline;
+}
 
 /* SMALL CLASSES */
 
@@ -110,14 +124,16 @@ code {
 /* COMPONENT CLASSES */
 
 li{
-	padding-left:3em;
-	padding-right:3em;
+	padding-left:10em;
+	padding-right:10em;
 	padding-top:1em;
 	padding-bottom:1em;
+	/*text-align:center;*/
 }
 
 .navbar li{
 	padding:0;
+	text-decoration:underline;	
 }
 .navbar {
 	background-color: #ffd9cc;
@@ -130,6 +146,7 @@ li{
 }
 .navbar a {
 	padding: 0 1em;
+
 }
 
 
@@ -156,7 +173,7 @@ li{
 .nav-stretch a,
 .nav-flex a,
 .nav a {
-	display:block;
+	
 	padding:0.2em 0.5em;
 }
 	.nav-pills a:hover,
@@ -342,9 +359,14 @@ li{
 
 
 /* FORMS */
+.form3{
+	display:inline-block;
+	float:right;
+}
 
 .form2{
 	padding:1em;
+	margin-left:2em;
 }
 
 .container2{
@@ -376,16 +398,18 @@ li{
 }
 
 .sub{
-	padding-left:100px;
+	padding-left:150px;
 	padding-top:1em;
 
 }
 .sub input{
-	margin-right:10px;
+	font-size:20px;
+	margin-right:20px;
 	font-family:Helvetica,Arial,sans-serif;
-
+	padding-top:7px;
 
 }
+
 
 
 #forms1{

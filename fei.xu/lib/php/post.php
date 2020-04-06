@@ -1,16 +1,16 @@
 <?php
    	
-   $myFile = "data.json";
+   $myFile = "users.json";
    $arr_data = array(); // create empty array
 
   try
   {
 	   //Get form data
 	   $formdata = array(
-	      'firstName'=> $_POST['firstName'],
-	      'lastName'=> $_POST['lastName'],
+	      'name'=> $_POST['name'],
+	      'type'=> $_POST['type'],
 	      'email'=>$_POST['email'],
-	      'mobile'=> $_POST['mobile']
+	      'classes'=> $_POST['classes']
 	   );
 
 	   //Get data from existing json file

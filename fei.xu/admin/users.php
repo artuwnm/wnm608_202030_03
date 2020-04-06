@@ -14,11 +14,12 @@ $users = getData("../data/users.json");
 function showUserPage($user) {
 
 $classes = implode(", ",$user->classes);
+$userid = $_GET['id'];
 
 echo <<<HTML
 <nav class="nav-crumbs">
 	<ul>
-		<li><a href="admin/users.php">Back</a></li>
+		<li class="back"><a href="admin/users.php">Back</a></li>
 	</ul>
 </nav>
 
@@ -26,32 +27,32 @@ echo <<<HTML
 <div class=container2>
 
 <form class="form2" method="post" action="post.php">
+<input type="hidden" name="id" value="$userid">
 
 <div class="int">
-	<label for="username">Username</label>
+	<label for="username">Username:</label>
 	<input type="text" name="username" value="$user->name" class="required">
 </div>
 
 <div class="int">
-		<label for="type">Type</label>
+		<label for="type">Type:</label>
 		<input type="text" name="type" value="$user->type" class="required">
 </div>
 
 <div class="int">
-		<label for="email">Email</label>
+		<label for="email">Email:</label>
 		<input type="text" name="email" value="$user->email" class="required">
 		
 </div>
 
 <div class="int">
-		<label for="classes">Classes</label>
+		<label for="classes">Classes:</label>
 		<input type="text" name="classes" value="$classes" class="required">
 	</div>
 <div class="sub">
 		<input type="submit" value="submit" id="send">
 </div>
-
-	</div>
+</div>
 
 </div>
 </form>
@@ -78,7 +79,9 @@ HTML;
 			<nav class="nav-flex flex-none">
 				<ul>
 					<li><a href="admin/users.php">User List</a></li>
-				</ul>
+					<li><a href="admin/userform.php">Add User</a></li>
+					<!-- <li><a href="admin/userform2.php">Delete User</a></li>
+				</ul> -->
 			</nav>
 		</div>
 	</header>
@@ -104,9 +107,17 @@ HTML;
 			foreach($users as $i=>$user) {
 				echo "
 				<li>
-					<a href='admin/users.php?id=$i'>$user->name</a>
+					<a href='admin/users.php?id=$i'>$user->name</a> 
+				    <form class='form3' method='post' action='admin/userform2.php'>
+				    <input type='hidden' name='id' value='$i'>
+				    <button class=delete>delete</button>
+				    </form>
+
+
 				</li>
+
 				";
+
 			}
 
 			?>
@@ -120,6 +131,6 @@ HTML;
 			?>
 		</div>
 	</div>
-	
+
 </body>
 </html>

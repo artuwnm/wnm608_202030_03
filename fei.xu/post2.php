@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Learning Data</title>
-	
+	<meta charset="UTF-8">
+	<title>learning data</title>
 	<?php include "parts/meta.php" ?>
 </head>
 <body>
@@ -23,6 +23,7 @@
 </html>
 	<div class="container">
 		<div class="card soft">
+
 <?php
 
 
@@ -43,7 +44,8 @@
 
 	   $arr_data = json_decode($jsondata, true);
 
-	   $arr_data[$_POST['id']] = $formdata;
+	   array_push($arr_data,$formdata);
+
 
 	   $jsondata = json_encode($arr_data, JSON_PRETTY_PRINT);
 
