@@ -9,7 +9,7 @@
 <body>
   <?php include "parts/navbar.php" ?>
 <div class="card">
-			<h2>Form Control</h2>
+			<h2>Checkout</h2>
 
 			<div class="form-control">
 				<label class="form-label" for="input-example1">Example</label>

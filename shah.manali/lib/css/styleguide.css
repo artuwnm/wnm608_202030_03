@@ -208,6 +208,11 @@ code {
 	background-attachment: fixed;
 }
 
+.grid.gap {
+    grid-gap: var(--grid-gap);
+    gap: var(--grid-gap);
+}
+
 /* TABLE */
 .table {
 	width:100%;
@@ -225,6 +230,19 @@ code {
 .table.striped tr:hover {
 	background-color:rgba(0,0,0,0.2);
 }
+
+.form-input {
+	display:block;
+	width:100%;
+	border-width:0;
+	border-bottom:1px solid var(--color-neutral-light);
+	color:inherit;
+	font:inherit;
+	padding:0.5em 1em;
+	-webkit-appearance:none;
+	outline:0;
+}
+
 .form-control {
 	margin:1em 0;
 }
@@ -233,6 +251,21 @@ code {
 	width:100%;
 	font-size:1em;
 	color:var(--color-main-dark);
+}
+.form-button {
+	display:block;
+	width:100%;
+	border-width:0;
+	color:inherit;
+	font:inherit;
+	padding:0.5em 1em;
+	-webkit-appearance:none;
+	outline:0;
+	text-align:center;
+	background-color:var(--color-main-light);
+	border-radius:0.3em;
+	text-decoration:none;
+	cursor:pointer;
 }
 .form-button:hover {
 	text-decoration:none;
