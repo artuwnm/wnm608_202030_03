@@ -22,7 +22,6 @@
 
 	{
 
-
 		"name": "Ji Yeom",
 		"type": "Student",
 		"email": "jwy617@gmail.com",
@@ -32,15 +31,10 @@
 
 	{
 
-
 		"name": "Ting Wei",
-
 		"type": "Product Designer",
-
 		"email": "waiting8969@gmail.com",
-
 		"classes": [608, 700, 695]
-
-
+		
 	}
 ]

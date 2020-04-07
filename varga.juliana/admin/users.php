@@ -37,7 +37,9 @@ echo <<<HTML
 		<input type="text" value=$classes>
 	</div>
 
-	  <input type="submit" value="Submit">
+	  <form method="get" action="admin/users.php">
+    	<button class="button" type="submit"><span>Submit</span></button>
+	</form>
 </div>
 HTML;
 
@@ -51,6 +53,48 @@ HTML;
 	<title>Learning Data</title>
 	
 	<?php include "../parts/meta.php" ?>
+
+	<style>
+.button {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #73bee4;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 9px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
 </head>
 <body>
 
@@ -80,6 +124,7 @@ HTML;
 
 			?>
 			<h2>User List</h2>
+			<br>
 
 			<nav class="nav">
 			<ul>
@@ -94,6 +139,7 @@ HTML;
 			}
 
 			?>
+
 			</ul>
 			</nav>
 

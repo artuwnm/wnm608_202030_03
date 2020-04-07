@@ -1,16 +1,16 @@
 :root {
-    --color-neutral-dark: #316a8a; 
-    --color-neutral-medium: #999;
-    --color-neutral-light: #fff;
 
-    --color-main-light: #eac3fa;
-    --color-main-medium: #8d39b0;
-    --color-main-dark: #44105a;
+   	--color-neutral-dark: #316a8a;
+    --color-neutral-medium: #73bee4;
+    --color-neutral-light: #eee;
+    --color-main-light: #a0dbf2;
+    --color-main-medium: #f2b6a0;
+    --color-main-dark: #173646;
 }
 
 
 body {
-	background-color:white;
+	background-color:var(--color-neutral-light);
 	padding-bottom:10em;
 }
 

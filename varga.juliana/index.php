@@ -17,7 +17,9 @@
 	<div class="container display-flex">
 		
 		<div class="flex-stretch">
+			<div class="logo">
 			<img src="img/logo.png">
+			</div>
 		</div>
 		
 		<nav class="nav-flex flex-none">
