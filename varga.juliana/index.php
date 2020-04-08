@@ -36,6 +36,9 @@
 </header>
   <br>
 
+  <div class="view-window display-flex flex-align-center flex-justify-center" style="background-image:url('img/banner.jpg')">
+	</div>
+<br>
  
 	<div class="container">
 		

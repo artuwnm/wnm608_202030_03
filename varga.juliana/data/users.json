@@ -35,6 +35,15 @@
 		"type": "Product Designer",
 		"email": "waiting8969@gmail.com",
 		"classes": [608, 700, 695]
-		
+
+	},
+
+	{
+
+		"name": "Hamilton Cline",
+		"type": "Teacher",
+		"email": "hcline@academyart.edu",
+		"classes": [608, 617, 820]
+
 	}
 ]

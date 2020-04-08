@@ -1,8 +1,11 @@
-<header class="navbar">
+	<!-- header.navbar>h1+nav.nav -->
+	<header class="navbar">
 	<div class="container display-flex">
 		
 		<div class="flex-stretch">
+			<div class="logo">
 			<img src="img/logo.png">
+			</div>
 		</div>
 		
 		<nav class="nav-flex flex-none">
