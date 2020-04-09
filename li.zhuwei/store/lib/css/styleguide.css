@@ -11,7 +11,7 @@
   --color-neutral-light: #ece7e7;
   --colo-theme-color:#f3cfd5;
   --color-main-light:#cfe6a4;
-  --color-main-medium:#eb1eb2;
+  --color-main-medium:#fb8ca9;
   --color-main-dark:#44105a;
   --color-black:black;
   --color-white:white;
@@ -70,7 +70,12 @@ code {
 .display-block { display:block; }
 .display-inline-block { display:inline-block; }
 
-.flex-stretch { flex: 1 1 auto; }
+.flex-stretch { 
+  flex: 1 1 auto; 
+  /*margin: 10px;
+  padding: 20px;
+  font-size: 30px;*/
+}
 .flex-none { flex: none; }
 
 .flex-align-center { align-items:center; }
@@ -168,7 +173,7 @@ code {
   .card>:last-child { margin-bottom:0; }
 
   .card.soft {
-      box-shadow: 6px 5px 15px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 6px 5px 15px 10px rgba(0, 0, 0, 0.1);
     border-radius:0.3em;
   }
   .card.medium {
