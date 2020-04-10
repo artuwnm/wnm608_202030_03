@@ -40,8 +40,4 @@
 	</div>
 </div>
 
-
-
-
-
-	</section>
+</section>

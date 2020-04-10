@@ -13,6 +13,8 @@
 
 	<?php include "parts/whatisnew.php" ?>
 
+	<?php include "parts/shoppingnow.php" ?>
+
 	<?php include "parts/footer.php" ?>
 
 <!-- GOTOTOP -->

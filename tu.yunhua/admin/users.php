@@ -2,9 +2,11 @@
 
 include "../lib/php/functions.php";
 
-$users = getData("../data/users.json");
+$filename = "../data/users.json";
+$users = getData($filename);
 
 // print_p($users);
+// print_p(["POST",$_POST,"GET",$_GET]);
 
 
 // file_put_contents, json_encode, explode, $_POST
@@ -12,149 +14,131 @@ $users = getData("../data/users.json");
 // CRUD - Create Read Update Delete
 
 
-function showUserPage($user) {
-
-$classes = implode(",",$user->classes);
-
-
-// get user id  
-$userid = $_GET['id'];
-
+$empty_user = (object)[
+	"name"=>"",
+	"type"=>"",
+	"email"=>"",
+	"classes"=>[]
+];
 
 
 
-echo <<<HTML
+// LOGIC
+if(isset($_GET['action'])) {
+	switch($_GET['action']) {
+		case "update":
+			$users[$_GET['id']]->name = $_POST['user-name'];
+			$users[$_GET['id']]->type = $_POST['user-type'];
+			$users[$_GET['id']]->email = $_POST['user-email'];
+			$users[$_GET['id']]->classes = explode(", ",$_POST['user-classes']);
 
+			file_put_contents($filename,json_encode($users));
 
+			header("location:{$_SERVER['PHP_SELF']}?id={$_GET['id']}");
+			break;
+		case "create":
+			$empty_user->name = $_POST['user-name'];
+			$empty_user->type = $_POST['user-type'];
+			$empty_user->email = $_POST['user-email'];
+			$empty_user->classes = explode(", ",$_POST['user-classes']);
 
-<head>
+			$id = count($users);
 
-<!-- TABLE IN ADD  -->
-	<style>
+			$users[] = $empty_user;
+			// array_push($users,$empty_user);
 
-		table, th, td {
-		  border: 2px solid black;
-		  border-color: black;
-		  border-collapse: collapse;
+			file_put_contents($filename,json_encode($users));
 
-		}
-		th, td {
-		  padding: 5px;
-		  text-align: left;    
-		}
-		th{
-			color: white;
-			background-color: #c72101;
+			header("location:{$_SERVER['PHP_SELF']}?id=$id");
+			break;
+		case "delete":
+			array_splice($users,$_GET['id'],1);
 
-			width: 20%;
+			file_put_contents($filename,json_encode($users));
 
-		}
-		td{
-			color: black;
-			width: 80%;
-		}
-
-		.card{
-    		padding: 2em;
-		}
-
-		.buttom{
-			padding-top: 2em;
-		}
-
-	</style>
-</head>
-<!-- TABLE IN ADD  -->
-
-
-
-	<div class="card">
-	<h2>$user->name</h2>
-	
-
-
-
-
-
-
-<form class="form" method="post" action="post.php">
-<input type="hidden" name="id" value="$userid">
-
-
-
-
-	<script>document.write(makeTable('table lined all'))</script>
-		<table class="table lined all">
-			
-			<div class="title">
-			<thead>
-				<tr>
-					<th><label for="username">Username</label></th>
-					<th><label for="type">Type</label></th>
-					<th><label for="email">Email</label></th>
-					<th><label for="classes">Phone</label></th>
-				</tr>
-			</thead>
-			</div>
-
-
-
-			<tbody>
-				<tr>
-					<td><input type="text" name="username" value="$user->name" class="required"></td>
-					<td><input type="text" name="type" value="$user->type" class="required"></td>
-					<td><input type="text" name="email" value="$user->email" class="required"></td>
-					<td><input type="text" name="classes" value="$classes" class="required"></td>
-				</tr>
-			</tbody>
-
-		</table>
-
-
-<nav class="nav-crumbs">
-
-	<div class="col-md-3 col-xs-2 hidden-xs menu-1">
-		<ul class="display-flex1">
-			<h2><li><a href="admin/users.php" class="btn btn-primary btn-outline">Back</a></li></h2>
-		</ul>
-	</div>
-	
-
-	<div class="col-md-6 col-xs-6 text-center"></div>
-
-
-	<div class="col-md-3 col-xs-4 text-right hidden-xs menu-2">
-		<ul class="display-flex2">
-			<div class="sub">
-				<h2><li><a>
-					<input type="submit" value="submit" id="send" class="btn btn-primary btn-outline">
-				</a></li></h2>
-			</div>
-		</ul>
-	</div>
-
-
-
-
-
-
-
-</nav>
-
-
-
-HTML;
-
+			header("location:{$_SERVER['PHP_SELF']}");
+	}
 }
 
 
 
 
 
+function showUserPage($user) {
+
+$id = $_GET['id'];
+$classes = implode(", ",$user->classes);
+$addoredit = $id=="new" ? 'Add' : 'Edit';
+$createorupdate = $id=="new" ? 'create' : 'update';
+$deletebutton = $id=="new" ? '' : <<<HTML
+<li class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$id&action=delete">Delete</a></li>
+HTML;
+
+$data_show = $id=="new" ? "" : <<<HTML
+<div class="card soft">
+<h2>$user->name</h2>
+<div class="form-control">
+	<strong>Type</strong>
+	<span>$user->type</span>
+</div>
+<div class="form-control">
+	<strong>Email</strong>
+	<span>$user->email</span>
+</div>
+<div class="form-control">
+	<strong>Phone</strong>
+	<span>$classes</span>
+</div>
+</div>
+HTML;
 
 
 
+echo <<<HTML
+<nav class="nav-pills">
 
+	<ul>
+		<li class="flex-none"><a href="{$_SERVER['PHP_SELF']}">Back</a></li>
+		<li class="flex-stretch"></li>
+		$deletebutton
+	</ul>
+
+</nav>
+<form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&action=$createorupdate">
+	<div class="grid gap">
+		<div class="col-xs-12 col-md-6">
+			$data_show
+		</div>
+		<div class="col-xs-12 col-md-6">
+			<div class="card soft">
+			<h2>$addoredit User</h2>
+			<div class="form-control">
+				<label class="form-lable" for="user-name">Name</label>
+				<input class="form-input" id="user-name" name="user-name" value="$user->name">
+			</div>
+			<div class="form-control">
+				<label class="form-lable" for="user-type">Type</label>
+				<input class="form-input" id="user-type" name="user-type" value="$user->type">
+			</div>
+			<div class="form-control">
+				<label class="form-lable" for="user-email">Email</label>
+				<input class="form-input" id="user-email" name="user-email" value="$user->email">
+			</div>
+			<div class="form-control">
+				<label class="form-lable" for="user-classes">Phone</label>
+				<input class="form-input" id="user-classes" name="user-classes" value="$classes">
+			</div>
+			<div class="form-control">
+				<h2>
+					<input type="submit" class="form-button" value="Submit" class="btn btn-primary btn-outline">
+				</h2>
+			</div>
+		</div>
+	</div>
+</form>
+HTML;
+
+}
 
 
 
@@ -169,49 +153,45 @@ HTML;
 	<title>Learning Data</title>
 	
 	<?php include "../parts/meta.php" ?>
-
 </head>
 <body>
 
 	<header class="navbar">
 		<div class="container display-flex">
 			<div class="flex-stretch">
-
-				<h3>Admin</h3>
-				</div>
-
-				<nav class="nav-flex flex-none">
-					<ul>
-						<li><a href="admin/users.php">User List</a></li>
-					</ul>
-				</nav>				
+				<h1>Admin</h1>
 			</div>
+			<nav class="nav-flex flex-none">
+				<ul>
+					<li><a href="admin/users.php">User List</a></li>
+					<li><a href="admin/users.php?id=new">Add New User</a></li>
+				</ul>
+			</nav>
 		</div>
 	</header>
 
-
 	<div class="container">
-		<div class="card soft">
 
 			<?php 
 
 			if(isset($_GET['id'])){
 
-				showUserPage($users[$_GET['id']]);
+				// conditional ternary
+				// ifthis ? iftruedothis : iffalsedothis
+				showUserPage(
+					$_GET['id']=="new" ? 
+					$empty_user :
+					$users[$_GET['id']]
+				);
 
 			} else {
 
 			?>
-
-
+			<div class="card soft">
+			<h2>User List</h2>
 
 			<nav class="nav">
 			<ul>
-			<nav class="nav-crumbs">
-				<h2>Users List</h2>
-			</nav>
-
-
 			<?php
 
 			foreach($users as $i=>$user) {
@@ -222,11 +202,11 @@ HTML;
 				";
 			}
 
-
 			?>
-
 			</ul>
 			</nav>
+			</div>
+
 
 				<div class="col-md-3 col-xs-2 hidden-xs menu-1">
 					<ul class="display-flex1">
@@ -244,17 +224,15 @@ HTML;
 					</ul>
 				</div>
 
+
+
+
 			<?php 
 
 			}
 
 			?>
-
-
-
-
-		</div>
 	</div>
-
+	
 </body>
 </html>

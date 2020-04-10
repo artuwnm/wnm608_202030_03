@@ -1,43 +1,31 @@
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="UTF-8">
 	<title>Learning Data</title>
-	
-	<?php include "parts/meta.php" ?>
-	
-
+	<?php include "../parts/meta.php" ?>
 </head>
-
 <body>
 
 	<header class="navbar">
 		<div class="container display-flex">
 			<div class="flex-stretch">
-
 				<h3>Admin</h3>
-				</div>
-
-				<nav class="nav-flex flex-none">
-					<ul>
-						<li><a href="admin/users.php">User List</a></li>
-					</ul>
-				</nav>				
 			</div>
+			<nav class="nav-flex flex-none">
+				<ul>
+					<li><a href="admin/users.php">User List</a></li>
+				</ul>
+			</nav>				
 		</div>
 	</header>
-
-
-
-
 </body>
 </html>
-
 
 <?php
 
 
-   $myFile = "data/users.json";
+   $myFile = "../data/users.json";
    $arr_data = array(); 
 
   try
@@ -54,7 +42,8 @@
 
 	   $arr_data = json_decode($jsondata, true);
 
-	   $arr_data[$_POST['id']] = $formdata;
+	   array_push($arr_data,$formdata);
+
 
 	   $jsondata = json_encode($arr_data, JSON_PRETTY_PRINT);
 

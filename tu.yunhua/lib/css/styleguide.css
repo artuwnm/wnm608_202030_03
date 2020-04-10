@@ -213,7 +213,7 @@ ul {
 }
 */
 a {
-    color: #000;
+    color: white;
     font-weight: 600;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
@@ -222,6 +222,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+
 }
 
 
@@ -450,9 +451,10 @@ ul.display-flex2 {
 
 .home {
     width: 100%;
-    height: 1580px;
+    height: 1280px;
     background: #fff;
     z-index: 2;
+
 }
 
 .home_slider_container {
@@ -462,11 +464,11 @@ ul.display-flex2 {
 
 .home_slider_container {
     width: 100%;
-    height: 100%;
+    height: 90%;
     padding-top: 0px;
     padding-left: 0px;
     padding-right: 0px;
-    padding-bottom: 120px;
+    padding-bottom: 0px;
 }
 
 .owl-carousel.owl-loaded {
@@ -511,6 +513,7 @@ element.style {
     -ms-user-select: none;
     user-select: none;
 }
+
 .owl-carousel .owl-item {
     position: relative;
     min-height: 1px;
@@ -536,7 +539,7 @@ element.style {
     top: 0;
     left: 0;
     width: 100%;
-    height: 70%;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -545,7 +548,7 @@ element.style {
 .home_slider_content_container {
     position: absolute;
     left: 0;
-    top: 20%;
+    top: 30%;
     width: 100%;
 }
 
@@ -612,7 +615,7 @@ element.style {
 }
 
 .button_light a {
-    color: #fff;
+    color: white;
 }
 
 .button a {
@@ -1807,9 +1810,9 @@ input[type=checkbox], input[type=radio] {
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     border-radius: 2px;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
     /*padding: 8px 20px;*/
 }
 
