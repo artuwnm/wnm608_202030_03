@@ -21,18 +21,19 @@
 	</header>
 </body>
 </html>
+<!-- resource: https://stackoverflow.com/questions/18213026/delete-element-from-json-with-php -->
+
 <?php
 
-//get all your data on file
 $data = file_get_contents('../data/users.json');
 
-// decode json to associative array
 $json_arr = json_decode($data, true);
 
 $userid = $_POST['id'];
 
 unset($json_arr[$userid]);
 
+$json_arr = array_values($json_arr);
 
 file_put_contents('../data/users.json', json_encode($json_arr));
 
