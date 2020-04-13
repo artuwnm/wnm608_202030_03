@@ -19,13 +19,14 @@
 
     <div class="view-window display-flex flex-align-center flex-justify-center" style="background-image:url('img/homead.jpg')">
 		<div class="theme">
-			<h3>The 24 Solar Terms</h3>
-			<p>A specific knowledge continuum of time for Chinese people</p>
+			<h1>The 24 Solar Terms</h1>
+			<h2>A specific knowledge continuum of time for Chinese people</h2>
+
+			<div class="btnstyle Explore">
+                <button class="btn first"><a href="about.php">Explore More</a></button>
+            </div>
 		</div>
 
-		<div class="card soft">
-			<h4>Explore More</h4>
-		</div>
 	</div>
 
 	<!-- .container>p*2>lorem30 -->
@@ -65,11 +66,15 @@
 		</div>
 
 
-
-
-
-
 	</div>
+
+
+
+
+
+    <?php include "parts/footer.php" ?>
+
+
 </body>
 </html>
 

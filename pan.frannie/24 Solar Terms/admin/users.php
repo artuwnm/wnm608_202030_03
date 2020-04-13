@@ -19,24 +19,40 @@ $classes = implode(", ",$user->classes);
 echo <<<HTML
 <nav class="nav-crumbs">
 	<ul>
-		<li><a href="admin/users.php">Back</a></li>
+		<li><a href="users.php">Back</a></li>
 	</ul>
 </nav>
+
+
+
 <div>
-	<h2>$user->name</h2>
-	<div>
-		<strong>Type</strong>
-		<span>$user->type</span>
-	</div>
-	<div>
-		<strong>Email</strong>
-		<span>$user->email</span>
-	</div>
-	<div>
-		<strong>Classes</strong>
-		<span>$classes</span>
-	</div>
+    <h2>$user->name</h2>
+        <div class="form-control">
+
+				<label class="form-label" for="input-example1">Type</label>
+				<input type="text1" class="form-input" placeholder="$user->type" id="input-example1">
+			</div>
+
+			<div class="form-control">
+				<label class="form-label" for="input-example2">Email</label>
+				<input type="text1" class="form-input" placeholder="$user->email" id="input-example2">
+			</div>
+
+			<div class="form-control">
+				<label class="form-label" for="input-example3">Classes</label>
+				<input type="text1" class="form-input" placeholder="$classes" id="input-example3">
+        </div>
 </div>
+
+
+
+
+
+<div class="btnstyle Submit">
+                <button class="btn first">Submit</button>
+</div>
+
+
 HTML;
 
 }
@@ -45,24 +61,23 @@ HTML;
 
 
 
-
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Learning Data</title>
+	<title>User Data</title>
 	
-	<?php include "../parts/meta.php" ?>
+	<?php include "../parts/meta2.php" ?>
 </head>
 <body>
 
 	<header class="navbar">
 		<div class="container display-flex">
 			<div class="flex-stretch">
-				<h1>Admin</h1>
+				<h2>Admin</h2>
 			</div>
 			<nav class="nav-flex flex-none">
 				<ul>
-					<li><a href="admin/users.php">User List</a></li>
+					<li><a href="users.php">User List</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -81,15 +96,17 @@ HTML;
 
 			?>
 			<h2>User List</h2>
+            
 
-			<nav class="nav">
+
+			<nav class="nav-user">
 			<ul>
 			<?php
 
 			foreach($users as $i=>$user) {
 				echo "
 				<li>
-					<a href='admin/users.php?id=$i'>$user->name</a>
+					<a href='users.php?id=$i'>$user->name</a>
 				</li>
 				";
 			}
@@ -98,11 +115,19 @@ HTML;
 			</ul>
 			</nav>
 
+
 			<?php 
 
 			}
 
 			?>
+
+            
+            
+
+
+
+
 		</div>
 	</div>
 	

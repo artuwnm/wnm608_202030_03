@@ -22,6 +22,13 @@
 			</ul>
 		</div>
 	</div>
+
+
+
+	<?php include "parts/footer.php" ?>
+
+
+
 	
 </body>
 </html>
