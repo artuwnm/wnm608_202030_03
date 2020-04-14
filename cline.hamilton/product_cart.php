@@ -12,6 +12,10 @@
 	<div class="container">
 		<div class="card soft">
 			<h2>Product Cart</h2>
+
+			<div>
+				<a class="form-button" href="product_checkout.php">Checkout</a>
+			</div>
 		</div>
 	</div>
 	
