@@ -41,9 +41,12 @@ font-family:'Cormorant Garamond', serif;
 
 h1{
   
-   font-family: 'Cormorant Garamond', serif;
-   font-size: 10rem;
-   font-weight: bold;
+    font-family: 'Cormorant Garamond', serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #817e32;
+	padding-left: 10px;
+
 }
 
 h2{

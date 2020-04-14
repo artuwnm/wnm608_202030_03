@@ -67,15 +67,7 @@
 			</div>
 
 
-    <div class="flex-none" style="width: 1em"></div>
-			<div class="flex-stretch">
-				<div class="card flat">
-					<img src="img/Tray.jpg" alt="Tray" style="width:100%">
-					<p>Product Name</p>
-					
-				</div>
-			</div>
-
+   
 
    <div class="flex-none" style="width: 1em"></div>
 			<div class="flex-stretch">
@@ -85,6 +77,18 @@
 					
 				</div>
 			</div>
+
+
+<div class="flex-none" style="width: 1em"></div>
+			<div class="flex-stretch">
+				<div class="card flat">
+					<img src="img/Tray.jpg" alt="Tray" style="width:100%">
+					<p>Product Name</p>
+					
+				</div>
+			</div>
+
+
 
 
   </div>
