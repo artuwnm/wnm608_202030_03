@@ -1,7 +1,7 @@
 
 <meta charset="UTF-8">
 
-<base href="https://arianaad.com/aau/wnm608_03/adili.ariana/">
+<base href="https://hdraws.com/aau/wnm608_03/cline.hamilton/">
 
 <meta name="viewport" content="width=device-width">
 
@@ -10,3 +10,4 @@
 <link rel="stylesheet" href="css/storetheme.css">
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/products.js"></script>

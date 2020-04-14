@@ -1,39 +1,59 @@
-<!DOCTYPE html>
+<?php
+
+include "lib/php/functions.php";
+include "parts/templates.php";
+
+$data = getRows(
+	makeConn(),
+	"SELECT * FROM `products` WHERE `id` = '{$_GET['id']}'"
+);
+$o = $data[0];
+$images = explode(",",$o->images);
+
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
 	<title>Begari | Product Item</title>
-
-	<meta name="viewport" content="width=device-width">
-
-	<link rel="stylesheet" href="lib/css/styleguide.css">
-	<link rel="stylesheet" href="lib/css/gridsystem.css">
-	<link rel="stylesheet" href="css/storetheme.css">
+	
+	<?php include "parts/meta.php" ?>
 </head>
 <body>
 
-	<header class="navbar">
-		<div class="container display-flex">
-			<div class="flex-stretch">
-				<h1>Store</h1>
-			</div>
-			<nav class="nav-flex flex-none">
-				<ul>
-					<!-- li*3>a[href=#]>{Link $} -->
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Store</a></li>
-					<li><a href="#">About</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
-		<div class="card soft">
-			<h2>Product Item</h2>
+		<nav class="nav-crumbs">
+			<ul>
+				<li><a href="productlist.php">Back</a></li>
+			</ul>
+		</nav>
 
-			<div>
-				The item is #<?= $_GET['id'] ?>
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-7">
+				<div class="card soft">
+					<div class="product-main">
+						<img src="/images/store/<?= $o->thumbnail ?>" alt="">
+					</div>
+					<div class="productthumbs">
+					<?=
+					array_reduce($images,function($r,$o){
+						return $r."<img src='/images/store/$o'>";
+					})
+					?>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-5">
+				<div class="card soft">
+					<h2><?= $o->title ?></h2>
+					<div class="product-description">
+						<div class="product-price">&dollar;<?= $o->price ?></div>
+					</div>
+					<div>
+						<a class="form-button" href="product_added_to_cart.php">Add To Cart</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
