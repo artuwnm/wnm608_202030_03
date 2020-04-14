@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Apr 09, 2020 at 06:32 PM
+-- Generation Time: Apr 14, 2020 at 01:47 PM
 -- Server version: 5.6.46-cll-lve
 -- PHP Version: 7.2.7
 
@@ -33,8 +33,8 @@ CREATE TABLE `products` (
   `name` varchar(64) NOT NULL,
   `price` decimal(10,2) NOT NULL,
   `category` varchar(16) NOT NULL,
-  `data_create` datetime NOT NULL,
-  `data_modify` datetime NOT NULL,
+  `date_create` datetime NOT NULL,
+  `date_modify` datetime NOT NULL,
   `description` text NOT NULL,
   `url` varchar(256) NOT NULL,
   `thumbnail` varchar(128) NOT NULL,
@@ -46,7 +46,7 @@ CREATE TABLE `products` (
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`id`, `name`, `price`, `category`, `data_create`, `data_modify`, `description`, `url`, `thumbnail`, `images`, `quantity`) VALUES
+INSERT INTO `products` (`id`, `name`, `price`, `category`, `date_create`, `date_modify`, `description`, `url`, `thumbnail`, `images`, `quantity`) VALUES
 (1, 'Watermelon', '1.99', 'water', '2020-04-09 17:59:15', '2020-04-09 17:59:15', 'Watermelon water is a bottle of water with large fruit of more or less spherical shape on the bottle.', '', 'water_watermelon_m.jpg', 'water_watermelon1.jpg', 30),
 (2, 'Grapes', '1.99', 'Water', '2020-04-09 18:13:01', '2020-04-09 18:13:01', 'Grapes water is a bottle of water with a bunch of small round flesh-covered shapes on the bottle.', '', 'water_grapes_m.jpg', 'water_grapes.jpg', 30),
 (3, 'Apple', '1.99', 'Water', '2020-04-09 18:14:04', '2020-04-09 18:14:04', 'Apple water is a bottle of water with a red round fruit on the bottle.', '', 'water_apple_m.jpg', 'water_apple.jpg', 30),
