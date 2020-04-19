@@ -1,75 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php include "parts/meta.php" ?>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Throw Pillows</title>
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:300|Oxanium:600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="lib/css/styleguide.css">
-	<link rel="stylesheet" href="lib/css/gridsystem.css">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:300|Oxanium:300, 600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lib/css/styleguide-m4.css">
+    <link rel="stylesheet" href="lib/css/gridsystem.css">
     <link rel="stylesheet" href="css/storetheme.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/js/sticky-navbar.js">
 </head>
 <body>
     <!-- php -->
-    <?
-    include("part/header.php");
-    ?>
+    <?php include "parts/navbar.php" ?>
     
-    <!-- header.navbar>h1+nav.nav -->
-	<header class="navbar" id="navbar">
-        <!-- remove container class here -->
-		<div class="display-flex">
-			<nav class="nav flex-none">
-				<div class="logo">
-					<a href="index.html">
-                        <img src="img/logo-white.png" alt="" style="width: 15%;">
-                    </a>
-				</div>
-				<div class="Search">
-					<input type="text" placeholder="Search..">
-				</div>
-				<!-- moved the search div out of the unordered list tag. having it inside the tag was preventing spacing -->
-				<ul  class="display-flex">
-					<li  class="dropdown">
-						<a href="home-decor.html" class="dropbtn">Home Decor</a>
-						<div  class="dropdown-content">
-							<a href="throw-pillows.html">Throw Pillows</a>
-							<a href="">Wall Clocks</a>
-						</div>
-					</li>
-					<li class="dropdown">
-						<a href="#" class="dropbtn">Tech</a>
-						<div  class="dropdown-content">
-							<a href="#">Phone Cases</a>
-							<a href="#">Pad Cases</a>
-							<a href="#">Mouse Pad</a>
-						</div>
-					</li>
-					<li class="dropdown">
-						<a href="#" class="dropbtn">Tabletop</a>
-						<div  class="dropdown-content">
-							<a href="#">Mugs</a>
-							<a href="#">Placemats</a>
-						</div>
-					</li>
-					<li class="dropdown">
-						<a href="#" class="dropbtn">Stationery</a>
-						<div  class="dropdown-content">
-							<a href="#">Notebooks</a>
-							<a href="#">Postercards</a>
-							<a href="#">Stickers</a>
-						</div>
-					</li>
-					<li class="dropdown">
-						<a href="#" class="dropbtn">Wall Art</a>
-					</li>
-				</ul>
-			</nav>	
-		</div>
     </header>
     <!-- dropdown -->
-	<div class="content">
         <ul class="breadcrumb">
             <li><a href="#">Home Decor</a></li>
             <li><a href="#">Throw Pillows</a></li>    
@@ -96,49 +42,72 @@
                     </ul>
                 </dd>
         </dl>
-        <div class="product-list">
-            <div class="container">
-                <div class="grid gap">
-                    <div class="col-xs-3">     
-                        <div class="card soft">
-                            <a href="t-p-1.html">
-                                <img src="img/throw-pillow-1.jpg" alt="">
-                                <h4>Mango Planet</h4>
-                                <h5>$20</h5>
-                            </a>
-                        </div>  
-                    </div>
-                </div>
+       
+        <div class="container"> 
+        <div class="grid gap">
+            <div class="col-xs-12 col-md-4">     
+                <div class="card soft">
+                    <a href="t-p-1.html">
+                        <img src="./img/throw-pillow-1.jpg" alt="">
+                        <h4 class="product-name-small">Mango Planet</h4>
+                        <h5 class="product-price-small">$20</h5>
+                    </a>
+                </div> 
             </div>
-            <div class="container">
-                <div class="grid gap">
-                    <div class="col-xs-3">     
-                        <div class="card soft">
-                            <a href="">
-                                <img src="img/throw-pillow-1.jpg" alt="">
-                                <h4>Mango Planet</h4>
-                                <h5>$20</h5>
-                            </a>
-                        </div>  
-                    </div>
-                </div>
+        
+        
+        
+            <div class="col-xs-12 col-md-4">     
+                <div class="card soft">
+                    <a href="t-p-1.html">
+                        <img src="./img/throw-pillow-1.jpg" alt="">
+                        <h4 class="product-name-small">Mango Planet</h4>
+                        <h5 class="product-price-small">$20</h5>
+                    </a>
+                </div> 
             </div>
-            <div class="container">
-                <div class="grid gap">
-                    <div class="col-xs-3">     
-                        <div class="card soft">
-                            <a href="">
-                                <img src="img/throw-pillow-1.jpg" alt="">
-                                <h4>Mango Planet</h4>
-                                <h5>$20</h5>
-                            </a>
-                        </div>  
-                    </div>
-                </div>
-            </div>	   	
+        
+            <div class="col-xs-12 col-md-4">     
+                <div class="card soft">
+                    <a href="t-p-1.html">
+                        <img src="./img/throw-pillow-1.jpg" alt="">
+                        <h4 class="product-name-small">Mango Planet</h4>
+                        <h5 class="product-price-small">$20</h5>
+                    </a>
+                </div> 
+            </div>
+
+            <div class="col-xs-12 col-md-4">     
+                <div class="card soft">
+                    <a href="t-p-1.html">
+                        <img src="./img/throw-pillow-1.jpg" alt="">
+                        <h4 class="product-name-small">Mango Planet</h4>
+                        <h5 class="product-price-small">$20</h5>
+                    </a>
+                </div> 
+            </div>
+
+             <div class="col-xs-12 col-md-4">     
+                <div class="card soft">
+                    <a href="t-p-1.html">
+                        <img src="./img/throw-pillow-1.jpg" alt="">
+                        <h4 class="product-name-small">Mango Planet</h4>
+                        <h5 class="product-price-small">$20</h5>
+                    </a>
+                </div> 
+            </div>
+
+            <div class="col-xs-12 col-md-4">     
+                <div class="card soft">
+                    <a href="t-p-1.html">
+                        <img src="./img/throw-pillow-1.jpg" alt="">
+                        <h4 class="product-name-small">Mango Planet</h4>
+                        <h5 class="product-price-small">$20</h5>
+                    </a>
+                </div> 
+            </div>
         </div>
     </div>
-
 <script src="js/slider.js"></script>
 <script src="js/accordion.js"></script>
 <script src="js/filterbycolor.js"></script>

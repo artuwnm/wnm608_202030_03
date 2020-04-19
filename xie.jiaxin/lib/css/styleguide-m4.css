@@ -22,6 +22,11 @@ h6 {
 	color: #3042AD;
 }
 
+p {
+	font-family: Catamaran;
+	letter-spacing: 1px;
+}
+
 .black-link {
 	color: black;
 	text-decoration: none;
@@ -35,6 +40,7 @@ code {
 /* hearder */
 .navbar {
 	background-color:white;
+	box-shadow: 0 4px 18px 0 rgba(0,0,0,0.1);
 }
 .top-menu {
 	color: whitesmoke;
@@ -110,25 +116,88 @@ hr {
 	overflow: hidden;
 	position: relative;
 	background-size: cover;
+	background-repeat: no-repeat;
 	background-position:center;
 	background-attachment:fixed;	
 	z-index: -1;
 }
 
 .overlay {
-	font-size: 15vh;
+	font-family: Oxanium;
+	font-weight: 400;
+	font-size: 10vh;
+	letter-spacing: .1vh;
 	color: #3042AD;
 	text-align: center;
-	padding: 50px;
-	line-height: 15vh;
+	padding: 180px;
+	line-height: 13vh;
 	text-transform: uppercase;
 }
+
+/* arrow */
+/* https://codepen.io/raf187/pen/BvgGRQ */
+.arrow{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #3042AD;
+    border-right: 5px solid #3042AD;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+/* INTRO */
+.intro {
+	background-color: white;
+	padding: 80px 420px 100px 420px;
+}
+
+.intro p {
+	font-size: 20px;
+	text-align: center;
+}
+
+.wavy {
+	color: #3042AD;
+	border-width: 1px;
+	text-decoration: wavy;
+	padding: 0;
+	width: 100%;
+}
+
 /* SMALL CLASSES */
 
 .container {
 	max-width:1000px;
 	margin-right: auto;
 	margin-left: auto;
+	
 }
 .hidden { display: none;}
 
@@ -177,8 +246,7 @@ hr {
 	.nav-pills a:hover,
 	.nav-stretch a:hover,
 	.nav-flex a:hover,
-	.nav a:hover {
-		background-color:var(--color-main-medium);
+	.nav a:hover { 
 		color:var(--color-white);
 		text-decoration:none;
 	}
@@ -218,7 +286,7 @@ hr {
 
 /* card */
 
-.card {
+/* .card {
     background-color: white;
     overflow: hidden;
     position: relative;
@@ -242,7 +310,7 @@ hr {
 	}
 	.card.flat {
 		padding:0;
-	}
+	} */
 
 
 
@@ -370,7 +438,7 @@ hr {
 	margin:1em 0;
 }
 
-.form-button {
+/* .form-button {
 	display:block;
 	width:100%;
 	border-width:0;
@@ -391,7 +459,7 @@ hr {
 	background-color: #3042AD;
 	color: white;
 }
-
+ */
 
 
 
@@ -462,3 +530,216 @@ hr {
 	transition: all 0.5s;
 	transform: scale(1.1);
 }
+
+/* card */
+
+.card img {
+	width: 100%;
+}
+
+.card {
+    background-color: white;
+    overflow: hidden;
+    /* position: relative; */
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.card>:first-child { margin-top:0; }
+.card>:last-child { margin-bottom:0; }
+
+/* .card.soft {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #c4c4c4c4;
+	border-radius: 0.5em;
+} */
+.card.medium {
+	background-color:var(--color-neutral-medium);
+}
+.card.dark {
+	background-color:var(--color-neutral-dark);
+	color:var(--color-neutral-light);
+}
+.card.flat {
+	padding:0;
+}
+
+.card a {
+	text-decoration: none;
+}
+
+
+.card.soft:hover {
+	box-shadow: 0 4px 18px 0 rgba(0,0,0,0.1);
+	transition: 0.3s;
+	border-radius:0.5em;
+}
+
+.product-name-small {
+	font-family:Catamaran;
+	color: black;
+	text-align: center;
+	line-height: 0px;
+}
+
+.product-price-small {
+	font-family:Catamaran;
+	color: black;
+	text-align: center;
+	line-height: 0px;
+}
+
+/* button */
+.choice-button {
+	border: 1px solid #d8d8d8;
+	border-radius: 5px;
+	color: black;
+	font-size: 16px;
+	letter-spacing: 1px;
+	background: #fff;
+	text-transform: uppercase;
+	padding: 15px;
+	font-family: "Catamaran";
+	width: 119px;
+	-webkit-transition: all 200ms ease-out;
+	-moz-transition: all 200ms ease-out;
+	-ms-transition: all 200ms ease-out;
+	-o-transition: all 200ms ease-out;
+	transition: all 200ms ease-out;
+}
+
+.choice-button:hover {
+	border-color: black;
+	-webkit-transition: all 200ms ease-out;
+	-moz-transition: all 200ms ease-out;
+	-ms-transition: all 200ms ease-out;
+	-o-transition: all 200ms ease-out;
+	transition: all 200ms ease-out;
+	cursor: pointer;
+}
+
+.large-button {
+	/* margin-left: 580px; */
+	/* margin-top: 88px; */
+	border: 1px solid #3042AD;
+	border-radius: 5px;
+	color: #3042AD;
+	font-size: 20px;
+	letter-spacing: 1px;
+	background: #fff;
+	text-transform: uppercase;
+	padding: 15px;
+	font-family: "Catamaran";
+	width: 365px;
+	-webkit-transition: all 200ms ease-out;
+	-moz-transition: all 200ms ease-out;
+	-ms-transition: all 200ms ease-out;
+	-o-transition: all 200ms ease-out;
+	transition: all 200ms ease-out;
+}
+
+.large-button:hover {
+	color: white;
+	border-color: none;
+	background-color: #3042AD;
+	-webkit-transition: all 200ms ease-out;
+	-moz-transition: all 200ms ease-out;
+	-ms-transition: all 200ms ease-out;
+	-o-transition: all 200ms ease-out;
+	transition: all 200ms ease-out;
+	cursor: pointer;
+}
+
+.large-button-reverse {
+	border: 1px solid #3042AD;
+	border-radius: 5px;
+	color: white;
+	font-size: 20px;
+	letter-spacing: 1px;
+	background: #3042AD;
+	text-transform: uppercase;
+	padding: 15px;
+	font-family: "Catamaran";
+	width: 365px;
+	-webkit-transition: all 200ms ease-out;
+	-moz-transition: all 200ms ease-out;
+	-ms-transition: all 200ms ease-out;
+	-o-transition: all 200ms ease-out;
+	transition: all 200ms ease-out;
+}
+
+.large-button-reverse:hover {
+	color: white;
+	border-color: rgba(48, 66, 173, 0);
+	background-color: rgba(48, 66, 173, 0.9);
+	-webkit-transition: all 200ms ease-out;
+	-moz-transition: all 200ms ease-out;
+	-ms-transition: all 200ms ease-out;
+	-o-transition: all 200ms ease-out;
+	transition: all 200ms ease-out;
+	cursor: pointer;
+}
+
+.small-button-reverse {
+	border: 1px solid #3042AD;
+	border-radius: 5px;
+	color: white;
+	font-size: 20px;
+	letter-spacing: 1px;
+	background: #3042AD;
+	text-transform: uppercase;
+	padding: 15px;
+	font-family: "Catamaran";
+	width: 246px;
+	-webkit-transition: all 200ms ease-out;
+	-moz-transition: all 200ms ease-out;
+	-ms-transition: all 200ms ease-out;
+	-o-transition: all 200ms ease-out;
+	transition: all 200ms ease-out;
+}
+
+.small-button-reverse:hover {
+	color: white;
+	border-color: rgba(48, 66, 173, 0);
+	background-color: rgba(48, 66, 173, 0.9);
+	-webkit-transition: all 200ms ease-out;
+	-moz-transition: all 200ms ease-out;
+	-ms-transition: all 200ms ease-out;
+	-o-transition: all 200ms ease-out;
+	transition: all 200ms ease-out;
+	cursor: pointer;
+}
+
+/* title */
+.title {
+	font-size: 5vh;
+}
+
+
+/* footer */
+.footer {
+  /*background-color: black;*/
+  height: 200px;
+  width: 100%;
+  position: relative;
+  margin-left: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-around;
+  padding-right: 500px;
+}
+
+.column {
+  width: 250px;
+}
+
+.a-footer {
+  color: black ;
+  text-decoration: none;
+}
+
