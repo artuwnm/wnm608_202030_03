@@ -1,7 +1,7 @@
 <?php
 
-include "lib/php/functions.php";
-include "parts/templates.php";
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
 
 $data = getRows(
 	makeConn(),
@@ -23,7 +23,7 @@ $images = explode(",",$o->images);
 	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
-		<nav class="nav-crumbs">
+		<nav class="nav-crumbs" style="margin:1em 0">
 			<ul>
 				<li><a href="product_list.php">Back</a></li>
 			</ul>
@@ -33,19 +33,19 @@ $images = explode(",",$o->images);
 			<div class="col-xs-12 col-md-7">
 				<div class="card soft">
 					<div class="product-main">
-						<img src="/images/store/<?= $o->thumbnail ?>" alt="">
+						<img src="/img/store/<?= $o->thumbnail ?>" alt="">
 					</div>
-					<div class="thumbs">
+					<div class="product-thumbs">
 					<?=
 					array_reduce($images,function($r,$o){
-						return $r."<img src='/images/store/$o'>";
+						return $r."<img src='/img/store/$o'>";
 					})
 					?>
 					</div>
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-5">
-				<div class="card soft">
+				<div class="card">
 					<h2><?= $o->name ?></h2>
 					<div class="product-description">
 						<div class="product-price">&dollar;<?= $o->price ?></div>
@@ -56,7 +56,7 @@ $images = explode(",",$o->images);
 				</div>
 			</div>
 		</div>
-		<div class="card soft medium">
+		<div class="card soft dark">
 			<h3>Description</h3>
 			<div><?= $o->description ?></div>
 		</div>

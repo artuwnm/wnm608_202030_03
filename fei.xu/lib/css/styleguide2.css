@@ -13,7 +13,9 @@
 }
 
 /* basic */
-
+a{
+	text-decoration:none;
+}
 .container {
 	max-width:1000px;
 	margin-right: auto;
@@ -35,7 +37,72 @@ h2{
 	padding-left: 5%;
 }
 
+h3{
+	font-family: 'Raleway', sans-serif;
+	font-weight:200;
+	font-size:20px;
+	text-align:center;
+	padding-top:2em;
+	margin-left:1em;
+	margin-right:1em;
+	padding-bottom:1em;
+	border-bottom:0.5px solid #2E4C69;
+	color:#2E4C69;
+}
 
+h4{
+
+	font-family: 'Raleway', sans-serif;
+	font-weight:200;
+	font-size:16px;
+	color:#2E4C69;
+	padding-left:1em;
+	text-decoration:underline;
+
+}
+
+/*little part*/
+.delete{
+	padding-top:1em;
+	padding-left:0em;
+	font-size:8px;
+	color:#2E4C69;
+
+}
+.subtotal{
+	font-family:helvatica;
+	padding-bottom:1em;
+	text-align:justify;
+	font-size:14px;
+}
+.taxes{
+	font-family:helvatica;
+	text-align:justify;
+	padding-top:8em;
+	font-size:14px;
+}
+.total{
+	font-family:helvatica;
+	text-align:justify;
+	font-size:24px;
+	padding-top:1em;
+}
+.descriptiontext{
+	text-align:left;
+	color:grey;
+	padding-left:1em;
+}
+.contiueshopping{
+	padding-top:4em;
+	padding-bottom:2em;
+	text-align:center;
+	color:grey;
+	font-size:24px;
+	font-weight:200;
+}
+.price1{
+	float:right;
+}
 body{
 	box-sizing:border-box;
 	margin:0;
@@ -44,7 +111,9 @@ body{
 	padding:0em;
 
 }
+a{
 
+}
 /*/
 header{
 
@@ -64,7 +133,10 @@ header{
 .display-inline-block { display:inline-block; }
 
 
-.flex-stretch { flex: 2 2 auto; }
+.flex-stretch { 
+	flex: 2 2 auto; 
+	padding-left:1em;
+}
 .flex-none { flex: none; }
 
 .flex-align-center { align-items:center; }
@@ -90,7 +162,7 @@ header{
 }
 
 #nav{
-	background-color:#E4D8D7;
+	background-color:#edd1ce;
 	color:black;
 	width:100%;
 	box-shadow: 0px 3px 6px 0px rgba(0,0,0,.2);
@@ -100,9 +172,10 @@ header{
 #shoppingbag{
 	background-color:#2E4C69;
 	color:white;
+
 }
 
-#shoppingbag li hover:{
+#shoppingbag hover:{
 	border:0px;
 }
 
@@ -110,9 +183,10 @@ header{
 	border:0px;
 
 }
-#shoppingbag hover:{
+#shoppingbag li:hover{
 	border:0px;
 }
+/*nav*/
 .nav{
 	float:right;
 	list-style:none;
@@ -131,7 +205,6 @@ header{
 .nav li{
 	display:inline-block;
 	padding: 35px 15px 35px 15px;
-	
 	margin:0;
 }
 
@@ -151,6 +224,20 @@ header{
 	/*background-color: #2E4C69;*/
 
 }
+
+.nav-crumbs ul{
+	list-style-type:none;
+	margin-top:0;
+	margin-bottom:0;
+	padding-left:0;
+	display:flex;
+	font-weight:bold;
+}
+.nav-crumbs li:not(:first-child)::before{
+	content:'/';
+	margin:0 0.4em;
+}
+
 /*.nav li a:hover{*/
 	color:white;
 }
@@ -250,7 +337,90 @@ header{
   background-color: black;
 }
 
-/*second slideshow*/
+/*Product List*/
+/*.product-price a:{
+	text-decoration:none;
+
+}
+.product-name a:{
+	text-decoration: none;
+}*/
+
+/* card */
+
+.card {
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+	.card>:first-child { margin-top:0; }
+	.card>:last-child { margin-bottom:0; }
+
+	.card.soft {
+	   	box-shadow: 3px 1px 5px 0px rgba(0, 0, 0, 0.1);
+		border-radius:0.5em;
+	}
+	.card.medium {
+		background-color:var(--color-neutral-medium);
+	}
+	.card.dark {
+		
+		color:var(--color-neutral-light);
+	}
+	.card.flat {
+		padding:0;
+	}
+	.card.soft2{
+		box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
+		border-radius:0.2em;
+		background-color:#9999990f;
+		text-align:justify;
+		border:0;
+		padding:1.5em;
+	}
 
 
+/*form button*/
+/*.formbuttonstyle{
+	text-align:center;
+}*/
+.form-button {
+	display:block;
+	width:50%;
+	border-width:0;
+	color:white;
+	font:inherit;
+	padding:0.5em 1em;
+	margin:1em;
+	-webkit-appearance:none;
+	outline:0;
+	text-align:center;
+	background-color:#2E4C69;
+	border-radius:0.3em;
+	text-decoration:none;
+	cursor:pointer;
+}
+.form-button:hover {
+	text-decoration:none;
+}
 
+.form-button1{
+	display:block;
+	position:relative;
+	margin:0 auto;
+	width:20%;
+	border-width:0;
+	color:white;
+	font:inherit;
+	padding:0.5em 1em;
+	-webkit-appearance:none;
+	outline:0;
+	text-align:center;
+	background-color:#2E4C69;
+	border-radius:0.3em;
+	text-decoration:none;
+	cursor:pointer;
+}

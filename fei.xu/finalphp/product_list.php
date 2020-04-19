@@ -1,25 +1,47 @@
-<!DOCTYPE html>
+<?php
+
+include_once "../lib/php/functions1.php";
+include_once "finalparts/templates.php";
+
+
+$rows = getRows(
+	makeConn(),
+	"SELECT *
+	FROM `products`
+	ORDER BY `date_create` DESC
+	LIMIT 15
+	"
+);
+
+// print_p($rows);
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Store: Product List</title>
 	
-	<?php include "finalparts/meta.php"?>
+	<?php include "finalparts/meta.php" ?>
 </head>
 <body>
 
 	<?php include "finalparts/navbar.php" ?>
 
 	<div class="container">
-		<div class="card soft">
-			<h2>Product List</h2>
+		<h3>Product List</h3>
+		<div class="grid gap">
 
-			<!-- ul>li*4>a[href="product_item.php"]>{Product $} -->
-			<ul>
-				<li><a href="product_item.php?id=1">Product 1</a></li>
-				<li><a href="product_item.php?id=2">Product 2</a></li>
-				<li><a href="product_item.php?id=3">Product 3</a></li>
-				<li><a href="product_item.php?id=4">Product 4</a></li>
-			</ul>
+		<?php
+
+
+
+		echo array_reduce(
+			$rows,
+			'productListTemplate'
+		);
+
+		?>
+
+
 		</div>
 	</div>
 	
