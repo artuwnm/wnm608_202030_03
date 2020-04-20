@@ -18,6 +18,7 @@ th, td {
     <th>User List</th>
   </tr>
   <?php
+    makeConn();
     $users_array = getData();
     foreach ($users_array as $index => $user) {
       $name = $user['name'];

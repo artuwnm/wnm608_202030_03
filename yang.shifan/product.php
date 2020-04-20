@@ -1,71 +1,20 @@
-<?php include('parts/header.php') ?>
-<div class="col-4 col-s-4">
-    <h1>Flower</h1>
-    <p>Product list</p>
-    <img src="img/little.jpg">
-</div>
+<?php
+    include_once('lib/php/functions.php');
+    include_once('parts/templates.php');
+    include('parts/header.php');
+?>
 
-<div class="col-4 col-s-4">
-    <h1>Flower</h1>
-    <p>Product list</p>
-    <img src="img/little.jpg">
-</div>
+<?php
+    $rows = getRows(
+        makeConn(),
+        "SELECT * FROM `products` ORDER BY `date_create` DESC LIMIT 12"
+    );
 
-<div class="col-4 col-s-4">
-    <h1>Flower</h1>
-    <p>Product list</p>
-    <img src="img/little.jpg">
-</div>
+    echo array_reduce(
+        $rows,
+        "productListTemplate"
+    );
+?>
 
-<div class="col-4 col-s-4">
-    <h1>Flower</h1>
-    <p>Product list</p>
-    <img src="img/little.jpg">
-</div>
-<div class="col-4 col-s-4">
-<h1>Flower</h1>
-<p>Product list</p>
-<img src="img/little.jpg">
-</div>
 
-<div class="col-4 col-s-4">
-    <h1>Flower</h1>
-    <p>Product list</p>
-    <img src="img/little.jpg">
-  </div>
-
-<div class="col-4 col-s-4">
-    <h1>Flower</h1>
-    <p>Product list</p>
-    <img src="img/little.jpg">
-  </div>
-
-<div class="col-4 col-s-4">
-    <h1>Flower</h1>
-    <p>Product list</p>
-    <img src="img/little.jpg">
-  </div>
-<div class="col-4 col-s-4">
-    <h1>Flower</h1>
-    <p>Product list</p>
-    <img src="img/little.jpg">
-</div>
-
-<div class="col-4 col-s-4">
-    <h1>Flower</h1>
-    <p>Product list</p>
-    <img src="img/little.jpg">
-</div>
-
-<div class="col-4 col-s-4">
-    <h1>Flower</h1>
-    <p>Product list</p>
-    <img src="img/little.jpg">
-</div>
-
-<div class="col-4 col-s-4">
-    <h1>Flower</h1>
-    <p>Product list</p>
-    <img src="img/little.jpg">
-</div>
 <?php include('parts/footer.php') ?>
