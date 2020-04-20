@@ -1,0 +1,27 @@
+:root {
+    --color-neutral-dark: #333;
+    --color-neutral-medium: #999;
+    --color-neutral-light: #eee;
+}
+
+
+body {
+	background-color:var(--color-neutral-light);
+	padding-bottom:10em;
+}
+
+
+
+[class*='col-']>.card {
+	height:300px;
+	width: 250px;
+	margin-top: 100px;
+}
+
+
+
+@media (max-width:600px) {
+	.navbar .display-flex {
+		display:block;
+	}
+}
