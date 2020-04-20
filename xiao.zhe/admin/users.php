@@ -95,7 +95,7 @@ HTML;
 
 echo <<<HTML
 <nav class="nav-pills">
-	<div class="card soft">
+	<div class="card">
 	<ul>
 		<li class="flex-none"><a href="{$_SERVER['PHP_SELF']}">Back</a></li>
 		<li class="flex-stretch"></li>
@@ -151,7 +151,7 @@ HTML;
 </head>
 <body>
 
-	<?php include "../parts/navbar.php" ?>
+	<!-- <?php include "../parts/navbar.php" ?> -->
 
 	<header class="navbar">
 		<div class="container display-flex">
