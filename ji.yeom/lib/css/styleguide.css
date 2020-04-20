@@ -297,14 +297,6 @@ img {
 
 
 /*BUTTON*/
-.edit_btn {
-    text-decoration: none;
-    padding: 2px 5px;
-    background: #2E8B57;
-    color: white;
-    border-radius: 3px;
-}
-
 .del_btn {
     text-decoration: none;
     padding: 2px 5px;

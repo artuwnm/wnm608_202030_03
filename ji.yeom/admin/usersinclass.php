@@ -19,36 +19,27 @@ echo <<<HTML
 		<li><a href="admin/users.php"><h5>< Back</h5></a></li>
 	</ul>
 </nav>
-<div style="padding-left: 50px">
-	<h2>$user->name</h2>
-
-	<form method="post" action="" >
-		<table class="table lined all striped" style="width:100%">
-			<tbody>
-				<tr>
-				    <th><label for="name"><strong>Name</strong></label></th>
-					<td><input type="text" name="name" value="$user->name" style="border:none; font-size:1em;"></td>
-				</tr>
-			</tbody>
-			<tbody>
-				<tr>
-				    <th><label for="name"><strong>Type</strong></label></th>
-					<td><input type="text" name="type" value="$user->type" style="border:none; font-size:1em;"></td>
-				</tr>
-			</tbody>
-			<tbody>
-				<tr>
-				    <th><label for="name"><strong>Email</strong></label></th>
-					<td><input type="text" name="email" value="$user->email" style="border:none; font-size:1em;"></td>
-				</tr>
-			</tbody>
-			<tbody>
-				<tr>
-				    <th><label for="name"><strong>Clasees</strong></label></th>
-					<td><input type="text" name="classes" value="$classes" style="border:none; font-size:1em;"></td>
-				</tr>
-			</tbody>
-		</table>
+	<form method="post">
+		<div class="form-control">
+			<label class="form-lable" for="user-name">Name</label>
+			<input class="form-input" id="user-name" name="user-name" value="$user->name">
+		</div>
+		<div class="form-control">
+			<label class="form-lable" for="user-type">Type</label>
+			<input class="form-input" id="user-type" name="user-type" value="$user->type">
+		</div>
+		<div class="form-control">
+			<label class="form-lable" for="user-email">Email</label>
+			<input class="form-input" id="user-email" name="user-email" value="$user->email">
+		</div>
+		<div class="form-control">
+			<label class="form-lable" for="user-classes">Classes</label>
+			<input class="form-input" id="user-classes" name="user-classes" value="$classes">
+		</div>
+		<div class="form-control">
+			<input type="submit" class="form-button" value="Submit">
+		</div>
+	</form>
 		<br><br>
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-2">

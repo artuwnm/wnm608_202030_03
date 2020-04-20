@@ -8,7 +8,7 @@
 <body>
 	<?php include "parts/navbar.php" ?>
 
-	<div class="containter">
+	<div class="container">
 		<div class="card soft">
 			<h2>Sign In</h2>
 		</div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Product Cart</title>
+	<title>Product Checkout</title>
 	<?php include "parts/meta.php" ?>
 </head>
 
@@ -15,16 +15,14 @@
 			</ul>
 		</nav>
 		<div class="card soft">
-			<h2>Product Cart</h2>
+			<h2>Product Checkout</h2>
 
-			<div class="grid gap">
-				<div class="col-xs-12 col-xs-8">
-					<div class="card">
-						<div>
-							<a class="button primary" href="product_checkout.php">Checkout</a>
-						</div>
-					</div>
-				</div>
+			<form>
+				Checkout form
+			</form>
+
+			<div>
+				<a class="button primary" href="product_confirmation.php">Confirm Purchase</a>
 			</div>
 		</div>
 	</div>

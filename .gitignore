@@ -3,3 +3,7 @@
 *.sass.map
 *.scss.map
 *.DS_Store
+
+*.DS_Store
+*sftp-config.json
+*auth.php
