@@ -26,61 +26,191 @@
     </div>
 
     <!-- First Photo Grid-->
-      <div class="col-4 col-s-4">
-        <img src="./img/home1.jpg" alt="Sandwich" style="width:100%" onClick="location.href='./product_item.php?productId=1'">
-        <h3>Rayon Long-Sleeve Blouses</h3>
-        <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+<div class="grid gap">
+      <div class="col-xs-12 col-md-4">
+      <div>
+      <figure class="product-figure soft">
+        <img src="img/Pin1mockup.png" alt="Sandwich" style="width:100%" onClick="location.href='./product_item.php?productId=1'">
+        <figcaption>
+            <h3>Rayon Long-Sleeve Blouses</h3>
+          </figcaption>
+        <p>Just some random text</p>
+        </figure>
       </div>
-      <div class="col-4 col-s-4">
-        <img src="./img/home1.jpg" alt="Steak" style="width:100%" onClick="location.href='./product_item.php?productId=2'">
-        <h3>Rayon Long-Sleeve Blouses</h3>
-        <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
       </div>
-      <div class="col-4 col-s-4">
-        <img src="./img/home1.jpg" alt="Cherries" style="width:100%"
-        onClick="location.href='./product_item.php?productId=3'">
-        <h3>Rayon Long-Sleeve Blouses</h3>
-        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-        <p>What else?</p>
-      </div>
-      <div class="col-4 col-s-4">
-        <img src="./img/home1.jpg" alt="Pasta and Wine" style="width:100%" 
-        onClick="location.href='./product_item.php?productId=4'">
-        <h3>Rayon Long-Sleeve Blouses</h3>
-        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-      </div>
-  
-    <!-- Second Photo Grid-->
-    
-      <div class="col-4 col-s-4">
-        <img src="./img/home1.jpg" alt="Popsicle" style="width:100%"
-        onClick="location.href='./product_item.php?productId=5'">
-        <h3>Rayon Long-Sleeve Blouses</h3>
-        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-      </div>
-      <div class="col-4 col-s-4">
-        <img src="./img/home1.jpg" alt="Salmon" style="width:100%"
-        onClick="location.href='./product_item.php?productId=6'">
-        <h3>Rayon Long-Sleeve Blouses</h3>
-        <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-      </div>
-      <div class="col-4 col-s-4">
-        <img src="./img/home1.jpg" alt="Sandwich" style="width:100%"
-        onClick="location.href='./product_item.php?productId=7'">
-        <h3>Rayon Long-Sleeve Blouses</h3>
-        <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-      </div>
-      <div class="col-4 col-s-4">
-        <img src="./img/home1.jpg" alt="Croissant" style="width:100%"
-        onClick="location.href='./product_item.php?productId=8'">
-        <h3>Rayon Long-Sleeve Blouses</h3>
-        <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-      </div>
-    
 
-  </main>
+     <div class="col-xs-12 col-md-4">
+      <div>
+      <figure class="product-figure soft">
+        <img src="img/Pin1mockup.png" alt="Sandwich" style="width:100%" onClick="location.href='./product_item.php?productId=2'">
+        <figcaption>
+            <h3>Rayon Long-Sleeve Blouses</h3>
+          </figcaption>
+        <p>Just some random text</p>
+        </figure>
+      </div>
+      </div>
 
-  <?php include "parts/footer.php" ?>
+      <div class="col-xs-12 col-md-4">
+      <div>
+      <figure class="product-figure soft">
+        <img src="img/Pin1mockup.png" alt="Sandwich" style="width:100%" onClick="location.href='./product_item.php?productId=3'">
+        <figcaption>
+            <h3>Rayon Long-Sleeve Blouses</h3>
+          </figcaption>
+        <p>Just some random text</p>
+        </figure>
+      </div>
+      </div>
 
+      <div class="col-xs-12 col-md-4">
+      <div>
+      <figure class="product-figure soft">
+        <img src="img/Pin1mockup.png" alt="Sandwich" style="width:100%" onClick="location.href='./product_item.php?productId=4'">
+        <figcaption>
+            <h3>Rayon Long-Sleeve Blouses</h3>
+          </figcaption>
+        <p>Just some random text</p>
+        </figure>
+      </div>
+      </div>
+
+      <div class="col-xs-12 col-md-4">
+      <div>
+      <figure class="product-figure soft">
+        <img src="img/Pin1mockup.png" alt="Sandwich" style="width:100%" onClick="location.href='./product_item.php?productId=5'">
+        <figcaption>
+            <h3>Rayon Long-Sleeve Blouses</h3>
+          </figcaption>
+        <p>Just some random text</p>
+        </figure>
+      </div>
+      </div>
+
+      <div class="col-xs-12 col-md-4">
+      <div>
+      <figure class="product-figure soft">
+        <img src="img/Pin1mockup.png" alt="Sandwich" style="width:100%" onClick="location.href='./product_item.php?productId=6'">
+        <figcaption>
+            <h3>Rayon Long-Sleeve Blouses</h3>
+          </figcaption>
+        <p>Just some random text</p>
+        </figure>
+      </div>
+      </div>
+
+      <div class="col-xs-12 col-md-4">
+      <div>
+      <figure class="product-figure soft">
+        <img src="img/Pin1mockup.png" alt="Sandwich" style="width:100%" onClick="location.href='./product_item.php?productId=7'">
+        <figcaption>
+            <h3>Rayon Long-Sleeve Blouses</h3>
+          </figcaption>
+        <p>Just some random text</p>
+        </figure>
+      </div>
+      </div>
+
+      <div class="col-xs-12 col-md-4">
+      <div>
+      <figure class="product-figure soft">
+        <img src="img/Pin1mockup.png" alt="Sandwich" style="width:100%" onClick="location.href='./product_item.php?productId=8'">
+        <figcaption>
+            <h3>Rayon Long-Sleeve Blouses</h3>
+          </figcaption>
+        <p>Just some random text</p>
+        </figure>
+      </div>
+      </div>
+
+      <div class="col-xs-12 col-md-4">
+      <div>
+      <figure class="product-figure soft">
+        <img src="img/Pin1mockup.png" alt="Sandwich" style="width:100%" onClick="location.href='./product_item.php?productId=9'">
+        <figcaption>
+            <h3>Rayon Long-Sleeve Blouses</h3>
+          </figcaption>
+        <p>15.99</p>
+        </figure>
+      </div>
+      </div>
+
+      <div class="col-xs-12 col-md-4">
+      <div>
+      <figure class="product-figure soft">
+        <img src="img/Pin1mockup.png" alt="Sandwich" style="width:100%" onClick="location.href='./product_item.php?productId=10'">
+        <figcaption>
+            <h3>Rayon Long-Sleeve Blouses</h3>
+          </figcaption>
+        <p>Just some random text</p>
+        </figure>
+      </div>
+      </div>
+
+      <div class="col-xs-12 col-md-4">
+      <div>
+      <figure class="product-figure soft">
+        <img src="img/Pin1mockup.png" alt="Sandwich" style="width:100%" onClick="location.href='./product_item.php?productId=11'">
+        <figcaption>
+            <h3>Rayon Long-Sleeve Blouses</h3>
+          </figcaption>
+        <p>Just some random text</p>
+        </figure>
+      </div>
+      </div>
+
+      <div class="col-xs-12 col-md-4">
+      <div>
+      <figure class="product-figure soft">
+        <img src="img/Pin1mockup.png" alt="Sandwich" style="width:100%" onClick="location.href='./product_item.php?productId=12'">
+        <figcaption>
+            <h3>Rayon Long-Sleeve Blouses</h3>
+          </figcaption>
+        <p>Just some random text</p>
+        </figure>
+      </div>
+      </div>
+
+      <div class="col-xs-12 col-md-4">
+      <div>
+      <figure class="product-figure soft">
+        <img src="img/Pin1mockup.png" alt="Sandwich" style="width:100%" onClick="location.href='./product_item.php?productId=13'">
+        <figcaption>
+            <h3>Rayon Long-Sleeve Blouses</h3>
+          </figcaption>
+        <p>Just some random text</p>
+        </figure>
+      </div>
+      </div>
+
+      <div class="col-xs-12 col-md-4">
+      <div>
+      <figure class="product-figure soft">
+        <img src="img/Pin1mockup.png" alt="Sandwich" style="width:100%" onClick="location.href='./product_item.php?productId=14'">
+        <figcaption>
+            <h3>Rayon Long-Sleeve Blouses</h3>
+          </figcaption>
+        <p>Just some random text</p>
+        </figure>
+      </div>
+      </div>
+
+      <div class="col-xs-12 col-md-4">
+      <div>
+      <figure class="product-figure soft">
+        <img src="img/Pin1mockup.png" alt="Sandwich" style="width:100%" onClick="location.href='./product_item.php?productId=15'">
+        <figcaption>
+            <h3>Rayon Long-Sleeve Blouses</h3>
+          </figcaption>
+        <p>Just some random text</p>
+        </figure>
+      </div>
+      </div>
+
+      
+    </div>
+    </main>
+
+ <?php include "parts/footer.php" ?>
 </body>
 </html>

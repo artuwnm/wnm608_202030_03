@@ -104,6 +104,11 @@ main {
   transform:scale(1.4,1.4);
 }
 
+.product-description{
+  font-weight: normal;
+  text-decoration: none;
+}
+
 @media (max-width:600px) {
   .navbar .display-flex {
     display:block;

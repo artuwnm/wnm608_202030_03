@@ -11,6 +11,12 @@
 </head>
 <body>
   <?php include "parts/navbar.php" ?>
+  <div class="container">
+  	<h2>Product Cart</h2>
+  	<div>
+  		<a class="form-button" href="checkout.php">Checkout</a>
+  	</div>
+  </div>
 
 <?php
 echo "my bag page";

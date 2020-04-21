@@ -302,7 +302,7 @@ code {
 }
 
 .form-button {
-  display:block;
+  /*display:block;*/
   /*width:100%;*/
   border-width:0;
   color:black;
@@ -314,7 +314,7 @@ code {
   background-color:black;
   /*border-radius:1em;*/
   text-decoration:none;
-  text-color:white;
+  color: white;
   cursor:pointer;
 }
 .form-button:hover {
