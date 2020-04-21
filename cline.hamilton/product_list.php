@@ -13,7 +13,7 @@ $rows = getRows(
 	"
 );
 
-print_p($rows);
+// print_p($rows);
 
 ?><!DOCTYPE html>
 <html lang="en">

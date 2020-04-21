@@ -14,6 +14,18 @@
     --color-main-medium:blue;
     --color-main-dark:blue;
 
+    --color-confirm-light:green;
+    --color-confirm-medium:green;
+    --color-confirm-dark:green;
+
+    --color-warning-light:orange;
+    --color-warning-medium:orange;
+    --color-warning-dark:orange;
+
+    --color-alert-light:red;
+    --color-alert-medium:red;
+    --color-alert-dark:red;
+
     --color-black:black;
     --color-white:white;
 
@@ -198,6 +210,13 @@ code {
 		padding:0;
 	}
 
+	.card-section {
+		padding:1em;
+	}
+	.card-section+.card-section {
+		border-top:1px solid var(--color-neutral-light);
+	}
+
 
 
 /* view window */
@@ -349,6 +368,10 @@ code {
 .form-button:hover {
 	text-decoration:none;
 }
+
+	.form-button.confirm {
+		background-color:var(--color-confirm-light);
+	}
 
 
 .hotdog {
