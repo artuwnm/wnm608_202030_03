@@ -50,6 +50,26 @@ $rows = getRows(
 
 			</nav>
 		</div>
+
+		<div class="container">
+		<h2>Product List</h2>
+
+		<div class="grid gap">
+
+		<?php
+
+
+
+		echo array_reduce(
+			$rows,
+			'productListTemplate'
+		);
+
+		?>
+
+
+		</div>
+	</div>
 	</header>
 </body>
 </html>

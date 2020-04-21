@@ -16,7 +16,7 @@
 		<div class="card">
 			<h2>About Us</h2>
 			<div>
-				<p>This store is pretty cool too.</p>
+				<p>There is a platform that can deliveris you such quaility workout plan. If you want results, you need to take action. N°F is the only website that turns your bio-data into a custom workout plan - built for you.</p>
 			</div>
 		</div>
 	</div>
