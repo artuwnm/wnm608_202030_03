@@ -399,9 +399,40 @@ img {
 	border: 1px solid #000;
 }
 .button-small.wishlist:hover {
-	background-color: #5AFF5A;
+	background-color: #fff;
 	color: red;
 	border: 1px solid red;
+}
+
+.button-tiny {
+	background-color: #fff;
+	border: 1px solid #000;
+	color: #000;
+	/*padding: 16px 16px;*/
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	/*margin: 4px 2px;*/
+	transition-duration: 0.4s;
+	cursor: pointer;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1rem;
+	font-weight: normal;
+	width: 80x;
+	height: 35px
+}
+
+.button-tiny:hover {
+	background-color: #000;
+	color: white;
+	border: 1px solid #000;
+}
+
+.button-tiny.secondary {
+	background-color: white; 
+	color: #000; 
+	border: 1px solid #000;
+
 }
 
 
@@ -599,4 +630,11 @@ img {
 .table.lined.outline {
 	border: 1px solid var(--color-neutral-light);
 }
+
+
+
+
+
+
+
 

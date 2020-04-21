@@ -21,11 +21,12 @@ body {
 /* FIGURE */
 .product-figure {
 	margin: 0;
+	height: 100%;
 }
 .product-figure img {
 	width: 100%;
 	object-fit: cover;
-	max-height: 30vh;
+	height: 30vh;
 	vertical-align: text-bottom;
 }
 .product-figure figcaption {
@@ -62,6 +63,38 @@ body {
 	.product-figure.overlay:hover img {
 		transform: scale(1.3,1.3);
 	}
+
+	.product-description {
+		font-weight: normal;
+	}
+
+.thumb-figure {
+	margin: 0;
+	height: 100%;
+}
+.thumb-figure img {
+	width: 100%;
+	object-fit: cover;
+	height: 15vh;
+	vertical-align: text-bottom;
+}
+
+
+.product-main img{
+	width: 100%;
+	height: 60vh;
+	object-fit: cover;
+}
+
+.product-thumbs img {
+	height: 75px;
+	width: 100px;
+	object-fit: cover;
+}
+
+.checked {
+	color: #5AFF5A;
+}
 
 
 

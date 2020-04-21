@@ -14,7 +14,7 @@ function print_p($v) {
 include_once "auth.php";
 function makeConn() {
 
-	@$conn = new mysqli(...makeAuth()); ; //@ use for testing if you are not sure the code works or not
+	@$conn = new mysqli(...makeAuth()); ; //@ use for if you're not sure if the code you're writing is going to work. If the code isn't work, it won't give us a warning. It'll just fail without printing warning to the page.
 
 	if($conn->connect_errno) die($conn->connect_error);
 

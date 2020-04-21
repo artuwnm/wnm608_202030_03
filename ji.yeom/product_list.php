@@ -14,14 +14,8 @@ include_once "parts/templates.php";
 	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
-		<div class="card soft">
-			<h2>Product List</h2>
-			<div>
-				<ul>
-					<li><a href="product_item.php?id=1">Product 1</a></li>
-					<li><a href="product_item.php?id=2">Product 2</a></li>
-					<li><a href="product_item.php?id=3">Product 3</a></li>
-			</div>
+		<div class="card">
+			<div class="grid gap">
 
 			<?php
 
@@ -31,16 +25,15 @@ include_once "parts/templates.php";
 				FROM `products`
 				ORDER BY `date_create` DESC
 				"
-			); // ` use for names of things
+			); // ` use for names of columns or tables // " for values
 
 			echo array_reduce(
 				$rows,
 				'productListTemplate'
 			);
 
-
 			?>
-		
+			</div>
 		</div>
 	</div>
 

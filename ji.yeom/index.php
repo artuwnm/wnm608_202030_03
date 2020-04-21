@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>PIN YOUR PINS</title>
@@ -21,7 +26,26 @@
 
 	<div class="container">
 		<h2>Best Seller</h2>
-		<div class="display-flex">
+			<div class="grid gap">
+			<?php
+
+			$rows = getRows(
+				makeConn(),
+				"SELECT *
+				FROM `products`
+				ORDER BY `date_create` DESC
+				LIMIT 6
+				"
+			); // ` use for names of columns or tables // " for values
+
+			echo array_reduce(
+				$rows,
+				'homeListTemplate'
+			);
+
+			?>
+
+<!-- 		<div class="display-flex">
 			<div class="flex-stretch">
 				<div class="card flat">
 					<img src="img/pin.png" alt="pin" style="width:100%">
@@ -79,8 +103,8 @@
 					<p>Price</p>
 					<p>Review</p>
 				</div>
-			</div>
-		</div>
+			</div>-->
+		</div> 
 	</div>
 
 	<div class="container">
