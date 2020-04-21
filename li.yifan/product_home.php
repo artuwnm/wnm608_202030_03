@@ -1,22 +1,3 @@
-<?php
-
-include_once "lib/php/functions.php";
-include_once "parts/templates.php";
-
-
-$rows = getRows(
-	makeConn(),
-	"SELECT *
-	FROM `products`
-	ORDER BY `date_create` DESC
-	LIMIT 12
-	"
-);
-
-// print_p($rows);
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,22 +12,6 @@ $rows = getRows(
 	<div class="container">
 		<div class="card soft">
 			<h2>Product List</h2>
-
-			<div class="grid gap">
-
-			<?php
-
-
-
-			echo array_reduce(
-				$rows,
-				'productListTemplate'
-			);
-
-			?>
-
-
-			</div>
 
 			<!-- ul>li*4>a[href="product_item.php"]>{Product $} -->
 			<ul>
