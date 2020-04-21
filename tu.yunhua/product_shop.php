@@ -13,7 +13,7 @@
 	<?php include "parts/shopnav.php" ?>
 
 
-	<?php include "parts/shop.php" ?>
+	<?php include "product_list.php" ?>
 	
 
 	<?php include "parts/footer.php" ?>

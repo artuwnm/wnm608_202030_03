@@ -1363,12 +1363,14 @@ ul {
 }
 
 .cart_extra_1 {
-    padding-bottom: 10px;
+    padding-bottom: 25px;
     background: #f8f8f8;
+    height: 500px;
 }
 .cart_extra_2 {
-    padding-bottom: 85px;
+    padding-bottom: 25px;
     background: #f8f8f8;
+    height: 500px;
 }
 
 

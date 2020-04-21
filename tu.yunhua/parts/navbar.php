@@ -12,7 +12,7 @@
 						<div class="col-md-3 col-xs-2 hidden-xs menu-1">
 							<ul class="display-flex1">
 								<li><a href="product_about.php">About</a></li>
-								<li><a href="product_shop.php">Shop</a></li>
+								<li><a href="product_list.php">Shop</a></li>
 								<li><a href="product_contact.php">Contact</a></li>
 							</ul>
 						</div>

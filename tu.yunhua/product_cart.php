@@ -1,22 +1,53 @@
-<!DOCTYPE html>
+<?php
+
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+
+$cartItems = getCartItems();
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Cart</title>
+	<title>Store: Product Cart</title>
 	
 	<?php include "parts/meta.php" ?>
 </head>
-
 <body>
 
 	<?php include "parts/navbar.php" ?>
 
-	<?php include "parts/cart.php" ?>
-
-	<?php include "parts/footer.php" ?>
-	
-<!-- GOTOTOP -->
-	<a class="gototop" href="http://badtrista.com/aau/wnm608/tu.yunhua/product_cart.php"><i class="fas fa-arrow-up"></i></a>
-
+	<div class="container">
+		<nav class="nav-crumbs" style="margin:1em 0">
+			<ul>
+				<li><a href="product_list.php">Back</a></li>
+			</ul>
+		</nav>
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-8">
+				<div class="card">
+				<?php
+				echo array_reduce($cartItems,'cartListTemplate');
+				?>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<div class="card flat">
+					<div>
+						<strong>Sub-Total</strong>
+						$5.00
+					</div>
+					<div>
+						<strong>Taxes</strong>
+						$5.00
+					</div>
+					<div>
+						<strong>Total</strong>
+						$5.00
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	
 </body>
 </html>
