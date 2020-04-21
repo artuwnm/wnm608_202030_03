@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php 
+include "../lib/php/functions.php";
+include "../parts/templates.php";
+ ?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Store: Product List</title>
@@ -54,5 +57,20 @@
 <div>
         <?php include "../parts/footer.php" ?>
         </div>
+        <?php
+
+			$rows = getRows(
+				makeConn(),
+				"SELECT * FROM `Products`
+					order by `date_create` ASC
+					"
+			);
+
+			echo array_reduce(
+				$rows,
+				'productListTemplate'
+			);
+
+			?>
 </body>
 </html>

@@ -3,7 +3,7 @@
 include "../lib/php/functions.php";
 
 
-$notes = getData("notes.json");
+$notes = getData("../notes.json");
 $users = getData("../data/users.json");
 
 
