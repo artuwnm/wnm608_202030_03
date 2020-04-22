@@ -2,8 +2,11 @@
   <script src="https://kit.fontawesome.com/041ded284b.js" crossorigin="anonymous"></script>
   <div class="container display-flex">
     <div class="flex-stretch" onclick="window.location.replace('./index.php');">
-      <h1>JAN STUDIO</h1>
-      <!-- <img src="img/logo.png" alt=""> -->
+      <!-- <h1>JAN STUDIO</h1> -->
+      <div class="logo">
+      <img src="img/JanStudio.png" alt="JANSTUDIO">
+      </div>
+
     </div>
     <nav class="nav flex-none">
       <!-- ul>li*3>a[href=#]>{Link $} -->

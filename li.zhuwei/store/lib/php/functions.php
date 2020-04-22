@@ -1,3 +1,5 @@
+
+
 <?php
 
 function getData($f) {
@@ -47,4 +49,36 @@ function test_input($data) {
   return $data;
 }
 
+
+function getResult($f) {
+  return json_decode(file_get_contents($f));
+}
+
+
+include_once "auth.php";
+function makeConn() {
+
+  @$conn = new mysqli(...makeAuth());
+
+  if($conn->connect_errno) die($conn->connect_error);
+
+  $conn->set_charset('utf8');
+
+  return $conn;
+}
+
+
+function getRows($conn,$sql) {
+  $a = [];
+
+  $result = $conn->query($sql);
+
+  if($conn->errno) die($conn->error);
+
+  while($row = $result->fetch_object()) {
+    $a[] = $row;
+  }
+
+  return $a;
+}
 ?>

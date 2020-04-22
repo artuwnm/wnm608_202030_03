@@ -1,3 +1,22 @@
+<?php
+
+// include, require, include_once, require_once
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+
+$data = getRows(
+  makeConn(),
+  "SELECT * FROM `products` WHERE `id` = '{$_GET['id']}'"
+  );
+// print_p($data);
+$randomProduct = $data[0];  
+$images = explode(",",$randomProduct->images);
+// print_p($data);
+// print_p($randomProduct);
+// print_p($images);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,21 +26,77 @@
     <link rel="stylesheet" href="lib/css/styleguide.css">
     <link rel="stylesheet" href="css/storetheme.css">
     <script src="https://kit.fontawesome.com/041ded284b.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
 </head>
 <body>
+    <?php include "parts/navbar.php" ?>
+  <div class="container">
+    <nav class="nav-crumbs" style="margin:1em 0">
+      <ul>
+        <li><a href="collection.php">Back</a></li>
+      </ul>
+    </nav>
 
-  <?php include "parts/navbar.php" ?>
+    <div class="grid gap">
+      <div class="col-xs-12 col-md-7">
+        <div class="card soft">
+          <div class="product-main">
+            <img src="<?= $randomProduct->thumbnail ?>" alt="">
+          </div>
+          <div class="product-thumbs">
+          <?=
+          array_reduce($images,function($r, $image){
+            return $r."<img src='$image'>";
+          })
+          ?>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-5">
+        <div class="card soft">
+          <h2><?= $randomProduct->name ?></h2>
+          <div class="product-description">
+            <div class="product-price">&dollar;<?= $randomProduct->price ?></div>
+          </div>
+          
+
+    <div class="card-section">
+            <label class="form-label">Amount</label>
+            <select name="amount" class="form-input">
+              <!-- option*10>{$} -->
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+              <option value="">7</option>
+              <option value="">8</option>
+              <option value="">9</option>
+              <option value="">10</option>
+            </select>
+    </div>
+
+
+
+          <div>
+            <a class="form-button" href="product_added_to_cart.php">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card soft dark">
+      <h3>Description</h3>
+      <div><?= $randomProduct->description ?></div>
+    </div>
+  </div>
 
   <div class="container">
     <div class="card soft">
       <h2>Product Item</h2>
       <div>
-        The item is <?= $_GET['productId'] ?>
+        The item is <?= $_GET['id'] ?>
       </div>
-
     </div>
-
   </div>
 
   <?php include "parts/footer.php" ?>

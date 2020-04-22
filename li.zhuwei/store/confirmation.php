@@ -26,6 +26,20 @@
     </div>
   </div>
 
+  <div class="container">
+    <div class="card soft">
+      <h2>Product Confirmation</h2>
+
+      <div>
+        Thank you for purchasing.
+      </div>
+
+      <div>
+        <a class="form-button" href="collection.php">Continue Shopping</a>
+      </div>
+    </div>
+  </div>
+
   <?php include "parts/footer.php" ?>
   
 </body>
