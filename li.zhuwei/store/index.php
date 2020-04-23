@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/041ded284b.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </head>
+ 
 <body>
   <!-- header.navbar>h1+nav.nav -->
   <?php include "parts/navbar.php" ?>
@@ -43,7 +44,7 @@
     </div>
 
     <div class="container">
-      <div class="grid gap">
+      <div class="card soft">
         <div class="col-4">
           <div class="card soft">
             <!--1 p*2>lorem20 -->

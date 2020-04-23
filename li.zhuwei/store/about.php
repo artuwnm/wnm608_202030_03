@@ -14,7 +14,6 @@
 
 
   <main>
-
 <div class="container">
   <h3>DESIGN TEAM</h3>
   <p><em>We love design!</em></p>
@@ -23,15 +22,19 @@
   <div class="row">
     <div class="col-md-1">
       <p><strong>Name</strong></p><br>
-      <img src="bandmember.jpg" alt="Random Name">
+      <img src="img/designer1.png" alt="Random Name">
+      <p>Just some random text</p>
     </div>
     <div class="col-md-1">
       <p><strong>Name</strong></p><br>
-      <img src="bandmember.jpg" alt="Random Name">
+      <img src="img/designer1.png" alt="Random Name">
+       <p>Just some random text</p>
+
     </div>
     <div class="col-md-1">
       <p><strong>Name</strong></p><br>
-      <img src="bandmember.jpg" alt="Random Name">
+      <img src="img/designer1.png" alt="Random Name">
+       <p>Just some random text</p>
     </div>
   </div>
 </div>

@@ -1,3 +1,24 @@
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  border-radius: 50%;
+}
+
+
 :root {
   --color-neutral-dark: #333;
   --color-neutral-medium: #999;
@@ -38,7 +59,7 @@ main {
     circle at top right,
     rgba(4, 5, 3, 0.33),
     rgba(249, 250, 252, 0.32)
-  ), url("../img/rose.jpg");
+  ), url("../img/home1.jpg");
 }
 
 .home-img2 {
@@ -133,4 +154,4 @@ footer {
     width: 100%;
     background-color: #fb8ca9;
     color: white;
-    text-align: center;
+    text-align: center;}

@@ -13,5 +13,5 @@
  	//CART FUCNTIONS
 
  	function addToCart($id,$amount,$price){
- 		$_SEESION['cart'][$id]=$amount *$price;
+ 		$_SEESION['cart'][$id]=$amount *$pric
  	}
