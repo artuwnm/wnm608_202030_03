@@ -10,3 +10,4 @@
 - http://arianaad.com/aau/wnm608/adili.ariana/admin/users.php
 - http://arianaad.com/aau/wnm608/adili.ariana/index.php/
 - http://arianaad.com/aau/wnm608/adili.ariana/product_cart.php
+- http://arianaad.com/aau/wnm608/adili.ariana/productlist.php
