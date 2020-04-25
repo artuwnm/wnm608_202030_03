@@ -15,7 +15,7 @@
 
 <body>
 
-<?php include "parts/navbar.php" ?>
+<?php include __DIR__."/parts/navbar.php" ?>
 
 	<!-- header.navbar>h1+nav.nav -->
 	<header class="navbar">
