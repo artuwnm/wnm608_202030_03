@@ -1,6 +1,7 @@
 <?php
 include_once "parts/templates.php";
 ?>
+<base href="http://arianaad.com/aau/wnm608/">
 <header class="navbar">
 	<div class="container display-flex">
 		<div class="flex-stretch">
@@ -9,7 +10,7 @@ include_once "parts/templates.php";
 		<nav class="nav-flex flex-none">
 			<ul>
 				<li><a href="index.php">Home</a></li>
-				<li><a href="product_list.php">Store</a></li>
+				<li><a href="productlist.php">Store</a></li>
 				<li><a href="about.php">About</a></li>
 				<li><a href="product_cart.php">
 					<span>Cart</span>
