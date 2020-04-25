@@ -20,16 +20,17 @@ body {
 	box-sizing: border-box;
 	margin: 0;
 	font-size: 100%;
-	font-family: 'Monserrat', sans-serif;
+	font-family: 'Montserrat';
 	line-height: 1.5;
+	background-color: white;
 }
 h1 {
-	font-family: 'Monserrat', sans-serif;
+	font-family: 'Montserrat';
 	font-size: 2rem;
 	font-weight: bold;
 }
 h2 {
-	font-family: 'Monserrat', sans-serif;
+	font-family: 'Montserrat';
 	font-size: 1.5rem;
 	font-weight: bold;
 	color: white;
@@ -38,48 +39,71 @@ h2 {
 	padding-left: 10px;
 }
 h3 {
-	font-family: 'Monserrat', sans-serif;
+	font-family: 'Montserrat';
 	font-size: 1.5rem;
 	font-weight: bold;
 }
 h4 {
-	font-family: 'Monserrat', sans-serif;
+	font-family: 'Montserrat';
 	font-size: 1.25rem;
 	font-weight: bold;
+	color: black;
 }
 h5 {
-	font-family: 'Monserrat', sans-serif;
+	font-family: 'Montserrat';
 	font-size: 1rem;
 	font-weight: bold;
 	color: black;
 	text-transform: uppercase;	
 }
 p {
-	font-family: 'Monserrat', sans-serif;
+	font-family: 'Montserrat';
 	font-size: 1rem;
 	font-weight: normal;
 	color: white;
 }
 .small-text {
-	font-family: 'Monserrat', sans-serif;
+	font-family: 'Montserrat';
 	font-size: 0.8rem;
     text-transform: lowercase;
 
 }
 
-footer {
+.footer {
 	text-align: center;
-	font-style: bold;
+	font-style: 'Montserrat';
 	background-color: black;
 	color: white;
 	font-size: 0.75rem;
     padding: 30px 20px;
 	height: 80px;
-   
+	position: relative;
+	left: 0;
+	bottom: 0;
 }
 
+
+.footer {
+	background-color: black; 
+    height: 200px;
+    width: 100%;
+    position: relative;
+    margin-left: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 500px;
+}
+}
+
+
+
 a {
-	color: inherit;
+	color: black;
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -172,15 +196,18 @@ img:hover {
 .navbar {
 	color: #fff;
 	background-color: #000;
-	line-height: var(--header-height);
-	height: 80px;
+	line-height: var(--header-height);k
+	height: 75px;
     padding: 0;
+    font-family: 'Montserrat';
 }
+
+
 .navbar h1 {
-	margin: 0;
+	margin: 5px;
 	padding: 1em, 2.5em;
 	color: #fff;
-	font-size: 1.5rem;
+	font-size: 4.5rem;
 }
 .navbar a {
 	padding: 0 1em;
@@ -212,6 +239,7 @@ img:hover {
 .nav a {
 	display: block;
 	padding: 1em 2.5em;
+	color: white;
 }
 	.nav-crumbs a:hover,
 	.nav-stretch a:hover,
@@ -740,6 +768,11 @@ body {
 	}
 
 
+/* NEW CONTAINERS*/
+
+.container2 {
+
+}
 
 
 

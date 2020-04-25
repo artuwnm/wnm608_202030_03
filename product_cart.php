@@ -35,7 +35,7 @@ $cartItems = getCartItems();
 					<div class="card-section">
 						<div class="display-flex">
 							<div class="flex-stretch">
-								<strong>Sub-Total</strong>
+								<strong>Sub total</strong>
 							</div>
 							<div class="flex-none">$3.50</div>
 						</div>
