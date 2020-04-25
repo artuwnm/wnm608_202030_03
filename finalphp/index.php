@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Begari | Men's clothing</title>
 
-	<?php include "parts/meta.php" ?>
+	<?php include "../parts/meta.php" ?>
 
 	<link rel="stylesheet" href="lib/css/styleguide.css">
 	<link rel="stylesheet" href="lib/css/gridsystem.css">
