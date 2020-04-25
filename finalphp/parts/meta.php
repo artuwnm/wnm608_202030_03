@@ -1,7 +1,9 @@
 
 <meta charset="UTF-8">
 
-<base href="https://hdraws.com/aau/wnm608_03/cline.hamilton/">
+
+
+<base href="http://arianaad.com/aau/wnm608/">
 
 <meta name="viewport" content="width=device-width">
 
