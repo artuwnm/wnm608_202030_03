@@ -3,6 +3,8 @@
 include_once "lib/php/functions.php";
 include_once "parts/templates.php";
 
+$cartItems = getCartItems();
+
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,11 +26,7 @@ include_once "parts/templates.php";
 			<div class="col-xs-12 col-md-8">
 				<div class="card">
 				<?php
-				$data = getRows(
-					makeConn(),
-					"SELECT * FROM `products` WHERE `id` in (3,5,9)"
-				);
-				echo array_reduce($data,'cartListTemplate');
+				echo array_reduce($cartItems,'cartListTemplate');
 				?>
 				</div>
 			</div>
@@ -52,5 +50,4 @@ include_once "parts/templates.php";
 	</div>
 	
 </body>
-</html>
 </html>

@@ -1,5 +1,6 @@
 <?php
 
+// include, require, include_once, require_once
 include_once "lib/php/functions.php";
 include_once "parts/templates.php";
 
@@ -33,27 +34,48 @@ $images = explode(",",$o->images);
 			<div class="col-xs-12 col-md-7">
 				<div class="card soft">
 					<div class="product-main">
-						<img src="/img/store/<?= $o->thumbnail ?>" alt="">
+						<img src="/images/store/<?= $o->thumbnail ?>" alt="">
 					</div>
 					<div class="product-thumbs">
 					<?=
 					array_reduce($images,function($r,$o){
-						return $r."<img src='/img/store/$o'>";
+						return $r."<img src='/images/store/$o'>";
 					})
 					?>
 					</div>
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-5">
-				<div class="card">
-					<h2><?= $o->name ?></h2>
-					<div class="product-description">
-						<div class="product-price">&dollar;<?= $o->price ?></div>
+				<form class="card soft flat" method="get" action="data/form_actions.php">
+					<div class="card-section">
+						<h2><?= $o->name ?></h2>
+						<div class="product-description">
+							<div class="product-price">&dollar;<?= $o->price ?></div>
+						</div>
 					</div>
-					<div>
-						<a class="form-button" href="product_added_to_cart.php">Add To Cart</a>
+					<div class="card-section">
+						<label class="form-label">Amount</label>
+						<select name="amount" class="form-input">
+							<!-- option*10>{$} -->
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+							<option>8</option>
+							<option>9</option>
+							<option>10</option>
+						</select>
 					</div>
-				</div>
+					<div class="card-section">
+						<input type="hidden" name="action" value="add-to-cart">
+						<input type="hidden" name="id" value="<?= $o->id ?>">
+						<input type="hidden" name="price" value="<?= $o->price ?>">
+						<input type="submit" class="form-button" value="Add To Cart">
+					</div>
+				</form>
 			</div>
 		</div>
 		<div class="card soft dark">
@@ -62,5 +84,7 @@ $images = explode(",",$o->images);
 		</div>
 	</div>
 	
+</body>
+</html>
 </body>
 </html>

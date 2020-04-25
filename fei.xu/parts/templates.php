@@ -9,7 +9,7 @@ return $r.<<<HTML
 			<div class="product-image"><img src="/images/store/$o->thumbnail" alt=""></div>
 			<figcaption class="product-description">
 				<div class="product-price">&dollar;$o->price</div>
-				<div class="product-name">$o->name</div>
+				<div class="product-title">$o->name</div>
 			</figcaption>
 		</figure>
 	</a>
@@ -27,13 +27,13 @@ return $r.<<<HTML
 	<div class="flex-stretch">
 		<div class="display-flex">
 			<div class="flex-stretch">
-				<strong>$o->name</strong>
+				<strong>$o->name ($o->amount)</strong>
+				<div>
+					Delete
+				</div>
 			</div>
-			<div class="flex-none">&dollar;$o->price</div>
+			<div class="flex-none">&dollar;$o->total</div>
 		</div>
-	</div>
-	<div class="flex-none">
-		Delete
 	</div>
 </div>
 HTML;

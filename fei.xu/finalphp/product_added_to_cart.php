@@ -1,3 +1,22 @@
+<?php
+
+include_once "../lib/php/functions1.php";
+
+
+// print_p($_SESSION);
+$id = $_GET['id'];
+
+$p = array_find(
+	getCart(),
+	function($o) use ($id) { return $o->id==$_GET['id']; }
+);
+$o = getRows(makeConn(),
+	"SELECT * FROM `products` WHERE `id` = {$_GET['id']}"
+)[0];
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,16 +29,24 @@
 	<?php include "finalparts/navbar.php" ?>
 
 	<div class="container">
-		<!-- <div class="card soft"> -->
-	
+		<div class="card soft">
+			
 
-			<div class="contiueshopping">
-				Thank you for adding to the cart!
+			<div>
+				<h3>Thank you for adding <?= $p->amount ?> of the <?= $o->name ?> water to the cart.</h3>
 			</div>
-			<br>
-			<div class="formbuttonstyle">
-				<a class="form-button1" href="product_list.php">Continue Shopping</a>
-			</div>
+
+			<nav class="nav-flex">
+				<ul>
+					<li class="flex-none">
+						<a href="product_item.php?id=<?= $o->id ?>">Back to the <?= $o->name ?> water</a>
+					</li>
+					<li class="flex-stretch"></li>
+					<li class="flex-none">
+						<a href="product_list.php">Continue Shopping</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
 	</div>
 	

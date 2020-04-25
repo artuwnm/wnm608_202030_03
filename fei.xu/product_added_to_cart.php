@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+<?php
+
+include_once "lib/php/functions.php";
+
+print_p($_SESSION);
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Store: Product Added to Cart</title>
