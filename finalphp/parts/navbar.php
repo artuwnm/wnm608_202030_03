@@ -1,5 +1,5 @@
 <?php
-include_once "parts/templates.php";
+include_once __DIR__."/parts/templates.php";
 ?>
 <base href="http://arianaad.com/aau/wnm608/">
 <header class="navbar">

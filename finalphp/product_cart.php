@@ -1,7 +1,7 @@
 <?php
 
 include_once "lib/php/functions.php";
-include_once "parts/templates.php";
+include_once __DIR__. "/parts/templates.php";
 
 $cartItems = getCartItems();
 
