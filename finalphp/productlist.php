@@ -12,7 +12,7 @@ include "parts/templates.php";
 </head>
 <body>
 
-	<?php include "parts/navbar.php" ?>
+	<?php include __DIR__. "/parts/navbar.php" ?>
 
 	<div class="container">
 		<div class="card soft">

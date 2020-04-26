@@ -16,11 +16,11 @@ $o = getRows(makeConn(),
 <head>
 	<title>Begari | Product Added to Cart</title>
 	
-	<?php include "parts/meta.php" ?>
+	<?php include __DIR__."/parts/meta.php" ?>
 </head>
 <body>
 
-	<?php include "parts/navbar.php" ?>
+	<?php include __DIR__."/parts/navbar.php" ?>
 
 	<div class="container">
 		<div class="card soft">
