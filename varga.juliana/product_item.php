@@ -47,7 +47,7 @@ $images = explode(",",$o->images);
 			</div>
 			<div class="col-xs-12 col-md-5">
 				<div class="card soft">
-					<h2><?= $o->title ?></h2>
+					<h2><?= $o->name ?></h2>
 					<div class="product-description">
 						<div class="product-price">&dollar;<?= $o->price ?></div>
 					</div>

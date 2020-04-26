@@ -1,38 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>JV JEWELRY</title>
+	<title>Landing Page</title>
+	
+	<?php include "parts/meta.php" ?>
 
-	<link rel="stylesheet" href="lib/css/styleguide.css">
-	<link rel="stylesheet" href="lib/css/gridsystem.css">
-	<link rel="stylesheet" href="css/storetheme.css">
-
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
-
-	<!-- header.navbar>h1+nav.nav -->
-	<header class="navbar">
-	<div class="container display-flex">
-		
-		<div class="flex-stretch">
-			<div class="logo">
-			<img src="img/logo.png">
-			</div>
-		</div>
-		
-		<nav class="nav-flex flex-none">
-			<ul>
-				<!-- li*3>a[href=#]>{Link $} -->
-				<li><a href="index.php">Home</a></li>
-				<li><a href="product_list.php">Store</a></li>
-				<li><a href="about.php">About</a></li>
-			</ul>
-		</nav>
 	
-
-	</div>
+	<?php include "parts/navbar.php" ?>
 </header>
   <br>
 
