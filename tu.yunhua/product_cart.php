@@ -1,11 +1,4 @@
-<?php
-
-include_once "lib/php/functions.php";
-include_once "parts/templates.php";
-
-$cartItems = getCartItems();
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Store: Product Cart</title>
@@ -19,12 +12,12 @@ $cartItems = getCartItems();
 	<div class="container">
 		<nav class="nav-crumbs" style="margin:1em 0">
 			<ul>
-				<li><a href="product_list.php">Back</a></li>
+				<a href="product_list.php" class="btn btn-primary btn-outline">Back</a>
 			</ul>
 		</nav>
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-8">
-				<div class="card">
+				<div class="card flat">
 				<?php
 				echo array_reduce($cartItems,'cartListTemplate');
 				?>
@@ -32,22 +25,20 @@ $cartItems = getCartItems();
 			</div>
 			<div class="col-xs-12 col-md-4">
 				<div class="card flat">
-					<div>
-						<strong>Sub-Total</strong>
-						$5.00
-					</div>
-					<div>
-						<strong>Taxes</strong>
-						$5.00
-					</div>
-					<div>
-						<strong>Total</strong>
-						$5.00
+					<?= cartTotals() ?>
+					<div class="card-section checkout">
+						<a href="product_checkout.php" class="btn btn-primary btn-outline2">Checkout</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+
+	<?php include "parts/footer.php" ?>
+
+<!-- GOTOTOP -->
+	<a class="gototop" href="product_cart.php"><i class="fas fa-arrow-up"></i></a>
 	
 </body>
 </html>

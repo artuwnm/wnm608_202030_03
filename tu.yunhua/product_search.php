@@ -17,7 +17,7 @@
 	<?php include "parts/footer.php" ?>
 
 <!-- GOTOTOP -->
-	<a class="gototop" href="http://badtrista.com/aau/wnm608/tu.yunhua/product_searchs.php"><i class="fas fa-arrow-up"></i></a>
+	<a class="gototop" href="product_search.php"><i class="fas fa-arrow-up"></i></a>
 
 	
 </body>

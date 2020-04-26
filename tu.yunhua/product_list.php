@@ -42,11 +42,12 @@ include "parts/templates.php";
 	</div>
 
 
-	
+	<?php include "parts/footer.php" ?>
+
+	<!-- GOTOTOP -->
+	<a class="gototop" href="product_list.php"><i class="fas fa-arrow-up"></i></a>
+
+
 </body>
 </html>	
 
-<?php include "parts/footer.php" ?>
-
-	<!-- GOTOTOP -->
-<a class="gototop" href="http://badtrista.com/aau/wnm608/tu.yunhua/product_list.php"><i class="fas fa-arrow-up"></i></a>

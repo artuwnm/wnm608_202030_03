@@ -13,7 +13,8 @@ return $r.<<<HTML
 					<h3><a href="">
 						<div class="product-name">$o->name</div>
 					</a></h3>
-						<div class="product-price">&dollar;$o->price</div>
+						<span><div class="product-price">&dollar;5.00</div></span>
+						<!-- 5.00 改成 <?= $o->price ?> -->
 				</div>
 			</div>
 			</figcaption>
@@ -32,22 +33,33 @@ $pricefixed = number_format($o->total, 2, '.', '');
 $selectamount = selectAmount($o->amount,10);
 return $r.<<<HTML
 <div class="display-flex card-section">
-	<div class="flex-none product-thumbs">
-		<img src="/images/store/$o->thumbnail">
+	<div class="flex-none product-thumbs" style="margin-right:1em">
+		<img src="images/store/$o->thumbnail">
 	</div>
-	<div class="flex-stretch">
+	<div class="flex-stretch cart">
 		<div class="display-flex">
 			<div class="flex-stretch">
-				<strong>$o->title ($o->amount)</strong>
+				<strong>$o->name</strong>
 			</div>
-			<div class="flex-none">&dollar;$pricefixed</div>
+			<div class="flex-none2">&dollar;$pricefixed</div>
 		</div>
-		<div>
-			<form method="get" action="data/form_actions.php" onchange="this.submit()">
-				<input type="hidden" name="action" value="update-cart-amount">
-				<input type="hidden" name="id" value="$o->id">
-				<span>$selectamount</span>
-			</form>
+		<div class="display-flex">
+			<div class="flex-stretch" style="font-size:0.8em">
+				<form method="get" action="./data/form_actions.php">
+					<input type="hidden" name="action" value="delete-cart-item">
+					<input type="hidden" name="id" value="$o->id">
+					<div class="display-flex"><div class="flex-none">
+						<input type="submit" class="form-button delete" value="delete">
+					</div></div>
+				</form>
+			</div>
+			<div class="form-input2">
+				<form method="get" action="./data/form_actions.php" onchange="this.submit()">
+					<input type="hidden" name="action" value="update-cart-amount">
+					<input type="hidden" name="id" value="$o->id">
+					<div class="display-flex"><div class="flex-none">$selectamount</div></div>
+				</form>
+			</div>
 		</div>
 	</div>
 </div>
@@ -55,11 +67,8 @@ HTML;
 }
 
 
-
-
-
 function selectAmount($amount=1,$total=10) {
-	$output = "<select class='form-input'>";
+	$output = "<select class='form-input' name='amount'>";
 	for($i=1;$i<=$total;$i++){
 		$output .= "<option ".($i==$amount?"selected":"").">$i</option>";
 	}
@@ -85,25 +94,46 @@ $taxedfixed = number_format($cartprice*1.0725, 2, '.', '');
 return <<<HTML
 <div class="card-section">
 	<div class="display-flex">
-		<div class="flex-stretch">
-			<strong>Sub-Total</strong>
+		<div class="flex-stretch cart">
+			<strong>Subtotal</strong>
 		</div>
 		<div class="flex-none">&dollar;$pricefixed</div>
 	</div>
 	<div class="display-flex">
-		<div class="flex-stretch">
-			<strong>Taxes</strong>
+		<div class="flex-stretch cart">
+			<strong>Tax</strong>
 		</div>
-		<div class="flex-none">&dollar;$taxfixed</div>
+		<div class="flex-none">&dollar;0.00</div>
+	</div>
+	<div class="display-flex">
+		<div class="flex-stretch cart">
+			<strong>Shipping</strong>
+		</div>
+		<div class="flex-none">&dollar;0.00</div>
 	</div>
 </div>
+
 <div class="card-section">
-	<div class="display-flex">
-		<div class="flex-stretch">
-			<strong>Total</strong>
+	<div class="display-flex total">
+		<div class="flex-stretch cart">
+			<span><strong>Total</strong></span>
 		</div>
-		<div class="flex-none">&dollar;$taxedfixed</div>
+		<span><strong>
+			<div class="flex-none">&dollar;$taxedfixed</div>
+		</strong></span>
 	</div>
 </div>
 HTML;
+}
+
+
+
+
+
+function makeCartBadge() {
+	if(!isset($_SESSION['cart']) || !count($_SESSION['cart'])) {
+		return "";
+	} else return "(".array_reduce($_SESSION['cart'],function($r,$o){
+		return $r + $o->amount;
+	},0).")";
 }

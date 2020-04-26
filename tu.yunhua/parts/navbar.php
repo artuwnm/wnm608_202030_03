@@ -1,4 +1,7 @@
-<header class="navbar">
+<?php
+include_once "parts/templates.php";
+?><header class="navbar">
+	
 		<div class="container display-flex">
 			<!-- <div class="flex-stretch">
 				<h1>Store Page</h1>
@@ -31,7 +34,10 @@
 							<ul class="display-flex2">
 								<li><a href="product_publish.php">Publish</a></li>
 								<li><a href="product_login.php">Login</a></li>
-								<li><a href="product_cart.php">Cart</a></li>
+								<li><a href="product_cart.php">
+									Cart
+									<span class="badge"><?= makeCartBadge(); ?></span>
+								</a></li>
 							</ul>
 						</div>
 					</div>

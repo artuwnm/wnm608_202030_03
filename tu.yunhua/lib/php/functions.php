@@ -50,15 +50,22 @@ function getRows($conn,$sql) {
 
 
 // CART FUNCTIONS
-
 // Array find loops an array looking for the first object that matches a boolean function
+
+
 function array_find($array,$fn) {
 	foreach($array as $o) if($fn($o)) return $o;
 	return false;
 }
 
+
+function getCart() {
+	return isset($_SESSION['cart']) ? $_SESSION['cart'] : [];
+}
+
+
 function addToCart($id,$amount,$price) {
-	$cart = isset($_SESSION['cart']) ? $_SESSION['cart'] : [];
+	$cart = getCart();
 	
 	$p = array_find(
 		$cart,
@@ -76,20 +83,21 @@ function addToCart($id,$amount,$price) {
 	}
 }
 
+
 function getCartItems() {
-	$cart = isset($_SESSION['cart']) ? $_SESSION['cart'] : [];
+	$cart = getCart();
 
 	if(empty($cart)) return [];
 
 	$ids = implode(",",array_map(function($o){return $o->id;},$cart));
 	$data = getRows(makeConn(),
-		"SELECT * FROM `products` WHERE `id` in ($ids)"
+		"SELECT * FROM `Test` WHERE `id` in ($ids)"
 	);
 
 	return array_map(function($o) use ($cart) {
 		$p = array_find($cart,function($co) use ($o){ return $co->id==$o->id; });
-		$o->amount = $p->amount;
-		$o->total = $p->amount + $o->price;
+			$o->amount = $p->amount;
+			$o->total = $p->amount * $o->price;
 		return $o;
 	},$data);
-} 
+}

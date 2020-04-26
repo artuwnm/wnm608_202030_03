@@ -29,28 +29,73 @@ body {
 
 /* templates */
 
+.product-thumbs img{
+     height:100px;
+     width:160px;
+     object-fit:cover; 
+}
 
 .product-main img{
- width:100%;
- height:80vh;
- object-fit:cover;
+    width:100%;
+    height:50vh;
+    object-fit:cover;
+    padding-bottom:20px;
 }
 
-.product-thumbs img{
- height:70px;
- width:100px;
- object-fit:cover;
-}
 
-    .product-description {
-        font-weight:normal;
-        text-decoration:none;
-    }
+.product-description {
+    font-weight:normal;
+    text-decoration:none;
+    padding-top: 10px;
+}
 
 .product-price1 {
     text-align: left;
-    padding-left: 1em;
+    padding-left: 4px;
 }
+
+.form-label {
+    display: block;
+    width: 50%;
+    font-size: 0.9em;
+    color: var(--color-neutral-medium);
+}
+
+.form-input {
+    display: block;
+    width: 20%;
+    border-width: 0;
+    border-bottom: 1px solid var(--color-neutral-light);
+    color: inherit;
+    font: inherit;
+    padding: 0.1em 1em;
+    /*-webkit-appearance: none;*/
+    /* 上下调节 箭头符号 */
+    outline: 0; 
+    font-size: 1em;
+}
+
+
+.form-input2 {
+    display: block;
+    width: 10%;
+    border-width: 0;
+    color: inherit;
+    font: inherit;
+    padding: 0.1em 1em;
+    -webkit-appearance: none;
+    outline: 0;
+    font-size: 1em;
+}
+
+
+.flex-none2 {
+    flex: none;
+}
+
+
+
+
 
 
 
@@ -71,11 +116,27 @@ body {
     object-fit:cover;
     height:30vh;
     vertical-align: text-bottom;
-
 }
+
+
+.product-new img {
+    object-fit:cover;
+    height:30vh;
+    vertical-align: text-bottom;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+    .product-new.soft {
+        border-radius:1em;
+        overflow:hidden;
+        box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    }
+
+
+
 .product-figure figcaption {
     padding:1em;
-
 }
 
     .product-figure.soft {
@@ -151,6 +212,7 @@ button, input, optgroup, select, textarea {
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
+    text-transform: uppercase;
 }
 
 
@@ -160,8 +222,9 @@ button, input, optgroup, select, textarea {
 /* navbar */
 
 
-.display-flex {
+.display-flex.total {
     display: flex;
+    padding-top: 40px;
 }
 
 

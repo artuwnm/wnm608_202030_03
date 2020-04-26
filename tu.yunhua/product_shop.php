@@ -20,7 +20,7 @@
 
 
 <!-- GOTOTOP -->
-	<a class="gototop" href="http://badtrista.com/aau/wnm608/tu.yunhua/product_shop.php"><i class="fas fa-arrow-up"></i></a>
+	<a class="gototop" href="product_shop.php"><i class="fas fa-arrow-up"></i></a>
 
 
 </body>
