@@ -2,8 +2,9 @@
 
 include "../lib/php/functions.php";
 
-$users = getData("../data/users.json");
+$filename = "../data/users.json";
 $users = getData($filename);
+
 
 // print_p($users);
 
@@ -95,7 +96,7 @@ HTML;
 
 
 echo <<<HTML
-<nav class="nav-pills">
+<nav class="nav-flex">
 	<div class="card soft">
 	<ul>
 		<li class="flex-none"><a href="{$_SERVER['PHP_SELF']}">Back</a></li>
@@ -128,8 +129,9 @@ echo <<<HTML
 				<label class="form-lable" for="user-classes">Classes</label>
 				<input class="form-input" id="user-classes" name="user-classes" value="$classes">
 			</div>
-			<div class="form-control">
-				<input type="submit" class="form-button" value="Submit">
+			<div class="btnstyle Submit">
+			<button class="btn first" value="Submit">Submit</button>
+				
 			</div>
 			</div>
 		</div>
@@ -160,7 +162,7 @@ HTML;
 			<div class="flex-stretch">
 				<h2>Admin</h2>
 			</div>
-			<nav class="nav-flex flex-none">
+			<nav class="nav flex-none">
 				<ul>
 					<li><a href="users.php">User List</a></li>
 					li><a href="users.php?id=new">Add New User</a></li>
@@ -190,7 +192,7 @@ HTML;
             
 
 
-			<nav class="nav">
+			<nav class="nav-user">
 			<ul>
 			<?php
 

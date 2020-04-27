@@ -47,22 +47,22 @@
 		<div class="grid">
 			<!-- .col-xs-6*2>.card.soft>lorem30 -->
 			<div class="col-xs-12 col-xl-6">
-				<a class="hotproduct"><img src="img/mobile.jpg" alt="mobile"></a>
+				<a class="hotproduct"><img src="img/ProductBig1.jpg" alt="ProductBig1"></a>
 			</div>
 
 			<div class="col-xs-12 col-xl-6">
-				<a class="hotproduct"><img src="img/mobile.jpg" alt="mobile"></a></div>
+				<a class="hotproduct"><img src="img/ProductBig2.jpg" alt="ProductBig2"></a></div>
 		</div>
 			
 
 	    <div class="grid">
 			<!-- .col-xs-6*2>.card.soft>lorem30 -->
 			<div class="col-xs-12 col-xl-6">
-				<a class="hotproduct"><img src="img/mobile.jpg" alt="mobile"></a>
+				<a class="hotproduct"><img src="img/ProductBig3.jpg" alt="ProductBig3"></a>
 			</div>
 
 			<div class="col-xs-12 col-xl-6">
-				<a class="hotproduct"><img src="img/mobile.jpg" alt="mobile"></a></div>
+				<a class="hotproduct"><img src="img/ProductBig4.jpg" alt="ProductBig4"></a></div>
 		</div>
 
 

@@ -12,7 +12,7 @@
 			    <nav class="nav flex-none">
 
 				    <ul class="display-flex">
-					    <li><a href="product.php">PRODUCT</a></li>
+					    <li><a href="product_list.php">PRODUCT</a></li>
 				        <li><a href="about.php">ABOUT</a></li>
 					    <li><a href="contact.php">CONTACT</a></li>
 				    </ul>
