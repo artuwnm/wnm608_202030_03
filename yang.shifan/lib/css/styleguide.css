@@ -126,6 +126,7 @@ code {
     font-family: "Amatic SC";
     font-size: 48px;
     font-weight: bold;
+    margin-top: 20px;
 }
 
 .menu-text {
@@ -150,8 +151,6 @@ code {
 	padding-left: 0;
 	overflow: hidden;
 	padding-bottom: 16px;
-	border-bottom: 1.25px solid;
-	border-color: #434343;
 }
 
 .nav a {
@@ -192,7 +191,6 @@ code {
 /* card */
 
 .card {
-    background-color: white;
     overflow: hidden;
     position: relative;
     padding: 1em;
@@ -203,6 +201,7 @@ code {
 	.card>:last-child { margin-bottom:0; }
 
 	.card.soft {
+		background-color: white;
 	    box-shadow: 6px 5px 15px 10px rgba(0, 0, 0, 0.1);
 		border-radius:0.3em;
 	}
@@ -215,6 +214,15 @@ code {
 	}
 	.card.flat {
 		padding:0;
+	}
+
+	.card-section {
+		padding: 1em;
+	}
+
+	.card-section+.card-section {
+		border-top:1px solid;
+		border-color:#9C5377;
 	}
 
 
@@ -247,6 +255,23 @@ code {
     padding-right: 16px;
     margin-top: 8px;
     margin-bottom: 8px;
+}
+
+.button.right {
+	float: right;
+}
+
+.button.delete {
+	font-size: 10px;
+	padding: 4px 4px 4px 4px;
+	background-color: #9C5377;
+}
+
+.button.back {
+	font-size: 10px;
+	padding: 4px 4px 4px 4px;
+	margin-left:2em;
+	background-color: #9C5377;
 }
 
 /* FORM */
@@ -360,4 +385,21 @@ input[type=password], select {
 }
 .product-description a:hover {
 	text-decoration: none;
+}
+
+.product-description+.product-price {
+	margin-top:1em;
+}
+
+.product-main img {
+	height:450px;
+	width:450px;
+	object-fit:cover;
+}
+
+.product-thumbs img {
+	height:95px;
+	width:127px;
+	object-fit:cover;
+	margin-right:1em;
 }
