@@ -1,23 +1,44 @@
 
+<?php
+include_once "parts/templates.php";
+?>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
 <header class="navbar-top">
-	</header>
-	<header class="navbar">
+</header>
+
+<header class="navbar">
 		<div class="container display-flex">
-			<div class="flex-stretch">
-				<p><a href="home.php"><img class="logo" src="https://wbarrios.com/aau/wnm608/barrios.wilson/img/coolkeychains-logo.png" alt="CoolKeychains"></a></p>
-				</div>
-			<nav class="nav-flex flex-none">
-			<ul class= "nav-pills">
-				<li><a href="/home.php">HOME</a></li>
-				<li><a href="/about.php">ABOUT US</a></li>
-				<li><a href="/product_list.php">STORE</a></li>
-				<li><a href="/contact.php">CONTACT US</a></li>
-				<li><a href="/login.php"><img class="icon" src="https://wbarrios.com/aau/wnm608/barrios.wilson/img/user.png" alt="user"></a></li>
-					<li><a href="cart.php"><img class="icon" src="https://wbarrios.com/aau/wnm608/barrios.wilson/img/shopping-cart.png" alt="user"></a></li>
-					<li><a href="#"><img class="icon" src="https://wbarrios.com/aau/wnm608/barrios.wilson/img/search.png" alt=""></a>
-					</li>
+			<div id="page-nav" class="nav-flex flex-none">
+
+<!--Hamburger Menu-->
+
+<label for= "hamburger">&#9776;</label>
+<input type="checkbox" id="hamburger"/>
+<div id="logo-header" class="flex-stretch"><a href="home.php"><img class="logo" src="https://wbarrios.com/aau/wnm608/barrios.wilson/img/coolkeychains-logo.png" alt="CoolKeychains"></a></div>
+
+	<ul class= "nav-pills">
+	<li><a href="https://wbarrios.com/aau/wnm608/barrios.wilson/home.php">HOME</a></li>
+
+	<li><a href="https://wbarrios.com/aau/wnm608/barrios.wilson/about.php">ABOUT</a></li>
+
+	<li><a href="https://wbarrios.com/aau/wnm608/barrios.wilson/product_list.php">STORE</a></li>
+
+	<li><a href="https://wbarrios.com/aau/wnm608/barrios.wilson/contact.php">CONTACT</a></li>
+
+	<li><a href="https://wbarrios.com/aau/wnm608/barrios.wilson/login.php"><img class="icon" src="https://wbarrios.com/aau/wnm608/barrios.wilson/img/user.png" alt="user"></a></li>
+
+	<li><a href="https://wbarrios.com/aau/wnm608/barrios.wilson/product_cart.php"><img class="icon" src="https://wbarrios.com/aau/wnm608/barrios.wilson/img/shopping-cart.png" alt="cart">
+			 <span class="badge"><?= makeCartBadge();?></span></a></li>
+
+	<li><a href="#"><img class="icon" src="https://wbarrios.com/aau/wnm608/barrios.wilson/img/search.png" alt=""></a></li>
+				
 
 			</ul>
+
 		</nav>
 	</div>
+
 </header>
