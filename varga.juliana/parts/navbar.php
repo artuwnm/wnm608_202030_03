@@ -1,13 +1,11 @@
-	<!-- header.navbar>h1+nav.nav -->
-	<header class="navbar">
+<?php
+include_once "parts/templates.php";
+?>
+<header class="navbar">
 	<div class="container display-flex">
-		
 		<div class="flex-stretch">
-			<div class="logo">
-			<img src="img/logo.png">
-			</div>
+			<h1>Store</h1>
 		</div>
-		
 		<nav class="nav-flex flex-none">
 			<ul>
 				<li><a href="index.php">Home</a></li>

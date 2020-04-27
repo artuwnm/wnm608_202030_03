@@ -27,13 +27,13 @@ $o = getRows(makeConn(),
 			<h2>Product Item</h2>
 
 			<div>
-				Thank you for adding <?= $p->amount ?> of the <?= $o->title ?> to the cart.
+				Thank you for adding <?= $p->amount ?> of the <?= $o->name ?> to the cart.
 			</div>
 
 			<nav class="nav-flex">
 				<ul>
 					<li class="flex-none">
-						<a href="product_item.php?id=<?= $o->id ?>">Back to the <?= $o->title ?></a>
+						<a href="product_item.php?id=<?= $o->id ?>">Back to the <?= $o->name ?></a>
 					</li>
 					<li class="flex-stretch"></li>
 					<li class="flex-none">

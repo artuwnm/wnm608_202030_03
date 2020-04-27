@@ -115,10 +115,10 @@ input[type="submit" i] {
     text-align: center;
     font-size: 14px;
     padding: 9px;
-    width: 100px;
+    /* width: 100px; */
     transition: all 0.5s;
     cursor: pointer;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 input[type="submit" i] span {
@@ -201,7 +201,6 @@ nav{
 }
 .display-flex{
   vertical-align: middle;
-  line-height: 150px;
   height: 150px;
   display:flex; 
 
@@ -330,6 +329,16 @@ nav{
     padding:0;
   }
 
+  .card-section+.card-section {
+    border-top: 1px solid var(--color-neutral-light);
+  }
+
+  .card-section {
+    padding: 1em;
+}
+
+
+
 
 
 /* view window */
@@ -443,40 +452,43 @@ nav{
 
 .form-input {
     display: block;
-    width: 100%;
     border-width: 0;
-    border-bottom: 1px solid #316a8a;
+    border-bottom: 1px solid var(--color-neutral-light);
     color: inherit;
     font: inherit;
-    padding: 0.5em 1em;
-    -webkit-appearance: none;
+    padding-left: 30px;
+    outline: 0;
 }
 
 .form-label {
-  display:block;
-  width:100%;
-  font-size:0.8em;
-  color:var(--color-neutral-medium);
+    display: block;
+    width: 100%;
+    font-size: 0.8em;
+    color: var(--color-neutral-medium);
+    padding-bottom: 10px;
 }
+
 .form-control {
   margin:1em 0;
 }
 
+
 .form-button {
-  display:block;
-  width:100%;
-  border-width:0;
-  color:inherit;
-  font:inherit;
-  padding:0.5em 1em;
-  -webkit-appearance:none;
-  outline:0;
-  text-align:center;
-  background-color:var(--color-neutral-secondbreakfast);
-  border-radius:0.3em;
-  text-decoration:none;
-  cursor:pointer;
+    display: block;
+    width: 100%;
+    border-width: 0;
+    color: inherit;
+    font: inherit;
+    padding: 0.5em 1em;
+    -webkit-appearance: none;
+    outline: 0;
+    text-align: center;
+    background-color: var(--color-neutral-secondbreakfast);
+    border-radius: 0.3em;
+    text-decoration: none;
+    cursor: pointer;
 }
+
 .form-button:hover {
   text-decoration:none;
 }
