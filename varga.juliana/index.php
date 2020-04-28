@@ -16,7 +16,7 @@ session_start();
 </header>
   <br>
 
-  <div class="view-window display-flex flex-align-center flex-justify-center" style="background-image:url('img/banner.jpg')">
+  <div class="view-window display-flex flex-align-center flex-justify-center" style="background-image:url('images/banner.jpg')">
 	</div>
 <br>
  
@@ -35,7 +35,7 @@ session_start();
 			<!-- .col-xs-6*12>.card.soft>lorem30 -->
 			<div class="col-xs-12 col-md-6 col-lg-3 col-xl3">
 				<div class="card soft">
-				<img src="img/pic.jpg" width="205px">
+				<img src="images/pic.jpg" width="205px">
 				<br>
 				Cultured Pearl Necklace Natural Sapphire Sterling Silver<br>
 			
@@ -44,7 +44,7 @@ session_start();
 			</div>
 			<div class="col-xs-12 col-md-6 col-lg-3 col-xl3">
 				<div class="card soft">
-				<img src="img/pic.jpg" width="205px">
+				<img src="images/pic.jpg" width="205px">
 				<br>
 				Cultured Pearl Necklace Natural Sapphire Sterling Silver<br>
 			
@@ -53,7 +53,7 @@ session_start();
 			</div>
 			<div class="col-xs-12 col-md-6 col-lg-3 col-xl3">
 				<div class="card soft">
-					<img src="img/pic.jpg" width="205px">
+					<img src="images/pic.jpg" width="205px">
 				<br>
 				Cultured Pearl Necklace Natural Sapphire Sterling Silver<br>
 			
@@ -62,7 +62,7 @@ session_start();
 			</div>
 			<div class="col-xs-12 col-md-6 col-lg-3 col-xl3">
 				<div class="card soft">
-					<img src="img/pic.jpg" width="205px">
+					<img src="images/pic.jpg" width="205px">
 				<br>
 				Cultured Pearl Necklace Natural Sapphire Sterling Silver<br>
 			
