@@ -4,7 +4,7 @@
 include_once __DIR__. "/parts/templates.php";
 
 
-$cartItems = getCartItems();
+$cartItems = []; //getCartItems()
 
 ?><!DOCTYPE html>
 <html lang="en">
