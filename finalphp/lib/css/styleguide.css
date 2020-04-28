@@ -264,6 +264,21 @@ code {
 	text-decoration:none;
 }
 
+.form-select {
+	position: relative;
+}
+
+.form-select {
+	content:;
+	position: absolute;	
+	color: white;
+	top: 50%;
+	right: 0.3rem;
+	trasform: translateY (-50%);
+	pointer-events: none;
+	font-size: 0.7em;
+}
+
 
 .hotdog {
 	display:block;
