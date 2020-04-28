@@ -98,3 +98,5 @@ function getCartItems() {
 		return $o;
 	},$data);
 }
+
+?>
