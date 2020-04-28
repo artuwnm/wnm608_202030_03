@@ -55,19 +55,21 @@ $images = explode(",",$o->images);
 					</div>
 					<div class="card-section">
 						<label class="form-label">Amount</label>
-						<select name="amount" class="form-input">
-							<!-- option*10>{$} -->
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-							<option>5</option>
-							<option>6</option>
-							<option>7</option>
-							<option>8</option>
-							<option>9</option>
-							<option>10</option>
-						</select>
+						<div class="form-select">
+							<select name="amount">
+								<!-- option*10>{$} -->
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
+							</select>
+						</div>
 					</div>
 					<div class="card-section">
 						<input type="hidden" name="action" value="add-to-cart">

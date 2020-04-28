@@ -58,11 +58,11 @@ HTML;
 
 
 function selectAmount($amount=1,$total=10) {
-	$output = "<select class='form-input' name='amount'>";
+	$output = "<div class='form-select'><select name='amount'>";
 	for($i=1;$i<=$total;$i++){
 		$output .= "<option ".($i==$amount?"selected":"").">$i</option>";
 	}
-	$output .= "</select>";
+	$output .= "</select></div>";
 	return $output;
 }
 
