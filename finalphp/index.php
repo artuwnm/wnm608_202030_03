@@ -21,7 +21,7 @@
 	<header class="navbar">
 		<div class="container display-flex">
 			<div class="flex-stretch">
-				<h1>Begari</h1>
+			<!-- 	<h1>Begari</h1>
 			</div>
 			<nav class="nav flex-none">
 				<!-- ul>li*3>a[href=#]>{Link $} -->
@@ -29,7 +29,7 @@
 					<li><a href="index.php">Home</a></li>
 					<li><a href="productlist.php">Store</a></li>
 					<li><a href="about.php">About</a></li>
-					<li><a href="product_cart.php">Cart</a></li>
+					<li><a href="product_cart.php">Cart</a></li> -->
 				</ul>
 			</nav>
 		</div>

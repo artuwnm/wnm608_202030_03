@@ -5,7 +5,7 @@ include_once "templates.php";
 <header class="navbar">
 	<div class="container display-flex">
 		<div class="flex-stretch">
-			<h1>Store</h1>
+			<h1>Begari</h1>
 		</div>
 		<nav class="nav-flex flex-none">
 			<ul>
@@ -14,7 +14,7 @@ include_once "templates.php";
 				<li><a href="about.php">About</a></li>
 				<li><a href="product_cart.php">
 					<span>Cart</span>
-					(<span class="badge"><?= makeCartBadge(); ?></span>)
+					<span class="badge"><?= makeCartBadge(); ?></span>)
 				</a></li>
 			</ul>
 		</nav>
