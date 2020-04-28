@@ -1,8 +1,6 @@
 <section class="container">
-		<h2 id="publish"></h2>
+		<!-- <h2 id="publish"></h2> -->
 		<!-- <div class="card soft"> -->
-		<h3></h3>
-
 
 			<div class="row align-items-center justify-content-between">
 

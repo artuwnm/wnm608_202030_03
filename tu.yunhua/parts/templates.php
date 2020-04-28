@@ -87,8 +87,9 @@ $cartprice = array_reduce($cart,function($r,$o){return $r + ($o->amount*$o->pric
 
 
 $pricefixed = number_format($cartprice, 2, '.', '');
-$taxfixed = number_format($cartprice*0.0725, 2, '.', '');
-$taxedfixed = number_format($cartprice*1.0725, 2, '.', '');
+$taxfixed = number_format($cartprice*0.0, 2, '.', '');
+$taxedfixed = number_format($cartprice*1, 2, '.', '');
+
 
 
 return <<<HTML
