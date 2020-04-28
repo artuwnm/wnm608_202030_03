@@ -1,0 +1,21 @@
+<?php
+
+include_once "../lib/php/functions.php";
+
+$output = [];
+
+$output['result'] = getRows(makeConn(),"SELECT * FROM `products`");
+
+echo (json_encode($output));<?php
+
+include_once "../lib/php/functions.php";
+
+$output = [];
+
+$output['result'] = getRows(makeConn(),"SELECT * FROM `products`");
+
+echo (json_encode(
+	$output,
+	JSON_UNESCAPED_UNICODE|
+	JSON_NUMERIC_CHECK
+));

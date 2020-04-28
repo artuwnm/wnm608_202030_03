@@ -11,7 +11,7 @@
 					<li><a href="home.php">Home</a></li>
 					<li><a href="product_list.php">Store</a></li>
 					<li><a href="about_page.php">About</a></li>
-					<li><a href="cart_page.php">Cart</a></li>
+					<li><a href="product_cart.php">Cart</a></li>
 <div class="display-flex">
 				<div class="flex-stretch"></div>
 				<div class="flex-none">
