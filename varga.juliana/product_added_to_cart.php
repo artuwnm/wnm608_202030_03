@@ -5,7 +5,7 @@ include_once "lib/php/functions.php";
 // print_p($_SESSION);
 $p = array_find(
 	getCart(),
-	function($o) use ($id) { return $o->id==$_GET['id']; }
+	function($o) { return $o->id==$_GET['id']; }
 );
 $o = getRows(makeConn(),
 	"SELECT * FROM `products` WHERE `id` = {$_GET['id']}"

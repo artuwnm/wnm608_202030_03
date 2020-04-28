@@ -1,19 +1,6 @@
 <?php
 
 include_once "lib/php/functions.php";
-include_once "parts/templates.php";
-
-
-$rows = getRows(
-	makeConn(),
-	"SELECT *
-	FROM `products`
-	ORDER BY `category` DESC
-	LIMIT 12
-	"
-);
-
-// print_p($rows);
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -21,6 +8,12 @@ $rows = getRows(
 	<title>Store: Product List</title>
 	
 	<?php include "parts/meta.php" ?>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="lib/js/functions.js"></script>
+	<script src="js/templates.js"></script>
+	<script src="js/list.js"></script>
+
 </head>
 <body>
 
@@ -29,21 +22,7 @@ $rows = getRows(
 	<div class="container">
 		<h2>Product List</h2>
 
-		<div class="grid gap">
-
-		<?php
-
-
-
-		echo array_reduce(
-			$rows,
-			'productListTemplate'
-		);
-
-		?>
-
-
-		</div>
+		<div class="grid gap productlist"></div>
 	</div>
 	
 </body>
