@@ -17,7 +17,7 @@ function print_p($v) {
 include_once __DIR__. "/auth.php";
 function makeConn() {
 
-	@$conn = new mysqli(...makeAuth());
+	@$conn = new mysqli(makeAuth());
 
 	if($conn->connect_errno) die($conn->connect_error);
 
