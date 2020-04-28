@@ -196,12 +196,9 @@ nav{
 
 .flex-stretch {
   flex: 1 1 auto; 
-  
-  display:inline-flex;
+  display:inline-grid;
 }
 .display-flex{
-  vertical-align: middle;
-  height: 150px;
   display:flex; 
 
 }

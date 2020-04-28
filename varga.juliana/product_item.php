@@ -31,7 +31,7 @@ $images = explode(",",$o->images);
 		</nav>
 
 		<div class="grid gap">
-			<div class="col-xs-12 col-md-7">
+			<div class="col-xs-12 col-md-6">
 				<div class="card soft">
 					<div class="product-main">
 						<img src="images/<?= $o->images ?>" alt="">
@@ -45,7 +45,7 @@ $images = explode(",",$o->images);
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-md-5">
+			<div class="col-xs-12 col-md-6">
 				<form class="card soft flat" method="get" action="data/form_actions.php">
 					<div class="card-section">
 						<h2><?= $o->name ?></h2>
