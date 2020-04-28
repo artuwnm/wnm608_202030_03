@@ -37,3 +37,53 @@ function getRows($conn,$sql) {
 
 	return $a;
 }
+
+
+
+
+
+
+// CART FUNCTIONS
+
+// Array find loops an array looking for the first object that matches a boolean function
+function array_find($array,$fn) {
+	foreach($array as $o) if($fn($o)) return $o;
+	return false;
+}
+
+function addToCart($id,$amount,$price) {
+	$cart = isset($_SESSION['cart']) ? $_SESSION['cart'] : [];
+	
+	$p = array_find(
+		$cart,
+		function($o) use ($id) { return $o->id==$id; }
+	);
+
+	if($p) {
+		$p->amount += $amount;
+	} else {
+		$_SESSION['cart'][] = (object)[
+			"id"=>$id,
+			"amount"=>$amount,
+			"price"=>$price
+		];
+	}
+}
+
+function getCartItems() {
+	$cart = isset($_SESSION['cart']) ? $_SESSION['cart'] : [];
+
+	if(empty($cart)) return [];
+
+	$ids = implode(",",array_map(function($o){return $o->id;},$cart));
+	$data = getRows(makeConn(),
+		"SELECT * FROM `products` WHERE `id` in ($ids)"
+	);
+
+	return array_map(function($o) use ($cart) {
+		$p = array_find($cart,function($co) use ($o){ return $co->id==$o->id; });
+		$o->amount = $p->amount;
+		$o->total = $p->amount + $o->price;
+		return $o;
+	},$data);
+}
