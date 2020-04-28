@@ -1,6 +1,6 @@
 <?php
 
-include_once __DIR__. "/lib/php/functions.php";
+// include_once __DIR__. "/lib/php/functions.php";
 include_once __DIR__. "/parts/templates.php";
 
 
