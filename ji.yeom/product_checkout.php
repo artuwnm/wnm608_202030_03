@@ -11,12 +11,10 @@
 	<div class="container">
 		<nav class="nav-crumbs">
 			<ul>
-				<li><a href="product_list.php"><h5>Back</h5></a></li>
+				<li><a href="product_cart.php"><h5>Back to the cart</h5></a></li>
 			</ul>
 		</nav>
 		<div class="card soft">
-			<h2>Product Checkout</h2>
-
 			<form>
 				Checkout form
 			</form>

@@ -6,11 +6,26 @@
 
 :root {
 	--color-neutral-light: #eee;
-	--color-neutral-dark: #1212;
-	--color-neutral-medium: #797979;
+	--color-neutral-medium: #1212;
+	--color-neutral-dark: #797979;
 
 	--color-main: #5AFF5A;
     --color-blue: #1155CC;
+
+    --color-confirm-light: #f691f6;
+    --color-confirm-medium: magenta;
+    --color-confirm-dark: #7f007f;
+
+    --color-warning-light: orange;
+	--color-warning-medium: orange;
+	--color-warning-dark: orange;
+
+	--color-alert-light: red;
+	--color-alert-medium: red;
+	--color-alert-dark: red;
+
+    --color-black: black;
+    --color-white: white;
 
 	--header-height: 3rem;
 	--footer-height: 1rem;
@@ -277,6 +292,12 @@ img {
 	.card.flat {
 		padding: 0;
 	}
+	.card-section {
+		padding: 1em;
+	}
+	.card-section+.card-section{
+		border-top: 1px solid var(--color-neutral-light);
+	}
 
 
 
@@ -434,7 +455,22 @@ img {
 	border: 1px solid #000;
 
 }
-
+.button-confirm {
+	background-color: #1155CC;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	/*margin: 4px 2px;*/
+	transition-duration: 0.4s;
+	cursor: pointer;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1rem;
+	font-weight: normal;
+	width: 350px;
+}
 
 
 
@@ -563,6 +599,29 @@ img {
 	padding: 1em 1em;
 	outline: 0;
 }
+.form-button {
+	display:block;
+	width:100%;
+	border-width:0;
+	color:inherit;
+	font:inherit;
+	padding:0.5em 1em;
+	-webkit-appearance:none;
+	outline:0;
+	text-align:center;
+	background-color:white;
+	border: 1px solid #000;
+	text-decoration:none;
+	cursor:pointer;
+}
+.form-button:hover {
+	text-decoration:none;
+}
+
+	.form-button.confirm {
+		background-color:var(--color-confirm-light);
+	}
+
 
 .hotdog {
 	display: block;

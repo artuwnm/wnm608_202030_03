@@ -3,6 +3,8 @@
 include_once "lib/php/functions.php";
 include_once "parts/templates.php";
 
+$cartItems = getCartItems();
+
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,38 +18,26 @@ include_once "parts/templates.php";
 	<div class="container">
 		<nav class="nav-crumbs">
 			<ul>
-				<li><a href="product_list.php"><h5>Back</h5></a></li>
+				<li><a href="product_list.php"><h5>Back to the store</h5></a></li>
 			</ul>
 		</nav>
+
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-8">
-				<div class="card">
+				<div class="card flat">
 				<?php
-				$data = getRows(
-					makeConn(),
-					"SELECT * FROM `products` WHERE `id` in (3,5,9) LIMIT 3"
-				);
-				echo array_reduce($data, 'cartListTemplate');	
+				echo array_reduce($cartItems,'cartListTemplate');
 				?>
 				</div>
 			</div>
 
 			<div class="col-xs-12 col-md-4">
-				<div class="card soft">
-					<div>
-						<strong>Sub-Total</strong>
-						$3.50
-					</div>
-					<div>
-						<strong>Taxes</strong>
-						$0.50
-					</div>
-					<div>
-						<strong>Total</strong>
-						$4.00
-					</div>
+				<div class="card soft flat">
+					<?= cartTotals() ?>
 				</div>
-				<a class="button primary" href="product_checkout.php">Checkout</a>
+				<div class="card-section">
+					<a class="button-confirm" href="product_checkout.php">CHECKOUT</a>
+				</div>
 			</div>
 
 		</div>

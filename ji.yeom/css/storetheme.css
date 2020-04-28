@@ -2,6 +2,13 @@
     --color-neutral-dark: #000;
     --color-neutral-medium: #797979;
     --color-neutral-light: #eee;
+
+   	--color-main: #5AFF5A;
+    --color-blue: #1155CC;
+
+    --color-confirm-light: #f691f6;
+    --color-confirm-medium: magenta;
+    --color-confirm-dark: #7f007f;
 }
 
 
