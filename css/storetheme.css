@@ -1,10 +1,10 @@
 :root {
-    --color-neutral-dark: #333;
+    --color-neutral-dark: #000;
     --color-neutral-medium: #999;
-    --color-neutral-light: #eee;
+    --color-neutral-light: #fff;
 
     --color-main-light: #eac3fa;
-    --color-main-medium: #8d39b0;
+    --color-main-medium: #000;
     --color-main-dark: #44105a;
 }
 
@@ -32,7 +32,6 @@ body {
 .product-figure img {
 	width:100%;
 	object-fit:cover;
-	max-height:30vh;
 	vertical-align: text-bottom;
 
 }

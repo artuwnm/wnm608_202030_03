@@ -13,12 +13,12 @@
 			<div>
 				<!-- figure>img+figcaption -->
 				<figure class="product-figure">
-					<img src="https://via.placeholder.com/300" alt="" >
+					<img src="../img/heroimage.jpg" alt="" >
 
 	</div>
     
     <hr>
-	<div>
+	<div> 
 	<div class="grid gap">
 			<div class="col-xs-12 col-md-4">
 				
