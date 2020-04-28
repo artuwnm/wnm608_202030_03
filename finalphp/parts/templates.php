@@ -119,4 +119,3 @@ function makeCartBadge() {
 	},0);
 }
 
-?>
