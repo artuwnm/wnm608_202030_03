@@ -118,3 +118,5 @@ function makeCartBadge() {
 		return $r + $o->amount;
 	},0);
 }
+
+?>
