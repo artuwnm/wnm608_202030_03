@@ -9,13 +9,14 @@
 
 	<?php include "parts/navbar.php" ?>
 
-	<div class="container">
-		<div class="card soft">
-			<h2>About</h2>
 
 
+        <div class="cardblue">
+			<h2 class="bigtitle">About</h2>
+			
 		</div>
-	</div>
+
+
 
 
 	<?php include "parts/footer.php" ?>

@@ -26,10 +26,16 @@ $rows = getRows(
 
 	<?php include "parts/navbar.php" ?>
 
-	<div class="container">
-		<div class="card soft">
-			<h2>Product</h2>
+
+
+
+		<div class="cardblue">
+			<h2 class="bigtitle">Product</h2>
+			
 		</div>
+
+
+	<div class="container">
 
 		<div class="grid gap">
 

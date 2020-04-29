@@ -23,15 +23,13 @@ $images = explode(",",$o->images);
 
 	<?php include "parts/navbar.php" ?>
 
+
+
+    
+
+<div class="cardblue">
 	<div class="container">
-		<div class="card soft">
-			<h2>Product Item</h2>
-
-		</div>
-        
-
-
-        <nav class="nav-crumbs" style="margin:1em 0">
+		<nav class="nav-crumbs" style="margin:1em 0">
 			<ul>
 				<li><a href="product_list.php">Back</a></li>
 			</ul>
@@ -39,43 +37,73 @@ $images = explode(",",$o->images);
 
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-7">
-				<div class="card soft">
+				<div>
 					<div class="product-main">
-						<img src="/images/store/<?= $o->thumbnail ?>" alt="">
+						<img src="img/<?= $o->thumbnail ?>" alt="">
 					</div>
-					<div class="product-thumbs">
-					<?=
-					array_reduce($images,function($r,$o){
-						return $r."<img src='img/$o'>";
-					})
-					?>
-					</div>
+
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-5">
-				<div class="card soft">
-					<h2><?= $o->title ?></h2>
-					<div class="product-description">
-						<div class="product-price">&dollar;<?= $o->price ?></div>
+				<form method="get" action="data/form_actions.php">
+					<div class="card-section">
+						<h2><?= $o->title ?></h2>
+						<div class="product-description">
+							<div class="product-price"><h3>&dollar;<?= $o->price ?></h3></div>
+                            <p>Color:<p><?= $o->color ?></p></p>
+							
+							<p>Size:<p><?= $o->size ?></p></p>
+							
+						</div>
 					</div>
-					<div>
-						<a class="form-button" href="product_added_to_cart.php">Add To Cart</a>
+					<div class="card-section">
+						<label class="form-label"><h4>Amount</h4></label>
+						<div class="form-select">
+							<select name="amount">
+								<!-- option*10>{$} -->
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
+							</select>
+						</div>
 					</div>
-				</div>
+
+
+					<div class="btnstyle card-section">
+						<button class="btn first">
+						<input type="hidden" name="action" value="add-to-cart">
+						<input type="hidden" name="id" value="<?= $o->id ?>">
+						<input type="hidden" name="price" value="<?= $o->price ?>">
+						Add To Cart
+					    </button>
+					</div>
+
+				</form>
 			</div>
 		</div>
 		<div class="card soft">
 			<h3>Description</h3>
 			<div><?= $o->description ?></div>
 		</div>
-
-
-
-
-
-
-
 	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
 	
 
 <?php include "parts/footer.php" ?>

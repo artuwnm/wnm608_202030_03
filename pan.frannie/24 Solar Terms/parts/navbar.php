@@ -20,11 +20,20 @@
 
 		    </div>
 
+
 			<div class="wrap display-inline-flex">
                     <form action="" autocomplete="on">
                         <input id="search" name="search" type="text" placeholder="Search"><input id="search_submit" value="lens" type="go">
                     </form>
             </div>
+
+
+
+            <div class="carticon">
+		    	<a class="carticon" href="product_cart.php">
+		    		<img src="img/iconcart.png" alt="cart">
+		    	</a>
+		    </div>
 
 
 		</div>
