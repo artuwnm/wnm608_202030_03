@@ -25,10 +25,13 @@ text/css styleguide.css ( ASCII C program text )
 }
 
 body {
+	position: relative;
 	box-sizing:border-box;
+	padding-bottom: 6rem;
 	margin:0;
 	font-size:100%;
 	font-family:'Lato', sans-serif;
+
 }
 
 h1,
@@ -88,6 +91,14 @@ height:60px;
 width:20px;
 padding-right: 0.1em;
 padding-left: 0.1em;
+padding-top: 0.1em
+}
+
+.arrow
+{
+width:40px;
+padding-right: 0.1em;
+padding-left: 0.1em;
 }
 
 /* PIC */
@@ -110,7 +121,7 @@ padding: 3em;
 	max-width:1000px;
 	margin-right: auto;
 	margin-left: auto;
-	
+
 }
 .hidden { display:none; }
 
@@ -269,7 +280,7 @@ padding: 3em;
 	}
 	
 	.card.flat {
-		padding:0;
+		padding:0.1em;
 	}
 
 	.card-section {
@@ -404,25 +415,84 @@ padding: 3em;
 }
 .form-control {
 	margin:1em 0;
+	width: 90%;
 }
+
+
+.form-select select,
 
 .form-button {
 	display:block;
-	width:100%;
+	width:90%;
 	border-width:0;
 	color:inherit;
 	font:inherit;
 	padding:0.5em 1em;
+	margin-right: 0.9em;
 	-webkit-appearance:none;
 	outline:0;
 	text-align:center;
-	background-color:var(--color-neutral-secondbreakfast);
-	border-radius:0.3em;
+	background-color:#4abdac;
+	border-radius:0.5em;
 	text-decoration:none;
 	cursor:pointer;
 }
+
+.form-button-yellow {
+	display:block;
+	width:90%;
+	border-width:0;
+	color:inherit;
+	font:inherit;
+	padding:0.5em 1em;
+	margin-right: 0.9em;
+	-webkit-appearance:none;
+	outline:0;
+	text-align:center;
+	background-color:#f8b732;
+	border-radius:0.5em;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+.form-button-red {
+	display:block;
+	width:97%;
+	border-width:0;
+	color:inherit;
+	font:inherit;
+	padding:0.5em 1em;
+	margin-right: 0.9em;
+	-webkit-appearance:none;
+	outline:0;
+	text-align:center;
+	background-color:#fc4a1a;
+	color: #ffffff;
+	border-radius:0.5em;
+	text-decoration:none;
+	cursor:pointer;
+}
+
 .form-button:hover {
 	text-decoration:none;
+}
+
+	.form-button.confirm {
+		background-color:#fc4615;
+		color: #ffffff;
+	}
+.form-select {
+    position: relative;
+}
+.form-select::after {
+	content:'▼';
+	position:absolute;
+	color:#ebe8e3;
+	top:50%;
+	right: 2.5rem;
+	transform:translateY(-50%);
+	pointer-events:none;
+	font-size:0.7em;
 }
 
 
@@ -450,6 +520,11 @@ padding: 3em;
 .hotdog .icon {
 	padding:0 1em;
 }
+
+.hotdog.light {
+	background-color:var(--color-white);
+}
+
 
 
 
@@ -498,9 +573,13 @@ padding: 3em;
 	/* Footer */
 
 .footer {
+	position: absolute;
+	left: 0;
+	bottom:0px;
+	width: 100%;
+	margin-top: 2rem;
 	text-align: center;
-	padding-top: 3rem;
-	padding-bottom: 1rem;
+	padding-top: 2rem;
 	background: #FC4A1A;
 }
 

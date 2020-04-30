@@ -14,11 +14,10 @@
 			<h2>Product Confirmation</h2>
 
 			<div>
-				Thank you for purchasing.
+				<h3 style="text-align: center">Thank you for purchasing.</h3>
 			</div>
 
-			<div>
-				<a class="form-button" href="product_list.php">Continue Shopping</a>
+				<a class="form-button-red" href="product_list.php">Continue Shopping</a>
 			</div>
 		</div>
 	</div>

@@ -10,18 +10,22 @@
 	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
+		<h2>Product Checkout</h2>
 		<div class="card soft">
-			<h2>Product Checkout</h2>
+			
 
 			<form>
 				Checkout form
 			</form>
+		</br>
 
 			<div>
-				<a class="form-button" href="product_confirmation.php">Confirm Purchase</a>
+				<a class="form-button-red" href="product_confirmation.php">Confirm Purchase</a>
 			</div>
 		</div>
 	</div>
-	
+
 </body>
+
 </html>
+

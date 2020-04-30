@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+
+session_start();
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -6,13 +10,13 @@
 
 <?php include "parts/meta.php" ?>
 
-	<style>
+	<style> 
 	h2 {
 		margin-top:1em;
 		border-bottom:1px solid var(--color-neutral-medium);
 		margin-bottom:1em;
 	}
-	</style>
+	</style> 
 
 </head>
 <body>

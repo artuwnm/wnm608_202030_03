@@ -17,6 +17,7 @@ $cartItems = getCartItems();
 	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
+		<h2>Cart</h2>
 		<nav class="nav-crumbs" style="margin:1em 0">
 			<ul>
 				<li><a href="product_list.php">Back</a></li>
@@ -40,6 +41,9 @@ $cartItems = getCartItems();
 			</div>
 		</div>
 	</div>
+
+	<?php include "parts/footer.php" ?>
+    </div>
 	
 </body>
 </html>

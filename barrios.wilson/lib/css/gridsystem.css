@@ -13,9 +13,10 @@
 .grid.gap {
 	grid-gap:var(--grid-gap);
 	gap:var(--grid-gap);
+	margin-bottom: 3rem;
 }
 	.gap.large { --grid-gap:2em; }
-	.gap.small { --grid-gap:0.5em; }
+	.gap.small { --grid-gap:1em; }
 
 
 
@@ -47,7 +48,8 @@
 	.col-xs-9 { grid-column: span 9; }
 	.col-xs-10 { grid-column: span 10; }
 	.col-xs-11 { grid-column: span 11; }
-	.col-xs-12 { grid-column: span 12; }
+	.col-xs-12 { grid-column: span 12;
+	margin-bottom: 2rem; }
 }
 
 /* Small Size */

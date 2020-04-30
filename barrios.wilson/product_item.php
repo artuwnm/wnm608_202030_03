@@ -24,10 +24,14 @@ $images = explode(",",$o->images);
 	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
+		<h2>Product Page</h2>
 		<nav class="nav-crumbs" style="margin:1em 0">
 			<ul>
-				<li><a href="product_list.php">Back</a></li>
-			</ul>
+				<li><a href="product_list.php"><img class="arrow" src="https://wbarrios.com/aau/wnm608/barrios.wilson/img/back.png" alt="Back"></a></li>
+
+				
+
+				</ul>
 		</nav>
 
 		<div class="grid gap">
@@ -74,15 +78,17 @@ $images = explode(",",$o->images);
 						<input type="hidden" name="id" value="<?= $o->id ?>">
 						<input type="hidden" name="price" value="<?= $o->price ?>">
 						<input type="submit" class="form-button" value="Add To Cart">
+					</br>
+						<h2>Description</h2>
+			<div><?= $o->description ?></div>
 					</div>
 				</form>
 			</div>
 		</div>
-		<div class="card soft dark">
-			<h3>Description</h3>
-			<div><?= $o->description ?></div>
-		</div>
 	</div>
+
+	<?php include "parts/footer.php" ?>
+    </div>
 	
 </body>
 </html>

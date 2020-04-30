@@ -39,7 +39,7 @@ return $r.<<<HTML
 					<input type="hidden" name="action" value="delete-cart-item">
 					<input type="hidden" name="id" value="$o->id">
 					<div class="display-flex"><div class="flex-none">
-						<input type="submit" class="form-button" value="delete">
+						<input type="submit" class="form-button" value="Delete">
 					</div></div>
 				</form>
 			</div>
