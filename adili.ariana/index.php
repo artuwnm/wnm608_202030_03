@@ -6,9 +6,9 @@
 
 	<?php include __DIR__."/parts/meta.php" ?>
 
-	<link rel="stylesheet" href="flib/css/styleguide.css">
-	<link rel="stylesheet" href="finalphp/lib/css/gridsystem.css">
-	<link rel="stylesheet" href="finalphp/lib/css/storetheme.css">
+	<link rel="stylesheet" href="lib/css/styleguide.css">
+	<link rel="stylesheet" href="lib/css/gridsystem.css">
+	<link rel="stylesheet" href="lib/css/storetheme.css">
 	<meta name="viewport" content="width=device-width">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
