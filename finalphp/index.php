@@ -6,7 +6,7 @@
 
 	<?php include __DIR__."/parts/meta.php" ?>
 
-	<link rel="stylesheet" href="finalphp/lib/css/styleguide.css">
+	<link rel="stylesheet" href="flib/css/styleguide.css">
 	<link rel="stylesheet" href="finalphp/lib/css/gridsystem.css">
 	<link rel="stylesheet" href="finalphp/lib/css/storetheme.css">
 	<meta name="viewport" content="width=device-width">
@@ -18,7 +18,7 @@
 <?php include __DIR__."/parts/navbar.php" ?>
 
 	<!-- header.navbar>h1+nav.nav -->
-	<header class="navbar">
+	<!-- <header class="navbar">
 		<div class="container display-flex">
 			<div class="flex-stretch">
 			<!-- 	<h1>Begari</h1>
@@ -26,14 +26,14 @@
 			<nav class="nav flex-none">
 				<!-- ul>li*3>a[href=#]>{Link $} -->
 				<ul class="display-flex">
-					<li><a href="index.php">HOME</a></li>
+					<!-- <li><a href="index.php">HOME</a></li>
 					<li><a href="productlist.php">STORE</a></li>
 					<li><a href="about.php">ABOUT</a></li>
-					<li><a href="product_cart.php">CART</a></li> 
-				</ul>
+					<li><a href="product_cart.php">CART</a></li>  -->
+			<!-- 	</ul>
 			</nav>
 		</div>
-	</header>
+	</header>  -->
 
 	<!-- .container>p*2>lorem30 -->
 	<div class="container">
