@@ -35,7 +35,11 @@ strong {
 }
 
 h1,
-h3,
+h3{
+font-weight: bold;
+color: #f2b6a0;
+}
+
 h4,
 h5,
 h6 {
@@ -102,7 +106,6 @@ input {
     -webkit-rtl-ordering: logical;
     cursor: text;
     font: 400 15px system-ui;
-    margin-bottom: 10px;
     padding: 2px;
     border-width: 2px;
     border-style: inset;
@@ -204,8 +207,24 @@ nav{
   vertical-align: middle;
   height:20px;
   display:block;
- 
 
+}
+
+/* PRODUCT IMAGES */
+
+
+.product-thumbs img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    padding-top: 1em;
+    padding-right: 1em;
+}
+
+.product-main img {
+    width: 50%;
+    height: 50vh;
+    object-fit: cover;
 }
 
 /* ATOMIC CLASSES */
@@ -336,8 +355,8 @@ nav{
   .card>:last-child { margin-bottom:0; }
 
   .card.soft {
-      box-shadow: 6px 5px 15px 10px rgba(0, 0, 0, 0.1);
-    border-radius:0.3em;
+      box-shadow: 6px 5px 15px 10px #f2b6a01f;
+      border-radius: 0.3em;
   }
   .card.medium {
     background-color:var(--color-neutral-medium);
@@ -345,7 +364,9 @@ nav{
   .card.dark {
     background-color:var(--color-neutral-dark);
     color:var(--color-neutral-light);
+    font-size: 12px;
   }
+
   .card.flat {
     padding:0;
   }
@@ -355,8 +376,11 @@ nav{
   }
 
   .card-section {
-    padding: 1em;
+      padding: 1em;
+      padding-bottom: inherit;
+  }
 }
+
 
 
 
@@ -487,13 +511,48 @@ nav{
     font-size: 0.8em;
     color: var(--color-neutral-medium);
     padding-bottom: 10px;
+    font-weight: bold;
 }
 
 .form-control {
   margin:1em 0;
 }
 
+.form-button-blue {
+    display: block;
+    width: 90%;
+    border-width: 0;
+    color: inherit;
+    font: inherit;
+    padding: 0.5em 1em;
+    margin-right: 0.9em;
+    -webkit-appearance: none;
+    outline: 0;
+    text-align: center;
+    color: white;
+    background-color: #316a8ad6;
+    border-radius: 0.5em;
+    text-decoration: none;
+    cursor: pointer;
+}
 
+.form-select select, .form-button {
+    display: block;
+    width: 100%;
+    border-width: 0;
+    color: white;
+    font: inherit;
+    height: 35px;
+    padding: 0.5em 1em;
+    margin-right: 0.9em;
+    -webkit-appearance: listbox;
+    outline: 0;
+    text-align: center;
+    background-color: #f2b6a0;
+    border-radius: 0.5em;
+    text-decoration: none;
+    cursor: pointer;
+}
 .form-button {
     display: block;
     width: 100%;
@@ -516,17 +575,18 @@ nav{
 
 
 .hotdog {
-  display:block;
-  width:100%;
-  padding:0.5em 1em;
-  background-color:var(--color-neutral-light);
-  border-radius:2em;
-  border-width:0;
-  font:inherit;
-  color:inherit;
-  outline:0;
-  display:flex;
+    display: block;
+    width: 100%;
+    padding: 0.5em 0.5em;
+    background-color: #a0dbf24d;
+    border-radius: 0.5em;
+    border-width: 0;
+    font: inherit;
+    color: inherit;
+    outline: 0;
+    display: flex;
 }
+
 .hotdog input {
   border-width:0;
   display:block;

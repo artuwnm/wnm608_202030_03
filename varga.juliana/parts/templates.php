@@ -3,10 +3,10 @@
 
 function productListTemplate($r,$o) {
 return $r.<<<HTML
-<div class="col-xs-6 col-md-4">
+<div class="col-xs-6 col-md-3">
 	<a href="product_item.php?id=$o->id" class="display-block">
 		<figure class="product-figure soft">
-			<div class="product-image"><img src="images$o->images" alt=""></div>
+			<div class="product-image"><img src="images/$o->thumbnail" alt=""></div>
 			<figcaption class="product-description">
 				<div class="product-price">&dollar;$o->price</div>
 				<div class="product-title">$o->name</div>
@@ -24,7 +24,7 @@ $selectamount = selectAmount($o->amount,10);
 return $r.<<<HTML
 <div class="display-flex card-section">
 	<div class="flex-none product-thumbs" style="margin-right:1em">
-		<img src="images/$o->images">
+		<img src="images/$o->thumbnail">
 	</div>
 	<div class="flex-stretch">
 		<div class="display-flex">
