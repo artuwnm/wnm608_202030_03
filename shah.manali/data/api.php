@@ -4,15 +4,19 @@ include_once "../lib/php/functions.php";
 
 $output = [];
 
-$output['result'] = getRows(makeConn(),"SELECT * FROM `products`");
+$data = json_decode(file_get_contents("php://input"));
 
-echo (json_encode($output));<?php
+if(!isset($data->type)) {
+	$output['error'] = "No Type";
+} else switch($data->type) {
+	case "all":
+		$output['result'] =
+			getRows(makeConn(),"SELECT * FROM `products`");
+	case "fruit":
+		$output['result'] =
+			getRows(makeConn(),"SELECT * FROM `products` WHERE category='truffles'");
+}
 
-include_once "../lib/php/functions.php";
-
-$output = [];
-
-$output['result'] = getRows(makeConn(),"SELECT * FROM `products`");
 
 echo (json_encode(
 	$output,

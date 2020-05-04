@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 include "../lib/php/functions.php";
 

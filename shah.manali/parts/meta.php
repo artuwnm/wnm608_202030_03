@@ -1,6 +1,6 @@
 <meta charset="UTF-8">
 
-<base href="http://manalishah.com/aau/wnm608/shah.manali/">
+<base href="http://www.manalishah.com/aau/wnm608/shah.manali/">
 
 
 <meta name="viewport" content="width=device-width">

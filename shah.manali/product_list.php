@@ -10,7 +10,11 @@ include "lib/php/functions.php";
 	<title>Store: Product List</title>
 
 	<?php include "parts/meta.php" ?>
-	<script type="http://code.jquery-3.2.1.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>	
+<script src="lib/js/functions.js"></script>
+	<script src="js/templates.js"></script>
+	<script src="js/list.js"></script>
 
 </head>
 <body>
