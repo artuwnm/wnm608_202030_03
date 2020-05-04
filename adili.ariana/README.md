@@ -9,5 +9,5 @@
 - http://arianaad.com/aau/wnm608/adili.ariana/index.html
 - http://arianaad.com/aau/wnm608/adili.ariana/admin/users.php
 - http://arianaad.com/aau/wnm608/adili.ariana/finalphp/product_cart.php
-- http://arianaad.com/aau/wnm608/finalphp/productlist.php
-- http://arianaad.com/aau/wnm608/finalphp/index.php
+- http://arianaad.com/aau/wnm608/adili.ariana/productlist.php
+- http://arianaad.com/aau/wnm608/adili.ariana/index.php
