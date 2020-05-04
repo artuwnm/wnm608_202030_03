@@ -49,7 +49,6 @@
 	</div>
 
 <!-- IMAGES GO HERE -->
-
 <div class="container2">
 		<div class="slideshow">
  			<img src="" alt="" />
