@@ -49,7 +49,7 @@
 	</div>
 
 <!-- IMAGES GO HERE -->
-<div class="container2">
+<!-- <div class="container2">
 		<div class="slideshow">
  			<img src="" alt="" />
   			<img src="" alt="" />
@@ -57,7 +57,7 @@
   			<img src="" alt="" />
 		</div>
 </div>
-
+ -->
 
 
 
