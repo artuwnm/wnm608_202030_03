@@ -10,7 +10,7 @@
 	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
-		<div class="card soft">
+		<div class="card medium">
 			<h2>Product Checkout</h2>
 
 			<form>
@@ -22,6 +22,9 @@
 			</div>
 		</div>
 	</div>
+	
+
+	<?php include "parts/footer.php" ?>
 	
 </body>
 </html>

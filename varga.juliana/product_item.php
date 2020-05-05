@@ -31,8 +31,8 @@ $images = explode(",",$o->images);
 		</nav>
 
 		<div class="grid gap">
-			<div class="col-xs-12 col-md-7">
-				<div class="card soft">
+			<div class="col-xs-12 col-md-6">
+				<div class="card medium">
 					<div class="product-main">
 						<img src="images/<?= $o->thumbnail ?>" alt="">
 					</div>
@@ -45,8 +45,8 @@ $images = explode(",",$o->images);
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-md-5">
-				<form class="card soft flat" method="get" action="data/form_actions.php">
+			<div class="col-xs-12 col-md-6">
+				<form class="card medium flat" method="get" action="data/form_actions.php">
 					<div class="card-section">
 						<h2><?= $o->name ?></h2>
 						<div class="product-description">
@@ -80,13 +80,16 @@ $images = explode(",",$o->images);
 						<br>
 						
 							<h3>Description</h3>
-						<div style="font-size: 14px;"><?= $o->description ?></div>
+						<div style="font-size: 16px;color: #316a8a;"><?= $o->description ?></div>
 						<br>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
+
+	
+	<?php include "parts/footer.php" ?>
 	
 </body>
 </html>

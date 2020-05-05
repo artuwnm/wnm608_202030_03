@@ -44,5 +44,7 @@ $o = getRows(makeConn(),
 		</div>
 	</div>
 	
+	
+	<?php include "parts/footer.php" ?>
 </body>
 </html>

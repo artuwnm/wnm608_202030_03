@@ -34,6 +34,12 @@ strong {
 
 }
 
+hr {
+    border: 1px solid #f2b6a0;
+    max-width: 1000px;
+    display: flex;
+}
+
 h1,
 h3{
 font-weight: bold;
@@ -222,10 +228,26 @@ nav{
 }
 
 .product-main img {
-    width: 50%;
+    width: 100%;
     height: 50vh;
     object-fit: cover;
 }
+
+.product-image{
+  opacity: 100;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+.product-image :hover {
+  opacity: 0.5;
+  transition: .5s ease;
+}
+
 
 /* ATOMIC CLASSES */
 
@@ -276,16 +298,171 @@ nav{
   float:right;
 }
 
+/* NAVBAR-TOP */
+
+
+
+.navbar-top {
+   background-color: #f2b6a0;
+    color: var(--color-neutral-light);
+    height: 30px;
+    margin-top: 0px;
+}
+
+/* NAVBAR */
+
+
+.navbar {
+  background-color:#ffffff;
+  color:var(--color-main-dark);
+  line-height: var(--header-height);
+}
+.navbar h1 {
+  margin:0;
+  font-size:1rem;
+}
+.navbar a {
+  padding: 0 1em;
+}
+
+.navbar {
+    list-style-type: none;
+    display: none;
+}
+
+
+.navbar {
+     display: flex;
+     justify-content: space-between;
+     padding-bottom: 0;
+     align-items: center;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+
+}
+    
+
+    /* NAVIGATION */
+/* [ON BIG SCREEN] */
+/* Hide Hamburger */
+#page-nav label, #hamburger {
+  display: none;
+}
+#logo-header
+{
+  float: left;
+}
+
+#logo-header a:hover
+{
+  background: none;
+}
+
+
+/* Menu Items */
+#page-nav ul {
+ 
+}
+#page-nav ul li {
+  display: inline-block;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#page-nav ul li a {
+ 
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+  .container {
+  min-width: 100%;
+}
+#logo-header
+{
+float: right;
+margin-right: 10%;
+}
+.logo
+{
+  max-height: 7rem;
+  width: auto;
+}
+
+
+  /* Show Hamburger */
+    #page-nav label {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    margin-top: 2.5rem;
+    margin-left: 1rem;
+    color: #f2b6a0;
+    font-style: normal;
+    font-size: 2rem;
+    padding: 1rem;
+}
+  
+
+  /* Break down menu items into vertical */
+  #page-nav ul li {
+    display: block;
+  }
+  #page-nav ul li {
+   border-top: 1px solid #f2b6a0;
+  }
+
+  /* Toggle show/hide menu on checkbox click */
+  #page-nav ul {
+    display: none;
+  }
+  #page-nav input:checked ~ ul {
+    display: block;
+  }
+
+ 
+}
+@media screen and (max-width: 650px) {
+.wrapper {
+display: block;
+max-width: 100%;
+padding: 0;
+margin-bottom: 0;
+}
+.nested-wrapper1, .nested-wrapper2 {
+width: 100%;
+display: block;
+padding: 0;
+margin-bottom: 0 auto;
+}
+.nested-wrapper1>[class='1'], .nested-wrapper2>[class='2'], .nested-wrapper2>[class='3'] {
+  width: auto;
+    padding: 1em;
+}
+}
+
+
+/* [DOES NOT MATTER] */
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+
+
 /* NAV */
+
 .nav-crumbs ul,
 .nav-pills ul,
 .nav-stretch ul,
 .nav-flex ul,
 .nav ul {
-  list-style-type:none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+list-style-type: none;
+    margin-top: 5.0em;
+    margin-bottom: 0;
+    padding-right: 100px;
 }
 
 .nav-pills a,
@@ -293,19 +470,15 @@ nav{
 .nav-flex a,
 .nav a {
   display:block;
-
+  padding:0.2em 0.1em;
 }
   .nav-pills a:hover,
   .nav-stretch a:hover,
   .nav-flex a:hover,
   .nav a:hover {
-    background-color:var(--color-neutral-dark);
+    background-color:var(--color-main-medium);
     color:var(--color-white);
     text-decoration:none;
-    vertical-align:middle !important;
-    transition: 0.4s;
-  
-
   }
   .nav-pills li.active a,
   .nav-stretch li.active a,
@@ -328,8 +501,10 @@ nav{
 }
 
 .nav-pills a {
-  border-radius:2em;
-  padding:0.5em 1em;
+  border-radius: 0.5em;
+  padding:0.1em 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 
@@ -344,7 +519,7 @@ nav{
 /* card */
 
 .card {
-    background-color: white;
+    background-color: #ffffff;
     overflow: hidden;
     position: relative;
     padding: 1em;
@@ -359,7 +534,7 @@ nav{
       border-radius: 0.3em;
   }
   .card.medium {
-    background-color:var(--color-neutral-medium);
+    border-radius: 0.3em;
   }
   .card.dark {
     background-color:var(--color-neutral-dark);
@@ -379,10 +554,110 @@ nav{
       padding: 1em;
       padding-bottom: inherit;
   }
+
+   /* FOOTER */
+
+footer{
+  position: fixed;
+  bottom: 0;
+}
+ 
+@media (max-height:800px){
+  footer { position: static; }
+  header { padding-top:40px; }
+}
+ 
+ 
+.footer-distributed{
+    background-color: #f2b6a073;
+    max-width: 100%;
+    text-align: center;
+    padding-top: 35px;
+    margin-top: 60px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+ 
+/* Footer left */
+ 
+.footer-distributed .footer-left{
+  width: 80%;
+  margin-right: 50px;
+}
+ 
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+ 
+/* The company logo */
+ 
+.footer-distributed .footer-left img{
+  width: auto;
 }
 
+p {
+    display: block;
+    color: #316a8a;
+    margin-left: 100px;
+}
 
+ 
 
+/* Footer Right */
+ 
+.footer-distributed .footer-right{
+  width: 30%;
+}
+
+ 
+.footer-distributed .footer-icons{
+  margin-top: 60px;
+}
+ 
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+ 
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+ 
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+ 
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+ 
+ 
+@media (max-width: 880px) {
+ 
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+ 
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+ 
+}
 
 
 
@@ -515,7 +790,7 @@ nav{
 }
 
 .form-control {
-  margin:1em 0;
+margin: 3em 0;
 }
 
 .form-button-blue {
@@ -576,7 +851,7 @@ nav{
 
 .hotdog {
     display: block;
-    width: 100%;
+    width: 70%;
     padding: 0.5em 0.5em;
     background-color: #a0dbf24d;
     border-radius: 0.5em;

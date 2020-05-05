@@ -19,6 +19,7 @@ include_once "lib/php/functions.php";
 
 	<?php include "parts/navbar.php" ?>
 
+<br>
 	<div class="container">
 		<h2>Product List</h2>
 
@@ -67,6 +68,9 @@ include_once "lib/php/functions.php";
 
 		<div class="grid gap productlist"></div>
 	</div>
+
+	<?php include "parts/footer.php" ?>
 	
 </body>
 </html>
+
