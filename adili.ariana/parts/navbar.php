@@ -1,7 +1,7 @@
 <?php
 include_once "templates.php";
 ?>
-<base href="http://arianaad.com/aau/wnm608/">
+<base href="http://arianaad.com/aau/wnm608/adili.ariana/">
 <header class="navbar">
 	<div class="container display-flex">
 		<div class="flex-stretch">

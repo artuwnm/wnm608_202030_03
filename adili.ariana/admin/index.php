@@ -2,18 +2,107 @@
 
 include_once "../lib/php/functions.php";
 
-$empty_product = (object) [
-	"title"=>"",
-	"price"=>"",
-	"category"=>"",
-	"description"=>"",
-	"thumbnail"=>"",
-	"images"=>"",
-	"quantity"=>""
-];
+
+//CHANGE TO MATCH YOUR PRODUCTS/VALUES
+
+// $empty_product = (object) [
+// 	"title"=>"Kiwi",
+// 	"price"=>"2.56",
+// 	"category"=>"fruit",
+// 	"description"=>"A small hairy flightless bird.",
+// 	"thumbnail"=>"fruit_kiwi_m.jpg",
+// 	"images"=>"fruit_kiwi_m.jpg",
+// 	"quantity"=>"576"
+// ];
 
 
-$conn = makeConn();
+
+
+
+
+
+
+
+
+
+// CRUD LOGIC
+try {
+
+$conn = makePDOConn();
+switch(@$_GET['action']) {
+	case "update":
+		$statement = $conn->prepare("UPDATE
+		`products`
+		SET
+			`title`=? ,
+			`price`=? ,
+			`category`=? ,
+			`description`=? ,
+			`thumbnail`=? ,
+			`images`=? ,
+			`quantity`=? ,
+			`date_modify`=NOW()
+		WHERE `id`=?
+		");
+		$statement->execute([
+			$_POST['product-title'],
+			$_POST['product-price'],
+			$_POST['product-category'],
+			$_POST['product-description'],
+			$_POST['product-thumbnail'],
+			$_POST['product-images'],
+			$_POST['product-quantity'],
+			$_GET['id']
+		]);
+
+		header("location:{$_SERVER['PHP_SELF']}?id={$_GET['id']}");
+		break;
+	case "create":
+		$statement = $conn->prepare("INSERT INTO
+		`products`
+		(
+			`title`,
+			`price`,
+			`category`,
+			`description`,
+			`thumbnail`,
+			`images`,
+			`quantity`,
+			`date_create`,
+			`date_modify`
+		)
+		VALUES
+		(?,?,?,?,?,?,?,NOW(),NOW())
+		");
+		$statement->execute([
+			$_POST['product-title'],
+			$_POST['product-price'],
+			$_POST['product-category'],
+			$_POST['product-description'],
+			$_POST['product-thumbnail'],
+			$_POST['product-images'],
+			$_POST['product-quantity']
+		]);
+		$id = $conn->lastInsertId();
+
+		header("location:{$_SERVER['PHP_SELF']}?id=$id");
+		break;
+	case "delete":
+		$statement = $conn->prepare("DELETE FROM `products` WHERE id=?");
+		$statement->execute([$_GET['id']]);
+		$id = $conn->lastInsertId();
+
+		header("location:{$_SERVER['PHP_SELF']}");
+		break;
+}
+
+
+} catch(PDOException $e) {
+	die($e->getMessage());
+}
+
+
+
 
 
 
@@ -101,39 +190,39 @@ echo <<<HTML
 </nav>
 <form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&action=$createorupdate">
 	<div class="grid gap">
-		<div class="col-xs-12 col-md-4">
+		<div class="col-xs-12 col-md-5">
 			$data_show
 		</div>
-		<div class="col-xs-12 col-md-8">
+		<div class="col-xs-12 col-md-7">
 			<div class="card soft">
 			<h2>$addoredit Product</h2>
 			<div class="form-control">
-				<label class="form-label" for="user-title">Title</label>
-				<input class="form-input" id="user-title" name="user-title" value="$o->title">
+				<label class="form-label" for="product-title">Title</label>
+				<input class="form-input" id="product-title" name="product-title" value="$o->title">
 			</div>
 			<div class="form-control">
-				<label class="form-label" for="user-price">Price</label>
-				<input class="form-input" id="user-price" name="user-price" value="$o->price">
+				<label class="form-label" for="product-price">Price</label>
+				<input class="form-input" id="product-price" name="product-price" value="$o->price">
 			</div>
 			<div class="form-control">
-				<label class="form-label" for="user-category">Category</label>
-				<input class="form-input" id="user-category" name="user-category" value="$o->category">
+				<label class="form-label" for="product-category">Category</label>
+				<input class="form-input" id="product-category" name="product-category" value="$o->category">
 			</div>
 			<div class="form-control">
-				<label class="form-label" for="user-description">Description</label>
-				<textarea class="form-input" id="user-description" name="user-description">$o->description</textarea>
+				<label class="form-label" for="product-description">Description</label>
+				<textarea class="form-input" id="product-description" name="product-description" style="height:4em">$o->description</textarea>
 			</div>
 			<div class="form-control">
-				<label class="form-label" for="user-thumbnail">Thumbnail</label>
-				<input class="form-input" id="user-thumbnail" name="user-thumbnail" value="$o->thumbnail">
+				<label class="form-label" for="product-thumbnail">Thumbnail</label>
+				<input class="form-input" id="product-thumbnail" name="product-thumbnail" value="$o->thumbnail">
 			</div>
 			<div class="form-control">
-				<label class="form-label" for="user-images">Other Images</label>
-				<input class="form-input" id="user-images" name="user-images" value="$o->images">
+				<label class="form-label" for="product-images">Other Images</label>
+				<input class="form-input" id="product-images" name="product-images" value="$o->images">
 			</div>
 			<div class="form-control">
-				<label class="form-label" for="user-quantity">Quantity</label>
-				<input class="form-input" id="user-quantity" name="user-quantity" value="$o->quantity">
+				<label class="form-label" for="product-quantity">Quantity</label>
+				<input class="form-input" id="product-quantity" name="product-quantity" value="$o->quantity">
 			</div>
 			<div class="form-control">
 				<input type="submit" class="form-button" value="Submit">
@@ -180,7 +269,9 @@ HTML;
 
 	<div class="container">
 
-			<?php 
+			<?php
+
+			$conn = makeConn();
 
 			if(isset($_GET['id'])){
 

@@ -10,9 +10,9 @@ include_once "lib/php/functions.php";
 	<?php include "parts/meta.php" ?>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="finalphp/lib/js/functions.js"></script>
-	<script src="finalphp/js/templates.js"></script>
-	<script src="finalphp/js/list.js"></script>
+	<script src="lib/js/functions.js"></script>
+	<script src="js/templates.js"></script>
+	<script src="js/list.js"></script>
 
 </head>
 <body>
@@ -56,6 +56,11 @@ include_once "lib/php/functions.php";
 
 		<div class="grid gap productlist"></div>
 	</div>
+
+		<div>
+			<a href="admin">Product Admin</a>
+		</div>
+	
 	
 </body>
 </html>

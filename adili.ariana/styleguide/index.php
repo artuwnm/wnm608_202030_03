@@ -16,7 +16,7 @@
 
 	<header class="container">
 		<div class="card">
-			<h1>Begari | Buy men's clothing</h1>
+			<h1>Begari | Men's clothing</h1>
 		</div>
 	</header>
 

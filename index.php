@@ -49,15 +49,15 @@
 	</div>
 
 <!-- IMAGES GO HERE -->
-<!-- <div class="container2">
+<div class="container2">
 		<div class="slideshow">
- 			<img src="" alt="" />
-  			<img src="" alt="" />
+ 			<img src="images/amir.jpeg" alt="" />
+  			<img src="images/asif.jpeg" alt="" />
   			<img src="" alt="" />
   			<img src="" alt="" />
 		</div>
 </div>
- -->
+
 
 
 

@@ -69,10 +69,10 @@ p {
 
 }
 
-.footer {
+/*.footer {
 	text-align: center;
 	font-style: 'Montserrat';
-	background-color: black;
+	background-color: red;
 	color: white;
 	font-size: 0.75rem;
     padding: 30px 20px;
@@ -80,25 +80,14 @@ p {
 	position: relative;
 	left: 0;
 	bottom: 0;
-}
+}*/
 
 
 .footer {
 	background-color: black; 
-    height: 200px;
-    width: 100%;
-    position: relative;
-    margin-left: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: left;
-    padding-top: 60px;
-    display: flex;
-    justify-content: space-around;
-    padding-right: 500px;
-}
-}
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
 
 
 
@@ -196,7 +185,7 @@ img:hover {
 .navbar {
 	color: #fff;
 	background-color: #000;
-	line-height: var(--header-height);k
+	line-height: var(--header-height);
 	height: 75px;
     padding: 0;
     font-family: 'Montserrat';
@@ -771,7 +760,7 @@ body {
 /* NEW CONTAINERS - LANDING PAGE IMAGES*/
 
 .container2 {
-
+	
 }
 
 .slideshow {

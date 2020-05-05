@@ -3,7 +3,7 @@
 
 
 
-<base href="http://arianaad.com/aau/wnm608/">
+<base href="http://arianaad.com/aau/wnm608/adili.ariana/">
 
 <meta name="viewport" content="width=device-width">
 
