@@ -1,12 +1,21 @@
 <header class="navbar">
 		<div class="display-flex">
 			<div class="flex-stretch">
-				<h1>Store
-				</h1>
-
+		    </div>
 			</div>
-			<nav class="nav flex-none">
-				<ul class="display-flex">
+           
+           <a href="home.php">
+    
+            <!-- <img class="logo" src="http://www.manalishah.com/aau/wnm608/shah.manali/images/logo.png" alt="dense chocolates"> -->
+
+            <img style="-webkit-user-select: none;margin: auto;" src="http://manalishah.com/aau/wnm608/shah.manali/images/logo.png">
+        </a>
+
+			<nav class="nav-stretch">
+
+				<ul class="flex-strech">
+
+	
 					<!-- li*3>a[href=#]>{Link $} -->
 					<li><a href="home.php">Home</a></li>
 					<li><a href="product_list.php">Store</a></li>

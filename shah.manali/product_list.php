@@ -2,6 +2,7 @@
 <?php
 
 include "lib/php/functions.php";
+include "parts/templates.php";
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -24,28 +25,33 @@ include "lib/php/functions.php";
 
 	
 		<div class="container">
-
+			<div class="card soft">
 			<h2>Product List</h2>
 
-			<!-- ul>li*4>a[href="product_item.php"]>{Product $} -->
-			<ul>
-				<li><a href="product_item.php?id=1">Product 1</a></li>
-				<li><a href="product_item.php?id=2">Product 2</a></li>
-				<li><a href="product_item.php?id=3">Product 3</a></li>
-				<li><a href="product_item.php?id=4">Product 4</a></li>
-			</ul>
-			
+		<div class="grid gap">
+
 			<?php
+            
+            $conn = makeConn();
 
-			$rows = getRows(
-				makeConn(),
-				"SELECT * FROM products"
-			);
+            $rows =getRows
+            (makeConn(),
+            	"SELECT  *
+            	FROM `products`
+            	ORDER BY `date_create` DESC
+            	limit 12
+            	"
 
-			print_p($rows);
+            );
+
+
+			echo array_reduce(
+                $rows,
+                'productListTemplate'
+			)
 
 			?>
-
+		</div>
 	</div>
 	</div>
 

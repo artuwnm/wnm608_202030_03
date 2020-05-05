@@ -97,13 +97,13 @@ code {
 
 
 .navbar {
-         background-color: var(--color-neutral-dark);
-         color: var(--color-neutral-light);
+/*         background-color: var(--color-main-light);
+*/         color: var(--color-main-medium);
          line-height: var(--header-height);
          line-height: 3rem;
 }
 
-.navbar h1 {
+.navbar logo {
 	margin:0
 	font-size:1rem;
 }
@@ -139,9 +139,26 @@ code {
 	.nav-stretch li.active a,
 	.nav-flex li.active a,
 	.nav li.active a {
-		background-color:var(--color-main-dark);
+		background-color:var(--color-main-light);
 		color:inherit;
 	}
+
+.logo
+{
+  max-height: 7rem;
+  width: auto;
+}
+
+#logo-header
+{
+  float: left;
+}
+
+#logo-header a:hover
+{
+  background: none;
+}
+
 
 .nav-crumbs ul,
 .nav-pills ul,

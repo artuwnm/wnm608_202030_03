@@ -30,8 +30,8 @@ function makeConn() {
 function getRows($conn,$sql) {
 	$a = [];
 
-	$result = $conn->query($sql);
-
+    $result = $conn->query($sql);
+    
 	if($conn->errno) die($conn->error);
 
 	while($row = $result->fetch_object()) {
