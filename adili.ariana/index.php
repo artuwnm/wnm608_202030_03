@@ -25,7 +25,7 @@
 			</div>
 			<nav class="nav flex-none">
 				<!-- ul>li*3>a[href=#]>{Link $} -->
-				<ul class="display-flex">
+				<!-- <ul class="display-flex"> -->
 					<!-- <li><a href="index.php">HOME</a></li>
 					<li><a href="productlist.php">STORE</a></li>
 					<li><a href="about.php">ABOUT</a></li>
