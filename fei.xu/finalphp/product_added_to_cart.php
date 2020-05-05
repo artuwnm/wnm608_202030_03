@@ -4,11 +4,11 @@ include_once "../lib/php/functions1.php";
 
 
 // print_p($_SESSION);
-$id = $_GET['id'];
+
 
 $p = array_find(
 	getCart(),
-	function($o) use ($id) { return $o->id==$_GET['id']; }
+	function($o) { return $o->id==$_GET['id']; }
 );
 $o = getRows(makeConn(),
 	"SELECT * FROM `products` WHERE `id` = {$_GET['id']}"

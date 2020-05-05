@@ -4,10 +4,10 @@ include_once "templates.php";
 
 <header id="nav">
 <div class="col-3 col-xs-4 col-sm-1 col-md-4 col-lg-3 col-xl-3">
-	<img src="img/logo-compressor.png" id="logo" height="95" width="254">
+	<img src="img/logo-compressor.png" id="logo" height="50" width="217">
 </div>
 <div class="col-3 col-xs-4 col-sm-1 col-md-4 col-lg-3 col-xl-3">
-<nav>
+	<nav>
 		
 			<ul class="nav">
 				<!-- li*3>a[href=#]>{Link $} -->
@@ -22,7 +22,7 @@ include_once "templates.php";
 				</span>
 				</a></li>
 			</ul>
-</nav>
+	</nav>
 </div>
 <div class="clear"></div>
 </header>

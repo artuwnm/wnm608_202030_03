@@ -48,7 +48,6 @@ function getRows($conn,$sql) {
 
 
 
-
 // CART FUNCTIONS
 
 // Array find loops an array looking for the first object that matches a boolean function

@@ -488,6 +488,9 @@ li{
 
 
 
+
+/* FORMS */
+
 .form-input {
 	display:block;
 	width:100%;
@@ -509,6 +512,8 @@ li{
 	margin:1em 0;
 }
 
+
+.form-select select,
 .form-button {
 	display:block;
 	width:100%;
@@ -527,6 +532,24 @@ li{
 .form-button:hover {
 	text-decoration:none;
 }
+
+	.form-button.confirm {
+		background-color:var(--color-confirm-light);
+	}
+.form-select {
+    position: relative;
+}
+.form-select::after {
+	content:'▼';
+	position:absolute;
+	color:var(--color-neutral-medium);
+	top:50%;
+	right:0.3rem;
+	transform:translateY(-50%);
+	pointer-events:none;
+	font-size:0.7em;
+}
+
 
 
 .hotdog {
@@ -553,3 +576,7 @@ li{
 .hotdog .icon {
 	padding:0 1em;
 }
+.hotdog.light {
+	background-color:var(--color-white);
+}
+

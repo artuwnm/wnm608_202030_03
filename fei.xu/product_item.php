@@ -34,25 +34,24 @@ $images = explode(",",$o->images);
 			<div class="col-xs-12 col-md-7">
 				<div class="card soft">
 					<div class="product-main">
-						<img src="/images/store/<?= $o->thumbnail ?>" alt="">
+						<img src="finalphp/img/store/<?= $o->thumbnail ?>" alt="">
 					</div>
 					<div class="product-thumbs">
 					<?=
 					array_reduce($images,function($r,$o){
-						return $r."<img src='/images/store/$o'>";
+						return $r."<img src='finalphp/img/store/$o'>";
 					})
 					?>
 					</div>
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-5">
-				<form class="card soft flat" method="get" action="data/form_actions.php">
-					<div class="card-section">
-						<h2><?= $o->name ?></h2>
-						<div class="product-description">
-							<div class="product-price">&dollar;<?= $o->price ?></div>
-						</div>
+				<form class="card softuy" method="get" action="data/form_actions.php">
+					<h2><?= $o->name ?></h2>
+					<div class="product-description">
+						<div class="product-price1">&dollar;<?= $o->price ?></div>
 					</div>
+						<br>
 					<div class="card-section">
 						<label class="form-label">Amount</label>
 						<select name="amount" class="form-input">
@@ -75,16 +74,18 @@ $images = explode(",",$o->images);
 						<input type="hidden" name="price" value="<?= $o->price ?>">
 						<input type="submit" class="form-button" value="Add To Cart">
 					</div>
-				</form>
+
+						<br>
+						<br>
+						<br>
+						<h4>Description</h4>
+						<div class="descriptiontext"><?= $o->description ?></div>
+						</form> 
+					</div>
+				</div>
 			</div>
-		</div>
-		<div class="card soft dark">
-			<h3>Description</h3>
-			<div><?= $o->description ?></div>
 		</div>
 	</div>
 	
-</body>
-</html>
 </body>
 </html>

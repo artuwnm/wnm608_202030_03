@@ -1,7 +1,7 @@
 
 <meta charset="UTF-8">
 
-<base href="http://asherrfei.com/aau/wnm608/fei.xu/">
+<base href="http://www.asherrfei.com/aau/wnm608/fei.xu/">
 
 <meta name="viewport" content="width=device-width">
 
