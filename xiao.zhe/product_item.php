@@ -32,32 +32,38 @@ $images = explode(",",$o->images);
 
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-7">
-				<div class="card soft">
+				<div class="card item1">
 					<div class="product-main">
-						<img src="/images/store/<?= $o->thumbnail ?>" alt="">
+						<img src="/aau/wnm608_202030_03/xiao.zhe/images/store/<?= $o->thumbnail ?>" alt="">
 					</div>
 					<div class="product-thumbs">
 					<?=
 					array_reduce($images,function($r,$o){
-						return $r."<img src='/images/store/$o'>";
+						return $r."<img src='/aau/wnm608_202030_03/xiao.zhe/images/store/$o'>";
 					})
 					?>
 					</div>
 				</div>
-			</div>
-			<div class="col-xs-12 col-md-5">
-				<div class="card soft">
-					<h2><?= $o->title ?></h2>
-					<div class="product-description">
+
+<!-- 				<div class="card item1"> -->
+					
+					<div class="col-xs-12 col-md-5">
+					  <div class="card item1">
+						<h2><?= $o->title ?></h2>
+						<div class="product-description">
 						<div class="product-price">&dollar;<?= $o->price ?></div>
-					</div>
-					<div>
+					  </div>
+					  <div>
 						<a class="form-button" href="product_added_to_cart.php">Add To Cart</a>
-					</div>
+					 </div>	 
+				<!-- </div> -->
+			
 				</div>
 			</div>
+	</div>
 		</div>
-		<div class="card soft dark">
+		
+		<div class="card dark">
 			<h3>Description</h3>
 			<div><?= $o->description ?></div>
 		</div>

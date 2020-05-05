@@ -256,7 +256,7 @@ a.navL {
     border-radius: 0.1em;
     margin-left: 50px;
     color: #000;
-    background-color: #ffc908;
+    background-color: #f4f4f4;
     width: 50%;
 	}
 	.card.soft2 {
@@ -264,7 +264,14 @@ a.navL {
 		border-radius:0.3em;
 		margin-left: 50px; 
 	}
-
+	.card.soft3 {
+	box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 0.1em;
+    margin-left: 50px;
+    color: #000;
+    background-color: #f4f4f4;
+    width: 50%;
+	}
 	.card.medium {
 		background-color:var(--color-neutral-medium);
 	}

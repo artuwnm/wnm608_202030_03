@@ -15,46 +15,54 @@ $rows = getRows(
 
 // print_p($rows);
 
-?>
-<!DOCTYPE html>
-<html>
+?><!DOCTYPE html>
+<html lang="en">
 <head>
 	<title>Store: Product List</title>
+	
 	<?php include "parts/meta.php" ?>
 </head>
-	
-</head>
 <body>
-	<header class="navbar">
-		<div class="display-flex">
-			<div class="flex-stretch">
-				<h1>Logo</h1>
-			</div>
-			<nav class="nav-flex flex-none">
-				<ul>
-				<!-- 	li*3>a[href=#]>{Link $} -->
-					<li><a href="index.php">Home</a></li>
-					<li><a href="about.php">About</a></li>
-					<li><a href="store.php">Store</a></li>
-					<li><a href="cart.php">Cart</a></li>				
-				</ul>
-				<?php
 
-				$onn =  makeConn();
-				$result = $conn->query("SELECT * FROM products");
-				while($row = $result->fetch_object()){
-					print_p($row);
-					echo "<div>$row->price</div>";
-				}
-				?>
+	<?php include "parts/navbar.php" ?>
 
-			</nav>
-		</div>
-
-		<div class="container">
+	<div class="container">
 		<h2>Product List</h2>
+        <div class="form-control">
+            <form class="hotdog light" id="product-search">
+                <input type="search" class="search" placeholder="Search Products">
+            </form>
+        </div>
+        <div class="form-control display-flex">
+            <div class="flex-none">
+                <button type="button" class="form-button js-filter" data-type="category" data-value="">All</button>
+            </div>
+            <div class="flex-none">
+                <button type="button" class="form-button js-filter" data-type="category" data-value="Workout">Workout</button>
+            </div>
+            <div class="flex-none">
+                <button type="button" class="form-button js-filter" data-type="category" data-value="Beginner">Beginner</button>
+            </div>
+        </div>
+        <div class="form-control">
+            <!-- .form-select>select>option -->
+            <div class="form-select">
+                <select class="js-sort">
+                    <option value="1">Newest</option>
+                    <option value="2">Oldest</option>
+                    <option value="3">Most Expensive</option>
+                    <option value="4">Least Expensive</option>
+                </select>
+            </div>
+        </div>
 
-		<div class="grid gap">
+
+
+
+
+
+
+		<div class="grid gap productlist">
 
 		<?php
 
@@ -70,6 +78,6 @@ $rows = getRows(
 
 		</div>
 	</div>
-	</header>
+	
 </body>
 </html>
