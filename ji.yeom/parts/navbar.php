@@ -6,26 +6,42 @@ include_once "parts/templates.php"
 
 <header class="navbar">
 	<div class="container display-flex">
-		<div class="logo flex-stretch" style="padding-top: 15px">
-			<a href="index.php"><img src="img/logo-outline.png" alt="logo-outline"></a>
+		<a class="logo" href="index.php">
+				<img src="img/logo.png" alt="logo">
+		</a>
+		
+		<div class="navigation">
+			<nav class="nav flex-none">
+				<ul class="display-flex">
+					<li>
+						<a href="product_list.php">Product</a>
+					</li>
+					<li>
+						<a href="about.php">About</a>
+					</li>
+					<li>
+						<a href="contact.php">Contact</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
-		<nav class="nav-flex flex-none">
-			<ul>
-				<li><a href="http://jiwonyeom.com/aau/wnm608/ji.yeom/product_list.php">Store</a></li>
-				<li><a href="http://jiwonyeom.com/aau/wnm608/ji.yeom/about.php">About</a></li>
-				<li><a href="http://jiwonyeom.com/aau/wnm608/ji.yeom/contact.php">Contact</a></li>
-				<li><div class="icon" style="padding-top: 10px">
-					<a href="http://jiwonyeom.com/aau/wnm608/ji.yeom/sign_in.php"><img src="img/sign-in.jpg" alt="sign-in"></a>
-				</div></li>
-				<li><div class="icon" style="padding-top: 10px">
-					<a href="http://jiwonyeom.com/aau/wnm608/ji.yeom/product_cart.php">
-						<img src="img/cart.jpg" alt="cart">
-						<span class="badge"><?= makeCartBadge(); ?></span>
+		
+		<div class="wrap display-inline-flex">
+			<ul class="icon display-flex">
+				<li>
+					<a href="sign_in.php">
+						<img src="img/sign-in.jpg" alt="sign-in">
 					</a>
-				</div></li>
-
+				</li>
+				<li>
+					<a href="product_cart.php">
+						<img src="img/cart.jpg" alt="cart">
+							<span class="badge"><?= makeCartBadge(); ?></span>
+					</a>
+				</li>
 			</ul>
-		</nav>
+		</div>
+
 	</div>
 </header>
 

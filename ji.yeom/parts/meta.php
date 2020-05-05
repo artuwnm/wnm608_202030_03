@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="http://jiwonyeom.com/aau/wnm608/ji.yeom/lib/css/gridsystem.css">
 	<link rel="stylesheet" href="http://jiwonyeom.com/aau/wnm608/ji.yeom/css/storetheme.css">
 
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="js/products.js"></script>
 
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700&display=swap" rel="stylesheet">

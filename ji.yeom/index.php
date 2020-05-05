@@ -143,11 +143,11 @@ include_once "parts/templates.php";
 <br>
 
 
-	<form role="search" method="get" class="search-form" action="">
+<!-- 	<form role="search" method="get" class="search-form" action="">
 		<label>
 			<input type="search" class="search-field" placeholder="Search …" value="" name="s">
 		</label>
-		<input type="submit" class="search-submit" value="Search">
+		<input type="submit" class="search-submit" value="Search"> -->
 	</form>
 
 	<?php include "parts/footer.php" ?>
