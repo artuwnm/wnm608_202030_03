@@ -14,7 +14,7 @@ function print_p($v) {
 }
 
 
-include_once __DIR__. "/auth.php";
+include_once "auth.php";
 function makeConn() {
 
 	@$conn = new mysqli(...makeAuth());
@@ -23,6 +23,15 @@ function makeConn() {
 
 	$conn->set_charset('utf8');
 
+	return $conn;
+}
+
+function makePDOConn() {
+	try {
+		$conn = new PDO(...makePDOAuth());
+	} catch(PDOException $e) {
+		die($e->getMessage());
+	}
 	return $conn;
 }
 
@@ -77,7 +86,6 @@ function addToCart($id,$amount,$price) {
 			"id"=>$id,
 			"amount"=>$amount,
 			"price"=>$price
-			"size"=>$size
 		];
 	}
 }
@@ -99,5 +107,3 @@ function getCartItems() {
 		return $o;
 	},$data);
 }
-
-?>

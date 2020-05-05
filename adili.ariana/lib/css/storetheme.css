@@ -768,14 +768,14 @@ body {
 	}
 
 
-/* NEW CONTAINERS - IMAGES HOME*/
+/* NEW CONTAINERS - LANDING PAGE IMAGES*/
 
 .container2 {
 
 }
 
 .slideshow {
-	
+
 }
 
 
@@ -795,7 +795,12 @@ body {
 
 
 
-
+.image-square img {
+	width: 5em;
+	height: 5em;
+	object-fit: contain;	
+	object-position: center;
+}
 
 
 

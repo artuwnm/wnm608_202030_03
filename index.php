@@ -6,9 +6,9 @@
 
 	<?php include __DIR__."/parts/meta.php" ?>
 
-	<link rel="stylesheet" href="flib/css/styleguide.css">
-	<link rel="stylesheet" href="finalphp/lib/css/gridsystem.css">
-	<link rel="stylesheet" href="finalphp/lib/css/storetheme.css">
+	<link rel="stylesheet" href="lib/css/styleguide.css">
+	<link rel="stylesheet" href="lib/css/gridsystem.css">
+	<link rel="stylesheet" href="lib/css/storetheme.css">
 	<meta name="viewport" content="width=device-width">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
@@ -25,7 +25,7 @@
 			</div>
 			<nav class="nav flex-none">
 				<!-- ul>li*3>a[href=#]>{Link $} -->
-				<ul class="display-flex">
+				<!-- <ul class="display-flex"> -->
 					<!-- <li><a href="index.php">HOME</a></li>
 					<li><a href="productlist.php">STORE</a></li>
 					<li><a href="about.php">ABOUT</a></li>
