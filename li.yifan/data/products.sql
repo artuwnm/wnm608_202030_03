@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Apr 12, 2020 at 06:51 PM
--- Server version: 5.6.46-cll-lve
+-- Generation Time: May 06, 2020 at 02:18 PM
+-- Server version: 5.6.47-cll-lve
 -- PHP Version: 7.2.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `aau_wnm608_vier`
+-- Database: `aauwnm608vierl`
 --
 
 -- --------------------------------------------------------
@@ -45,20 +45,19 @@ CREATE TABLE `products` (
 -- Dumping data for table `products`
 --
 
-INSERT INTO `test` (`id`, `date_create`, `date_modify`, `title`, `category`, `images`, `thumbnail`, `price`, `description`, `quantity`) VALUES
-(1, '2020-04-12 17:46:00', '2020-04-12 17:46:00', 'Passion in Blood', 'Cloth', 'cloth1.jpg', 'cloth1_m.jpg', '120.00', 'Knit halter dress.', 100),
-(2, '2020-04-12 17:46:00', '2020-04-12 17:46:00', 'Vessel', 'Cloth', 'cloth2.jpg', 'cloth2_m.jpg', '120.00', 'Organza translucent sleeves top with knit skirt.', 100),
-(3, '2020-04-12 17:46:00', '2020-04-12 17:46:00', 'Bound', 'Cloth', 'cloth3.jpg', 'cloth3_m.jpg', '120.00', 'Cut-out shoulder dress with knit waistcoat.', 100),
-(4, '2020-04-12 17:46:00', '2020-04-12 17:46:00', 'Garden', 'Cloth', 'cloth4.jpg', 'cloth4_m.jpg', '120.00', 'Pearl decorated dress with open back.', 100),
-(5, '2020-04-12 17:46:00', '2020-04-12 17:46:00', 'Vines', 'Cloth', 'cloth5.jpg', 'cloth5_m.jpg', '120.00', 'Hollowed-out patchwork dress.', 100),
-(6, '2020-04-12 17:46:00', '2020-04-12 17:46:00', 'Daydream', 'Cloth', 'cloth6.jpg', 'cloth6_m.jpg', '120.00', 'Pearl decorated vest top with long pants.', 100),
-(7, '2020-04-12 17:46:00', '2020-04-12 17:46:00', 'Organ', 'Fabric', 'fabric1.jpg', 'fabric1_m.jpg', '40.00', 'Crimp chiffon fabric.', 100),
-(8, '2020-04-12 17:46:00', '2020-04-12 17:46:00', 'Origami', 'Fabric', 'fabric2.jpg', 'fabric2_m.jpg', '40.00', 'Braided textured chiffon fabric.', 100),
-(9, '2020-04-12 17:46:00', '2020-04-12 17:46:00', 'Mirror', 'Fabric', 'fabric3.jpg', 'fabric3_m.jpg', '40.00', 'Mirror luster feeling imitation silk fabric.', 100),
-(10, '2020-04-12 17:46:00', '2020-04-12 17:46:00', 'Silver Paper', 'Fabric', 'fabric4.jpg', 'fabric4_m.jpg', '40.00', 'Paper feeling wrinkled fabric.', 100),
-(11, '2020-04-12 17:46:00', '2020-04-12 17:46:00', 'Tyvek', 'Fabric', 'fabric5.jpg', 'fabric5_m.jpg', '40.00', 'Laser cutting textured paper feeling fabric.', 100),
-(12, '2020-04-12 17:46:00', '2020-04-12 17:46:00', 'Nylon Organza', 'Fabric', 'fabric6.jpg', 'fabric6_m.jpg', '40.00', 'Gloss nylon organza fabric.', 100),
-(13, '2020-04-12 17:46:00', '2020-04-12 17:46:00', 'Black Pearl', 'Cloth', 'cloth7.jpg', 'cloth7_m.jpg', '120.00', 'Lace dress with hollowed-out waist pajama.', 100),
+INSERT INTO `products` (`id`, `date_create`, `date_modify`, `title`, `category`, `images`, `thumbnail`, `price`, `description`, `quantity`) VALUES
+(1, '2020-05-06 14:07:17', '2020-05-06 14:07:17', 'Passion in Blood', 'cloth', 'images/cloth_passion_1.jpg', 'images/cloth_passion.jpg', '120.00', 'Knit halter dress.', 100),
+(2, '2020-05-06 14:08:41', '2020-05-06 14:08:41', 'Vessel', 'cloth', 'images/cloth_vessel_1.jpg', 'images/cloth_vessel.jpg', '120.00', 'Organza translucent sleeves top with knit skirt.', 100),
+(3, '2020-05-06 14:09:37', '2020-05-06 14:09:37', 'Bound', 'cloth', 'images/cloth_bound_1.jpg', 'images/cloth_bound.jpg', '120.00', 'Cut-out shoulder dress with knit waistcoat.', 100),
+(4, '2020-05-06 14:10:25', '2020-05-06 14:10:25', 'Garden', 'cloth', 'images/cloth_garden_1.jpg', 'images/cloth_garden.jpg', '120.00', 'Pearl decorated dress with open back.', 100),
+(5, '2020-05-06 14:11:18', '2020-05-06 14:11:18', 'Vines', 'cloth', 'images/cloth_vines_1.jpg', 'images/cloth_vines.jpg', '120.00', 'Hollowed-out patchwork dress.', 100),
+(6, '2020-05-06 14:12:37', '2020-05-06 14:12:37', 'Daydream', 'cloth', 'images/cloth_daydream_1.jpg', 'images/cloth_daydream.jpg', '120.00', 'Pearl decorated vest top with long pants.', 100),
+(7, '2020-05-06 14:13:39', '2020-05-06 14:13:39', 'Organ', 'fabric', 'images/fabirc_organ_1.jpg', 'images/fabirc_organ.jpg', '40.00', 'Crimp chiffon fabric.', 100),
+(8, '2020-05-06 14:14:47', '2020-05-06 14:14:47', 'Origami', 'fabric', 'images/fabric_origami_1.jpg', 'images/fabric_origami.jpg', '40.00', 'Braided textured chiffon fabric.', 100),
+(9, '2020-05-06 14:15:36', '2020-05-06 14:15:36', 'Mirror', 'fabric', 'images/fabric_mirror_1.jpg', 'images/fabric_mirror.jpg', '40.00', 'Mirror luster feeling imitation silk fabric.', 100),
+(10, '2020-05-06 14:16:28', '2020-05-06 14:16:28', 'Silver Paper', 'fabric', 'images/fabric_silver_1.jpg', 'images/fabric_silver.jpg', '40.00', 'Paper feeling wrinkled fabric.', 100),
+(11, '2020-05-06 14:17:27', '2020-05-06 14:17:27', 'Tyvek', 'fabric', 'images/fabric_tyvek_1.jpg', 'images/fabric_tyvek.jpg', '40.00', 'Laser cutting textured paper feeling fabric.', 100),
+(12, '2020-05-06 14:18:19', '2020-05-06 14:18:19', 'Nylon Organza', 'fabric', 'images/fabric_nylon_1.jpg', 'images/fabric_nylon.jpg', '40.00', 'Gloss nylon organza fabric.', 100);
 
 --
 -- Indexes for dumped tables
@@ -78,7 +77,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(13) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(13) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

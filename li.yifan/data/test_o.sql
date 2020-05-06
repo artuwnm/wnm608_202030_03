@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 06, 2020 at 01:50 PM
--- Server version: 5.6.47-cll-lve
--- PHP Version: 7.2.7
+-- Generation Time: Apr 07, 2020 at 02:51 PM
+-- Server version: 5.6.45
+-- PHP Version: 7.3.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `aauwnm608vierl`
+-- Database: `hamil19_class`
 --
 
 -- --------------------------------------------------------
@@ -47,8 +47,8 @@ CREATE TABLE `test` (
 --
 
 INSERT INTO `test` (`id`, `name`, `email`, `url`, `price`, `category`, `date_create`, `date_modify`, `description`, `thumbnail`, `images`) VALUES
-(1, 'Apple', 'applebanana.com', 'http://banana.com', '12.50', 'friut', '2020-05-06 12:27:54', '2020-05-06 12:27:54', 'Apple is super cool.', 'images/apple_thumbnail.jpg', 'images/apple_med_1.jpg,images/apple_med_2.jpg,images/apple_med_3.jpg'),
-(2, 'Banana', 'bananabanana.com', 'Http://banana.com', '9.00', 'fruit', '2020-05-06 13:48:19', '2020-05-06 13:48:19', 'Banana jelly ', 'images/banana_thumbnail.jpg', 'images/banana_med_1.jpg');
+(1, 'Apple', 'apple@banana.com', 'http://banana.com', 12.50, 'fruit', '2020-04-07 14:47:59', '2020-04-07 14:47:59', 'Apples are super cool. But not probably a cool company.', 'images/apple_thumbnail.jpg', 'images/apple_med_1.jpg,images/apple_med_2.jpg,images/apple_med_3.jpg'),
+(2, 'Banana', 'banana@banana.com', 'http://banana.com', 9.00, 'fruit', '2020-04-07 14:49:12', '2020-04-07 14:49:12', 'Peanut Butter Jelly Time', 'images/banana_thumbnail.jpg', 'images/banana_med_1.jpg');
 
 --
 -- Indexes for dumped tables
