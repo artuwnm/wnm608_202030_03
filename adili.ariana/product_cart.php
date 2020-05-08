@@ -11,11 +11,11 @@ $cartItems = []; //getCartItems()
 <head>
 	<title>Begari | Product Cart</title>
 	
-	<?php include __DIR__. "/parts/meta.php" ?>
+	<?php include "/parts/meta.php" ?>
 </head>
 <body>
 
-	<?php include __DIR__. "/parts/navbar.php" ?>
+	<?php include "/parts/navbar.php" ?>
 
 	<div class="container">
 		<nav class="nav-crumbs" style="margin:1em 0">
