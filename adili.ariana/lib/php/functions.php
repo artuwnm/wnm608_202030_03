@@ -85,7 +85,7 @@ function addToCart($id,$amount,$price) {
 		$_SESSION['cart'][] = (object)[
 			"id"=>$id,
 			"amount"=>$amount,
-			"price"=>$price
+			"price"=>$price,
 		];
 	}
 }
