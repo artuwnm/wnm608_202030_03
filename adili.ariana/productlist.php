@@ -32,15 +32,40 @@ include_once "lib/php/functions.php";
 		
 		<div class="form-control display-flex">
 			<div class="flex-none">
-				<button type="button" class="form-button js-filter" data-type="category" data-value="">All</button>
-			</div>
-			<!-- <div class="flex-none">
-				<button type="button" class="form-button js-filter" data-type="category" data-value="fruit">Fruit</button>
+				<button type="button" class="form-button js-filter" data-type="category" data-value="all">All</button>
 			</div>
 			<div class="flex-none">
-				<button type="button" class="form-button js-filter" data-type="category" data-value="vegetable">Vegetables</button>
-			</div> -->
+				<button type="button" class="form-button js-filter" data-type="category" data-value="shoes">Shoes</button>
+			</div>
+			<div class="flex-none">
+				<button type="button" class="form-button js-filter" data-type="category" data-value="jackets">Jackets</button>
+			</div>
 		</div>
+
+<!-- Retreive items from database -->
+
+<!-- Get login info from auth.php -->
+<!-- Use login info to connect to database -->
+<!-- Query the products table to get all products -->
+<!-- Parse query results to display products -->
+
+<?php
+	$allProductsQuery = "SELECT * FROM `products`";
+	$conn = makeConn();
+	$allProductsResult = $conn->query($allProductsQuery);
+
+	if ($result->num_rows > 0) {
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+    echo "id: " . $row["id"]. " - ProductName: " . $row["name"]. "- " . $row["new price"]. "<br>";
+  }
+} else {
+  echo "0 results";
+}
+$conn->close();
+?>
+
+
 		
 <!-- SORT BY: LOWEST TO HIGHEST PRICE? -->
 
