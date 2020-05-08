@@ -53,10 +53,10 @@ include_once "lib/php/functions.php";
 	$allProductsQuery = "SELECT * FROM `products`";
 	$conn = makeConn();
 	$allProductsResult = $conn->query($allProductsQuery);
-
-	if ($result->num_rows > 0) {
+	// $results 
+	if ($allProductsResult->num_rows > 0) {
   // output data of each row
-  while($row = $result->fetch_assoc()) {
+  while($row = $allProductsResult->fetch_assoc()) {
     echo "id: " . $row["id"]. " - ProductName: " . $row["name"]. "- " . $row["new price"]. "<br>";
   }
 } else {
