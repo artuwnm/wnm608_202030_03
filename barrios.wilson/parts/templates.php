@@ -5,11 +5,12 @@ function productListTemplate($r,$o) {
 return $r.<<<HTML
 <div class="col-xs-6 col-md-4">
 	<a href="product_item.php?id=$o->id" class="display-block">
-		<figure class="product-figure soft">
-			<div class="product-image"><img src="https://wbarrios.com/aau/wnm608/barrios.wilson/images/$o->thumbnail" alt=""></div>
+		<figure class="product-figure flat">
+			<div class="product-image"><img src="images/$o->thumbnail" alt=""></div>
 			<figcaption class="product-description">
-				<div class="product-price">&dollar;$o->price</div>
 				<div class="product-name">$o->name</div>
+				<div class="product-price">&dollar;$o->price</div>
+				
 			</figcaption>
 		</figure>
 	</a>
@@ -24,7 +25,7 @@ $selectamount = selectAmount($o->amount,10);
 return $r.<<<HTML
 <div class="display-flex card-section">
 	<div class="flex-none product-thumbs" style="margin-right:1em">
-		<img src="https://wbarrios.com/aau/wnm608/barrios.wilson/images/$o->thumbnail">
+		<img src="images/$o->thumbnail">
 	</div>
 	<div class="flex-stretch">
 		<div class="display-flex">
@@ -34,7 +35,7 @@ return $r.<<<HTML
 			<div class="flex-none">&dollar;$pricefixed</div>
 		</div>
 		<div class="display-flex">
-			<div class="flex-stretch" style="font-size:0.8em">
+			<div class="flex-stretch" style="font-size:1em">
 				<form method="get" action="data/form_actions.php">
 					<input type="hidden" name="action" value="delete-cart-item">
 					<input type="hidden" name="id" value="$o->id">

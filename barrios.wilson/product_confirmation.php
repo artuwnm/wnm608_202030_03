@@ -9,18 +9,29 @@
 
 	<?php include "parts/navbar.php" ?>
 
+	<header class="pagename">
+		<div class="container display-flex">
+			<div class="pagename">Product Confirmation</div>
+			</div>
+	</header>
+
 	<div class="container">
 		<div class="card soft">
-			<h2>Product Confirmation</h2>
+			
+			<div class="thankyoupic"><img src="img/thankyou.png"></div>
 
 			<div>
-				<h3 style="text-align: center">Thank you for purchasing.</h3>
+				<div class="thankyou">For purchasing </div>
+				<br>
 			</div>
 
-				<a class="form-button-red" href="product_list.php">Continue Shopping</a>
+
+				<a class="form-button-green" href="product_list.php">Continue Shopping</a>
+				<br>
 			</div>
 		</div>
 	</div>
 	
 </body>
+<?php include "parts/footer.php" ?>
 </html>

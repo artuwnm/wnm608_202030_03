@@ -42,25 +42,24 @@ session_start();
 <div class="grid gap">
 			<div class="col-xs-12 col-md-3">
 				
-<div>
+				<div>
 				<!-- figure>img+figcaption -->
-				<figure class="product-figure soft">
-					<img src="https://via.placeholder.com/300" alt="">
-					<figcaption>
+					<figure class="product-figure soft">
+						<img src="https://via.placeholder.com/300" alt="">
+						<figcaption>
 						Product
-					</figcaption>
-				</figure>
+						</figcaption>
+					</figure>
+				</div>
 			</div>
-			</div>
-			<div class="col-xs-12 col-md-3">
-				
 
-			<div>
+			<div class="col-xs-12 col-md-3">
+				<div>
 				<!-- figure>img+figcaption -->
-				<figure class="product-figure soft">
+					<figure class="product-figure soft">
 					<img src="https://via.placeholder.com/300" alt="">
 					<figcaption>
-						Product
+					Product
 					</figcaption>
 				</figure>
 			</div>

@@ -1,7 +1,7 @@
 :root {
 	--color-neutral-dark: #9e9e9e;
 	--color-neutral-medium: #999;
-	--color-neutral-light: #eee;
+	--color-neutral-light: #ffffff;
 
 	--color-main-light: #eac3fa;
 	--color-main-medium: #fc4312;
@@ -32,6 +32,10 @@ body {
 	margin-bottom:1em;
 }
 
+.pagename {
+	margin-bottom:1.5em;
+}
+
 
 
 
@@ -55,7 +59,11 @@ body {
 	.product-figure.soft {
 		border-radius:0em;
 		overflow:hidden;
-		box-shadow:0 5px 5px rgba(0,0,0,0.1);
+	}
+
+.product-figure.flat {
+		border-radius:0em;
+		overflow:hidden;
 	}
 
 	.product-figure.overlay {
@@ -69,12 +77,12 @@ body {
 		left:0;
 		width:100%;
 		height:100%;
-		background-color:rgba(0,0,0,0.5);
+		background-color:rgba(0,0,0,3);
 		transition:all 0.3s;
 		opacity:0;
 	}
 	.product-figure.overlay:hover figcaption {
-		opacity:1;
+		opacity:10;
 	}
 	.product-figure.overlay img {
 		transition:all 0.5s;
@@ -87,12 +95,14 @@ body {
 	.product-description {
 		font-weight:normal;
 		text-decoration:none;
+		font-size: 16px;
+
 	}
 
 	.product-name {
 		font-family:'Raleway', sans-serif;
-		font-weight: 600;
-		font-size: 18px;
+		font-weight: 500;
+		font-size: 20px;
 		text-decoration:none;
 	}
 
@@ -103,16 +113,69 @@ body {
 
 .product-main img {
 	width:100%;
-	height:60vh;
+	height:100%;
 	object-fit:cover;
 }
 .product-thumbs img {
-	height:100px;
-	width:100px;
+	width:33.3%;
 	object-fit:cover;
-	padding-top: 1em;
-	padding-right: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+	float: left;
+
 }
+
+.pagename{
+	font-family:'Raleway', sans-serif;
+	font-weight:400;
+	font-size:30px;
+	padding-top: 0.5em;
+
+}
+
+.thankyou {
+		display: block;
+		font-family:'Raleway', sans-serif;
+		font-weight: 400;
+		font-size: 1.7em;
+		text-decoration:none;
+		text-align: center;
+
+}
+
+
+}
+h2.product-name {
+    margin: 0;
+    font-size:2.5em;
+}
+.product-category {
+    margin-bottom: 1rem;
+    font-size: 0.9em;
+    color: var(--color-neutral-medium);
+}
+
+.product-price{
+	margin: 0;
+    font-size:1.2em;
+}
+
+
+
+.image-square img {
+	width:7em;
+	height:7em;
+	object-fit:contain;
+	object-position:center;
+	margin-right: 2em;
+}
+.itemlist-item {
+	margin:1em;
+	padding:1em;
+	border-radius:0.5em;
+	border:1px solid var(--color-neutral-light);
+}
+
 
 
 

@@ -24,6 +24,12 @@ session_start();
 <body>
 	<?php include "parts/navbar.php" ?>
 
+	<header class="pagename">
+		<div class="container display-flex">
+			<div class="pagename">Contact us</div>
+			</div>
+	</header>
+
 
 	<div class="container">
   

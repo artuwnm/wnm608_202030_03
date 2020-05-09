@@ -19,8 +19,15 @@ include_once "lib/php/functions.php";
 
 	<?php include "parts/navbar.php" ?>
 
-	<div class="container">
-		<h2>Product List</h2>
+
+	<header class="pagename">
+		<div class="container display-flex">
+			<div class="pagename">Product List</div>
+			</div>
+	</header>
+		
+			
+<div class="container">
 
 <div class="grid gap">
 			
@@ -32,7 +39,7 @@ include_once "lib/php/functions.php";
 							<option value="2">Oldest</option>
 							<option value="3">Most Expensive</option>
 							<option value="4">Least Expensive</option>
-							<option value="5">Lenght</option>
+							<option value="5">Size</option>
 
 						</select>
 					</div>
@@ -42,11 +49,11 @@ include_once "lib/php/functions.php";
 			<div class="col-xs-12 col-md-4">
 				<div class="form-control display-flex">
 					<div class="flex-none">
-						<button type="button" class="form-button-yellow js-filter" data-type="material" data-value="">All</button></div>
+						<button type="button" class="form-button-yellow-normal js-filter" data-type="material" data-value="">All</button></div>
 						<div class="flex-none">
-						<button type="button" class="form-button-yellow js-filter" data-type="material" data-value="plastic">Plastic</button></div>
+						<button type="button" class="form-button-yellow-normal js-filter" data-type="material" data-value="plastic">Plastic</button></div>
 						<div class="flex-none">
-						<button type="button" class="form-button-yellow js-filter" data-type="material" data-value="metal">Metal</button>
+						<button type="button" class="form-button-yellow-normal js-filter" data-type="material" data-value="metal">Metal</button>
 					</div>
 				</div>
 			</div>
@@ -55,15 +62,23 @@ include_once "lib/php/functions.php";
 			<div class="col-xs-12 col-md-4">
 				<div class="form-control">
 						<form class="hotdog light" id="product-search">
-						<input type="search" class="search" placeholder=" Search Products "><img class="icon" src="https://wbarrios.com/aau/wnm608/barrios.wilson/img/search.png" alt="">
+						<input type="search" class="search" placeholder=" Search Products "><img class="icon-form" src="https://wbarrios.com/aau/wnm608/barrios.wilson/img/search.png" alt="">
 						</form>
 				</div>
 			</div>
 
+	</div>
 </div>
+
+</div>
+
+<div class="container">
+
 
 <div class="grid gap productlist"></div>
 	</div>
+
+
 
 	<?php include "parts/footer.php" ?>
     </div>

@@ -16,13 +16,21 @@ $cartItems = getCartItems();
 
 	<?php include "parts/navbar.php" ?>
 
+	<header class="pagename">
+		<div class="container display-flex">
+			<div class="pagename">Product Cart</div>
+			</div>
+	</header>
+
 	<div class="container">
-		<h2>Cart</h2>
+
 		<nav class="nav-crumbs" style="margin:1em 0">
 			<ul>
-				<li><a href="product_list.php">Back</a></li>
+				<li><a href="product_list.php"><img class="arrow" src="img/back.png" alt="Back"> Back</a></li>
 			</ul>
 		</nav>
+
+
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-8">
 				<div class="card flat">
@@ -31,19 +39,26 @@ $cartItems = getCartItems();
 				?>
 				</div>
 			</div>
+
+
 			<div class="col-xs-12 col-md-4">
+
 				<div class="card flat">
 					<?= cartTotals() ?>
 					<div class="card-section">
-						<a href="product_checkout.php" class="form-button confirm">Checkout</a>
+						<a href="product_checkout.php" class="form-button-red">Checkout</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<?php include "parts/footer.php" ?>
     </div>
 	
 </body>
+
+<div class="footer">
+  	<p><img class="logo-footer" src="img/coolkeychains-logo.png" alt="CoolKeychains"></p>
+	<h5>Cool Keychains.com ©2020 by Wilson Barrios | MFA-CA | #04389249 </h5>
+  </div>
 </html>

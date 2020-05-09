@@ -10,3 +10,13 @@ function makeAuth () {
 
 	];
 }
+
+function makePDOAuth() {
+	return[
+	"mysql:host=localhost;dbname=wilsonbarrios_aawm", // host and database name
+		"wilsonbarrios_wilsonbarrios", // database USER name
+		"Wb@rr10s8133",	// database USER password
+		[PDO::MYSQL_ATTR_INIT_COMMAND=>"SET NAMES utf8"]
+
+	];
+}

@@ -23,11 +23,16 @@ $images = explode(",",$o->images);
 
 	<?php include "parts/navbar.php" ?>
 
+	<header class="pagename">
+		<div class="container display-flex">
+			<div class="pagename">Product Page</div>
+			</div>
+	</header>
+
 	<div class="container">
-		<h2>Product Page</h2>
 		<nav class="nav-crumbs" style="margin:1em 0">
 			<ul>
-				<li><a href="product_list.php"><img class="arrow" src="https://wbarrios.com/aau/wnm608/barrios.wilson/img/back.png" alt="Back"></a></li>
+				<li><a href="product_list.php"><img class="arrow" src="https://wbarrios.com/aau/wnm608/barrios.wilson/img/back.png" alt="Back"> BACK</a></li>
 
 				
 
@@ -55,11 +60,20 @@ $images = explode(",",$o->images);
 						<h2><?= $o->name ?></h2>
 						<div class="product-description">
 							<div class="product-price">&dollar;<?= $o->price ?></div>
-						</div>
-					</div>
-					<div class="card-section">
+							<br>
+						
+					
+					
+
+					<h3>Description</h3>
+					<div class="product-description">
+					<div><?= $o->description ?></div>
+				</div>
+					<br>
+					<br>
 						<label class="form-label">Amount</label>
 						<select name="amount" class="form-input">
+							
 							<!-- option*10>{$} -->
 							<option>1</option>
 							<option>2</option>
@@ -77,13 +91,18 @@ $images = explode(",",$o->images);
 						<input type="hidden" name="action" value="add-to-cart">
 						<input type="hidden" name="id" value="<?= $o->id ?>">
 						<input type="hidden" name="price" value="<?= $o->price ?>">
-						<input type="submit" class="form-button" value="Add To Cart">
+						<input type="submit" class="form-button-green" value="Add To Cart">
 					</br>
-						<h2>Description</h2>
-			<div><?= $o->description ?></div>
+						
 					</div>
 				</form>
 			</div>
+		</div>
+	</div>
+
+	<div class="container">
+			<h2>Recommended Products</h2>
+			<?php recommendedSimilar($o->category,$o->id) ?>
 		</div>
 	</div>
 

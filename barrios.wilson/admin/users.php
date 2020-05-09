@@ -149,7 +149,7 @@ HTML;
 <head>
 	<title>Learning Data</title>
 	
-	<?php include "../parts/meta.php" ?>
+	<?php include "https://wbarrios.com/aau/wnm608/barrios.wilson/parts/meta.php" ?>
 </head>
 <body>
 

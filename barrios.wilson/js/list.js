@@ -43,7 +43,7 @@ $(()=>{
 			this.value==4 ?
 				getData({type:"product_sort",column:'price',dir:'ASC'}) :
 			this.value==5 ?
-				getData({type:"product_sort",column:'Size',dir:'ASC'}) :
+				getData({type:"product_sort",column:'length',dir:'ASC'}) :
 
 
 			getData({type:'product_all'})

@@ -22,30 +22,42 @@ $o = getRows(makeConn(),
 
 	<?php include "parts/navbar.php" ?>
 
+	<header class="pagename">
+		<div class="container display-flex">
+			<div class="pagename">Product Item</div>
+			</div>
+	</header>
+
 	<div class="container">
-		<h2>Product Item</h2>
+
+		<div class="thankyoupic"><img src="img/thankyou.png"></div>
+		
 		<div class="card soft">
 			
 
-			<div>
-				Thank you for adding <?= $p->amount ?> of the <?= $o->name ?> to the cart.
+
+			<div class="thankyou">
+				For adding <?= $p->amount ?> of the <?= $o->name ?> to the cart.
 			</div>
+		</div>
 
 			<nav class="nav-flex">
 				<ul>
 					<li class="flex-none">
-						<a href="product_item.php?id=<?= $o->id ?>">Back to the <?= $o->name ?></a>
+						<a href="product_item.php?id=<?= $o->id ?>"><img class="arrow" src="img/back.png" alt="Back"> Back to the <?= $o->name ?></a>
 					</li>
 					<li class="flex-stretch"></li>
 					<li class="flex-none">
-						<a href="product_list.php">Continue Shopping</a>
+						<a href="product_list.php">Continue Shopping <img class="arrow" src="img/store.png" alt="store"></a>
 					</li>
 				</ul>
 			</nav>
+			<br>
+			<br>
 		</div>
 	</div>
     
-	
+	<?php include "parts/footer.php" ?>
 </body>
 </html>
 
