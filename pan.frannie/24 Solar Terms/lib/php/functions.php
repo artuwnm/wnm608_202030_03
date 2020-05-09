@@ -53,7 +53,11 @@ function getRows($conn,$sql) {
 
 // Array find loops an array looking for the first object that matches a boolean function
 function array_find($array,$fn) {
-	foreach($array as $o) if($fn($o)) return $o;
+	foreach($array as $o) {
+
+		if($fn($o)) 
+			return $o;
+	}
 	return false;
 }
 

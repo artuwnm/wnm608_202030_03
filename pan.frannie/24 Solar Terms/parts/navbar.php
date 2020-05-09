@@ -1,4 +1,6 @@
-
+<?php
+include_once "parts/templates.php";
+?>
 
 	<header class="navbar">
 		<div class="container display-flex">
@@ -31,8 +33,11 @@
 
             <div class="carticon">
 		    	<a class="carticon" href="product_cart.php">
-		    		<img src="img/iconcart.png" alt="cart">
+		    		<span><img src="img/iconcart.png" alt="cart"></span>
+		    		<span class="badge"><?= makeCartBadge(); ?></span> 
+                    
 		    	</a>
+
 		    </div>
 
 

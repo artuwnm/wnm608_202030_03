@@ -6,7 +6,7 @@ return $r.<<<HTML
 <div class="col-xs-6 col-md-4">
 	<a href="product_item.php?id=$o->id" class="display-block">
 		<figure class="product-figure">
-			<div class="product-image"><img src="img/$o->thumbnail" alt=""></div>
+			<div class="product-image"><img src="..img/$o->thumbnail" alt=""></div>
 			<figcaption class="product-description">
 				<div class="product-title">$o->title</div>
 				<div class="product-price">&dollar;$o->price</div>
@@ -23,8 +23,8 @@ function cartListTemplate($r,$o) {
 $pricefixed = number_format($o->total, 2, '.', '');
 $selectamount = selectAmount($o->amount,10);
 return $r.<<<HTML
-<div class="display-flex card-section">
-	<div class="flex-none product-thumbs" style="margin-right:1em">
+<div class="card-section">
+	<div class="product-thumbs" style="margin-right:1em">
 		<img src="img/$o->thumbnail">
 	</div>
 	<div class="flex-stretch">
@@ -32,7 +32,7 @@ return $r.<<<HTML
 			<div class="flex-stretch">
 				<strong>$o->title</strong>
 			</div>
-			<div class="flex-none">&dollar;$pricefixed</div>
+			<div>&dollar;$pricefixed</div>
 		</div>
 		<div class="display-flex">
 			<div class="flex-stretch" style="font-size:0.8em">
