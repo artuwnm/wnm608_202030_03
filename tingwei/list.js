@@ -1,0 +1,5 @@
+
+
+getData({
+	type:'fruit'
+})
