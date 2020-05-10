@@ -11,3 +11,4 @@
 - http://arianaad.com/aau/wnm608/adili.ariana/product_cart.php
 - http://arianaad.com/aau/wnm608/adili.ariana/productlist.php
 - http://arianaad.com/aau/wnm608/adili.ariana/index.php
+- http://arianaad.com/aau/wnm608/adili.ariana/admin/index.php
