@@ -5,11 +5,14 @@
 	<title>My Style Guide</title>
 
 	<!-- meta:vp -->
+	<!-- <meta name="viewport" content="width=device-width">
+
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="stylesheet" href="../lib/css/styleguide.css">
 	<link rel="stylesheet" href="../lib/css/gridsystem.css">
-	<link rel="stylesheet" href="../css/storetheme.css">
+	<link rel="stylesheet" href="../css/storetheme.css"> -->
+	<?php include "../parts/meta.php" ?>
 
 	<style>
 		h2 {
@@ -508,6 +511,45 @@
 				</div>
 			</div>
 		</div>
+
+
+ 		<h3>Product Figures</h3>
+		<div class="grid gap">
+			<div class="col-xs-6 col-md-4">
+				<a href="#" class="display-block">
+					<figure class="product-figure soft">
+						<div class="product-image"><img src="https://via.placeholder.com/300" alt=""></div>
+						<figcaption class="product-description">
+							<div class="product-price">&dollar;5</div>
+							<div class="product-title">Product</div>
+						</figcaption>
+					</figure>
+				</a>
+			</div>
+			<div class="col-xs-6 col-md-4">
+				<a href="#" class="display-block">
+					<figure class="product-figure soft">
+						<div class="product-image"><img src="https://via.placeholder.com/250" alt=""></div>
+						<figcaption class="product-description">
+							<div class="product-price">&dollar;25</div>
+							<div class="product-title">Product</div>
+						</figcaption>
+					</figure>
+				</a>
+			</div>
+			<div class="col-xs-6 col-md-4">
+				<a href="#" class="display-block">
+					<figure class="product-figure soft">
+						<div class="product-image"><img src="https://via.placeholder.com/310" alt=""></div>
+						<figcaption class="product-description">
+							<div class="product-price">&dollar;15</div>
+							<div class="product-title">Product</div>
+						</figcaption>
+					</figure>
+				</a>
+			</div>
+		</div>
+
     </section>
 
 

@@ -15,6 +15,10 @@
 		</div>
 	</header> -->
 
+	<?php
+	include_once "parts/templates.php";
+	?>
+
 	<!-- header.navbar>h1+nav.nav -->
 	<header class="navbar">
 		<div class="container display-flex">
@@ -24,18 +28,27 @@
 			</div>
 			<nav class="nav flex-none">
 				<!-- ul>Li*3>a[href=#]>{Link $} -->
-				<ul class="display-flex">
+				<!-- <ul class="display-flex">
 					<li class><a href="index.php">Home</a></li>
 					<li class><a href="product_list.php">Product</a></li>
 					<li class><a href="#">Cart</a></li>
-					<li class><a href="#">About</a></li>
+					<li class><a href="about.php">About</a></li>
 					<li class><a href="#">Log in</a></li>
+				</ul> -->
+				<ul>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="product_list.php">Product</a></li>
+					<li><a href="about.php">About</a></li>
+					<li><a href="product_cart.php">
+						<span>Cart</span>
+						<span class="badge"><?= makeCartBadge(); ?></span>
+					</a></li>
 				</ul>
 			</nav>
-			<div class="nav flex-none">
+			<!-- <div class="nav flex-none">
 				<div class="form-control">
 					<input type="search" class="hotdog" placeholder="Search" />
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</header>

@@ -1,7 +1,12 @@
-<!DOCTYPE html>
+<?php
+
+session_start();
+$_SESSION['cart'] = [];
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Store: Product Added to Cart</title>
+	<title>Store: Product Confirmation</title>
 	
 	<?php include "parts/meta.php" ?>
 </head>
@@ -11,10 +16,10 @@
 
 	<div class="container">
 		<div class="card soft">
-			<h2>Product Item</h2>
+			<h2>Product Confirmation</h2>
 
 			<div>
-				Thank you for adding to the cart
+				Thank you for purchasing.
 			</div>
 
 			<div>

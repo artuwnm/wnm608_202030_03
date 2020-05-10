@@ -3,9 +3,9 @@
 include_once "lib/php/functions.php";
 include_once "parts/templates.php";
 
-?>
+$cartItems = getCartItems();
 
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Store: Product Cart</title>
@@ -24,49 +24,20 @@ include_once "parts/templates.php";
 		</nav>
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-8">
-				<div class="card">
+				<div class="card flat">
 				<?php
-				$data = getRows(
-					makeConn(),
-					"SELECT * FROM `products` WHERE `id` in (3,5,9)"
-				);
-				echo array_reduce($data,'cartListTemplate');
+				echo array_reduce($cartItems,'cartListTemplate');
 				?>
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-4">
 				<div class="card flat">
-					<div>
-						<strong>Sub-Total</strong>
-						$3.50
-					</div>
-					<div>
-						<strong>Taxes</strong>
-						$3.50
-					</div>
-					<div>
-						<strong>Total</strong>
-						$3.50
+					<?= cartTotals() ?>
+					<div class="card-section">
+						<a href="product_checkout.php" class="form-button confirm">Checkout</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<div class="container">
-		<div class="card soft">
-			<h2>Product Checkout</h2>
-
-			<form>
-				Checkout form
-			</form>
-
-			<div>
-				<a class="form-button" href="product_checkout.php">
-				Checkout</a>
-			</div>
-		</div>
-	</div>
 	
-</body>
-</html>
