@@ -34,7 +34,7 @@ $images = explode(",",$o->images);
 			<div class="col-xs-12 col-md-7">
 				<div class="card item1">
 					<div class="product-main">
-						<img src="/aau/wnm608_202030_03/xiao.zhe/images/store/<?= $o->thumbnail ?>" alt="">
+						<img src="/aau/wnm608_202030_03/xiao.zhe/images/store/<?= $o->images ?>" alt="">
 					</div>
 					<div class="product-thumbs">
 					<?=
@@ -48,24 +48,41 @@ $images = explode(",",$o->images);
 <!-- 				<div class="card item1"> -->
 					
 					<div class="col-xs-12 col-md-5">
-					  <div class="card item1">
+					  <div class="card ">
 						<h2><?= $o->title ?></h2>
 						<div class="product-description">
+						<?= $o->category ?></div>
 						<div class="product-price">&dollar;<?= $o->price ?></div>
+						<div class="card ">
+						<h3>Description</h3>
+						<div><?= $o->description ?></div>
+						</div>
+
+						<div>
+<!--                       <a class="form-button" href="product_added_to_cart.php?id=<?php /*echo $o->id;*/?>">Add To Cart</a>
+-->
+                            <form method="get" action="data/form_actions.php">
+
+                            <input type="hidden" name="action" value="add-to-cart">
+                            <input type="hidden" name="amount" value="1">
+                            <input type="hidden" name="id" value="<?= $o->id ?>">
+                            <input type="hidden" name="price" value="<?= $o->price ?>">
+                            <input type="submit" class=" form-button large-button" value="Add To Cart">
+                            </form>
+                        </div>
+
 					  </div>
-					  <div>
-						<a class="form-button" href="product_added_to_cart.php">Add To Cart</a>
-					 </div>	 
-				<!-- </div> -->
+
+				</div>
 			
 				</div>
 			</div>
 	</div>
 		</div>
 		
-		<div class="card dark">
-			<h3>Description</h3>
-			<div><?= $o->description ?></div>
+		<div class="container">
+			<h2>Recommended Products</h2>
+			<?php recommendedSimilar($o->category,$o->id) ?>
 		</div>
 	</div>
 	

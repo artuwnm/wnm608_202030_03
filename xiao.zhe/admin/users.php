@@ -1,9 +1,10 @@
 <?php
 
-include "../lib/php/function.php";
+include "../lib/php/functions.php";
 
 $filename = "../data/users.json";
-$users = getData("../data/users.json");
+$users = getData($filename);
+
 // print_p($users);
 // print_p(["POST",$_POST,"GET",$_GET]);
 
@@ -95,7 +96,7 @@ HTML;
 
 echo <<<HTML
 <nav class="nav-pills">
-	<div class="card">
+	<div class="card soft">
 	<ul>
 		<li class="flex-none"><a href="{$_SERVER['PHP_SELF']}">Back</a></li>
 		<li class="flex-stretch"></li>
@@ -139,53 +140,32 @@ HTML;
 }
 
 
+
+
+
+
 ?><!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Users php</title>
-
+	<title>Learning Data</title>
+	
 	<?php include "../parts/meta.php" ?>
-
-</head>
-
 </head>
 <body>
 
-	<!-- <?php include "../parts/navbar.php" ?> -->
-
 	<header class="navbar">
 		<div class="container display-flex">
-			<div class="flex-stretch"></div>
-			<nav class="nav flex-none">
-				<ul class="display-flex">
+			<div class="flex-stretch">
+				<h1>Admin</h1>
+			</div>
+			<nav class="nav-flex flex-none">
+				<ul>
 					<li><a href="admin/users.php">User List</a></li>
 					<li><a href="admin/users.php?id=new">Add New User</a></li>
 				</ul>
 			</nav>
 		</div>
-	</header>	
-
-	<div class="container">
-		<div class="card">
-			<h2>Users</h2>
-
-			<ol>
-			<?php
-
-			for($i=0; $i<count($users); $i++){
-				echo "
-				<li>
-					<strong>{$users[$i]->name}</strong>
-					<span>[{$users[$i]->type}]</span>
-					<span>[{$users[$i]->email}]</span>
-				</li>
-				";
-			}
-
-			?>
-			</ol>
-		</div>
-	</div>
+	</header>
 
 	<div class="container">
 
@@ -204,18 +184,17 @@ HTML;
 			} else {
 
 			?>
-		<div class="card">
+			<div class="card soft">
+			<h2>User List</h2>
 
-			<h2>Users</h2>
-			<nav class="navbar">
+			<nav class="nav">
 			<ul>
 			<?php
 
-			foreach ($users as $user) {
-			
+			foreach($users as $i=>$user) {
 				echo "
 				<li>
-					<a href='admin/users.php?id='>$user->name</a>
+					<a href='admin/users.php?id=$i'>$user->name</a>
 				</li>
 				";
 			}
@@ -224,12 +203,13 @@ HTML;
 			</ul>
 			</nav>
 			</div>
+
 			<?php 
 
 			}
 
 			?>
-	</div>	
+	</div>
 	
 </body>
-</html> 
+</html>

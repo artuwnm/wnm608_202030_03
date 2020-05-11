@@ -1,25 +1,37 @@
 <?php
 
-include "../lib/php/functions.php";
+include "../lib/php/function.php";
 
-$notes = getData("notes.json");
+$filename = "notes.json";
+$file = file_get_contents($filename);
+$notes = json_decode($file);
+
+// $filename = "../data/user.json";
+// $file = file_get_contents($filename);
+// $users = json_decode($file);
+
 $users = getData("../data/users.json");
 
-// print_p($users);
+
+
+print_p($users);
 
 ?><!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<title>Learning Data</title>
-	
+	<title>Learing Data</title>
+
 	<?php include "../parts/meta.php" ?>
+
+</head>
+
 </head>
 <body>
 
 	<?php include "../parts/navbar.php" ?>
 
 	<div class="container">
-		<div class="card soft">
+		<div class="card">
 			<h2>Notes</h2>
 
 			<ul>
@@ -32,7 +44,7 @@ $users = getData("../data/users.json");
 			?>
 			</ul>
 		</div>
-		<div class="card soft">
+		<div class="card">
 			<h2>Users</h2>
 
 			<ol>
@@ -43,6 +55,7 @@ $users = getData("../data/users.json");
 				<li>
 					<strong>{$users[$i]->name}</strong>
 					<span>[{$users[$i]->type}]</span>
+					<span>[{$users[$i]->email}]</span>
 				</li>
 				";
 			}

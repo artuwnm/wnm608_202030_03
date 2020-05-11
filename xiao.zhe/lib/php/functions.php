@@ -1,5 +1,8 @@
 <?php
 
+session_start();
+
+
 
 function getData($f) {
 	return json_decode(file_get_contents($f));
@@ -23,6 +26,15 @@ function makeConn() {
 	return $conn;
 }
 
+function makePDOConn() {
+	try {
+		$conn = new PDO(...makePDOAuth());
+	} catch(PDOException $e) {
+		die($e->getMessage());
+	}
+	return $conn;
+}
+
 
 function getRows($conn,$sql) {
 	$a = [];
@@ -43,6 +55,9 @@ function getRows($conn,$sql) {
 
 
 
+
+
+
 // CART FUNCTIONS
 
 // Array find loops an array looking for the first object that matches a boolean function
@@ -51,8 +66,13 @@ function array_find($array,$fn) {
 	return false;
 }
 
+
+function getCart() {
+	return isset($_SESSION['cart']) ? $_SESSION['cart'] : [];
+}
+
 function addToCart($id,$amount,$price) {
-	$cart = isset($_SESSION['cart']) ? $_SESSION['cart'] : [];
+	$cart = getCart();
 	
 	$p = array_find(
 		$cart,
@@ -71,7 +91,7 @@ function addToCart($id,$amount,$price) {
 }
 
 function getCartItems() {
-	$cart = isset($_SESSION['cart']) ? $_SESSION['cart'] : [];
+	$cart = getCart();
 
 	if(empty($cart)) return [];
 
@@ -83,7 +103,7 @@ function getCartItems() {
 	return array_map(function($o) use ($cart) {
 		$p = array_find($cart,function($co) use ($o){ return $co->id==$o->id; });
 		$o->amount = $p->amount;
-		$o->total = $p->amount + $o->price;
+		$o->total = $p->amount * $o->price;
 		return $o;
 	},$data);
 }
