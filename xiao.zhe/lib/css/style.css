@@ -211,7 +211,7 @@ a.navL {
 .nav-flex a,
 .nav a {
 	display: block;
-	padding: 0.2em 0.3em;
+	padding: 0.2em 0.8em;
 }
 
 
@@ -356,6 +356,16 @@ a.navL {
     width: 45%;
     float: left;
     border-right: 20px;
+	}
+
+	.card.home {
+	box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 0.1em;
+    margin-left: 0px;
+
+    color: #000;
+    background-color: #f4f4f4;
+    width: 96%;
 	}
 	.card.soft1 {
 	box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.1);

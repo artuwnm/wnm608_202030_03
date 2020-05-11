@@ -1,3 +1,17 @@
+<?php
+
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+
+$rows = getRows(
+    makeConn(),
+    "SELECT *
+    FROM `products`
+    ORDER BY `date_create` DESC
+    LIMIT 0,4
+    "
+);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,9 +20,9 @@
 	<?php include "parts/meta.php" ?>
 
 </head>
-
-<div style="width: 100%; height:500px; overflow:hidden;" ><img class="home_image" src="images/home/title_image.jpg"></div>
-	<header>
+<body>
+	<div style="width: 100%; overflow:hidden;" ><img style="width:100%;height:auto;" class="home_image" src="images/home/title_image.jpg"></div>
+	<header  style="position:absolute;right:0;top:0;z-index:2;width:100%;">
 			<div class="container ">
 
 			<nav class="nav">
@@ -27,18 +41,15 @@
 		</div>
 	</header>
 
-
-
-<body>
-    <div style="width:90%;background:#fff;overflow:hidden;padding-left:5%;padding-right:5%;">
+    <div class="container ">
 
 
 
-        <div style="width:100%;margin:0 auto;background:150px;background:#eee;padding-top:10px;padding-bottom:10px;margin-top:5%;margin-bottom:5%;">
-            <div style="font-weight:bold;padding-left:10px;padding-bottom:10px;">About Us Bay Area Atheles</div>
-            <div style="font-size:12px;text-indent:24px;padding-left:10px;padding-bottom:10px;">Unde, iste neque laborum, aperiam quod dignissimos voluptatum facere! Voluptatibus, distinctio, in. Vitae qui, reprehenderit facere rerum ad dolorem doloremque!</div>
-            <div style="text-align:right;padding-right:10px">N°F COACH</div>
-        </div>
+        <div class="card">
+            <h2>About Us Bay Area Atheles</h2>
+            <p>	N°F is a platform that can deliveris you such quaility workout plan. If you want results, you need to take action. N°F is the only website that turns your bio-data into a custom workout plan - built for you.</p>
+            <div style="text-align:right;padding-right:10px"><a href="about.php">More</a></div>
+        </div><br><br><br>
 
 
 
@@ -54,7 +65,7 @@
 
         <div style="width:100%;margin-top:10%;">
             <div style="float:left;width:25%;">Contact with us</div>
-            <div style="float:left;color:#ee8734;font-size:30px;width:20%;">N°F</div>
+            <div style="float:left;color:#ee8734;font-size:30px;font-weight:bold; width:20%;">N°F</div>
             <div style="float:left;width:25%;">
                 <div  style="font-weight:bold">MENU</div>
                 <div>
@@ -64,9 +75,9 @@
                     <div style="margin-top:20px;"><a href="cart.php"  style="font-weight:normal;text-decoration:none;">Cart</a></div>
                 </div>
             </div>
-            <div style="float:right;width:30%;">
-                <div>Contact</div>
-                <div>reprehenderit facere rerum ad dolorem doloremque!</div>
+            <div >
+                <div  style="font-weight:bold">Office</div><br> 
+                <div>180 NEW MONTGOMERY<br><br>Academy of Art University<br><br>San Fransisco<br><br>CA</div>
             </div>
         </div>
 

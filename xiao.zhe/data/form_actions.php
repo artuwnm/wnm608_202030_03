@@ -32,4 +32,4 @@ switch($_GET['action']) {
 }
 
 
-print_p($_SESSION);
+// print_p($_SESSION);
