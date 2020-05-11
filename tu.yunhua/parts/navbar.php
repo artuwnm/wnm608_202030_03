@@ -32,8 +32,8 @@ include_once "parts/templates.php";
 
 						<div class="col-md-3 col-xs-4 text-right hidden-xs menu-2">
 							<ul class="display-flex2">
-								<li><a href="product_publish.php">Publish</a></li>
-								<li><a href="product_login.php">Login</a></li>
+								<li><a href="admin/index.php">Publish</a></li>
+								<li><a href="admin/users.php?id=new">Login</a></li>
 								<li><a href="product_cart.php">
 									Cart
 									<span class="badge"><?= makeCartBadge(); ?></span>

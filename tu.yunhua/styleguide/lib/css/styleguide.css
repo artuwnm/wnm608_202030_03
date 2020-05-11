@@ -509,10 +509,18 @@ p {
 .btn-add-bag-xl {
     min-height: 45px;
 
+}
 
 
 
-
-
+.container.white{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 1000px;
+    margin-block-start: 4em;
+    margin-block-end: 4em;
+}
 
 

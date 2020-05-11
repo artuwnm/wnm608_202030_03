@@ -9,32 +9,32 @@ $data = json_decode(file_get_contents("php://input"));
 if(!isset($data->type)) {
 	$output['error'] = "No Type";
 } else switch($data->type) {
-	case "all":
+	case "product_all":
 		$output['result'] =
 			getRows(makeConn(),"SELECT
 			*
-			FROM `products`
+			FROM `Test`
 			ORDER BY `date_create` DESC
-			LIMIT 12
+			LIMIT 45
 			");
 		break;
 		
 	case "product_from_id":
 		$output['result'] =
-			getRows(makeConn(),"SELECT * FROM `products` WHERE id={$data->id}");
+			getRows(makeConn(),"SELECT * FROM `Test` WHERE id={$data->id}");
 		break;
 
 	case "product_search":
 		$output['result'] =
 			getRows(makeConn(),"SELECT
 				*
-				FROM `products`
+				FROM `Test`
 				WHERE
-					`title` LIKE '%{$data->search}%' OR
+					`name` LIKE '%{$data->search}%' OR
 					`description` LIKE '%{$data->search}%' OR
 					`category` LIKE '%{$data->search}%'
 				ORDER BY `date_create` DESC
-				LIMIT 12
+				LIMIT 45
 				");
 		break;
 
@@ -42,10 +42,10 @@ if(!isset($data->type)) {
 		$output['result'] =
 			getRows(makeConn(),"SELECT
 				*
-				FROM `products`
+				FROM `Test`
 				WHERE `$data->column` = '$data->value'
 				ORDER BY `date_create` DESC
-				LIMIT 12
+				LIMIT 45
 				");
 		break;
 

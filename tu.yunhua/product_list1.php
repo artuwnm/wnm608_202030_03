@@ -1,7 +1,10 @@
 <?php
 
-include "lib/php/functions.php";
-include "parts/templates.php";
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+
+session_start();
+$_SESSION['cart'] = [];
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -31,7 +34,7 @@ include "parts/templates.php";
 			"SELECT *
 			FROM `Test`
 			ORDER BY `date_create` DESC
-			LIMIT 21
+			LIMIT 42
 			"
 		);
 

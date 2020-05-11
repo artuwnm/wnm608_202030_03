@@ -64,7 +64,7 @@ $images = explode(",",$o->images);
 							<label class="form-label"><h5>Amount</h5></label>
 						</div>
  -->
-						<select name="amount" class="form-input">
+						<select name="amount" class="form-input1">
 								
 								<!-- option*10>{$} -->
 								<option>1</option>
@@ -99,6 +99,13 @@ $images = explode(",",$o->images);
 					</form>	
 				</div>	
 			</div>
+		</div>
+
+		<div>
+			<h2>Recommended Products</h2>
+			<?php recommendedSimilar($o->category,$o->id) ?>
+		</div>
+
 
 
 <!-- 
@@ -108,6 +115,15 @@ $images = explode(",",$o->images);
 						<br>			
 					</div> -->
 
+
+		</div>
+
+
+
+	<?php include "parts/footer.php" ?>
+
+<!-- GOTOTOP -->
+	<a class="gototop" href="product_item.php"><i class="fas fa-arrow-up"></i></a>
 
 
 </body>

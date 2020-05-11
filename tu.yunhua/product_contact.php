@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<?php
+
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+
+$_SESSION['cart'] = [];
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Contact</title>

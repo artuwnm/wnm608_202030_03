@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+
+session_start();
+$_SESSION['cart'] = [];
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Store: Product Confirmation</title>
@@ -10,11 +15,11 @@
 	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
-		<div class="card soft">
+		<div class="card soft" align=center>
 			<h2>Product Confirmation</h2>
 
 			<div>
-				<span><h5>Thank you for purchasing.</h5></span>
+				<h3>THANK YOU FOR YOUR ORDER.</h3>
 			</div>
 
 			<div>
@@ -24,7 +29,8 @@
 			</div>
 		</div>
 	</div>
-	
+
+	<div class="container white"></div>
 
 	<?php include "parts/footer.php" ?>
 

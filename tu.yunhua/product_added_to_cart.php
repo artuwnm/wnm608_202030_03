@@ -1,6 +1,7 @@
 <?php
 
 include_once "lib/php/functions.php";
+include_once "parts/templates.php";
 
 // print_p($_SESSION);
 
@@ -43,6 +44,7 @@ $o = getRows(makeConn(),
 		</div>
 	</div>
 
+	<div class="container white"></div>
 
 	<?php include "parts/footer.php" ?>
 

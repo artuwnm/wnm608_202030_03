@@ -293,7 +293,6 @@ p {
 .display-inline-block { display:inline-block; }
 
 
-.flex-stretch { flex: 1 1 auto; }
 .flex-none { 
     flex: none;
     padding: 18px 0; 
@@ -302,8 +301,6 @@ p {
 
 .flex-align-center { align-items:center; }
 .flex-justify-center { justify-content:center; }
-
-
 
 
 
@@ -1046,7 +1043,7 @@ img {
 
 .form-control {
     /*display: block;*/
-    width: 35%;
+/*    width: 35%;*/
     padding: .375rem .75rem;
     color: #495057;
     background-color: #fff;
@@ -1081,7 +1078,6 @@ img {
     background: transparent;
     color: #c72101;
     border: 2px solid #c72101;
-    width: 350px;
     height: 70px;
     border: 2px solid #c72101;
     font-size: 14px;
@@ -1853,6 +1849,15 @@ input[type=checkbox], input[type=radio] {
 }
 
 
+
+.btn-primary.btn-outline2:hover{
+    background-color:#c72101;
+    color:var(--color-white);
+    text-decoration:none;
+}
+
+
+
 .btn-primary.btn-outline:hover{
     background-color:#c72101;
     color:var(--color-white);
@@ -2238,8 +2243,8 @@ input[type=checkbox], input[type=radio] {
     -webkit-appearance:none;
     outline:0;
     font-size:0.9em;
-    
 }
+
 
 .form-label {
     display:block;
@@ -2470,16 +2475,17 @@ input[type=checkbox], input[type=radio] {
   color: #c72101;
 }
 
+.product:hover .desc h3, .product:focus .desc h3 {
+    color: #c72101;
+}
+
 .product-carousel {
-  margin-bottom: 7em;
+    margin-bottom: 7em;
 }
 
 .product {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
-
-
-
 
 
 /* Admin/user.php */
@@ -2494,7 +2500,17 @@ input[type=checkbox], input[type=radio] {
 
 
 
+/* White Block*/
 
+
+.container.white{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 1000px;
+    margin-block-start: 28em;
+}
 
 
 

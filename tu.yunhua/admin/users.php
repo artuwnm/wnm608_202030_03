@@ -128,9 +128,9 @@ echo <<<HTML
 				<label class="form-lable" for="user-classes">Phone</label>
 				<input class="form-input" id="user-classes" name="user-classes" value="$classes">
 			</div>
-			<div class="form-control">
+			<div class="form-control" align=center>
 				<h2>
-					<input type="submit" class="form-button" value="Submit" class="btn btn-primary btn-outline">
+					<input type="submit" value="Submit" class="btn btn-primary btn-outline2">
 				</h2>
 			</div>
 		</div>
@@ -164,7 +164,7 @@ HTML;
 			<nav class="nav-flex flex-none">
 				<ul>
 					<li><a href="admin/users.php">User List</a></li>
-					<li><a href="admin/users.php?id=new">Add New User</a></li>
+					<li><a href="admin/users.php?id=new">Join Us</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -213,7 +213,6 @@ HTML;
 
 					</ul>
 				</div>
-				
 
 				<div class="col-md-6 col-xs-6 text-center"></div> 
 

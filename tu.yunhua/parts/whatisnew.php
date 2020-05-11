@@ -14,23 +14,19 @@
 			<div class="row">
 
 
-				<div class="col-md-4 text-center animate-box">
+				<div class="col-md-12 text-center animate-box">
 					<div class="product">
 						<a href="product_item.php?id=48" class="display-block">
 						</a>
 							<figure class="product-new">
-								<a href="" class="display-block">
 									<div class="product-image">
 										<img src="images/store/new1.jpg" alt="">
 									</div>
-								</a>
 								<figcaption class="product-description">
-									<a href="" class="display-block"></a>
-
 									<div class="desc">
-										<h3><a href="" class="display-block">
+										<h3>
 											<div class="product-name"> SHIO sushi Sea Urchin</div>
-										</a></h3>
+										</h3>
 										<span><div class="product-price">$5.00</div></span></div>
 								</figcaption>
 							</figure>
@@ -43,18 +39,14 @@
 						<a href="product_item.php?id=48" class="display-block">
 						</a>
 							<figure class="product-new">
-								<a href="" class="display-block">
 									<div class="product-image">
 										<img src="images/store/new2.jpg" alt="">
 									</div>
-								</a>
 								<figcaption class="product-description">
-									<a href="" class="display-block"></a>
-
 									<div class="desc">
-										<h3><a href="" class="display-block">
+										<h3>
 											<div class="product-name">SHIO today Octopus</div>
-										</a></h3>
+										</h3>
 										<span><div class="product-price">$5.00</div></span></div>
 								</figcaption>
 							</figure>

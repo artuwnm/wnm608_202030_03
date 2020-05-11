@@ -7,24 +7,26 @@ return $r.<<<HTML
 <div class="product">
 	<a href="product_item.php?id=$o->id" class="display-block">
 		<figure class="product-figure soft">
-			<div class="product-image"><img src="images/store/$o->thumbnail" alt=""></div>
+			<div class="product-image"><img src="images/store/$o->thumbnail" alt="">
+			</div>
 			<figcaption class="product-description">
 				<div class="desc">
 					<h3><a href="">
 						<div class="product-name">$o->name</div>
 					</a></h3>
-						<span><div class="product-price">&dollar;5.00</div></span>
-						<!-- 5.00 改成 <?= $o->price ?> -->
+					<span>
+						<div class="product-price">&dollar;5.00</div>
+					</span>
+							<!-- 5.00 改成 <?= $o->price ?> -->
 				</div>
-			</div>
 			</figcaption>
 		</figure>
 	</a>
 </div>
-
-
+</div>
 HTML;
 }
+
 
 
 
@@ -67,6 +69,7 @@ HTML;
 }
 
 
+
 function selectAmount($amount=1,$total=10) {
 	$output = "<select class='form-input' name='amount'>";
 	for($i=1;$i<=$total;$i++){
@@ -75,7 +78,6 @@ function selectAmount($amount=1,$total=10) {
 	$output .= "</select>";
 	return $output;
 }
-
 
 
 
@@ -130,7 +132,6 @@ HTML;
 
 
 
-
 function makeCartBadge() {
 	if(!isset($_SESSION['cart']) || !count($_SESSION['cart'])) {
 		return "";
@@ -138,3 +139,23 @@ function makeCartBadge() {
 		return $r + $o->amount;
 	},0).")";
 }
+
+
+
+
+function recommendedProducts($rows) {
+$products = array_reduce($rows,'productListTemplate');
+echo <<<HTML
+<div class="grid gap productListTemplate">$products</div>
+HTML;
+}
+function recommendedCategory($cat,$limit=3) {
+	$rows = getRows(makeConn(),"SELECT * FROM `Test` WHERE category='$cat' ORDER BY `date_create` DESC LIMIT $limit");
+	recommendedProducts($rows);
+}
+function recommendedSimilar($cat,$id=0,$limit=3) {
+	$rows = getRows(makeConn(),"SELECT * FROM `Test` WHERE category='$cat' AND id <> $id ORDER BY rand() LIMIT $limit");
+	recommendedProducts($rows);
+}
+
+

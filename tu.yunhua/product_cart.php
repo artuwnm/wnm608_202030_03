@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<?php
+
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+
+$cartItems = getCartItems();
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Store: Product Cart</title>
@@ -33,7 +40,8 @@
 			</div>
 		</div>
 	</div>
-
+	
+	<div class="container white"></div>
 
 	<?php include "parts/footer.php" ?>
 
