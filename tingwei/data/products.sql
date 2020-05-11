@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `Products`
 --
 
-CREATE TABLE `Products` (
+CREATE TABLE `products` (
   `id` int(11) NOT NULL,
   `name` varchar(64) NOT NULL,
   `category` varchar(16) NOT NULL,
@@ -66,7 +66,7 @@ INSERT INTO `Products` (`id`, `name`, `category`, `price`, `date_create`, `date_
 --
 -- Indexes for table `Products`
 --
-ALTER TABLE `Products`
+ALTER TABLE `products`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -76,7 +76,7 @@ ALTER TABLE `Products`
 --
 -- AUTO_INCREMENT for table `Products`
 --
-ALTER TABLE `Products`
+ALTER TABLE `products`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 

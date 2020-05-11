@@ -1,15 +1,15 @@
 <?php
-include_once "../parts/templates.php";
+include_once "parts/templates.php";
 ?>
 
 <header class="navbar">
-	<div class="container card blacktopline display-flex">
+	<div class="card blacktopline display-flex">
 		<div class="flex-stretch">
 			<h3>PAINTBOX</h3>
 		</div>
 		<nav class="nav-flex flex-none">
 			<ul>
-				<li><a href="landing_page.php">Home</a></li>
+				<li><a href="index.php">Home</a></li>
 				<li><a href="product_list.php">Store</a></li>
 				<li><a href="product_cart.php">
 					<span>Shopping bag</span>

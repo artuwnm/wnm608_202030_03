@@ -1,5 +1,0 @@
-
-
-getData({
-	type:'fruit'
-})

@@ -1,4 +1,6 @@
 
+/* LAYOUT GRID SYSTEM */
+
 .grid {
 	display:grid;
 	--grid-gap: 1em;

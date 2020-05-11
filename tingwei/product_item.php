@@ -1,76 +1,94 @@
-<?php 
-include "../lib/php/functions.php";
-include "../parts/templates.php";
+<?php
+
+// include, require, include_once, require_once
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
 
 $data = getRows(
 	makeConn(),
-	"SELECT * FROM `Products` WHERE `id` = '{$_GET['id']}'"
+	"SELECT * FROM `products` WHERE `id` = '{$_GET['id']}'"
 );
 $o = $data[0];
+$images = explode(",",$o->images);
 
- ?><!DOCTYPE html>
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Single Product Page</title>
+	<title>Store: Product Item</title>
 	
-	<?php include "../parts/meta.php" ?>
-
-
+	<?php include "parts/meta.php" ?>
 </head>
 <body>
 
-	<?php include "../parts/navbar.php" ?>
-	
+	<?php include "parts/navbar.php" ?>
+
 	<div class="container">
-		<nav class="nav-crumbs">
-			<ul>
-				<li><a href="product_list.php">Back</a></li>
-			</ul>
+		<nav class="nav-crumbs" style="margin:1em 0">
 		</nav>
 
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-7">
-				<div class="card soft">
+				<div class="card">
 					<div class="product-main">
-						<img src="/images/store/<?= $o->thumbnail ?>" alt="">
+						<img src="images/store/<?= $o->thumbnail ?>" alt="">
+					</div>
+					<div class="product-thumbs">
+					<?=
+					array_reduce($images,function($r,$o){
+						return $r."<img src='images/store/$o'>";
+					})
+					?>
 					</div>
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-5">
-				<div class="card soft">
-					<h2><?= $o->name ?></h2>
-					<div class="product-description">
-						<div class="product-price">&dollar;<?= $o->price ?></div>
+				<form class="card flat" method="get" action="data/form_actions.php">
+					<div class="card-section">
+						<h6 class="product-title"><?= $o->title ?></h6>
+						<div class="nav-line"></div>
+						
+						<div class="product-description_detail"><?= $o->description ?>✨
+						<div class="product-description_detail"><?= $o->category ?></div>
+							<div class="product-price_detail">&dollar;<?= $o->price ?></div>
+						</div>
 					</div>
-					<div>
-						<a class="form-button" href="product_added_to_cart.php">ADD TO BAG</a>
+
+					<div class="card-section">
+						<div class="nav-line_thin"></div>
+						<label class="form-label">Amount</label>
+						<div class="form-select">
+							<select name="amount">
+								<!-- option*10>{$} -->
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
+							</select>
+						</div>
 					</div>
-					<div>
-						<a class="form-button" href="cart_page.php">CHECK OUT</a>
+					<div class="card-section">
+						<input type="hidden" name="action" value="add-to-cart">
+						<input type="hidden" name="id" value="<?= $o->id ?>">
+						<input type="hidden" name="price" value="<?= $o->price ?>">
+						<input type="submit" class="form-button_black" value="ADD TO CART">
 					</div>
-				</div>
+				</form>
 			</div>
 		</div>
-	</div>
-    
 
-	<h5>Complete your look</h5>
-	</div>
+		<div>
 
-	<div class="container">
-		<div class="card soft">
-			
-
-			<!-- ul>li*4>a[href="product_item.php"]>{Product $} -->
-			<ul>
-				<li><a href="product_item.php?id=1">Product 1</a></li>
-				<li><a href="product_item.php?id=2">Product 2</a></li>
-				<li><a href="product_item.php?id=3">Product 3</a></li>
-			</ul>
+			<h5>一 MORE TO ADORE 一</h5>
+			<?php recommendedSimilar($o->category,$o->id) ?>
 		</div>
 	</div>
-	<div>
-        <?php include "../parts/footer.php" ?>
-        </div>
+	
 </body>
 </html>

@@ -1,15 +1,18 @@
 <?php
 
 
+
+
 function productListTemplate($r,$o) {
 return $r.<<<HTML
-<div class="col-xs-6 col-md-4">
+<div class="col-xs-12 col-md-4">
 	<a href="product_item.php?id=$o->id" class="display-block">
 		<figure class="product-figure soft">
-			<div class="product-image"><img src="/images/store/$o->thumbnail" alt=""></div>
+			<div class="product-image"><img src="images/store/$o->thumbnail" alt=""></div>
 			<figcaption class="product-description">
-				<div class="product-price">&dollar;$o->price</div>
 				<div class="product-title">$o->title</div>
+				<div class="product-description">$o->description</div>
+				<div class="product-price">&dollar;$o->price</div>
 			</figcaption>
 		</figure>
 	</a>
@@ -23,9 +26,11 @@ $pricefixed = number_format($o->total, 2, '.', '');
 $selectamount = selectAmount($o->amount,10);
 return $r.<<<HTML
 <div class="display-flex card-section">
-	<div class="flex-none product-thumbs" style="margin-right:1em">
-		<img src="/images/store/$o->thumbnail">
+	<div class="nav-line"></div>
+	<div class="flex-none product-thumbs_cart" style="margin-right:1em">
+		<img src="images/store/$o->thumbnail">
 	</div>
+
 	<div class="flex-stretch">
 		<div class="display-flex">
 			<div class="flex-stretch">
@@ -58,11 +63,11 @@ HTML;
 
 
 function selectAmount($amount=1,$total=10) {
-	$output = "<select class='form-input' name='amount'>";
+	$output = "<div class='form-select'><select name='amount'>";
 	for($i=1;$i<=$total;$i++){
 		$output .= "<option ".($i==$amount?"selected":"").">$i</option>";
 	}
-	$output .= "</select>";
+	$output .= "</select></div>";
 	return $output;
 }
 
@@ -117,4 +122,20 @@ function makeCartBadge() {
 	} else return "(".array_reduce($_SESSION['cart'],function($r,$o){
 		return $r + $o->amount;
 	},0).")";
+}
+
+
+function recommendedProducts($rows) {
+$products = array_reduce($rows,'productListTemplate');
+echo <<<HTML
+<div class="grid gap productlist">$products</div>
+HTML;
+}
+function recommendedCategory($cat,$limit=3) {
+	$rows = getRows(makeConn(),"SELECT * FROM `products` WHERE category='$cat' ORDER BY `date_create` DESC LIMIT $limit");
+	recommendedProducts($rows);
+}
+function recommendedSimilar($cat,$id=0,$limit=3) {
+	$rows = getRows(makeConn(),"SELECT * FROM `products` WHERE category='$cat' AND id <> $id ORDER BY rand() LIMIT $limit");
+	recommendedProducts($rows);
 }
