@@ -50,16 +50,14 @@ INSERT INTO `products` (`id`, `date_create`, `date_modify`, `title`, `category`,
 (2, '2020-04-12 21:23:17', '2020-04-12 21:23:17', 'Sunshine', 'Flower', 'Sunshine.jpg', 'flower_sunshine_m.jpg', '32.00', 'Include  sunflower daisy, eucalyptus, tulip.', 10),
 (3, '2020-04-12 21:25:03', '2020-04-12 21:25:03', 'Memory', 'Flower', 'memory.jpg', 'flower_memory_m.jpg', '39.00', 'Include  rose, eucalyptus, tulip.', 10),
 (4, '2020-04-12 21:25:52', '2020-04-12 21:25:52', 'Only', 'Flower', 'only.jpg', 'flower_only_m.jpg', '39.00', 'Include red rose.', 10),
-(5, '2020-04-12 21:26:39', '2020-04-12 21:26:39', 'Peony', 'Flower', 'peony.jpg', 'flower_peony_m.jpg', '30.00', 'Include peony.', 10),
-(6, '2020-04-12 21:28:20', '2020-04-12 21:28:20', 'Daisy', 'Flower', 'daisy.jpg', 'flower_daisy_m.jpg', '20.00', 'Include Daisy', 10),
-(7, '2020-04-12 21:29:04', '2020-04-12 21:29:04', 'Tulip', 'Flower', 'tulip.jpg', 'flower_tulip_m.jpg', '28.00', 'Include tulip, eucalyptus.', 10),
-(8, '2020-04-12 21:29:47', '2020-04-12 21:29:47', 'Carnation', 'Flower', 'carnation.jpg', 'flower_carnatio_m.jpg', '20.00', 'Include carnation.', 10),
-(9, '2020-04-12 21:30:38', '2020-04-12 21:30:38', 'Balloon', 'Flower', 'Balloon.jpg', 'flower_Balloon.jpg', '26.00', 'Include balloon, eucalyptus.', 10),
-(10, '2020-04-12 21:31:29', '2020-04-12 21:31:29', 'Hydrangea', 'Flower', 'Hydrangea.jpg', 'flower_Hydrangea_m.jpg', '28.00', 'Include hydrangea.', 10),
-(11, '2020-04-12 21:32:09', '2020-04-12 21:32:09', 'Rose', 'Flower', 'rose.jpg', 'flower_rose_m.jpg', '36.00', 'Include pink rose.', 10),
-(12, '2020-04-12 21:32:53', '2020-04-12 21:32:53', 'Coreopsis', 'Flower', 'Coreopsis.jpg', 'flower_Coreopsis_m.jpg', '20.00', 'Include Coreopsis.', 10),
-(13, '2020-04-12 21:33:37', '2020-04-12 21:33:37', 'Star', 'Flower', 'star.jpg', 'flower_star_m.jpg', '20.00', 'Include star.', 10),
-(14, '2020-04-12 21:34:15', '2020-04-12 21:34:15', 'Oriole', 'Flower', 'Oriole.jpg', 'flower_Oriole_m.jpg', '20.00', 'Include oriole.', 10);
+(5, '2020-04-12 21:26:39', '2020-04-12 21:26:39', 'Hope', 'Flower', 'hope.jpg', 'flower_hope_m.jpg', '36.00', 'Include peony.', 10),
+(6, '2020-04-12 21:28:20', '2020-04-12 21:28:20', 'Afternoon', 'Flower', 'afternoon.jpg', 'flower_afternoon_m.jpg', '39.00', 'Include Daisy', 10),
+(7, '2020-04-12 21:29:04', '2020-04-12 21:29:04', 'Spring', 'Flower', 'spring.jpg', 'flower_spring_m.jpg', '38.00', 'Include tulip, eucalyptus.', 10),
+(8, '2020-04-12 21:29:47', '2020-04-12 21:29:47', 'Brise', 'Flower', 'Brise.jpg', 'flower_Brise_m.jpg', '36.00', 'Include carnation.', 10),
+(9, '2020-04-12 21:30:38', '2020-04-12 21:30:38', 'Fugitive', 'Flower', 'Fugitive.jpg', 'flower_Fugitive.jpg', '37.00', 'Include balloon, eucalyptus.', 10),
+(10, '2020-04-12 21:31:29', '2020-04-12 21:31:29', 'Joyeux', 'Flower', 'Joyeux.jpg', 'flower_Joyeux_m.jpg', '38.00', 'Include hydrangea.', 10),
+(11, '2020-04-12 21:32:09', '2020-04-12 21:32:09', 'Vivre', 'Flower', 'vivre.jpg', 'flower_vivre_m.jpg', '36.00', 'Include pink rose.', 10),
+(12, '2020-04-12 21:32:53', '2020-04-12 21:32:53', 'Romance', 'Flower', 'Romance.jpg', 'flower_Romance_m.jpg', '29.00', 'Include Coreopsis.', 10);
 
 --
 -- Indexes for dumped tables

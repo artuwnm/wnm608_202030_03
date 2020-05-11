@@ -98,6 +98,7 @@ code {
 .flex-align-center { align-items:center; }
 .flex-justify-center { justify-content:center; }
 
+.flex-vertical {flex-direction: column;}
 
 
 
@@ -290,7 +291,12 @@ button:focus {outline:0;}
 }
 
 .form-input {
-	
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
 input[type=text], select {
@@ -398,6 +404,13 @@ input[type=password], select {
 
 .product-description+.product-price {
 	margin-top:1em;
+}
+
+.product-image {
+	height:300px;
+	width:300px;
+	object-fit:cover;
+	margin-right:1em;
 }
 
 .product-main img {

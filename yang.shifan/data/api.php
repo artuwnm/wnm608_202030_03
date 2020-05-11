@@ -10,7 +10,7 @@ if(!isset($data->type)) {
 	$output['error'] = "No Type";
 } else switch ($data->type) {
 	case 'product_all':
-		$output['result'] = getRows(makeConn(), "SELECT * FROM `products`");
+		$output['result'] = getRows(makeConn(), "SELECT * FROM `products` LIMIT 12");
 		break;
 	case 'product_search':
 		$output['result'] = getRows(makeConn(), 

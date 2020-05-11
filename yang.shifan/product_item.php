@@ -30,7 +30,7 @@
             <div class="col-xs-12 col-md-7">
                 <div class="card flat">
                     <div class="product-main">
-                        <img src="img/little.jpg" alt="">
+                        <img src="img/<?php echo $o->images; ?>" alt="">
                     </div>
                 </div>
             </div>
@@ -65,6 +65,11 @@
                     </div>
                 </form>
             </div>
+        </div>
+
+        <div>
+            <h2>Recommended Products</h2>
+            <?php recommendedSimilar($o->category,$o->id) ?>
         </div>
     </div>
 

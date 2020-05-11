@@ -1,6 +1,7 @@
-<?php include('../parts/header.php') ?>
-<?php include('../lib/php/functions.php')?>
-
+<?php 
+include_once('../lib/php/functions.php');
+include('../parts/admin_header.php');
+?>
 <form>
   <?php
     $index = $_GET['user'];

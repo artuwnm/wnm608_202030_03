@@ -6,7 +6,7 @@ return $r.<<<HTML
 		<div class="col-4 col-s-4">
 			<div class="product-description">
 				<a href="product_item.php?id=$o->id">
-					<img src="img/little.jpg">
+					<img class="product-image" src="img/$o->images">
 					<div>
 						<h2>$o->title</h2>
 						<p>&dollar;$o->price</p>
@@ -14,7 +14,7 @@ return $r.<<<HTML
 				</a>
 			</div>
 		</div>
-	</div>
+	</div>	
 HTML;
 }
 
@@ -33,7 +33,7 @@ $selectamount = selectAmount($o->amount, 10);
 return $r.<<<HTML
 	<div class="display-flex card-section">
 		<div class="flex-none product-thumbs">
-			<img src="img/little.jpg">
+			<img src="img/$o->images">
 		</div>
 		<div class="flex-stretch">
 			<div class="display-flex">
@@ -111,6 +111,23 @@ function makeCartBadge() {
 		}, 0);
 		return "($total_amount)";
 	}
+}
+
+function recommendedProducts($rows) {
+$products = array_reduce($rows,'productListTemplate');
+echo <<<HTML
+	<div class="grid gap">$products</div>
+HTML;
+}
+
+function recommendedCategory($cat,$limit=3) {
+	$rows = getRows(makeConn(),"SELECT * FROM `products` ORDER BY `date_create` DESC LIMIT $limit");
+	recommendedProducts($rows);
+}
+
+function recommendedSimilar($cat,$id=0,$limit=3) {
+	$rows = getRows(makeConn(),"SELECT * FROM `products` ORDER BY rand() LIMIT $limit");
+	recommendedProducts($rows);
 }
 
 ?>
