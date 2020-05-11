@@ -14,7 +14,7 @@
 
 body {
 	background-color: var(--color-neutral-light);
-	padding-bottom: 10em;
+	/* padding-bottom: 10em; */
 }
 
 [class*='col-']>.card {
@@ -35,7 +35,7 @@ body {
 .product-figure img {
 	width: 100%;
 	object-fit: cover;
-	max-height: 30vh;
+	max-height: 50vh;
 	vertical-align: text-bottom;
 }
 

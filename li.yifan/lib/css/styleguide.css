@@ -82,6 +82,13 @@ code {
 
 }
 
+.topshow {
+	margin-right: 0;
+	margin-left: 0;
+	margin-top: 0;
+
+}
+
 .ads {
 	background-image: linear-gradient(to bottom, #fff 50%, #5F4E3D 50%, #5F4E3D 100%);
 	overflow: hidden;
@@ -124,6 +131,16 @@ code {
 
 .flex-align-center {align-items: center;}
 .flex-justify-center {justify-content: center;}
+
+.flex-parent {
+	display:flex;
+}
+.flex-child {
+	flex:1 1 auto;
+}
+.flex-none {
+	flex:none;
+}
 
 /* COMPONENT CLASSES*/
 
@@ -470,3 +487,26 @@ table {
 .hotdog.light {
 	background-color:var(--color-white);
 }
+
+
+
+footer{
+	
+	background-color: var(--color-main-dark);
+	position: relative;
+	left: 0;
+	margin-bottom: 0;
+	width: 100%;
+	color: white;
+	text-align: center;
+	font-size: 1em;
+	padding: 1em;
+
+}
+.footer h2 {
+	font-size: 1em;
+}
+.footer dt {
+	font-size: .667em;
+}
+

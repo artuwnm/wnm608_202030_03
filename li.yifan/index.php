@@ -2,7 +2,7 @@
 
 include_once "lib/php/functions.php";
 
-session_start();
+//session_start();
 
 ?>
 <!DOCTYPE html>
@@ -227,7 +227,10 @@ session_start();
 
 
 	</div>
-		
+	
+	<?php include "parts/footer.php" ?>	
 	
 </body>
+
+
 </html>
