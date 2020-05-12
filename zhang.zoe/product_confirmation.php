@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Store: Product Cart</title>
+	<title>Store: Product Confirmation</title>
 
 	<?php include "parts/meta.php" ?>
 
@@ -13,11 +13,15 @@
 
 	<div class="container">
 		<div class="card soft">
-			<h2>Product Card</h2>
+			<h2>Product Confirmation</h2>
 
 			<div>
-				<a class="form-button" href="product_checkout.php">
-					Checkout
+				Thank you for purchasing
+			</div>
+
+			<div>
+				<a class="form-button" href="product_list.php">
+					Continue shopping
 				</a>
 			</div>
 		</div>

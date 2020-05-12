@@ -2,3 +2,9 @@
 *.css.map
 *.sass.map
 *.scss.map
+
+
+
+*.DS_Store
+*sftp-config.jason
+*auth.php

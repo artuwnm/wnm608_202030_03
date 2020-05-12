@@ -5,26 +5,25 @@
 
 	<?php include "parts/meta.php" ?>
 
+
 </head>
 <body>
 
 	<?php include "parts/navbar.php" ?>
-
-
 	<div class="container">
-		<div class="card soft">
-			<h2>Product Card</h2>
+		<div class="card">
+			<h2>Product Item</h2>
 
 			<div>
-				<a class="form-button" href="product_checkout.php">
-					Checkout
-				</a>
+				Thank you for adding to the cart
+			</div>
+
+
+			<div>
+				<a class = "form-button" href="product_list.php">Continue shopping</a>
 			</div>
 		</div>
 	</div>
-
-	
 	
 </body>
 </html>
-
