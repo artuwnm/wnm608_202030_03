@@ -13,7 +13,7 @@ include_once "templates.php";
 				<li><a href="productlist.php">STORE</a></li>
 				<li><a href="about.php">ABOUT</a></li>
 				<li><a href="product_cart.php">
-					<span>CART</span>
+					<span>CART | </span>
 					<span class="badge"><?= makeCartBadge(); ?></span>
 				</a></li>
 			</ul>
