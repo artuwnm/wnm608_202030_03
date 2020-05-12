@@ -29,7 +29,7 @@ return $r.<<<HTML
 	<div class="flex-stretch">
 		<div class="display-flex">
 			<div class="flex-stretch">
-				<strong>$o->title</strong>
+				<strong>$o->name</strong>
 			</div>
 			<div class="flex-none">&dollar;$pricefixed</div>
 		</div>
@@ -83,6 +83,7 @@ $taxedfixed = number_format($cartprice*1.0725, 2, '.', '');
 
 return <<<HTML
 <div class="card-section">
+	<h3>Your Order</h3>
 	<div class="display-flex">
 		<div class="flex-stretch">
 			<strong>Sub-Total</strong>

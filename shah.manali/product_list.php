@@ -25,7 +25,7 @@ include "parts/templates.php";
 
 	
 		<div class="container">
-			<div class="card soft">
+			<!-- <div class="card soft"> -->
 			<h2>Product List</h2>
 
 		<div class="grid gap">

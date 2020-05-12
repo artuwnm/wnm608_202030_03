@@ -1,5 +1,5 @@
 <header class="navbar">
-		<div class="display-flex">
+		<div class="container display-flex">
 			<div class="flex-stretch">
 		    </div>
 			</div>
@@ -8,25 +8,27 @@
     
             <!-- <img class="logo" src="http://www.manalishah.com/aau/wnm608/shah.manali/images/logo.png" alt="dense chocolates"> -->
 
-            <img style="-webkit-user-select: none;margin: auto;" src="http://manalishah.com/aau/wnm608/shah.manali/images/logo.png">
+            <img class=" logo"src="images/logo.png">
         </a>
 
 			<nav class="nav-stretch">
+				<nav class="nav-pills">
 
 				<ul class="flex-strech">
 
 	
 					<!-- li*3>a[href=#]>{Link $} -->
-					<li><a href="home.php">Home</a></li>
-					<li><a href="product_list.php">Store</a></li>
-					<li><a href="about_page.php">About</a></li>
-					<li><a href="product_cart.php">Cart</a></li>
+					<li><a href="home.php">HOME</a></li>
+					<li><a href="product_list.php">STORE</a></li>
+					<li><a href="about_page.php">ABOUT</a></li>
+					<li><a href="product_cart.php">CART</a></li>
 <div class="display-flex">
 				<div class="flex-stretch"></div>
 				<div class="flex-none">
 					<div class="form-control">
-						<input type="search" class="hotdog" placeholder="Search">
+						<div class="flex-none icon"><input type="search" class="hotdog" placeholder="Search">
 					</div>
+				</div>
 				</div>
 			</div>
 
