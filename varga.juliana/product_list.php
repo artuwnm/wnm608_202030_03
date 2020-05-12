@@ -21,7 +21,6 @@ include_once "lib/php/functions.php";
 
 <br>
 	<div class="container">
-		<h2>Product List</h2>
 
 		<div class="grid gap">
 

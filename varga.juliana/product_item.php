@@ -27,7 +27,7 @@ $images = explode(",",$o->images);
 	<div class="container">
 		<nav class="nav-crumbs" style="margin:1em 0">
 			<ul>
-				<li><a href="product_list.php">Back</a></li>
+				<a href="product_list.php"><img class="arrowback" style="height: 25px" src="images/backbutton-02.png" alt="Back"> Go Back</a>
 			</ul>
 		</nav>
 
@@ -87,6 +87,11 @@ $images = explode(",",$o->images);
 				</form>
 			</div>
 		</div>
+	</div>
+
+	<div class="container">
+		<h2>Similar Products</h2>
+		<?php recommendedSimilar($o->category,$o->id) ?>
 	</div>
 
 	
