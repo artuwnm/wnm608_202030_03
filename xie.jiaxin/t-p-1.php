@@ -74,7 +74,76 @@
 		<div class="product-img">
 			<img src="img/throw-pillow-1.jpg" alt="">
 		</div>   
-		<div class="product-info">
+		<div class="?><!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Store: Product Item</title>
+	
+	<?php include "parts/meta.php" ?>
+</head>
+<body>
+
+	<?php include "parts/navbar.php" ?>
+
+	<div class="container">
+		<nav class="nav-crumbs" style="margin:1em 0">
+			<ul>
+				<li><a href="product_list.php">Back</a></li>
+			</ul>
+		</nav>
+
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-7">
+				<div class="card soft">
+					<div class="product-main">
+						<img src="/images/store/<?= $o->thumbnail ?>" alt="">
+					</div>
+					<div class="product-thumbs">
+					<?=
+					array_reduce($images,function($r,$o){
+						return $r."<img src='/images/store/$o'>";
+					})
+					?>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-5">
+				<div class="card soft flat">
+					<div class="card-section">
+						<h2><?= $o->title ?></h2>
+						<div class="product-description">
+							<div class="product-price">&dollar;<?= $o->price ?></div>
+						</div>
+					</div>
+					<div class="card-section">
+						<label class="form-label">Amount</label>
+						<select name="amount" class="form-input">
+							<!-- option*10>{$} -->
+							<option value="">1</option>
+							<option value="">2</option>
+							<option value="">3</option>
+							<option value="">4</option>
+							<option value="">5</option>
+							<option value="">6</option>
+							<option value="">7</option>
+							<option value="">8</option>
+							<option value="">9</option>
+							<option value="">10</option>
+						</select>
+					</div>
+					<div class="card-section">
+						<a class="form-button" href="product_added_to_cart.php">Add To Cart</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card soft dark">
+			<h3>Description</h3>
+			<div><?= $o->description ?></div>
+		</div>
+	</div>
+	
+</body>
 			<p>Mango Planet Throw Pillow</p>
 			<h3>$20.45</h3>
 			<h4>size</h4>

@@ -1,3 +1,8 @@
+<?php
+
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +10,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link href="https://fonts.googleapis.com/css?family=Catamaran:300|Oxanium:300, 600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="lib/css/styleguide-m4.css">
+	<link rel="stylesheet" href="lib/css/styleguide.css">
 	<link rel="stylesheet" href="lib/css/gridsystem.css">
 	<link rel="stylesheet" href="css/storetheme.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>

@@ -1,90 +1,100 @@
 <?php
 
 session_start();
+error_reporting(E_ALL || ~E_NOTICE);
 
 
-function print_p($v) {
-	echo "<pre>",print_r($v),"</pre>";
+function getData($f) {
+    return json_decode(file_get_contents($f));
 }
 
 
-function getFileData($url) {
-	$file = file_get_contents($url);
-	$data = json_decode($file);
-	return $data;
+function print_p($v) {
+    echo "<pre>",print_r($v),"</pre>";
 }
 
 
 include_once "auth.php";
 function makeConn() {
-	if(!function_exists('makeAuth')) die("No makeAuth, check in auth.php");
+
+    @$conn = new mysqli(...makeAuth());
+
+    if($conn->connect_errno) die($conn->connect_error);
+
+    $conn->set_charset('utf8');
+
+    return $conn;
 }
 
 
-	@$conn = new mysqli(...makeAuth());
+function getRows($conn,$sql) {
+    $a = [];
 
+    $result = $conn->query($sql);
 
+    if($conn->errno) die($conn->error);
 
+    while($row = $result->fetch_object()) {
+        $a[] = $row;
+    }
 
-if($conn->connect_errno) die($conn->connect_error);
-
-$conn->set_charset("utf8");
-
-return $conn;
-
-
-
-function getData($sql) {
-	$conn = makeConn();
-
-	$result = $conn->query($sql);
-
-	if($conn->errno) die($conn->error);
-
-	$arr = [];
-	while($row = $result->fetch_object()) $arr[]=$row;
-
-	$conn->close();
-
-	return $arr;
+    return $a;
 }
 
 
 
 
 
-// function getData($f) {
-// 	return json_decode(file_get_contents($f));
-// }
 
 
-// function print_p($v) {
-// 	echo "<pre>",print_r($v),"</pre>";
-// }
 
 
-// include_once "auth.php";
-// function makeConn() {
+// CART FUNCTIONS
 
-// 	@$conn = new mysqli(...makeAuth());
-
-// 	if($conn->connect_errno) die($conn->connect_error);
-
-// 	$conn->set_charset('utf8');
-
-// 	return $conn;
-// }
+// Array find loops an array looking for the first object that matches a boolean function
+function array_find($array,$fn) {
+    foreach($array as $o) if($fn($o)) return $o;
+    return false;
+}
 
 
-// function getRows($conn,$sql) {
-// 	$a = [];
+function getCart() {
+    return isset($_SESSION['cart']) ? $_SESSION['cart'] : [];
+}
 
-// 	$result = $conn->query($sql);
+function addToCart($id,$amount,$price) {
+    $cart = getCart();
 
-// 	if($conn->errno) die($conn->error);
+    $p = array_find(
+        $cart,
+        function($o) use ($id) { return $o->id==$id; }
+    );
 
-// 	while($row = $result->fetch_object()) {
-// 		$a[] = $row;
-// 	}
+    if($p) {
+        $p->amount += $amount;
+    } else {
+        $_SESSION['cart'][] = (object)[
+            "id"=>$id,
+            "amount"=>$amount,
+            "price"=>$price
+        ];
+    }
+}
 
-// 	return $a;
+function getCartItems() {
+    $cart = getCart();
+
+    if(empty($cart)) return [];
+
+    $ids = implode(",",array_map(function($o){return $o->id;},$cart));
+    $data = getRows(makeConn(),
+        "SELECT * FROM `products` WHERE `id` in ($ids)"
+    );
+
+    return array_map(function($o) use ($cart) {
+        $p = array_find($cart,function($co) use ($o){ return $co->id==$o->id; });
+        $o->amount = $p->amount;
+        $o->total = $p->amount * $o->price;
+        return $o;
+    },$data);
+}

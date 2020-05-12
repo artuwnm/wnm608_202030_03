@@ -25,7 +25,7 @@ $rows = getRows(
     <script src="lib/js/functions.js"></script>
     <script src="js/templates.js"></script>
     <script src="js/list.js"></script>
-
+    
 </head>
 <body>
 
@@ -56,20 +56,9 @@ $rows = getRows(
             <input type="search" class="search" placeholder="Search Products">
         </form>
     </div>
-    <h2 style="display:block;clear:both;overflow:hidden;">
-        <div style="float:left;">Product List</div>
-        <div  style="float:right;font-size:14px;">
-            Sort By
-        <select class="js-sort">
-            <option value="1">Newest</option>
-            <option value="2">Oldest</option>
-            <option value="3">Most Expensive</option>
-            <option value="4">Least Expensive</option>
-        </select>
-        </div>
-    </h2>
+    <h2>Product List</h2>
 
-    <div class="grid gap productlist">
+    <div class="grid gap">
 
         <?php
 

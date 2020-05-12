@@ -7,38 +7,28 @@
 	<!-- meta:vp -->
 	<meta name="viewport" content="width=device-width">
 	<link href="https://fonts.googleapis.com/css?family=Catamaran:300|Oxanium:600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../lib/css/styleguide-m4.css">
+	<link rel="stylesheet" href="../lib/css/styleguide.css">
 	<link rel="stylesheet" href="../lib/css/gridsystem.css">
 	<link rel="stylesheet" href="../css/storetheme.css">
 </head>
 <body>
 	<header class="navbar" id="navbar">
-        <div class="top-menu">
-			<a href="#">join/log in to member profile </a>
-			<a href="#">about us</a>
-            <ul class="flash-right">
-				<li><a href="#">cart</a></li>
-                <li><a href="#">search</a></li>               
+    <div class="container display-flex">
+        <nav class="nav flex-none">
+            <div class="logo">
+                <a href="index.php">
+                    <img src="../img/logo.png" alt="" style="width: 12%;">
+                </a>
+			</div>
+			<ul  class="display-flex product-nav">
+				<li ><a href="product_list.php">ALL PRODUCTS</a></li>
+				<li ><a href="#">ABOUT US</a></li>
+                <li><a href="#">CART</a></li>   
+                <li><a href="#">SEARCH</a></li>
             </ul>
-        </div>
-        <hr>
-        <div class="container display-flex">
-            <nav class="nav flex-none">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="../img/logo.png" alt="" style="width: 10%;">
-                    </a>
-				</div>
-				<ul  class="display-flex product-nav">
-					<li ><a href="home-decor.html">Throw Pillows</a></li>
-					<li ><a href="#">Wall Clocks</a></li>
-					<li ><a href="#">Placemats</a></li>
-					<li ><a href="#">Framed Art</a></li>						
-				</ul>
-            </nav>
-            
-        </div>
-    </header>
+        </nav>    
+    </div>
+</header>		
 
 	<nav class="container card">
 		<h2>Table of Contents</h2>
@@ -92,7 +82,7 @@
 
 		<script>
 		const makeNav = (classes='') => {
-			const links = ['home','store','about'];
+			const links = ['home','product list','product item'];
 			let ran = Math.floor(Math.random()*links.length);
 			return `
 			<div>
@@ -261,6 +251,7 @@
 			<button class="large-button">Add To Cart</button>	
 			<div style="padding: 10px;"></div>
 			<button class="large-button-reverse">check out</button>
+			<div style="padding: 10px;"></div>
 			<button class="small-button-reverse">Continue</button>
 			
 			
