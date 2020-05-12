@@ -1,0 +1,274 @@
+
+*, 
+*:before, 
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+	height: 100%;
+	background-color: #fbf8e6;
+
+    -webkit-font-variant-ligatures: no-common-ligatures;
+       -moz-font-variant-ligatures: no-common-ligatures;
+        	font-variant-ligatures: no-common-ligatures;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+		 -o-box-sizing: border-box;
+		    box-sizing: border-box;
+}
+
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+body {
+    overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.logo {
+	width: 100%;
+	text-align: center;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.logo img {
+	width: 10%;
+}
+
+h2 {
+	font-family: 'Hammersmith One', cursive;
+	font-size: 2rem;
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+h3 {
+	font-family: 'Cabin', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+p {
+	font-family: 'Cabin', sans-serif;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+#recipe1, #recipe2, #recipe3 {
+	margin-bottom: 50px;
+	margin: center;
+}
+
+.title {
+	font-size: 2rem;
+	font-weight: 600;
+	text-align: center;
+	margin: 5%;
+}
+
+.nav {
+	font-size: 2rem;
+	font-weight: 400;
+	margin: 15px auto;
+	padding: 0;
+	text-align: center;
+}
+
+ul, li {
+	font-family: 'Hammersmith One', cursive;
+	list-style-type: none;
+	margin: 0;
+	padding: 5%;
+}
+
+ul li {
+	display: inline;
+}
+
+li a:link, 
+li a:visited {
+	text-decoration: none;
+	color: #000000;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+li a:hover, a:active {
+	color: #900000;
+}
+
+.container {
+	width: 100%;
+	height: auto;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 5% 0;
+	background-color: #000000;
+	box-shadow: 1px 1px 5px #888888;
+}
+
+/* collapsible 
+source from https://www.w3schools.com/howto/howto_js_collapsible.asp
+================================================== */
+
+.collapsible {
+	background-color: #900000;
+	color: white;
+	cursor: pointer;
+	padding: 30px;
+	width: 100%;
+	border: none;
+	text-align: center;
+	outline: none;
+	font-family: 'Hammersmith One', cursive;
+	font-size: 1.5rem;
+	border-radius: 15px;
+}
+
+.active, .collapsible:hover {
+	background-color: #900000;
+}
+
+
+.active:after {
+	content: "\2212";
+}
+
+.content {
+	padding: 0 18px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	background-color: #ffffff;
+}
+
+/* collapsible
+================================================== */
+
+
+article {
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.recipe-title {
+	width: 100%;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 400;
+	padding: 15px;
+}
+
+.recipe-box {
+	width: 100%;
+	float: left;
+}
+
+.food-img {
+	width: 100%;
+	text-align: center;
+	margin: 40px auto;
+	padding: 0;
+}
+
+.food-img img {
+	width: 100%;
+	border-radius: 20px;
+}
+
+
+.recipe-ingre {
+	width: 100%;
+	text-align: center;
+	font-size: 1.2rem;
+	margin-top: 3rem;
+	margin-bottom: 5rem;
+}
+
+table {
+	border-top: .5px solid #888888;
+	border-bottom: .5px solid #888888;
+	width: 70%;
+	margin: 3rem auto;
+}
+
+tr {
+	margin:0 10px;
+}
+
+th {
+	font-family: 'Cabin', sans-serif;
+	font-size: 1.0rem;
+	text-align: center;
+	padding: 10px;
+}
+
+.recipe-text {
+	width: 60%;
+	height: auto;
+	float: left;
+}
+
+
+
+/* colored number
+================================================== */
+
+.text {
+	font-size: 1.0rem;
+	line-height: 1.7;
+	margin: 20px;
+}
+
+.recipe-img {
+	width: 40%;
+	float: left;
+}
+
+.recipe-img img {
+	width: 100%;
+	float: left;
+	padding: 15px;
+	border-radius: 7%;
+}
+
+.gototop {
+	position: fixed;
+	width: 30px;
+	height: 30px;
+	background-color: #000000;
+	bottom: 50px;
+	right: 50px;
+
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	color: #ffffff;
+	font-size: 1.5rem;
+	border-radius: 1.3em;
+}
