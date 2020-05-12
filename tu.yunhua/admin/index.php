@@ -3,13 +3,13 @@
 include_once "../lib/php/functions.php";
 
 $empty_product = (object) [
-	"name"=>"",
-	"price"=>"",
-	"category"=>"",
-	"description"=>"",
-	"thumbnail"=>"",
-	"images"=>"",
-	"quality"=>""
+	"name"=>"ATELIER CRENN SNACK",
+	"price"=>"5.00",
+	"category"=>"special snack",
+	"description"=>"3127 Fillmore St, San Francisco, CA 94123",
+	"thumbnail"=>"special snack_3_m.jpg",
+	"images"=>"special snack_3.jpg",
+	"quality"=>"1000"
 ];
 
 
@@ -47,19 +47,22 @@ switch(@$_GET['action']) {
 			$_GET['id']
 		]);
 
+		//print_p([$_GET,$_POST]);
+		//die("update");
+
 		header("location:{$_SERVER['PHP_SELF']}?id={$_GET['id']}");
 		break;
 	case "create":
 		$statement = $conn->prepare("INSERT INTO
-		`products`
+		`Test`
 		(
-			`name`=? ,
-			`price`=? ,
-			`category`=? ,
-			`description`=? ,
-			`thumbnail`=? ,
-			`images`=? ,
-			`quality`=? ,
+			`name`,
+			`price`,
+			`category`,
+			`description`,
+			`thumbnail`,
+			`images`,
+			`quality`,
 			`date_create`,
 			`date_modify`
 
@@ -81,7 +84,7 @@ switch(@$_GET['action']) {
 		header("location:{$_SERVER['PHP_SELF']}?id=$id");
 		break;
 	case "delete":
-		$statement = $conn->prepare("DELETE FROM `products` WHERE id=?");
+		$statement = $conn->prepare("DELETE FROM `Test` WHERE id=?");
 		$statement->execute([$_GET['id']]);
 		$id = $conn->lastInsertId();
 

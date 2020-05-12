@@ -102,7 +102,7 @@ $images = explode(",",$o->images);
 		</div>
 
 		<div>
-			<h2>Recommended Products</h2>
+			<h2>Something You May Like</h2>
 			<?php recommendedSimilar($o->category,$o->id) ?>
 		</div>
 

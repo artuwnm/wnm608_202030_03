@@ -163,6 +163,7 @@ HTML;
 			</div>
 			<nav class="nav-flex flex-none">
 				<ul>
+					<li><a href="./product_home.php">Home</a></li>
 					<li><a href="admin/users.php">User List</a></li>
 					<li><a href="admin/users.php?id=new">Join Us</a></li>
 				</ul>
@@ -206,25 +207,6 @@ HTML;
 			</ul>
 			</nav>
 			</div>
-
-
-				<div class="col-md-3 col-xs-2 hidden-xs menu-1">
-					<ul class="display-flex1">
-
-					</ul>
-				</div>
-
-				<div class="col-md-6 col-xs-6 text-center"></div> 
-
-
-				<div class="col-md-3 col-xs-4 text-right hidden-xs menu-2">
-					<ul class="display-flex2">
-						<p><a href="./product_home.php" class="btn btn-primary btn-outline">Back To Home</a></p>
-					</ul>
-				</div>
-
-
-
 
 			<?php 
 
