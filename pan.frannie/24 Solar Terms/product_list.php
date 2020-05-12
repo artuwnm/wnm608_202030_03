@@ -32,44 +32,55 @@ include_once "lib/php/functions.php";
 
 
 
+
+
 		<div class="form-control">
 			<form class="hotdog light" id="product-search">
-				<input type="search" class="search" placeholder="Search Products">
+				<input type="search" class="search" placeholder="What are you looking for?">
 			</form>
 		</div>
-		<div class="form-control display-flex">
-			<div class="flex-none">
-				<button type="button" class="form-button js-filter" data-type="category" data-value="">All</button>
-			</div>
-			<div class="flex-none">
-				<button type="button" class="form-button js-filter" data-type="category" data-value="Clock">Clock</button>
-			</div>
-			<div class="flex-none">
-				<button type="button" class="form-button js-filter" data-type="category" data-value="Plate">Plate</button>
-			</div>
-			<div class="flex-none">
-				<button type="button" class="form-button js-filter" data-type="category" data-value="Pin">Pin</button>
-			</div>
-			<div class="flex-none">
-				<button type="button" class="form-button js-filter" data-type="category" data-value="Phone Shell">Phone Shell</button>
-			</div>
-		</div>
-		<div class="form-control">
+
+
+        <div class="filter-product">
+		    <div class="form-control display-flex" >
+			    <div class="flex-none">
+				    <button type="button" class="form-button js-filter" data-type="category" data-value="">All</button>
+			    </div>
+			    <div class="flex-none">
+				    <button type="button" class="form-button js-filter" data-type="category" data-value="Clock">Clock</button>
+			    </div>
+			    <div class="flex-none">
+				    <button type="button" class="form-button js-filter" data-type="category" data-value="Plate">Plate</button>
+			    </div>
+			    <div class="flex-none">
+				    <button type="button" class="form-button js-filter" data-type="category" data-value="Pin">Pin</button>
+			    </div>
+			    <div class="flex-none">
+				    <button type="button" class="form-button js-filter" data-type="category" data-value="Phone Shell">Phone Shell</button>
+			    </div>
+			
+		    </div>
+
+		    <div class="form-control form-select">
 			<!-- .form-select>select>option -->
-			<div class="form-select">
-				<select class="js-sort">
+			
+				<select class="js-sort" style="width:200px;height:40px;">
 					<option value="1">Newest</option>
 					<option value="2">Oldest</option>
 					<option value="3">Most Expensive</option>
 					<option value="4">Least Expensive</option>
 				</select>
-			</div>
-		</div>
+			
+		     </div>
+	    </div>
+		
 
 		<div class="grid gap productlist"></div>
 
 
-
+		<div>
+			<a href="admin">Product Admin</a>
+		</div>
 
 
 

@@ -88,13 +88,24 @@ $images = explode(",",$o->images);
 				</form>
 			</div>
 		</div>
-		<div class="card soft">
+		<div>
 			<h3>Description</h3>
-			<div><?= $o->description ?></div>
+			<div><p><?= $o->description ?></p></div>
 		</div>
 	</div>
 
 </div>
+
+
+    
+    <div class="container">
+
+        <div>
+			<h2>Recommended Products</h2>
+			<?php recommendedSimilar($o->category,$o->id) ?>
+		</div>
+
+	</div>
 
 
 

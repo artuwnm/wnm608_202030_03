@@ -305,7 +305,6 @@ input[type="go"]:hover {
 
 
 
-
 /*Footer ______________________________________________________________________________________*/
 
 
@@ -442,6 +441,9 @@ input[type="go"]:hover {
 	max-width:100%;
 }
 
+.image-square img{
+	max-width:5%;
+}
 
 
 
@@ -510,11 +512,83 @@ input[type="go"]:hover {
 
 
 
+
+/*.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}*/
+
+.form-button {
+  background-color: white; 
+  color: #7184A2; 
+  border: 1px solid #9eb3d3ff;
+  margin: 4px 6px;
+  transition-duration: 0.4s;
+  padding: 10px 25px;
+  font-family:Montserrat;
+  font-size: 16px;
+}
+
+.form-button:hover {
+  font-weight:600;
+  border: 2px solid #9eb3d3ff;
+}
+
+
+
+/*___________________________________________________________________________________________*/
+
+
+
+
+
+.js-sort {
+   font-family:Montserrat;
+   background-color:white;
+   color: #7184A2; 
+   border: 1px solid #9eb3d3ff;
+   font-size: 16px;
+
+}
+
+
+
+
+
+
+.filter-product {
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+
+
+.productlist {
+	margin-top: 30px;
+}
+
+
+
+
+/*___________________________________________________________________________________________*/
+
+
+
+
 .form-input {
 	display:block;
 	width:100%;
 	border-width:0;
-	border-bottom:1px solid #CACACA;
+	border-bottom:1px solid #9eb3d3ff;
 	color:#7184A2;
 	font:inherit;
 	padding:0.5em 1em;
@@ -524,7 +598,6 @@ input[type="go"]:hover {
 }
 
 .form-control {
-	margin:1em 0;
 	color:#7184A2;
 }
 
@@ -559,7 +632,10 @@ input[type="go"]:hover {
 }
 .hotdog.light {
 	background-color:var(--color-white);
+	border:1px solid #9eb3d3ff;
 }
+
+
 
 
 

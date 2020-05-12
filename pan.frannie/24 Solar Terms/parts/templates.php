@@ -6,7 +6,7 @@ return $r.<<<HTML
 <div class="col-xs-6 col-md-4">
 	<a href="product_item.php?id=$o->id" class="display-block">
 		<figure class="product-figure">
-			<div class="product-image"><img src="..img/$o->thumbnail" alt=""></div>
+			<div class="product-image"><img src="img/$o->thumbnail" alt=""></div>
 			<figcaption class="product-description">
 				<div class="product-title">$o->title</div>
 				<div class="product-price">&dollar;$o->price</div>
@@ -119,3 +119,26 @@ function makeCartBadge() {
 		return $r + $o->amount;
 	},0).")";
 }
+
+
+
+
+function recommendedProducts($rows) {
+$products = array_reduce($rows,'productListTemplate');
+echo <<<HTML
+<div class="grid gap productlist">$products</div>
+HTML;
+}
+function recommendedCategory($cat,$limit=3) {
+	$rows = getRows(makeConn(),"SELECT * FROM `products` WHERE category='$cat' ORDER BY `date_create` DESC LIMIT $limit");
+	recommendedProducts($rows);
+}
+function recommendedSimilar($cat,$id=0,$limit=3) {
+	$rows = getRows(makeConn(),"SELECT * FROM `products` WHERE category='$cat' AND id <> $id ORDER BY rand() LIMIT $limit");
+	recommendedProducts($rows);
+}
+
+
+
+
+
