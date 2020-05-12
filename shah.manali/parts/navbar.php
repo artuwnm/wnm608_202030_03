@@ -8,7 +8,7 @@
     
             <!-- <img class="logo" src="http://www.manalishah.com/aau/wnm608/shah.manali/images/logo.png" alt="dense chocolates"> -->
 
-            <img class=" logo"src="images/logo.png">
+            <img class="logo"src="images/logo.png">
         </a>
 
 			<nav class="nav-stretch">

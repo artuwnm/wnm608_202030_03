@@ -41,7 +41,7 @@ ul>li*3>a[href=#]{Link $}
 <!-- .container>p*2>lorem30 -->
 
 
-<div class="view-window display-flex flex-align-center flex-justify-center" style="background-image:url('images/living room.png')">
+<div class="view-window display-flex flex-align-center flex-justify-center" style="background-image:url('images/living_room.png')">
 
 
 <div class="col-4">
