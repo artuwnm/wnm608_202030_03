@@ -48,7 +48,8 @@ $images = explode(",",$o->images);
 			<div class="col-xs-12 col-md-5">
 				<form class="card soft flat" method="get" action="data/form_actions.php">
 					<div class="card-section">
-						<h2><?= $o->title ?></h2>
+						<h2 class="product-title"><?= $o->title ?></h2>
+						<div class="product-category"><?= $o->category ?></div>
 						<div class="product-description">
 							<div class="product-price">&dollar;<?= $o->price ?></div>
 						</div>
@@ -83,6 +84,10 @@ $images = explode(",",$o->images);
 		<div class="card soft dark">
 			<h3>Description</h3>
 			<div><?= $o->description ?></div>
+		</div>
+		<div>
+			<h2>Recommended Products</h2>
+			<?php recommendedSimilar($o->category,$o->id) ?>
 		</div>
 	</div>
 	

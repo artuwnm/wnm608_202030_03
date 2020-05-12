@@ -8,10 +8,6 @@ include_once "lib/php/functions.php";
 	<title>Store: Product List</title>
 	
 	<?php include "parts/meta.php" ?>
-
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="lib/js/functions.js"></script>
-	<script src="js/templates.js"></script>
 	<script src="js/list.js"></script>
 
 </head>
@@ -51,6 +47,11 @@ include_once "lib/php/functions.php";
 		</div>
 
 		<div class="grid gap productlist"></div>
+
+
+		<div>
+			<a href="admin">Product Admin</a>
+		</div>
 	</div>
 	
 </body>

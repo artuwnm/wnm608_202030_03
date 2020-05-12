@@ -353,7 +353,8 @@ code {
 
 .form-select select,
 .form-button {
-	display:block;
+	display:inline-block;
+	vertical-align:baseline;
 	width:100%;
 	border-width:0;
 	color:inherit;

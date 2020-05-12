@@ -1,5 +1,7 @@
 <?php
 
+include_once "lib/php/functions.php";
+
 session_start();
 
 ?><!DOCTYPE html>
@@ -104,6 +106,16 @@ session_start();
 				</div>
 			</div>
 		</div>
+	</div>
+
+
+	<div class="container">
+		<h2>New Fruit</h2>
+		<?php recommendedCategory('fruit') ?>
+	</div>
+	<div class="container">
+		<h2>New Vegetables</h2>
+		<?php recommendedCategory('vegetable') ?>
 	</div>
 
 	<div class="container">

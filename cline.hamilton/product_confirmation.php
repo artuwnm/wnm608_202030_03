@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+
+session_start();
+$_SESSION['cart'] = [];
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Store: Product Confirmation</title>
