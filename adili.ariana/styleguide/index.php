@@ -21,32 +21,30 @@
 	</header>
 
 	<nav class="container">
-		<h2>Items</h2>
+		<h2>Items to buy</h2>
 		<ul>
-			<li><a href="Buy used clothing"></a></li>
 			<ul>
-				<li><a href="#formal">Formal</a></li>
-				<li><a href="#casual">Casual</a></li>
+				<li><a href="#formal">Jackets</a></li>
+				<li><a href="#casual">Shirts</a></li>
+				<li><a href="#casual">Shoes</a></li>
 			</ul>
-			
-
 		</ul>
+
 	</nav>
 
 	<section class="container">
-		<h2 id="clothing">Sell your formal clothing</h2>
+		<!-- <h2 id="clothing">Buy men's clothing</h2> -->
 
 		<div class="card">
-			<h3 id="headings"></h3>
+			<h1>Fonts</h1>
+
+			<!-- <h3 id="headings"></h3> -->
 			<hr>
 			<!-- h$*6>{Heading $} -->
-			<h1>How to start</h1>
+	
 			<ul>
-				<li>Lorem ipsum dolor sit amet.</li>
-				<li>Lorem ipsum dolor sit amet.</li>
-				<li>Lorem ipsum dolor sit amet.</li>
-				<li>Lorem ipsum dolor sit amet.</li>
-				<li>Lorem ipsum dolor sit amet.</li>
+				<p>Begari logo | Tenor Sans</p>
+				<p>Body | Montserrat</p>
 			</ul>
 		</div>
 

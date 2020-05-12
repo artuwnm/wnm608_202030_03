@@ -20,7 +20,7 @@ include_once "lib/php/functions.php";
 	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
-		<h2>Product List</h2>
+		<h2>Products</h2>
 
 		<div class="form-control">
 			<form class="hotdog light" id="product-search">
@@ -32,13 +32,17 @@ include_once "lib/php/functions.php";
 		
 		<div class="form-control display-flex">
 			<div class="flex-none">
-				<button type="button" class="form-button js-filter" data-type="category" data-value="all">All</button>
+				<button type="button" class="form-button js-filter" data-type="category" data-value="all">ALL</button>
 			</div>
 			<div class="flex-none">
-				<button type="button" class="form-button js-filter" data-type="category" data-value="shoes">Shoes</button>
+				<button type="button" class="form-button js-filter" data-type="category" data-value="shoes">SHOES</button>
 			</div>
 			<div class="flex-none">
-				<button type="button" class="form-button js-filter" data-type="category" data-value="jackets">Jackets</button>
+				<button type="button" class="form-button js-filter" data-type="category" data-value="jackets">JACKETS</button>
+			</div>
+
+			<div class="flex-none">
+				<button type="button" class="form-button js-filter" data-type="category" data-value="shirts">SHIRTS</button>
 			</div>
 		</div>
 
@@ -57,7 +61,7 @@ include_once "lib/php/functions.php";
 	if ($allProductsResult->num_rows > 0) {
   // output data of each row
   while($row = $allProductsResult->fetch_assoc()) {
-    echo "id: " . $row["id"]. " - ProductName: " . $row["name"]. "- " . $row["new price"]. "<br>";
+    echo "id: " . $row["id"]. " - ProductName: " . $row["title"]. "- " . $row["price"]. "<br>";
   }
 } else {
   echo "0 results";
@@ -72,19 +76,19 @@ $conn->close();
 		<div class="form-control">
 			<!-- .form-select>select>option -->
 			<div class="form-select">
-				<select class="js-sort">
+				<!-- <select class="js-sort">
 					<option value="1">Newest</option>
 					<option value="2">Oldest</option>
-				</select>
+				</select> -->
 			</div>
 		</div>
 
 		<div class="grid gap productlist"></div>
 	</div>
 
-		<div>
+		<!-- <div>
 			<a href="admin">Product Admin</a>
-		</div>
+		</div> -->
 	
 	
 </body>

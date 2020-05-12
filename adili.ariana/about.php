@@ -11,10 +11,9 @@
 
 		<div class="container">
 			<div class="card soft">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, illum magni dolor aspernatur vero repudiandae porro ab accusamus nostrum, quibusdam, possimus vel dolorem nemo eos exercitationem. Impedit laboriosam commodi, at.</p>
-			<p>Sed atque, molestiae aperiam voluptatum deleniti quis amet mollitia! Aliquam amet eius molestias dignissimos nesciunt tempore voluptate sunt voluptatibus praesentium, aut deleniti animi officiis ipsa quam unde, similique quasi adipisci.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae aperiam numquam sit optio dolorem, consequuntur facere asperiores labore enim sunt.</p>
-		</div>
+			<p>At Begari, we sell men's clothing which were once at their highest price. We believe in reusing material from your favorite brands that you were unable to snatch.</p>
+			<p>Any items that are unable to sell will be donated to those in need.</p>
+			<p>Thank you for shopping with us and for being a part of our mission to make sure we all get the best use of our materials!</p>
 	</div>
 	
 </body>

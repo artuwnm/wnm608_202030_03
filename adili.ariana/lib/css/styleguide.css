@@ -35,6 +35,7 @@ h5,
 h6 {
 	font-family: 'Montserrat';
 	font-variant-caps: all-small-caps;
+	color: white;
 }
 
 
@@ -113,6 +114,7 @@ code {
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
+	color: black;
 }
 
 

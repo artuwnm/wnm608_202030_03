@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="lib/css/storetheme.css">
 	<meta name="viewport" content="width=device-width">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
