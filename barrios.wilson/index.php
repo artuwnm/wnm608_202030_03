@@ -5,10 +5,11 @@ session_start();
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
+
 	<meta charset="UTF-8">
 	<title>Cool Keychains</title>
+	<?php include "parts/meta.php" ?>
 
-<?php include "parts/meta.php" ?>
 
 
 	<style> 
@@ -39,12 +40,10 @@ session_start();
     </div>
   </div>
 </div>
+<div>
 
-<div class="container">
-		<?php recommendedCategory('places') ?>
-	</div>
-	<div class="container">
-		<?php recommendedCategory('cartoon') ?>
+
+	
 	</div>
 
 <div class="banner-color">
@@ -52,6 +51,10 @@ session_start();
 <div class= "container">
 
 <h1> New Arrivals </h1>
+
+<div class="container">
+    <?php recommendedCategory('keychain') ?>
+  </div>
 
 	</div>
 </div>
