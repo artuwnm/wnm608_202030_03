@@ -133,7 +133,7 @@ echo "<div>hello world</div>";
 
 	$colorsObject = (object)$colorsAssociative;
 
-	// echo $colorsObjects;
+	// echo $colorsObjects objects are not allowed to be echoed out;
 
 	echo "<hr>";
 
