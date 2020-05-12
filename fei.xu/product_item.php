@@ -20,13 +20,25 @@ $images = explode(",",$o->images);
 	<?php include "parts/meta.php" ?>
 </head>
 <body>
+<header class="navbar">
+		<div class="container display-flex">
+			<div class="flex-stretch">
+				<h1>Product Admin</h1>
+			</div>
+			<nav class="nav-flex flex-none">
+				<ul >
+					<li><a href="./product_list.php">Home</a></li>
+					<li><a href="admin/index.php">Product List</a></li>
+					<li><a href="admin/?id=new">Add New Product</a></li>
 
-	<?php include "parts/navbar.php" ?>
-
+				</ul>
+			</nav>
+		</div>
+	</header>
 	<div class="container">
 		<nav class="nav-crumbs" style="margin:1em 0">
 			<ul>
-				<li><a href="product_list.php">Back</a></li>
+				<li><a href="admin/index.php">Back</a></li>
 			</ul>
 		</nav>
 
@@ -46,14 +58,18 @@ $images = explode(",",$o->images);
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-5">
-				<form class="card softuy" method="get" action="data/form_actions.php">
+				<form class="card" method="get" action="data/form_actions.php">
 					<h2><?= $o->name ?></h2>
 					<div class="product-description">
 						<div class="product-price1">&dollar;<?= $o->price ?></div>
 					</div>
 						<br>
-					<div class="card-section">
-						<label class="form-label">Amount</label>
+
+						<h4>Description</h4>
+						<div class="descriptiontext"><?= $o->description ?></div>
+
+					<div class="card-section1">
+						<label class="form-label">QUANTITY:</label>
 						<select name="amount" class="form-input">
 							<!-- option*10>{$} -->
 							<option>1</option>
@@ -67,8 +83,7 @@ $images = explode(",",$o->images);
 							<option>9</option>
 							<option>10</option>
 						</select>
-					</div>
-					<div class="card-section">
+
 						<input type="hidden" name="action" value="add-to-cart">
 						<input type="hidden" name="id" value="<?= $o->id ?>">
 						<input type="hidden" name="price" value="<?= $o->price ?>">
@@ -78,8 +93,7 @@ $images = explode(",",$o->images);
 						<br>
 						<br>
 						<br>
-						<h4>Description</h4>
-						<div class="descriptiontext"><?= $o->description ?></div>
+
 						</form> 
 					</div>
 				</div>

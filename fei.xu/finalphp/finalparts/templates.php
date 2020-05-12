@@ -29,7 +29,7 @@ return $r.<<<HTML
 	<div class="flex-stretch">
 		<div class="display-flex">
 			<div class="flex-stretch">
-				<strong>$o->name ($o->amount)</strong>
+				$o->name ($o->amount)
 				</div>
 				<div class="flex-none">&dollar;$pricefixed</div>
 			</div>
@@ -39,7 +39,7 @@ return $r.<<<HTML
 					<input type="hidden" name="action" value="delete-cart-item">
 					<input type="hidden" name="id" value="$o->id">
 					<div class="display-flex"><div class="flex-none">
-						<input type="submit" class="form-button2" value="delete">
+						<input type="submit" class="form-button2" value="Remove">
 					</div></div>
 				</form>
 			</div>
@@ -58,7 +58,7 @@ HTML;
 
 
 function selectAmount($amount=1,$total=10) {
-	$output = "<select class='form-input' name='amount'>";
+	$output = "<select class='form-input1' name='amount'>";
 	for($i=1;$i<=$total;$i++){
 		$output .= "<option ".($i==$amount?"selected":"").">$i</option>";
 	}
@@ -86,7 +86,7 @@ return <<<HTML
 <h5> Order summary</h5>
 	<div class="display-flex">
 		<div class="flex-stretch">
-			Sub-Total
+			Subtotal
 		</div>
 		<div class="flex-none">&dollar;$pricefixed</div>
 	</div>
@@ -117,4 +117,19 @@ function makeCartBadge() {
 	} else return "(".array_reduce($_SESSION['cart'],function($r,$o){
 		return $r + $o->amount;
 	},0).")";
+}
+
+function recommendedProducts($rows) {
+$products = array_reduce($rows,'productListTemplate');
+echo <<<HTML
+<div class="grid gap productlist">$products</div>
+HTML;
+}
+function recommendedCategory($cat,$limit=3) {
+	$rows = getRows(makeConn(),"SELECT * FROM `products` WHERE category='$cat' ORDER BY `date_create` DESC LIMIT $limit");
+	recommendedProducts($rows);
+}
+function recommendedSimilar($cat,$id=0,$limit=3) {
+	$rows = getRows(makeConn(),"SELECT * FROM `products` WHERE category='$cat' AND id <> $id ORDER BY rand() LIMIT $limit");
+	recommendedProducts($rows);
 }

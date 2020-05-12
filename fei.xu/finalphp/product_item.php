@@ -15,7 +15,7 @@ $images = explode(",",$o->images);
 <html lang="en">
 <head>
 	<title>Store: Product Item</title>
-	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<?php include "finalparts/meta.php" ?>
 </head>
 <body>
@@ -45,14 +45,18 @@ $images = explode(",",$o->images);
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-5">
-				<form class="card softuy" method="get" action="../data/form_actions.php">
+				<form class="card " method="get" action="../data/form_actions.php">
 					<h2><?= $o->name ?></h2>
 					<div class="product-description">
 						<div class="product-price1">&dollar;<?= $o->price ?></div>
 					</div>
 						<br>
-					<div class="card-section">
-						<label class="form-label">Amount</label>
+					
+					<h4>Description</h4>
+						<div class="descriptiontext"><?= $o->description ?></div>
+
+					<div class="card-section1">
+						<label class="form-label">QUANTITY:</label>
 						<select name="amount" class="form-input">
 							<!-- option*10>{$} -->
 							<option>1</option>
@@ -66,8 +70,7 @@ $images = explode(",",$o->images);
 							<option>9</option>
 							<option>10</option>
 						</select>
-					</div>
-					<div class="card-section">
+
 						<input type="hidden" name="action" value="add-to-cart">
 						<input type="hidden" name="id" value="<?= $o->id ?>">
 						<input type="hidden" name="price" value="<?= $o->price ?>">
@@ -76,15 +79,44 @@ $images = explode(",",$o->images);
 
 						<br>
 						<br>
+
+
 						<br>
-						<h4>Description</h4>
-						<div class="descriptiontext"><?= $o->description ?></div>
+
 						</form> 
 					</div>
 				</div>
 			</div>
 		</div>
+		
+		<div>
+			<h2>Recommended Products</h2>
+			<?php recommendedSimilar($o->category,$o->id) ?>
+		</div>
 	</div>
 	
+	<div class="footer">
+		<div class="footer-content">
+
+			<div class="footer-section about">
+				<h1>Caliwater</h1>
+				<p>CALIWATER is a store selling water with different fruit flavors. Instead of boring old water, “Caliwater” makes water delicious without sugar or sweeteners. </p>
+			</div>
+
+			<div class="footer-section about">
+				<h1>Quick Link</h1>
+				<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+				<a href="https://twitter.com/explore" class="fa fa-twitter"></a>
+				<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+			</div>
+
+	
+	
+	
+		</div>
+		<div class="footer-bottom">
+			&copy; Designed by Fei
+		</div>
+	</div>
 </body>
 </html>

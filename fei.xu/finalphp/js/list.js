@@ -1,5 +1,6 @@
 
 
+
 const showResults = (d) => {
 	$(".productlist").html(
 		d.result.length == 0 ? "Oops,&nbspno&nbspresults!" :
@@ -35,13 +36,13 @@ $(()=>{
 
 	$(".js-sort").on("change",function(e){
 		(
-			this.value==1 ?
-				getData({type:"product_sort",column:'date_create',dir:'DESC'}) :
 			this.value==2 ?
-				getData({type:"product_sort",column:'date_create',dir:'ASC'}) :
+				getData({type:"product_sort",column:'date_create',dir:'DESC'}) :
 			this.value==3 ?
-				getData({type:"product_sort",column:'price',dir:'DESC'}) :
+				getData({type:"product_sort",column:'date_create',dir:'ASC'}) :
 			this.value==4 ?
+				getData({type:"product_sort",column:'price',dir:'DESC'}) :
+			this.value==5 ?
 				getData({type:"product_sort",column:'price',dir:'ASC'}) :
 			getData({type:'product_all'})
 		).then(showResults);

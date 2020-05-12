@@ -7,7 +7,7 @@ $cartItems = getCartItems();
 <html lang="en">
 <head>
 	<title>Store: Product Cart</title>
-	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<?php include "finalparts/meta.php" ?>
 </head>
 <body>
@@ -20,10 +20,10 @@ $cartItems = getCartItems();
 				<li><a href="product_list.php">Back</a></li>
 			</ul>
 		</nav>
-	<h2>Shopping Cart</h2>
+	<h3>Shopping Cart</h3>
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-8">
-				<div class="card soft">
+				<div class="card soft3">
 
 				<?php
 				echo array_reduce($cartItems,'cartListTemplate');
@@ -35,10 +35,34 @@ $cartItems = getCartItems();
 					<?= cartTotals() ?>
 					<br>
 					<div class="card-section">
-						<a href="product_checkout.php" class="form-button1">Checkout</a>
+						<a href="product_checkout.php" class="form-button5">PROCEED TO CHECKOUT</a>
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<div class="footer-content">
+
+			<div class="footer-section about">
+				<h1>Caliwater</h1>
+				<p>CALIWATER is a store selling water with different fruit flavors. Instead of boring old water, “Caliwater” makes water delicious without sugar or sweeteners. </p>
+			</div>
+
+			<div class="footer-section about">
+				<h1>Quick Link</h1>
+				<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+				<a href="https://twitter.com/explore" class="fa fa-twitter"></a>
+				<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+			</div>
+
+	
+	
+	
+		</div>
+		<div class="footer-bottom">
+			&copy; Designed by Fei
 		</div>
 	</div>
 	

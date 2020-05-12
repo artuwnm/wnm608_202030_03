@@ -12,7 +12,7 @@ include_once "finalparts/templates.php";
 <html lang="en">
 <head>
 	<title>Store: Product List</title>
-	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<?php include "finalparts/meta.php" ?>
 
 </head>
@@ -55,7 +55,7 @@ include_once "finalparts/templates.php";
 			<div class="form-select">
 				<select class="js-sort">
 					<option value="1">FEATURED</option>
-					<option value="1">NEWEST</option>
+					<option value="2">NEWEST</option>
 					<option value="3">OLDEST</option>
 					<option value="4">PRICE: HIGH TO LOW</option>
 					<option value="5">PRICE: LOW TO HIGH</option>
@@ -65,10 +65,31 @@ include_once "finalparts/templates.php";
 
 		<div class="grid gap productlist">
 
+	</div>
+</div>
+	
+	<div class="footer">
+		<div class="footer-content">
 
+			<div class="footer-section about">
+				<h1>Caliwater</h1>
+				<p>CALIWATER is a store selling water with different fruit flavors. Instead of boring old water, “Caliwater” makes water delicious without sugar or sweeteners. </p>
+			</div>
 
+			<div class="footer-section about">
+				<h1>Quick Link</h1>
+				<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+				<a href="https://twitter.com/explore" class="fa fa-twitter"></a>
+				<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+			</div>
+
+	
+	
+	
+		</div>
+		<div class="footer-bottom">
+			&copy; Designed by Fei
 		</div>
 	</div>
-	
 </body>
 </html>
