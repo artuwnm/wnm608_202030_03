@@ -1,5 +1,4 @@
 <?php
-
 include_once "../lib/php/functions1.php";
 
 $empty_product = (object) [
