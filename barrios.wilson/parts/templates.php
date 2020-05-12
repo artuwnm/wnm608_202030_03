@@ -1,16 +1,17 @@
 <?php
 
 
+
+
 function productListTemplate($r,$o) {
 return $r.<<<HTML
 <div class="col-xs-6 col-md-4">
 	<a href="product_item.php?id=$o->id" class="display-block">
-		<figure class="product-figure flat">
-			<div class="product-image"><img src="images/$o->thumbnail" alt=""></div>
+		<figure class="product-figure soft">
+			<div class="product-image"><img src="$o->thumbnail" alt=""></div>
 			<figcaption class="product-description">
-				<div class="product-name">$o->name</div>
 				<div class="product-price">&dollar;$o->price</div>
-				
+				<div class="product-name">$o->name</div>
 			</figcaption>
 		</figure>
 	</a>
@@ -35,12 +36,12 @@ return $r.<<<HTML
 			<div class="flex-none">&dollar;$pricefixed</div>
 		</div>
 		<div class="display-flex">
-			<div class="flex-stretch" style="font-size:2em">
+			<div class="flex-stretch" style="font-size:0.8em">
 				<form method="get" action="data/form_actions.php">
 					<input type="hidden" name="action" value="delete-cart-item">
 					<input type="hidden" name="id" value="$o->id">
 					<div class="display-flex"><div class="flex-none">
-						<input type="submit" class="form-button green" value="Delete">
+						<input type="submit" class="form-button" value="delete">
 					</div></div>
 				</form>
 			</div>
@@ -48,7 +49,7 @@ return $r.<<<HTML
 				<form method="get" action="data/form_actions.php" onchange="this.submit()">
 					<input type="hidden" name="action" value="update-cart-amount">
 					<input type="hidden" name="id" value="$o->id">
-					<div class="display-flex form-select"><div class="flex-none">$selectamount</div></div>
+					<div class="display-flex"><div class="flex-none">$selectamount</div></div>
 				</form>
 			</div>
 		</div>
@@ -111,11 +112,29 @@ HTML;
 
 
 
-
 function makeCartBadge() {
 	if(!isset($_SESSION['cart']) || !count($_SESSION['cart'])) {
 		return "";
 	} else return "(".array_reduce($_SESSION['cart'],function($r,$o){
 		return $r + $o->amount;
 	},0).")";
+}
+
+
+
+function recommendedProducts($rows) {
+$products = array_reduce($rows,'productListTemplate');
+echo <<<HTML
+<div class="grid gap productlist">$products</div>
+HTML;
+}
+
+function recommendedCategory($cat,$limit=4) {
+	$rows = getRows(makeConn(),"SELECT * FROM `products` WHERE category='$cat' ORDER BY `date_create` DESC LIMIT $limit");
+	recommendedProducts($rows);
+}
+
+function recommendedSimilar($cat,$id=0,$limit=3) {
+	$rows = getRows(makeConn(),"SELECT * FROM `products` WHERE category='$cat' AND id <> $id ORDER BY rand() LIMIT $limit");
+	recommendedProducts($rows);
 }

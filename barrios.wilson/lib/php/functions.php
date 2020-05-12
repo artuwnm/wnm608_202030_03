@@ -107,19 +107,3 @@ function getCartItems() {
 		return $o;
 	},$data);
 }
-
-
-function recommendedProducts($rows) {
-$products = array_reduce($rows,'productListTemplate');
-echo <<<HTML
-<div class="grid gap productlist">$products</div>
-HTML;
-}
-function recommendedCategory($cat,$limit=3) {
-	$rows = getRows(makeConn(),"SELECT * FROM `products` WHERE category='$cat' ORDER BY `date_create` DESC LIMIT $limit");
-	recommendedProducts($rows);
-}
-function recommendedSimilar($cat,$id=0,$limit=3) {
-	$rows = getRows(makeConn(),"SELECT * FROM `products` WHERE category='$cat' AND id <> $id ORDER BY rand() LIMIT $limit");
-	recommendedProducts($rows);
-}

@@ -162,9 +162,10 @@ padding: 3em;
 
 .picxl
 {
-width:650px;
+width:680px;
 margin-right:4em;
 vertical-align: middle;
+size: cover;
 
 }
 

@@ -10,6 +10,7 @@ session_start();
 
 <?php include "parts/meta.php" ?>
 
+
 	<style> 
 	h2 {
 		margin-top:1em;
@@ -39,68 +40,21 @@ session_start();
   </div>
 </div>
 
+<div class="container">
+		<?php recommendedCategory('places') ?>
+	</div>
+	<div class="container">
+		<?php recommendedCategory('cartoon') ?>
+	</div>
+
 <div class="banner-color">
 
 <div class= "container">
 
 <h1> New Arrivals </h1>
 
-<div class="grid gap">
-			<div class="col-xs-12 col-md-3">
-				
-				<div>
-				<!-- figure>img+figcaption -->
-					<figure class="product-figure soft">
-						<img src="https://via.placeholder.com/300" alt="">
-						<figcaption>
-						Product
-						</figcaption>
-					</figure>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-md-3">
-				<div>
-				<!-- figure>img+figcaption -->
-					<figure class="product-figure soft">
-					<img src="https://via.placeholder.com/300" alt="">
-					<figcaption>
-					Product
-					</figcaption>
-				</figure>
-			</div>
-			</div>
-			<div class="col-xs-12 col-md-3">
-
-				
-
-			<div>
-				<!-- figure>img+figcaption -->
-				<figure class="product-figure soft">
-					<img src="https://via.placeholder.com/300" alt="">
-					<figcaption>
-						Product
-					</figcaption>
-				</figure>
-			</div>
-			</div>
-
-			<div class="col-xs-12 col-md-3">
-				
-
-			<div>
-				<!-- figure>img+figcaption -->
-				<figure class="product-figure soft">
-					<img src="https://via.placeholder.com/300" alt="">
-					<figcaption>
-						Product
-					</figcaption>
-				</figure>
-			</div>
-			</div>
-		</div>
 	</div>
-
+</div>
 </div>
 
 	
