@@ -19,7 +19,7 @@ $images = explode(",",$o->images);
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Store: Product Item</title>
+	<title>SHOP: Product Item</title>
 	<?php include "parts/meta.php" ?>
 </head>
 
@@ -50,7 +50,7 @@ $images = explode(",",$o->images);
 					<div class="product-main">
 						<img src="img/<?= $o->thumbnail ?>">
 					</div>
-					<div class="product-thumbs grid gap">
+					<div class="product-thumbs">
 					<?=
 					array_reduce($images,function($r,$o){
 						return $r."<img src='img/$o'>";
@@ -145,9 +145,6 @@ $images = explode(",",$o->images);
 	</div>
 
 	</div>
-
-<br>
-<br>
 
 	<?php include "parts/footer.php" ?>
 </body>

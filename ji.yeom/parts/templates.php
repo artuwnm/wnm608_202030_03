@@ -61,9 +61,8 @@ return $r.<<<HTML
 
 			<div class="flex-stretch">
 				<strong>$o->name</strong>
+				<p style="margin-right:1em">&dollar;$pricefixed</p>
 			</div>
-
-			<div class="flex-none" style="margin-right:1em">&dollar;$pricefixed</div>
 
 			<div class="form-control flex-none" style="margin-right:1em">
 				<form method="get" action="data/form_actions.php" onchange="this.submit()">
@@ -145,6 +144,7 @@ HTML;
 
 
 
+
 function makeCartBadge() {
 	if(!isset($_SESSION['cart']) || !count($_SESSION['cart'])) {
 		return "";
@@ -152,6 +152,7 @@ function makeCartBadge() {
 		return $r + $o->amount;
 	},0).")";
 }
+
 
 
 

@@ -86,13 +86,13 @@ p {
 
 footer {
 	text-align: center;
-	font-style: italic;
+	/*font-style: italic;*/
 	background-color: black;
 	color: #5AFF5A;
 	font-size: 13px;
-    padding: 30px 20px;
-	height: 80px;
-    /*border-top: solid 1px black;*/
+	margin-top: 50px;
+    /*padding: 50px 20px;*/
+	/*height: 80px;*/
 }
 
 a {
@@ -169,7 +169,7 @@ img:hover {
 	width: 100%;
 }
 
-.right {
+/*.right {
     float: right !important;
 }
 .left {
@@ -179,7 +179,7 @@ img:hover {
 .center {
 	margin: auto;
 	text-align: center;
-}
+}*/
 
 
 
@@ -472,26 +472,27 @@ img:hover {
 	vertical-align: baseline;
 	width: 100%;
 	border-width: 0;
+	border: 1px solid #000;
 	color: inherit;
 	font: inherit;
 	font-size: 15px;
-	/*padding: 1em 1em;*/
+	padding: 1em 2em;
 	-webkit-appearance: none;
 	outline: 0;
 	text-align: center;
 	background-color: white;
-	border: 1px solid #000;
 	text-decoration: none;
 	cursor: pointer;
-	padding: 16px 32px;
+	/*padding: 16px 32px;*/
 	transition-duration: 0.4s;
 }
 .form-button:hover {
 	text-decoration: none;
 }
 	.form-button.confirm {
-		background-color: var(--color-confirm-light);
-		border: 1px solid var(--color-confirm-light);
+		background-color: #1155CC;
+		color: #fff;
+		border: 1px solid #1155CC;
 	}
 	.form-button.confirm:hover {
 		color: #5AFF5A;
@@ -513,7 +514,7 @@ img:hover {
 	.form-button.secondary {
 		background-color: #fff; 
 		color: #000; 
-		border: 1px solid #000;
+		border: 1px solid #fff;
 	}
 	.form-button.secondary:hover {
 		background-color: #5AFF5A;

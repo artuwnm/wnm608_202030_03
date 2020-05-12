@@ -25,7 +25,7 @@ $cartItems = getCartItems();
 
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-8">
-				<div class="card">
+				<div class="card flat">
 				<?php
 				echo array_reduce($cartItems,'cartListTemplate');
 				?>
@@ -38,12 +38,14 @@ $cartItems = getCartItems();
 				</div>
 				<br>
 				<!-- <div class="card-section"> -->
-					<a href="product_checkout.php" class="form-button primary">CHECKOUT</a>
+					<a href="product_checkout.php" class="form-button confirm">CHECKOUT</a>
 				<!-- </div> -->
 			</div>
 		</div>
 
 	</div>
+
+
 	
 </body>
 </html>

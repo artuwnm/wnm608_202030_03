@@ -32,7 +32,7 @@ $o = getRows(makeConn(),
 	<div class="grid gap card">
 		<div class="col-xs-12 col-md-8">
 
-		<div class="display-flex card">
+		<div class="card">
 			<div class="flex-none product-thumbs" style="margin-right:1em">
 				<img src="img/<?= $o->thumbnail ?>">
 				<p>Thank you for adding total <strong><?= $p->amount ?></strong> of the <strong><?= $o->name ?></strong> to the cart.</p>

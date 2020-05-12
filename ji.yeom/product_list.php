@@ -5,11 +5,10 @@ include_once "lib/php/functions.php";
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Shop</title>
+	<title>SHOP</title>
 
 	<?php include "parts/meta.php" ?>
 	
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="lib/js/functions.js"></script>
 	<script src="js/templates.js"></script>
 	<script src="js/list.js"></script>
@@ -27,12 +26,6 @@ include_once "lib/php/functions.php";
 				<li><a href="product_list.php">Shop</a></li>
 			</ul>
 		</nav>
-
-	<script type="text/javascript">
-		$(document).on('click', 'ul li', function(){
-			$(this).addClass('active').siblings().removeClass('active')
-		})
-	</script>
 
 <br>
 <br>			
@@ -65,7 +58,7 @@ include_once "lib/php/functions.php";
 			<div class="col-xs-12 col-md-3">
 			<div class="form-control display-flex">
 				<p style="padding-right: 10px">Sort by</p>
-				<div class="form-select">
+				<div class="form-select" style="border-radius: 0">
 					<select class="js-sort">
 						<option value="1">Newest</option>
 						<option value="2">Oldest</option>
@@ -81,11 +74,13 @@ include_once "lib/php/functions.php";
 		</div>
 
 <br>
-		<div class="grid gap large productlist">
+		<div class="grid gap productlist">
 		</div>
 
 		</div>
 	</div>
+
+	<?php include "parts/footer.php" ?>
 
 </body>
 </html>
