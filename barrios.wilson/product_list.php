@@ -33,8 +33,9 @@ include_once "lib/php/functions.php";
 			
 			<div class="col-xs-12 col-md-4">
 				<div class="form-control">
-					<div class="form-select">
-						<select class="js-sort">
+			<!-- .form-select>select>option -->
+			<div class="form-select ">
+				<select class="js-sort">
 							<option value="1">Newest</option>
 							<option value="2">Oldest</option>
 							<option value="3">Most Expensive</option>
@@ -49,11 +50,11 @@ include_once "lib/php/functions.php";
 			<div class="col-xs-12 col-md-4">
 				<div class="form-control display-flex">
 					<div class="flex-none">
-						<button type="button" class="form-button-yellow-normal js-filter" data-type="material" data-value="">All</button></div>
+						<button type="button" class="form-button yellow js-filter" data-type="material" data-value="">All</button></div>
 						<div class="flex-none">
-						<button type="button" class="form-button-yellow-normal js-filter" data-type="material" data-value="plastic">Plastic</button></div>
+						<button type="button" class="form-button yellow js-filter" data-type="material" data-value="plastic">Plastic</button></div>
 						<div class="flex-none">
-						<button type="button" class="form-button-yellow-normal js-filter" data-type="material" data-value="metal">Metal</button>
+						<button type="button" class="form-button yellow js-filter" data-type="material" data-value="metal">Metal</button>
 					</div>
 				</div>
 			</div>
@@ -62,7 +63,7 @@ include_once "lib/php/functions.php";
 			<div class="col-xs-12 col-md-4">
 				<div class="form-control">
 						<form class="hotdog light" id="product-search">
-						<input type="search" class="search" placeholder=" Search Products "><img class="icon-form" src="https://wbarrios.com/aau/wnm608/barrios.wilson/img/search.png" alt="">
+						<input type="search" class="search" placeholder=" Search Products "><img class="icon-form" src="img/search.png" alt="">
 						</form>
 				</div>
 			</div>

@@ -111,13 +111,13 @@ return $r.<<<HTML
 			<img src="images/$o->thumbnail">
 		</div>
 	</div>
-	<div class="flex-stretch">
-		<div><strong>$o->name</strong></div>
-		<div><span>$o->category</span></div>
+	<div class="flex-stretch product-name">
+		<div>$o->name</div>
+		<div>&dollar;$o->price</div>
 	</div>
 	<div class="flex-none display-flex">
-		<div><a class="form-button-green" href="admin/?id=$o->id">Edit</a></div>
-		<div><a class="form-button-yellow" href="product_item.php?id=$o->id">Visit</a></div>
+		<div><a class="form-button green" href="admin/?id=$o->id">Edit</a></div>
+		<div><a class="form-button yellow" href="product_item.php?id=$o->id">Visit</a></div>
 	</div>
 </div>
 HTML;
@@ -130,7 +130,7 @@ $id = $_GET['id'];
 $addoredit = $id=="new" ? 'Add' : 'Edit';
 $createorupdate = $id=="new" ? 'create' : 'update';
 $deletebutton = $id=="new" ? '' : <<<HTML
-<li class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$id&action=delete">Delete</a></li>
+<li class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$id&action=delete">Delete<img class="arrow" src="img/delete.png" alt="Delete"></a></li>
 HTML;
 
 $images = array_reduce(explode(",",$o->images),function($r,$p){
@@ -145,7 +145,7 @@ $data_show = $id=="new" ? "" : <<<HTML
 </div>
 <div class="product-thumbs">$images</div>
 
-<h2>$o->title</h2>
+<h2>$o->name</h2>
 
 <div class="form-control">
 	<strong>Price</strong>
@@ -170,10 +170,10 @@ HTML;
 
 
 echo <<<HTML
-<nav class="nav-pills">
+<nav class="nav-crumbs-1">
 	<div class="card soft">
 	<ul>
-		<li class="flex-none"><a href="{$_SERVER['PHP_SELF']}">Back</a></li>
+		<li class="flex-none"><a href="{$_SERVER['PHP_SELF']}"><img class="arrow" src="img/back.png" alt="Back"> Back</a></li>
 		<li class="flex-stretch"></li>
 		$deletebutton
 	</ul>
@@ -181,10 +181,10 @@ echo <<<HTML
 </nav>
 <form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&action=$createorupdate">
 	<div class="grid gap">
-		<div class="col-xs-12 col-md-5">
+		<div class="col-xs-12 col-md-6">
 			$data_show
 		</div>
-		<div class="col-xs-12 col-md-7">
+		<div class="col-xs-12 col-md-6">
 			<div class="card soft">
 			<h2>$addoredit Product</h2>
 			<div class="form-control">
@@ -216,7 +216,7 @@ echo <<<HTML
 				<input class="form-input" id="product-quantity" name="product-quantity" value="$o->quantity">
 			</div>
 			<div class="form-control">
-				<input type="submit" class="form-button" value="Submit">
+				<input type="submit" class="form-button red" value="Submit">
 			</div>
 			</div>
 		</div>
@@ -302,7 +302,7 @@ HTML;
 
 			?>
 			<div class="card soft">
-			<h2>User List</h2>
+			<h3>User List</h3>
 
 			<div class="itemlist">
 			<?php

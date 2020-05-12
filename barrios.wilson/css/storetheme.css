@@ -21,6 +21,8 @@ body {
 
 
 
+
+
 [class*='col-']>.card {
 	height:100%;
 	margin:0;
@@ -33,7 +35,11 @@ body {
 }
 
 .pagename {
-	margin-bottom:1.5em;
+	font-family:'Poppins', sans-serif;
+	font-weight:300;
+	font-size: 1.5em;
+	padding-top: 0.5em;
+	margin-bottom:1em;
 }
 
 
@@ -47,12 +53,12 @@ body {
 .product-figure img {
 	width:100%;
 	object-fit:cover;
-	height:30vh;
+	height:40vh;
 	vertical-align: text-bottom;
 
 }
 .product-figure figcaption {
-	padding:2em;
+	padding: 1em 0 2em;
 	background-color:white;
 }
 
@@ -95,14 +101,14 @@ body {
 	.product-description {
 		font-weight:normal;
 		text-decoration:none;
-		font-size: 16px;
+		font-size: 1em;
 
 	}
 
 	.product-name {
-		font-family:'Raleway', sans-serif;
-		font-weight: 500;
-		font-size: 20px;
+		font-family:'Poppins', sans-serif;
+		font-weight: 400;
+		font-size: 1.2em;
 		text-decoration:none;
 	}
 
@@ -116,26 +122,19 @@ body {
 	height:100%;
 	object-fit:cover;
 }
+
+
 .product-thumbs img {
-	width:33.3%;
-	object-fit:cover;
-	padding-top: 0.5em;
-	padding-bottom: 1em;
-	float: left;
-
+	width:215px;
+	height: auto;
+	object-fit:cover
 }
 
-.pagename{
-	font-family:'Raleway', sans-serif;
-	font-weight:400;
-	font-size:30px;
-	padding-top: 0.5em;
 
-}
 
 .thankyou {
 		display: block;
-		font-family:'Raleway', sans-serif;
+		font-family:'Poppins', sans-serif;
 		font-weight: 400;
 		font-size: 1.7em;
 		text-decoration:none;
@@ -148,6 +147,7 @@ body {
 h2.product-name {
     margin: 0;
     font-size:2.5em;
+    font-weight: 500;
 }
 .product-category {
     margin-bottom: 1rem;

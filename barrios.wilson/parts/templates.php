@@ -35,12 +35,12 @@ return $r.<<<HTML
 			<div class="flex-none">&dollar;$pricefixed</div>
 		</div>
 		<div class="display-flex">
-			<div class="flex-stretch" style="font-size:1em">
+			<div class="flex-stretch" style="font-size:2em">
 				<form method="get" action="data/form_actions.php">
 					<input type="hidden" name="action" value="delete-cart-item">
 					<input type="hidden" name="id" value="$o->id">
 					<div class="display-flex"><div class="flex-none">
-						<input type="submit" class="form-button" value="Delete">
+						<input type="submit" class="form-button green" value="Delete">
 					</div></div>
 				</form>
 			</div>
@@ -48,7 +48,7 @@ return $r.<<<HTML
 				<form method="get" action="data/form_actions.php" onchange="this.submit()">
 					<input type="hidden" name="action" value="update-cart-amount">
 					<input type="hidden" name="id" value="$o->id">
-					<div class="display-flex"><div class="flex-none">$selectamount</div></div>
+					<div class="display-flex form-select"><div class="flex-none">$selectamount</div></div>
 				</form>
 			</div>
 		</div>
@@ -59,11 +59,11 @@ HTML;
 
 
 function selectAmount($amount=1,$total=10) {
-	$output = "<select class='form-input' name='amount'>";
+	$output = "<div class='form-select'><select name='amount'>";
 	for($i=1;$i<=$total;$i++){
 		$output .= "<option ".($i==$amount?"selected":"").">$i</option>";
 	}
-	$output .= "</select>";
+	$output .= "</select></div>";
 	return $output;
 }
 

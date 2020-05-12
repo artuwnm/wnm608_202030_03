@@ -32,7 +32,7 @@ $images = explode(",",$o->images);
 	<div class="container">
 		<nav class="nav-crumbs" style="margin:1em 0">
 			<ul>
-				<li><a href="product_list.php"><img class="arrow" src="https://wbarrios.com/aau/wnm608/barrios.wilson/img/back.png" alt="Back"> BACK</a></li>
+				<li><a href="product_list.php"><img class="arrow" src="img/back.png" alt="Back"> BACK</a></li>
 
 				
 
@@ -48,7 +48,7 @@ $images = explode(",",$o->images);
 					<div class="product-thumbs">
 					<?=
 					array_reduce($images,function($r,$o){
-						return $r."<img src='https://wbarrios.com/aau/wnm608/barrios.wilson/images/$o'>";
+						return $r."<img src='images/$o'>";
 					})
 					?>
 					</div>
@@ -57,7 +57,7 @@ $images = explode(",",$o->images);
 			<div class="col-xs-12 col-md-5">
 				<form class="card soft flat" method="get" action="data/form_actions.php">
 					<div class="card-section">
-						<h2><?= $o->name ?></h2>
+						<h3><?= $o->name ?></h3>
 						<div class="product-description">
 							<div class="product-price">&dollar;<?= $o->price ?></div>
 							<br>
@@ -91,7 +91,7 @@ $images = explode(",",$o->images);
 						<input type="hidden" name="action" value="add-to-cart">
 						<input type="hidden" name="id" value="<?= $o->id ?>">
 						<input type="hidden" name="price" value="<?= $o->price ?>">
-						<input type="submit" class="form-button-green" value="Add To Cart">
+						<input type="submit" class="form-button green" value="Add To Cart">
 					</br>
 						
 					</div>
@@ -101,7 +101,7 @@ $images = explode(",",$o->images);
 	</div>
 
 	<div class="container">
-			<h2>Recommended Products</h2>
+			<h3>Recommended Products</h3>
 			<?php recommendedSimilar($o->category,$o->id) ?>
 		</div>
 	</div>

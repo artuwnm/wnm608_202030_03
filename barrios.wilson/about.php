@@ -31,14 +31,26 @@ session_start();
 	</header>
 
 
-	<div class="wrapper">
-  <div class="nested-wrapper1">
-    <div class="1 bigpic"><img src="img/hero.jpg" alt="hero">
-      
-    </div>
-  </div>
-  <div class="nested-wrapper2">
-    <div class="1">
+	<div class="grid gap">
+			<div class="col-xs-12 col-md-6">
+				<div class="card soft">
+					<div class="1 big"><img src="img/hero.jpg" alt="hero"></div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-md-6">
+				<div class="card soft">
+
+					<div class="container">
+
+						<div class="blockquote"><p class="quotation"> 
+  Their purpose is infinite – from decorative pom poms to souvenir bottle openers – our keychains can simply be personal treasures or miniature extensions of our identity.</p>
+						<div class= "footer-quote">— Erika Houle, author of The Psychology of Keychains</footer>
+						</blockquote>
+						</div>
+						<br>
+						<br>
+
       
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quisquam saepe quae quam dolores rem omnis est recusandae ullam asperiores.</p>
 			<p>Saepe ratione quidem neque dolores nobis harum cum, numquam, unde pariatur rem possimus itaque non recusandae tempora amet laudantium et.</p>
@@ -46,7 +58,10 @@ session_start();
 			</div>
     	
 
-  </div>
+
+
+
+	</div>
 </div>
 
 
