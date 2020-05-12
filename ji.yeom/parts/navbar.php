@@ -4,47 +4,70 @@ include_once "parts/templates.php"
 
 ?>
 
-<header class="navbar">
+<!-- <header class="navbar">
 	<div class="container display-flex">
 		<a class="logo" href="index.php">
-				<img src="img/logo.png" alt="logo">
+			<img src="img/logo.png" alt="logo">
 		</a>
-		
-		<div class="navigation">
-			<nav class="nav flex-none">
-				<ul class="display-flex">
-					<li>
-						<a href="product_list.php">Product</a>
-					</li>
-					<li>
-						<a href="about.php">About</a>
-					</li>
-					<li>
-						<a href="contact.php">Contact</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-		
-		<div class="wrap display-inline-flex">
-			<ul class="icon display-flex">
+
+		<nav class="nav flex-stretch">
+			<ul class="display-flex flex-justify-center" style="padding-top: 5px">
 				<li>
-					<a href="sign_in.php">
-						<img src="img/sign-in.jpg" alt="sign-in">
-					</a>
+					<a href="product_list.php">PRODUCT</a>
 				</li>
 				<li>
-					<a href="product_cart.php">
-						<img src="img/cart.jpg" alt="cart">
-							<span class="badge"><?= makeCartBadge(); ?></span>
-					</a>
+					<a href="about.php">ABOUT</a>
+				</li>
+				<li>
+					<a href="contact.php">CONTACT</a>
+				</li>
+				<li>
+						<a href="sign_in.php">
+						<i class="material-icons icon" style="font-size:25px; color:#fff; padding-top: 10px;">person</i>
+						</a>
+				</li>
+				<li>
+						<a href="product_cart.php.php">
+						<i class="fa fa-shopping-cart icon" style="font-size:20px; color:#fff;"></i>
+						<span class="badge icon"><?= makeCartBadge(); ?></span>
+						</a>
 				</li>
 			</ul>
-		</div>
+		</nav>
+	</div> -->
 
+
+<!-- refer to https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+<header class="navbar">
+	<div class="container">	
+			<div class="topnav" style="padding-top: 20px" id="myTopnav">
+				<a class="logo" href="index.php">
+				<img src="img/logo.png" alt="logo">
+				</a>
+			<!-- <div class="right"> -->
+				<a href="product_list.php">SHOP</a>
+				<a href="about.php">ABOUT</a>
+				<a href="contact.php">CONTACT</a>
+				<a href="sign_in.php">LOGIN</a>
+				<a href="product_cart.php">CART
+					<span class="badge"><?= makeCartBadge(); ?></span>
+				</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars" style="font-size:20px;"></i>
+				</a>
+			</div>
 	</div>
+
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("myTopnav");
+	  if (x.className === "topnav") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "topnav";
+	  }
+	}
+	</script>
+
 </header>
-
-
-
 

@@ -5,6 +5,8 @@
 // require stops when there's an error
 
 include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+
 
 // print_p($_SESSION);
 $p = array_find(
@@ -14,6 +16,7 @@ $p = array_find(
 $o = getRows(makeConn(),
 	"SELECT * FROM `products` WHERE `id` = {$_GET['id']}"
 )[0];
+
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -26,24 +29,43 @@ $o = getRows(makeConn(),
 	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
-		<div class="card">
-			<div>
-				Thank you for adding total <strong><?= $p->amount ?></strong> of the <strong><?= $o->name ?></strong> to the cart.
-			</div>
-			<br>
+	<div class="grid gap card">
+		<div class="col-xs-12 col-md-8">
 
-			<nav class="nav-flex">
+		<div class="display-flex card">
+			<div class="flex-none product-thumbs" style="margin-right:1em">
+				<img src="img/<?= $o->thumbnail ?>">
+				<p>Thank you for adding total <strong><?= $p->amount ?></strong> of the <strong><?= $o->name ?></strong> to the cart.</p>
+			</div>
+		</div>
+
+		</div>
+
+		<div class="col-xs-12 col-md-4">
+			<div class="card">
+				<div class="flex-none">
+					<a href="product_list.php" class="form-button secondary">CONTINUE SHOPPING</a>
+				</div>
+				<br>
+				<div class="flex-none">
+					<a href="product_cart.php" class="form-button primary">GO TO CHECKOUT</a>
+				</div>
+
+<!-- 			<nav class="nav-flex">
 				<ul>
 					<li class="flex-none">
-						<a href="product_list.php" class="button secondary">Continue Shopping</a>
+						<a href="product_list.php" class="form-button secondary">CONTINUE SHOPPING</a>
 					</li>
 					<li class="flex-stretch"></li>
 					<li class="flex-none">
-						<a href="product_cart.php" class="button secondary">Go to Checkout</a>
+						<a href="product_cart.php" class="form-button primary">GO TO CHECKOUT</a>
 					</li>
 				</ul>
-			</nav>
+			</nav> -->
+			</div>
 		</div>
+
+	</div>
 	</div>
 </body>
 </html>

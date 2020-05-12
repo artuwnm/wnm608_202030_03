@@ -31,7 +31,7 @@ if(!isset($data->type)) {
 				FROM `products`
 				WHERE 
 					`name` LIKE '%{$data->search}%' OR
-					`description` LIKE '%{$data->search}%' OR
+					-- `description` LIKE '%{$data->search}%' OR
 					`category` LIKE '%{$data->search}%' 
 				ORDER BY `date_create` DESC
 				LIMIT 12

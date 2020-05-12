@@ -1,26 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
 
-	<!-- Icon library -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Style Guide</title>
+	<?php include "../parts/meta.php" ?>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-	<link rel="stylesheet" href="../lib/css/styleguide.css">
-	<link rel="stylesheet" href="../lib/css/gridsystem.css">
-	<link rel="stylesheet" href="../css/storetheme.css">
-
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	<header class="container">
-		<div class="card soft" style="background-color: #000">
-			<h1 style="color: #fff">Style Guide of <span style="color: #5AFF5A">PIN YOUR PINS</span></h1>
+	<header class="navbar">
+		<div class="container display-flex">
+			<div class="card soft" style="background-color: #000">
+				<h1 style="color: #fff">Style Guide of <span style="color: #1155CC">PIN</span> YOUR <span style="color: #5AFF5A">PINS</span></h1>
+			</div>
 		</div>
 	</header>
 
@@ -64,7 +56,112 @@
 <br>
 <br>
 	<section class="container">
+		<h2 id="typography">Typography</h2>
+
+		<div class="card soft">
+			<h1 style="text-align: center">Ubuntu</h1>
+			<hr>
+<!-- 			<div class="card">
+			<div class="grid gap">
+				<div class="col-xs-12 col-md-6">
+					<div class="card">
+						<h1>Heading 1</h1>
+						<p>Bold<br>32px</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<div class="card">
+						<h2>Heading 2</h2>
+						<p>Bold<br>22px</p>
+					</div>	
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<div class="card">
+						<h3>Heading 3</h3>
+						<p>Bold<br>22px</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<div class="card">
+						<h3>Heading 4</h3>
+						<p>Bold<br>18px</p>
+					</div>
+				</div>
+			</div>	
+			</div> -->
+			
+			<div class="card">
+				<div class="grid gap">
+				<div class="col-xs-12 col-md-3">
+					<div class="card">
+						<h1>Heading 1</h1>
+						<p>Bold<br>32px</p>
+					</div>
+				</div>			
+				<div class="col-xs-12 col-md-3">
+					<div class="card">
+						<h2>Heading 2</h2>
+						<p>Bold<br>22px</p>			
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3">
+					<div class="card">
+						<h3>Heading 3</h3>
+						<p>Bold<br>22px</p>					
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3">
+					<div class="card">
+						<h4>Heading 4</h4>
+						<p>Bold<br>18px</p>				
+					</div>
+				</div>
+				</div>
+			</div>
+				
+			<div class="card">
+				<div class="grid gap">
+				<div class="col-xs-12 col-md-3">
+					<div class="card">
+						<h5>Heading 5</h5>
+						<p>Bold<br>15px</p>					
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3">
+					<div class="card">
+						<p>Paragraphs</p>
+						<p>Regular<br>15px</p>					
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3">
+					<div class="card">
+						<p class="small-text">Small Text</p>
+						<p>Regular<br>13px</p>					
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>	
+		<!-- <div class="card soft">
+			<h4 id="paragraphs">Paragraphs</h4>
+			<hr>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quisquam saepe quae quam dolores rem omnis est recusandae ullam asperiores.</p>
+			<p>Saepe ratione quidem neque dolores nobis harum cum, numquam, unde pariatur rem possimus itaque non recusandae tempora amet laudantium et.</p>
+			<p>Ipsa officiis necessitatibus perspiciatis vero, porro soluta temporibus quod ut dignissimos earum a optio dolorum, pariatur sed harum quaerat! Deleniti.</p>
+		</div>
+		<div class="card soft">
+			<h4 id="smalltext">Small Text</h4>
+			<hr>
+			<p class="small-text">Lorem ipsum dolor sit amet</p>
+		</div> -->
+	</section>
+
+
+<br>
+<br>
+	<section class="container">
 		<h2 id="colors">Colors</h2>
+
 		<div class="card soft">
 			<div class="grid gap">
 				<div class="col-xs-12 col-md-3">
@@ -98,9 +195,16 @@
 					</div>
 					<div class="col-xs-12 col-md-3">
 						<div>
-							<div class="square" style="background-color: #797979">
+							<div class="square" style="background-color: #bbbaba">
 						</div>
-						<p>#797979</p>
+						<p>#bbbaba</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-3">
+						<div>
+							<div class="square" style="background-color: #515151">
+						</div>
+						<p>#515151</p>
 						</div>
 					</div>
 					<div class="col-xs-12 col-md-3">
@@ -118,95 +222,6 @@
 <br>
 <br>
 	<section class="container">
-		<h2 id="typography">Typography</h2>
-		<div class="card soft">
-			<h1 style="text-align: center">Ubuntu</h1>
-			<hr>
-			<div class="grid gap">
-				<div class="col-xs-12 col-md-3">
-					<div class="card">
-						<h1>Heading 1</h1>
-						<p>Bold<br>32px</p>
-					</div>
-				</div>			
-				<div class="col-xs-12 col-md-3">
-					<div class="card">
-						<h2>Heading 2</h2>
-						<p>Bold<br>24px</p>			
-					</div>
-				</div>
-				<div class="col-xs-12 col-md-3">
-					<div class="card">
-						<h3>Heading 3</h3>
-						<p>Bold<br>24px</p>					
-					</div>
-				</div>
-				<div class="col-xs-12 col-md-3">
-					<div class="card">
-						<h4>Heading 4</h4>
-						<p>Bold<br>20px</p>				
-					</div>
-				</div>
-
-<!-- 				<div class="col-xs-12 col-md-3">
-					<div class="card">						
-						<p>Bold<br>32px</p>
-					</div>
-				</div>
-				<div class="col-xs-12 col-md-3">
-					<div class="card">						
-						<p>Bold<br>24px</p>
-					</div>
-				</div>
-				<div class="col-xs-12 col-md-3">
-					<div class="card">						
-						<p>Bold<br>24px</p>
-					</div>
-				</div>
-				<div class="col-xs-12 col-md-3">
-					<div class="card">	
-						<p>Bold<br>20px</p>	
-					</div>											
-				</div>	 -->
-
-				<div class="col-xs-12 col-md-3">
-					<div class="card">
-						<h5>Heading 5</h5>
-						<p>Bold<br>16px</p>					
-					</div>
-				</div>
-				<div class="col-xs-12 col-md-3">
-					<div class="card">
-						<p>Paragraphs</p>
-						<p>Regular<br>16px</p>					
-					</div>
-				</div>
-				<div class="col-xs-12 col-md-3">
-					<div class="card">
-						<p class="small-text">Small Text</p>
-						<p>Regular<br>12.8px</p>					
-					</div>
-				</div>					
-			</div>		
-		</div>	
-<!-- 		<div class="card soft">
-			<h4 id="paragraphs">Paragraphs</h4>
-			<hr>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quisquam saepe quae quam dolores rem omnis est recusandae ullam asperiores.</p>
-			<p>Saepe ratione quidem neque dolores nobis harum cum, numquam, unde pariatur rem possimus itaque non recusandae tempora amet laudantium et.</p>
-			<p>Ipsa officiis necessitatibus perspiciatis vero, porro soluta temporibus quod ut dignissimos earum a optio dolorum, pariatur sed harum quaerat! Deleniti.</p>
-		</div>
-		<div class="card soft">
-			<h4 id="smalltext">Small Text</h4>
-			<hr>
-			<p class="small-text">Lorem ipsum dolor sit amet</p>
-		</div> -->
-	</section>
-
-
-<br>
-<br>
-	<section class="container">
 		<h2 id="grids">Grid Systems</h2>
 		<div class="card soft">
 			<h5>Grid-Column-2</h5>
@@ -214,12 +229,11 @@
 					<div class="col-xs-12 col-md-6">
 						<div class="rectangle"></div>
 					</div>
-					<div class="col-xs-12 col-md-6">				
+					<div class="col-xs-12 col-md-6">
 						<div class="rectangle"></div>
 					</div>
 				</div>
-
-			<br>
+<br>
 			<h5>Grid-Column-4</h5>
 				<div class="grid gap">
 					<div class="col-xs-12 col-md-3">
@@ -235,26 +249,25 @@
 						<div class="rectangle"></div>
 					</div>
 				</div>
-
-			<br>
+<br>
 			<h5>Grid-Column-6</h5>
 				<div class="grid gap">
 					<div class="col-xs-12 col-md-2">
 						<div class="rectangle"></div>
 					</div>
-					<div class="col-xs-12 col-md-2">				
+					<div class="col-xs-12 col-md-2">
 						<div class="rectangle"></div>
 					</div>
-					<div class="col-xs-12 col-md-2">				
+					<div class="col-xs-12 col-md-2">
 						<div class="rectangle"></div>
 					</div>
-					<div class="col-xs-12 col-md-2">				
+					<div class="col-xs-12 col-md-2">
 						<div class="rectangle"></div>
 					</div>
-					<div class="col-xs-12 col-md-2">				
+					<div class="col-xs-12 col-md-2">
 						<div class="rectangle"></div>
 					</div>
-					<div class="col-xs-12 col-md-2">				
+					<div class="col-xs-12 col-md-2">
 						<div class="rectangle"></div>
 					</div>
 				</div>
@@ -265,97 +278,115 @@
 <br>
 <br>
 	<section class="container">
-		<h2 id="components">Components</h2>
-			<h3 id="buttons">Buttons</h3>		
-			<div class="card soft">
-				<h4>LARGE BUTTONS</h4>
-				<hr>
+	<h2 id="components">Components</h2>
+		<h3 id="buttons">BUTTONS</h3>		
+		<div class="card soft">
+			<!-- <div class="card"> -->
 				<div class="grid gap">
-					<div class="col-xs-12 col-md-6">
-						<h5>Primary Button</h5>
-<!-- 						<p class="small-text">Usage: Add, Checkout, Continue</p> -->
-						<button class="button primary">ADD TO CART</button>
-					</div>
-
-					<div class="col-xs-12 col-md-6">
-						<h5>Secondary Button</h5>
-<!-- 						<p class="small-text">Usage: Shop All, Remove, Apply</p> -->
-						<button class="button secondary">SHOP ALL</button>
-					</div>
-
-					<div class="col-xs-12 col-md-6">
-						<h5>Wishlist Button</h5>
-<!-- 						<p class="small-text">Usage: Only for Wishlist 	button</p> -->
-						<button class="button secondary heart-toggle" 	data-children-count="1">
-							<input type="checkbox" id="heart-example" class="hidden">
-							<label for="heart-example">WISHLIST ♥</label>
-						</button>
-					</div>
+				<div class="col-xs-12 col-md-3">
+					<h5>Primary Button</h5>
+						<div class="form-control">
+							<button type="button" class="form-button primary">BUTTON</button>
+						</div>
+						<p class="small-text">Usage: Add to Cart, Go to Checkout, Checkout</p>
 				</div>
 
-<br>
-<br>
-				<h4>SMALL BUTTONS</h4>
-				<hr>
-				<div class="grid gap">
-					<div class="col-xs-12 col-md-3">
-						<h5>Primary Button</h5>
-						<button class="button-small primary">ADD TO CART</button>
+				<div class="col-xs-12 col-md-3">
+					<h5>Secondary Button</h5>
+					<div class="form-control">
+						<button type="button" class="form-button secondary">BUTTON</button>
 					</div>
-
-					<div class="col-xs-12 col-md-3">
-						<h5>Secondary Button</h5>
-						<button class="button-small secondary">SHOP ALL</button>
-					</div>
-
-					<div class="col-xs-12 col-md-3">
-						<h5>Wishlist Button</h5>
-						<button class="button-small secondary heart-toggle" data-children-count="1">
-							<input type="checkbox" id="heart-example2" class="hidden">
-						<label for="heart-example2">WISHLIST</label>
-						<!-- <button class="button-small wishlist">WISHLIST ♥</button> -->
+					<p class="small-text">Usage: Shop All, Remove</p>					
 				</div>
-			</div>
+
+				<div class="col-xs-12 col-md-3">
+					<h5>Third Button</h5>
+					<div class="form-control">
+						<button type="button" class="form-button third">BUTTON</button>
+					</div>
+					<p class="small-text">Usage: Continue Shopping, Apply</p>					
+				</div>
+
+				<div class="col-xs-12 col-md-3">
+					<h5>Wishlist Button</h5>
+					<button class="form-button secondary heart-toggle" 	data-children-count="1">
+						<input type="checkbox" id="heart-example" class="hidden" onclick="alert('The item is added to your wishlist!')">
+						<label for="heart-example">WISHLIST ♥</label>
+					</button>
+					<p class="small-text">Usage: Only for Wishlist 	button</p>
+				</div>
+
+<!-- 					<div class="form-control">
+						<a href="#" class="form-button">Anchor</a>
+					</div> -->
+				</div>
+			<!-- </div> -->
 		</div>
 	</section>
 
+
 <br>
 	<section class="container">
-		<h3 id="forms">Input Forms</h3>
+		<h3 id="forms">INPUT FORMS</h3>
 		<div class="card soft">
 			<div class="grid gap">
-				<div class="col-xs-12 col-md-6">
-					<h5>Text Box</h5>
-					<input type="text" class="form-input" placeholder="Placeholder">
-				</div>
-
-<!-- 				<div class="col-xs-12 col-md-3">
-					<h5>Dropdown</h5>
-					<div class="dropdown">
-    					<button class="form-input">Dropdown 
-    						<i class="fa fa-caret-down"></i>
-						</button>
-					    <div class="dropdown-content">
-    						<a href="#">Link 1</a>
-    						<a href="#">Link 2</a>
-    						<a href="#">Link 3</a>
-						</div>
+			<div class="col-xs-12 col-md-3">
+				<h5>Input Textbox</h5>
+					<input type="text" class="form-input" placeholder="Text">
+			</div>
+			
+			<div class="col-xs-12 col-md-3">
+				<h5>Error</h5>
+					<input class="form-input error" placeholder="Error">
+			</div>
+<!-- 			<div class="card">
+				<h5>Form Label</h5>
+					<div class="form-control">
+						<label class="form-label" for="input-example1">Title</label>
+						<input type="text" class="form-input" placeholder="Text" id="input-example1">
 					</div>
-				</div> -->
+			</div> -->
 
-				<div class="col-xs-12 col-md-6">
-					<h5>Search Bar</h5>
-					<label class="hotdog">
-						<i class="material-icons">search</i>
+			<div class="col-xs-12 col-md-3">
+				<h5>Search Bar</h5>
+				<div class="form-control">
+					<label class="search-bar">
+						<div class="flex-none icons">
+							<i class="fa fa-search" style="color: #5AFF5A;"></i>
+						</div>
 						<div class="flex-stretch">
 							<input type="search" placeholder="Search" />
 						</div>
 					</label>
 				</div>
 			</div>
+
+			<div class="col-xs-12 col-md-3">
+				<h5>Dropdown</h5>
+				<div class="form-select">			
+					<select>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
 		</div>
 	</section>
 
+
+
+
+
+
+
+
+
+
+<br>
 <br>
 	<section class="container">
 		<h3 id="others">Other Components</h3>
@@ -363,7 +394,7 @@
 			<h4 id="boxes">BOXES</h4>
 			<hr>	
 			<div class="grid gap">
-				<div class="col-xs-4 col-md-2">					
+				<div class="col-xs-12 col-md-3">					
 					<h5>Checkbox</h5>
 					<div>
 						<label class="checkbox">Subscription
@@ -373,7 +404,7 @@
 					</div>
 				</div>
 
-				<div class="col-xs-4 col-md-2">
+				<div class="col-xs-12 col-md-3">
 					<h5>Switch/Toggle</h5>
 					<div>
 						<div class="toggle" data-children-count="1">
@@ -392,7 +423,7 @@
 
 			</div>
 
-<br>
+
 <br>
 			<h4 id="cards">CARDS</h4>
 			<hr>
@@ -402,6 +433,13 @@
 					<div class="card soft square">
 					</div>
 					<p>Card Soft</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3">
+					<div>
+					<div class="card light square">
+					</div>
+					<p>Card Light</p>
 					</div>
 				</div>
 				<div class="col-xs-12 col-md-3">
@@ -416,13 +454,6 @@
 					<div class="card dark square">
 					</div>
 					<p>Card Dark</p>
-					</div>
-				</div>
-				<div class="col-xs-12 col-md-3">
-					<div>
-					<div class="card flat square">
-					</div>
-					<p>Card Flat</p>
 					</div>
 				</div>
 			</div>
@@ -487,7 +518,7 @@
 				</div>
 			</div>
 			
-			<br>	
+<br>	
 			<h5>Product Figures</h5>
 				<div class="grid gap">
 				<div class="col-xs-6 col-md-3">		
@@ -578,36 +609,127 @@
 		</table>
 		`;
 	}
-	</script>	
+	</script>
 
-			<h5>Account Form</h5>
-				<div class="grid gap">
-					<div class="col-4">
-					<input type="fname" class="form-input" placeholder="First Name">
-					<input type="lname" class="form-input" placeholder="Last Name">
-					<input type="email" class="form-input" placeholder="Email">
-					<input type="phone" class="form-input" placeholder="Phone">
-					<input type="address" class="form-input" placeholder="Address">
-					<input type="city" class="form-input" placeholder="City">
-					<input type="state" class="form-input" placeholder="State">
-					<input type="zipcode" class="form-input" placeholder="Zipcode">				
+		<h4 id="forms">Forms</h4>
+		<hr>
+<!-- 		<div class="card">
+			<h5>Form Input</h5>
+				<input type="text" class="form-input" placeholder="Text">
+				<input type="password" class="form-input" placeholder="Password">
+				<input type="number" class="form-input" placeholder="Number">
+				<input type="search" class="form-input" placeholder="Search">
+		</div> -->
+
+<!-- 		<div class="card">
+			<h5>Form Label</h5>
+				<label class="form-label" for="input-example1">Example</label>
+				<input type="text" class="form-input" placeholder="Text" id="input-example1">
+
+				<label class="form-label" for="input-example2">Example</label>
+				<input type="text" class="form-input" placeholder="Text" id="input-example2">
+
+				<label class="form-label" for="input-example3">Example</label>
+				<input type="text" class="form-input" placeholder="Text" id="input-example3">
+		</div> -->
+
+		<div class="card">
+			<h5>Create an account</h5>
+				<div class="form-control">
+					<label class="form-label" for="input-example3">Username</label>
+					<input type="text" class="form-input" placeholder="Username">
+				</div>
+				<div class="form-control">
+					<label class="form-label" for="input-example3">Password</label>
+					<input type="text" class="form-input" placeholder="Password">
+				</div>
+				<div class="form-control">
+					<label class="form-label" for="input-example3">Email</label>
+					<input type="text" class="form-input" placeholder="Email">	
 				</div>
 			</div>
 
-<!-- 		<div class="card soft">
-			<h3>Basic Table</h3>
-			<script>document.write(makeTable('table striped'))</script>
-		</div> -->
+<br>
+		<div class="card">
+			<h5>Shipping Information</h5>
+			<div class="grid gap">
+				<div class="col-xs-12 col-md-6">
+					<label class="form-label" for="input-example1">First Name</label>
+					<input type="text" class="form-input" placeholder="First Name">
+				</div>
+				<div class="col-xs-12 col-md-6">
+						<label class="form-label" for="input-example2">Last Name</label>
+						<input type="text" class="form-input" placeholder="Last Name">
+				</div>
+			</div>
+			<div class="grid gap">
+				<div class="col-xs-12 col-md-6">
+					<div class="form-control">
+						<label class="form-label" for="input-example3">Address</label>
+						<input type="text" class="form-input" placeholder="Address">
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<div class="form-control">
+						<label class="form-label" for="input-example3">Address 2 (optional)</label>
+						<input type="text" class="form-input" placeholder="Apartment, suite, etc.">
+					</div>
+				</div>
+			</div>
+			
+			<div class="grid gap">
+				<div class="col-xs-12 col-md-4">
+					<label class="form-label" for="input-example3">City</label>
+					<input type="text" class="form-input" placeholder="City">
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<label class="form-label" for="input-example3">State</label>
+					<input type="text" class="form-input" placeholder="State">
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<label class="form-label" for="input-example3">Zipcode</label>
+					<input type="text" class="form-input" placeholder="Zipcode">
+				</div>	
+			</div>
+			<div class="form-control">
+				<label class="form-label" for="input-example3">Phone</label>
+				<input type="tel" class="form-input" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+			</div>
+		</div>
+
+<br>
+		<div class="card">
+			<h5>Payment</h5>
+				<div class="form-control">
+					<label class="form-label" for="input-example1">Name on card</label>
+					<input type="text" class="form-input" placeholder="e.g. Julie Smith">
+				</div>
+				<div class="form-control">
+					<label class="form-label" for="input-example2">Card Number</label>
+					<input type="text" class="form-input" placeholder="0000 0000 0000 0000">
+				</div>
+			<div class="grid gap">
+				<div class="col-xs-12 col-md-6">
+					<label class="form-label" for="input-example1">Expiry Date</label>
+					<input type="text" class="form-input" placeholder="MM/YYYY">
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<label class="form-label" for="input-example2">Security Code</label>
+					<input type="text" class="form-input" placeholder="000">
+				</div>
+			</div>
+	</div>
 
 <br>
 <br>
-		<h5>Checkout Table</h5>
-			<script>document.write(makeTable('table lined horizontal striped'))</script>
-
+		<h4>NAVIGATION BARS</h4>
+		<hr>
+			<h5>Checkout Table</h5>
+				<script>document.write(makeTable('table lined horizontal striped'))</script>
 <br>
 <br>
-		<h5>Administration Table</h5>
-			<script>document.write(makeTable('table lined all striped'))</script>
+			<h5>Administration Table</h5>
+				<script>document.write(makeTable('table lined all striped'))</script>
 
 		<script>
 			const makeNav = (classes='') => {
@@ -633,6 +755,10 @@
 <br>
 		<h4>NAVIGATION BARS</h4>
 		<hr>
+<!-- 			<h5>Basic Nav</h5>
+			<script>document.write(makeNav("nav"))</script>
+<br>
+<br> -->
 			<h5>Flex Nav</h5>
 				<script>document.write(makeNav("nav-flex"))</script>
 <!-- 		<div>
@@ -662,7 +788,8 @@
 			<h5>Breadcrumb Nav</h5>
 				<script>document.write(makeNav("nav-crumbs"))</script>
 					<br>
-					<nav class="nav-crumbs"></nav>	
+					<!-- <nav class="nav-crumbs"></nav>	 -->
+
 
 		<script>
 			$("[class^='nav'] a").on("click",function(e){
@@ -674,12 +801,14 @@
 
 		</div>
 	</section>
-
-
-<footer class="container">
-	<div class="card soft" style="background-color: #000">
-		<p style="color: #fff">Designed by Ji Yeom</p>
+	
+	<footer class="navbar">
+	<div class="container display-flex flex-justify-center">
+		<p class="small-text">
+			<a href="index.php">© 2020 PIN YOUR PINS</a>
+		</p>
 	</div>
-</footer>
+	</footer>
+
 </body>
 </html>

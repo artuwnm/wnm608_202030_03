@@ -1,4 +1,5 @@
 
+
 const showResults = (d) => {
 	$(".productlist").html(
 		d.result.length == 0 ? "No Results" :
@@ -44,8 +45,6 @@ $(()=>{
 				getData({type:"product_sort",column:'price',dir:'ASC'}) :
 			getData({type:'product_all'})
 		).then(showResults);
-
 	})
-
 
 });

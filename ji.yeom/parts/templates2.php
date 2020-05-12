@@ -58,34 +58,34 @@ return $r.<<<HTML
 
 	<div class="flex-stretch">
 		<div class="display-flex">
-
 			<div class="flex-stretch">
 				<strong>$o->name</strong>
 			</div>
+			<div class="flex-none">&dollar;$pricefixed</div>
+		</div>
 
-			<div class="flex-none" style="margin-right:1em">&dollar;$pricefixed</div>
+		<div class="display-flex">
+		<div class="form-control flex-stretch">
+			<form method="get" action="data/form_actions.php" onchange="this.submit()">
+				<input type="hidden" name="action" value="update-cart-amount">
+				<input type="hidden" name="id" value="$o->id">
+				<div class="display-flex"><div class="flex-none">$selectamount</div></div>
+			</form>
+		</div>
 
-			<div class="form-control flex-none" style="margin-right:1em">
-				<form method="get" action="data/form_actions.php" onchange="this.submit()">
-					<input type="hidden" name="action" value="update-cart-amount">
-					<input type="hidden" name="id" value="$o->id">
-					<div class="display-flex"><div class="flex-none">$selectamount</div></div>
-				</form>
-			</div>
-
-			<div class="form-control">
-				<form method="get" action="data/form_actions.php">
-					<input type="hidden" name="action" value="delete-cart-item">
-					<input type="hidden" name="id" value="$o->id">
-					<div class="display-flex">
-						<div class="flex-none">
-							<div class="flex-none icons">
-								<button class="xbox"><i class="fa fa-close"></i></button>
-							</div>
+		<div class="form-control">
+			<form method="get" action="data/form_actions.php">
+				<input type="hidden" name="action" value="delete-cart-item">
+				<input type="hidden" name="id" value="$o->id">
+				<div class="display-flex">
+					<div class="flex-none">
+						<div class="flex-none icons">
+							<button class="xbox"><i class="fa fa-close"></i></button>
 						</div>
 					</div>
+				</div>
 				</form>
-			</div>
+		</div>
 
 		</div>
 	</div>

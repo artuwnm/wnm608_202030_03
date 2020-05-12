@@ -6,8 +6,6 @@
 </head>
 
 <body>
-	<?php include "parts/navbar.php" ?>
-
 	<div class="container">
 		<nav class="nav-crumbs">
 			<ul>

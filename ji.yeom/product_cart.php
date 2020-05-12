@@ -1,3 +1,4 @@
+
 <?php
 
 include_once "lib/php/functions.php";
@@ -16,7 +17,7 @@ $cartItems = getCartItems();
 	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
-		<nav class="nav-crumbs">
+		<nav class="nav-crumbs" style="padding-left: 20px">
 			<ul>
 				<li><a href="product_list.php"><h5>Back to the store</h5></a></li>
 			</ul>
@@ -24,7 +25,7 @@ $cartItems = getCartItems();
 
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-8">
-				<div class="card flat">
+				<div class="card">
 				<?php
 				echo array_reduce($cartItems,'cartListTemplate');
 				?>
@@ -35,12 +36,13 @@ $cartItems = getCartItems();
 				<div class="card soft flat">
 					<?= cartTotals() ?>
 				</div>
-				<div class="card-section">
-					<a class="button-confirm" href="product_checkout.php">CHECKOUT</a>
-				</div>
+				<br>
+				<!-- <div class="card-section"> -->
+					<a href="product_checkout.php" class="form-button primary">CHECKOUT</a>
+				<!-- </div> -->
 			</div>
-
 		</div>
+
 	</div>
 	
 </body>
