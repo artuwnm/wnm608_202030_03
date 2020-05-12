@@ -173,6 +173,7 @@ echo <<<HTML
 	</ul>
 	</div>
 </nav>
+
 <form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&action=$createorupdate">
 	<div class="grid gap">
 		<div class="col-xs-12 col-md-5">
@@ -224,6 +225,8 @@ HTML;
 
 
 
+
+
 // LAYOUT
 
 ?><!DOCTYPE html>
@@ -234,6 +237,40 @@ HTML;
 	<?php include "../parts/meta.php" ?>
 </head>
 <body>
+
+	<header class="navbar">
+	<div class="container">	
+			<div class="topnav" style="padding-top: 20px" id="myTopnav">
+				<a class="logo" href="index.php">
+				<img src="img/logo.png" alt="logo">
+				</a>
+			<!-- <div class="right"> -->
+				<a href="product_list.php">SHOP</a>
+				<a href="about.php">ABOUT</a>
+				<a href="contact.php">CONTACT</a>
+				<a href="sign_in.php">LOGIN</a>
+				<a href="product_cart.php">CART
+					<span class="badge"><?= makeCartBadge(); ?></span>
+				</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars" style="font-size:20px;"></i>
+				</a>
+			</div>
+	</div>
+
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("myTopnav");
+	  if (x.className === "topnav") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "topnav";
+	  }
+	}
+	</script>
+
+	</header>
+
 	<header class="navbar">
 		<div class="container display-flex">
 			<a class="logo" href="index.php">
@@ -247,8 +284,8 @@ HTML;
 				</ul>
 			</nav>
 		</div>
-		</div>
 	</header>
+
 
 	<div class="container">
 		<?php 

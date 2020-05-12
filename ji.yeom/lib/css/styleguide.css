@@ -442,6 +442,7 @@ img:hover {
 	width: 100%;
 	border-width: 0;
 	border: 1px solid #000;
+	border-radius: 0;
 	color: inherit;
 	font: inherit;
 	font-size: 15px;
@@ -473,6 +474,7 @@ img:hover {
 	width: 100%;
 	border-width: 0;
 	border: 1px solid #000;
+	border-radius: 0;
 	color: inherit;
 	font: inherit;
 	font-size: 15px;
@@ -542,6 +544,10 @@ img:hover {
 		background-color: #fff;
 		color: red;
 		border: 1px solid red;
+	}
+
+	.filter.active button {
+		background-color: #5AFF5A;
 	}
 
 .form-select {

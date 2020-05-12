@@ -26,12 +26,10 @@ include_once "lib/php/functions.php";
 				<li><a href="product_list.php">Shop</a></li>
 			</ul>
 		</nav>
-
-<br>
-<br>			
-		<div class="grid gap">
+		
+		<div class="grid gap form-control">
 			<div class="col-xs-12 col-md-3">
-			<div class="form-control display-flex">
+			<div class="display-flex">
 				<form class="search-bar" id="product-search">
 					<div class="flex-none icons">
 						<i class="fa fa-search" style="color: #5AFF5A;"></i>
@@ -42,24 +40,24 @@ include_once "lib/php/functions.php";
 			</div>
 
 			<div class="col-xs-12 col-md-6">
-			<div class="form-control display-flex flex-align-center flex-justify-center">
-				<div class="flex-none">
+			<div class="display-flex flex-align-center flex-justify-center">
+				<div class="flex-none active filter">
 					<button type="button" class="form-button secondary js-filter" data-type="category"  data-value="">All</button>
 				</div>
-				<div class="flex-none">
+				<div class="flex-none filter">
 					<button type="button" class="form-button secondary js-filter" data-type="category"  data-value="pin">Pin</button>
 				</div>
-				<div class="flex-none">
+				<div class="flex-none filter">
 					<button type="button" class="form-button secondary js-filter" data-type="category"  data-value="patch">Patch</button>
 				</div>
 			</div>
 			</div>
 
 			<div class="col-xs-12 col-md-3">
-			<div class="form-control display-flex">
-				<p style="padding-right: 10px">Sort by</p>
-				<div class="form-select" style="border-radius: 0">
-					<select class="js-sort">
+			<div class="display-flex flex-align-center flex-justify-center">
+				<p style="padding-right: 10px; white-space:nowrap">Sort by</p>
+				<div class="form-select">
+					<select class="js-sort" style="padding: 1em 1em">
 						<option value="1">Newest</option>
 						<option value="2">Oldest</option>
 						<option value="3">Price, High to Low</option>
@@ -73,8 +71,7 @@ include_once "lib/php/functions.php";
 
 		</div>
 
-<br>
-		<div class="grid gap productlist">
+		<div class="grid gap productlist" style="padding-top: 1em;">
 		</div>
 
 		</div>

@@ -1,10 +1,13 @@
 # Ji Yeom
 
 ## Links
-### Website Design(PIN YOUR PINS)
-- http://jiwonyeom.com/aau/wnm608/ji.yeom/index.php
-- http://jiwonyeom.com/aau/wnm608/ji.yeom/styleguide/index.html
-- http://jiwonyeom.com/aau/wnm608/ji.yeom/admin/users.php
+### Store Design(PIN YOUR PINS)
+<div class="card soft" style="background-color: #000">
+	<h1><span style="color: #1155CC">PIN</span><span style="color: #fff">YOUR</span><span style="color: #5AFF5A">PINS</span></h1>
+</div>
+- http://jiwonyeom.com/aau/wnm608/ji.yeom
+- http://jiwonyeom.com/aau/wnm608/ji.yeom/admin
+- http://jiwonyeom.com/aau/wnm608/ji.yeom/styleguide
 
 ### Recipes
 - http://jiwonyeom.com/aau/wnm608/ji.yeom/recipes/index.html
