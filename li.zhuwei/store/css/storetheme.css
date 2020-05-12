@@ -1,4 +1,46 @@
-form {border: 3px solid #f1f1f1;}
+
+.DescriptionText{
+  color:pink;
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.product-description-button {
+    border: none;
+    outline: 2;
+    padding: 15px 32px;
+    margin: 19px 19px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #1c1c1c;
+    text-align: center;
+    cursor: pointer;
+    width: 88%;
+    font-size: 18px;
+}
+
+.product-description-button:hover {
+  opacity: 1.2;
+   background-color: #fb8ca9;
+}
+
+form {border: 3px /*solid #ffffff*/;}
+
+.btn.active {
+  display:block;
+  border-width:0;
+  font:inherit;
+  padding:0.5em 1em;
+  -webkit-appearance:none;
+  outline:0;
+  text-align:center;
+  text-decoration:none;
+  color: white;
+  cursor:pointer;
+  background-color: #fb8ca9;
+}
 
 input[type=text], input[type=password] {
   width: 100%;
@@ -85,6 +127,14 @@ main {
 }
 
 /* FIGURE */
+
+.figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
 .product-figure {
   margin:0;
 }
@@ -102,6 +152,14 @@ main {
 }
 
 .product-figure.soft {
+  border-radius:1em;
+  overflow:hidden;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
   border-radius:1em;
   overflow:hidden;
   box-shadow:0 2px 5px rgba(0,0,0,0.1);
@@ -140,6 +198,24 @@ main {
 .product-description{
   font-weight: normal;
   text-decoration: none;
+  /*text-align:center;*/
+  color:#999;
+}
+.product-price{
+  font-family: helvatica;
+}
+
+.img-square img{
+  width: 5 em;
+  height: 5 em;
+  object-fit: contain;
+  object-position: center;
+}
+
+.itemlist-item {
+  margin:1em;
+  padding:1em;
+  border: 1px solid var(--color-neutral-light);
 }
 
 @media (max-width:600px) {
@@ -147,11 +223,21 @@ main {
     display:block;
   }
 }
+.product-main img {
+  width:100%;
+  height:40vh;
+  object-fit:cover;
+}
+.product-thumbs img {
+  height:230px;
+  width:100px;
+  object-fit:cover;
+}
 
 footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #fb8ca9;
+    background-color: var(--color-neutral-dark);
     color: white;
     text-align: center;}

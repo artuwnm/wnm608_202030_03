@@ -1,2 +1,1 @@
 index.php
-get out!

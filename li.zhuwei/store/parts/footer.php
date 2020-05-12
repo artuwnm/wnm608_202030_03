@@ -1,7 +1,8 @@
 <footer>
   <div id="footer">
-  <p>Copyright by: Zhuwei Li</p>
-  <p>Contact information: <a href="janelleweiwei@hotmail.com">
-  janelleweiwei@hotmail.com</a>.</p>
+  <p>© Zhuwei Li</p>
+  <p>Terms & Conditions</p>
+  <p>Privacy Policy</p>
+  <p>Accessibility</p>
 </div>
 </footer>

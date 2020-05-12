@@ -1,13 +1,19 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Landing Page</title>
-    <?php include "parts/meta.php" ?>
+    <?php include "parts/meta.php"; ?>
+    <?php include "parts/templates.php"; ?>
     <link rel="stylesheet" href="lib/css/gridsystem.css">
     <link rel="stylesheet" href="lib/css/styleguide.css">
     <link rel="stylesheet" href="css/storetheme.css">
     <script src="https://kit.fontawesome.com/041ded284b.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
  
 <body>
@@ -25,6 +31,16 @@
         </div>
       </div>
      </div> 
+
+    <div class="container">
+      <h2>Trending</h2>
+      <?php recommendedCategory('trending'); ?>
+    </div>
+
+    <div class="container">
+      <h2>Seasons</h2>
+      <?php recommendedCategory('seasons'); ?>
+    </div>
 
     <div class="container">
       <div class="card soft">
@@ -45,7 +61,8 @@
 
     <div class="container">
       <div class="card soft">
-        <div class="col-4">
+
+        <div class="col-8">
           <div class="card soft">
             <!--1 p*2>lorem20 -->
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam perspiciatis, ipsa! Dicta dolor blanditiis, velit iure, distinctio perferendis nisi impedit.</p>
@@ -54,7 +71,7 @@
         </div>
 
 
-          <div class="col-4">
+          <div class="col-6">
           <div class="card soft">
             <!-- p*2>lorem20 -->
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veritatis sequi fugit eum iste cumque molestias eveniet at quasi alias!</p>

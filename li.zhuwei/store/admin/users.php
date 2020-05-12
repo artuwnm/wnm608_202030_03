@@ -5,6 +5,14 @@ $USER_DATA_FILE = "../data/users.json";
 
 $users = getData($USER_DATA_FILE);
 
+$empty_user = (object)[
+  "name"=>"",
+  "type"=>"",
+  "email"=>"",
+  "classes"=>[]
+];
+
+
 if (isset($_GET['id'])) {
   $has_update = false;
   $curr_user = $users[$_GET['id']];

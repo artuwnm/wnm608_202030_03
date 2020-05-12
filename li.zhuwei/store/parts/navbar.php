@@ -1,3 +1,8 @@
+<?php
+
+session_start()
+?>
+
 <header class="navbar">
   <script src="https://kit.fontawesome.com/041ded284b.js" crossorigin="anonymous"></script>
   <div class="container display-flex">
@@ -14,9 +19,7 @@
           <li><a href="index.php">Home</a></li>
           <li><a href="collection.php">Collection</a></li>
           <li><a href="about.php">About</a></li>
-          <li><a href="contacts.php">Log In</a></li>
-           
-
+          <li><a href="login.php">Log In</a></li>
             <a href="bag.php">Bag
               <i class="fas fa-shopping-bag"></i>
             </a>

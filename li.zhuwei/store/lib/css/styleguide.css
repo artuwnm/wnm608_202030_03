@@ -6,12 +6,32 @@
   --color-neutral-secondbreakfast: #cdc6c6;
   --color-neutral-medium: #988c8c;
   --color-neutral-light: #ece7e7;
+
   --colo-theme-color:#f3cfd5;
+
   --color-main-light:#cfe6a4;
   --color-main-medium:#fb8ca9;
   --color-main-dark:#44105a;
+
+   --color-confirm-light:green;
+    --color-confirm-medium:green;
+    --color-confirm-dark:green;
+
+    --color-warning-light:orange;
+    --color-warning-medium:orange;
+    --color-warning-dark:orange;
+
+    --color-alert-light:red;
+    --color-alert-medium:red;
+    --color-alert-dark:red;
+
+
   --color-black:black;
   --color-white:white;
+
+
+
+
   --header-height:3rem;
 }
 
@@ -66,8 +86,8 @@ code {
 /* ATOMIC CLASSES */
 .display-flex { 
     vertical-align: middle;
-    line-height: 115px;
-    height: 145px;
+    /*line-height: 115px;*/
+    /*height: 145px;*/
     display: flex; 
 }
 .display-inline-flex { display:inline-flex; }
@@ -104,9 +124,7 @@ code {
   left: 2em;
   height: 60px;
   margin-top: 0.95em;
-
 }
-
 
 /* NAV */
 .nav-crumbs ul,
@@ -211,8 +229,6 @@ code {
   background-attachment:fixed;
 }
 
-
-
 /* TABLE */
 .table {
   width:100%;
@@ -308,7 +324,7 @@ code {
 .form-label {
   display:block;
   width:100%;
-  font-size:0.8em;
+  font-size:1em;
   color:var(--color-neutral-medium);
 }
 .form-control {
@@ -317,11 +333,13 @@ code {
 
 .form-button {
   display:block;
+  vertical-align: baseline;
   border-width:0;
   font:inherit;
   padding:0.5em 1em;
   -webkit-appearance:none;
-  outline:0;
+  outline:none;
+  border: none;
   text-align:center;
   background-color:black;
   text-decoration:none;
@@ -331,7 +349,9 @@ code {
 .form-button:hover {
   text-decoration:none;
 }
-
+.form-button.confirm{
+  background-color: var (--color-confirm-light);
+}
 
 .hotdog {
   display:block;
@@ -346,7 +366,7 @@ code {
   display:flex;
 }
 .hotdog input {
-  border-width:0;
+  border-width:1;
   display:block;
   color:inherit;
   font:inherit;
@@ -357,7 +377,9 @@ code {
 .hotdog .icon {
   padding:0 1em;
 }
-
+.hotdog.light {
+  background-color:var(--color-white);
+}
 
 
 

@@ -5,16 +5,11 @@ include_once "lib/php/functions.php";
 include_once "parts/templates.php";
 
 $data = getRows(
-  makeConn(),
+  makePDOConn(),
   "SELECT * FROM `products` WHERE `id` = '{$_GET['id']}'"
   );
-// print_p($data);
 $randomProduct = $data[0];  
 $images = explode(",",$randomProduct->images);
-// print_p($data);
-// print_p($randomProduct);
-// print_p($images);
-
 ?>
 
 <!DOCTYPE html>
@@ -29,6 +24,7 @@ $images = explode(",",$randomProduct->images);
 </head>
 <body>
     <?php include "parts/navbar.php" ?>
+
   <div class="container">
     <nav class="nav-crumbs" style="margin:1em 0">
       <ul>
@@ -42,51 +38,55 @@ $images = explode(",",$randomProduct->images);
           <div class="product-main">
             <img src="<?= $randomProduct->thumbnail ?>" alt="">
           </div>
-          <div class="product-thumbs">
+          <!-- <div class="product-thumbs">
           <?=
           array_reduce($images,function($r, $image){
-            return $r."<img src='$image'>";
+            return $r."<img src='/images'>";
           })
           ?>
-          </div>
+          </div> -->
         </div>
       </div>
-      <div class="col-xs-12 col-md-5">
-        <div class="card soft">
-          <h2><?= $randomProduct->name ?></h2>
-          <div class="product-description">
-            <div class="product-price">&dollar;<?= $randomProduct->price ?></div>
-          </div>
-          
 
-    <div class="card-section">
+      <div class="col-xs-12 col-md-5">
+        <form class="card soft flat" method="get" action="data/form_actions.php">
+          <div class="card-section">
+            <h2><?= $randomProduct->name ?></h2>
+            <div class="product-description">
+              <div class="product-price">&dollar;<?= $randomProduct->price ?></div>
+            </div>
+          </div>
+
+          <div class="card-section">
             <label class="form-label">Amount</label>
             <select name="amount" class="form-input">
               <!-- option*10>{$} -->
-              <option value="">1</option>
-              <option value="">2</option>
-              <option value="">3</option>
-              <option value="">4</option>
-              <option value="">5</option>
-              <option value="">6</option>
-              <option value="">7</option>
-              <option value="">8</option>
-              <option value="">9</option>
-              <option value="">10</option>
+              <option >1</option>
+              <option >2</option>
+              <option >3</option>
+              <option >4</option>
+              <option >5</option>
+              <option >6</option>
+              <option >7</option>
+              <option >8</option>
+              <option >9</option>
+              <option >10</option>
             </select>
-    </div>
-
-
-
-          <div>
-            <a class="form-button" href="product_added_to_cart.php">Add To Cart</a>
           </div>
-        </div>
+
+          <div class="card-section">
+            <input type="hidden" name="action" value="add-to-cart">
+            <input type="hidden" name="id" value="<?= $randomProduct->id ?>">
+            <input type="hidden" name="price" value="<?= $randomProduct->price ?>">
+            <input type="submit" class="form-button" value="Add To Cart">
+          </div>
+        </form>
       </div>
     </div>
+
     <div class="card soft dark">
       <h3>Description</h3>
-      <div><?= $randomProduct->description ?></div>
+      <div class=DescriptionText><?= $randomProduct->description ?></div>
     </div>
   </div>
 
@@ -97,6 +97,11 @@ $images = explode(",",$randomProduct->images);
         The item is <?= $_GET['id'] ?>
       </div>
     </div>
+  </div>
+
+  <div>
+    <h2>Recommended Products</h2>
+    <?php recommendedSimilar($randomProduct->category, $randomProduct->id) ?>
   </div>
 
   <?php include "parts/footer.php" ?>
