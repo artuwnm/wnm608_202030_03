@@ -50,6 +50,9 @@ h4,
 h5,
 h6 {
   font-family:Montserrat,sans-serif;
+  font-weight: normal;
+  color: #316a8a;
+  margin-top: -15px;
 }
 
 h2{
@@ -206,6 +209,7 @@ nav{
   max-width:1000px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 20px;
 }
 .hidden { display:none; }
 
@@ -215,6 +219,98 @@ nav{
   display:block;
 
 }
+
+/* CHECK OUT */
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+/* THANK YOU IMAGE */
+
+ .img-container {
+        text-align: center;
+      }
 
 /* PRODUCT IMAGES */
 
@@ -273,42 +369,6 @@ nav{
 .flex-justify-center { justify-content:center; }
 
 
-
-
-/* COMPONENT CLASSES */
-
-.navbar {
-    background-color: #fff;
-    color: #ffffff;
-    line-height: var(--header-height);
-}
-
-.navbar h1 {
-  color: #73bee4;
-  font-weight: bold;
-  margin-top: 15px;
-  font-size:1rem;
-}
-.navbar a {
-  padding: 0 1em;
-}
-
-.av-flex{
-
-  float:right;
-}
-
-/* NAVBAR-TOP */
-
-
-
-.navbar-top {
-   background-color: #f2b6a0;
-    color: var(--color-neutral-light);
-    height: 30px;
-    margin-top: 0px;
-}
-
 /* NAVBAR */
 
 
@@ -341,6 +401,7 @@ nav{
 li {
     display: list-item;
     text-align: -webkit-match-parent;
+    margin-right: 4em;
 
 }
     
@@ -462,15 +523,16 @@ html, body {
 list-style-type: none;
     margin-top: 5.0em;
     margin-bottom: 0;
-    padding-right: 100px;
+    padding-right: 300px;
 }
 
 .nav-pills a,
 .nav-stretch a,
 .nav-flex a,
 .nav a {
-  display:block;
-  padding:0.2em 0.1em;
+    display: block;
+    border-radius: 0.5em;
+    padding: 0.6em 1.5em;
 }
   .nav-pills a:hover,
   .nav-stretch a:hover,
@@ -512,6 +574,9 @@ list-style-type: none;
   content:'/';
   margin:0 0.4em;
 }
+
+/* BANNER INDEX */
+
 
 
 
@@ -557,124 +622,27 @@ list-style-type: none;
 
    /* FOOTER */
 
-footer{
-  position: fixed;
-  bottom: 0;
-}
- 
-@media (max-height:800px){
-  footer { position: static; }
-  header { padding-top:40px; }
-}
- 
- 
-.footer-distributed{
-    background-color: #f2b6a073;
-    max-width: 100%;
-    text-align: center;
-    padding-top: 35px;
-    margin-top: 60px;
-}
- 
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-  display: inline-block;
-  vertical-align: top;
-}
- 
-/* Footer left */
- 
-.footer-distributed .footer-left{
-  width: 80%;
-  margin-right: 50px;
-}
- 
-.footer-distributed h3{
-  color:  #ffffff;
-  font: normal 36px 'Cookie', cursive;
-  margin: 0;
-}
- 
-/* The company logo */
- 
-.footer-distributed .footer-left img{
-  width: auto;
-}
+.logo-footer{
+  height:100px;
+  }
 
-p {
-    display: block;
-    color: #316a8a;
-    margin-left: 100px;
-}
-
- 
-
-/* Footer Right */
- 
-.footer-distributed .footer-right{
-  width: 30%;
-}
-
- 
-.footer-distributed .footer-icons{
-  margin-top: 60px;
-}
- 
-.footer-distributed .footer-icons a{
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-  background-color:  #33383b;
-  border-radius: 2px;
- 
-  font-size: 20px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 35px;
- 
-  margin-right: 3px;
-  margin-bottom: 5px;
-}
- 
-/* Here is the code for Responsive Footer */
-/* You can remove below code if you don't want Footer to be responsive */
- 
- 
-@media (max-width: 880px) {
- 
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right{
-    display: block;
+.footer {
+    left: 0;
+    bottom: 0px;
     width: 100%;
-    margin-bottom: 40px;
+    margin-top: 3rem;
     text-align: center;
-  }
- 
-  .footer-distributed .footer-center i{
-    margin-left: 0;
-  }
- 
+    background: #f2b6a085;
 }
-
+ 
 
 
 /* view window */
-.view-window {
- height: 450px;
-    overflow: hidden;
-    position: relative;
-    background-size: cover;
-    background-attachment: inherit;
+
+.responsive {
+  max-width: 100%;
+  height: auto;
 }
-
-
-
-
-
-
 
 /* TABLE */
 .table {
@@ -773,7 +741,8 @@ p {
 .form-input {
     display: block;
     border-width: 0;
-    border-bottom: 1px solid var(--color-neutral-light);
+    width: 100%;
+    border-bottom: 1px solid #f2b6a0;
     color: inherit;
     font: inherit;
     padding-left: 30px;
@@ -790,7 +759,7 @@ p {
 }
 
 .form-control {
-margin: 3em 0;
+margin: 2em 0;
 }
 
 .form-button-blue {
@@ -832,14 +801,14 @@ margin: 3em 0;
     display: block;
     width: 100%;
     border-width: 0;
-    color: inherit;
+    color: white;
     font: inherit;
     padding: 0.5em 1em;
     -webkit-appearance: none;
     outline: 0;
     text-align: center;
-    background-color: #00ff0059;
-    border-radius: 0.3em;
+    background-color: #73bee4;
+    border-radius: 0.5em;
     text-decoration: none;
     cursor: pointer;
 }

@@ -18,6 +18,7 @@ $images = explode(",",$o->images);
 	<title>Store: Product Item</title>
 	
 	<?php include "parts/meta.php" ?>
+	<script src="js/products.js"></script>
 </head>
 <body>
 

@@ -23,11 +23,12 @@ $o = getRows(makeConn(),
 	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
-		<div class="card soft">
-			<h2>Product Item</h2>
 
-			<div>
-				Thank you for adding <?= $p->amount ?> of the <?= $o->name ?> to the cart.
+			<div class="img-container">
+				<img src="images/thankyou-01.png">
+				<div>
+				for adding <?= $p->amount ?> of the <?= $o->name ?> to the cart.
+			</div>
 			</div>
 
 			<nav class="nav-flex">
@@ -41,7 +42,6 @@ $o = getRows(makeConn(),
 					</li>
 				</ul>
 			</nav>
-		</div>
 	</div>
 	
 	

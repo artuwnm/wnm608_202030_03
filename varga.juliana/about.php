@@ -12,7 +12,7 @@
 	<div class="container">
 		<div class="card medium">
 			<h2>About Us</h2>
-
+<br>
 			<div>
 				<p>We are a well-established jewelry store in San Francisco, CA.
 				that has grown with our community from a small store to a
