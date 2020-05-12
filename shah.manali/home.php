@@ -39,17 +39,9 @@ ul>li*3>a[href=#]{Link $}
 </header> -->
 
 <!-- .container>p*2>lorem30 -->
-<div class="container">
-	<div class="card soft">
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ex architecto magni suscipit optio, eaque maiores quis, et modi ea. Fugit veniam pariatur quia eos! Debitis provident consequuntur numquam optio.</p><p>Deleniti nemo, animi. At itaque ut commodi officia beatae. Dolor numquam pariatur nihil deserunt modi placeat esse delectus corporis, recusandae praesentium odio aperiam reprehenderit eos cumque cum. Corrupti ex, itaque?</p>
-</div>
-	
-<div class="card soft dark">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ex architecto magni suscipit optio, eaque maiores quis, et modi ea. Fugit veniam pariatur quia eos! Debitis provident consequuntur numquam optio.</p><p>Deleniti nemo, animi. At itaque ut commodi officia beatae. Dolor numquam pariatur nihil deserunt modi placeat esse delectus corporis, recusandae praesentium odio aperiam reprehenderit eos cumque cum. Corrupti ex, itaque?</p>
-</div>
-</div>
 
-<div class="view-window display-flex flex-align-center flex-justify-center" style="background-image:url('img/living room.jpg')">
+
+<div class="view-window display-flex flex-align-center flex-justify-center" style="background-image:url('images/living room.png')">
 
 
 <div class="col-4">

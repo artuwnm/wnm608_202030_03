@@ -34,12 +34,12 @@ $images = explode(",",$o->images);
 			<div class="col-xs-12 col-md-7">
 				<div class="card soft">
 					<div class="product-main">
-						<img src="shah.manali/img<?= $o->thumbnail ?>" alt="">
+						<img src="shah.manali/images<?= $o->thumbnail ?>" alt="">
 					</div>
 					<div class="product-thumbs">
 					<?=
 					array_reduce($images,function($r,$o){
-						return $r."<img src='/img/$o'>";
+						return $r."<img src='/images/$o'>";
 					})
 					?>
 					</div>

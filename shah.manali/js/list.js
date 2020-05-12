@@ -6,7 +6,7 @@ const showResults = (d) => {
 	);
 }
 
-getData({type:'all'}).then(showResults);
+getData({type:'product_all'}).then(showResults);
 
 
 $(()=>{
@@ -27,6 +27,20 @@ $(()=>{
 			column:$(this).data("type"),
 			value:$(this).data("value")
 		}).then(showResults);
+	})
+    
+    $(".js-sort").on("change",function(e){
+		(
+			this.value==1 ?
+				getData({type:"product_sort",column:'date_create',dir:'DESC'}) :
+			this.value==2 ?
+				getData({type:"product_sort",column:'date_create',dir:'ASC'}) :
+			this.value==3 ?
+				getData({type:"product_sort",column:'price',dir:'DESC'}) :
+			this.value==4 ?
+				getData({type:"product_sort",column:'price',dir:'ASC'}) :
+			getData({type:'product_all'})
+		).then(showResults);
 	})
 
 
