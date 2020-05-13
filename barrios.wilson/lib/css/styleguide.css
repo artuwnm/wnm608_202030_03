@@ -1,8 +1,7 @@
 text/css styleguide.css ( ASCII C program text )
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap&subset=latin-ext')
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,500i,600,600i,700,700i,800&display=swap&subset=latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,500i,600,700,800,900&display=swap&subset=devanagari,latin-ext" rel="stylesheet')/* ELEMENT RESETS */
-
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,500i,600,700,800,900&display=swap&subset=devanagari,latin-ext" rel="stylesheet');/* ELEMENT RESETS */
 
 
 *,*::before,*::after {
@@ -62,6 +61,7 @@ h4{
 
 h5{
 	color:#EDEBF0;
+	font-size: 2em;
 }
 
 
@@ -100,6 +100,25 @@ img {
 }
 
 
+.image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+
+}
+
+.profile-pic {
+  display: inline;
+  margin: 0 auto;
+  margin-left: -25%; //centers the image
+  height: 100%;
+  width: auto;
+}
+
+
 /* LOGO */
 
 .logo
@@ -114,8 +133,9 @@ padding-top:1em;
 
 .logo-footer
 {
-width:150px;
-height:60px;
+width:200px;
+height:auto;
+margin-top: 1em;
 }
 
 
@@ -162,7 +182,7 @@ padding: 3em;
 
 .picxl
 {
-width:680px;
+width:700px;
 margin-right:4em;
 vertical-align: middle;
 size: cover;
@@ -242,21 +262,22 @@ size: cover;
     color: #ffffff;
 }
 
-/*-----Testimonials-------*/
+/*-----Testimonials----concept by Cassidi Williams https://codepen.io/cassidoo---*/
 
 .content-slider {
   width: 100%;
-  height: 360px;
+  height: 500px;
   background-color:#ffb91a;
   padding-top: 1em;
   text-align: center;
+  align-items: center;
 
 }
 
 
 
 .slider {
-  height: 320px;
+  height: 500px;
   width: 680px;
   margin: 40px auto 0;
   overflow: visible;
@@ -277,7 +298,7 @@ size: cover;
 
 .slider li {
   width: 680px;
-  height: 320px;
+  height: 500px;
   position: absolute;
   top: -325px;
   list-style: none;
@@ -676,7 +697,7 @@ size: cover;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
-	margin-bottom: -50px;
+	margin-bottom: 10px;
 
 }
 
@@ -835,7 +856,7 @@ size: cover;
 /* card */
 
 .card {
-    background-color: white;
+    background-color:white;
     overflow: hidden;
     position: relative;
     padding: 1em;
@@ -852,7 +873,8 @@ size: cover;
 	.card.soft1 {
 		border-radius:0em;
 		padding: 2em;
-		opacity: 0.7;
+		background-color:rgb(255, 255, 255, 0.5);
+
 	}
 
 	.card.clear {
@@ -1097,7 +1119,7 @@ size: cover;
 	border: 0.16em solid #f8b732;
 	color:#ffffff;
 	margin-top: 0.4em;
-	background-color:#f8b732;
+	background-color:rgb(247, 183, 51);
 }
 
 .grey{
@@ -1328,6 +1350,86 @@ margin-bottom: 0 auto;
 	background: #FC4A1A;
 }
 
+.footer-buttom {
+	background-color:#882307;
+	color:var(--color-neutral-light);
+	height: 40px;
+	vertical-align: middle;
+	padding-top: 0.2px;
+}
+
+.vl{
+	border-left: 2px solid white;
+  	height: 100px;
+  	position: absolute;
+  	left: 50%;
+  	margin-left: -3px;
+  	top: 30px;
+
+
+}
+
+/* social media - concept by Matt Henley https://codepen.io/mattbhenley*/
+
+
+  background-color: rgba(0, 181, 245, 0.05);
+}
+
+.social-container {
+  width: 400px;
+  margin: 40vh auto;
+  text-align: center;
+}
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 1em;
+}
+.social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1.2em;
+}
+.social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  transition: all 265ms ease-out;
+}
+.social-icons a {
+  display: inline-block;
+}
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, #fe0404, #780101);
+  transition: all 265ms ease-out;
+}
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+.social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: #00B5F5;
+  background: -webkit-linear-gradient(45deg, #00B5F5, #002A8F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+}
+
+
 
 /* [DOES NOT MATTER] */
 html, body {
@@ -1335,6 +1437,6 @@ html, body {
   margin: 0;
   font-size: 1.1em;
   font-family:'Lato', sans-serif;
-  color: #696969;
+  color:#696969;
 }
 

@@ -53,7 +53,9 @@ session_start();
 <h1> New Arrivals </h1>
 
 <div class="container">
-    <?php recommendedCategory('keychain') ?>
+    <?php recommendedCategory('places') ?>
+    <br>
+    <br>
   </div>
 
 	</div>
@@ -70,24 +72,42 @@ session_start();
     <div class="mask">
       <ul>
         <li class="anim1">
-          <div class="quote">Hello, this is a quote from a person.</div>
-          <div class="source">- Person</div>
+          <div class="image-cropper">
+          <img src="img/megan.jpg" alt="megan"><br>
+        </div>
+          <div class="quote">I love these! The quality is great. The key chains are nice and I absolutely love them. I have one on my work bag. </div>
+          <div class="source">- Megan A.</div>
         </li>
+
         <li class="anim2">
-          <div class="quote">Hello, this is a quote from another person.</div>
-          <div class="source">- Another person</div>
+          <div class="image-cropper">
+          <img src="img/stephanie.jpg" alt="stephanie"><br></div>
+          <div class="quote">The quality I paid for is there . I love them ! I won’t ever pay more than how much I did here for them . But Etsy had them for 5 dollars each so I got a steal ! And they match my steering wheel cover perfect ! Delivery was perfect ! .</div>
+          <div class="source">- Stephanie L</div>
         </li>
+
         <li class="anim3">
-          <div class="quote">Hello, this is a quote from an animal.</div>
-          <div class="source">- Animal</div>
+          <div class="image-cropper">
+          <img src="img/rosa.jpg" alt="rosa"><br>
+        </div>
+          <div class="quote">This is my second order of Keychains! I resale them inside of my salon & everyone loves them! Very pleased with product, delivery and price!</div>
+          <div class="source">- Rosa M.</div>
         </li>
+
         <li class="anim4">
-          <div class="quote">Hello, this is a quote from a plant.</div>
-          <div class="source">- Plant</div>
+          <div class="image-cropper">
+          <img src="img/robert.jpg" alt="robert"><br>
+        </div>
+          <div class="quote">I have them everywhere! They are so convenient and stylish. Would make great gifts for multiple people on a budget (like co workers). They are lightweight even with the chapstick in it.</div>
+          <div class="source">- Robert</div>
         </li>
+
         <li class="anim5">
-          <div class="quote">How do ya like that.</div>
-          <div class="source">- Cassidy</div>
+          <div class="image-cropper">
+          <img src="img/jax.jpg" alt="jax"><br>
+        </div>
+          <div class="quote">These are awesome, gave one set to my daughters' friend that just turned 16. One I kept for myself and one set aside for my sister's birthday, plus keeping spares to give for unexpected birthdays for my daughters' friends.</div>
+          <div class="source">- Jax L.</div>
         </li>
       </ul>
     </div>

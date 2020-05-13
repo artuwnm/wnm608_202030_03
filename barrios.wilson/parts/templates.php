@@ -134,7 +134,7 @@ function recommendedCategory($cat,$limit=4) {
 	recommendedProducts($rows);
 }
 
-function recommendedSimilar($cat,$id=0,$limit=3) {
+function recommendedSimilar($cat,$id=0,$limit=4) {
 	$rows = getRows(makeConn(),"SELECT * FROM `products` WHERE category='$cat' AND id <> $id ORDER BY rand() LIMIT $limit");
 	recommendedProducts($rows);
 }
