@@ -1,7 +1,4 @@
-<?php
 
-session_start()
-?>
 
 <header class="navbar">
   <script src="https://kit.fontawesome.com/041ded284b.js" crossorigin="anonymous"></script>

@@ -15,9 +15,15 @@
 
   <main>
 <div class="container">
-  <h3>DESIGN TEAM</h3>
-  <p><em>We love design!</em></p>
-  <p>We have created a round buttom website. Lorem ipsum..</p>
+  <div class="container">
+    <nav class="nav-crumbs" style="margin:1em 0">
+      <ul>
+        <li><a href="index.php"><i class="fas fa-arrow-left" style="color:black;"></i>Back</a></li>    
+      </ul>
+    </nav>
+  <h3 style="text-align:center">DESIGN TEAM</h3>
+  <p style="text-align:center"><em>We love design!</em></p>
+  <p style="text-align:center">We have created a round buttom website. Lorem ipsum..</p>
   <br>
   <div class="row">
     <div class="col-md-1">

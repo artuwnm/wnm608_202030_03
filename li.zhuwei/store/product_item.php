@@ -17,10 +17,6 @@ $images = explode(",",$randomProduct->images);
 <head>
     <title>Product Items</title>
     <?php include "parts/meta.php" ?>
-    <link rel="stylesheet" href="lib/css/gridsystem.css">
-    <link rel="stylesheet" href="lib/css/styleguide.css">
-    <link rel="stylesheet" href="css/storetheme.css">
-    <script src="https://kit.fontawesome.com/041ded284b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <?php include "parts/navbar.php" ?>
@@ -28,7 +24,8 @@ $images = explode(",",$randomProduct->images);
   <div class="container">
     <nav class="nav-crumbs" style="margin:1em 0">
       <ul>
-        <li><a href="collection.php">Back</a></li>
+        <li><a href="collection.php"><i class="fas fa-arrow-left" style="color:black;"></i>Back</a></li>
+          
       </ul>
     </nav>
 
@@ -85,21 +82,21 @@ $images = explode(",",$randomProduct->images);
     </div>
 
     <div class="card soft dark">
-      <h3>Description</h3>
+      <h2>Description</h2>
       <div class=DescriptionText><?= $randomProduct->description ?></div>
     </div>
   </div>
 
-  <div class="container">
+  <!-- <div class="container">
     <div class="card soft">
       <h2>Product Item</h2>
       <div>
         The item is <?= $_GET['id'] ?>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <div>
+  <div class="container">
     <h2>Recommended Products</h2>
     <?php recommendedSimilar($randomProduct->category, $randomProduct->id) ?>
   </div>

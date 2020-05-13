@@ -13,7 +13,7 @@ $o = getRows(makePDOConn(),
 	"SELECT * FROM `products` WHERE `id` = {$_GET['id']}"
 )[0];
 
-print_p([$_SESSION,$o,$p]);
+// print_p([$_SESSION,$o,$p]);
 
 ?>
 
@@ -54,6 +54,6 @@ print_p([$_SESSION,$o,$p]);
 			</nav>
 		</div>
 	</div>
-	
+	 <?php include "parts/footer.php" ?>
 </body>
 </html>

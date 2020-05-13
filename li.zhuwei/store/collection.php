@@ -22,28 +22,32 @@ $rows = getRows(
 <head>
     <title>Collection Page</title>
     <?php include "parts/meta.php" ?>
-    <link rel="stylesheet" href="lib/css/gridsystem.css">
-    <link rel="stylesheet" href="lib/css/styleguide.css">
-    <link rel="stylesheet" href="css/storetheme.css">
-    <script type="text/javascript" src="https://kit.fontawesome.com/041ded284b.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="lib/js/functions.js"></script>
-    <script type="text/javascript" src="js/templates.js"></script>
-    <script type="text/javascript" src="js/list.js"></script>
-    <script type="text/javascript" src="js/products.js"></script>
 </head>
 <body>
 
   <?php include "parts/navbar.php" ?>
 
   <main>
+    <div class="container">
+    <nav class="nav-crumbs" style="margin:1em 0">
+      <ul>
+        <li><a href="index.php"><i class="fas fa-arrow-left" style="color:black;"></i>Back</a></li>    
+      </ul>
+    </nav>
     <!-- First Photo Grid-->
     <div class="container">
-      <h3>Product List</h3>
+      <h2 style="text-align:center">Product List</h2>
+
+      <!-- <div class="form-control">
+        <form class="hotdog light" id="product-search">
+          <input type="search" class="search" placeholder="Search Any Products">
+        </form>
+      </div> -->
+
 
       <div class="form-control">
         <form class="hotdog light" id="product-search">
-          <input type="search" class="search" placeholder="Search Products">
+          <input type="text" class="search" placeholder="Search Any Products">
         </form>
       </div>
 
@@ -58,6 +62,8 @@ $rows = getRows(
           <button type="button" class="form-button js-filter" data-type="category" data-value="seasons">Seasons</button>
         </div>
       </div>
+
+
       <div class="form-control">
         <!-- .form-select>select>option -->
         <div class="form-select">
@@ -72,7 +78,7 @@ $rows = getRows(
       <div class="grid gap productlist"></div>
     </div>
       
-    <div>
+    <div class="container">
       <a href="admin">Product Admin</a>
     </div>
  </main>

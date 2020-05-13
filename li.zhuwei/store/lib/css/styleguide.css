@@ -57,7 +57,7 @@ h4{ font-size: 14px; }
 
 a {
   color:inherit;
-  font-weight:bold;
+/*  font-weight:bold;*/
   text-decoration: none;
 }
 a:hover {
@@ -197,7 +197,10 @@ code {
   .card>:last-child { margin-bottom:0; }
 
   .card.soft {
-    box-shadow: 6px 5px 15px 10px rgba(0, 0, 0, 0.1);
+    border:1px solid;
+    padding:10px;
+    /*box-shadow: 6px 5px 15px 10px rgba(0, 0, 0, 0.1);*/
+    box-shadow:3px 5px#f3cfd5;
     border-radius:0.3em;
   }
   .card.medium {
@@ -315,7 +318,7 @@ code {
   width:100%;
   border-width:0;
   border-bottom:1px solid var(--color-neutral-light);
-  color:inherit;
+  color:caption;
   font:inherit;
   padding:0.5em 1em;
   -webkit-appearance:none;

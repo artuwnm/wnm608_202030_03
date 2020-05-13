@@ -3,58 +3,87 @@
 <head>
 		<title>Login Form</title>
 	    <?php include "parts/meta.php" ?>
-		<link rel="stylesheet" href="lib/css/gridsystem.css">
-		<link rel="stylesheet" href="lib/css/styleguide.css">
-		<link rel="stylesheet" href="css/storetheme.css">
-		<script src="https://kit.fontawesome.com/041ded284b.js" crossorigin="anonymous"></script>
-		<script src="index.js"></script>
-
 </head>
 <body>
   <?php include "parts/navbar.php" ?>
   <main>
-
-<div class="container">
-<nav class="nav-ctumbs" style="margin:1em 0">
-	<ul>
-	<li>
-		<a href="index.php">Back</a>
-	</li>
-	</ul>
-</div>
-  <h2>Login Form</h2>
-
 <form>
+
+
   <div class="container">
-  	<div class="card soft">
+     <nav class="nav-crumbs" style="margin:1em 0">
+      <ul>
+        <li><a href="index.php"><i class="fas fa-arrow-left" style="color:black;"></i>Back</a></li>    
+      </ul>
+    </nav>
+
+
+
+ <!--  <div class="container">
+<nav class="nav-ctumbs" style="margin:1em 0">
+  <ul>
+  <li>
+    <a href="index.php">Back</a>
+  </li>
+  </ul>
+ -->
+
+
+
+  <div class="container">
+    <h2 style="text-align:center">Login with Social Media or Manually</h2>
+  	<div class="card">
   	<div class="imgcontainer">
-    <img src="img/designer1.png" alt="Avatar" class="avatar">
+    <img src="img/Avatar.png" alt="Avatar" class="avatar">
     </div>
     </div>
   </div>
 
+
+<div class="container">
+      <div class="card">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+         </a>
+        <a href="#" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+        </a>
+        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+          </i> Login with Google+
+        </a>
+      </div>
+</div>
+
+      <div class="container">
+        <div class="card">
+          <p>Or sign in manually:</p>
+        </div>
+      </div>
+
   <div class="container">
-  	<div class="card soft">
+  	<div class="card">
     <label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
     </div>
 
-	<div class="card soft">
+	<div class="card">
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
     </div>
         
    
-   <div class="card soft">
+   <div class="card">
     <a class="form-button" href="index.php">Login</a>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
+  </div>
+   
   
 
 
   <div class="container" style="background-color:#f1f1f1">
     <span class="psw">Forgot <a href="#">password?</a></span>
+     <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
  </div>
 </div>
 

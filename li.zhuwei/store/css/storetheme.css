@@ -1,4 +1,74 @@
 
+
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 30%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; 
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+
+
+/* The search field */
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+/* The search field when it gets focus/clicked on */
+#myInput:focus {outline: 3px solid #ddd;}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
 .DescriptionText{
   color:pink;
 }
@@ -225,7 +295,7 @@ main {
 }
 .product-main img {
   width:100%;
-  height:40vh;
+  /*height:40vh;*/
   object-fit:cover;
 }
 .product-thumbs img {
@@ -235,6 +305,7 @@ main {
 }
 
 footer {
+    position: inherit;
     left: 0;
     bottom: 0;
     width: 100%;

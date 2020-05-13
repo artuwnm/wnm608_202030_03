@@ -6,7 +6,7 @@ include_once "lib/php/functions.php";
 include_once "parts/templates.php";
 
 $cartItems = getCartItems();
-print_p($cartItems);
+// print_p($cartItems);
 
 ?>
 
@@ -27,11 +27,11 @@ print_p($cartItems);
   <?php include "parts/navbar.php" ?>
 <main>
 	<div class="container">
-		<nav class="nav-crumbs" style="margin:1em 0">
-			<ul>
-				<li><a href="collection.php">Back</a></li>
-			</ul>
-		</nav>
+    <nav class="nav-crumbs" style="margin:1em 0">
+      <ul>
+        <li><a href="collection.php"><i class="fas fa-arrow-left" style="color:black;"></i>Back</a></li>    
+      </ul>
+    </nav>
 
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-7">
