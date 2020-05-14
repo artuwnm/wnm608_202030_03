@@ -246,7 +246,7 @@ HTML;
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Learning Data</title>
+	<title>Product Admin</title>
 	
 	<?php include "../parts/meta.php" ?>
 </head>
