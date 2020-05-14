@@ -5,15 +5,15 @@ include_once "../lib/php/functions.php";
 
 //CHANGE TO MATCH YOUR PRODUCTS/VALUES
 
-$empty_product = (object) [
-	"title"=>"Kiwi",
-	"price"=>"2.56",
-	"category"=>"fruit",
-	"description"=>"A small hairy flightless bird.",
-	"thumbnail"=>"fruit_kiwi_m.jpg",
-	"images"=>"fruit_kiwi_m.jpg",
-	"quantity"=>"576"
-];
+// $empty_product = (object) [
+// 	"title"=>"Kiwi",
+// 	"price"=>"2.56",
+// 	"category"=>"fruit",
+// 	"description"=>"A small hairy flightless bird.",
+// 	"thumbnail"=>"fruit_kiwi_m.jpg",
+// 	"images"=>"fruit_kiwi_m.jpg",
+// 	"quantity"=>"576"
+// ];
 
 
 
