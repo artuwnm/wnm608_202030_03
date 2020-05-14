@@ -48,8 +48,8 @@ include "lib/php/functions.php";
 			<!-- .form-select>select>option -->
 			<div class="form-select">
 				<select class="js-sort">
-					<option value="1">Newest</option>
-					<option value="2">Oldest</option>
+					<option value="1">Milk Chocolate</option>
+					<option value="2">Dark Chocolate</option>
 					<option value="3">Most Expensive</option>
 					<option value="4">Least Expensive</option>
 				</select>

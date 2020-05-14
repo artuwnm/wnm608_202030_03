@@ -39,7 +39,7 @@ $images = explode(",",$o->images);
 					<div class="product-thumbs">
 					<?=
 					array_reduce($images,function($r,$o){
-						return $r."<img src='/images/$o'>";
+						return $r."<img src='images/$o'>";
 					})
 					?>
 					</div>
