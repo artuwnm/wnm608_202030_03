@@ -6,13 +6,13 @@ include_once "../lib/php/functions.php";
 //CHANGE TO MATCH YOUR PRODUCTS/VALUES
 
 $empty_product = (object) [
-	"title"=>"Kiwi",
-	"price"=>"2.56",
-	"category"=>"fruit",
-	"description"=>"A small hairy flightless bird.",
-	"thumbnail"=>"fruit_kiwi_m.jpg",
-	"images"=>"fruit_kiwi_m.jpg",
-	"quantity"=>"576"
+	"title"=>"",
+	"price"=>"",
+	"category"=>"",
+	"description"=>"",
+	"thumbnail"=>"",
+	"images"=>"",
+	"quantity"=>""
 ];
 
 
@@ -126,7 +126,7 @@ return $r.<<<HTML
 	</div>
 	<div class="flex-none display-flex">
 		<div><a class="form-button" href="admin/?id=$o->id">edit</a></div>
-		<div><a class="form-button" href="product_item.php?id=$o->id">visit</a></div>
+		<div><a class="form-button" href="productitem.php?id=$o->id">delete</a></div>
 	</div>
 </div>
 HTML;
