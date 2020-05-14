@@ -5,15 +5,15 @@ include_once "../lib/php/functions.php";
 
 //CHANGE TO MATCH YOUR PRODUCTS/VALUES
 
-// $empty_product = (object) [
-// 	"title"=>"Kiwi",
-// 	"price"=>"2.56",
-// 	"category"=>"fruit",
-// 	"description"=>"A small hairy flightless bird.",
-// 	"thumbnail"=>"fruit_kiwi_m.jpg",
-// 	"images"=>"fruit_kiwi_m.jpg",
-// 	"quantity"=>"576"
-// ];
+$empty_product = (object) [
+	"title"=>"Kiwi",
+	"price"=>"2.56",
+	"category"=>"fruit",
+	"description"=>"A small hairy flightless bird.",
+	"thumbnail"=>"fruit_kiwi_m.jpg",
+	"images"=>"fruit_kiwi_m.jpg",
+	"quantity"=>"576"
+];
 
 
 
@@ -188,7 +188,7 @@ echo <<<HTML
 	</ul>
 	</div>
 </nav>
-<form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&action=$createorupdate">
+<form method="get" action="{$_SERVER['PHP_SELF']}?id=$id&action=$createorupdate">
 	<div class="grid gap">
 		<div class="col-xs-12 col-md-5">
 			$data_show
@@ -259,7 +259,7 @@ HTML;
 			</div>
 			<nav class="nav-flex flex-none">
 				<ul>
-					<li><a href="./product_list.php">Home</a></li>
+					<li><a href="./productlist.php">Home</a></li>
 					<li><a href="admin/">Product List</a></li>
 					<li><a href="admin/?id=new">Add New Product</a></li>
 				</ul>
