@@ -41,7 +41,7 @@ switch(@$_GET['action']) {
 			`thumbnail`=? ,
 			`images`=? ,
 			`quantity`=? ,
-			`date_modify`=NOW()
+			-- `date_modify`=NOW()
 		WHERE `id`=?
 		");
 		$statement->execute([
@@ -125,8 +125,8 @@ return $r.<<<HTML
 		<div><span>$o->category</span></div>
 	</div>
 	<div class="flex-none display-flex">
-		<div><a class="form-button" href="admin/?id=$o->id">edit</a></div>
-		<div><a class="form-button" href="productitem.php?id=$o->id">delete</a></div>
+		<div><a class="form-button" href="admin/?id=$o->id&actionId=update">edit</a></div>
+		<div><a class="form-button" href="productitem.php?id=$o->id&actionId=view">view</a></div>
 	</div>
 </div>
 HTML;
@@ -135,10 +135,10 @@ HTML;
 
 function makeProductForm($o) {
 
-$id = $_GET['id'];
-$addoredit = $id=="new" ? 'Add' : 'Edit';
-$createorupdate = $id=="new" ? 'create' : 'update';
-$deletebutton = $id=="new" ? '' : <<<HTML
+$actionId = $_GET['actionId'];
+$addoredit = $actionId=="new" ? 'Add' : 'Edit';
+$createorupdate = $actionId=="new" ? 'create' : 'update';
+$deletebutton = $actionId=="new" ? '' : <<<HTML
 <li class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$id&action=delete">Delete</a></li>
 HTML;
 
@@ -188,7 +188,7 @@ echo <<<HTML
 	</ul>
 	</div>
 </nav>
-<form method="get" action="{$_SERVER['PHP_SELF']}?id=$id&action=$createorupdate">
+<form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&action=$createorupdate">
 	<div class="grid gap">
 		<div class="col-xs-12 col-md-5">
 			$data_show
@@ -261,7 +261,7 @@ HTML;
 				<ul>
 					<li><a href="./productlist.php">Home</a></li>
 					<li><a href="admin/">Product List</a></li>
-					<li><a href="admin/?id=new">Add New Product</a></li>
+					<li><a href="admin/?actionId=new">Add New Product</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -273,9 +273,9 @@ HTML;
 
 			$conn = makeConn();
 
-			if(isset($_GET['id'])){
+			if(isset($_GET['actionId'])){
 
-				if($_GET['id']=="new") {
+				if($_GET['actionId']=="new") {
 					makeProductForm($empty_product);
 				} else {
 					$rows = getRows($conn, "SELECT * FROM `products` WHERE `id`='{$_GET['id']}'");
