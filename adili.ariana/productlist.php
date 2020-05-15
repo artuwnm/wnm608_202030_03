@@ -1,6 +1,21 @@
 <?php
 
 include_once "lib/php/functions.php";
+function makeListItemTemplate($r,$o) {
+return $r.<<<HTML
+<div class="itemlist-item display-flex">
+	<div class="flex-none">
+		<div class="image-square">
+			<img src="/images/store/$o->thumbnail">
+		</div>
+	</div>
+	<div class="flex-stretch">
+		<div><strong>$o->title</strong></div>
+		<div><span>$o->category</span></div>
+	</div>
+</div>
+HTML;
+}
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -58,7 +73,8 @@ include_once "lib/php/functions.php";
 	$allProductsQuery = "SELECT * FROM `products`";
 	$conn = makeConn();
 	$allProductsResult = $conn->query($allProductsQuery);
-	// $results 
+	// $results
+	echo array_reduce($allProductsResult,'makeListItemTemplate'); 
 	if ($allProductsResult->num_rows > 0) {
   // output data of each row
   while($row = $allProductsResult->fetch_assoc()) {
