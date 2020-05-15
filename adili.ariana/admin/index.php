@@ -7,6 +7,10 @@ include_once "../lib/php/functions.php";
 
 $empty_product = (object) [
 	"title"=>"",
+	"id"=>"",
+	"url"=>"",
+	"size"=>"",
+	"color"=>"",
 	"price"=>"",
 	"category"=>"",
 	"description"=>"",
