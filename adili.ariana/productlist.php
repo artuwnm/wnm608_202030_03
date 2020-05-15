@@ -74,7 +74,8 @@ HTML;
 	$conn = makeConn();
 	$allProductsResult = $conn->query($allProductsQuery);
 	// $results
-	echo array_reduce($allProductsResult,'makeListItemTemplate'); 
+	$rows = getRows($conn, "SELECT * FROM `products`");
+	echo array_reduce($rows,'makeListItemTemplate'); 
 	if ($allProductsResult->num_rows > 0) {
   // output data of each row
   while($row = $allProductsResult->fetch_assoc()) {
