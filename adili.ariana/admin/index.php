@@ -125,7 +125,7 @@ return $r.<<<HTML
 		<div><span>$o->category</span></div>
 	</div>
 	<div class="flex-none display-flex">
-		<div><a class="form-button" href="admin/?id=$o->id&actionId=update">edit</a></div>
+		<div><a class="form-button" href="admin/?id=$o->id&actionId=edit">edit</a></div>
 		<div><a class="form-button" href="productitem.php?id=$o->id&actionId=view">view</a></div>
 	</div>
 </div>
@@ -139,14 +139,14 @@ $actionId = $_GET['actionId'];
 $addoredit = $actionId=="new" ? 'Add' : 'Edit';
 $createorupdate = $actionId=="new" ? 'create' : 'update';
 $deletebutton = $actionId=="new" ? '' : <<<HTML
-<li class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$id&action=delete">Delete</a></li>
+<li class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$id&actionId=delete">Delete</a></li>
 HTML;
 
 $images = array_reduce(explode(",",$o->images),function($r,$p){
 	return $r."<img src='/images/store/$p'>";
 });
 
-$data_show = $id=="new" ? "" : <<<HTML
+$data_show = $actionId=="new" ? "" : <<<HTML
 <div class="card soft">
 
 <div class="product-main">
