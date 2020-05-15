@@ -139,7 +139,7 @@ $actionId = $_GET['actionId'];
 $addoredit = $actionId=="new" ? 'Add' : 'Edit';
 $createorupdate = $actionId=="new" ? 'create' : 'update';
 $deletebutton = $actionId=="new" ? '' : <<<HTML
-<li class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$o->$id&actionId=delete">Delete</a></li>
+<li class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$o->id&actionId=delete">Delete</a></li>
 HTML;
 
 $images = array_reduce(explode(",",$o->images),function($r,$p){
