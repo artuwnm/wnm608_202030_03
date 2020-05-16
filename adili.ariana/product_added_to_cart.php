@@ -33,7 +33,7 @@ $o = getRows(makeConn(),
 			<nav class="nav-flex">
 				<ul>
 					<li class="flex-none">
-						<a href="product_item.php?id=<?= $o->id ?>">Back to the <?= $o->title ?></a>
+						<a href="productitem.php?id=<?= $o->id ?>">Back to the <?= $o->title ?></a>
 					</li>
 					<li class="flex-stretch"></li>
 					<li class="flex-none">
