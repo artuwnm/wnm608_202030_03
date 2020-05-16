@@ -102,9 +102,9 @@ $conn->close();
 					<option value="1">Newest</option>
 					<option value="2">Oldest</option>
 				</select> -->
-			</div>
+			<!-- </div>
 		</div>
-
+ -->
 		<div class="grid gap productlist"></div>
 	</div>
 
