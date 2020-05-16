@@ -119,7 +119,121 @@
 }
 
 @media (max-width:600px) {
-	.navbar .display-flex {
+
+	#logo{
+	
 		display:block;
+		float:none;
+
+	
+	}
+	.form-control{
+		margin-left:10px;
+	}
+	.form-control3{
+		display:block;
+		float:none;
+	}
+	
+	#nav {
+		display:block;
+		float:none;
+	}
+	.nav{
+		float:none;
+		padding-left:1em;
+	}
+	.nav ul{
+		display:block;
+		float:none;
+	}
+	.nav li{
+		display:inline-block;
+		margin-left:1em;
+		float:none;
+		font-size:8%;
+
+	}
+
+	.footer-section.about{
+		display:block;
+		width:100%;
+		margin-left:0em;
+		line-height:150%;
+		font-size:6px;
+	}
+	.footer-section.about2{
+		display:block;
+		width:100%;
+		margin-left:0em;
+		line-height:150%;
+		font-size:6px;
+	}
+
+	.footer-section.about3{
+		display:block;
+		width:100%;
+		margin-left:0em;
+		line-height:150%;
+		font-size:6px;
+		text-align:left;
+	}
+	.container1{
+		display:block;
+		width:100%;
+		margin-bottom:1em;
+	}
+		.container1 img{
+		display:block;
+		width:100%;
+		padding-left:0;
+	}
+		.container3{
+		display:block;
+		width:100%;
+		margin-bottom:1em;
+	}
+		.container3 img{
+		display:block;
+		width:100%;
+		padding-right:0;
+	}
+	.container1 .btn {
+
+	}
+	.container5{
+		margin:0;
+	}
+	.footer-content {
+		height:228px;
+	}
+	#shoppingbag{
+		background-color:white;
+		color:#2E4C69;
+	}
+	#haha{
+		color:#2E4C69;
+	}
+	img#logo {
+    margin-left: 43px;
+	}
+	label.label1 {
+    font-size: 10px;
+	}
+	.container10{
+	margin:4em 3em;
+	}
+	a.btn {
+    margin-left: 2.5em;
+	}
+	.form-button6 {
+		width:51%;
+	}
+	.form-button7 {
+		width:66%;
+	}
+	.card.flat {
+		padding:1em 3em;
+		margin:0;
 	}
 }

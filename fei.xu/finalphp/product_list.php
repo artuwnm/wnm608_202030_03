@@ -27,18 +27,16 @@ include_once "finalparts/templates.php";
 </header>
 
 
-
-
 	<div class="container">
 		<h3>Product List</h3>
 
-		<div class="form-control">
+		<div class="form-control col-xs-2 col-md-3">
 			<form class="hotdog light" id="product-search">
 				<input type="search" class="search" placeholder="Search Products">
 			</form>
 
 		</div>
-		<div class="form-control2 ">
+		<div class="form-control2 col-xs-2 col-md-3">
 			<div class="flex-none">
 				<button type="button" class="form-button4 js-filter" data-type="category" data-value="">All</button>
 			<!-- </div>
@@ -50,7 +48,7 @@ include_once "finalparts/templates.php";
 			</div>
 		</div>
 
-		<div class="form-control3">
+		<div class="form-control3 col-xs-4 col-md-3">
 			<!-- .form-select>select>option -->
 			<div class="form-select">
 				<select class="js-sort">
@@ -67,29 +65,37 @@ include_once "finalparts/templates.php";
 
 	</div>
 </div>
-	
-	<div class="footer">
+
 		<div class="footer-content">
 
 			<div class="footer-section about">
 				<h1>Caliwater</h1>
 				<p>CALIWATER is a store selling water with different fruit flavors. Instead of boring old water, “Caliwater” makes water delicious without sugar or sweeteners. </p>
-			</div>
 
-			<div class="footer-section about">
+			</div>
+			
+
+			<div class="footer-section about2">
 				<h1>Quick Link</h1>
-				<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+				<a href="https://www.facebook.com/" class="fa fa-facebook "></a>
 				<a href="https://twitter.com/explore" class="fa fa-twitter"></a>
 				<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
 			</div>
+		
+			<div class="footer-section about3">
+				 <div class="productadmin">
+					<a href="../admin/index.php"> Product Admin</a>
+				 </div>
+			</div>
+
 
 	
-	
+	</div>
 	
 		</div>
-		<div class="footer-bottom">
+		<div class="footer-bottom col-xs-12 col-md-12">
 			&copy; Designed by Fei
 		</div>
-	</div>
+
 </body>
 </html>

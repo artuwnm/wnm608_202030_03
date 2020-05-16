@@ -2,7 +2,15 @@
 	box-sizing:inherit;
 }
 
+html{
+	height:100%;
+}
 
+body {
+    min-height:100%; 
+    position:relative; 
+    padding-bottom:200px; 
+}
 
 :root {
     --color-neutral-secondbreakfast: #cdc6c6;
@@ -11,14 +19,48 @@
     --color-white:white;
 
 }
-/*footer*/
+/*contact*/
+.container10{
+	margin:4em 30%;
+}
+input.btn5{
+  font-family: 'Raleway', sans-serif;
+  font-weight:200;
+  position: absolute;
+  background-color:#2E4C69;
+  color: white;
+  font-size: 12px;
+  font-weight:200;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  text-align:center;
+  margin-top:1em;
+  border-radius:0;
+	
+}
 
-.footer{
-	margin-top:5em;
+textarea#subject {
+    display: block;
+    width: 100%;
+}
+select#country {
+    margin-bottom: 2em;
+}
+
+/*footer*/
+.productadmin a{
+	color:white;
+	text-decoration: underline
+}
+.footer-content{
+	
 	background-color:#2E4C69;
 	color:white;
-	height:250px;
-	position:relative;
+	height:200px;
+	position:absolute;
+	left: 0 ; right: 0; bottom: 0; 
+
 }
 .footer-bottom{
 	background:#f5e1e1;
@@ -42,19 +84,39 @@
 	line-height:200%;
 	text-align:left;
 }
+.footer-section.about3{
+	display:inline-block;
+	width:15%;
+	margin-left:10em;
+	padding-left:4em;
+	padding-top:2em;
+	font-size:8px;
+	line-height:100%;
+	text-align:right;
+}
+.footer-section.about2{
+	display:inline-block;
+	width:20%;
+	margin-left:4em;
+
+	padding-left:4em;
+	padding-bottom:2em;
+	font-size:8px;
+	line-height:100%;
+	text-align:left;
+}
 .footer-section.links{
 	display:inline-block;
-	width:30%;
+	
 	margin-left:4em;
 	padding-left:4em;
 	
 	font-size:8px;
-	line-height:200%;
+	line-height:100%;
 	
 }
 .fa {
   padding: 20px;
-  
   width: 50px;
   text-align: center;
   text-decoration: none;
@@ -235,7 +297,7 @@ body{
 	margin:0;
 	font-size:100%;
 	font-family: 'Raleway', sans-serif;
-	padding:0em;
+	
 
 }
 a{
@@ -315,16 +377,17 @@ header{
 
 }
 
-#shoppingbag hover:{
-	border:0px;
-}
-
-#haha hover:{
+#shoppingbag: hover{
 	border:0px;
 
 }
-#shoppingbag li:hover{
+
+#haha: hover{
 	border:0px;
+
+}
+ul.nav > li#shoppingbag:hover{
+	border-bottom:0px;
 }
 /*nav*/
 .nav{
@@ -352,11 +415,44 @@ header{
 	display:block;
 	text-decoration:none;
 	color:black;
-	font-size:12px;
+	font-size:20%;
 	padding: 5px 0px 5px 0px;
 }
 
-.nav li:hover{
+/*.nav li:hover{
+	text-decoration:none;
+	 border-bottom: 1px solid black;
+	 padding-bottom: 4px;
+	transition: all 0.2s ease-in-out 0.2s;
+	/*background-color: #2E4C69;*/
+
+/*}*/
+
+.nav1:hover{
+	text-decoration:none;
+	 border-bottom: 1px solid black;
+	 padding-bottom: 4px;
+	transition: all 0.2s ease-in-out 0.2s;
+	/*background-color: #2E4C69;*/
+
+}
+.nav2:hover{
+	text-decoration:none;
+	 border-bottom: 1px solid black;
+	 padding-bottom: 4px;
+	transition: all 0.2s ease-in-out 0.2s;
+	/*background-color: #2E4C69;*/
+
+}
+.nav3:hover{
+	text-decoration:none;
+	 border-bottom: 1px solid black;
+	 padding-bottom: 4px;
+	transition: all 0.2s ease-in-out 0.2s;
+	/*background-color: #2E4C69;*/
+
+}
+.nav4:hover{
 	text-decoration:none;
 	 border-bottom: 1px solid black;
 	 padding-bottom: 4px;
@@ -440,11 +536,12 @@ header{
   -ms-transform: translate(-50%, -50%);
   background-color: #555;
   color: white;
-  font-size: 16px;
-  padding: 12px 24px;
+  font-size: 12px;
+  font-weight:200;
+  padding: 8px 16px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .container1 .btn:hover {
@@ -481,11 +578,12 @@ header{
   -ms-transform: translate(-50%, -50%);
   background-color: #555;
   color: white;
-  font-size: 16px;
-  padding: 12px 24px;
+  font-size: 12px;
+  font-weight:200;
+  padding: 8px 16px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .container3 .btn:hover {
@@ -973,4 +1071,6 @@ span.price {
 .billingaddress p{
 	font-size:20%;
 }
+
+
 

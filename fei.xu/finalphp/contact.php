@@ -9,6 +9,32 @@
 <body>
 	<?php include "finalparts/navbar.php" ?>
 
+	<div class="container10">
+  <form action="action_page.php">
+
+    <label for="fname" class="label1">First name:</label>
+    <input type="text" id="fname" name="firstname" >
+	
+	<label for="fname" class="label1">Last name:</label>
+    <input type="text" id="fname" name="lastname" >
+
+    <label for="email" class="label1">Email:</label>
+    <input type="text" id="email" name="Email" >
+
+     <label for="pnumber" class="label1">Phone number:</label>
+    <input type="text" id="pnumber" name="phonenumber">
+ 
+     <label for="onumber" class="label1">Order number:</label>
+    <input type="text" id="onumber" name="ordername">
+
+    <label for="subject" class="label1">Comment:</label>
+    <textarea id="subject" name="subject" placeholder="" style="height:100px"></textarea>
+
+    <input type="submit" value="Send" class="btn5">
+
+  </form>
+</div>
+
 	<div class="footer">
 		<div class="footer-content">
 
@@ -17,8 +43,8 @@
 				<p>CALIWATER is a store selling water with different fruit flavors. Instead of boring old water, “Caliwater” makes water delicious without sugar or sweeteners. </p>
 			</div>
 
-			<div class="footer-section about">
-				<h1>Quick Link</h1>
+			<div class="footer-section about2">
+				<h1>Follow us</h1>
 				<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
 				<a href="https://twitter.com/explore" class="fa fa-twitter"></a>
 				<a href="https://www.instagram.com/" class="fa fa-instagram"></a>

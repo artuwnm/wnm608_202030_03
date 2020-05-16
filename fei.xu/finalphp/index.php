@@ -62,7 +62,7 @@ include_once "finalparts/templates.php";
 				<p>CALIWATER is a store selling water with different fruit flavors. Instead of boring old water, “Caliwater” makes water delicious without sugar or sweeteners. </p>
 			</div>
 
-			<div class="footer-section about">
+			<div class="footer-section about2">
 				<h1>Quick Link</h1>
 				<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
 				<a href="https://twitter.com/explore" class="fa fa-twitter"></a>
