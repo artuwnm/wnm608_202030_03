@@ -59,7 +59,7 @@ switch(@$_GET['action']) {
 			$_POST['id']
 		]);
 
-		header("location:{$_SERVER['PHP_SELF']}?id={$_GET['id']}&actionId=edit&result=$result");
+		header("location:{$_SERVER['PHP_SELF']}?id={$_GET['id']}&actionId=edit&result=$_GET['result']");
 		break;
 	case "create":
 		$statement = $conn->prepare("INSERT INTO
