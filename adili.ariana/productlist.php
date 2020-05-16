@@ -28,7 +28,8 @@ HTML;
 	<script src="lib/js/functions.js"></script>
 	<script src="js/templates.js"></script>
 	<script src="js/list.js"></script>
-	<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+
+	
 
 </head>
 <body>
@@ -36,7 +37,6 @@ HTML;
 	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
-	
 
 		<div class="form-control">
 			<form class="hotdog light" id="product-search">

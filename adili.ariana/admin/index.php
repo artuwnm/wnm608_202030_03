@@ -121,7 +121,7 @@ return $r.<<<HTML
 <div class="itemlist-item display-flex">
 	<div class="flex-none">
 		<div class="image-square">
-			<img src="/images/store/$o->thumbnail">
+			<img src="/images/$o->thumbnail">
 		</div>
 	</div>
 	<div class="flex-stretch">
@@ -147,14 +147,14 @@ $deletebutton = $actionId=="new" ? '' : <<<HTML
 HTML;
 
 $images = array_reduce(explode(",",$o->images),function($r,$p){
-	return $r."<img src='/images/store/$p'>";
+	return $r."<img src='/images/$p'>";
 });
 
 $data_show = $actionId=="new" ? "" : <<<HTML
 <div class="card soft">
 
 <div class="product-main">
-	<img src="/images/store/$o->thumbnail">
+	<img src="/images/$o->thumbnail">
 </div>
 <div class="product-thumbs">$images</div>
 

@@ -133,7 +133,6 @@ img:hover {
 
 
 
-
 /* SMALL CLASSES */
 .container {
 	max-width: 1000px;
@@ -281,6 +280,7 @@ img:hover {
 	.card.soft {
 		box-shadow: 3px 3px 6px 6px rgba(0,0,0,0.05);
 		border-radius: 0.25em;
+		color: white;
 	}
 	.card.medium {
 		background-color: black;
