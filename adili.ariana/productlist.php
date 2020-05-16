@@ -14,7 +14,7 @@ return $r.<<<HTML
 		<div><span>$o->price</span></div>
 	</div>
 
-<?php $amount=1 ?>
+<?php $amount=1; ?>
 
 
 	<div class="flex-none display-flex">
