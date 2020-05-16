@@ -1,5 +1,5 @@
 <?php
-$amount=1;
+
 include_once "lib/php/functions.php";
 function makeListItemTemplate($r,$o) {
 return $r.<<<HTML
