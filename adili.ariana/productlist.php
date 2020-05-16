@@ -1,5 +1,5 @@
 <?php
-
+$amount=1;
 include_once "lib/php/functions.php";
 function makeListItemTemplate($r,$o) {
 return $r.<<<HTML
@@ -13,9 +13,6 @@ return $r.<<<HTML
 		<div><strong>$o->title</strong></div>
 		<div><span>$o->price</span></div>
 	</div>
-
-$amount=1; 
-
 
 	<div class="flex-none display-flex">
 		<div><a class="form-button" href="data/form_actions.php?id=$o->id&action=add-to-cart&amount=$amount&price=$o->price">Add to cart</a></div>
