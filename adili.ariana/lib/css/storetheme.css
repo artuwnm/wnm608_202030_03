@@ -283,14 +283,14 @@ img:hover {
 	.card.soft {
 		box-shadow: 3px 3px 6px 6px rgba(0,0,0,0.05);
 		border-radius: 0.25em;
-		color: red;
+		color: white;
 	}
 	.card.medium {
-		background-color: white;
+		background-color: black;
 	}
 	.card.dark {
-		background-color: white;
-		color: black;
+		background-color: black;
+		color: white;
 	}
 	.card.flat {
 		padding: 0;
