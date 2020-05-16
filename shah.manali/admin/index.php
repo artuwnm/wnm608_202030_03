@@ -3,14 +3,17 @@
 include_once "../lib/php/functions.php";
 
 $empty_product = (object) [
-    "name"=>"",
-    "price"=>"",
-    "category"=>"",
-    "type"=>"",
-    "images"=>"",
-    "thumbnail"=>"",
-    "description"=>"",
+    "name"=>"scotch_whiskey_truffle",
+    "price"=>"21",
+    "category"=>"truffles",
+    "type"=>"dark chocolate",
+    "images"=>"scotch_whiskey_truffle.png",
+    "thumbnail"=>"scotch_whiskey_truffle_thumbnail.png",
+    "description"=>"solid caramel coating with melted dark chocoalte and whiskey ganache"
 ];
+
+
+
 
 // CRUD LOGIC
 try {
@@ -48,7 +51,7 @@ switch(@$_GET['action']) {
 		$statement = $conn->prepare("INSERT INTO
 		`products`
 		(
-			`title`,
+			`name`,
 			`price`,
 			`category`,
 			`description`,
@@ -109,7 +112,7 @@ return $r.<<<HTML
 		<div><span>$o->type</span></div>
 	</div>
 	<div class="flex-none display-flex">
-		<div><a class="form-button" href="admin/?id=$o->id">edit</a></div>
+        <div><a class="form-button" href="admin/?id=$o->id">edit</a></div>
 		<div><a class="form-button" href="product_item.php?id=$o->id">visit</a></div>
 	</div>
 </div>
@@ -126,14 +129,14 @@ $deletebutton = $id=="new" ? '' : <<<HTML
 HTML;
 
 $images = array_reduce(explode(",",$o->images),function($r,$p){
-	return $r."<img src='shah.manali/images/$p'>";
+	return $r."<img src='images/$p'>";
 });
 
 $data_show = $id=="new" ? "" : <<<HTML
 <div class="card soft">
 
 <div class="product-main">
-<img src="shah.manali/images<?= $o->thumbnail ?>" alt="">
+<img src="images/<?= $o->thumbnail ?>" alt="">
 </div>
 <div class="product-thumbs">$images</div>
 
@@ -246,29 +249,21 @@ HTML;
 
 	<div class="container">
 
-			<?php 
-            
-            $conn = makeConn();
+			<?php
+
+			$conn = makeConn();
 
 			if(isset($_GET['id'])){
 
-				// conditional ternary
-				// ifthis ? iftruedothis : iffalsedothis
-				// showUserPage(
-				// 	$_GET['id']=="new" ? 
-				// 	$empty_product :
-				// 	$users[$_GET['id']]
-				// );
-				
-				if ($_GET['id']="new") {
+				if($_GET['id']=="new") {
 					makeProductForm($empty_product);
-				} 
-				else {
+				} else {
 					$rows = getRows($conn, "SELECT * FROM `products` WHERE `id`='{$_GET['id']}'");
-					makeProductForm($rows[0]);
+                makeProductForm($rows[0]);
 				}
 
-		    } else {
+
+			} else {
 
 			?>
 			<div class="card soft">
