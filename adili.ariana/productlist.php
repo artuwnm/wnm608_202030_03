@@ -14,7 +14,7 @@ return $r.<<<HTML
 		<div><span>$o->price</span></div>
 	</div>
 	<div class="flex-none display-flex">
-		<div><a class="form-button" href="product_added_to_cart.php">Add to cart</a></div>
+		<div><a class="form-button" href="product_added_to_cart.php?id=$o->id">Add to cart</a></div>
 		<div><a class="form-button" href="productitem.php?id=$o->id&actionId=view">View</a></div>
 	</div>
 </div>
