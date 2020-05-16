@@ -3,7 +3,6 @@
 require_once "../lib/php/functions.php";
 
 
-
 if(!isset($_GET['action'])) die("No Action Set");
 
 switch($_GET['action']) {
