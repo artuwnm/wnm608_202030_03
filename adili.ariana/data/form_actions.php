@@ -6,10 +6,6 @@ require_once "../lib/php/functions.php";
 
 if(!isset($_GET['action'])) die("No Action Set");
 
-
-
-
-
 switch($_GET['action']) {
 	case "add-to-cart":
 		$product = getRows(makeConn(),"SELECT `price` FROM `products` WHERE `id` = {$_GET['id']}");
