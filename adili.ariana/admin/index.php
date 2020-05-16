@@ -143,7 +143,7 @@ $actionId = $_GET['actionId'];
 $addoredit = $actionId=="new" ? 'Add' : 'Edit';
 $createorupdate = $actionId=="new" ? 'create' : 'update';
 $deletebutton = $actionId=="new" ? '' : <<<HTML
-<li class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$o->id&actionId=delete">Delete</a></li>
+<li class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$o->id&actionId=delete">Delete item</a></li>
 HTML;
 
 $images = array_reduce(explode(",",$o->images),function($r,$p){
@@ -186,7 +186,7 @@ echo <<<HTML
 <nav class="nav-pills">
 	<div class="card soft">
 	<ul>
-		<li class="flex-none"><a href="{$_SERVER['PHP_SELF']}">Back</a></li>
+		<li class="flex-none"><a href="{$_SERVER['PHP_SELF']}">Back to user list</a></li>
 		<li class="flex-stretch"></li>
 		$deletebutton
 	</ul>

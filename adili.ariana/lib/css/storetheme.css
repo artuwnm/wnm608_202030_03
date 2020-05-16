@@ -28,6 +28,7 @@ h1 {
 	font-family: 'Tenor Sans', sans-serif;
 	font-size: 2rem;
 	font-weight: bold;
+	color: black;
 }
 h2 {
 	font-family: 'Montserrat';
@@ -42,6 +43,7 @@ h3 {
 	font-family: 'Montserrat';
 	font-size: 1.5rem;
 	font-weight: bold;
+	color: black;
 }
 h4 {
 	font-family: 'Montserrat';
@@ -74,6 +76,7 @@ p {
 	font-family: 'Montserrat';
 	font-size: 0.8rem;
     text-transform: lowercase;
+    color: black;
 }
 
 
@@ -104,7 +107,7 @@ a:hover {
 code {
 	/*white-space:pre-wrap;*/
 	text-align: left;
-	background-color: black;
+	background-color: white;
 	padding: 1em;
 	width: 100%;
 	display: block;
@@ -150,7 +153,7 @@ img:hover {
 .rectangle {
 	height: 100px;
 	width: 100%;
-	background-color: black;
+	background-color: white;
 }
 
 .rectangle-text {
@@ -170,10 +173,7 @@ img:hover {
 
 
 .flex-stretch { flex: 1 1 auto; }
-.flex-none { flex: none; 
-	color: white;
-}
-
+.flex-none { flex: none; }
 .flex-align-center { align-items:center; }
 .flex-justify-center { justify-content:center; }
 
@@ -183,8 +183,8 @@ img:hover {
 
 /* COMPONENT CLASSES */
 .navbar {
-	color: #fff;
-	background-color: #000;
+	color: black;
+	background-color: white;
 	line-height: var(--header-height);
 	height: 75px;
     padding: 0;
@@ -195,7 +195,7 @@ img:hover {
 .navbar h1 {
 	margin: 5px;
 	padding: 1em, 2.5em;
-	color: #fff;
+	color: black;
 	font-size: 4.5rem;
 }
 .navbar a {
