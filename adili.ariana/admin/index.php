@@ -39,27 +39,27 @@ switch(@$_GET['action']) {
 		`products`
 		SET
 			`title`=? ,
-			`price`=? ,
-			`category`=? ,
-			`description`=? ,
-			`thumbnail`=? ,
-			`images`=? ,
-			`quantity`=? ,
+			-- `price`=? ,
+			-- `category`=? ,
+			-- `description`=? ,
+			-- `thumbnail`=? ,
+			-- `images`=? ,
+			-- `quantity`=? ,
 			-- `date_modify`=NOW()
 		WHERE `id`=?
 		");
-		$result=$statement->execute([
+		$statement->execute([
 			$_POST['product-title'],
-			$_POST['product-price'],
-			$_POST['product-category'],
-			$_POST['product-description'],
-			$_POST['product-thumbnail'],
-			$_POST['product-images'],
-			$_POST['product-quantity'],
+			// $_POST['product-price'],
+			// $_POST['product-category'],
+			// $_POST['product-description'],
+			// $_POST['product-thumbnail'],
+			// $_POST['product-images'],
+			// $_POST['product-quantity'],
 			$_POST['id']
 		]);
 
-		header("location:{$_SERVER['PHP_SELF']}?id={$_GET['id']}&actionId=edit&result={$_GET['result']}");
+		header("location:{$_SERVER['PHP_SELF']}?id={$_GET['id']}&actionId=edit");
 		break;
 	case "create":
 		$statement = $conn->prepare("INSERT INTO
