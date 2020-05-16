@@ -56,7 +56,7 @@ switch(@$_GET['action']) {
 			$_POST['product-thumbnail'],
 			$_POST['product-images'],
 			$_POST['product-quantity'],
-			$_GET['id']
+			$_POST'id']
 		]);
 
 		header("location:{$_SERVER['PHP_SELF']}?id={$_GET['id']}&actionId=edit");
