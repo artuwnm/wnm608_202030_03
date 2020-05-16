@@ -36,7 +36,7 @@ HTML;
 	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
-		<h2>Products</h2>
+	
 
 		<div class="form-control">
 			<form class="hotdog light" id="product-search">

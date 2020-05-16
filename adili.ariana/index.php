@@ -44,7 +44,6 @@
 		<div class="container">
 			<div class="card soft">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, illum magni dolor aspernatur vero repudiandae porro ab accusamus nostrum, quibusdam, possimus vel dolorem nemo eos exercitationem. Impedit laboriosam commodi, at.</p>
-			<p>Sed atque, molestiae aperiam voluptatum deleniti quis amet mollitia! Aliquam amet eius molestias dignissimos nesciunt tempore voluptate sunt voluptatibus praesentium, aut deleniti animi officiis ipsa quam unde, similique quasi adipisci.</p>
 		</div>
 	</div>
 
@@ -59,21 +58,18 @@
 </div>
  -->
 
-
-
 <div class="footer">
-        
-        <div>    
-            <h4>HELP</h4>
-            <div><a class="footer" href="#">Contact us</a></div>   
-        </div>
-        
-        <div>
-            <h4>ABOUT</h4>
-            <div><a class="footer" href="#">About us</a></div>
+	<h6>HELP</h6>
+	<a href="#">Contact us</a>
+	<a href="#">FAQ</a>
 
-        </div>
+	<h6>CONNECT</h6>
+	<a href="#">About us</a>
+	<a href="#">Careers</a>
+	<a href="#">Locations</a>
+
 </div>
+
 
 			
 </body>
