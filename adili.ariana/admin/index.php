@@ -32,7 +32,7 @@ $empty_product = (object) [
 // CRUD LOGIC
 try {
 
-$conn = makeConn();
+$conn = makePDOConn();
 switch(@$_GET['action']) {
 	case "update":
 		$statement = $conn->prepare("UPDATE
@@ -48,7 +48,7 @@ switch(@$_GET['action']) {
 			-- `date_modify`=NOW()
 		WHERE `id`=?
 		");
-		$statement->execute([
+		$result=$statement->execute([
 			$_POST['product-title'],
 			$_POST['product-price'],
 			$_POST['product-category'],
@@ -59,7 +59,7 @@ switch(@$_GET['action']) {
 			$_POST['id']
 		]);
 
-		header("location:{$_SERVER['PHP_SELF']}?id={$_GET['id']}&actionId=edit");
+		header("location:{$_SERVER['PHP_SELF']}?id={$_GET['id']}&actionId=edit&result=$result");
 		break;
 	case "create":
 		$statement = $conn->prepare("INSERT INTO
