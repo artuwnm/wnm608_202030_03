@@ -170,7 +170,9 @@ img:hover {
 
 
 .flex-stretch { flex: 1 1 auto; }
-.flex-none { flex: none; }
+.flex-none { flex: none; 
+	color: white;
+}
 
 .flex-align-center { align-items:center; }
 .flex-justify-center { justify-content:center; }
@@ -273,6 +275,7 @@ img:hover {
 	padding: 1em;
 	margin-top: 1em;
 	margin-bottom: 1em;
+	color: white;
 }
 	.card>:first-child { margin-top: 0; }
 	.card>:last-child { margin-bottom: 0; }
@@ -283,10 +286,10 @@ img:hover {
 		color: white;
 	}
 	.card.medium {
-		background-color: black;
+		background-color: white;
 	}
 	.card.dark {
-		background-color: black;
+		background-color: white;
 		color: black;
 	}
 	.card.flat {
@@ -662,44 +665,6 @@ object-fit:cover;
 
 
 
-/*// REVISE THIS CODE
-
-:root {
-	--color-neutral-dark: #333;
-	--color-neutral-medium: #999;
-	--color-neutral-light: #eee;
-
-	--color-main-light: #eac3fa;
-	--color-main-medium: #8d39b0;
-	--color-main-dark: #44105a;
-
-	--color-confirm-light: #b8ffb8;
-	--color-confirm-medium: #37ec37;
-	--color-confirm-dark: #096609;
-}
-
-
-body {
-	background-color:var(--color-neutral-light);
-	padding-bottom:10em;
-}
-
-
-
-
-[class*='col-']>.card {
-	height:100%;
-	margin:0;
-}
-
-
-
-.navbar {
-	margin-bottom:1em;
-}
-
-
-
 
 /* FIGURE */
 .product-figure {
@@ -755,16 +720,6 @@ body {
 		text-decoration:none;
 	}
 
-
-/* NEW CONTAINERS - LANDING PAGE IMAGES*/
-
-.container2 {
-	
-}
-
-.slideshow {
-
-}
 
 
 

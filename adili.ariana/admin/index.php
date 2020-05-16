@@ -259,7 +259,7 @@ HTML;
 	<header class="navbar">
 		<div class="container display-flex">
 			<div class="flex-stretch">
-				<h1>Product Admin</h1>
+				<h1>Admin</h1>
 			</div>
 			<nav class="nav-flex flex-none">
 				<ul>
