@@ -11,7 +11,11 @@ return $r.<<<HTML
 	</div>
 	<div class="flex-stretch">
 		<div><strong>$o->title</strong></div>
-		<div><span>$o->category</span></div>
+		<div><span>$o->price</span></div>
+	</div>
+	<div class="flex-none display-flex">
+		<div><a class="form-button" href="product_added_to_cart.php">Add to cart</a></div>
+		<div><a class="form-button" href="productitem.php?id=$o->id&actionId=view">View</a></div>
 	</div>
 </div>
 HTML;
@@ -76,14 +80,14 @@ HTML;
 	// $results
 	$rows = getRows($conn, "SELECT * FROM `products`");
 	echo array_reduce($rows,'makeListItemTemplate'); 
-	if ($allProductsResult->num_rows > 0) {
-  // output data of each row
-  while($row = $allProductsResult->fetch_assoc()) {
-    echo "id: " . $row["id"]. " - ProductName: " . $row["title"]. "- " . $row["price"]. "<br>";
-  }
-} else {
-  echo "0 results";
-}
+// 	if ($allProductsResult->num_rows > 0) {
+//   // output data of each row
+//   while($row = $allProductsResult->fetch_assoc()) {
+//     echo "id: " . $row["id"]. " - ProductName: " . $row["title"]. "- " . $row["price"]. "<br>";
+//   }
+// } else {
+//   echo "0 results";
+// }
 $conn->close();
 ?>
 
