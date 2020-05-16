@@ -39,23 +39,23 @@ switch(@$_GET['action']) {
 		`products`
 		SET
 			`title`=? ,
-			-- `price`=? ,
-			-- `category`=? ,
-			-- `description`=? ,
-			-- `thumbnail`=? ,
-			-- `images`=? ,
-			-- `quantity`=? ,
+			`price`=? ,
+			`category`=? ,
+			`description`=? ,
+			`thumbnail`=? ,
+			`images`=? ,
+			`quantity`=? ,
 			-- `date_modify`=NOW()
 		WHERE `id`=?
 		");
 		$statement->execute([
 			$_POST['product-title'],
-			// $_POST['product-price'],
-			// $_POST['product-category'],
-			// $_POST['product-description'],
-			// $_POST['product-thumbnail'],
-			// $_POST['product-images'],
-			// $_POST['product-quantity'],
+			$_POST['product-price'],
+			$_POST['product-category'],
+			$_POST['product-description'],
+			$_POST['product-thumbnail'],
+			$_POST['product-images'],
+			$_POST['product-quantity'],
 			$_POST['id']
 		]);
 
