@@ -32,7 +32,7 @@ $empty_product = (object) [
 // CRUD LOGIC
 try {
 
-$conn = makePDOConn();
+$conn = makeConn();
 switch(@$_GET['action']) {
 	case "update":
 		$statement = $conn->prepare("UPDATE
