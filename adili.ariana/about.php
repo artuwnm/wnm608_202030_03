@@ -4,7 +4,7 @@
 	<title>Begari | About Us</title>
 	<link rel="stylesheet" href="lib/css/storetheme.css">
 	
-	<?php include "parts/meta.php" ?>
+<!-- 	<?php include "parts/meta.php" ?> -->
 </head>
 <body>
 
