@@ -33,32 +33,13 @@ $cartItems = getCartItems();
 				?>
 				</div>
 			</div>
-			<!-- <div class="col-xs-12 col-md-4">
+			<div class="col-xs-12 col-md-4">
 				<div class="card flat">
-					<div class="card-section">
-						<div class="display-flex">
-							<div class="flex-stretch">
-								<strong>Sub total</strong>
-							</div>
-							<div class="flex-none">$3.50</div>
-						</div>
-						<div class="display-flex">
-							<div class="flex-stretch">
-								<strong>Taxes</strong>
-							</div>
-							<div class="flex-none">$3.50</div>
-						</div>
-					</div>
-					<div class="card-section">
-						<div class="display-flex">
-							<div class="flex-stretch">
-								<strong>Total</strong>
-							</div>
-							<div class="flex-none">$3.50</div>
-						</div>
-					</div>
+				<?php
+				echo array_reduce($cartItems,'cartTotals');
+				?>
 				</div>
-			</div> -->
+			</div>
 		</div>
 	</div>
 	
