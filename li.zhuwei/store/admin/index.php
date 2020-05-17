@@ -114,11 +114,11 @@ $id = $_GET['id'];
 $addoredit = $id == "new" ? 'Add' : 'Edit';
 $createorupdate = $id == "new" ? 'create' : 'update';
 $deletebutton = $id == "new" ? '' : <<<HTML
-<li class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$id&action=delete">Delete</a></li>
+<button class="form-button"><a href="{$_SERVER['PHP_SELF']}?id=$id&action=delete">Delete</a></button>
 HTML;
 
 $images = array_reduce(explode(",",$o->images), function($r,$p) {
-  return $r."img src='img/$p'>";
+  return $r."'$p'; ";
 });
 
 $data_show = $id == "new" ? "" : <<<HTML
@@ -127,8 +127,6 @@ $data_show = $id == "new" ? "" : <<<HTML
 <div class="product-main">
   <img src="../$o->thumbnail">
 </div>
-<div class="product-thumbs">$images</div>
-
 
 <h2>$o->name</h2>
 <div class="form-control">
@@ -143,65 +141,80 @@ $data_show = $id == "new" ? "" : <<<HTML
   <strong>Description</strong>
   <span>$o->description</span>
 </div>
+
+<div class="form-control">
+  <strong>Thumbnail</strong>
+  <span>$o->thumbnail</span>
+</div>
+
+<div class="form-control">
+  <strong>Other images</strong>
+  <span>$images</span>
+</div>
+
 </div>
 HTML;
 
 
 echo <<<HTML
-<nav class="nav-pills">
-  <div class="card soft">
-  <ul>
-    <li class="flex-none"><a href="{$_SERVER['PHP_SELF']}">Back</a></li>
-    <li class="flex-stretch"></li>
-    $deletebutton
-  </ul>
+<div class="container">
+  <nav class="nav-pills">
+    <div class="card flat">
+    <nav class="nav-crumbs">
+      <ul>
+        <li><a href="index.php"><i class="fas fa-arrow-left" style="color:black;"></i> Back</a></li>    
+      </ul>
+    </nav>
   </div>
-</nav>
-<form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&action=$createorupdate">
-  <div class="grid gap">
-    <div class="col-xs-12 col-md-4">
-      $data_show
+  </nav>
+  <form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&action=$createorupdate">
+    <div class="grid gap">
+      <div class="col-xs-12 col-md-12">
+        $data_show
+        <br>
+        $deletebutton
+      </div>
+      <div class="col-xs-12 col-md-12">
+        <div class="card soft">
+        <h2>$addoredit Product</h2>
+        <div class="form-control">
+          <label class="form-label" for="product-name">Name</label>
+          <input class="form-input" id="product-name" name="product-name" value="$o->name">
+        </div>
+
+        <div class="form-control">
+          <label class="form-label" for="product-price">Price</label>
+          <input class="form-input" id="product-price" name="product-price" value="$o->price">
+        </div>
+
+        <div class="form-control">
+          <label class="form-label" for="product-category">Category</label>
+          <input class="form-input" id="product-categorye" name="product-category" value="$o->category">
+        </div>
+
+        <div class="form-control">
+          <label class="form-label" for="product-description">Description</label>
+          <textarea class="form-input" id="product-descriptione" name="product-description">$o->description</textarea>
+        </div>
+
+        <div class="form-control">
+          <label class="form-label" for="product-thumbnail">Thumbnail</label>
+          <input class="form-input" id="product-thumbnail" name="product-thumbnail" value="$o->thumbnail">
+        </div>
+       
+       <div class="form-control">
+          <label class="form-label" for="product-images">Other Images</label>
+          <input class="form-input" id="product-images" name="product-images" value="$o->images">
+        </div>
+
+        <div class="form-control">
+          <input type="submit" class="form-button" value="Submit">
+        </div>
+        </div>
+      </div>
     </div>
-    <div class="col-xs-12 col-md-8">
-      <div class="card soft">
-      <h2>$addoredit Product</h2>
-      <div class="form-control">
-        <label class="form-label" for="product-name">Name</label>
-        <input class="form-input" id="product-name" name="product-name" value="$o->name">
-      </div>
-
-      <div class="form-control">
-        <label class="form-label" for="product-price">Price</label>
-        <input class="form-input" id="product-price" name="product-price" value="$o->price">
-      </div>
-
-      <div class="form-control">
-        <label class="form-label" for="product-category">Category</label>
-        <input class="form-input" id="product-categorye" name="product-category" value="$o->category">
-      </div>
-
-      <div class="form-control">
-        <label class="form-label" for="product-description">Description</label>
-        <textarea class="form-input" id="product-descriptione" name="product-description">$o->description</textarea>
-      </div>
-
-      <div class="form-control">
-        <label class="form-label" for="product-thumbnail">Thumbnail</label>
-        <input class="form-input" id="product-thumbnail" name="product-thumbnail" value="$o->thumbnail">
-      </div>
-     
-     <div class="form-control">
-        <label class="form-label" for="product-images">Other Images</label>
-        <input class="form-input" id="product-images" name="product-images" value="$o->images">
-      </div>
-
-      <div class="form-control">
-        <input type="submit" class="form-button" value="Submit">
-      </div>
-      </div>
-    </div>
-  </div>
-</form>
+  </form>
+</div>
 HTML;
 
 }
@@ -278,74 +291,47 @@ include_once "../lib/php/functions.php";
   <script src="https://kit.fontawesome.com/041ded284b.js" crossorigin="anonymous"></script>
   <div class="container display-flex">
     <div class="flex-stretch" onclick="window.location.replace('./index.php');">
-      <!-- <h1>JAN STUDIO</h1> -->
       <div class="logo">
       <img class="logoimg" src="../img/JanStudio.png" alt="JANSTUDIO">
       </div>
 
     </div>
     <nav class="nav flex-none">
-      <!-- ul>li*3>a[href=#]>{Link $} -->
       <ul class="display-flex">
-           <li><a href="../admin">Product List</a></li>
-           <li><a href="../admin?id=new">Add New Product</a></li>
-           <li><a href="users.php">User List</a></li>
-            <li><a href="../collection.php">Home</a></li>
+        <li><a href="../admin">Product List</a></li>
+        <li><a href="../admin?id=new">Add New Product</a></li>
+        <li><a href="users.php">User List</a></li>
+        <li><a href="../collection.php">Home</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-   <!--  <div class="container display-flex">
-      <div class="flex-stretch">
-        <h1>Admin</h1>
-      </div>
-      <nav class="nav-flex flex-none">
-        <ul>
-          <li><a href="users.php">User List</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header> -->
-
   <?php
       
     if (isset($_GET['id'])) {
-    //     showUserPage(
-    //     $users[$_GET['id']], $_GET['id']
-    //     $empty_product:
-
-    // );
-
       if($_GET['id'] == "new") {
         makeProductForm($empty_product);
       } else {
         $rows = getRows($conn, "SELECT * FROM`products` WHERE `id`='{$_GET['id']}'");
         makeProductForm($rows[0]);
       }
-
     } else {
-
 echo "
   <div class='container'>
     <div class='card soft'>
-     
-      <h2>User List</h2>
+      <h2>Product List</h2>
 
-      <nav class='nav'>
       <ul class='itemlist'>
       <ul>
       ";
-
       $rows = getRows ($conn,"SELECT * FROM `products`");
       echo array_reduce($rows,'makeListItemTemplate');
 echo "
       </ul>
-      </nav>
     </div>
   </div>
 ";
-
     }
   ?>
   

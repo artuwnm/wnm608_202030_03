@@ -12,8 +12,6 @@ $rows = getRows(
   "
 );
 
-// print_p($rows);
-
 ?>
 
 <!DOCTYPE html>

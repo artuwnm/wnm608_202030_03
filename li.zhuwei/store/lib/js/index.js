@@ -2,7 +2,8 @@ var collectionFormButtonClicked = null;
 
 function highlight(element) {
   if (collectionFormButtonClicked != null) {
-    collectionFormButtonClicked.style.background = "#283b54";
+    collectionFormButtonClicked.style.background = "white";
+    collectionFormButtonClicked.style.color = "black";
   }
   collectionFormButtonClicked = element;
   collectionFormButtonClicked.style.background = "#fb8ca9";
@@ -29,6 +30,19 @@ $(function() {
     $(".scrolling-wrapper").animate({
         scrollLeft: 4000
     }, 1000);
+  });
+
+  $(".form-button").hover(function() {
+    if ($(this)[0] != collectionFormButtonClicked) {
+      $(this).css("background-color","#2079b0");
+    }
+  }).mouseout(function(){
+    if ($(this)[0] != collectionFormButtonClicked) {
+      $(this).css({
+        "background-color":"white",
+        "color":"black",
+      });
+    }
   });
 });
 

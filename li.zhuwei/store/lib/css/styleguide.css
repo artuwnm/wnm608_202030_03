@@ -326,26 +326,22 @@ code {
 }
 
 .form-button {
-  display:block;
-  vertical-align: baseline;
-  border-width:0;
-  padding:0.5em 1em;
-  -webkit-appearance:none;
-  outline:none;
-  border: none;
-  text-align:center;
-  background-color:#283b54;
-  text-decoration:none;
-  color: white;
-  cursor:pointer;
+  padding: 12px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; 
 }
-
 .form-button:hover {
-  text-decoration:none;
+  background: #2079b0;
+  color: white;
 }
-.form-button.confirm{
-  background-color: var (--color-confirm-light);
-}
+.form-button:focus {outline:none;}
 
 .hotdog {
   display:block;

@@ -52,12 +52,14 @@ function showUserPage($user, $id) {
   $classes = implode(", ", $user->classes);
 
 echo <<<HTML
-<nav class='nav-crumbs'>
-  <ul>
-    <li><a href='users.php'>Back</a></li>
-  </ul>
-</nav>
-<div>
+<div class="container">
+  <div class="card flat">
+    <nav class="nav-crumbs" style="margin:2em 0">
+      <ul>
+        <li><a href="users.php"><i class="fas fa-arrow-left" style="color:black;"></i> Back</a></li>    
+      </ul>
+    </nav>
+  </div>
   <h2>$user->name</h2>
   <div>
     <strong>Type</strong>
@@ -72,23 +74,24 @@ echo <<<HTML
     <strong>Classes</strong>
     <span>$classes</span>
   </div>
+
+  <br>
+  <h2>Update user information</h2>
+
+  <form method="post" action="users.php?id=$id">
+    <label for="name">Type</label>
+    <input type="text" id="type" name="type">
+    </br>
+    <label for="name">Email</label>
+    <input type="text" id="email" name="email">
+    </br>
+    <label for="name">Classes</label>
+    <input type="text" id="classes" name="classes">
+    </br>
+    </br>
+    <input class="form-button" type="submit" value="Submit">
+  </form>
 </div>
-
-<br>
-<h2>Update user information</h2>
-
-<form method="post" action="users.php?id=$id">
-  <label for="name">Type</label>
-  <input type="text" id="type" name="type">
-  </br>
-  <label for="name">Email</label>
-  <input type="text" id="email" name="email">
-  </br>
-  <label for="name">Classes</label>
-  <input type="text" id="classes" name="classes">
-  </br>
-  <input type="submit" value="Submit">
-</form>
 HTML;
 }
 
@@ -99,17 +102,17 @@ HTML;
 <head>
   <title>Learning Data</title>
   <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/041ded284b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../lib/css/gridsystem.css" type="text/css">
   <link rel="stylesheet" href="../lib/css/styleguide.css" type="text/css">
   <link rel="stylesheet" href="../css/storetheme.css" type="text/css">
-  <script src="https://kit.fontawesome.com/041ded284b.js" crossorigin="anonymous"></script>
-  <sc ript src="index.js"></script>
+  <script src="index.js"></script>
 </head>
 <body>
   <header class="navbar">
     <div class="container display-flex">
       <div class="flex-stretch">
-        <h1>Admin</h1>
+        <a href="index.php">Admin Home</a>
       </div>
       <nav class="nav-flex flex-none">
         <ul>
@@ -130,8 +133,6 @@ echo "
     <div class='card soft'>
      
       <h2>User List</h2>
-
-      <nav class='nav'>
       <ul>
       ";
       foreach($users as $i=>$user) {
@@ -143,7 +144,6 @@ echo "
       }
 echo "
       </ul>
-      </nav>
     </div>
   </div>
 ";
