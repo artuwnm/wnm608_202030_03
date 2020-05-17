@@ -253,6 +253,7 @@ HTML;
 	<title>Product Admin</title>
 	
 	<?php include "../parts/meta.php" ?>
+	<link rel="stylesheet" href="lib/css/storetheme.css">
 </head>
 <body>
 
