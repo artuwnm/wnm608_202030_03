@@ -1,7 +1,7 @@
 <?php
 
 // include_once __DIR__. "/lib/php/functions.php";
-include_once __DIR__. "/parts/templates.php";
+include_once "parts/templates.php";
 
 
 $cartItems = []; //getCartItems()
@@ -10,13 +10,14 @@ $cartItems = []; //getCartItems()
 <html lang="en">
 <head>
 	<title>Begari | Product Cart</title>
+	<?php include "parts/meta.php" ?>
 	<link rel="stylesheet" href="lib/css/storetheme.css">
 	
-	<?php include __DIR__. "/parts/meta.php" ?>
+	
 </head>
 <body>
 
-	<?php include __DIR__. "/parts/navbar.php" ?>
+	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
 		<nav class="nav-crumbs" style="margin:1em 0">

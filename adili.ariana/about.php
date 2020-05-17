@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
 	<title>Begari | About Us</title>
+	<?php include "parts/meta.php" ?> 
 	<link rel="stylesheet" href="lib/css/storetheme.css">
-	
-<!-- 	<?php include "parts/meta.php" ?> -->
 </head>
 <body>
 
