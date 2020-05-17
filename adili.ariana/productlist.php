@@ -33,6 +33,7 @@ HTML;
 	<script src="lib/js/functions.js"></script>
 	<script src="js/templates.js"></script>
 	<script src="js/list.js"></script>
+	<link rel="stylesheet" href="lib/css/storetheme.css">
 
 	
 

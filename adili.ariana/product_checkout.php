@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<title>Begari | Checkout</title>
+	<link rel="stylesheet" href="lib/css/storetheme.css">
 	
 	<?php include __DIR__. "/parts/meta.php" ?>
 </head>

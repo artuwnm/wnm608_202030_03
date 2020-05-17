@@ -19,6 +19,7 @@ $p = array_find(
 <html lang="en">
 <head>
 	<title>Begari | Product Added to Cart</title>
+	<link rel="stylesheet" href="lib/css/storetheme.css">
 	
 	<?php include __DIR__."/parts/meta.php" ?>
 </head>

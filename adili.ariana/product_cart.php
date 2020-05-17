@@ -10,6 +10,7 @@ $cartItems = []; //getCartItems()
 <html lang="en">
 <head>
 	<title>Begari | Product Cart</title>
+	<link rel="stylesheet" href="lib/css/storetheme.css">
 	
 	<?php include __DIR__. "/parts/meta.php" ?>
 </head>
