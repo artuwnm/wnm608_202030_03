@@ -41,6 +41,13 @@ $cartItems = getCartItems();
 				</div>
 			</div>
 		</div>
+		<div class="col-xs-12 col-md-5">
+
+				<div class="card soft">
+					<a class="form-button" href="product_checkout.php">Checkout</a>
+				</div>
+				
+			</div>
 	</div>
 	
 </body>
