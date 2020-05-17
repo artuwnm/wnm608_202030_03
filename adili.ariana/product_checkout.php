@@ -77,7 +77,7 @@
 			<div class="col-xs-12 col-md-5">
 
 				<div class="card soft">
-					<a class="form-button" href="product_confirmation.php">Confirm your purchase</a>
+					<a class="form-button" href="product_confirmation.php">Confirm my purchase</a>
 				</div>
 				
 			</div>

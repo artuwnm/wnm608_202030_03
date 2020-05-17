@@ -36,12 +36,13 @@ h6 {
 	font-family: 'Montserrat';
 	font-variant-caps: all-small-caps;
 	color: white;
+	
 }
 
 
 
 a {
-	color:inherit;
+	color: white;
 	font-weight:bold;
 	text-decoration: none;
 }
@@ -170,6 +171,7 @@ code {
 .nav-pills a {
 	border-radius:2em;
 	padding:0.5em 1em;
+	color: white;
 }
 
 
@@ -185,6 +187,7 @@ code {
 
 .card {
     background-color: white;
+    color: black;
     overflow: hidden;
     position: relative;
     padding: 1em;
@@ -199,14 +202,17 @@ code {
 		border-radius:0.3em;
 	}
 	.card.medium {
-		background-color:var(--color-neutral-medium);
+		background-color: white;
+		color: black;
 	}
 	.card.dark {
-		background-color:var(--color-neutral-dark);
-		color:var(--color-neutral-light);
+		background-color: white;
+		color: black;
 	}
 	.card.flat {
 		padding:0;
+		background-color: white;
+		color: black;
 	}
 
 

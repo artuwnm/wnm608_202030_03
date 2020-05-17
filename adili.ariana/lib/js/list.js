@@ -9,8 +9,6 @@ const showResults = (d) => {
 getData({type:'product_all'}).then(showResults);
 
 
-// Make sure that the values match YOUR database values
-
 $(()=>{
 	
 	$("#product-search").on("submit",function(e){

@@ -32,7 +32,7 @@ $p = array_find(
 			<h2>Your items</h2>
 
 			<div>
-				Thank you for adding <?= $p->amount ?> of the <?= $o->title ?> to the cart.
+				You added <?= $p->amount ?> of the <?= $o->title ?> to the cart.
 			</div>
 
 			<nav class="nav-flex">

@@ -68,9 +68,7 @@
 		</div>
 
 
-
-
-		<div class="card">
+<div class="card">
 			<h1>Color palette</h1>
 
 			<!-- <h3 id="headings"></h3> -->
@@ -78,22 +76,22 @@
 			<!-- h$*6>{Heading $} -->
 	
 			<ul>
-				<p><b>Background color |</b>  White | #FFFFFF</p>
-				<p><b>Cards | </b> Black | #000000</p>
+				<p><b>Background color & cards |</b>  White | #FFFFFF</p>
+				<p><b>Cards code | </b> box-shadow: 6px 5px 15px 10px rgba(0, 0, 0, 0.1); border-radius:0.3em; | #000000</p>
 			</ul>
 		</div>
 
 
 <div class="card">
-			<h1>Nav bar</h1>
+			<h1>Nav bar | Main</h1>
 
 			<!-- <h3 id="headings"></h3> -->
 			<hr>
 			<!-- h$*6>{Heading $} -->
 	
-	<header class="navbar">
-	<div class="container display-flex">
-		<div class="flex-stretch">
+		<header class="navbar">
+			<div class="container display-flex">
+				<div class="flex-stretch">
 			<h1>LOGO</h1>
 		</div>
 		<nav class="nav-flex flex-none">
@@ -106,7 +104,32 @@
 		</nav>
 	</div>
 </header>
+</div>
+
+
+
+
+
+
+	<div class="card">
+			<h1>Navigation | Crumbs</h1>
+
+			<!-- <h3 id="headings"></h3> -->
+			<hr>
+			<!-- h$*6>{Heading $} -->
+	
+			<ul>
+				<p>	<nav class="nav-crumbs" style="margin:1em 0">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Products</a></li>
+
+			</ul>
+		</nav></p>
+			</ul>
 		</div>
+
+
 
 
 <div class="card">

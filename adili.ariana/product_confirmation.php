@@ -12,10 +12,12 @@
 
 	<div class="container">
 		<div class="card soft">
-			<h2>Product Confirmation</h2>
+			<h2>Confirmation</h2>
 
 			<div>
-				Thank you for purchasing.
+				Thank you for your purchase.
+				<br>
+				A confirmation of your order will be sent to your email.
 			</div>
 
 			<div>

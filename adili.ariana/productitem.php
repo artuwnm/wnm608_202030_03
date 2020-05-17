@@ -27,7 +27,8 @@ $images = explode(",",$o->images);
 	<div class="container">
 		<nav class="nav-crumbs" style="margin:1em 0">
 			<ul>
-				<li><a href="productlist.php">Back</a></li>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="productlist.php">Products</a></li>
 			</ul>
 		</nav>
 
