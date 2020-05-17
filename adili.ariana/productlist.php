@@ -6,7 +6,7 @@ return $r.<<<HTML
 <div class="itemlist-item display-flex">
 	<div class="flex-none">
 		<div class="image-square">
-			<img src="/images/store/$o->thumbnail">
+			<img src="$o->thumbnail">
 		</div>
 	</div>
 	<div class="flex-stretch">
