@@ -4,6 +4,7 @@
 include_once "lib/php/functions.php";
 include_once "parts/templates.php";
 
+
 $data = getRows(
 	makeConn(),
 	"SELECT * FROM `products` WHERE `id` = '{$_GET['id']}'"
@@ -57,7 +58,7 @@ $images = explode(",",$o->images);
 			<div class="col-xs-12 col-md-5">
 				<form class="card soft flat" method="get" action="data/form_actions.php">
 					<div class="card-section">
-						<h3><?= $o->name ?></h3>
+						<h5><?= $o->name ?></h5>
 						<div class="product-description">
 							<div class="product-price">&dollar;<?= $o->price ?></div>
 							<br>
@@ -65,7 +66,7 @@ $images = explode(",",$o->images);
 					
 					
 
-					<h3>Description</h3>
+					<h5>Description</h5>
 					<div class="product-description">
 					<div><?= $o->description ?></div>
 				</div>
@@ -101,7 +102,7 @@ $images = explode(",",$o->images);
 	</div>
 
 	<div class="container">
-			<h3>Recommended Products</h3>
+			<h5>Recommended Products</h5>
 			<?php recommendedSimilar($o->category,$o->id) ?>
 		</div>
 	</div>

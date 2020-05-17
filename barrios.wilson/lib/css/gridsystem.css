@@ -19,6 +19,14 @@
 	.gap.small { --grid-gap:1em; }
 
 
+.grid.nogap {
+	margin: 0rem;
+
+}
+	.gap.large { --grid-gap:2em; }
+	.gap.small { --grid-gap:1em; }
+
+
 
 
 .col-0 { display:none; }

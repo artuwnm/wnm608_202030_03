@@ -1,6 +1,7 @@
 
 
 <div class="footer">
+  <div class="container">
 
 	<div class="grid gap">
 			<div class="col-xs-12 col-md-6">
@@ -10,6 +11,7 @@
   			</div>
   
 			<div class="col-xs-12 col-md-6">
+
 
 				<div class="social-container">
     				<ul class="social-icons">
@@ -23,4 +25,4 @@
 
 	</div>
 
-<div class="footer-buttom"><p>Cool Keychains.com ©2020 by Wilson Barrios | MFA-CA | #04389249</p></div>
+<div class="footer-buttom"><p>Cool Keychains.com ©2020 by Wilson Barrios | MFA-CA | #04389249</p></div></div>

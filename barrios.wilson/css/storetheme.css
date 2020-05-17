@@ -34,12 +34,39 @@ body {
 	margin-bottom:1em;
 }
 
+/* PAGE NAME */
+
+
+.pagename {
+	background-color:#eeeeee;
+	line-height: var(--header-height);
+
+}
+
+
+.pagename a {
+	padding: 0em;
+}
+
+.pagename {
+    list-style-type: none;
+    display: none;
+}
+
+
+.pagename {
+     display: flex;
+     justify-content:left;
+     padding-bottom: 0;
+}
+
 .pagename {
 	font-family:'Poppins', sans-serif;
-	font-weight:300;
+	font-weight:600;
 	font-size: 1.5em;
 	padding-top: 0.5em;
 	margin-bottom:1em;
+	text-transform: uppercase;
 }
 
 

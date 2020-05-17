@@ -29,12 +29,12 @@ include_once "parts/templates.php";
 
 			<li><a href="contact.php">CONTACT</a></li>
 
-			<li><a href="admin/index.php"><img class="icon" src="img/user.png" alt="user"></a></li>
+			<li><a href="admin/index.php"><img class="icon" src="img/admin.png" alt="user"></a></li>
 
-			<li><a href="product_cart.php"><img class="icon" src="img/shopping-cart.png" alt="cart"><span class="badge"><?= makeCartBadge();?></span></a></li>
+			<li><div class="cart-circle"><a href="product_cart.php"><span class="badge"><?= makeCartBadge();?></span></a></div></li>
 				
 		</ul>
-
 	</div>
+
 
 </header>

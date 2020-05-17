@@ -26,6 +26,7 @@ session_start();
 
 	<header class="pagename">
 		<div class="container pagename display-flex">Contact us</div>
+		<div class="nav-crumbs"></div>
 	</header>
 
 <div class="banner-color">
@@ -40,8 +41,8 @@ session_start();
 		<div class="col-xs-12 col-md-6 card soft1">
 				
 					<h1> Drop us a line</h1>
-					<p>Please fill the form below and we will get back to you as soon as possible.</p><br>
 					<form class="form">
+						<p>Please fill the form below and we will get back to you<br> as soon as possible.</p>
 						<div class="form-control">
 							<label for="checkout-card-name" class="form-label">Name </label>
 							<input type="text" class="form-input" name="name">

@@ -52,9 +52,12 @@ session_start();
 						<br>
 
       
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quisquam saepe quae quam dolores rem omnis est recusandae ullam asperiores.</p>
-			<p>Saepe ratione quidem neque dolores nobis harum cum, numquam, unde pariatur rem possimus itaque non recusandae tempora amet laudantium et.</p>
-			<p>Ipsa officiis necessitatibus perspiciatis vero, porro soluta temporibus quod ut dignissimos earum a optio dolorum, pariatur sed harum quaerat! Deleniti.</p>
+			<p>The cool keychains that we attach to our keys often serve two purposes: they add personality to our keys and help us find them more easily</p>
+			<p>If you're the type of person who is constantly losing their keys, you probably could use one of these cool keychains that is big and bold. That way, you'll be making your keys unmistakable.</p>
+			<br>
+			
+			<a class="form-button red" href="product_list.php">Shop Now</a>
+
 			</div>
     	
 

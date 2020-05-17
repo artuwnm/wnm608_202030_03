@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+
+session_start();
+$_SESSION['cart'] = [];
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Store: Product Confirmation</title>
@@ -23,10 +28,16 @@
 			<div>
 				<div class="thankyou">For purchasing </div>
 				<br>
+
+				<div class="container">
+			
+
+
+				<a class="form-button green-conf" href="product_list.php">Continue Shopping</a>
 			</div>
-
-
-				<a class="form-button-green" href="product_list.php">Continue Shopping</a>
+		</div>
+				<br>
+				<br>
 				<br>
 			</div>
 		</div>

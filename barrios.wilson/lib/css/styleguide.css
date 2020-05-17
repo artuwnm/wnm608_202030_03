@@ -35,37 +35,46 @@ body {
 }
 
 h1{
-	font-size: 3.5em;
-	font-family:'Poppins', sans-serif;
-	font-weight: 400
-}
-
-h2 {
 	font-size: 3em;
 	font-family:'Poppins', sans-serif;
 	font-weight: 400
 }
 
-h3{
-	font-size: 1.5em;
+h2 {
+	font-size: 2.5em;
 	font-family:'Poppins', sans-serif;
-	font-weight: 400
+	font-weight: 300
+}
+
+h3{
+	font-size:3.5em;
+	font-family:'Poppins', sans-serif;
+	font-weight: 700;
+	padding-top: 5px;
+	line-height: 1em;
+	text-transform: uppercase;
 }
 
 h4{
-	font-size: 1.1em;
+	font-size: 2em;
 	font-family:'lato', sans-serif;
-	font-weight: 400
+	font-weight: 500
+	text-transform: uppercase;
+	line-height: 1em;
 }
 
 
 h5{
-	color:#EDEBF0;
-	font-size: 2em;
+	font-size: 1.8em;
+	font-family:'Poppins', sans-serif;
+	font-weight: 500
+	text-transform: uppercase;
 }
 
 
+
 h6 {
+	
 	
 }
 
@@ -108,6 +117,7 @@ img {
     border-radius: 50%;
     margin: 0 auto;
 
+
 }
 
 .profile-pic {
@@ -127,6 +137,7 @@ width:230px;
 height:90px;
 vertical-align: middle;
 padding-top:1em;
+padding-right: 30px;
 
 
 }
@@ -143,7 +154,7 @@ margin-top: 1em;
 
 .icon
 {
-width:20px;
+width:27px;
 padding-right: 0.1em;
 padding-left: 0.1em;
 padding-top: 0.1em
@@ -168,6 +179,38 @@ padding-right: 0.1em;
 padding-left: 0.1em;
 vertical-align: middle;
 }
+
+.icon-admin
+{
+width:40px;
+padding-right: 0.1em;
+padding-left: 0.1em;
+vertical-align: middle;
+}
+
+
+
+/* CART BADGET */
+
+.cart-circle{
+	width: 30px;
+    height: 30px;
+    background-image: url(https://wbarrios.com/aau/wnm608/barrios.wilson/img/cart2.png);
+	background-size: cover;
+	vertical-align: middle;
+	margin: 0 auto;
+
+}
+
+.badge{
+	font-size: 0.7em;
+	position: relative;
+	bottom: 15px;
+	right: 13px;
+
+
+}
+
 
 /* PIC */
 
@@ -219,49 +262,6 @@ size: cover;
 }
 
 
-/* TESTIMONIAL SLIDER */
-
-.heading {
-    text-align: center;
-    color: #454343;
-    font-size: 30px;
-    font-weight: 700;
-    position: relative;
-    margin-bottom: 70px;
-    text-transform: uppercase;
-    z-index: 999;
-}
-.white-heading{
-    color: #ffffff;
-}
-.heading:after {
-    content: ' ';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    height: 40px;
-    width: 180px;
-    border-radius: 4px;
-    transform: translateX(-50%);
-    background: url(img/heading-line.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.white-heading:after {
-    background: url(https://i.ibb.co/d7tSD1R/heading-line-white.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.heading span {
-    font-size: 18px;
-    display: block;
-    font-weight: 500;
-}
-.white-heading span {
-    color: #ffffff;
-}
-
 /*-----Testimonials----concept by Cassidi Williams https://codepen.io/cassidoo---*/
 
 .content-slider {
@@ -271,6 +271,7 @@ size: cover;
   padding-top: 1em;
   text-align: center;
   align-items: center;
+  margin-top: -40px;
 
 }
 
@@ -312,6 +313,7 @@ size: cover;
   font-size: 25px;
   font-style: italic;
   color: white;
+  padding-top: 20px;
 }
 
 .slider .source {
@@ -558,7 +560,9 @@ size: cover;
 .hidden { display:none; }
 
 
-/* Flexbox */
+
+
+/* Flexbox- lANDING */
 
 
 
@@ -566,6 +570,17 @@ size: cover;
   background-color: #ffffff;
   display: flex;
   position: relative;
+  margin: auto;
+  overflow: hidden;
+
+}
+
+.wrapper text{
+	font-family:'Poppins', sans-serif;
+	font-weight:800;
+	text-transform: uppercase;
+	font-size: 1.7em;
+	margin-bottom:1em;
 }
 
 .nested-wrapper1 {
@@ -577,21 +592,98 @@ size: cover;
   width: 50%;
 }
 
+
+
+
+
 .nested-wrapper1>[class='1'] {
-  background-color: #e6e8e8;
+  background-image: url(https://wbarrios.com/aau/wnm608/barrios.wilson/images/bp1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 10em;
   flex: 1;
 }
 
 .nested-wrapper2>[class='2'] {
-  background-color: #ffffff;
-  padding: 5em;
+  background-image: url(https://wbarrios.com/aau/wnm608/barrios.wilson/images/2.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 6em;
 }
 
 .nested-wrapper2>[class='3'] {
-  background: #ffffff;
-  padding: 5em;
+  background-image: url(https://wbarrios.com/aau/wnm608/barrios.wilson/images/3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 6em;
 }
+
+
+.wrapper2 {
+  background-color: #ffffff;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+
+.wp-pic1 {
+  background-image: url(https://wbarrios.com/aau/wnm608/barrios.wilson/img/shirt-left.jpg);
+  background-size: cover;
+	padding: 14em;
+  flex: 1;
+}
+
+.wp-pic1:hover {
+	background-image: url(https://wbarrios.com/aau/wnm608/barrios.wilson/img/shirt-lef-hover.jpg);
+  background-size: cover;
+  padding: 14em;
+
+}
+
+.wp-pic2 {
+  background-image: url(https://wbarrios.com/aau/wnm608/barrios.wilson/img/shirt-center.jpg);
+  background-size: cover;
+  padding: 14em;
+  flex: 1;
+}
+
+.wp-pic2:hover {
+  background-image: url(https://wbarrios.com/aau/wnm608/barrios.wilson/img/shirt-center-hover.jpg);
+  background-size: cover;
+  padding: 14em;
+  
+}
+
+.wp-pic3 {
+  background-image: url(https://wbarrios.com/aau/wnm608/barrios.wilson/img/shirt-right.jpg);
+  background-size: cover;
+  padding: 14em;
+  flex: 1;
+}
+
+.wp-pic3:hover {
+  background-image: url(https://wbarrios.com/aau/wnm608/barrios.wilson/img/shirt-right-hover.jpg);
+  background-size: cover;
+  padding: 14em;
+  
+}
+
+
+.bar {
+	background-color:#3AA0DA;
+	height:auto;
+	margin-bottom: -60px;
+}
+
+.bar{
+	text-align: center;
+	color: white;
+
+
+}
+
+
 
 
 
@@ -617,6 +709,7 @@ size: cover;
 /* COMPONENT CLASSES */
 
 /* NAVBAR-TOP */
+
 
 
 
@@ -657,47 +750,38 @@ size: cover;
      align-items: justify;
 }
 
-/* PAGE NAME/ SUBSCRIPTION */
-
-
-.pagename {
-	background-color:#eeeeee;
-	line-height: var(--header-height);
-
-}
-
-
-.pagename a {
-	padding: 0em;
-}
-
-.pagename {
-    list-style-type: none;
-    display: none;
-}
-
-
-.pagename {
-     display: flex;
-     justify-content:left;
-     padding-bottom: 0;
-}
 
 
 
 
-/* BANNER */
+
+
+
+/* BANNERS */
 
 
 
 .banner-image{
   background-image: url(https://wbarrios.com/aau/wnm608/barrios.wilson/img/bannerback.jpg);
-	height: 450px;
+	height: auto;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
 	margin-bottom: 10px;
+
+}
+
+.banner-image3{
+  background-image: url(https://wbarrios.com/aau/wnm608/barrios.wilson/img/banner3.jpg);
+	height: auto;
+	background-position:top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	padding-top: 40px;
+	margin-bottom:-60px;
+	margin-top: -80px;
 
 }
 
@@ -729,10 +813,19 @@ size: cover;
 
 }
 
+.banner-color-yellow2{
+	height:auto;
+	background-color:#f6f6f6;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: -40px;
+	margin-top: -40px;
 
-/* QUOTATIONS */
+}
 
 
+
+/* TESTIMONIALS-QUOTATIONS */
 
 .quotation{
   font-size:1.3em;
@@ -791,7 +884,7 @@ size: cover;
 .nav-flex ul,
 .nav ul {
 	list-style-type:none;
-	margin-top: 2.5em;
+	margin-top: 2em;
 	margin-bottom: 0;
 	padding-left: 0;
 }
@@ -807,7 +900,7 @@ size: cover;
 	.nav-stretch a:hover,
 	.nav-flex a:hover,
 	.nav a:hover {
-		background-color:var(--color-main-medium);
+		background-color:#dadcdd;
 		color:var(--color-white);
 		text-decoration:none;
 	}
@@ -833,9 +926,9 @@ size: cover;
 }
 
 .nav-pills a {
-	border-radius:2em;
 	padding:0.1em 1.5em;
 	padding-top:0.3em;
+	padding-bottom: 0.3em;
 }
 
 
@@ -850,7 +943,10 @@ size: cover;
 	margin:0 0.4em;
 }
 
-
+.nav-flex ul li
+{
+text-align:center;
+}
 
 
 /* card */
@@ -872,8 +968,23 @@ size: cover;
 
 	.card.soft1 {
 		border-radius:0em;
-		padding: 2em;
+		padding-top: 1.5em;
+		padding-right: 0.1em;
+		padding-left: 2em;
+		padding-bottom: 1em;
 		background-color:rgb(255, 255, 255, 0.5);
+		margin-bottom: 4em;
+
+	}
+
+	.card.soft2 {
+		border-radius:0em;
+		padding-top: 1.5em;
+		padding-right: 3em;
+		padding-left: 2em;
+		padding-bottom: 1em;
+		background-color:rgb(255, 255, 255, 0.5);
+		margin-bottom: 5em;
 
 	}
 
@@ -1010,7 +1121,7 @@ size: cover;
 
 .form-input {
 	display:block;
-	width:100%;
+	width:94%;
 	border-width:0;
 	border-bottom:2px solid lightgrey;
 	color:inherit;
@@ -1018,7 +1129,7 @@ size: cover;
 	padding:0.5em 1em;
 	-webkit-appearance:none;
 	background-color: #ffffff;
-	margin-top: 1em;
+	margin-top: 0.5em;
 
 }
 
@@ -1026,17 +1137,17 @@ size: cover;
 .form-label {
 	display:block;
 	width:100%;
-	font-size:1.2em;
-	font-weight: 600;
+	font-size:1.1em;
+	font-weight: 500;
 }
 
 
 
-.form-button:hover{
+.form-button a:hover{
  color:#eeeeee;
  border-color:#eeeeee;
 }
-.form-button:active{
+.form-button a:active{
  color:#42ad9d;
  border-color:#eeeeee;
 }
@@ -1107,6 +1218,18 @@ size: cover;
 	color:#ffffff;
 	margin-top: 0.4em;
 	background-color: #42ad9d;
+	
+}
+
+.green-conf{
+	border: 0.16em solid #42ad9d;
+	color:#ffffff;
+	margin-top: 0.4em;
+	background-color: #42ad9d;
+	margin: 0 auto;
+	width: 100%;
+
+	
 }
 
 .red{
@@ -1148,12 +1271,13 @@ size: cover;
 
 
 
-.form-button:hover{
- color:#42ad9d;
+.form-button a:hover{
+ background-color:#42ad9d;
  border-color:#eeeeee;
 }
-.form-button:active{
- color:#42ad9d;
+
+.form-button a:active{
+ bckground-color:#42ad9d;
  border-color:#eeeeee;
 }
 
@@ -1313,24 +1437,7 @@ margin-right: 10%;
   }
 
  
-}
-@media screen and (max-width: 650px) {
-.wrapper {
-display: block;
-max-width: 100%;
-padding: 0;
-margin-bottom: 0;
-}
-.nested-wrapper1, .nested-wrapper2 {
-width: 100%;
-display: block;
-padding: 0;
-margin-bottom: 0 auto;
-}
-.nested-wrapper1>[class='1'], .nested-wrapper2>[class='2'], .nested-wrapper2>[class='3'] {
-	width: auto;
-  	padding: 1em;
-}
+
 }
 
 
@@ -1359,7 +1466,7 @@ margin-bottom: 0 auto;
 }
 
 .vl{
-	border-left: 2px solid white;
+	border-left: 2px solid #fa6b44;
   	height: 100px;
   	position: absolute;
   	left: 50%;
@@ -1423,11 +1530,38 @@ margin-bottom: 0 auto;
   -ms-transform: scale(2.2);
   -webkit-transform: scale(2.2);
   color: #00B5F5;
-  background: -webkit-linear-gradient(45deg, #00B5F5, #002A8F);
+  background: -webkit-linear-gradient(45deg, #f7b733, #FFFFFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in;
 }
+
+/* checkout */
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 40px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 1.1em;
+  font-family:'Lato', sans-serif;
+  color:#696969;
+}
+
+
+
+/* center aligmnet */
+
+.text-center {
+text-align:center;
+}
+
+
+
 
 
 

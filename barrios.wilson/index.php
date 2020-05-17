@@ -26,48 +26,79 @@ session_start();
 
 
 	<div class="wrapper">
-  <div class="nested-wrapper1">
-    <div class="1">
-      <h3>PIC 1 <BR>CALL TO ACTION</h3>
+    
+    <div class="nested-wrapper1">
+      <div class="1">
+        <h3 style="color:white">It's not just<br> a keychain...</h3>
+        <h4 style="color:white"> It's an statement!</h4>
+        <div class="form-button red" href="product_list.php">VISIT OUR STORE</a></div>
     </div>
   </div>
+
   <div class="nested-wrapper2">
     <div class="2">
-      <h3>PIC 2 <BR>CALL TO ACTION</h3>
+      <h3 style="color:white">Never loose<br> your keys<br> again!</h3>
+      <div class="form-button red" href="product_list.php">VISIT OUR STORE</a></div>
     </div>
+
     <div class="3">
-      <h3>PIC 3 <BR>CALL TO ACTION</h3>
+      <h3 style="color:white">We sell one<br> of a kind<br> keychains</h3>
+      <div class="form-button green" href="product_list.php">VISIT OUR STORE</a></div>
     </div>
   </div>
 </div>
-<div>
 
 
-	
-	</div>
 
-<div class="banner-color">
 
+
+<div class="banner-image3">
 <div class= "container">
 
-<h1> New Arrivals </h1>
+<h3 style="text-align: center"> New Arrivals </h3>
 
 <div class="container">
     <?php recommendedCategory('places') ?>
     <br>
     <br>
   </div>
+</div>
 
-	</div>
+  </div>
 </div>
+
+
+<div class="bar"><h5>COMING SOON!!</h5></div>
+<div class="grid nogap">
+      <div class="col-xs-12 col-md-4">
+        <div class="wp-pic1">
+</div> </div>
+
+
+<div class="col-xs-12 col-md-4">
+  <div class="wp-pic2">
+  </div></div>
+
+<div class="col-xs-12 col-md-4">
+  <div class="wp-pic3">
+</div></div>
 </div>
+
+
+    
+    
+
+
+
+
+
 
 	
 
 	
 
 <div class="content-slider">
-	<h1 style="color:white">Our Clients Say</h1>
+	<h3 style="color:white">Our Clients Say</h3>
   <div class="slider">
     <div class="mask">
       <ul>
@@ -120,23 +151,21 @@ session_start();
 <div class="banner-image">
 	<div class="container">
 	<div class="grid gap">
-			<div class="col-xs-12 col-md-6">
+			<div class="col-xs-12 col-md-7">
+        <div style="padding-left: 2em">
 	
-	<h1 style="color:white"> Subscribe</h1>
+	<h3 style="color:white"> Subscribe</h3>
 	<h4 style="color:white">To our newsletter and receive coupons and news of our specials.</h4>
-
-	<div class="form-control diplay flex">
 		
 		<div class= "hotdog light2">
 			<input type="email" placeholder="Your e-mail address"></div>
 			<div class="form-button yellow" href="">Submit</div>
-		</div>
+    </div>
+    <br>
+    <br>
 	
+			<div class="col-xs-12 col-md-5"></div></div>
 
-	<div class="grid gap">
-			<div class="col-xs-12 col-md-6"></div></div>
-
-	</div>
 	</div>
 
 </div>

@@ -145,7 +145,7 @@ $data_show = $id=="new" ? "" : <<<HTML
 </div>
 <div class="product-thumbs">$images</div>
 
-<h2>$o->name</h2>
+<h5>$o->name</h5>
 
 <div class="form-control">
 	<strong>Price</strong>
@@ -181,12 +181,12 @@ echo <<<HTML
 </nav>
 <form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&action=$createorupdate">
 	<div class="grid gap">
-		<div class="col-xs-12 col-md-6">
+		<div class="col-xs-12 col-md-7">
 			$data_show
 		</div>
-		<div class="col-xs-12 col-md-6">
+		<div class="col-xs-12 col-md-5">
 			<div class="card soft">
-			<h2>$addoredit Product</h2>
+			<h5>$addoredit Product</h5>
 			<div class="form-control">
 				<label class="form-label" for="product-name">Name</label>
 				<input class="form-input" id="product-name" name="product-name" value="$o->name">
@@ -261,11 +261,11 @@ HTML;
 <div id="logo-header" class="flex-stretch"><a href="index.php"><img class="logo" src="img/coolkeychains-logo.png" alt="CoolKeychains"></a></div>
 
 	<ul class= "nav-pills">
-		<li><a href="./product_list.php">STORE</a></li>
+		<li><a href="./product_list.php"><img class="icon-admin" src="img/store2.png" alt="store2"><br>STORE</a></li>
 
-		<li><a href="admin/">PRODUCT LIST</a></li>
+		<li><a href="admin/"><img class="icon-admin" src="img/list.png" alt="list"><br>PRODUCT LIST</a></li>
 
-		<li><a href="admin/?id=new">ADD NEW PRODUCT</a></li>
+		<li><a href="admin/?id=new"><img class="icon-admin" src="img/add.png" alt="add"><br>ADD PRODUCT</a></li>
 
 	</ul>
 
@@ -302,7 +302,7 @@ HTML;
 
 			?>
 			<div class="card soft">
-			<h3>User List</h3>
+			<h5>User List</h5>
 
 			<div class="itemlist">
 			<?php

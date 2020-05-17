@@ -44,11 +44,15 @@ $o = getRows(makeConn(),
 			<nav class="nav-flex">
 				<ul>
 					<li class="flex-none">
-						<a href="product_item.php?id=<?= $o->id ?>"><img class="arrow" src="img/back.png" alt="Back"> Back to the <?= $o->name ?></a>
+						<a href="product_item.php?id=<?= $o->id ?>"><img class="icon-admin" src="img/back2.png" alt="Back"><br><br> Back to the <?= $o->name ?></a>
 					</li>
 					<li class="flex-stretch"></li>
 					<li class="flex-none">
-						<a href="product_list.php">Continue Shopping <img class="arrow" src="img/store.png" alt="store"></a>
+						<a href="product_list.php"><img class="icon-admin" src="img/store2.png" alt="store"><br><br>Continue Shopping</a>
+					</li>
+					<li class="flex-stretch"></li>
+					<li class="flex-none">
+						<a href="product_list.php"><img class="icon-admin" src="img/cart3.png" alt="store"><br><br>Shopping Cart</a>
 					</li>
 				</ul>
 			</nav>

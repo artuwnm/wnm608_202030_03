@@ -115,9 +115,9 @@ HTML;
 function makeCartBadge() {
 	if(!isset($_SESSION['cart']) || !count($_SESSION['cart'])) {
 		return "";
-	} else return "(".array_reduce($_SESSION['cart'],function($r,$o){
+	} else return "".array_reduce($_SESSION['cart'],function($r,$o){
 		return $r + $o->amount;
-	},0).")";
+	},0)."";
 }
 
 
@@ -129,7 +129,7 @@ echo <<<HTML
 HTML;
 }
 
-function recommendedCategory($cat,$limit=4) {
+function recommendedCategory($cat,$limit=3) {
 	$rows = getRows(makeConn(),"SELECT * FROM `products` WHERE category='$cat' ORDER BY `date_create` DESC LIMIT $limit");
 	recommendedProducts($rows);
 }

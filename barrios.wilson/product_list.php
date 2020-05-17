@@ -19,12 +19,13 @@ include_once "lib/php/functions.php";
 
 	<?php include "parts/navbar.php" ?>
 
-
 	<header class="pagename">
 		<div class="container display-flex">
-			<div class="pagename">Product List</div>
+			<div class="pagename">Store</div>
 			</div>
 	</header>
+	
+	
 		
 			
 <div class="container">
