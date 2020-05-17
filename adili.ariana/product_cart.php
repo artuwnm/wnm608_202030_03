@@ -4,7 +4,7 @@ include_once "lib/php/functions.php";
 include_once "parts/templates.php";
 
 
-$cartItems = []; //getCartItems()
+$cartItems = getCartItems();
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -33,7 +33,7 @@ $cartItems = []; //getCartItems()
 				?>
 				</div>
 			</div>
-			<div class="col-xs-12 col-md-4">
+			<!-- <div class="col-xs-12 col-md-4">
 				<div class="card flat">
 					<div class="card-section">
 						<div class="display-flex">
@@ -58,7 +58,7 @@ $cartItems = []; //getCartItems()
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 	
