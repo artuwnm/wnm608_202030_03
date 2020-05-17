@@ -18,39 +18,55 @@ return $r.<<<HTML
 HTML;
 }
 
+function productListCardTemplate($r,$o) {
+return $r.<<<HTML
+<div class="hscroll-card">
+  <a href="product_item.php?id=$o->id" class="display-block">
+  <figure class="product-figure soft">
+    <div class="product-image"><img src="$o->thumbnail" alt=""></div>
+    <figcaption class="product-description">
+      <div class="product-price">&dollar;$o->price}</div>
+      <div class="product-title">$o->name</div>
+    </figcaption>
+  </figure>
+</a>
+</div>
+HTML;
+}
+
 function cartListTemplate($r,$o) {
 $pricefixed = number_format($o->total, 2, '.', '');
 $selectamount = selectAmount($o->amount,10);
 return $r.<<<HTML
-<div class="display-flex card-section">
-  <div class="flex-none product-thumbs" style="margin-right:1em">
+<div class="display-flex card-section" style="flex-direction: row; justify-content: space-between; align-items: flex-start;">
+  <div style="margin-left: -4em; width:20em; flex-grow: 0">
     <img src="$o->thumbnail">
   </div>
-  <div class="flex-stretch">
-    <div class="display-flex">
-      <div class="flex-stretch">
-        <strong>$o->name</strong>
-      </div>
+  <div class="display-flex" style="flex-direction: column; margin-right:10em;
+    align-items: flex-start; justify-content: flex-start; flex-grow: 1">
+    <strong>$o->name</strong>
+    <div style="margin-top: 0.4em;">
+      <form method="get" action="data/form_actions.php" onchange="this.submit()">
+        <input type="hidden" name="action" value="update-cart-amount">
+        <input type="hidden" name="id" value="$o->id">
+        <div class="display-flex">
+          <div class="flex-none">$selectamount</div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="display-flex" style="flex-direction: column; flex-grow: 0">
+    <div class="flex-stretch">
       <div class="flex-none">&dollar;$pricefixed</div>
-    </div>
-    <div class="display-flex">
-      <div class="flex-stretch" style="font-size:0.5em">
-        <form method="get" action="data/form_actions.php">
-          <input type="hidden" name="action" value="delete-cart-item">
-          <input type="hidden" name="id" value="$o->id">
-          <div class="display-flex"><div class="flex-none">
-            <input type="submit" class="form-button" value="delete">
+      <form style="margin-top: 0.4em;" method="get" action="data/form_actions.php">
+        <input type="hidden" name="action" value="delete-cart-item">
+        <input type="hidden" name="id" value="$o->id">
+        <div class="display-flex">
+          <div class="flex-none">
+            <input type="submit" class="form-button delete" value="delete">
           </div>
-    </div>
-        </form>
-      </div>
-      <div>
-        <form method="get" action="data/form_actions.php" onchange="this.submit()">
-          <input type="hidden" name="action" value="update-cart-amount">
-          <input type="hidden" name="id" value="$o->id">
-          <div class="display-flex"><div class="flex-none">$selectamount</div></div>
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
   </div>
 </div>
@@ -111,20 +127,20 @@ function makeCartBadge() {
   },0).")";
 }
 
-function recommendedProducts($rows) {
-$products = array_reduce($rows, 'productListTemplate');
+function recommendedProducts($rows, $useCard=False) {
+$products = array_reduce($rows, $useCard ? 'productListCardTemplate' : 'productListTemplate');
 echo <<<HTML
-<div class="grid gap productlist">$products</div>
+$products
 HTML;
 }
 
-function recommendedCategory($cat,$limit=3) {
+function recommendedCategory($cat, $limit=3, $useCard=False) {
   $rows = getRows(makePDOConn(),"SELECT * FROM `products` WHERE category='$cat'
   LIMIT $limit");
-  recommendedProducts($rows);
+  recommendedProducts($rows, $useCard);
 }
 
-function recommendedSimilar($cat,$limit=3) {
+function recommendedSimilar($cat, $limit=3) {
   $rows = getRows(makePDOConn(),"SELECT * FROM `products` WHERE category='$cat'
   ORDER BY rand() LIMIT $limit");
   recommendedProducts($rows);

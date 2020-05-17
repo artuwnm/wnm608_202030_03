@@ -1,37 +1,26 @@
 /* ELEMENT RESETS */
-
-
 :root {
   --color-neutral-dark: #332d2d;
   --color-neutral-secondbreakfast: #cdc6c6;
   --color-neutral-medium: #988c8c;
   --color-neutral-light: #ece7e7;
-
-  --colo-theme-color:#f3cfd5;
-
+  --color-theme-color:#f3cfd5;
   --color-main-light:#cfe6a4;
   --color-main-medium:#fb8ca9;
   --color-main-dark:#44105a;
+  --color-confirm-light:green;
+  --color-confirm-medium:green;
+  --color-confirm-dark:green;
 
-   --color-confirm-light:green;
-    --color-confirm-medium:green;
-    --color-confirm-dark:green;
+  --color-warning-light:orange;
+  --color-warning-medium:orange;
+  --color-warning-dark:orange;
 
-    --color-warning-light:orange;
-    --color-warning-medium:orange;
-    --color-warning-dark:orange;
-
-    --color-alert-light:red;
-    --color-alert-medium:red;
-    --color-alert-dark:red;
-
-
+  --color-alert-light:red;
+  --color-alert-medium:red;
+  --color-alert-dark:red;
   --color-black:black;
   --color-white:white;
-
-
-
-
   --header-height:3rem;
 }
 
@@ -60,10 +49,10 @@ a {
 /*  font-weight:bold;*/
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
   opacity: 0.8;
-}
 }
 
 code {
@@ -102,8 +91,7 @@ code {
 }
 .flex-none { flex: none; }
 
-.flex-align-center { align-items:center; }
-.flex-justify-center { justify-content:center; }
+.flex-align-center { align-items:center; }\
 
 /* COMPONENT CLASSES */
 .navbar {
@@ -111,10 +99,13 @@ code {
   color:var(--color-neutral-light);
   line-height: var(--header-height);
 }
+
 .navbar h1 {
   margin:0;
   font-size:1rem;
+  font-family: Montserrat;
 }
+
 .navbar a {
   padding: 0 1em;
 }
@@ -186,48 +177,48 @@ code {
 
 /* card */
 .card {
-    background-color: white;
-    overflow: hidden;
-    position: relative;
-    padding: 1em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
-  .card>:first-child { margin-top:0; }
-  .card>:last-child { margin-bottom:0; }
 
-  .card.soft {
-    border:1px solid;
-    padding:10px;
-    /*box-shadow: 6px 5px 15px 10px rgba(0, 0, 0, 0.1);*/
-    box-shadow:3px 5px#f3cfd5;
-    border-radius:0.3em;
-  }
-  .card.medium {
-    background-color:var(--color-neutral-medium);
-  }
-  .card.dark {
-    background-color:var(--color-neutral-dark);
-    color:var(--color-neutral-light);
-  }
-  .card.flat {
-    padding:0;
-  }
+.card>:first-child { margin-top:0; }
+.card>:last-child { margin-bottom:0; }
 
-  .card-section {
-    padding:1em;
-  }
-  .card-section+.card-section {
-    border-top:1px solid var(--color-neutral-light);
-  }
+.card.soft {
+  border:1px solid;
+  padding:10px;
+  /*box-shadow: 6px 5px 15px 10px rgba(0, 0, 0, 0.1);*/
+  box-shadow:3px 5px#f3cfd5;
+  border-radius:0.3em;
+}
+.card.medium {
+  background-color:var(--color-neutral-medium);
+}
+.card.dark {
+  background-color:#283b54;
+  color:var(--color-neutral-light);
+}
+.card.flat {
+  padding:0;
+}
 
+.card-section {
+  padding:1em;
+}
+.card-section+.card-section {
+  border-top:1px solid var(--color-neutral-light);
+}
 
 /* view window */
 .view-window {
-  height:100vh;
+  height:75vh;
   overflow:hidden;
   position:relative;
-  background-size:cover;
+  background-size:contain;
   background-position:center;
   background-attachment:fixed;
 }
@@ -249,7 +240,6 @@ code {
 .table.striped tbody tr:hover {
   background-color:rgba(0,0,0,0.2);
 }
-
 
 .table.lined.all tbody tr,
 .table.lined.horizontal tbody tr {
@@ -330,6 +320,7 @@ code {
   font-size:1em;
   color:var(--color-neutral-medium);
 }
+
 .form-control {
   margin:1em 0;
 }
@@ -338,17 +329,17 @@ code {
   display:block;
   vertical-align: baseline;
   border-width:0;
-  font:inherit;
   padding:0.5em 1em;
   -webkit-appearance:none;
   outline:none;
   border: none;
   text-align:center;
-  background-color:black;
+  background-color:#283b54;
   text-decoration:none;
   color: white;
   cursor:pointer;
 }
+
 .form-button:hover {
   text-decoration:none;
 }
@@ -384,5 +375,34 @@ code {
   background-color:var(--color-white);
 }
 
+.login-option {
+  width: 30%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; 
+}
+
+.home-button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; 
+}
+.home-button:hover {
+  background: #2079b0;
+  color: white;
+}
+.home-button:focus {outline:none;}
 
 

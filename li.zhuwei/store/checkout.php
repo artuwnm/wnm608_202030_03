@@ -23,16 +23,14 @@ session_start();
 
       <h2 style="text-align:center">Payment</h2>
       <label for="fname">Accepted Cards</label>
-            <div class="icon-container">
-              <i class="fa fa-cc-visa" style="color:navy;"></i>
-              <i class="fa fa-cc-amex" style="color:blue;"></i>
-              <i class="fa fa-cc-mastercard" style="color:red;"></i>
-              <i class="fa fa-cc-discover" style="color:orange;"></i>
-              <i class="fab fa-alipay" style="color:black;"></i>
-               <i class="fab fa-apple-pay" style="color:black;"></i>
-
-
-            </div>
+      <div class="icon-container">
+        <i class="fa fa-cc-visa" style="color:navy;"></i>
+        <i class="fa fa-cc-amex" style="color:blue;"></i>
+        <i class="fa fa-cc-mastercard" style="color:red;"></i>
+        <i class="fa fa-cc-discover" style="color:orange;"></i>
+        <i class="fab fa-alipay" style="color:black;"></i>
+        <i class="fab fa-apple-pay" style="color:black;"></i>
+      </div>
       <div class="form-control">
           <label for="checkout-card-name" class="form-label">Name on Card</label>
           <input type="text" class="form-input" name="checkout-name" placeholder="Zhuwei Li">
@@ -44,46 +42,51 @@ session_start();
       </div>
 
       <div class="form-control">
-          <label for="checkout-card-expirationmonth" class="form-label">Expiration Month</label>
-          <input type="text" class="form-input" name="checkout-card-expirationmonth" placeholder="May">
+        <label for="checkout-card-expirationmonth" class="form-label">Expiration Month</label>
+        <input type="text" class="form-input" name="checkout-card-expirationmonth" placeholder="May">
       </div>
 
       <div class="form-control">
-          <label for="checkout-card-expirationyear" class="form-label">Expiration Year</label>
-          <input type="text" class="form-input" name="checkout-card-expirationyear" placeholder="2020">
+        <label for="checkout-card-expirationyear" class="form-label">Expiration Year</label>
+        <input type="text" class="form-input" name="checkout-card-expirationyear" placeholder="2020">
       </div>
 
       <div class="form-control">
-          <label for="checkout-card-expirationyear" class="form-label">CVV</label>
-          <input type="text" class="form-input" name="checkout-card-expirationyear" placeholder="123">
+        <label for="checkout-card-expirationyear" class="form-label">CVV</label>
+        <input type="text" class="form-input" name="checkout-card-expirationyear" placeholder="123">
       </div>
 
-        <h2 style="text-align:center">Billing Address</h2>
-         <div class="form-control">
-          <label for="checkout-name" class="form-label">Full Name</label>
-          <input type="text" class="form-input" name="checkout-name" placeholder="Zhuwei Li">
-        </div>
-        <div class="form-control">
-          <label for="checkout-email" class="form-label">Email</label>
-          <input type="Email" class="form-input" name="checkout-email" placeholder="example@gmail.com">
-        </div>
-        <div class="form-control">
-          <label for="checkout-street" class="form-label">Street</label>
-          <input type="text" class="form-input" name="checkout-street" placeholder="123 Brighton Ave">
-        </div>
-        <div class="form-control">
-          <label for="checkout-city" class="form-label">City</label>
-          <input type="text" class="form-input" name="checkout-city" placeholder="San Francisco">
-        </div>
-        <div class="form-control">
-          <label for="checkout-state" class="form-label">State</label>
-          <input type="text" class="form-input" name="checkout-state" placeholder="California">
-        </div>
-         <div class="form-control">
-          <label for="checkout-zip" class="form-label">Zip Code/label></label>
-          <input type="text" class="form-input" name="checkout-street" placeholder="94012">
-        </div>
-         
+      <h2 style="text-align:center">Billing Address</h2>
+
+      <div class="form-control">
+        <label for="checkout-name" class="form-label">Full Name</label>
+        <input type="text" class="form-input" name="checkout-name" placeholder="Zhuwei Li">
+      </div>
+
+      <div class="form-control">
+        <label for="checkout-email" class="form-label">Email</label>
+        <input type="Email" class="form-input" name="checkout-email" placeholder="example@gmail.com">
+      </div>
+
+      <div class="form-control">
+        <label for="checkout-street" class="form-label">Street</label>
+        <input type="text" class="form-input" name="checkout-street" placeholder="123 Brighton Ave">
+      </div>
+
+      <div class="form-control">
+        <label for="checkout-city" class="form-label">City</label>
+        <input type="text" class="form-input" name="checkout-city" placeholder="San Francisco">
+      </div>
+
+      <div class="form-control">
+        <label for="checkout-state" class="form-label">State</label>
+        <input type="text" class="form-input" name="checkout-state" placeholder="California">
+      </div>
+      
+       <div class="form-control">
+        <label for="checkout-zip" class="form-label">Zip Code/label></label>
+        <input type="text" class="form-input" name="checkout-street" placeholder="94012">
+      </div>
 
       <div class="col-8">
         <div class="card soft">
@@ -91,7 +94,7 @@ session_start();
         <p style="text-align:center">It may take a few more days to process and deliver your order due to enhanced safety measures implemented by JANSTUDIO and our shipping partners to protect our employees and community.<br>
         <br>Please select your state or province to view available shipping methods.</p>
       </div>
-      </div>
+    </div>
 
     <div class="col-8">
       <div class="card soft">

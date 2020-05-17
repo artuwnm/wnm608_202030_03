@@ -1,8 +1,5 @@
-
-
-
 /* style inputs and link buttons */
-input,
+input
 .btn {
   width: 30%;
   padding: 12px;
@@ -21,7 +18,6 @@ input:hover,
   opacity: 1;
 }
 
-
 /* add appropriate colors to fb, twitter and google buttons */
 .fb {
   background-color: #3B5998;
@@ -37,8 +33,6 @@ input:hover,
   background-color: #dd4b39;
   color: white;
 }
-
-
 
 /* The search field */
 #myInput {
@@ -69,26 +63,28 @@ input[type=text] {
   border: 1px solid #ccc;
   border-radius: 3px;
 }
+
 .DescriptionText{
   color:pink;
 }
+
 .price {
   color: grey;
   font-size: 22px;
 }
 
 .product-description-button {
-    border: none;
-    outline: 2;
-    padding: 15px 32px;
-    margin: 19px 19px;
-    font-size: 16px;
-    color: #ffffff;
-    background-color: #1c1c1c;
-    text-align: center;
-    cursor: pointer;
-    width: 88%;
-    font-size: 18px;
+  border: none;
+  outline: 2;
+  padding: 15px 32px;
+  margin: 19px 19px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #283b54;
+  text-align: center;
+  cursor: pointer;
+  width: 88%;
+  font-size: 18px;
 }
 
 .product-description-button:hover {
@@ -130,7 +126,6 @@ img.avatar {
   border-radius: 50%;
 }
 
-
 :root {
   --color-neutral-dark: #333;
   --color-neutral-medium: #999;
@@ -148,15 +143,15 @@ main {
 }
 
 .img-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-repeat: no-repeat;
-    height: 600px;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 .home-images {
@@ -171,7 +166,7 @@ main {
     circle at top right,
     rgba(4, 5, 3, 0.33),
     rgba(249, 250, 252, 0.32)
-  ), url("../img/home1.jpg");
+  ), url("../img/home2.png");
 }
 
 .home-img2 {
@@ -180,7 +175,7 @@ main {
     circle at top right,
     rgba(219, 115, 235, 0.43), 
     rgba(255, 255, 255, 0.42)
-  ), url("../img/women1.jpg");
+  ), url("../img/home4.png");
 }
 
 .hero-text {
@@ -305,10 +300,73 @@ main {
 }
 
 footer {
-    position: inherit;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: var(--color-neutral-dark);
-    color: white;
-    text-align: center;}
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #283b54;
+  color: white;
+  text-align: center;
+}
+
+.horizontal-card-list {
+  display:flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center;
+}
+
+#scroll-button-left {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  flex-grow: 1;
+  z-index: 10;
+}
+#scroll-button-left:hover {
+  background: #2079b0;
+  color:white;
+}
+#scroll-button-left:focus {outline:none;}
+
+#scroll-button-right {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  flex-grow: 1;
+  z-index: 10;
+}
+#scroll-button-right:hover {
+  background: #2079b0;
+  color:white;
+}
+#scroll-button-right:focus {outline:none;}
+
+.scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.hscroll-card {
+  flex: 0 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin: 16px 16px 16px 0;
+  overflow: hidden;
+}
+
+.hscroll-card-img {
+  display: block;
+  width: auto;
+  height: 250px;
+}

@@ -8,16 +8,9 @@ session_start();
     <title>Landing Page</title>
     <?php include "parts/meta.php"; ?>
     <?php include "parts/templates.php"; ?>
-    <link rel="stylesheet" href="lib/css/gridsystem.css">
-    <link rel="stylesheet" href="lib/css/styleguide.css">
-    <link rel="stylesheet" href="css/storetheme.css">
-    <script src="https://kit.fontawesome.com/041ded284b.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
  
 <body>
-  <!-- header.navbar>h1+nav.nav -->
   <?php include "parts/navbar.php" ?>
 
   <main>
@@ -26,15 +19,35 @@ session_start();
         <div class="hero-text">
           <h1 style="font-size:50px">New Collection</h1>
           <h3>See what's coming</h3>
-          <button onclick="location.href='collection.php'" type="button">Explore
+          <button class="home-button" onclick="location.href='collection.php'" type="button">Explore
           </button>
         </div>
       </div>
-     </div> 
+    </div> 
 
     <div class="container">
+      <div class="card">
+        <h2>Visit Our Store</h2><br>
+        <img src="img/janstudiomockup.png" alt="Random Name">
+        <div class="card soft">
+          <p><strong>Address:</strong> 352 Brighton Ave, San Francisco, CA 94012</p>
+          <p><strong>Phone: </strong>(650)-839-3620</p>
+          <p><strong>Open Hours:</strong> Monday-Friday 10:00 AM - 6:00 PM</p>
+        </div>
+      </div>
+
       <h2>Trending</h2>
-      <?php recommendedCategory('trending'); ?>
+      <div class="horizontal-card-list">
+        <button id="scroll-button-left">
+          <i class="fas fa-angle-left fa-lg"></i>
+        </button>
+        <div class="scrolling-wrapper">
+          <?php recommendedCategory('trending', 12, True); ?>
+        </div>
+        <button id="scroll-button-right">
+          <i class="fas fa-angle-right fa-lg"></i>
+        </button>
+      </div>
     </div>
 
     <div class="container">
@@ -42,51 +55,27 @@ session_start();
       <?php recommendedCategory('seasons'); ?>
     </div>
 
-    <div class="container">
-      <div class="card soft">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, illum magni dolor aspernatur vero repudiandae porro ab accusamus nostrum, quibusdam, possimus vel dolorem nemo eos exercitationem. Impedit laboriosam commodi, at.</p>
-        <p>Sed atque, molestiae aperiam voluptatum deleniti quis amet mollitia! Aliquam amet eius molestias dignissimos nesciunt tempore voluptate sunt voluptatibus praesentium, aut deleniti animi officiis ipsa quam unde, similique quasi adipisci.</p>
-      </div>
-      <div class="card soft dark">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, illum magni dolor aspernatur vero repudiandae porro ab accusamus nostrum, quibusdam, possimus vel dolorem nemo eos exercitationem. Impedit laboriosam commodi, at.</p>
-        <p>Sed atque, molestiae aperiam voluptatum deleniti quis amet mollitia! Aliquam amet eius molestias dignissimos nesciunt tempore voluptate sunt voluptatibus praesentium, aut deleniti animi officiis ipsa quam unde, similique quasi adipisci.</p>
+    <div class="view-window" style="background-image:url('img/home1.png')">
+      <div class="display-flex" style="justify-content: center; align-items: center; height: 100%;">
+        <div class="card soft">
+          <h2>JANSTUDIO SALE COMING NEXT MONTH!</h2>
+          <P>Get 20% OFF on Everything. Start 6/23 12:00 AM!
+        </div>
       </div>
     </div>
 
-    <div class="view-window display-flex flex-align-center flex-justify-center" style="background-image:url('img/background.jpg')">
-      <div class="card soft">
-        <h2>COOL CONTENT</h2>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="card soft">
-
-        <div class="col-8">
-          <div class="card soft">
-            <!--1 p*2>lorem20 -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam perspiciatis, ipsa! Dicta dolor blanditiis, velit iure, distinctio perferendis nisi impedit.</p>
-            <p>Unde, iste neque laborum, aperiam quod dignissimos voluptatum facere! Voluptatibus, distinctio, in. Vitae qui, reprehenderit facere rerum ad dolorem doloremque!</p>
-          </div>
+    <div class="display-flex" style="justify-content: center">
+      <div class="display-flex" style="flex-direction: column;">
+        <div class="card">
+          <img src="img/Pin1.png">
+          <h3>Los Angeles</h3>
+          <p><b>We had the best time playing at Venice Beach!</b></p> 
         </div>
-
-
-          <div class="col-6">
-          <div class="card soft">
-            <!-- p*2>lorem20 -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veritatis sequi fugit eum iste cumque molestias eveniet at quasi alias!</p>
-            <p>Id voluptatibus, ipsa debitis sint, vel nulla dignissimos quis cupiditate tempora similique accusamus facilis facere inventore laborum porro quo sapiente?</p>
-          </div>
+        <div class="card">
+          <img src="img/home4.png">
+          <h3>Los Angeles</h3>
+          <p><b>We had the best time playing at Venice Beach!</b></p> 
         </div>
-
-        <div class="col-4">
-          <div class="card soft">
-            <!-- p*2>lorem20 -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam perspiciatis, ipsa! Dicta dolor blanditiis, velit iure, distinctio perferendis nisi impedit.</p>
-            <p>Unde, iste neque laborum, aperiam quod dignissimos voluptatum facere! Voluptatibus, distinctio, in. Vitae qui, reprehenderit facere rerum ad dolorem doloremque!</p>
-          </div>
-        </div>
-        
       </div>
     </div>
   </main>
