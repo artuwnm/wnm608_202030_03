@@ -24,7 +24,7 @@ $selectamount = selectAmount($o->amount,10);
 return $r.<<<HTML
 <div class="display-flex card-section">
 	<div class="flex-none product-thumbs" style="margin-right:1em">
-		<img src="/images/store/$o->thumbnail">
+		<img src="$o->thumbnail">
 	</div>
 	<div class="flex-stretch">
 		<div class="display-flex">
