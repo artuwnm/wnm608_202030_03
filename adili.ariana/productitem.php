@@ -55,7 +55,7 @@ $images = explode(",",$o->images);
 						</div>
 					</div>
 					<div class="card-section">
-						<label class="form-label">Amount</label>
+						<label class="form-label">QUANTITY</label>
 						<select name="amount" class="form-input">
 							<!-- option*10>{$} -->
 							<option>1</option>
@@ -79,7 +79,7 @@ $images = explode(",",$o->images);
 				</form>
 			</div>
 		</div>
-		<div class="card soft dark">
+		<div class="card soft">
 			<h3>Description</h3>
 			<div><?= $o->description ?></div>
 		</div>
