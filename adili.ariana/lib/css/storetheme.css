@@ -200,6 +200,7 @@ img:hover {
 }
 .navbar a {
 	padding: 0 1em;
+	color: black;
 }
 
 .nav ul {
@@ -207,6 +208,7 @@ img:hover {
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
+	color: black;
 }
 
 
