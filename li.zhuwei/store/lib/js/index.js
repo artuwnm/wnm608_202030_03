@@ -7,7 +7,7 @@ function highlight(element) {
   }
   collectionFormButtonClicked = element;
   collectionFormButtonClicked.style.background = "#fb8ca9";
-  collectionFormButtonClicked.style.background = "white";
+  collectionFormButtonClicked.style.color = "white";
 }
 
 $(function() {
