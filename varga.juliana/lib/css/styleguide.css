@@ -36,7 +36,7 @@ strong {
 
 hr {
     border: 1px solid #f2b6a0;
-    max-width: 1000px;
+    max-width: 1300px;
     display: flex;
 }
 
@@ -46,7 +46,15 @@ font-weight: bold;
 color: #f2b6a0;
 }
 
-h4,
+h4{
+ font-family:Montserrat,sans-serif;
+ font-weight: bold;
+ font-size: 30px;
+ color: #316a8a;
+ margin-top: 10px;
+ margin-bottom: auto;
+
+}
 h5,
 h6 {
   font-family:Montserrat,sans-serif;
@@ -64,7 +72,7 @@ h2{
 
 
 a {
-    color: #73bee4;
+    color: #316a8a;
     font-weight: bold;
     text-decoration: none;
     margin-top: 15px;
@@ -533,6 +541,9 @@ list-style-type: none;
 .nav a {
     display: block;
     border-radius: 0.5em;
+    padding:0.1em 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
   .nav-pills a:hover,
   .nav-stretch a:hover,

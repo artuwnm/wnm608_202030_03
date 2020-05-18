@@ -64,7 +64,7 @@ $images = explode(",",$o->images);
 					<div class="card-section">
 						<h2><?= $o->name ?></h2>
 						<div class="product-description">
-							<div class="product-price">&dollar;<?= $o->price ?></div>
+							<div class="product-price" style="text-align: left">&dollar;<?= $o->price ?></div>
 						</div>
 					</div>
 					<div class="card-section">

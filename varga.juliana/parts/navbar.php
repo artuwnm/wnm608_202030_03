@@ -42,5 +42,5 @@ include_once "parts/templates.php";
 
 </header>
 <div class="container">
-<hr>
 </div>
+<hr>

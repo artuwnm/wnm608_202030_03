@@ -10,7 +10,13 @@
 	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
+ <img src="images/aboutusphoto.jpg" class="responsive">
+</div>
+
+	<div class="container">
 		<div class="card medium">
+
+
 			<h2>About Us</h2>
 <br>
 			<div>
