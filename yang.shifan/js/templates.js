@@ -1,8 +1,7 @@
 
 const makeProductList = templater(o=>{
 	return `
-	<div class="container">
-		<div class="col-4 col-s-4">
+		<div class="col-md-4 col-sm-12 col-xs-12">
 			<div class="product-description">
 				<a href="product_item.php?id=${o.id}">
 					<img class="product-image" src="img/${o.images}">
@@ -13,6 +12,5 @@ const makeProductList = templater(o=>{
 				</a>
 			</div>
 		</div>
-	</div>	
 	`;
 })

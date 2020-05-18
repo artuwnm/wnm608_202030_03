@@ -2,8 +2,7 @@
 
 function productListTemplate($r, $o) {
 return $r.<<<HTML
-	<div class="container">
-		<div class="col-4 col-s-4">
+		<div class="col-md-4 col-sm-12 col-xs-12">
 			<div class="product-description">
 				<a href="product_item.php?id=$o->id">
 					<img class="product-image" src="img/$o->images">
@@ -14,7 +13,6 @@ return $r.<<<HTML
 				</a>
 			</div>
 		</div>
-	</div>	
 HTML;
 }
 

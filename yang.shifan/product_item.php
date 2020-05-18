@@ -68,7 +68,7 @@
         </div>
 
         <div>
-            <h2>Recommended Products</h2>
+            <h2 style="margin-left: 20px;">Recommended Products</h2>
             <?php recommendedSimilar($o->category,$o->id) ?>
         </div>
     </div>

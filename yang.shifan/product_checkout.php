@@ -72,7 +72,7 @@
         </div>
     </div>
 
-    <div class="col-md-3 col-xs-4 text-right hidden-xs menu-2">
+    <div style="margin-left:20px; margin-right: 20px;">
         <a href="product_confirmation.php" class="button">Confirm Purchase</a>
     </div>
 </div>

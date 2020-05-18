@@ -14,13 +14,17 @@
 	<?php
 	    $items = getCartItems();
 
+	    if (count($items) == 0) {
+	    	echo "<h2 style='margin-left: 20px;'> Your cart is empty. </h2>";
+	    } else {
 	    echo array_reduce(
 	        $items,
 	        "cartListTemplate"
 	    );
+		}
 	?>
 
-		<div class="card-section">
+		<div class="card-section" style="overflow: hidden;">
 			<?= cartTotals() ?>
 			<a class="button right" href="product_checkout.php"> Checkout </a>
 		</div>

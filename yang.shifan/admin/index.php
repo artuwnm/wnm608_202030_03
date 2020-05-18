@@ -1,15 +1,14 @@
 <?php
     include_once('../lib/php/functions.php');
-	include('../parts/templates.php');
 
     $empty_product = (object) [
-	"name"=>"",
+	"title"=>"",
 	"price"=>"",
 	"category"=>"",
 	"description"=>"",
 	"thumbnail"=>"",
 	"images"=>"",
-	"quality"=>""
+	"quantity"=>""
 ];
 
 // CRUD LOGIC
@@ -48,13 +47,13 @@ switch(@$_GET['action']) {
 		$statement = $conn->prepare("INSERT INTO
 		`products`
 		(
-			`title`=? ,
-			`price`=? ,
-			`category`=? ,
-			`description`=? ,
-			`thumbnail`=? ,
-			`images`=? ,
-			`quantity`=? ,
+			`title`,
+			`price`,
+			`category`,
+			`description`,
+			`thumbnail`,
+			`images`,
+			`quantity`,
 			`date_create`,
 			`date_modify`
 		)
@@ -91,7 +90,7 @@ switch(@$_GET['action']) {
 
 function makeListItemTemplate($r,$o) {
 return $r.<<<HTML
-<div class="card-section display-flex">
+<div class="card-section display-flex col-md-12 col-xs-12">
 	<div class="flex-none">
 		<img class="product-image" src="../img/$o->images">
 	</div>
@@ -201,7 +200,10 @@ HTML;
 // LAYOUT
 ?>
     
-<?php include('../parts/admin_header.php'); ?>
+<?php 
+include('../parts/templates.php');
+include('../parts/admin_header.php'); 
+?>
 
 <div class="container">
 
@@ -225,7 +227,7 @@ HTML;
 		<div class="card flat">
 		<h2>Product List</h2>
 
-		<div>
+		<div class="grid gap">
 		<?php
 
 		$rows = getRows($conn, "SELECT * FROM `products`");
