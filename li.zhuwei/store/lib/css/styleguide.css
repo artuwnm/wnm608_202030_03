@@ -378,6 +378,8 @@ main .container {
   background-color:transparent;
   outline:0;
   width:100%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
 .hotdog .icon {
   padding:0 1em;
