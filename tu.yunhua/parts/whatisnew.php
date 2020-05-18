@@ -45,7 +45,7 @@
 								<figcaption class="product-description">
 									<div class="desc">
 										<h3>
-											<div class="product-name">SHIO today Octopus</div>
+											<div class="product-name">SHIO sushi today Octopus</div>
 										</h3>
 										<span><div class="product-price">$5.00</div></span></div>
 								</figcaption>

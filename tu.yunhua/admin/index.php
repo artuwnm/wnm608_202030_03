@@ -149,19 +149,19 @@ $data_show = $id=="new" ? "" : <<<HTML
 
 <div class="form-control">
 	<strong>Price</strong>
-	<span>$o->price</span>
+	<h5>$o->price</h5>
 </div>
 <div class="form-control">
 	<strong>Category</strong>
-	<span>$o->category</span>
+	<h5>$o->category</h5>
 </div>
 <div class="form-control">
 	<strong>Description</strong>
-	<span>$o->description</span>
+	<h5>$o->description</h5>
 </div>
 <div class="form-control">
 	<strong>Quality</strong>
-	<span>$o->quality</span>
+	<h5>$o->quality</h5>
 </div>
 
 </div>

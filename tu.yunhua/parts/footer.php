@@ -28,15 +28,15 @@
 					<a href="#"><i class="icon-facebook-with-circle"></i></a>
 					<a href="#"><i class="icon-instagram-with-circle"></i></a> -->
 
-					<li><a href="./product_about.php"><img src="img/icons/footer/facebook.png" alt=""></a></li>
+					<li><a href="https://www.facebook.com/"><img src="img/icons/footer/facebook.png" alt=""></a></li>
 
-					<li><a href="./product_about.php"><img src="img/icons/footer/behance.png" alt=""></a></li>
+					<li><a href="https://www.behance.net/"><img src="img/icons/footer/behance.png" alt=""></a></li>
 
-					<li><a href="./product_about.php"><img src="img/icons/footer/instagram.png" alt=""></a></li>
+					<li><a href="https://www.instagram.com/"><img src="img/icons/footer/instagram.png" alt=""></a></li>
 
-					<li><a href="./product_about.php"><img src="img/icons/footer/vimeo.png" alt=""></a></li>
+					<li><a href="https://vimeo.com/"><img src="img/icons/footer/vimeo.png" alt=""></a></li>
 
-					<li><a href="./product_about.php"><img src="img/icons/footer/tumblr.png" alt=""></a></li>
+					<li><a href="https://www.tumblr.com/"><img src="img/icons/footer/tumblr.png" alt=""></a></li>
 
 					<!-- <a href=""><img src="img/icons/footer/linkedin.png" alt></a> -->
 
