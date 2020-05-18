@@ -3,7 +3,7 @@
 
 <head>
 
-	<title>ABODE</title>
+	<title>ABOUT</title>
     
     <meta charset="UTF-8">
 
@@ -35,8 +35,8 @@
 					
 					<li><a href="http://janechoidesign.com/aau/wnm608/Choi.Aejin/index.php">HOME</a></li>
 				    <li><a href="http://janechoidesign.com/aau/wnm608/Choi.Aejin/About.php">ABOUT</a></li>
-                    <li><a href="http://janechoidesign.com/aau/wnm608/Choi.Aejin/Product.php">PRODUCT</a></li>
-                    <li><a href="http://janechoidesign.com/aau/wnm608/Choi.Aejin/Cart.php">CART</a></li>
+                    <li><a href="http://janechoidesign.com/aau/wnm608/Choi.Aejin/Product_list.php">PRODUCT</a></li>
+                    <li><a href="http://janechoidesign.com/aau/wnm608/Choi.Aejin/Product_cart.php">CART</a></li>
 						
             </ul>
 			</nav>
@@ -45,6 +45,52 @@
 
 
 
+	<br>
+	<br>
+
+
+ <div class="container">
+    
+
+<div class="About-description"><h2>Ceramics for Modern Life</h2><br><br><p>ABODE is an online store which is store with ceramic serving pieces, selling tableware.
+Simple and modern online store. Enjoy the daily life and hope to provide objects that
+encourage such occasion, every day.<br><br>
+We use our proprietary blends of porcelain and glazes in order to create strong and elegant tableware, intended to be used for generations. ABODE Store is an arbiter of beautifully well-imagined works from the creative minds of many inspiring craftsmen, bringing thoughtful, modern design to our local community and abroad. 
+</p>
+
+</div>
+</div>
+
+<br>
+
+
+<img src="img/mainposter.jpg" alt="mainposter" class="center" >
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<footer class="footer">
+	<div class="container display-flex flex-justify-center">
+		<div class="copyright">
+			<h1>Abode<br>© 2020 design by Aejin Choi</h1>
+
+		</div>
+
+
+
+
+
+	</div>
+</footer>
 
 	
 

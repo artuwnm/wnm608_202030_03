@@ -51,7 +51,7 @@ h1{
 
 h2{
 
-    font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond', serif;
 	font-size: 1.5rem;
 	font-weight: bold;
 	color: #817e32;
@@ -63,21 +63,34 @@ h2{
 h3{
 
 
-    font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond', serif;
 	font-size: 1.5rem;
 	font-weight: bold;
-
+  color: #817e32;
 }
 
 
 
 
+h4{
 
-h4,
+  font-family: 'Cormorant Garamond', serif;
+  color: #817e32;
+  font-style: bold;
+
+}
+
+
+
 h5,
 h6 {
 	font-family: 'Cormorant Garamond', serif;
+  
+
+
+
 }
+
 
 
 
@@ -87,9 +100,6 @@ a {
 	color: #000000;
 	font-weight: normal;
 	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
 }
 
 
@@ -114,6 +124,21 @@ img:hover {
 	width: 50px;
 	padding: 10vm;
 }
+
+.center{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%
+
+
+}
+
+
+
+
+
 
 
 
@@ -155,8 +180,85 @@ img:hover {
 .display-inline-block { display:inline-block; }
 
 
-.flex-stretch { flex: 1 1 auto; }
-.flex-none { flex: none; }
+.flex-stretch {
+    flex: 1 1 auto;
+}
+
+
+.flex-stretch-1 {
+    flex: 1 1 auto;
+
+
+ display:block;
+  width:100%;
+  border-width:0;
+  
+  padding:2em 1em;
+  -webkit-appearance:none;
+  outline:0;
+  
+ 
+  text-decoration:none;
+  cursor:pointer;
+
+
+
+
+}
+
+
+
+.flex-stretch-2 {
+    flex: 1 1 auto;
+
+
+ display:block;
+  width:100%;
+  border-width:0;
+  
+  padding:2em 1em;
+  -webkit-appearance:none;
+  outline:0;
+  
+ 
+  text-decoration:none;
+  cursor:pointer;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+.flex-none { 
+
+      flex: none; 
+      padding:5px 0;
+      padding-right: 5px;
+
+}
+
+
+.flex-none-1 { 
+
+      flex: none; 
+      padding:16px 0;
+      padding-right: 20px;
+
+}
+
+
+
+
+
+
 
 .flex-align-center { align-items:center; }
 .flex-justify-center { justify-content:center; }
@@ -255,16 +357,17 @@ img:hover {
     background-color: white;
     overflow: hidden;
     position: relative;
-    padding: 1em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    padding: 0.1em;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
 }
 	.card>:first-child { margin-top:0; }
 	.card>:last-child { margin-bottom:0; }
 
 	.card.soft {
-	    box-shadow: 6px 5px 15px 10px rgba(0, 0, 0, 0.1);
-		border-radius:0.3em;
+	  box-shadow: 6px 5px 15px 10px rgba(0, 0, 0, 0.1);
+		border-radius:1em;
+    opacity: 0.8;
 	}
 	.card.medium {
 		background-color:var(--color-neutral-medium);
@@ -276,6 +379,15 @@ img:hover {
 	.card.flat {
 		padding:0;
 	}
+
+
+
+.card-section {
+    padding: 1em;
+  }
+  .card-sectin+.card-section{
+    border-top: 1px solid var (--color-neutral-light);
+  }
 
 
 
@@ -413,17 +525,211 @@ img:hover {
 
 
 /*FORM*/
-input[type=text] {
+
+
+
+.form-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+
+}
+
+.form-input {
+   display: inline-block;
+  vertical-align: baseline;
   width: 100%;
-  padding: 12px 20px;
+  border-width: 0;
+  color: #817e32;
+  font: Roboto;
+  font-size: 10px;
+  /*padding: 1em 1em;*/
+  -webkit-appearance: none;
+  outline: 0;
+  background-color: white;
+  font-family: Roboto;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 2.5px 5px;
+  transition-duration: 0.4s;
+  border: 1px solid #f0e4d8;
+}
+
+
+
+
+
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 8px;
   margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+
+}
+
+input[type=password], select {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
   box-sizing: border-box;
 }
 
-input[type=text]:focus {
-  background-color: var(--color-main-light);
-  /*border: 2px solid var(--color-main-light);*/
+
+
+
+
+.form-select {
+    position: relative;
 }
+
+
+.form-button {
+  display:block;
+  width:100%;
+  border-width:0;
+  color:#817e32;
+  font-family: Roboto; 
+  padding:0.2em 0.2em;
+  -webkit-appearance:none;
+  outline:0;
+  text-align:center;
+  background-color:white;
+  text-decoration:none;
+  cursor:pointer;
+
+}
+
+.form-button-1 {
+  display:block;
+  width:100%;
+  border-width:0;
+  color:#817e32;
+  font-family: Roboto; 
+  padding:1em 1em;
+  -webkit-appearance:none;
+  outline:0;
+  text-align:center;
+  background-color:white;
+  text-decoration:none;
+  cursor:pointer;
+
+}
+
+
+
+
+
+
+
+
+.form-button:hover {
+  text-decoration:none;
+  color:#d7d2cc;
+  
+
+}
+
+
+
+
+
+.js-sort {
+   
+
+
+  display: inline-block;
+  vertical-align: baseline;
+  width: 100%;
+  border-width: 0;
+  color: #817e32;
+  font: Roboto;
+  font-size: 13px;
+  /*padding: 1em 1em;*/
+  -webkit-appearance: none;
+  outline: 0;
+  background-color: #f0e4d8;
+  font-family: Roboto;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 14px 14px;
+  transition-duration: 0.4s;
+  
+
+
+
+}
+
+
+.form-select::after {
+  content:'▾';
+  position: absolute;
+  color: var(--color-neutral-medium);
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 18px;
+}
+
+
+.form-control {
+  margin: 0.2em 0;
+
+}
+
+
+
+
+
+
+
+.hotdog {
+  display:block;
+  width:100%;
+  padding:1em 1em;
+  background-color:var(--color-neutral-light);
+  border-radius:2em;
+  border-width:0;
+  font:inherit;
+  color:inherit;
+  outline:0;
+  display:flex;
+}
+.hotdog input {
+  border-width:0;
+  display:block;
+  color:inherit;
+  background-color:transparent;
+  outline:0;
+  width:100%;
+  font-family: Roboto; 
+  font-size: 13px;
+}
+.hotdog .icon {
+  padding:0 1em;
+}
+.hotdog.light {
+  background-color:#f6f5f0;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -512,4 +818,70 @@ input[type=text]:focus {
 
 
 
+footer {
+  text-align: center;
+  background-color: #2d2d2b;
+  font-size: 13px;
+  padding: 30px 20px;
+  height: 90px;
+  
+  
+}
 
+
+
+
+
+
+
+
+.footer h1{
+  font-weight:400;
+  font-size: 1em;
+  color:white;
+  
+}
+
+
+
+.About-description {
+  width: 100%;
+  margin-top: 0px;
+  position: relative;
+  margin-right: 150px;
+  font-size: 17px;
+  line-height: 1.5em;
+
+}
+
+
+
+.About-description p{
+
+
+
+font-family: Roboto;
+font-size: 
+
+}
+
+
+
+.About-description h2{
+
+font-size:25px;
+
+
+}
+
+
+
+
+.item{
+
+ text-align: center;
+
+
+
+  
+}
