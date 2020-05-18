@@ -60,10 +60,6 @@ code {
 
 
 
-
-
-
-
 /* SMALL CLASSES */
 
 .container {
@@ -185,6 +181,18 @@ code {
 
 /* card */
 
+/*.card {
+    background-color: white;
+    color: black;
+    overflow: hidden;
+    position: relative;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}*/
+
+
+
 .card {
     background-color: white;
     color: black;
@@ -194,6 +202,8 @@ code {
     margin-top: 1em;
     margin-bottom: 1em;
 }
+
+
 	.card>:first-child { margin-top:0; }
 	.card>:last-child { margin-bottom:0; }
 
@@ -264,15 +274,15 @@ code {
 	-webkit-appearance:none;
 	outline:0;
 	text-align:center;
-	background-color:var(--color-neutral-secondbreakfast);
+	background-color: white;
+	color: black;
 	border-radius:0.3em;
 	text-decoration:none;
 	cursor:pointer;
 }
-.form-button:hover {
-	text-decoration:none;
+.form-button a:hover {
+	 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
-
 .form-select {
 	position: relative;
 }
@@ -300,6 +310,8 @@ code {
 	color:inherit;
 	outline:0;
 	display:flex;
+	background-color: white;
+	color: black;
 }
 .hotdog input {
 	border-width:0;

@@ -50,7 +50,6 @@ HTML;
 			</form>
 		</div>
 
-<!-- Change values to match YOUR database values -->
 		
 		<div class="form-control display-flex">
 			<div class="flex-none">
@@ -68,10 +67,7 @@ HTML;
 			</div>
 		</div>
 
-<!-- Retreive items from database -->
 
-<!-- Get login info from auth.php -->
-<!-- Use login info to connect to database -->
 <!-- Query the products table to get all products -->
 <!-- Parse query results to display products -->
 
@@ -92,28 +88,6 @@ HTML;
 // }
 $conn->close();
 ?>
-
-
-		
-<!-- SORT BY: LOWEST TO HIGHEST PRICE? -->
-
-		<div class="form-control">
-			<!-- .form-select>select>option -->
-			<div class="form-select">
-				<!-- <select class="js-sort">
-					<option value="1">Newest</option>
-					<option value="2">Oldest</option>
-				</select> -->
-			<!-- </div>
-		</div>
- -->
-		<div class="grid gap productlist"></div>
-	</div>
-
-		<!-- <div>
-			<a href="admin">Product Admin</a>
-		</div> -->
-	
 	
 </body>
 </html>

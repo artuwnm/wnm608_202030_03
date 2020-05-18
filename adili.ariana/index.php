@@ -17,20 +17,7 @@
 <body>
 <?php include "parts/navbar.php" ?>
 
-	<!-- .container>p*2>lorem30 -->
-	<!-- <div class="container">
-		<div class="card soft">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, illum magni dolor aspernatur vero repudiandae porro ab accusamus nostrum, quibusdam, possimus vel dolorem nemo eos exercitationem. Impedit laboriosam commodi, at.</p>
-		</div>
-		<div class="container">
-			<div class="card soft">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, illum magni dolor aspernatur vero repudiandae porro ab accusamus nostrum, quibusdam, possimus vel dolorem nemo eos exercitationem. Impedit laboriosam commodi, at.</p>
-		</div>
-	</div> -->
-
-<!-- IMAGES GO HERE -->
-
-
+	
 <div class="container">
 		<div class="card soft">
  			<img src="images/amir.jpeg" alt="" />
@@ -38,17 +25,8 @@
 		</div>
 </div>
 
-
 <div class="footer">
-	<h6>HELP</h6>
-	<a href="#">Contact us</a>
-	<a href="#">FAQ</a>
-
-	<h6>CONNECT</h6>
-	<a href="#">About us</a>
-	<a href="#">Careers</a>
-	<a href="#">Locations</a>
-
+	<strong>Shop deals from your favorite brands</strong>
 </div>
 
 

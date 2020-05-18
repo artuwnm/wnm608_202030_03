@@ -16,9 +16,10 @@ $images = explode(",",$o->images);
 <html lang="en">
 <head>
 	<title>Begari | Product Item</title>
-	<link rel="stylesheet" href="lib/css/storetheme.css">
+	
 	
 	<?php include "parts/meta.php" ?>
+	<link rel="stylesheet" href="lib/css/storetheme.css">
 </head>
 <body>
 
