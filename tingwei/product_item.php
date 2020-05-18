@@ -24,28 +24,34 @@ $images = explode(",",$o->images);
 	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
-		<nav class="nav-crumbs" style="margin:1em 0">
+		<nav class="nav-crumbs" style="margin:4em 0">
 		</nav>
 
 		<div class="grid gap">
-			<div class="col-xs-12 col-md-7">
+			<div class="col-xs-12 col-md-1"></div>
+			<div class="col-xs-12 col-md-5">
 				<div class="card">
 					<div class="product-main">
 						<img src="images/store/<?= $o->thumbnail ?>" alt="">
 					</div>
-					<div class="product-thumbs">
+					<nav class="nav-crumbs" style="margin:2em 0">
+					<div class="product-main">
+						<img src="images/store/<?= $o->images ?>" alt="">
+					</div>
+					<!-- <div class="product-thumbs">
 					<?=
 					array_reduce($images,function($r,$o){
 						return $r."<img src='images/store/$o'>";
 					})
 					?>
-					</div>
+					</div> -->
 				</div>
 			</div>
-			<div class="col-xs-12 col-md-5">
+			<div class="col-xs-12 col-md-1"></div>
+			<div class="col-xs-12 col-md-4">
 				<form class="card flat" method="get" action="data/form_actions.php">
 					<div class="card-section">
-						<h6 class="product-title"><?= $o->title ?></h6>
+						<h4 class="product-title"><?= $o->title ?></h4>
 						<div class="nav-line"></div>
 						
 						<div class="product-description_detail"><?= $o->description ?>✨
@@ -81,6 +87,8 @@ $images = explode(",",$o->images);
 					</div>
 				</form>
 			</div>
+		<div class="col-xs-12 col-md-1"></div>	
+			
 		</div>
 
 		<div>
@@ -89,6 +97,8 @@ $images = explode(",",$o->images);
 			<?php recommendedSimilar($o->category,$o->id) ?>
 		</div>
 	</div>
-	
+	<div>
+   <?php include "parts/footer.php" ?>
+</div>
 </body>
 </html>

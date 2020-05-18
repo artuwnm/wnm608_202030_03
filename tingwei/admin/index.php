@@ -3,21 +3,14 @@
 include_once "../lib/php/functions.php";
 
 $empty_product = (object) [
-	"title"=>"Kiwi",
-	"price"=>"2.56",
-	"category"=>"fruit",
-	"description"=>"A small hairy flightless bird.",
-	"thumbnail"=>"fruit_kiwi_m.jpg",
-	"images"=>"fruit_kiwi_m.jpg",
-	"quantity"=>"576"
+	"title"=>"FLOWER CRYSTAL",
+	"price"=>"26",
+	"category"=>"earrings",
+	"description"=>"Delicate and dainty - you can't go wrong.",
+	"thumbnail"=>"flower_crystal_tb.jpg",
+	"images"=>"flower_crystal_deco.jpg",
+	"quantity"=>"5"
 ];
-
-
-
-
-
-
-
 
 
 
@@ -114,7 +107,7 @@ return $r.<<<HTML
 <div class="itemlist-item display-flex">
 	<div class="flex-none">
 		<div class="image-square">
-			<img src="/images/store/$o->thumbnail">
+			<img src="images/store/$o->thumbnail">
 		</div>
 	</div>
 	<div class="flex-stretch">
@@ -140,32 +133,35 @@ $deletebutton = $id=="new" ? '' : <<<HTML
 HTML;
 
 $images = array_reduce(explode(",",$o->images),function($r,$p){
-	return $r."<img src='/images/store/$p'>";
+	return $r."<img src='images/store/$p'>";
 });
 
 $data_show = $id=="new" ? "" : <<<HTML
-<div class="card soft">
+<div class="card">
+
+<h6>Show product</h6>
+<div class="nav-line"></div>
 
 <div class="product-main">
-	<img src="/images/store/$o->thumbnail">
+	<img src="images/store/$o->thumbnail">
 </div>
 <div class="product-thumbs">$images</div>
 
-<h2>$o->title</h2>
+<h3>$o->title</h3>
 
-<div class="form-control">
+<div class="form-search">
 	<strong>Price</strong>
 	<span>$o->price</span>
 </div>
-<div class="form-control">
+<div class="form-search">
 	<strong>Category</strong>
 	<span>$o->category</span>
 </div>
-<div class="form-control">
+<div class="form-search">
 	<strong>Description</strong>
 	<span>$o->description</span>
 </div>
-<div class="form-control">
+<div class="form-search">
 	<strong>Quantity</strong>
 	<span>$o->quantity</span>
 </div>
@@ -177,7 +173,7 @@ HTML;
 
 echo <<<HTML
 <nav class="nav-pills">
-	<div class="card soft">
+	<div class="card-section">
 	<ul>
 		<li class="flex-none"><a href="{$_SERVER['PHP_SELF']}">Back</a></li>
 		<li class="flex-stretch"></li>
@@ -187,12 +183,11 @@ echo <<<HTML
 </nav>
 <form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&action=$createorupdate">
 	<div class="grid gap">
-		<div class="col-xs-12 col-md-5">
-			$data_show
-		</div>
-		<div class="col-xs-12 col-md-7">
-			<div class="card soft">
-			<h2>$addoredit Product</h2>
+		
+		<div class="col-xs-12 col-md-6">
+			<div class="card">
+			<h6>$addoredit Product</h6>
+			<div class="nav-line"></div>
 			<div class="form-control">
 				<label class="form-label" for="product-title">Title</label>
 				<input class="form-input" id="product-title" name="product-title" value="$o->title">
@@ -222,9 +217,18 @@ echo <<<HTML
 				<input class="form-input" id="product-quantity" name="product-quantity" value="$o->quantity">
 			</div>
 			<div class="form-control">
-				<input type="submit" class="form-button" value="Submit">
+				<input type="submit" class="form-button_black" value="Submit">
 			</div>
 			</div>
+
+		</div>
+
+		<div class="col-xs-12 col-md-1">
+			
+		</div>
+		<div class="col-xs-12 col-md-5">
+			$data_show
+			
 		</div>
 	</div>
 </form>
@@ -283,8 +287,8 @@ HTML;
 			} else {
 
 			?>
-			<div class="card soft">
-			<h2>User List</h2>
+			<div class="card">
+			<h3 class="bigtitle">PRODUCT ADMIN</h3>
 
 			<div class="itemlist">
 			<?php

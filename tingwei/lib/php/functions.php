@@ -14,7 +14,7 @@ function print_p($v) {
 }
 
 
-include "auth.php";
+include_once "auth.php";
 function makeConn() {
 
 	@$conn = new mysqli(...makeAuth());
