@@ -16,6 +16,19 @@ $images = explode(",",$o->images);
 <html lang="en">
 <head>
 	<title>Store: Product Item</title>
+	<style>
+		.arrow {
+  border: solid grey;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+	</style>
 	
 	<?php include "parts/meta.php" ?>
 	<script src="js/products.js"></script>
@@ -27,7 +40,7 @@ $images = explode(",",$o->images);
 	<div class="container">
 		<nav class="nav-crumbs" style="margin:1em 0">
 			<ul>
-				<a href="product_list.php"><img class="arrowback" style="height: 25px" src="images/backbutton-02.png" alt="Back"> Go Back</a>
+				<a href="product_list.php"><i class="arrow left"></i> Go Back</a>
 			</ul>
 		</nav>
 

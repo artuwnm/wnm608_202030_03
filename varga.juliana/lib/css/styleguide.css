@@ -68,6 +68,7 @@ a {
     font-weight: bold;
     text-decoration: none;
     margin-top: 15px;
+    margin-right: 15px;
 }
 a:hover {
   text-decoration: ;
@@ -473,7 +474,7 @@ margin-right: 10%;
   }
   #page-nav ul li {
    border-top: 1px solid #f2b6a0;
-   width: max-content;
+   width: auto;
   }
 
   /* Toggle show/hide menu on checkbox click */
@@ -481,7 +482,7 @@ margin-right: 10%;
     display: none;
   }
   #page-nav input:checked ~ ul {
-    display: block;
+    display: grid;
   }
 
  
@@ -532,7 +533,6 @@ list-style-type: none;
 .nav a {
     display: block;
     border-radius: 0.5em;
-    padding: 0.6em 1.5em;
 }
   .nav-pills a:hover,
   .nav-stretch a:hover,

@@ -15,6 +15,24 @@ $o = getRows(makeConn(),
 <html lang="en">
 <head>
 	<title>Store: Product Added to Cart</title>
+	<style>
+		.arrow {
+  border: solid grey;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+	</style>
 	
 	<?php include "parts/meta.php" ?>
 </head>
@@ -34,11 +52,11 @@ $o = getRows(makeConn(),
 			<nav class="nav-flex">
 				<ul>
 					<li class="flex-none">
-						<a href="product_item.php?id=<?= $o->id ?>">Back to the <?= $o->name ?></a>
+						<a href="product_item.php?id=<?= $o->id ?>"> <i class="arrow left"></i> Back to the <?= $o->name ?></a>
 					</li>
 					<li class="flex-stretch"></li>
 					<li class="flex-none">
-						<a href="product_list.php">Continue Shopping</a>
+						<a href="product_list.php"> Continue Shopping <i class="arrow right"></i></a>
 					</li>
 				</ul>
 			</nav>

@@ -10,14 +10,36 @@ $cartItems = getCartItems();
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <head>
 	<title>Store: Product Checkout</title>
+    <style>
+    .arrow {
+  border: solid grey;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+  </style>
 	
 	<?php include "parts/meta.php" ?>
 </head>
 <body>
 
-	<?php include "parts/navbar.php" ?>
+
 
 	<div class="container">
+
+<nav class="nav-flex flex-none">
+  <ul>
+    <li class="flex-none"><a href="product_cart.php"> <i class="arrow left"></i> Back to cart</a></li>
+  </ul>
+</nav>
+
+
 		<div class="card medium">
 			
 			<div class="row">

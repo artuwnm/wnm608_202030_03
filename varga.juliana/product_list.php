@@ -5,7 +5,7 @@ include_once "lib/php/functions.php";
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Store: Product List</title>
+	<title> JV : Store</title>
 	
 	<?php include "parts/meta.php" ?>
 
@@ -38,12 +38,12 @@ include_once "lib/php/functions.php";
 					<div class="flex-none">
 						<button type="button" class="form-button-blue js-filter" data-type="category" data-value="">All</button></div>
 						<div class="flex-none">
-						<button type="button" class="form-button-blue js-filter" data-type="category" data-value="Necklace">Necklace</button></div>
+						<button type="button" class="form-button-blue js-filter" data-type="category" data-value="necklace">Necklace</button></div>
 						<div class="flex-none">
-						<button type="button" class="form-button-blue js-filter" data-type="category" data-value="Ring">Ring</button>
+						<button type="button" class="form-button-blue js-filter" data-type="category" data-value="ring">Ring</button>
 					</div>
 						<div class="flex-none">
-						<button type="button" class="form-button-blue js-filter" data-type="category" data-value="Earrings">Earrings</button>
+						<button type="button" class="form-button-blue js-filter" data-type="category" data-value="earrings">Earrings</button>
 					</div>
 				</div>
 			</div>
@@ -62,10 +62,10 @@ include_once "lib/php/functions.php";
 				</div>
 			</div>
 
-
-</div>
-
+        </div>
+        <div class="col-xs-12 col-md-4">
 		<div class="grid gap productlist"></div>
+        </div>
 	</div>
 
 	<?php include "parts/footer.php" ?>

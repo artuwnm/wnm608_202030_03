@@ -17,11 +17,6 @@ $cartItems = getCartItems();
 	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
-		<nav class="nav-pills" style="margin:1em 0">
-			<ul> 
-                <li><a href="product_list.php">Go back</a></li>  
-			</ul>
-		</nav>
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-8">
 				<div class="card flat">

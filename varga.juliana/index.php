@@ -5,7 +5,7 @@ include_once "lib/php/functions.php";
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Store: Product List</title>
+	<title> Jv Jewelry</title>
 	
 	<?php include "parts/meta.php" ?>
 
@@ -14,21 +14,31 @@ include_once "lib/php/functions.php";
 
 	<?php include "parts/navbar.php" ?>
 </header>
-  <br>
+
+<div class="container">
+
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-6">
+				<div class="card flat">
+				<img src="images/banner_01.jpg">
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<div class="card flat">
+				<img src="images/banner_02.jpg">
+				</div>
+			</div>
+		</div>
 
 <br>
 
  <img src="images/banner.jpg" class="responsive">
+</div>
+
  <br>
 
 <div class="container">
 		
-		<div class="grid gap">
-			<!-- .col-xs-6*2>.card.soft>lorem30 -->
-			<div class="col-xs-12 col-md-12">
-				<div class="card soft">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem beatae quos impedit, natus nostrum odio voluptas a ullam voluptatem nam amet, rem facere accusantium fuga facilis laboriosam nihil soluta placeat.</div>
-			</div>
-		</div>
 		<br>
 		<br>
 			

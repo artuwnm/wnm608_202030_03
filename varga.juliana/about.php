@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Store: About Us</title>
+	<title> JV: About Us</title>
 	
 	<?php include "parts/meta.php" ?>
 </head>

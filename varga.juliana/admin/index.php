@@ -3,13 +3,13 @@
 include_once "../lib/php/functions.php";
 
 $empty_product = (object) [
-	"name"=>"kiwi",
-	"price"=>"2.56",
-	"category"=>"fruit",
-	"description"=>"A small hairy flightless bird.",
-	"thumbnail"=>"fruit_kiwi_m.jpg",
-	"images"=>"fruit_kiwi_m.jpg",
-	"metal_type"=>"576"
+	"name"=>"Natural leaf band ring",
+	"price"=>"650",
+	"category"=>"ring",
+	"description"=>"leaves band, Beautiful wedding band for her.",
+	"thumbnail"=>"leafdiamondring_thumbnail.jpg",
+	"images"=>"leafdiamondring_1.jpg,leafdiamondring_2.jpg,leafdiamondring.jpg",
+	"metal_type"=>" 18k Yellow gold"
 ];
 
 
@@ -212,7 +212,7 @@ echo <<<HTML
 				<input class="form-input" id="product-images" name="product-images" value="$o->images">
 			</div>
 			<div class="form-control">
-				<label class="form-label" for="product-metal_type">Quantity</label>
+				<label class="form-label" for="product-metal_type"> Metal Type</label>
 				<input class="form-input" id="product-metal_type" name="product-metal_type" value="$o->metal_type">
 			</div>
 			<div class="form-control">
