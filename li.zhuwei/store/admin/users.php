@@ -79,13 +79,13 @@ echo <<<HTML
   <h2>Update user information</h2>
 
   <form method="post" action="users.php?id=$id">
-    <label for="name">Type</label>
+    <label for="type">Type</label>
     <input type="text" id="type" name="type">
     </br>
-    <label for="name">Email</label>
+    <label for="email">Email</label>
     <input type="text" id="email" name="email">
     </br>
-    <label for="name">Classes</label>
+    <label for="classes">Classes</label>
     <input type="text" id="classes" name="classes">
     </br>
     </br>
@@ -106,22 +106,11 @@ HTML;
   <link rel="stylesheet" href="../lib/css/gridsystem.css" type="text/css">
   <link rel="stylesheet" href="../lib/css/styleguide.css" type="text/css">
   <link rel="stylesheet" href="../css/storetheme.css" type="text/css">
-  <script src="index.js"></script>
 </head>
 <body>
-  <header class="navbar">
-    <div class="container display-flex">
-      <div class="flex-stretch">
-        <a href="index.php">Admin Home</a>
-      </div>
-      <nav class="nav-flex flex-none">
-        <ul>
-          <li><a href="users.php">User List</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <?php include "admin_navbar.php" ?>
 
+<main>
   <?php
       
     if (isset($_GET['id'])) {
@@ -129,7 +118,7 @@ HTML;
     } else {
 
 echo "
-  <div class='container'>
+  <div class='container' style='min-width:500px;'>
     <div class='card soft'>
      
       <h2>User List</h2>
@@ -150,6 +139,9 @@ echo "
 
     }
   ?>
+</main>
+
+<?php include "../parts/footer.php" ?>
   
 </body>
 </html>

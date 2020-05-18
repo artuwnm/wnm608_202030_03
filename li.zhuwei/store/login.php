@@ -10,7 +10,7 @@
     <div class="container">
        <nav class="nav-crumbs" style="margin:1em 0">
         <ul>
-          <li><a href="index.php"><i class="fas fa-arrow-left" style="color:black;"></i>Back</a></li>    
+          <li><a href="index.php"><i class="fas fa-arrow-left" style="color:black;"></i> Back</a></li>    
         </ul>
       </nav>
     </div>

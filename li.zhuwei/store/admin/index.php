@@ -157,7 +157,7 @@ HTML;
 
 
 echo <<<HTML
-<div class="container">
+<div class="container" style="min-width: 1000px;">
   <nav class="nav-pills">
     <div class="card flat">
     <nav class="nav-crumbs">
@@ -168,12 +168,20 @@ echo <<<HTML
   </div>
   </nav>
   <form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&action=$createorupdate">
-    <div class="grid gap">
-      <div class="col-xs-12 col-md-12">
-        $data_show
-        <br>
-        $deletebutton
-      </div>
+    <div class="grid gap" style="padding-top:0px;">
+HTML;
+
+if ($data_show) {
+echo <<<HTML
+<div class="col-xs-12 col-md-12">
+  $data_show
+  <br>
+  $deletebutton
+</div>
+HTML;
+}
+
+echo <<<HTML
       <div class="col-xs-12 col-md-12">
         <div class="card soft">
         <h2>$addoredit Product</h2>
@@ -279,61 +287,45 @@ include_once "../lib/php/functions.php";
 <head>
   <title>Learning Data</title>
   <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/041ded284b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../lib/css/gridsystem.css" type="text/css">
   <link rel="stylesheet" href="../lib/css/styleguide.css" type="text/css">
   <link rel="stylesheet" href="../css/storetheme.css" type="text/css">
-  <script src="https://kit.fontawesome.com/041ded284b.js" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
 </head>
 <body>
 
-<header class="navbar">
-  <script src="https://kit.fontawesome.com/041ded284b.js" crossorigin="anonymous"></script>
-  <div class="container display-flex">
-    <div class="flex-stretch" onclick="window.location.replace('./index.php');">
-      <div class="logo">
-      <img class="logoimg" src="../img/JanStudio.png" alt="JANSTUDIO">
-      </div>
+<?php include "admin_navbar.php" ?>
 
-    </div>
-    <nav class="nav flex-none">
-      <ul class="display-flex">
-        <li><a href="../admin">Product List</a></li>
-        <li><a href="../admin?id=new">Add New Product</a></li>
-        <li><a href="users.php">User List</a></li>
-        <li><a href="../collection.php">Home</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-  <?php
-      
-    if (isset($_GET['id'])) {
-      if($_GET['id'] == "new") {
-        makeProductForm($empty_product);
-      } else {
-        $rows = getRows($conn, "SELECT * FROM`products` WHERE `id`='{$_GET['id']}'");
-        makeProductForm($rows[0]);
-      }
+<main>
+<?php
+  if (isset($_GET['id'])) {
+    if($_GET['id'] == "new") {
+      makeProductForm($empty_product);
     } else {
-echo "
-  <div class='container'>
-    <div class='card soft'>
-      <h2>Product List</h2>
-
-      <ul class='itemlist'>
-      <ul>
-      ";
-      $rows = getRows ($conn,"SELECT * FROM `products`");
-      echo array_reduce($rows,'makeListItemTemplate');
-echo "
-      </ul>
-    </div>
-  </div>
-";
+      $rows = getRows($conn, "SELECT * FROM`products` WHERE `id`='{$_GET['id']}'");
+      makeProductForm($rows[0]);
     }
-  ?>
+  } else {
+echo "
+<div class='container'>
+  <div class='card soft'>
+    <h2>Product List</h2>
+
+    <ul class='itemlist'>
+    <ul>
+    ";
+    $rows = getRows ($conn,"SELECT * FROM `products`");
+    echo array_reduce($rows,'makeListItemTemplate');
+echo "
+    </ul>
+  </div>
+</div>
+";
+  }
+?>
+</main>
+
+<?php include "../parts/footer.php" ?>
   
 </body>
 </html>

@@ -25,7 +25,7 @@ return $r.<<<HTML
   <figure class="product-figure soft">
     <div class="product-image"><img src="$o->thumbnail" alt=""></div>
     <figcaption class="product-description">
-      <div class="product-price">&dollar;$o->price}</div>
+      <div class="product-price">&dollar;$o->price</div>
       <div class="product-title">$o->name</div>
     </figcaption>
   </figure>
@@ -47,9 +47,10 @@ return $r.<<<HTML
     <strong>$o->name</strong>
     <div style="margin-top: 0.4em;">
       <form method="get" action="data/form_actions.php" onchange="this.submit()">
+        <label style="float:left; font-size: 0.8em; font-style: italic; padding-right: 8px; padding-top: 12px;">quantity </label>
         <input type="hidden" name="action" value="update-cart-amount">
         <input type="hidden" name="id" value="$o->id">
-        <div class="display-flex">
+        <div class="display-flex" style="padding-top: 2px;">
           <div class="flex-none">$selectamount</div>
         </div>
       </form>

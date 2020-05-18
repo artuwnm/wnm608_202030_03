@@ -25,7 +25,7 @@ $images = explode(",",$randomProduct->images);
     <div class="container">
       <nav class="nav-crumbs" style="margin:1em 0">
         <ul>
-          <li><a href="collection.php"><i class="fas fa-arrow-left" style="color:black;"></i>Back</a></li>    
+          <li><a href="collection.php"><i class="fas fa-arrow-left" style="color:black;"></i> Back</a></li>    
         </ul>
       </nav>
 
@@ -86,15 +86,6 @@ $images = explode(",",$randomProduct->images);
         <div class=DescriptionText><?= $randomProduct->description ?></div>
       </div>
     </div>
-
-    <!-- <div class="container">
-      <div class="card soft">
-        <h2>Product Item</h2>
-        <div>
-          The item is <?= $_GET['id'] ?>
-        </div>
-      </div>
-    </div> -->
 
     <div class="container">
       <h2>Recommended Products</h2>

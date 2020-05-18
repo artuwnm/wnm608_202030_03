@@ -7,6 +7,7 @@ function highlight(element) {
   }
   collectionFormButtonClicked = element;
   collectionFormButtonClicked.style.background = "#fb8ca9";
+  collectionFormButtonClicked.style.background = "white";
 }
 
 $(function() {
@@ -35,6 +36,7 @@ $(function() {
   $(".form-button").hover(function() {
     if ($(this)[0] != collectionFormButtonClicked) {
       $(this).css("background-color","#2079b0");
+      $(this).css("color","white");
     }
   }).mouseout(function(){
     if ($(this)[0] != collectionFormButtonClicked) {

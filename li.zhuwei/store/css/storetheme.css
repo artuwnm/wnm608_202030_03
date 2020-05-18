@@ -137,6 +137,7 @@ img.avatar {
 
 main {
   flex-grow: 1;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   opacity: 0.9;
@@ -300,11 +301,12 @@ main {
 }
 
 footer {
+  flex-grow: 0;
+  flex-shrink: 1;
   padding: 10px;
   text-align: center;
-  position: relative;
-  left: 0;
-  bottom: 0;
+  margin: 0 auto;
+  bottom: 0px;
   width: 100%;
   background-color: #283b54;
   color: white;
