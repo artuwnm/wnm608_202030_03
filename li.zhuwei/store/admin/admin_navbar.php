@@ -3,9 +3,8 @@
   <div class="container display-flex">
     <div class="flex-stretch" onclick="window.location.replace('./index.php');">
       <div class="logo">
-      <img class="logoimg" src="../img/JanStudio.png" alt="JANSTUDIO">
+        <img class="logoimg" src="../img/JanStudio.png" alt="JANSTUDIO">
       </div>
-
     </div>
     <nav class="nav flex-none">
       <ul class="display-flex">
