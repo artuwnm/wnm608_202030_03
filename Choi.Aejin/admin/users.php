@@ -72,8 +72,11 @@ HTML;
 			</div>
 			<nav class="nav-flex flex-none">
 				<ul>
+					
+						 <li><a href="Product_list.php">Home</a></li>
+					 <li><a href="admin/">Product List</a></li>
 					<li><a href="admin/users.php">User List</a></li>
-                    <li><a href="admin/users.php">Add New User</a></li>
+                    
 
 				</ul>
 			</nav>
