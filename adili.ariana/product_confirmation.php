@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
 	<title>Begari | Product Confirmation</title>
-	<link rel="stylesheet" href="lib/css/storetheme.css">
 	
-	<?php include __DIR__. "/parts/meta.php" ?>
+	
+	<?php include  "parts/meta.php" ?>
+	<link rel="stylesheet" href="lib/css/storetheme.css">
 </head>
 <body>
 
-	<?php include __DIR__. "/parts/navbar.php" ?>
+	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
 		<div class="card soft">

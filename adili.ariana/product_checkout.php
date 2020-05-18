@@ -11,15 +11,8 @@
 <body>
 
 	<div class="container">
-		<div class="nav-pills form-control">
-			<ul>
-				<li><a href="product_cart.php">BACK</a></li>
-			</ul>
-		</div>
-
-	<div class="container">
 		<div class="card soft">
-			<h2>Product Checkout</h2>
+			<h2>Checkout</h2>
 		</div>
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-7">

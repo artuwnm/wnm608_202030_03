@@ -1,8 +1,8 @@
 <?php
 
 // include, require, include_once, require_once
-include_once __DIR__."/lib/php/functions.php";
-include_once __DIR__. "/parts/templates.php";
+include_once "lib/php/functions.php";
+include_once  "parts/templates.php";
 
 $data = getRows(
 	makeConn(),
@@ -18,11 +18,11 @@ $images = explode(",",$o->images);
 	<title>Begari | Product Item</title>
 	<link rel="stylesheet" href="lib/css/storetheme.css">
 	
-	<?php include __DIR__. "/parts/meta.php" ?>
+	<?php include "parts/meta.php" ?>
 </head>
 <body>
 
-	<?php include __DIR__. "/parts/navbar.php" ?>
+	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
 		<nav class="nav-crumbs" style="margin:1em 0">

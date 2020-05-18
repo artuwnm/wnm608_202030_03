@@ -178,15 +178,10 @@
 
 <div class="card">
 			<h1>Forms</h1>
-
-			<!-- <h3 id="headings"></h3> -->
 			<hr>
-			<!-- h$*6>{Heading $} -->
-	
-			<ul>
-				<div class="form-control">
-				<input type="submit" class="form-button"/>
-			</div>
+			<div class="card soft">
+					<a class="form-button" href="#">Checkout</a>
+				</div>
 			</ul>
 </div>
 
