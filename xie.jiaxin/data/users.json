@@ -1,14 +1,1 @@
-
-[{
-		"name": "Hamilton Cline",
-		"type": "Teacher",
-		"email": "hcline@academyart.edu",
-		"classes": [608, 617, 820]
-	},
-	{
-		"name": "Jiaxin Xie",
-		"type": "Student",
-		"email": "jiaxinxiedesign@gmail.com",
-		"classes": [608, 613, 700]
-	}
-]
+[{"name":"Hamilton Cline","type":"Teacher","email":"hcline@academyart.edu","classes":[608,617,820]},{"name":"Jiaxin Xie","type":"Student","email":"jiaxinxiedesign@gmail.com","classes":["608","613","700"]},{"name":"","type":"","email":"","classes":[""]}]

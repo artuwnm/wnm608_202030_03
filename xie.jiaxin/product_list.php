@@ -30,34 +30,14 @@ $rows = getRows(
 <body>
 
 <?php include "parts/navbar.php" ?>
-<!-- <div class="form-control display-flex">
-            <div class="flex-none">
-                <button type="button" class="form-button js-filter" data-type="category" data-value="">All</button>
-            </div>
-            <div class="flex-none">
-                <button type="button" class="form-button js-filter" data-type="category" data-value="fruit">Asian Countries</button>
-            </div>
-            <div class="flex-none">
-                <button type="button" class="form-button js-filter" data-type="category" data-value="vegetable">Others</button>
-            </div>
-        </div>
-        <div class="form-control">
-            <div class="form-select">
-                <select class="js-sort">
-                    <option value="1">Newest</option>
-                    <option value="2">Oldest</option>
-                </select>
-            </div>
-        </div>
- <div class="grid gap productlist"></div> -->
 <div class="container">
     <div class="form-control">
         <form class="hotdog light" id="product-search">
             <input type="search" class="search" placeholder="Search Products">
         </form>
     </div>
-    <h2 style="display:block;clear:both;overflow:hidden;">
-        <div style="float:left;">Product List</div>
+    <h2 style="display:block;clear:both;">
+       <!--  <div style="float:left;">Product List</div> -->
         <div  style="float:right;font-size:14px;">
             Sort By
         <select class="js-sort">
@@ -69,7 +49,7 @@ $rows = getRows(
         </div>
     </h2>
 
-    <div class="grid gap productlist">
+    <div class="grid gap productlist" style="clear:both;">
 
         <?php
 
@@ -85,6 +65,6 @@ $rows = getRows(
 
     </div>
 </div>
-
+<?php include "parts/footer.php" ?>
 </body>
 </html>

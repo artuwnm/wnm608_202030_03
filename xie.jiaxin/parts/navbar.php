@@ -7,10 +7,11 @@
                 </a>
 			</div>
 			<ul  class="display-flex product-nav">
+                <li><a href="index.php">Home</a></li>
 				<li ><a href="product_list.php">ALL PRODUCTS</a></li>
-				<li ><a href="#">ABOUT US</a></li>
+				<li ><a href="about.php">ABOUT US</a></li>
                 <li><a href="product_cart.php">CART</a></li>  
-                <li><a href="#">SEARCH</a></li>
+                
             </ul>
         </nav>    
     </div>

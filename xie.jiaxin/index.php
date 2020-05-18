@@ -1,7 +1,15 @@
 <?php
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
 
-session_start();
-
+$rows = getRows(
+    makeConn(),
+    "SELECT *
+	FROM `products`
+	ORDER BY `date_create` DESC
+	LIMIT 4
+	"
+);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,79 +34,31 @@ session_start();
 		</div>
 	</div>
 		<div class="intro">
-		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur adipisci temporibus iste accusamus. Aliquid tempora doloribus, ea minus nostrum provident expedita aliquam voluptas iure. Ducimus ex nulla dolorem voluptatem.
-			Quos dolor eaque consectetur obcaecati laborum fuga tempora tenetur labore quo recusandae accusantium ipsa rerum alias illum, facere aliquam, aspernatur quibusdam sint neque iure numquam repudiandae! </p>
-		<img src="./img/wavy.png" alt="" style="width: 100%; object-fit: scale-down;     padding-top: 100px;">
+		<p>Featured Products</p>
+		<img src="./img/wavy.png" alt="" style="width: 100%; object-fit: scale-down; padding-top: 0px;">
 
 	</div>
 
+    <div class="container">
+        <div class="grid gap" style="clear:both;">
+
+        <?php
+
+
+
+        echo array_reduce(
+            $rows,
+            'productListTemplate'
+        );
+
+        ?>
+        </div>
+    </div>	
+
+			
+	</div> 
+
 	<?php include "parts/footer.php" ?>
-	
-	<!-- <div class="container">
-		<div class="title">New Arrivals</div>	
-		<div class="grid gap">
-			<div class="col-xs-12 col-md-4">     
-				<div class="card soft">
-					<a href="t-p-1.html">
-						<img src="./img/throw-pillow-1.jpg" alt="">
-						<h4 class="product-name-small">Mango Planet</h4>
-						<h5 class="product-price-small">$20</h5>
-					</a>
-				</div> 
-			</div>
-		
-		
-		
-			<div class="col-xs-12 col-md-4">     
-				<div class="card soft">
-					<a href="t-p-1.html">
-						<img src="./img/throw-pillow-1.jpg" alt="">
-						<h4 class="product-name-small">Mango Planet</h4>
-						<h5 class="product-price-small">$20</h5>
-					</a>
-				</div> 
-			</div>
-		
-			<div class="col-xs-12 col-md-4">     
-				<div class="card soft">
-					<a href="t-p-1.html">
-						<img src="./img/throw-pillow-1.jpg" alt="">
-						<h4 class="product-name-small">Mango Planet</h4>
-						<h5 class="product-price-small">$20</h5>
-					</a>
-				</div> 
-			</div>
 
-			<div class="col-xs-12 col-md-4">     
-				<div class="card soft">
-					<a href="t-p-1.html">
-						<img src="./img/throw-pillow-1.jpg" alt="">
-						<h4 class="product-name-small">Mango Planet</h4>
-						<h5 class="product-price-small">$20</h5>
-					</a>
-				</div> 
-			</div>
-
-			 <div class="col-xs-12 col-md-4">     
-				<div class="card soft">
-					<a href="t-p-1.html">
-						<img src="./img/throw-pillow-1.jpg" alt="">
-						<h4 class="product-name-small">Mango Planet</h4>
-						<h5 class="product-price-small">$20</h5>
-					</a>
-				</div> 
-			</div>
-
-			<div class="col-xs-12 col-md-4">     
-				<div class="card soft">
-					<a href="t-p-1.html">
-						<img src="./img/throw-pillow-1.jpg" alt="">
-						<h4 class="product-name-small">Mango Planet</h4>
-						<h5 class="product-price-small">$20</h5>
-					</a>
-				</div> 
-			</div>
-		</div>
-	</div> -->
 
 	

@@ -15,7 +15,7 @@ $images = explode(",",$o->images);
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Store: Product Item</title>
+	<title>Product Item</title>
 	
 	<?php include "parts/meta.php" ?>
 </head>
@@ -23,19 +23,12 @@ $images = explode(",",$o->images);
 
 	<?php include "parts/navbar.php" ?>
 
-	<div class="container">
-		<nav class="nav-crumbs" style="margin:1em 0">
-			<ul>
-				<li><a href="product_list.php">Back</a></li>
-			</ul>
-		</nav>
+	<div class="">
 
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-6">
-				<div class="card">
-					<div class="product-main">
-						<img src="<?= $o->image ?>" alt="">
-					</div>
+				<div class="card" style="padding:0px;background-color:none;">
+
 					<div class="product-thumbs">
 					<?=
 					array_reduce($images,function($r,$o){
@@ -46,16 +39,17 @@ $images = explode(",",$o->images);
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-6">
-
-
                 <form method="get" action="data/form_actions.php">
 
-                <div class="card">
+                <div class="card" style="padding:0px;margin:0px;">
 					<div class="card-section">
-						<h2><?= $o->name ?></h2>
+						<p><?= $o->name ?></p>
 						<div class="product-description">
 							<div class="product-price">&dollar;<?= $o->price ?></div>
-						</div>
+						<!-- </div>
+                        <div class="product-description"> -->
+                            <div class="product-price"><?= $o->description ?></div>
+                        <!-- </div> -->
 					</div>
 					<div class="card-section">
 						<label class="form-label">Select Size</label>
@@ -101,6 +95,7 @@ $images = explode(",",$o->images);
 			</div>
 		</div>
 	</div>
+	<?php include "parts/footer.php" ?>
 	
 </body>
 </html>

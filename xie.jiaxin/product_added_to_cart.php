@@ -23,25 +23,24 @@ $o = getRows(makeConn(),
 <?php include "parts/navbar.php" ?>
 
 <div class="container">
-    <div class="card soft">
-        <h2>Product Item</h2>
+        <!-- <h2>Product Item</h2> -->
 
-        <div>
+        <div style="margin-top: 10%;">
             Thank you for adding <?= $p->amount ?> of the <?= $o->title ?> to the cart.
         </div>
 
         <nav class="nav-flex">
             <ul>
-                <!-- <li class="flex-none">
-                    <a href="product_item.php?id=<?= $o->id ?>">Back to the <?= $o->title ?></a>
-                </li> -->
                 <li class="flex-stretch"></li>
                 <li class="flex-none">
-                    <a href="product_list.php">Continue Shopping</a>
+                    <!-- <div class="large-button"><a href="product_list.php">Continue Shopping</a></div> -->
+                    <!-- <a href="product_list.php">Continue Shopping</a> -->
+                    <div class="continue-shopping"><a href="product_list.php">Continue Shopping</a></div>
+                    <div class="view-cart"><a href="product_cart.php">View Cart</a></div>
+
                 </li>
             </ul>
         </nav>
-    </div>
 </div>
 
 </body>

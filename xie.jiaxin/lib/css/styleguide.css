@@ -180,8 +180,10 @@ hr {
 }
 
 .intro p {
-	font-size: 20px;
+	font-size: 30px;
 	text-align: center;
+	color: #3042AD;
+	font-weight: bold;
 }
 
 .wavy {
@@ -542,7 +544,9 @@ hr {
 }
 
 .card {
+	/*
     background-color: white;
+	*/
     overflow: hidden;
     /* position: relative; */
     padding: 1em;
@@ -615,9 +619,6 @@ hr {
 	transition: all 200ms ease-out;
 }
 
-.choice-button option{
-	color:#000;
-}
 .choice-button:hover {
 	border-color: black;
 	transition: all 200ms ease-out;
@@ -729,4 +730,79 @@ hr {
   color: black ;
   text-decoration: none;
 }
+
+/* product item*/
+
+.card-section p {
+	color: black;
+    font-size: 3.5em;
+	letter-spacing: 1px;
+	font-family: "Catamaran";
+}
+
+.product-description {
+    margin-top: 22%;
+}
+
+/* product_added_to_cart.php */
+
+.continue-shopping {
+	border: 1px solid #3042AD;
+	border-radius: 5px;
+	color: #3042AD;
+	letter-spacing: 1px;
+	background: #fff;
+	text-transform: uppercase;
+	font-family: "Catamaran";
+	width: 100%;
+	display: block;
+	text-align: center;
+	transition: all 200ms ease-out;
+	text-decoration: none;
+}
+
+.continue-shopping:hover {
+	color: white;
+	border-color: none;
+	background-color: #3042AD;
+	transition: all 200ms ease-out;
+	cursor: pointer;
+}
+
+.continue-shopping a {
+	text-decoration: none;
+	color: #3042AD;
+}
+
+.view-cart {
+	margin-top: 10%;
+	border: 1px solid #3042AD;
+	border-radius: 5px;
+	color: white;
+	letter-spacing: 1px;
+	background: #3042AD;
+	text-transform: uppercase;
+	font-family: "Catamaran";
+	width: 100%;
+	display: block;
+	text-align: center;
+	transition: all 200ms ease-out;
+}
+
+.view-cart:hover {
+	color: white;
+	border-color: rgba(48, 66, 173, 0);
+	background-color: rgba(48, 66, 173, 0.9);
+	transition: all 200ms ease-out;
+	cursor: pointer;
+}
+
+.view-cart a {
+	text-decoration: none;
+	color: white;
+}
+
+/* product_cart.php */
+
+
 
