@@ -1,7 +1,6 @@
 # wnm608_202030_03
 WNM 608 Section 03 in 2020 Semester 30
 
-<<<<<<< HEAD
 
 
 
@@ -12,5 +11,4 @@ WNM 608 Section 03 in 2020 Semester 30
 - http://janechoidesign.com/aau/wnm608/Choi.Aejin/index.php
 - http://janechoidesign.com/aau/wnm608/Choi.Aejin/admin/users.php
 - http://janechoidesign.com/aau/wnm608/Choi.Aejin/index.php
-=======
 
