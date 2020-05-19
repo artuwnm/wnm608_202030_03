@@ -7,7 +7,7 @@ $rows = getRows(
     "SELECT *
 	FROM `products`
 	ORDER BY `date_create` DESC
-	LIMIT 12
+	LIMIT 15
 	"
 );
 
@@ -61,16 +61,6 @@ $rows = getRows(
 			</div>
 		</div>
 		<div class="form-control">
-			<!-- .form-select>select>option -->
-			<div class="form-select">
-				<select class="js-sort">
-					<option value="1">Newest</option>
-					<option value="2">Oldest</option>
-					<option value="3">Most Expensive</option>
-					<option value="4">Least Expensive</option>
-				</select>
-			</div>
-		</div>
  
 </div>
 </div>

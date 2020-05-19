@@ -18,8 +18,8 @@ session_start();
 			<h2>About Us</h2>
 
 			<div>
-				<p>The main product of the moment postcard website is postcards. All postcard themes are based on instant photographs of “Polaroid”. Each card has a different photo printed on the front, and each series has twelve cards.
-				We will update the series of postcards according to different seasons or events. Users can buy a single card or buy a whole series.</p>
+				<img src="img/About.jpg">
+				
 			</div>
 		</div>
 	</div>

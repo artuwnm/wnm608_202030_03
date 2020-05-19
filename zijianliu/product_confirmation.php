@@ -17,9 +17,8 @@ $_SESSION['cart'] = [];
 	<div class="container">
 		<div class="card soft">
 			<h2>Product Confirmation</h2>
-
 			<div>
-				Thank you for purchasing.
+				<img src="img/P.jpg">
 			</div>
 
 			<div>
