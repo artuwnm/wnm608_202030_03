@@ -81,12 +81,6 @@ include_once "parts/templates.php";
 				<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
 			</div>
 		
-			<div class="footer-section about3">
-				 <div class="productadmin">
-					<a href="../admin/index.php"> Product Admin</a>
-				 </div>
-			</div>
-
 
 	
 	</div>

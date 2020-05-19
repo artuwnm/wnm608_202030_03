@@ -256,6 +256,10 @@ HTML;
 			</div>
 			<nav class="nav-flex flex-none">
 				<ul>
+					<div class="navbar">
+		<div class="container display-flex">
+			<div class="nav-stretch">
+							<div class="flex-stretch">
 					<li><a href="./product_list.php">Home</a></li>
 					<li><a href="admin/">Product List</a></li>
 					<li><a href="admin/?id=new">Add New Product</a></li>
@@ -263,7 +267,10 @@ HTML;
 			</nav>
 		</div>
 	</header>
-
+</div>
+</div>
+</div>
+</ul>
 	<div class="container">
 
 			<?php
