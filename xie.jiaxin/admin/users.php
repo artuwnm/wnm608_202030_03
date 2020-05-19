@@ -87,7 +87,7 @@ return $r.<<<HTML
 			<img src="$o->images" width="80" height="85">
 		</div>
 	</div>
-	<div class="flex-stretch">
+	<div class="flex-stretch" style="padding-left: 5%;">
 		<div><strong>$o->name</strong></div>
 		<div><span>$o->category</span></div>
 	</div>
@@ -216,130 +216,6 @@ HTML;
 	<title>Learning Data</title>
 
 	<?php include "../parts/meta.php" ?>
-    <style>
-        .itemlist-item {
-            margin:1em;
-            padding:1em;
-
-            border-bottom:1px solid var(--color-neutral-light);
-        }
-
-        .product-main img {
-            width:100%;
-            height:50vh;
-            object-fit:cover;
-        }
-        .product-thumbs img {
-            height:75px;
-            width:100px;
-            object-fit:cover;
-        }
-
-        /* FIGURE */
-        .product-figure {
-            margin:0;
-            height:100%;
-        }
-        .product-figure img {
-            width:100%;
-            object-fit:cover;
-            height:30vh;
-            vertical-align: text-bottom;
-
-        }
-        .product-figure figcaption {
-            padding:1em;
-            background-color:white;
-        }
-
-        .product-figure.soft {
-            border-radius:1em;
-            overflow:hidden;
-            box-shadow:0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .product-figure.overlay {
-            position:relative;
-            overflow:hidden;
-            border-radius:1em;
-        }
-        .product-figure.overlay figcaption {
-            position:absolute;
-            top:0;
-            left:0;
-            width:100%;
-            height:100%;
-            background-color:rgba(0,0,0,0.5);
-            transition:all 0.3s;
-            opacity:0;
-        }
-        .product-figure.overlay:hover figcaption {
-            opacity:1;
-        }
-        .product-figure.overlay img {
-            transition:all 0.5s;
-            transform:scale(1,1);
-        }
-        .product-figure.overlay:hover img {
-            transform:scale(1.4,1.4);
-        }
-
-        .product-description {
-            font-weight:normal;
-            text-decoration:none;
-        }
-
-
-        .product-main img {
-            width:100%;
-            height:50vh;
-            object-fit:cover;
-        }
-        .thumbs img {
-            height:75px;
-            width:100px;
-            object-fit:cover;
-        }
-
-        a.form-button1 {
-            display: block;
-            width: 100%;
-            border-width: 0;
-            color: white;
-            font: inherit;
-            padding: 0.5em 1em;
-            -webkit-appearance: none;
-            outline: 0;
-            text-align: center;
-            background-color: #2E4C69;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        .form-button4 {
-            display: block;
-            width: 100%;
-            border-width: 0;
-            color: #2E4C69;
-            font: inherit;
-            padding: 0.5em 0.5em;
-            margin-top: 2em;
-            -webkit-appearance: none;
-            outline: 0;
-            text-align: center;
-            border: 1px solid #2E4C69;
-            background-color: white;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        @media (max-width:600px) {
-            .navbar .display-flex {
-                display:block;
-            }
-        }
-
-
-    </style>
 </head>
 <body>
 
@@ -350,7 +226,7 @@ HTML;
 			</div>
 			<nav class="nav-flex flex-none">
 				<ul>
-					<li><a href="./product_list.php">Home</a></li>
+					<li><a href="./index.php">Home</a></li>
 					<li><a href="admin/">Product List</a></li>
 					<li><a href="admin/?id=new">Add New Product</a></li>
 				</ul>

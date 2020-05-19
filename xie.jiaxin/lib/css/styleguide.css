@@ -467,6 +467,10 @@ hr {
 }
  */
 
+.form-button {
+	color: gray;
+	border: none;
+}
 
 
 .hotdog {
@@ -578,11 +582,11 @@ hr {
 }
 
 
-.card.soft:hover {
+/*.card.soft:hover {
 	box-shadow: 0 4px 18px 0 rgba(0,0,0,0.1);
 	transition: 0.3s;
 	border-radius:0.5em;
-}
+}*/
 
 .product-name-small {
 	font-family:Catamaran;
@@ -802,7 +806,159 @@ hr {
 	color: white;
 }
 
+/* users.php */
+.itemlist-item {
+    margin:1em;
+    padding:1em;
+
+    border-bottom:1px solid var(--color-neutral-light);
+}
+
+.product-main img {
+    width:100%;
+    height:50vh;
+    object-fit:cover;
+}
+.product-thumbs img {
+    height:75px;
+    width:100px;
+    object-fit:cover;
+}
+
+/* FIGURE */
+.product-figure {
+    margin:0;
+    height:100%;
+}
+.product-figure img {
+    width:100%;
+    object-fit:cover;
+    height:30vh;
+    vertical-align: text-bottom;
+
+}
+.product-figure figcaption {
+    padding:1em;
+    background-color:white;
+}
+
+.product-figure.soft {
+    border-radius:1em;
+    overflow:hidden;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product-figure.overlay {
+    position:relative;
+    overflow:hidden;
+    border-radius:1em;
+}
+.product-figure.overlay figcaption {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.5);
+    transition:all 0.3s;
+    opacity:0;
+}
+.product-figure.overlay:hover figcaption {
+    opacity:1;
+}
+.product-figure.overlay img {
+    transition:all 0.5s;
+    transform:scale(1,1);
+}
+.product-figure.overlay:hover img {
+    transform:scale(1.4,1.4);
+}
+
+.product-description {
+    font-weight:normal;
+    text-decoration:none;
+}
+
+
+.product-main img {
+    width:100%;
+    height:50vh;
+    object-fit:cover;
+}
+.thumbs img {
+    height:75px;
+    width:100px;
+    object-fit:cover;
+}
+
+a.form-button1 {
+    display: block;
+    width: 100%;
+    border-width: 0;
+    color: white;
+    font: inherit;
+    padding: 0.5em 1em;
+    -webkit-appearance: none;
+    outline: 0;
+    text-align: center;
+    background-color: #3042AD;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-button4 {
+    display: block;
+    width: 100%;
+    border-width: 0;
+    color: #3042AD;    
+    font: inherit;
+    padding: 0.5em 0.5em;
+    margin-top: 2em;
+    -webkit-appearance: none;
+    outline: 0;
+    text-align: center;
+    border: 1px solid #3042AD;
+    background-color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media (max-width:600px) {
+    .navbar .display-flex {
+        display:block;
+    }
+}
+
+a {
+	text-decoration: none;
+}
+
 /* product_cart.php */
+.checkout {
+	margin-top: 10%;
+	border: 1px solid #3042AD;
+	border-radius: 5px;
+	color: white;
+	letter-spacing: 1px;
+	background: #3042AD;
+	text-transform: uppercase;
+	font-family: "Catamaran";
+	width: 100%;
+	display: block;
+	text-align: center;
+	transition: all 200ms ease-out;
+	padding: 2%;
+}
 
+.checkout:hover {
+	color: white;
+	border-color: rgba(48, 66, 173, 0);
+	background-color: rgba(48, 66, 173, 0.9);
+	transition: all 200ms ease-out;
+	cursor: pointer;
+}
 
+.checkout a {
+	text-decoration: none;
+	color: white;
+}
 

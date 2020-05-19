@@ -20,7 +20,7 @@ HTML;
 function cartListTemplate($r,$o) {
 return $r.<<<HTML
 <div class="display-flex">
-	<div class="flex-none product-thumbs">
+	<div class="flex-none product-thumbs" style="margin-right:20rpx;">
 		<img src="$o->images" width="90" height="90" style="width:90px;height:90px">
 	</div>
 	<div class="flex-stretch">
@@ -30,9 +30,11 @@ return $r.<<<HTML
 				<form method="get" action="data/form_actions.php">
 					<input type="hidden" name="action" value="delete-cart-item">
 					<input type="hidden" name="id" value="$o->id">
-					<div class="display-flex"><div class="flex-none">
-						<input type="submit" class="form-button" value="delete">
-					</div></div>
+					<div class="display-flex">
+						<div class="flex-none" style="padding-left: 80%;">
+							<input type="submit" class="form-button" value="Remove">
+						</div>
+					</div>
 				</form>
 			</div>
 			<div class="flex-none">&dollar;$o->price</div>

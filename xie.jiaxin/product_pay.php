@@ -11,15 +11,15 @@
 
 	<div class="container">
 		<div class="card soft">
-			<h2 style="text-align:center;text-align:center;font-size:50px;">Thinks or purchasing!</h2>
+			<h2 style="padding:10% 10% 0 10%; text-align:center;font-size:50px;">Thank you for purchasing!</h2>
 
-			<div style="padding:20px;text-align:center;line-height:24px;">
-				A confirmmation as been sent to your email.<br />
-                Your order hasn't shipped yet, But we'll send you an email when it does.
+			<div style="text-align:center;line-height:24px;">
+				A confirmmation has been sent to your email.<br />
+                We will send you an confirmation email shortly.
 			</div>
 
 			<div style="text-align:center;overflow:hidden;margin-top:50px;">
-                <a class="choice-button" href="product_list.php" style="background:blue;color:#fff;padding:30px 30px;border-radius:5px;">Contune Shopping</a>
+                <a class="continue-shopping" href="product_list.php" style="padding:10px 10px;">Contune Shopping</a>
 			</div>
 		</div>
 	</div>

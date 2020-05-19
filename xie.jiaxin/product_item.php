@@ -29,7 +29,7 @@ $images = explode(",",$o->images);
 			<div class="col-xs-12 col-md-6">
 				<div class="card" style="padding:0px;background-color:none;">
 
-					<div class="product-thumbs">
+					<div>
 					<?=
 					array_reduce($images,function($r,$o){
 						return $r."<img src='$o'>";

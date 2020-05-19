@@ -102,9 +102,9 @@ HTML;
 
 function cartList2($r,$o) {
     return $r.<<<HTML
-         <div style="heighit:100px;margin-bottom:20px;width:50%;overflow:hidden;">
+         <div style="heighit:100px;margin-bottom:20px;width:100%;overflow:hidden;">
             <div style="float:left;"><img src="$o->images" width="90" height="90" style="width:90px;height:90px"></div>
-            <div style="float:left;"><div>$o->name</div><div> nums：$o->amount</div></div>
+            <div style="float:left;padding-left:5%;"><div>$o->name</div><div> nums：$o->amount</div></div>
            <div style="float:right;">&dollar;$o->price</div>
        </div>
 HTML;

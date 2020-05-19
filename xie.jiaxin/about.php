@@ -17,8 +17,7 @@
 			<div class="col-xs-12 col-md-6">
 				<div class="card" style="padding:10% 0 0 10%;background-color:none;">
 
-					<div class="product-thumbs">
-
+					<div class="">
 						<img src="img/about.jpg" alt=""style="width: 100%; object-fit: scale-down; padding-top: 0px;">
 					</div>
 				</div>

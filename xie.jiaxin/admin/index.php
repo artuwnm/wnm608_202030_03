@@ -88,7 +88,7 @@ function makeListItemTemplate($r,$o) {
 return $r.<<<HTML
 <div class="itemlist-item display-flex">
 	<div class="flex-none">
-		<div class="image-square" style="width:80px;height:85px;">
+		<div class="image-square" style="width:80px;height:85px;margin-right:20px">
 			<img src="$o->images" width="80" height="85">
 		</div>
 	</div>
@@ -316,7 +316,7 @@ HTML;
             -webkit-appearance: none;
             outline: 0;
             text-align: center;
-            background-color: #2E4C69;
+            background-color: #3042AD;
             text-decoration: none;
             cursor: pointer;
         }
@@ -325,14 +325,14 @@ HTML;
             display: block;
             width: 100%;
             border-width: 0;
-            color: #2E4C69;
+            color:#3042AD;
             font: inherit;
             padding: 0.5em 0.5em;
             margin-top: 2em;
             -webkit-appearance: none;
             outline: 0;
             text-align: center;
-            border: 1px solid #2E4C69;
+            border: 1px solid #3042AD;
             background-color: white;
             text-decoration: none;
             cursor: pointer;
@@ -353,18 +353,17 @@ HTML;
 			<div class="flex-stretch">
 				<h1>Product Admin</h1>
 			</div>
-			<nav class="nav-flex flex-none">
+			<nav class="nav-flex flex-none" style="padding-top:25px">
 				<ul>
-					<li><a href="./product_list.php">Home</a></li>
-					<li><a href="admin/">Product List</a></li>
-					<li><a href="admin/?id=new">Add New Product</a></li>
+					<li><a href="./product_list.php" style="color:#3042AD">Home</a></li>
+					<li><a href="admin/" style="color:#3042AD">Product List</a></li>
+					<li><a href="admin/?id=new" style="color:#3042AD">Add New Product</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 
 	<div class="container">
-
 			<?php
 
 			$conn = makeConn();
