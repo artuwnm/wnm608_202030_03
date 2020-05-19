@@ -6,6 +6,7 @@
 - http://zoezhaojie.com/aau/wnm608_03/zhang.zoe/product_list.php
 - http://zoezhaojie.com/aau/wnm608_03/zhang.zoe/about.php
 - http://zoezhaojie.com/aau/wnm608_03/zhang.zoe/product_cart.php
+- http://zoezhaojie.com/aau/wnm608_03/zhang.zoe/admin/index.php
 
 
 

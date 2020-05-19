@@ -26,12 +26,13 @@ function makeConn() {
 }
 
 function makePDOConn() {
-	try {
-		$conn = new PDO(...makePDOAuth());
-	} catch(PDOException $e) {
-		die($e->getMessage());
-	}
-	return $conn;
+    @$conn = new mysqli(...makeAuth());
+
+    if($conn->connect_errno) die($conn->connect_error);
+
+    $conn->set_charset('utf8');
+
+    return $conn;
 }
 
 
