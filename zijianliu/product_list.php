@@ -1,6 +1,15 @@
 <?php
 
 include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+$rows = getRows(
+    makeConn(),
+    "SELECT *
+	FROM `products`
+	ORDER BY `date_create` DESC
+	LIMIT 12
+	"
+);
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -8,15 +17,17 @@ include_once "lib/php/functions.php";
 	<title>Store: Product List</title>
 	
 	<?php include "parts/meta.php" ?>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="lib/js/functions.js"></script>
+	<script src="js/templates.js"></script>
 	<script src="js/list.js"></script>
-
 </head>
 <body>
 
 	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
-		<h2>Product List</h2>
+		<h2>Instant-film postcards all series</h2>
 
 		<div class="form-control">
 			<form class="hotdog light" id="product-search">
@@ -28,10 +39,25 @@ include_once "lib/php/functions.php";
 				<button type="button" class="form-button js-filter" data-type="category" data-value="">All</button>
 			</div>
 			<div class="flex-none">
-				<button type="button" class="form-button js-filter" data-type="category" data-value="fruit">Fruit</button>
+				<button type="button" class="form-button js-filter" data-type="category" data-value="Color">Color</button>
 			</div>
 			<div class="flex-none">
-				<button type="button" class="form-button js-filter" data-type="category" data-value="vegetable">Vegetables</button>
+				<button type="button" class="form-button js-filter" data-type="category" data-value="Portrait">Portrait</button>
+			</div>
+			<div class="flex-none">
+				<button type="button" class="form-button js-filter" data-type="category" data-value="Food">Food</button>
+			</div>
+			<div class="flex-none">
+				<button type="button" class="form-button js-filter" data-type="category" data-value="Flower">Flower</button>
+			</div>
+			<div class="flex-none">
+				<button type="button" class="form-button js-filter" data-type="category" data-value="Animal">Animal</button>
+			</div>
+			<div class="flex-none">
+				<button type="button" class="form-button js-filter" data-type="category" data-value="Scenery">Scenery</button>
+			</div>
+			<div class="flex-none">
+				<button type="button" class="form-button js-filter" data-type="category" data-value="Random">Random</button>
 			</div>
 		</div>
 		<div class="form-control">
@@ -45,14 +71,23 @@ include_once "lib/php/functions.php";
 				</select>
 			</div>
 		</div>
-
-		<div class="grid gap productlist"></div>
-
-
-		<div>
+ 
+</div>
+</div>
+<div>
 			<a href="admin">Product Admin</a>
 		</div>
-	</div>
+<?php
+
+
+
+        echo array_reduce(
+            $rows,
+            'productListTemplate'
+        );
+
+        ?>
+
 	
 </body>
 </html>

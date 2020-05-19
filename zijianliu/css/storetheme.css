@@ -1,9 +1,9 @@
 :root {
-    --color-neutral-dark: #333;
+    --color-neutral-dark: #FF9800;
     --color-neutral-medium: #999;
     --color-neutral-light: #eee;
 
-     --color-main-light: #ffdba7;
+    --color-main-light: #ffdba7;
     --color-main-medium: #FF9800;
     --color-main-dark: #44105a;
 }

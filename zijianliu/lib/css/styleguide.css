@@ -6,7 +6,7 @@
 
 :root {
     --color-neutral-dark: #332d2d;
-    --color-neutral-secondbreakfast: #cdc6c6;
+    --color-neutral-secondbreakfast: #ffbc00;
     --color-neutral-medium: #988c8c;
     --color-neutral-light: #ece7e7;
 
@@ -22,18 +22,20 @@
 
 body {
 	box-sizing:border-box;
-	margin:0;
+	color: black;
+	margin:20;
 	font-size:100%;
 	font-family: 'Roboto', sans-serif;
 }
 
-h1,
+h1,{font-family: 'Roboto', sans-serif;}
 h2,
 h3,
 h4,
 h5,
 h6 {
 	font-family: 'Roboto', sans-serif;
+	font-size: small;
 }
 
 
@@ -95,8 +97,7 @@ code {
 /* COMPONENT CLASSES */
 
 .navbar {
-	background-color:var(--color-neutral-dark);
-	color:var(--color-neutral-light);
+	color: rgb(0, 0, 0);
 	line-height: var(--header-height);
 }
 .navbar h1 {
@@ -191,11 +192,11 @@ code {
 		background-color:var(--color-neutral-medium);
 	}
 	.card.dark {
-		background-color:var(--color-neutral-dark);
+		background-color:#ffbc00;
 		color:var(--color-neutral-light);
 	}
 	.card.flat {
-		padding:0;
+		padding: 5;
 	}
 
 
@@ -375,6 +376,10 @@ code {
 .hotdog .icon {
 	padding:0 1em;
 }
+.hotdog.light {
+	background-color: white;
+}
+
 
 
 

@@ -34,12 +34,12 @@ $images = explode(",",$o->images);
 			<div class="col-xs-12 col-md-7">
 				<div class="card soft">
 					<div class="product-main">
-						<img src="/images/store/<?= $o->thumbnail ?>" alt="">
+						<img src="http://zijianliu.com/aau/wnm608/zijianliu/img<?= $o->images ?>" width="300"alt="">
 					</div>
 					<div class="product-thumbs">
 					<?=
 					array_reduce($images,function($r,$o){
-						return $r."<img src='/images/store/$o'>";
+						return $r."<img src='/aau/wnm608/zijianliu/$o'>";
 					})
 					?>
 					</div>
@@ -48,7 +48,7 @@ $images = explode(",",$o->images);
 			<div class="col-xs-12 col-md-5">
 				<form class="card soft flat" method="get" action="data/form_actions.php">
 					<div class="card-section">
-						<h2 class="product-title"><?= $o->title ?></h2>
+						<h2 class="product-name"><?= $o->name ?></h2>
 						<div class="product-category"><?= $o->category ?></div>
 						<div class="product-description">
 							<div class="product-price">&dollar;<?= $o->price ?></div>
