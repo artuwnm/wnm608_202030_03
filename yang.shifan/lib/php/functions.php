@@ -7,6 +7,10 @@ function getData() {
 	return json_decode($string, true);
 }
 
+function saveData($array) {
+	file_put_contents("../data/users.json", json_encode($array));
+}
+
 include_once "auth.php";
 function makeConn() {
 	@$conn = new mysqli(...makeAuth());

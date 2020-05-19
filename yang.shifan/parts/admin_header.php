@@ -15,6 +15,7 @@
 				<ul>
 					<li class="logo-text"><a class="active" href="index.php">FANCY FLORA ADMIN</a></li>
 					<li class="menu-text"><a href="index.php?id=new">New Product</a></li>
+					<li class="menu-text"><a href="add_user.php">Add User</a></li>
 					<li class="menu-text"><a href="users.php">User List</a></li>
 					<li class="menu-text"><a href="index.php">Admin Home</a></li>
 				</ul>
