@@ -26,7 +26,8 @@ $_SESSION['cart'] = [];
 			<div class="thankyoupic"><img src="img/thankyou.png"></div>
 
 			<div>
-				<div class="thankyou">For purchasing </div>
+				<div class="thankyou">Your order was complited succesfully. </div>
+				<p style="text-align: center;">An email receipt including the details about your oder has been sent to the e-mail address provided. Please keep it for your records.</p>
 				<br>
 
 				<div class="container">

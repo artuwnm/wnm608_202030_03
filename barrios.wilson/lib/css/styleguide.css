@@ -82,7 +82,7 @@ h6 {
 
 @media only screen and (max-width: 354px) {
 	h3{
-		font-size:2em;
+		font-size:1.4em;
 	}
 }
 
@@ -1404,6 +1404,7 @@ text-align:center;
 	color:#ffffff;
 	background-color: #fc4a1a;
 	margin: 0 auto;
+	margin-bottom: 5em;
 
 }
 
@@ -1638,6 +1639,7 @@ margin-right: 10%;
 	height: 40px;
 	vertical-align: middle;
 	padding-top: 0.2px;
+	padding-bottom: 0.8em;
 }
 
 
