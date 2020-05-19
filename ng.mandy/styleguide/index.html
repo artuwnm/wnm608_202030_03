@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -44,9 +45,7 @@
 			<li><a href="#navigations">Navigations</a></li>
 			<li><a href="#tables">Tables</a></li>
 			<li><a href="#forms">Forms</a></li>
-			<li><a href="#flex">Flex System</a></li>
-			<li><a href="#grid">Grid System</a></li>
-			<li><a href="#checkboxes">CheckBoxes</a></li>
+			
 			<li><a href="#figures">Figures</a></li>
 		</ul>
 	</nav>
@@ -55,7 +54,7 @@
 		<h2 id="typography">Typography</h2>
 
 		<div class="card">
-			<h3 id="headings">Headings</h3>
+			<h3 id="headings">Headings:Poppins</h3>
 			<hr>
 			<!-- h$*6>{Heading $} -->
 			<h1>Heading 1</h1>
@@ -76,7 +75,7 @@
 		</div>
 
 		<div class="card">
-			<h3 id="paragraphs">Paragraphs</h3>
+			<h3 id="paragraphs">Paragraphs:Arial</h3>
 			<hr>
 			<!-- p*3>lorem20 -->
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quisquam saepe quae quam dolores rem omnis est recusandae ullam asperiores.</p>
@@ -110,31 +109,15 @@
 	}
 	</script>
 
-		<div class="card">
-			<h3>Basic Nav</h3>
-
-			<script>document.write(makeNav("nav"))</script>
-		</div>
+		
 		<div class="card">
 			<h3>Flex Nav</h3>
 
 			<script>document.write(makeNav("nav-flex"))</script>
 		</div>
-		<div class="card">
-			<h3>Stretch Nav</h3>
-
-			<script>document.write(makeNav("nav-stretch"))</script>
-		</div>
-		<div class="card">
-			<h3>Pills Nav</h3>
-
-			<script>document.write(makeNav("nav-pills"))</script>
-		</div>
-		<div class="card">
-			<h3>Breadcrumb Nav</h3>
-
-			<script>document.write(makeNav("nav-crumbs"))</script>
-		</div>
+		
+		
+		
 	</section>
 
 
@@ -188,18 +171,10 @@
 		<h2 id="tables">Tables</h2>
 
 
-		<div class="card">
-			<h3>Basic Table</h3>
-
-			<script>document.write(makeTable('table'))</script>
-		</div>
+		
 
 
-		<div class="card">
-			<h3>Striped Table</h3>
-
-			<script>document.write(makeTable('table striped'))</script>
-		</div>
+		
 
 
 		<div class="card">
@@ -209,30 +184,14 @@
 		</div>
 
 
-		<div class="card">
-			<h3>Vertical Lined Table</h3>
-
-			<script>document.write(makeTable('table lined vertical'))</script>
-		</div>
+		
 
 
-		<div class="card">
-			<h3>Horizontal Outlined Lined Table</h3>
+		
 
-			<script>document.write(makeTable('table lined outline horizontal'))</script>
-		</div>
+		
 
-		<div class="card">
-			<h3>All Lined Table</h3>
-
-			<script>document.write(makeTable('table lined all'))</script>
-		</div>
-
-		<div class="card">
-			<h3>Striped with Vertical and Outlines Table</h3>
-
-			<script>document.write(makeTable('table lined vertical outline striped'))</script>
-		</div>
+		
 	</section>
 
 
@@ -240,27 +199,7 @@
 	<section class="container">
 		<h2 id="forms">Forms</h2>
 
-		<div class="card">
-			<h2>Form Input</h2>
-
-			<input type="text" class="form-input" placeholder="Text">
-			<input type="password" class="form-input" placeholder="Password">
-			<input type="number" class="form-input" placeholder="Number">
-			<input type="search" class="form-input" placeholder="Search">
-		</div>
-
-		<div class="card">
-			<h2>Form Label</h2>
-
-			<label class="form-label" for="input-example1">Example</label>
-			<input type="text" class="form-input" placeholder="Text" id="input-example1">
-
-			<label class="form-label" for="input-example2">Example</label>
-			<input type="text" class="form-input" placeholder="Text" id="input-example2">
-
-			<label class="form-label" for="input-example3">Example</label>
-			<input type="text" class="form-input" placeholder="Text" id="input-example3">
-		</div>
+		
 
 		<div class="card">
 			<h2>Form Control</h2>
@@ -304,84 +243,20 @@
 				<input type="search" class="hotdog" placeholder="Search" />
 			</div>
 			
-			<div class="form-control">
-				<label class="hotdog">
-					<div class="flex-none icon">
-						🔍
-					</div>
-					<div class="flex-stretch">
-						<input type="search" placeholder="Search" />
-					</div>
-				</label>
-			</div>
+			
+					
 
-			<div class="display-flex">
-				<div class="flex-stretch"></div>
-				<div class="flex-none">
-					<div class="form-control">
-						<input type="search" class="hotdog" placeholder="Search" />
-					</div>
-				</div>
-			</div>
+			
 		</div>
 	</section>
 
 
-	<section class="container">
-		<h2 id="checkboxes">Check Boxes</h2>
 
-		<div class="card">
-			<h3>Basic Checkbox</h3>
-
-			<div>
-				<label for="check-example1">Checkbox</label>
-				<label>
-					<input type="checkbox" id="check-example1">
-					Checkbox
-				</label>
-			</div>
-
-			<h3>Heart Checkbox</h3>
-
-			<div>
-				<div class="heart-toggle">
-					<input type="checkbox" id="heart-example" class="hidden">
-					<label for="heart-example">&hearts;</label>
-				</div>
-			</div>
-
-			<h3>Toggle Checkbox</h3>
-
-			<div>
-				<div class="toggle">
-					<input type="checkbox" id="toggle1" class="hidden">
-					<label for="toggle1"></label>
-				</div>
-				<div class="toggle" style="font-size:2em">
-					<input type="checkbox" id="toggle2" class="hidden">
-					<label for="toggle2"></label>
-				</div>
-			</div>
-		</div>
-	</section>
 
 
 	<section class="container">
 		<h2 id="figures">Figures</h2>
 
-		<div class="card">
-			<h3>Basic Figure</h3>
-
-			<div>
-				<!-- figure>img+figcaption -->
-				<figure class="product-figure">
-					<img src="https://via.placeholder.com/300" alt="">
-					<figcaption>
-						Product
-					</figcaption>
-				</figure>
-			</div>
-		</div>
 		<div class="card">
 			<h3>Soft Figure</h3>
 

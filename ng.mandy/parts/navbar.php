@@ -1,14 +1,21 @@
+<?php
+include_once "parts/templates.php";
+?>
 <header class="navbar">
-	<div class="container display-flex">
+	<div class="display-flex">
 		<div class="flex-stretch">
-			<h1>Store</h1>
+			<a href="index.php"><img src="img/logo.png"></img></a>
 		</div>
-		<nav class="nav-flex flex-none">
+		<nav class="nav-stretch flex-stretch">
 			<ul>
-				<!-- li*3>a[href=#]>{Link $} -->
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Store</a></li>
-				<li><a href="#">About</a></li>
+				<li><a href="index.php">HOME</a></li>
+				<li><a href="product_list.php">PRODUCT</a></li>
+				<li><a href="about.php">ABOUT</a></li>
+				<li><a href="product_cart.php">
+					<span>CART</span>
+					<span class="badge"><?= makeCartBadge(); ?></span>
+				</a></li>
+				<li><a class="form-button navconfirm" href="login.php">LOGIN</a></li>
 			</ul>
 		</nav>
 	</div>

@@ -1,46 +1,76 @@
-<!DOCTYPE html>
+<?php
+
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
 	<title>Store: Product List</title>
+	
+	<?php include "parts/meta.php" ?>
 
-	<meta name="viewport" content="width=device-width">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="lib/js/functions.js"></script>
+	<script src="js/templates.js"></script>
+	<script src="js/list.js"></script>
 
-	<link rel="stylesheet" href="lib/css/styleguide.css">
-	<link rel="stylesheet" href="lib/css/gridsystem.css">
-	<link rel="stylesheet" href="css/storetheme.css">
 </head>
 <body>
 
-	<header class="navbar">
-		<div class="container display-flex">
-			<div class="flex-stretch">
-				<h1>Store</h1>
-			</div>
-			<nav class="nav-flex flex-none">
-				<ul>
-					<!-- li*3>a[href=#]>{Link $} -->
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Store</a></li>
-					<li><a href="#">About</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
-		<div class="card soft">
-			<h2>Product List</h2>
-
-			<!-- ul>li*4>a[href="product_item.php"]>{Product $} -->
-			<ul>
-				<li><a href="product_item.php?id=1">Product 1</a></li>
-				<li><a href="product_item.php?id=2">Product 2</a></li>
-				<li><a href="product_item.php?id=3">Product 3</a></li>
-				<li><a href="product_item.php?id=4">Product 4</a></li>
-			</ul>
+		<div class="page_title">
+			<h2>Order your favorite</h2>
 		</div>
-	</div>
+
+        <div class="grid gap">
+			<div class="col-xs-12 col-md-4 form-control">
+				<form class="hotdog light" id="product-search">
+					<input type="search" class="search" placeholder="Search Products">
+				</form>
+			</div>
+
+			<div class="col-xs-12 col-md-4">
+			</div>
+
+			<div class="col-xs-12 col-md-4 form-control form-select">
+				<select class="js-sort">
+					<option value="1">Newest</option>
+					<option value="2">Oldest</option>
+					<option value="3">Most Expensive</option>
+					<option value="4">Least Expensive</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="grid gap">
+			<div class="col-xs-6 col-md-1 form-control">
+				<button type="button" class="form-button js-filter" data-type="region" data-value="">All</button>
+			</div>
+			<div class="col-xs-6 col-md-1 form-control">
+				<button type="button" class="form-button js-filter" data-type="region" data-value="asia">Asia</button>
+			</div>
+			<div class="col-xs-6 col-md-1 form-control">
+				<button type="button" class="form-button js-filter" data-type="region" data-value="europe">Europe</button>
+			</div>
+			<div class="col-xs-6 col-md-1 form-control">
+				<button type="button" class="form-button js-filter" data-type="region" data-value="north_america">North America</button>
+			</div>
+			<div class="col-xs-6 col-md-1 form-control">
+				<button type="button" class="form-button js-filter" data-type="region" data-value="south_america">South America</button>
+			</div>
+			<div class="col-xs-6 col-md-1 form-control">
+				<button type="button" class="form-button js-filter" data-type="region" data-value="oceania">Oceania</button>
+			</div>
+		</div>		
+
+		<div class="grid gap productlist"></div>
 	
+	</div>
+
+	<?php include "parts/footer.php" ?>
+
 </body>
 </html>

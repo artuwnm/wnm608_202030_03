@@ -2,10 +2,11 @@
 
 include "../lib/php/functions.php";
 
-$users = getData("../data/users.json");
+$filename = "../data/users.json";
+$users = getData($filename);
 
-//print_p($_GET);
-//print_p($_POST);
+// print_p($users);
+// print_p(["POST",$_POST,"GET",$_GET]);
 
 
 // file_put_contents, json_encode, explode, $_POST
@@ -13,65 +14,119 @@ $users = getData("../data/users.json");
 // CRUD - Create Read Update Delete
 
 
-function showUserPage($id, $user) {
+$empty_user = (object)[
+	"name"=>"",
+	"email"=>"",
+	"password"=>""
+];
 
-$classes = implode(", ", $user->classes);
 
-echo <<<START
-<nav class="nav-crumbs">
-	<ul>
-		<li><a href="admin/users.php">Back</a></li>
-	</ul>
-</nav>
+// LOGIC
+if(isset($_GET['action'])) {
+	switch($_GET['action']) {
+		case "update":
+			$users[$_GET['id']]->name = $_POST['user-name'];
+			$users[$_GET['id']]->email = $_POST['user-email'];
+			$users[$_GET['id']]->password = $_POST['user-password'];
 
-<form action="admin/users.php" method="post">
-<input type="hidden" value="$id" name="id" id="id">
-<div class="card.flat">
-	<h2>$user->name</h2>
+			file_put_contents($filename,json_encode($users));
 
-	<div class="form-control">
-		<label class="form-label" for="user_type">Type</label>
-		<input type="text" class="form-input" value="$user->type" name="user_type" id="user_type">
-	</div>
+			header("location:{$_SERVER['PHP_SELF']}?id={$_GET['id']}");
+			break;
+		case "create":
+			$empty_user->name = $_POST['user-name'];
+			$empty_user->email = $_POST['user-email'];
+			$empty_user->password = $_POST['user-password'];
 
-	<div class="form-control">
-		<label class="form-label" for="user_name">Name</label>
-		<input type="text" class="form-input" value="$user->name" name="user_name" id="user_name">
-	</div>
+			$id = count($users);
+			array_push($users, $empty_user);
 
-	<div class="form-control">
-		<label class="form-label" for="user_email">Email</label>
-		<input type="text" class="form-input" value="$user->email" name="user_email" id="user_email">
-	</div>
+			file_put_contents($filename, json_encode($users));
 
-	<div class="form-control">
-		<label class="form-label" for="user_classes">Classes</label>
-		<input type="text" class="form-input" value="$classes" name="user_classes" id="user_classes">
-	</div>
-	
-	<div class="form-control">
-		<button type="submit" name="action" value="save" class="form-button">Save</button>
-	</div>
-START;
+			header("location:{$_SERVER['PHP_SELF']}?id=$id");
+			break;
+		case "delete":
+			array_splice($users,$_GET['id'],1);
 
-if ($id >= 0) {
-echo <<<DELETE
-	<div class="form-control">
-		<button type="submit" name="action" value="delete" class="form-button">Delete</button>
-	</div>
-DELETE;
+			file_put_contents($filename,json_encode($users));
+
+			header("location:{$_SERVER['PHP_SELF']}");
+			break;
+	}
 }
 
-echo <<<END
+
+function showUserPage($user) {
+
+$id = $_GET['id'];
+$password = $user->password;
+$addoredit = $id=="new" ? 'Add' : 'Edit';
+$createorupdate = $id=="new" ? 'create' : 'update';
+$deletebutton = $id=="new" ? '' : <<<HTML
+<li class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$id&action=delete">Delete</a></li>
+HTML;
+
+$data_show = $id=="new" ? "" : <<<HTML
+<div class="card soft">
+<h2>$user->name</h2>
+
+<div class="form-control">
+	<strong>Email</strong>
+	<span>$user->email</span>
 </div>
+<div class="form-control">
+	<strong>Password</strong>
+	<span>$password</span>
+</div>
+</div>
+HTML;
+
+
+
+echo <<<HTML
+<nav class="nav-pills">
+	<div class="card soft">
+	<ul>
+		<li class="flex-none"><a href="{$_SERVER['PHP_SELF']}">Back</a></li>
+		<li class="flex-stretch"></li>
+		$deletebutton
+	</ul>
+	</div>
+</nav>
+<form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&action=$createorupdate">
+	<div class="grid gap">
+		<div class="col-xs-12 col-md-4">
+			$data_show
+		</div>
+		<div class="col-xs-12 col-md-8">
+			<div class="card soft">
+			<h2>$addoredit User</h2>
+			<div class="form-control">
+				<label class="form-lable" for="user-name">Name</label>
+				<input class="form-input" id="user-name" name="user-name" value="$user->name">
+			</div>
+			
+			<div class="form-control">
+				<label class="form-lable" for="user-email">Email</label>
+				<input class="form-input" id="user-email" name="user-email" value="$user->email">
+			</div>
+			<div class="form-control">
+				<label class="form-lable" for="user-password">Password</label>
+				<input class="form-input" id="user-password" name="user-password" value="$password">
+			</div>
+			<div class="form-control">
+				<input type="submit" class="form-button confirm" value="Submit">
+			</div>
+			</div>
+		</div>
+	</div>
 </form>
-END;
+HTML;
 
 }
 
-?>
 
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Learning Data</title>
@@ -87,52 +142,31 @@ END;
 			</div>
 			<nav class="nav-flex flex-none">
 				<ul>
+					<li><a href="index.php">Home</a></li>
 					<li><a href="admin/users.php">User List</a></li>
-					<li><a href="admin/users.php?id=-1">Add User</a></li>
+					<li><a href="admin/users.php?id=new">Add New User</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 
 	<div class="container">
-		<div class="card soft">
 
 			<?php 
 
-			if (isset($_GET['id'])) {
-
-				$id = $_GET['id'];
-				if ($id >= 0 && $id < count($users)) {
-					showUserPage($id, $users[$id]);
-				} else {
-					$new_user = (object) array('type'=>'', 'name'=>'', 'email'=>'', 'classes'=>array());
-					showUserPage($id, $new_user);
-				}
+			if(isset($_GET['id'])){
+				// conditional ternary
+				// ifthis ? iftruedothis : iffalsedothis
+				showUserPage(
+					$_GET['id']=="new" ? 
+					$empty_user :
+					$users[$_GET['id']]
+				);
 
 			} else {
 
-				if (isset($_POST['id'])) {
-					$id = $_POST['id'];
-					if ($_POST['action'] == 'save') {
-						$cur_user = NULL;
-						if ($id >= 0 && $id < count($users)) {
-							$cur_user = $users[$id];
-						} else {
-							$cur_user = (object) array();
-							array_push($users, $cur_user);
-						}
-						$cur_user->name = $_POST['user_name'];
-						$cur_user->type = $_POST['user_type'];
-						$cur_user->email = $_POST['user_email'];
-						$cur_user->classes = explode(", ", $_POST['user_classes']);
-					} elseif ($_POST['action'] == 'delete') {
-						\array_splice($users, $id, 1);
-					}
-
-					putData("../data/users.json", $users);
-				}
-
 			?>
+			<div class="card soft">
 			<h2>User List</h2>
 
 			<nav class="nav">
@@ -150,16 +184,14 @@ END;
 			?>
 			</ul>
 			</nav>
+			</div>
 
 			<?php 
 
 			}
 
 			?>
-		</div>
 	</div>
 	
-</body>
-</html>
 </body>
 </html>

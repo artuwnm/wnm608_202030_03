@@ -5,16 +5,17 @@
 	--grid-gap: 1em;
 	grid-template-columns: repeat(12,1fr);
 }
-	.grid-10 {
-		grid-template-columns: repeat(10,1fr);
-	}
+
+.grid-10 {
+	grid-template-columns: repeat(10,1fr);
+}
 
 .grid.gap {
 	grid-gap:var(--grid-gap);
 	gap:var(--grid-gap);
 }
-	.gap.large { --grid-gap:2em; }
-	.gap.small { --grid-gap:0.5em; }
+.gap.large { --grid-gap:2em; }
+.gap.small { --grid-gap:0.5em; }
 
 
 
