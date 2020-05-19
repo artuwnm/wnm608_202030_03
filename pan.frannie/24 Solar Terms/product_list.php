@@ -41,8 +41,8 @@ include_once "lib/php/functions.php";
 		</div>
 
 
-        <div class="filter-product">
-		    <div class="form-control display-flex" >
+        <div class="filter-product grid">
+		    <div class="form-control display-flex col-8" >
 			    <div class="flex-none">
 				    <button type="button" class="form-button js-filter" data-type="category" data-value="">All</button>
 			    </div>
@@ -61,7 +61,7 @@ include_once "lib/php/functions.php";
 			
 		    </div>
 
-		    <div class="form-control form-select">
+		    <div class="form-control form-select col-4 display-flex" style="flex-direction: row-reverse;margin-top:5px;">
 			<!-- .form-select>select>option -->
 			
 				<select class="js-sort" style="width:200px;height:40px;">
@@ -78,9 +78,7 @@ include_once "lib/php/functions.php";
 		<div class="grid gap productlist"></div>
 
 
-		<div>
-			<a href="admin">Product Admin</a>
-		</div>
+
 
 
 

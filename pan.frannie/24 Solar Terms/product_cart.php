@@ -33,19 +33,20 @@ $cartItems = getCartItems();
 			</ul>
 		</nav>
 		<div class="grid gap">
-			<div class="col-xs-12 col-md-8">
+			<div class="col-xs-12 col-md-12">
 				<div class="card flat">
 				<?php
 				echo array_reduce($cartItems,'cartListTemplate');
 				?>
 				</div>
 			</div>
+			<div class="col-xs-12 col-md-8"></div>
 			<div class="col-xs-12 col-md-4">
 				<div class="card flat">
 					<?= cartTotals() ?>
 					
-					<div class="btnstyle card-section">
-						<button class="btn first"><a href="product_checkout.php" class="form-button confirm">Checkout</a></button>
+					<div class="btnstyle card-section" style="float:right;margin-top:10px;">
+						<button class="btn first"><a href="product_checkout.php" class="confirm">Checkout</a></button>
 					</div>
             
 

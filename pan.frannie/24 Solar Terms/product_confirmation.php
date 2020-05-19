@@ -14,19 +14,30 @@ $_SESSION['cart'] = [];
 
 	<?php include "parts/navbar.php" ?>
 
+		<div class="cardblue">
+			<h2 class="bigtitle">Order Confirmation</h2>
+			
+		</div>
+
+
 	<div class="container">
-		<div class="card soft">
-			<h2>Product Confirmation</h2>
 
-			<div>
-				Thank you for purchasing.
+			<div class="thanks">
+				<p style="text-align:center;">Hi, we’re getting your order ready to be shipped. You will be receiving a confirmation email with order details.</p>
+				<p style="text-align:center;font-weight:500;">ORDER NO. 2457767835</p>
 			</div>
+            
+            <hr>
 
-			<div>
-				<a class="form-button" href="product_list.php">Continue Shopping</a>
+			<div style="margin-top:50px;display:flex;">
+				<a class="form-button"  href="product_list.php" style="margin:auto">Continue Shopping</a>
 			</div>
 		</div>
-	</div>
+
+
+
+<?php include "parts/footer.php" ?>
+
 	
 </body>
 </html>

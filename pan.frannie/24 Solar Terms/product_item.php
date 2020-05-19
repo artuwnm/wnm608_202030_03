@@ -50,15 +50,17 @@ $images = explode(",",$o->images);
 						<h2><?= $o->title ?></h2>
 						<div class="product-description">
 							<div class="product-price"><h3>&dollar;<?= $o->price ?></h3></div>
-                            <p>Color:<p><?= $o->color ?></p></p>
-							
-							<p>Size:<p><?= $o->size ?></p></p>
+
+							<div style="margin-top:80px;">
+                                <p style="display: inline;">Color:  <p style="display: inline;"><?= $o->color ?></p></p>
+							    <p style="display: inline;">Size:  <p style="display: inline;"><?= $o->size ?></p></p>
+						    </div>
 							
 						</div>
 					</div>
 					<div class="card-section">
-						<label class="form-label"><h4>Amount</h4></label>
-						<div class="form-select">
+						<label class="form-label"><p style="display: inline;">Amount</p></label>
+						<div class="form-select" style="display: inline;">
 							<select name="amount">
 								<!-- option*10>{$} -->
 								<option>1</option>
@@ -75,8 +77,9 @@ $images = explode(",",$o->images);
 						</div>
 					</div>
 
+                    <hr>
 
-					<div class="btnstyle card-section">
+					<div class="btnstyle card-section btnspace">
 						<button class="btn first">
 						<input type="hidden" name="action" value="add-to-cart">
 						<input type="hidden" name="id" value="<?= $o->id ?>">

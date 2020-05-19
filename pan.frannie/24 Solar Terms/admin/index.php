@@ -77,7 +77,7 @@ switch(@$_GET['action']) {
 			`date_modify`
 		)
 		VALUES
-		(?,?,?,?,?,?,?,NOW(),NOW())
+		(?,?,?,?,?,?,?,?,?,NOW(),NOW())
 		");
 		$statement->execute([
 			$_POST['product-title'],
@@ -121,21 +121,22 @@ switch(@$_GET['action']) {
 
 function makeListItemTemplate($r,$o) {
 return $r.<<<HTML
-<div class="itemlist-item">
-	<div class="flex-none">
+<div class="itemlist-item grid" style="margin-bottom:30px;">
+	<div class="flex-none col-2">
 		<div class="image-square">
 			<img src="../img/$o->thumbnail">
 		</div>
 	</div>
-	<div class="flex-stretch">
+	<div class="flex-stretch col-6" style="margin-left:10px">
 		<div><strong>$o->title</strong></div>
 		<div><span>$o->category</span></div>
 	</div>
-	<div class="flex-none display-flex">
+	<div class="flex-none display-flex col-4" style="flex-direction:row-reverse;">
 		<div><a class="form-button" href="?id=$o->id">edit</a></div>
 		<div><a class="form-button" href="../product_item.php?id=$o->id">visit</a></div>
 	</div>
 </div>
+<hr style="margin-bottom:35px">
 HTML;
 }
 
@@ -157,9 +158,9 @@ $data_show = $id=="new" ? "" : <<<HTML
 <div class="card soft">
 
 <div class="product-main">
-	<img src="img/$o->thumbnail">
+	<img src="../img/$o->thumbnail">
 </div>
-<div class="product-thumbs">$images</div>
+
 
 <h2>$o->title</h2>
 
@@ -195,8 +196,8 @@ HTML;
 
 echo <<<HTML
 <nav class="nav-pills">
-	<div class="card soft">
-	<ul>
+	<div >
+	<ul class="display-flex" style="list-style-type:none">
 		<li class="flex-none"><a href="{$_SERVER['PHP_SELF']}">Back</a></li>
 		<li class="flex-stretch"></li>
 		$deletebutton
@@ -269,7 +270,7 @@ HTML;
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Learning Data</title>
+	<title>Product Admin-24 SOLAR TERMS</title>
 	
 	<?php include "../parts/meta2.php" ?>
 </head>
@@ -278,11 +279,11 @@ HTML;
 	<header class="navbar">
 		<div class="container display-flex">
 			<div class="flex-stretch">
-				<h1>Product Admin</h1>
+				<h2>Product Admin</h2>
 			</div>
-			<nav class="nav-flex flex-none">
+			<nav class="nav flex-none">
 				<ul>
-					<li><a href="../product_list.php">Home</a></li>
+					<li><a href="../index.php">Home</a></li>
 					<li><a href="index.php">Product List</a></li>
 					<li><a href="?id=new">Add New Product</a></li>
 				</ul>

@@ -23,16 +23,16 @@ function cartListTemplate($r,$o) {
 $pricefixed = number_format($o->total, 2, '.', '');
 $selectamount = selectAmount($o->amount,10);
 return $r.<<<HTML
-<div class="card-section">
-	<div class="product-thumbs" style="margin-right:1em">
+<div class="card-section grid">
+	<div class="product-thumbs col-2" style="margin-right:1em;">
 		<img src="img/$o->thumbnail">
 	</div>
-	<div class="flex-stretch">
+	<div class="flex-stretch col-10" >
 		<div class="display-flex">
 			<div class="flex-stretch">
-				<strong>$o->title</strong>
+				<strong><p>$o->title</p></strong>
 			</div>
-			<div>&dollar;$pricefixed</div>
+			<div><p>&dollar;$pricefixed</p></div>
 		</div>
 		<div class="display-flex">
 			<div class="flex-stretch" style="font-size:0.8em">
@@ -54,6 +54,7 @@ return $r.<<<HTML
 		</div>
 	</div>
 </div>
+<hr>
 HTML;
 }
 
@@ -86,25 +87,36 @@ return <<<HTML
 <div class="card-section">
 	<div class="display-flex">
 		<div class="flex-stretch">
-			<strong>Sub-Total</strong>
+			<strong><p>Sub-Total</p></strong>
 		</div>
-		<div class="flex-none">&dollar;$pricefixed</div>
+		<div class="flex-none" ><p>&dollar;$pricefixed</p></div>
 	</div>
-	<div class="display-flex">
+	<div class="display-flex" style="margin-top:-30px;">
 		<div class="flex-stretch">
-			<strong>Taxes</strong>
+			<strong><p>Taxes</p></strong>
 		</div>
-		<div class="flex-none">&dollar;$taxfixed</div>
+		<div class="flex-none"><p>&dollar;$taxfixed</p></div>
+	</div>
+	<div class="display-flex" style="margin-top:-30px;">
+		<div class="flex-stretch">
+			<p>Shipping</p>
+		</div>
+		<div class="flex-none"><p>$0.00</p></div>
 	</div>
 </div>
-<div class="card-section">
+
+<hr>
+<div class="card-section" style="margin-top:-28px;">
 	<div class="display-flex">
 		<div class="flex-stretch">
-			<strong>Total</strong>
+			<strong><p>Total</p></strong>
 		</div>
-		<div class="flex-none">&dollar;$taxedfixed</div>
+		<div class="flex-none"><p>&dollar;$taxedfixed</p></div>
 	</div>
 </div>
+
+<hr style="margin-top:-20px;">
+
 HTML;
 }
 

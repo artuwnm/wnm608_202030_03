@@ -46,8 +46,25 @@ h4,
 h5,
 h6 {
 	font-family:Montserrat;
-	font-weight:600;
 	color:#5B76A1;
+}
+
+h1,
+h4,
+h5,
+h6 {
+	font-weight:600;
+}
+
+
+h2 {
+	font-size: 30px;
+	font-weight:600;
+}
+
+h3 {
+	font-size:25px;
+	font-weight:500;
 }
 
 
@@ -375,12 +392,17 @@ input[type="go"]:hover {
 	.card-section {
 		padding:1em;
 	}
-	.card-section+.card-section {
+/*	.card-section+.card-section {
 		border-top:1px solid #7184A2;
 	}
 
 
+*/
 
+
+hr {
+	border-top:1px solid #9eb3d3ff;
+}
 
 
 
@@ -391,6 +413,12 @@ input[type="go"]:hover {
     padding: 1em;
     width:100%;
     margin-bottom:60px;
+}
+
+.thanks{
+	position: center;
+	overflow: hidden;
+	width:100%;
 }
 
 
@@ -429,7 +457,7 @@ input[type="go"]:hover {
 
 
 .product-thumbs img{
-	max-width: 15%;
+	max-width: 100%;
 }
 
 
@@ -437,12 +465,23 @@ input[type="go"]:hover {
 	max-width: 100%;
 }
 
+.product-image img:hover
+    {
+      opacity: 0.5;
+/*      filter: alpha(opacity=5);*/
+    }
+
+
+
+
+
 .product-main img{
 	max-width:100%;
 }
 
+
 .image-square img{
-	max-width:5%;
+	max-width:100%;
 }
 
 
@@ -506,6 +545,11 @@ input[type="go"]:hover {
 	float:right;
 }
 
+
+.btnspace{
+	margin-top:20px;
+}
+
 /*_____________________________________________________________________________________________
 */
 
@@ -551,16 +595,15 @@ input[type="go"]:hover {
 
 
 
-.js-sort {
+
+
+select {
    font-family:Montserrat;
    background-color:white;
    color: #7184A2; 
    border: 1px solid #9eb3d3ff;
    font-size: 16px;
-
 }
-
-
 
 
 
