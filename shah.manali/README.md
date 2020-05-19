@@ -2,6 +2,10 @@
 
 - http://manalishah.com
 - http://manalishah.com/aau/wnm608/shah.manali
-- http://manalishah.com/aau/wnm608/shah.manali/recipes
 - http://manalishah.com/aau/wnm608/shah.manali/stylyguide
--http://manalishah.com/aau/wnm608/shah.manali/notes/
+
+Products Website
+http://www.manalishah.com/aau/wnm608/shah.manali/home.php
+
+Admin
+http://www.manalishah.com/aau/wnm608/shah.manali/admin/
