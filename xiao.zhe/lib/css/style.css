@@ -369,6 +369,26 @@ a.navL {
     float: left;
     border-right: 20px;
 	}
+	.card.orange{
+	/*box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.1);*/
+    border-radius: 0.1em;
+	border-right: 30px;
+    color: #000;
+    background-color: #EE6E08;
+/*    width: 45%;*/
+    float: left;
+    border-right: 20px;
+	}
+
+	.card.orange2{
+	/*box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.1);*/
+	padding-top: -20px;
+    color: #000;
+    background-color: #EE6E08;
+    width: 46%;
+    float: left;
+
+	}
 
 	.card.home {
 	box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.1);
