@@ -505,6 +505,7 @@ img:hover {
   color: white; 
   border: 0;
 }
+
 .button.primary:hover {
   background-color: #2d2d2b;
   color: white;
@@ -861,7 +862,7 @@ footer {
 
 
 font-family: Roboto;
-font-size: 
+text-align: center;
 
 }
 
@@ -870,6 +871,7 @@ font-size:
 .About-description h2{
 
 font-size:25px;
+text-align: center;
 
 
 }
@@ -881,7 +883,11 @@ font-size:25px;
 
  text-align: center;
 
+}
 
 
+.itembutton{
+
+text-align: center;
   
 }

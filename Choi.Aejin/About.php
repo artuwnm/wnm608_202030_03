@@ -52,7 +52,7 @@
  <div class="container">
     
 
-<div class="About-description"><h2>Ceramics for Modern Life</h2><br><br><p>ABODE is an online store which is store with ceramic serving pieces, selling tableware.
+<div class="About-description"><h2>Ceramics for Modern Life</h2><br><br><p>Hi there!<br> ABODE is an online store which is store with ceramic serving pieces, selling tableware.
 Simple and modern online store. Enjoy the daily life and hope to provide objects that
 encourage such occasion, every day.<br><br>
 We use our proprietary blends of porcelain and glazes in order to create strong and elegant tableware, intended to be used for generations. ABODE Store is an arbiter of beautifully well-imagined works from the creative minds of many inspiring craftsmen, bringing thoughtful, modern design to our local community and abroad. 
@@ -65,6 +65,39 @@ We use our proprietary blends of porcelain and glazes in order to create strong 
 
 
 <img src="img/mainposter.jpg" alt="mainposter" class="center" >
+
+<br>
+ <div class="container">
+    
+
+<div class="About-description"><h2>Contact Us</h2><p>ABODE provides items for the kitchen, pantry and table.
+ABODE appreciates the kindness and support of our friends and community
+and your patience on any outstanding orders or shipments.
+
+You can still visit us at
+ABODE.com or contact us at info@ABODESF.com.
+</p>
+
+</div>
+</div>
+
+
+
+<br>
+ <div class="container">
+    
+
+<div class="About-description"><h2>Hours</h2><p>10am<br>6pm Monday <br>Saturday
+
+
+
+
+
+</p>
+
+</div>
+</div>
+
 
 
 
