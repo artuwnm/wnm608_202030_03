@@ -30,19 +30,25 @@ session_start();
         <div class="slider-1">
             <h3 style="color:white">It's not just a keychain...</h3>
             <h4 style="color:white"> It's an statement!</h4>
-            <div class="form-button red" href="product_list.php">VISIT OUR STORE</a></div>
+            <div class="form-control">
+            <a class="form-button yellow" href="product_list.php">VISIT OUR STORE</a>
+            </div>
         </div>
       </div>
 
       <div class="col-xs-12 col-md-6">
         <div class="slider-2">
           <h3 style="color:white">Never loose<br> your keys<br> again!</h3>
-          <div class="form-button red" href="product_list.php">VISIT OUR STORE</a></div>
+          <div class="form-control">
+            <a class="form-button green" href="product_list.php">VISIT US</a>
+            </div>
         </div>
 
         <div class="slider-3">
           <h3 style="color:white">We sell one of a kind keychains</h3>
-          <div class="form-button green" href="product_list.php">VISIT OUR STORE</a></div>
+          <div class="form-control">
+            <a class="form-button red" href="product_list.php">VISIT OUR STORE</a>
+            </div>
           </div>
       </div>
     </div>

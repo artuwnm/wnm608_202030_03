@@ -170,6 +170,14 @@ height:auto;
 margin-top: 1em;
 }
 
+.contacticons{
+    width: 180px;
+    height: 180px;
+    position: relative;
+    margin: 0 auto;
+
+}
+
 
 /* ICON */
 
@@ -297,7 +305,7 @@ size: cover;
 .bigpic {
 	size:100%; 
  	width: auto;
- 	vertical-align: middle;
+ 	padding-top:4em;
 }
 
 .thankyoupic{
@@ -1402,8 +1410,9 @@ text-align:center;
 .yellow{
 	border: 0.16em solid #f8b732;
 	color:#ffffff;
-	margin-top: 0.4em;
 	background-color:rgb(247, 183, 51);
+	margin:0.4em auto;
+
 }
 
 .grey{
@@ -1733,6 +1742,17 @@ text-align:center;
 .team-social{
 	text-align: center;
 }
+
+
+/* MAP */
+
+.google-maps{
+	overflow: hidden;
+	text-align: center;
+}
+
+
+
 
 
 

@@ -37,7 +37,7 @@ session_start();
 
 		<div class="grid gap">
 				<div class="col-xs-12 col-md-6">
-					<div class="1 big"><img src="img/colkc.png" alt="colombia"></div>
+					<div class="bigpic"><img src="img/colkc.png" alt="colombia"></div>
 				</div>
 			
 
@@ -59,7 +59,6 @@ session_start();
 					<br>
 					</div>
 			
-					<a class="form-button red" href="product_list.php">Shop Now</a>
 
 			</div>
 
@@ -68,9 +67,11 @@ session_start();
 
 	</div>
 
-
+<br><br><br>
 
 	<h3 style="text-align: center"> Our Team </h3>
+
+	<br><br><br>
 
 
 
