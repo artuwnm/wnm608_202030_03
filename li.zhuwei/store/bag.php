@@ -14,13 +14,6 @@ $cartItems = getCartItems();
 <head>
   <title>Bag Page</title>
   <?php include "parts/meta.php" ?>
-  <link rel="stylesheet" href="lib/css/gridsystem.css">
-  <link rel="stylesheet" href="lib/css/styleguide.css">
-  <link rel="stylesheet" href="css/storetheme.css">
-  <script src="https://kit.fontawesome.com/041ded284b.js" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="js/products.js"></script></head>
 </head>
 <body>
   <?php include "parts/navbar.php" ?>

@@ -13,7 +13,7 @@ session_start();
 <body>
   <?php include "parts/navbar.php" ?>
 
-  <main>
+  <main style="margin-top: 0px;">
     <div class="home-images">
       <div class="img-container home-img1">
         <div class="hero-text">

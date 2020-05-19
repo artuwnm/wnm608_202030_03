@@ -106,7 +106,7 @@ main .container {
 }
 .flex-none { flex: none; }
 
-.flex-align-center { align-items:center; }\
+.flex-align-center { align-items:center; }
 
 /* COMPONENT CLASSES */
 .navbar {
@@ -379,7 +379,7 @@ main .container {
   outline:0;
   width:100%;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 .hotdog .icon {
   padding:0 1em;

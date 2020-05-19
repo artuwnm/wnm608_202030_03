@@ -131,7 +131,7 @@ main {
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  opacity: 0.9;
+  margin-top: 40px;
 }
 
 .img-container {
@@ -153,12 +153,13 @@ main {
 }
 
 .home-img1 {
-    margin-top: 0px;
-    background-image: radial-gradient(
+  /*background-image: url("../img/home2.png");*/
+  background-image: radial-gradient(
     circle at top right,
     rgba(4, 5, 3, 0.33),
     rgba(249, 250, 252, 0.32)
   ), url("../img/home2.png");
+  opacity: 0.9;
 }
 
 .home-img2 {
