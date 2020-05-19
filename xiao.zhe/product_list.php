@@ -4,6 +4,7 @@ include_once "lib/php/functions.php";
 include_once "parts/templates.php";
 
 
+
 $rows = getRows(
     makeConn(),
     "SELECT *
@@ -18,16 +19,24 @@ $rows = getRows(
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Store: Product List</title>
+    <title>Shop</title>
     
     <?php include "parts/meta.php" ?>
+    <script src="js/list.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/products.js"></script>
+
+<script src="lib/js/functions.js"></script>
+<script src="js/templates.js"></script> 
+
 </head>
 <body>
 
     <?php include "parts/navbar.php" ?>
 
     <div class="container">
-        <h2>Product List</h2>
+        <h4>Product List</h4>
         <div class="form-control">
             <form class="hotdog light" id="product-search">
                 <input type="search" class="search" placeholder="Search Products">
@@ -35,7 +44,7 @@ $rows = getRows(
         </div>
         <div class="form-control display-flex">
             <div class="flex-none">
-                <button type="button" class="form-button js-filter" data-type="category" data-value="">All</button>
+                <button type="button" class="form-button js-filter" data-type="" data-value="">All</button>
             </div>
             <div class="flex-none">
                 <button type="button" class="form-button js-filter" data-type="category" data-value="Workout">Workout</button>

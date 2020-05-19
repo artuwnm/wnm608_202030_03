@@ -19,8 +19,8 @@ session_start();
 		</div>
 
 		<div class="grid gap">
-			<div class="col-xs-12 col-md-8">
-				<div class="card soft">
+			<div class="col-xs-12 col-md-7">
+				<div class="card softad1 ">
 					<form class="form">
 						<h2>Payment Type</h2>
 						<div class="form-control">
@@ -72,9 +72,9 @@ session_start();
 					</form>
 				</div>
 			</div>
-			<div class="col-xs-12 col-md-4">
+			<div class="col-xs-12 col-md-5">
 
-				<div class="card soft">
+				<div class="card softad1">
 					<a class="form-button" href="product_confirmation.php">Confirm Purchase</a>
 				</div>
 				

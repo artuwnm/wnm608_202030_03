@@ -32,7 +32,7 @@ $images = explode(",",$o->images);
 
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-7">
-				<div class="card soft">
+				<div class="card softad1">
 					<div class="product-main">
 						<img src="/aau/wnm608_202030_03/xiao.zhe/images/store/<?= $o->images ?>" alt="">
 					</div>
@@ -47,14 +47,14 @@ $images = explode(",",$o->images);
 
 <!-- 				<div class="card item1"> -->
 					
-					<div class="col-xs-12 col-md-5">
+					<div class="col-xs-12 col-md-5" >
 					  <div class="card ">
-						<h2><?= $o->title ?></h2>
-						<div class="product-description">
-						<?= $o->category ?></div>
-						<div class="product-price">&dollar;<?= $o->price ?></div>
-						<div class="card ">
-						<h3>Description</h3>
+						<div class="card"><h2><?= $o->title ?></h2></div>
+						<div class="card"><div class="product-description">
+						<h4><?= $o->category ?></h4></div>
+						<div class="product-price">&dollar;<?= $o->price ?></div></div>
+						<div class="card">
+						<h5>Description</h5>
 						<div><?= $o->description ?></div>
 						</div>
 

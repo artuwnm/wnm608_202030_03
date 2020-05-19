@@ -3,13 +3,13 @@
 include_once "../lib/php/functions.php";
 
 $empty_product = (object) [
-	"title"=>"Kiwi",
-	"price"=>"2.56",
-	"category"=>"fruit",
-	"description"=>"A small hairy flightless bird.",
-	"thumbnail"=>"fruit_kiwi_m.jpg",
-	"images"=>"fruit_kiwi_m.jpg",
-	"quantity"=>"576"
+	"title"=>"WOD",
+	"price"=>"0.00",
+	"category"=>"Workout",
+	"description"=>"Must be a great workout.",
+	"thumbnail"=>"Gymnastics2_m.jpg",
+	"images"=>"Gymnastics2.jpg",
+	"quantity"=>"10"
 ];
 
 
@@ -176,8 +176,9 @@ HTML;
 
 
 echo <<<HTML
+
 <nav class="nav-pills">
-	<div class="card soft">
+	<div class="card">
 	<ul>
 		<li class="flex-none"><a href="{$_SERVER['PHP_SELF']}">Back</a></li>
 		<li class="flex-stretch"></li>
@@ -191,7 +192,7 @@ echo <<<HTML
 			$data_show
 		</div>
 		<div class="col-xs-12 col-md-7">
-			<div class="card soft">
+			<div class="card softad1">
 			<h2>$addoredit Product</h2>
 			<div class="form-control">
 				<label class="form-label" for="product-title">Title</label>
@@ -243,23 +244,42 @@ HTML;
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Learning Data</title>
+	<title>Add Products & Data</title>
 	
 	<?php include "../parts/meta.php" ?>
 </head>
 <body>
-
-	<header class="navbar">
-		<div class="container display-flex">
-			<div class="flex-stretch">
-				<h1>Product Admin</h1>
+<!-- 	<header>
+		<div class="container">
+			<nav class="nav">
+				<div class="nav_left">
+					<header class="nav-type" >N°F COACH</header> 
+				</div>
+				<div class="nav_right">
+					<a href="index.php" class="navr">Home</a>
+					<a href="about.php" class="navr">About</a>
+					<a href="product_list.php" class="navr">Shop</a>
+					<a href="cart.php" class="navr">Cart</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+ -->
+	<header class="container">
+		<div class="nav">
+			<div class="nav_left">
+				<header class="nav-type">Product Admin</header>
 			</div>
-			<nav class="nav-flex flex-none">
-				<ul>
+			<nav class="nav_right">
+				<a href="./product_list.php" class="navr">Products</a>
+				<a href="admin/" class="navr">List</a>
+				<a href="admin/?id=new" class="navr">Add</a>
+
+<!-- 				<ul>
 					<li><a href="./product_list.php">Home</a></li>
 					<li><a href="admin/">Product List</a></li>
 					<li><a href="admin/?id=new">Add New Product</a></li>
-				</ul>
+				</ul> -->
 			</nav>
 		</div>
 	</header>
@@ -283,8 +303,8 @@ HTML;
 			} else {
 
 			?>
-			<div class="card soft">
-			<h2>User List</h2>
+			<div class="card">
+			<h2>Product List</h2>
 
 			<div class="itemlist">
 			<?php

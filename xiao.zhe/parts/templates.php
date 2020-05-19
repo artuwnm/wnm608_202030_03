@@ -45,13 +45,7 @@ return $r.<<<HTML
 					</div></div>
 				</form>
 			</div>
-			<div>
-				<form method="get" action="data/form_actions.php" onchange="this.submit()">
-					<input type="hidden" name="action" value="update-cart-amount">
-					<input type="hidden" name="id" value="$o->id">
-					<div class="display-flex"><div class="flex-none">$selectamount</div></div>
-				</form>
-			</div>
+
 		</div>
 	</div>
 </div>

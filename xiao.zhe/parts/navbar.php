@@ -12,7 +12,7 @@
 				</ul>
 			</nav> -->
 	<header>
-			<div class="container">
+		<div class="container">
 			<nav class="nav">
 				<div class="nav_left">
 					<header class="nav-type" >N°F COACH</header> 
@@ -23,9 +23,7 @@
 					<a href="product_list.php" class="navr">Shop</a>
 					<a href="cart.php" class="navr">Cart</a>
 				</div>
-
 			</nav>
-
 		</div>
 	</header>
 

@@ -359,6 +359,16 @@ a.navL {
     float: left;
     border-right: 20px;
 	}
+	.card.softad1{
+	/*box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.1);*/
+    border-radius: 0.1em;
+	border-right: 30px;
+    color: #000;
+    background-color: #f4f4f4;
+    width: 45%;
+    float: left;
+    border-right: 20px;
+	}
 
 	.card.home {
 	box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.1);
@@ -508,6 +518,7 @@ a.navL {
 /* FORMS */
 
 .form-input {
+	border-radius: 	1em;
 	display:block;
 	width:100%;
 	border-width:0;
