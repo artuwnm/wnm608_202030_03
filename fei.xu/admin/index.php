@@ -2,7 +2,7 @@
 include_once "../lib/php/functions1.php";
 
 $empty_product = (object) [
-	"name"=>"Watermelon",
+	"name"=>"Watermelon Sparklings",
 	"price"=>"1.99",
 	"category"=>"sparklings",
 	"description"=>"Pure flavored sparklings, with delicious watermelon and other natural flavors.",
