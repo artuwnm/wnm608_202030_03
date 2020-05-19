@@ -30,7 +30,7 @@ session_start();
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-4">
 					
-						<h4>Billing Address</h4>
+						<h6>Billing Address</h6>
 						<div class="form-control">
 							<label for="name" class="form-label">Full name</label>
 							<input type="text" class="form-input" name="name">
@@ -62,7 +62,7 @@ session_start();
 				
 					<form class="form">
 
-						<h4>Credit Card Information</h4>
+						<h6>Credit Card Information</h6>
 					
 							<label for="fname">Accepted Cards</label>
             					<div class="icon-container">
@@ -110,7 +110,7 @@ session_start();
 				<div class="col-xs-12 col-md-4">
 				
 					<form class="form">
-						<h4>Additional Information</h4>
+						<h6>Additional Information</h6>
 
 							<label for="message"  class="form-label">Message</label>
 							<input type="text area" class="form-input" name="message" style="height: 150px;">

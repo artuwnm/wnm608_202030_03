@@ -17,9 +17,12 @@ $cartItems = getCartItems();
 	<?php include "parts/navbar.php" ?>
 
 	<header class="pagename">
-		<div class="container display-flex pagename">Product Cart</div>
+		<div class="container display-flex">
+			<div class="pagename">Product Cart</div>
 			</div>
 	</header>
+
+
 
 	<div class="container">
 
@@ -31,7 +34,7 @@ $cartItems = getCartItems();
 
 
 		<div class="grid gap">
-				<div class="col-xs-12 col-md-7">
+				<div class="col-xs-12 col-md-8">
 					<div class="card flat">
 					<?php
 					echo array_reduce($cartItems,'cartListTemplate');
@@ -40,12 +43,13 @@ $cartItems = getCartItems();
 				</div>
 
 
-				<div class="col-xs-12 col-md-5">
+				<div class="col-xs-12 col-md-4">
 					<div class="card flat">
 					<?= cartTotals() ?>
 						<div class="card-section">
 						<a href="product_checkout.php" class="form-button red">Checkout</a>
 						</div>
+						
 					</div>
 				</div>
 		</div>
@@ -59,7 +63,7 @@ $cartItems = getCartItems();
 <div class="footer">
 
 	<div class="grid gap">
-			<div class="col-xs-12 col-md-6">
+			<div class="col-xs-12 col-md-3">
 
   				<img class="logo-footer" src="img/coolkeychains-logo.png" alt="CoolKeychains">
   				<div class="vl"></div>

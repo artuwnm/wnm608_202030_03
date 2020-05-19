@@ -25,7 +25,7 @@ $pricefixed = number_format($o->total, 2, '.', '');
 $selectamount = selectAmount($o->amount,10);
 return $r.<<<HTML
 <div class="display-flex card-section">
-	<div class="flex-none product-thumbs" style="margin-right:1em">
+	<div class="flex-none product-thumbs2" style="margin-right:1em">
 		<img src="images/$o->thumbnail">
 	</div>
 	<div class="flex-stretch">
@@ -41,7 +41,7 @@ return $r.<<<HTML
 					<input type="hidden" name="action" value="delete-cart-item">
 					<input type="hidden" name="id" value="$o->id">
 					<div class="display-flex"><div class="flex-none">
-						<input type="submit" class="form-button" value="delete">
+						<input type="submit" class="form-button" value="Delete">
 					</div></div>
 				</form>
 			</div>
@@ -57,6 +57,9 @@ return $r.<<<HTML
 </div>
 HTML;
 }
+
+
+
 
 
 function selectAmount($amount=1,$total=10) {
@@ -129,7 +132,7 @@ echo <<<HTML
 HTML;
 }
 
-function recommendedCategory($cat,$limit=3) {
+function recommendedCategory($cat,$limit=4) {
 	$rows = getRows(makeConn(),"SELECT * FROM `products` WHERE category='$cat' ORDER BY `date_create` DESC LIMIT $limit");
 	recommendedProducts($rows);
 }

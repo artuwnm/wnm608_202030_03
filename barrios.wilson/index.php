@@ -63,7 +63,7 @@ session_start();
 
 <h3 style="text-align: center"> New Arrivals </h3>
 
-<div class="container">
+<div >
     <?php recommendedCategory('places') ?>
     <br>
     <br>

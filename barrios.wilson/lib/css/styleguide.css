@@ -77,6 +77,10 @@ h5{
 
 
 h6 {
+	font-size: 1em;
+	font-family:'Poppins', sans-serif;
+	font-weight: 500
+	text-transform: uppercase;
 	
 }
 
@@ -312,7 +316,7 @@ size: cover;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width:50%;
+	width:30%;
 	height:auto;
 	padding-bottom: 3em;
 	align-items: center;
@@ -1199,6 +1203,7 @@ text-align:center;
 
 
 
+
 /* TABLE */
 .table {
 	width:100%;
@@ -1337,7 +1342,7 @@ text-align:center;
 	display:inline-block;
 	padding:0.35em 2em;
 	border: 0.16em solid #42ad9d;
-	margin-top: 0.4em;
+	margin-top: 1em;
 	box-sizing: border-box;
 	text-decoration:none;
  	text-transform:uppercase;
@@ -1364,7 +1369,7 @@ text-align:center;
 	display:inline-block;
 	padding:0.35em 2em;
 	border: 0.16em solid #eeeeee;
-	margin: 0 0.3em 0.3em 0;
+	margin: 1em 0.3em 0.3em 0;
 	box-sizing: border-box;
 	text-decoration:none;
  	text-transform:uppercase;
@@ -1432,9 +1437,9 @@ text-align:center;
 .form-select::after {
 	content:'▼';
 	position:absolute;
-	color:#eeeeee;
-	top:50%;
-	right:10rem;
+	color:white;
+	top:25%;
+	right:2rem;
 	transform:translateY(-50%);
 	pointer-events:none;
 	font-size:0.7em;
