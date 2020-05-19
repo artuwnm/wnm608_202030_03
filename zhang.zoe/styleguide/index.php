@@ -5,13 +5,13 @@
 	<title>Style Guide</title>
 
 	<!-- meta:vp -->
-	<meta name="viewport" content="width=device-width">
+	<!-- <meta name="viewport" content="width=device-width">
 
 
 	<link rel="stylesheet" href="../lib/css/styleguide.css">
 	<link rel="stylesheet" href="../lib/css/gridsystem.css">
-	<link rel="stylesheet" href="../css/storetheme.css">
-
+	<link rel="stylesheet" href="../css/storetheme.css"> -->
+	<?php include "../parts/meta.php" ?>
 
 	<style>
 	h2 {
@@ -62,13 +62,17 @@
 			<h1>Heading 1</h1>
 			<h2>Heading 2</h2>
 			<h3>Heading 3</h3>
-			
+			<h4>Heading 4</h4>
+			<h5>Heading 5</h5>
+			<h6>Heading 6</h6>
 
 			<code>
 &lt;h1>Heading 1&lt;/h1>
 &lt;h2>Heading 2&lt;/h2>
 &lt;h3>Heading 3&lt;/h3>
-
+&lt;h4>Heading 4&lt;/h4>
+&lt;h5>Heading 5&lt;/h5>
+&lt;h6>Heading 6&lt;/h6>
 			</code>
 		</div>
 
@@ -89,7 +93,7 @@
 
 	<script>
 	const makeNav = (classes='') => {
-		const links = ['Home','Buy','Sell','About'];
+		const links = ['home','store','about'];
 		let ran = Math.floor(Math.random()*links.length);
 		return `
 		<div>
@@ -364,6 +368,23 @@
 
 
 	<section class="container">
+		<h2 id="checkboxes">Select Dropdown</h2>
+
+		<div class="card">
+			<h3>Basic Select</h3>
+			<div class="form-select">
+				<select>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="container">
 		<h2 id="figures">Figures</h2>
 
 		<div class="card">
@@ -449,7 +470,45 @@
 			</div>
 			</div>
 		</div>
+
+
+		<h3>Product Figures</h3>
+		<div class="grid gap">
+			<div class="col-xs-6 col-md-4">
+				<a href="#" class="display-block">
+					<figure class="product-figure soft">
+						<div class="product-image"><img src="https://via.placeholder.com/300" alt=""></div>
+						<figcaption class="product-description">
+							<div class="product-price">&dollar;5</div>
+							<div class="product-title">Product</div>
+						</figcaption>
+					</figure>
+				</a>
+			</div>
+			<div class="col-xs-6 col-md-4">
+				<a href="#" class="display-block">
+					<figure class="product-figure soft">
+						<div class="product-image"><img src="https://via.placeholder.com/250" alt=""></div>
+						<figcaption class="product-description">
+							<div class="product-price">&dollar;25</div>
+							<div class="product-title">Product</div>
+						</figcaption>
+					</figure>
+				</a>
+			</div>
+			<div class="col-xs-6 col-md-4">
+				<a href="#" class="display-block">
+					<figure class="product-figure soft">
+						<div class="product-image"><img src="https://via.placeholder.com/310" alt=""></div>
+						<figcaption class="product-description">
+							<div class="product-price">&dollar;15</div>
+							<div class="product-title">Product</div>
+						</figcaption>
+					</figure>
+				</a>
+			</div>
+		</div>
 	</section>
 	
 </body>
-</html></html>
+</html>

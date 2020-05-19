@@ -1,20 +1,22 @@
 /* ELEMENT RESETS */
 
+<link href='https://fonts.googleapis.com/css?family=Cormorant' rel='stylesheet'>
+
 *,*::before,*::after {
 	box-sizing:inherit;
 }
 
 :root {
     --color-neutral-dark: #332d2d;
-    --color-neutral-secondbreakfast: #cdc6c6;
-    --color-neutral-medium: #988c8c;
+    --color-neutral-secondbreakfast: #FFF;
+    --color-neutral-medium: #E3B0B2;
     --color-neutral-light: #ece7e7;
 
     --color-main-light:blue;
     --color-main-medium:blue;
     --color-main-dark:blue;
 
-    --color-confirm-light:green;
+    --color-confirm-light:pink;
     --color-confirm-medium:green;
     --color-confirm-dark:green;
 
@@ -35,8 +37,9 @@
 body {
 	box-sizing:border-box;
 	margin:0;
+	margin-bottom: -10px;
 	font-size:100%;
-	font-family:Helvetica,Arial,sans-serif;
+	font-family:Cormorant,Arial,sans-serif;
 }
 
 h1,
@@ -79,7 +82,7 @@ code {
 /* SMALL CLASSES */
 
 .container {
-	max-width:1000px;
+	max-width:750px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -96,7 +99,11 @@ code {
 
 
 .flex-stretch { flex: 1 1 auto; }
-.flex-none { flex: none; }
+/*.flex-none {
+	margin-right: 10px;
+}
+
+*/
 
 .flex-align-center { align-items:center; }
 .flex-justify-center { justify-content:center; }
@@ -109,7 +116,8 @@ code {
 .navbar {
 	background-color:var(--color-neutral-dark);
 	color:var(--color-neutral-light);
-	line-height: var(--header-height);
+	/*line-height: var(--header-height); */
+
 }
 .navbar h1 {
 	margin:0;
@@ -128,7 +136,6 @@ code {
 .nav-flex ul,
 .nav ul {
 	list-style-type:none;
-	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
 }
@@ -147,6 +154,7 @@ code {
 		background-color:var(--color-main-medium);
 		color:var(--color-white);
 		text-decoration:none;
+		border-radius: 15px;
 	}
 	.nav-pills li.active a,
 	.nav-stretch li.active a,
@@ -196,7 +204,6 @@ code {
 	.card>:last-child { margin-bottom:0; }
 
 	.card.soft {
-	    box-shadow: 6px 5px 15px 10px rgba(0, 0, 0, 0.1);
 		border-radius:0.3em;
 	}
 	.card.medium {
@@ -353,9 +360,9 @@ code {
 
 .form-select select,
 .form-button {
-	display:block;
+	display:inline-block;
+	vertical-align:baseline;
 	width:100%;
-	border-width:0;
 	color:inherit;
 	font:inherit;
 	padding:0.5em 1em;
@@ -363,7 +370,7 @@ code {
 	outline:0;
 	text-align:center;
 	background-color:var(--color-neutral-secondbreakfast);
-	border-radius:0.3em;
+	border-radius:25px;
 	text-decoration:none;
 	cursor:pointer;
 }
@@ -372,7 +379,7 @@ code {
 }
 
 	.form-button.confirm {
-		background-color:var(--color-confirm-light);
+		background-color:#E3B0B2;
 	}
 .form-select {
     position: relative;

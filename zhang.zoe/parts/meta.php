@@ -1,8 +1,6 @@
-
 <meta charset="UTF-8">
 
 <base href="http://zoezhaojie.com/aau/wnm608_03/zhang.zoe/">
-
 
 <meta name="viewport" content="width=device-width">
 
@@ -12,3 +10,6 @@
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="js/products.js"></script>
+
+<script src="lib/js/functions.js"></script>
+<script src="js/templates.js"></script>

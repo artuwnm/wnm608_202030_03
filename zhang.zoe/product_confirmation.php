@@ -10,18 +10,25 @@
 	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
-		<div class="card soft">
-			<h2>Product Confirmation</h2>
+		<div class="card soft" style="height:25em;background-image: url('img/bg.jpg');background-size: 100% 100%; text-align: center;">
+		<div style="padding-top: 70px; padding-bottom: 70px;">
+			<h2>congratulation!
+				<br>
+				You have completed your order :)
+			</h2>
 
 			<div>
 				Thank you for purchasing.
 			</div>
+		</div>
 
-			<div>
-				<a class="form-button" href="product_list.php">Continue Shopping</a>
+			<di>
+				<a class="form-button" href="product_list.php" style="width:20%">Continue Shopping</a>
 			</div>
 		</div>
 	</div>
 	
+<?php include "parts/footer.php" ?>
+
 </body>
 </html>

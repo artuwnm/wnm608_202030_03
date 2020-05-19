@@ -1,12 +1,14 @@
 <?php
 include_once "parts/templates.php";
 ?>
-<header class="navbar">
-	<div class="container display-flex">
+<header class="navbar" style="background: #fff;color: #3a56a4">
+	<link href='https://fonts.googleapis.com/css?family=Cormorant' rel='stylesheet'>
+	<div class="container display-flex" >
 		<div class="flex-stretch">
-			<h1>Store</h1>
+			<a href="index.php"><img src="img/logo2.png" alt="" style="width:5em;" ></a>
+			
 		</div>
-		<nav class="nav-flex flex-none">
+		<nav class="nav-flex flex-none" style="font-family: 'Cormorant';font-weight: 700; font-size: 20px;">
 			<ul>
 				<li><a href="index.php">Home</a></li>
 				<li><a href="product_list.php">Store</a></li>
@@ -17,5 +19,9 @@ include_once "parts/templates.php";
 				</a></li>
 			</ul>
 		</nav>
+
+		
 	</div>
 </header>
+
+

@@ -13,7 +13,7 @@ if(!isset($_GET['action'])) die("No Action Set");
 switch($_GET['action']) {
 	case "add-to-cart":
 		$product = getRows(makeConn(),"SELECT `price` FROM `products` WHERE `id` = {$_GET['id']}");
-		addToCart($_GET['id'],$_GET['amount'],$product[0]->price);
+		addToCart($_GET['id'],$_GET['amount'],$product[0]['price']);
 		header("location:../product_added_to_cart.php?id={$_GET['id']}");
 		break;
 	case "update-cart-amount":
