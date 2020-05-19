@@ -2,13 +2,13 @@
     include_once('../lib/php/functions.php');
 
     $empty_product = (object) [
-	"title"=>"",
-	"price"=>"",
-	"category"=>"",
-	"description"=>"",
-	"thumbnail"=>"",
-	"images"=>"",
-	"quantity"=>""
+	"title"=>"New Flower",
+	"price"=>"12.99",
+	"category"=>"French",
+	"description"=>"New",
+	"thumbnail"=>"summer.jpg",
+	"images"=>"summer.jpg",
+	"quantity"=>"10"
 ];
 
 // CRUD LOGIC

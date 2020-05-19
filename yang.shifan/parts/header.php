@@ -14,6 +14,7 @@
 			<nav class="nav">
 				<ul>
 					<li class="logo-text"><a class="active" href="index.php">FANCY FLORA</a></li>
+					<li class="menu-text"><a href="admin/index.php">Admin</a></li>
 					<li class="menu-text"><a href="contact.php">Contact </a></li>
 					<li class="menu-text"><a href="cart.php">Cart<?= makeCartBadge() ?> </a></li>
 					<li class="menu-text"><a href="product.php">Product </a></li>
