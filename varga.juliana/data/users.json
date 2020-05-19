@@ -1,0 +1,49 @@
+[{
+		"name": "Juliana Varga",
+		"type": "Student",
+		"email": "julim.diseno@gmail.com",
+		"classes": [608, 605, 606]
+	},
+
+	{
+		"name": "Tom LIU",
+		"type": "Student",
+		"email": "liuzijiantom@gmail.com",
+		"classes": [608]
+	},
+
+	{
+		"name": "Mandy",
+		"type": "Student",
+		"email": "mandynwy1129@gmail.com",
+		"classes": [608, 617, 820]
+
+	},
+
+	{
+
+		"name": "Ji Yeom",
+		"type": "Student",
+		"email": "jwy617@gmail.com",
+		"classes": [608, 613, 621]
+
+	},
+
+	{
+
+		"name": "Ting Wei",
+		"type": "Product Designer",
+		"email": "waiting8969@gmail.com",
+		"classes": [608, 700, 695]
+
+	},
+
+	{
+
+		"name": "Hamilton Cline",
+		"type": "Teacher",
+		"email": "hcline@academyart.edu",
+		"classes": [608, 617, 820]
+
+	}
+]
