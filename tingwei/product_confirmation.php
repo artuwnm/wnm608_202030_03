@@ -32,7 +32,7 @@ $_SESSION['cart'] = [];
 			</div>
 		</div>
 	</div>
-	
+
 
 </body>
 </html>
