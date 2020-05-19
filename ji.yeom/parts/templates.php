@@ -5,7 +5,7 @@ function homeListTemplate($r,$o) {
 	// r is  currently reduced value
 	// o  is  current object in the loop
 return $r.<<<HTML
-<div class="col-xs-6 col-md-2">		
+<div class="col-xs-4 col-md-2">		
 	<a href="product_item.php?id=$o->id" class="display-block">		
 		<figure class="thumb-figure">
 			<div class="thumb-image">
@@ -57,18 +57,19 @@ return $r.<<<HTML
 	</div>
 
 	<div class="flex-stretch">
-		<div class="display-flex">
+		<div class="display-flex flex-align-center flex-justify-center">
 
 			<div class="flex-stretch">
 				<strong>$o->name</strong>
 				<p style="margin-right:1em">&dollar;$pricefixed</p>
 			</div>
 
-			<div class="form-control flex-none" style="margin-right:1em">
+			<div class="form-control flex-none" style="margin:0.5em">
 				<form method="get" action="data/form_actions.php" onchange="this.submit()">
 					<input type="hidden" name="action" value="update-cart-amount">
 					<input type="hidden" name="id" value="$o->id">
-					<div class="display-flex"><div class="flex-none">$selectamount</div></div>
+					<div class="display-flex"><div class="flex-none">$selectamount</div>
+					</div>
 				</form>
 			</div>
 
@@ -77,13 +78,44 @@ return $r.<<<HTML
 					<input type="hidden" name="action" value="delete-cart-item">
 					<input type="hidden" name="id" value="$o->id">
 					<div class="display-flex">
-						<div class="flex-none">
-							<div class="flex-none icons">
-								<button class="xbox"><i class="fa fa-close"></i></button>
-							</div>
+						<div class="flex-none icons">
+							<button class="xbox"><i class="fa fa-close"></i></button>
 						</div>
 					</div>
 				</form>
+			</div>
+
+		</div>
+	</div>
+</div>
+HTML;
+}
+
+
+
+function checkoutListTemplate($r,$o) {
+	// r is  currently reduced value
+	// o  is  current object in the loop
+
+$pricefixed = number_format($o->total, 2, '.', '');
+return $r.<<<HTML
+<div class="display-flex card-section">
+	<div class="flex-none product-thumbs" style="margin-right:1em">
+		<img src="img/$o->thumbnail">
+	</div>
+
+	<div class="flex-stretch">
+		<div class="display-flex flex-align-center flex-justify-center">
+
+			<div class="flex-stretch">
+				<strong>$o->name</strong>
+				<p style="margin-right:1em">&dollar;$pricefixed</p>
+			</div>
+
+			<div class="form-control flex-none" style="margin: 0.5em">
+				<div class="display-flex">
+					<div class="flex-none form-button" style="padding: 1em 1em; transform: none; cursor: default;">$o->amount</div>
+				</div>
 			</div>
 
 		</div>
@@ -133,9 +165,9 @@ return <<<HTML
 <div class="card-section">
 	<div class="display-flex">
 		<div class="flex-stretch">
-			<strong>Total</strong>
+			<h3 style="margin: 0">Total</h3>
 		</div>
-			<div class="flex-none">&dollar;$taxedfixed</div>
+			<div class="flex-none"><h3 style="margin: 0">&dollar;$taxedfixed</h3></div>
 	</div>
 </div>
 HTML;

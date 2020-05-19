@@ -19,24 +19,22 @@
 	<nav class="container">
 		<h3>Table of Contents</h3>
 		<ul>
-			<li><a href="#colors">Colors</a></li>
 			<li><a href="#typography">Typography</a></li>
+			<li><a href="#colors">Colors</a></li>
 			<li><a href="#grids">Grid Systems</a></li>	
 			<li><a href="#components">Components</a></li>
 				<ul>		
 					<li><a href="#buttons">Buttons</a></li>
 					<li><a href="#forms">Input Forms</a></li>
 <!-- 						<ul>
-							<li>Text Box</li>
-							<li>Dropdown</li>
+							<li>Input Textbox</li>
+							<li>Error</li>
 							<li>Search Bar</li>
-
+							<li>Dropdown</li>
 						</ul>	 -->
 					<li><a href="#others">Other Components</a></li>
 						<ul>
 							<li>Boxes</li>
-<!-- 							<li><a href="#paginationPage">Pagination Page</a></li>
-							<li><a href="#paginationDot">Pagination Dot</a></li> -->
 							<li>Cards</li>
 							<li>Figures</li>
 						</ul>
@@ -44,8 +42,8 @@
 			<!-- <li><a href="#icons">Iconography</a></li>		 -->
 			<li><a href="#ui">UI Elements</a></li>
 				<ul>
-					<li>Account Form</li>
-					<li>Administration Table</li>
+					<li>Forms</li>
+					<li>Checkout/Admin Table</li>
 					<li>Navigation Bar</li>
 				</ul>
 
@@ -288,15 +286,15 @@
 						<div class="form-control">
 							<button type="button" class="form-button primary">BUTTON</button>
 						</div>
-						<p class="small-text">Usage: Add to Cart, Go to Checkout, Checkout</p>
+						<p class="small-text">Usage: Add to Cart, continue to, checkout, submit, login</p>
 				</div>
 
 				<div class="col-xs-12 col-md-3">
 					<h5>Secondary Button</h5>
 					<div class="form-control">
-						<button type="button" class="form-button secondary">BUTTON</button>
+						<button type="button" class="form-button ">BUTTON</button>
 					</div>
-					<p class="small-text">Usage: Shop All, Remove</p>					
+					<p class="small-text">Usage: dropdown menu</p>					
 				</div>
 
 				<div class="col-xs-12 col-md-3">
@@ -304,14 +302,22 @@
 					<div class="form-control">
 						<button type="button" class="form-button third">BUTTON</button>
 					</div>
-					<p class="small-text">Usage: Continue Shopping, Apply</p>					
+					<p class="small-text">Usage: Delete, Subscribe, Apply</p>					
+				</div>
+
+				<div class="col-xs-12 col-md-3">
+					<h5>Confirm Button</h5>
+					<div class="form-control">
+						<button type="button" class="form-button confirm">BUTTON</button>
+					</div>
+					<p class="small-text">Usage: Only for Complete Order</p>					
 				</div>
 
 				<div class="col-xs-12 col-md-3">
 					<h5>Wishlist Button</h5>
-					<button class="form-button secondary heart-toggle" 	data-children-count="1">
-						<input type="checkbox" id="heart-example" class="hidden" onclick="alert('The item is added to your wishlist!')">
-						<label for="heart-example">WISHLIST ♥</label>
+					<button class="form-button wishlist" data-children-count="1">
+						<input type="checkbox" id="heart-example" class="hidden" onclick="alert('The item is added to your wishlist!')">WISHLIST ♥
+						<!-- <label for="heart-example">WISHLIST ♥</label> -->
 					</button>
 					<p class="small-text">Usage: Only for Wishlist 	button</p>
 				</div>
@@ -394,13 +400,21 @@
 			<h4 id="boxes">BOXES</h4>
 			<hr>	
 			<div class="grid gap">
-				<div class="col-xs-12 col-md-3">					
+				<div class="col-xs-12 col-md-3">				
 					<h5>Checkbox</h5>
 					<div>
 						<label class="checkbox">Subscription
 							<input type="checkbox" checked="checked">
 							<span class="checkmark"></span>
 							</label>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-md-3">				
+					<h5>Radio</h5>
+					<div>
+						<input type="radio">
+						<label>Shipping Method</label>
 					</div>
 				</div>
 
@@ -415,7 +429,7 @@
 				</div>
 
 				<div class="col-xs-12 col-md-3">
-					<h5>Remove/Close</h5>
+					<h5>Remove</h5>
 					<button class="xbox">
 						<i class="fa fa-close"></i>
 					</button>
@@ -451,9 +465,9 @@
 				</div>
 				<div class="col-xs-12 col-md-3">
 					<div>
-					<div class="card dark square">
+					<div class="card black square">
 					</div>
-					<p>Card Dark</p>
+					<p>Card Balck</p>
 					</div>
 				</div>
 			</div>
@@ -477,11 +491,11 @@
 				<!-- figure>img+figcaption -->
 				<figure class="product-figure overlay">
 					<img src="https://via.placeholder.com/300" alt="">
-					<figcaption>Product</figcaption>
+					<figcaption class="display-flex flex-align-center flex-justify-center">Product</figcaption>
 				</figure>
 			</div>
 
-			<br>
+<!-- 			<br>
 			<h5>Gridded Figures</h5>
 			<div class="grid gap">
 				<div class="col-xs-12 col-md-3">				
@@ -516,16 +530,16 @@
 						</figure>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			
 <br>	
 			<h5>Product Figures</h5>
 				<div class="grid gap">
 				<div class="col-xs-6 col-md-3">		
 					<a href="#" class="display-block">		
-						<figure class="product-figure soft">
+						<figure class="product-figure ">
 							<div class="product-image"><img src="https://via.placeholder.com/250" alt=""></div>
-							<figcaption class="product-description">
+							<figcaption class="product-figure description">
 								<div class="product-price">&dollar;5</div>
 								<div class="product-name">Product</div>
 							</figcaption>
@@ -534,9 +548,9 @@
 				</div>
 				<div class="col-xs-6 col-md-3">		
 					<a href="#" class="display-block">		
-						<figure class="product-figure soft">
+						<figure class="product-figure ">
 							<div class="product-image"><img src="https://via.placeholder.com/300" alt=""></div>
-							<figcaption class="product-description">
+							<figcaption class="product-figure description">
 								<div class="product-price">&dollar;10</div>
 								<div class="product-name">Product</div>
 							</figcaption>
@@ -545,9 +559,9 @@
 				</div>
 				<div class="col-xs-6 col-md-3">		
 					<a href="#" class="display-block">		
-						<figure class="product-figure soft">
+						<figure class="product-figure ">
 							<div class="product-image"><img src="https://via.placeholder.com/200" alt=""></div>
-							<figcaption class="product-description">
+							<figcaption class="product-figure description">
 								<div class="product-price">&dollar;15</div>
 								<div class="product-name">Product</div>
 							</figcaption>
@@ -556,9 +570,9 @@
 				</div>
 				<div class="col-xs-6 col-md-3">		
 					<a href="#" class="display-block">		
-						<figure class="product-figure soft">
+						<figure class="product-figure ">
 							<div class="product-image"><img src="https://via.placeholder.com/250" alt=""></div>
-							<figcaption class="product-description">
+							<figcaption class="product-figure description">
 								<div class="product-price">&dollar;20</div>
 								<div class="product-name">Product</div>
 							</figcaption>
@@ -722,14 +736,13 @@
 
 <br>
 <br>
-		<h4>NAVIGATION BARS</h4>
+		<h4>Checkout/Admin Table</h4>
 		<hr>
-			<h5>Checkout Table</h5>
-				<script>document.write(makeTable('table lined horizontal striped'))</script>
-<br>
+			<script>document.write(makeTable('table lined horizontal striped'))</script>
+<!-- <br>
 <br>
 			<h5>Administration Table</h5>
-				<script>document.write(makeTable('table lined all striped'))</script>
+				<script>document.write(makeTable('table lined all striped'))</script> -->
 
 		<script>
 			const makeNav = (classes='') => {
@@ -802,13 +815,16 @@
 		</div>
 	</section>
 	
+	<?php include "../parts/footer.php" ?>
+
+<!-- 	
 	<footer class="navbar">
 	<div class="container display-flex flex-justify-center">
 		<p class="small-text">
 			<a href="index.php">© 2020 PIN YOUR PINS</a>
 		</p>
 	</div>
-	</footer>
+	</footer> -->
 
 </body>
 </html>

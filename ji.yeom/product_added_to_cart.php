@@ -44,12 +44,13 @@ $o = getRows(makeConn(),
 		<div class="col-xs-12 col-md-4">
 			<div class="card">
 				<div class="flex-none">
-					<a href="product_list.php" class="form-button secondary">CONTINUE SHOPPING</a>
+					<a href="product_cart.php" class="form-button primary">GO TO CHECKOUT</a>
 				</div>
 				<br>
 				<div class="flex-none">
-					<a href="product_cart.php" class="form-button primary">GO TO CHECKOUT</a>
+					<a href="product_list.php" class="form-button third">CONTINUE SHOPPING</a>
 				</div>
+				
 
 <!-- 			<nav class="nav-flex">
 				<ul>

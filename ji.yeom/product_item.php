@@ -75,7 +75,7 @@ $images = explode(",",$o->images);
 							<span class="fa fa-star"></span>
 						</div>
 					</div>
-<br>
+
 					<div class="card-section">
 					<!-- <h5>Description</h5> -->
 						<div><?= $o->description ?></div>
@@ -85,13 +85,12 @@ $images = explode(",",$o->images);
 							<li><?= $o->dimension ?></li>
 						</ul>
 					</div>
-<br>
+
 					<div class="card-section">
 						<div class="form-control display-flex">
-							<p style="padding-right: 10px">Quantity (max. 10)</p>
+							<p style="padding-right: 1em">Quantity (max. 10)</p>
 							<div class="form-select">
-								<select name="amount" class="form-select" style="border-radius: none">
-									<!-- option*10>{$} -->
+								<select name="amount" class="form-select" style="padding-left: 1em;">
 									<option>1</option>
 									<option>2</option>
 									<option>3</option>
@@ -114,14 +113,13 @@ $images = explode(",",$o->images);
 							<input type="hidden" name="action" value="add-to-cart">
 							<input type="hidden" name="id" value="<?= $o->id ?>">
 							<input type="hidden" name="price" value="<?= $o->price ?>">
-							<input type="submit" class="form-button primary" value="ADD TO CART">
-							<!-- <button type="submit" class="form-button primary">ADD TO CART</button> -->
+							<!-- <input type="submit" class="form-button primary" value="ADD TO CART"> -->
+							<button type="submit" class="form-button primary">ADD TO CART</button>
 						</div>
 
 						<div class="col-xs-12 col-md-6">
 							<button class="form-button wishlist" data-children-count="1">
 								<input type="checkbox" id="heart-example" class="hidden" onclick="alert('The item is added to your wishlist!')">WISHLIST ♥
-								<!-- <label for="heart-example">WISHLIST ♥</label> -->
 							</button>
 						</div>
 
@@ -134,17 +132,15 @@ $images = explode(",",$o->images);
 
 <br>
 <br>
-<br>
 	<div>
 		<div class="card light">
-		<h4 class="center" style="padding: 1em">Recommended Products</h4>
-		<br>
+		<h4 style="padding: 1em">Recommended Products</h4>
 		<?php recommendedSimilar($o->category,$o->id) ?>
 		<br>
 		</div>
 	</div>
 
-	</div>
+</div>
 
 	<?php include "parts/footer.php" ?>
 </body>

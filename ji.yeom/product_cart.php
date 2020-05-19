@@ -17,11 +17,14 @@ $cartItems = getCartItems();
 	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
-		<nav class="nav-crumbs" style="padding-left: 20px">
+		<div style="padding-left: 20px">
+			<a href="product_list.php"><h5>< Back to Shop</h5></a>
+		</div>
+<!-- 		<nav class="nav-crumbs" style="padding-left: 20px">
 			<ul>
-				<li><a href="product_list.php"><h5>Back to the store</h5></a></li>
+				<li><a href="product_list.php"><h5>Back</h5></a></li>
 			</ul>
-		</nav>
+		</nav> -->
 
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-8">
@@ -33,19 +36,17 @@ $cartItems = getCartItems();
 			</div>
 
 			<div class="col-xs-12 col-md-4">
-				<div class="card soft flat">
+				<div class="card light flat">
 					<?= cartTotals() ?>
 				</div>
 				<br>
-				<!-- <div class="card-section"> -->
-					<a href="product_checkout.php" class="form-button confirm">CHECKOUT</a>
-				<!-- </div> -->
+				<a href="product_checkout.php" class="form-button primary">CHECKOUT</a>
 			</div>
 		</div>
 
 	</div>
-
-
 	
+<footer style="line-height: var(--header-height);"></footer>
+
 </body>
 </html>

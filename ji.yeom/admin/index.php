@@ -3,16 +3,21 @@
 include_once "../lib/php/functions.php";
 
 $empty_product = (object) [
-	"name"=>"",
-	"price"=>"",
-	"category"=>"",
-	"description"=>"",
-	"thumbnail"=>"",
-	"images"=>"",
-	"quantity"=>""
+	"name"=>"Yellow Submarine",
+	"price"=>"12.00",
+	"category"=>"Pin",
+	"description"=>"We all live in a yellow submarine, yellow submarine, yellow submarine! It's from Yellow Submarine by the Beatles. This cute pin is a great addition to your favorite clothes, jeans, jacket, backpack, and so on.",
+	"material_front"=>"Silver plated brass pin with hard enamel",
+	"material_back"=>"Metal pin clutch",
+	"dimension"=>"1.5 in x 0.5 in x 2 mm",
+	"quantity"=>"300",
+	"thumbnail"=>"pin_yellow-submarine_thumbnail.jpg",
+	"images"=>"pin_yellow-submarine_1.jpg,pin_yellow-submarine_2.jpg,pin_yellow-submarine_3.jpg"
 ];
 
 
+//print_p($_GET);
+// print_p($_POST);
 
 
 // CRUD LOGIC
@@ -28,9 +33,12 @@ switch(@$_GET['action']) {
 			`price`=? ,
 			`category`=? ,
 			`description`=? ,
+			`material_front`=? ,
+			`material_back`=? ,
+			`dimension`=? ,
+			`quantity`=? ,
 			`thumbnail`=? ,
 			`images`=? ,
-			`quantity`=? ,
 			`date_modify`=NOW()
 		WHERE `id`=?
 		");
@@ -39,9 +47,12 @@ switch(@$_GET['action']) {
 			$_POST['product-price'],
 			$_POST['product-category'],
 			$_POST['product-description'],
+			$_POST['product-material_front'],
+			$_POST['product-material_back'],
+			$_POST['product-dimension'],
+			$_POST['product-quantity'],
 			$_POST['product-thumbnail'],
 			$_POST['product-images'],
-			$_POST['product-quantity'],
 			$_GET['id']
 		]);
 
@@ -55,29 +66,40 @@ switch(@$_GET['action']) {
 			`price`,
 			`category`,
 			`description`,
+			`material_front`,
+			`material_back`,
+			`dimension`,
+			`quantity`,
 			`thumbnail`,
 			`images`,
-			`quantity`,
 			`date_create`,
 			`date_modify`
 		)
 		VALUES
-		(?,?,?,?,?,?,?,NOW(),NOW())
+		(?,?,?,?,?,?,?,?,?,?,NOW(),NOW())
 		");
 		$statement->execute([
 			$_POST['product-name'],
 			$_POST['product-price'],
 			$_POST['product-category'],
 			$_POST['product-description'],
+			$_POST['product-material_front'],
+			$_POST['product-material_back'],
+			$_POST['product-dimension'],
+			$_POST['product-quantity'],
 			$_POST['product-thumbnail'],
-			$_POST['product-images'],
-			$_POST['product-quantity']
+			$_POST['product-images']
 		]);
 		$id = $conn->lastInsertId();
 
 		header("location:{$_SERVER['PHP_SELF']}?id=$id");
 		break;
 	case "delete":
+		$statement = $conn->prepare("DELETE FROM `products` WHERE id=?");
+		$statement->execute([$_GET['id']]);
+		$id = $conn->lastInsertId();
+
+		header("location:{$_SERVER['PHP_SELF']}");
 		break;
 }
 
@@ -96,19 +118,19 @@ switch(@$_GET['action']) {
 
 function makeListItemTemplate($r,$o) {
 return $r.<<<HTML
-<div class="itemlist-item display-flex">
-	<div class="flex-none">
-		<div class="image-square">
+<div class="itemlist-item display-stretch">
+	<div class="display-flex flex-align-center flex-justify-center">
+		<div class="flex-none image-square" style="margin-right:0.5em">
 			<img src="img/$o->thumbnail">
 		</div>
-	</div>
-	<div class="flex-stretch">
-		<div><strong>$o->name</strong></div>
-		<div><span>$o->category</span></div>
-	</div>
-	<div class="flex-none display-flex">
-		<div><a class="form-button" href="admin/?id=$o->id">edit</a></div>
-		<div><a class="form-button" href="product_item.php?id=$o->id">visit</a></div>
+		<div class="flex-stretch">
+			<div><h4 style="margin: 0;">$o->name</h4></div>
+			<div><span class="small-text">$o->category</span></div>
+		</div>
+		<div class="form-control flex-none">
+			<div><a class="form-button third" href="admin/?id=$o->id">Edit</a></div>
+			<div><a class="form-button" href="product_item.php?id=$o->id">Visit</a></div>
+		</div>
 	</div>
 </div>
 HTML;
@@ -124,7 +146,7 @@ $id = $_GET['id'];
 $addoredit = $id=="new" ? 'Add' : 'Edit';
 $createorupdate = $id=="new" ? 'create' : 'update';
 $deletebutton = $id=="new" ? '' : <<<HTML
-<li class="flex-none" style="list-style-type: none"><a href="{$_SERVER['PHP_SELF']}?id=$id&action=delete"><h5>Delete</h5></a></li>
+<button class="form-button third"><a href="{$_SERVER['PHP_SELF']}?id=$id&action=delete">DELETE</a></button>
 HTML;
 
 $images = array_reduce(explode(",",$o->images),function($r,$p){
@@ -154,6 +176,18 @@ $data_show = $id=="new" ? "" : <<<HTML
 	<span>$o->description</span>
 </div>
 <div class="form-control">
+	<strong>Material Front</strong>
+	<span>$o->material_front</span>
+</div>
+<div class="form-control">
+	<strong>Material Back</strong>
+	<span>$o->material_back</span>
+</div>
+<div class="form-control">
+	<strong>Dimension</strong>
+	<span>$o->dimension</span>
+</div>
+<div class="form-control">
 	<strong>Quantity</strong>
 	<span>$o->quantity</span>
 </div>
@@ -164,14 +198,12 @@ HTML;
 
 
 echo <<<HTML
-<nav class="nav-pills">
-	<div class="card">
-	<ul class="display-flex">
-		<li class="flex-none" style="list-style-type: none"><a href="{$_SERVER['PHP_SELF']}"><h5>Back</h5></a></li>
-		<li class="flex-stretch" style="list-style-type: none"></li>
-		$deletebutton
+<nav class="nav-flex" style="padding-left: 1em;">
+	<ul class="display-flex flex-align-center flex-justify-center">
+		<li class="flex-none" style="list-style-type: none"><a href="{$_SERVER['PHP_SELF']}"><h5>< Back to the list</h5></a></li>
+		<li class="flex-stretch"></li>
+		<li class="flex-none">$deletebutton</li>
 	</ul>
-	</div>
 </nav>
 
 <form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&action=$createorupdate">
@@ -180,8 +212,9 @@ echo <<<HTML
 			$data_show
 		</div>
 		<div class="col-xs-12 col-md-7">
-			<div class="card soft">
-			<h4>$addoredit Product</h4>
+			<div class="card light">
+			<h3 style="text-align: center">$addoredit Product</h3>
+
 			<div class="form-control">
 				<label class="form-label" for="product-naem">Name</label>
 				<input class="form-input" id="product-name" name="product-name" value="$o->name">
@@ -196,7 +229,23 @@ echo <<<HTML
 			</div>
 			<div class="form-control">
 				<label class="form-label" for="product-description">Description</label>
-				<textarea class="form-input" id="product-description" name="product-description" style="height:4em">$o->description</textarea>
+				<textarea class="form-input" id="product-description" name="product-description" style="height:6em">$o->description</textarea>
+			</div>
+			<div class="form-control">
+				<label class="form-label" for="product-material_front">Material Front</label>
+				<input class="form-input" id="product-material_front" name="product-material_front" value="$o->material_front">
+			</div>
+			<div class="form-control">
+				<label class="form-label" for="product-material_back">Material Back</label>
+				<input class="form-input" id="product-material_back" name="product-material_back" value="$o->material_back">
+			</div>
+			<div class="form-control">
+				<label class="form-label" for="product-dimension">Dimension</label>
+				<input class="form-input" id="product-dimension" name="product-dimension" value="$o->dimension">
+			</div>
+			<div class="form-control">
+				<label class="form-label" for="product-quantity">Quantity</label>
+				<input class="form-input" id="product-quantity" name="product-quantity" value="$o->quantity">
 			</div>
 			<div class="form-control">
 				<label class="form-label" for="product-thumbnail">Thumbnail</label>
@@ -206,14 +255,14 @@ echo <<<HTML
 				<label class="form-label" for="product-images">Other Images</label>
 				<input class="form-input" id="product-images" name="product-images" value="$o->images">
 			</div>
+			</div>
+
 			<div class="form-control">
-				<label class="form-label" for="product-quantity">Quantity</label>
-				<input class="form-input" id="product-quantity" name="product-quantity" value="$o->quantity">
+				<input type="submit" class="form-button primary" value="SUBMIT">
 			</div>
-			<div class="form-control">
-				<input type="submit" class="form-button" value="Submit">
+
 			</div>
-			</div>
+
 		</div>
 	</div>
 </form>
@@ -236,78 +285,67 @@ HTML;
 	
 	<?php include "../parts/meta.php" ?>
 </head>
+
 <body>
-
-	<header class="navbar">
-	<div class="container">	
-			<div class="topnav" style="padding-top: 20px" id="myTopnav">
-				<a class="logo" href="index.php">
-				<img src="img/logo.png" alt="logo">
-				</a>
-			<!-- <div class="right"> -->
-				<a href="product_list.php">SHOP</a>
-				<a href="about.php">ABOUT</a>
-				<a href="contact.php">CONTACT</a>
-				<a href="sign_in.php">LOGIN</a>
-				<a href="product_cart.php">CART
-					<span class="badge"><?= makeCartBadge(); ?></span>
-				</a>
-				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-					<i class="fa fa-bars" style="font-size:20px;"></i>
-				</a>
+<!-- 	<header class="navbar">
+		<div class="container display-flex flex-align-center flex-justify-center">
+			<div class="flex-stretch ">
+				<p style="padding-left: 1em; margin: 0"><strong><span style="color: #1155CC">PIN</span> YOUR <span style="color: #5AFF5A">PINS</span> ––––– Admin Page
+				</strong></p>
 			</div>
-	</div>
+			<div class="nav-flex admin flex-none">
+				<ul>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="admin">Product List</a></li>
+					<li><a href="admin/?id=new">Add New</a></li>
+				</ul>
+			</div>
+		</div>
+	</header> -->
 
-	<script>
-	function myFunction() {
-	  var x = document.getElementById("myTopnav");
-	  if (x.className === "topnav") {
-	    x.className += " responsive";
-	  } else {
-	    x.className = "topnav";
-	  }
-	}
-	</script>
-
-	</header>
-
-	<header class="navbar">
-		<div class="container display-flex">
-			<a class="logo" href="index.php">
+<header class="navbar">
+	<div class="container display-flex" style="padding-top: 20px;">
+		<!-- <div class="flex-none"> -->
+			<a class="logo flex-stretch" href="index.php">
 				<img src="img/logo.png" alt="logo">
 			</a>
-			<nav class="nav-flex flex-none">
-				<ul class="display-flex">
-					<li><a href="product_list.php">Home</a></li>
-					<li><a href="admin/">Product List</a></li>
-					<li><a href="admin/?id=new.php">Add New Product</a></li>
-				</ul>
-			</nav>
+		<!-- </div> -->
+		<!-- <div class="flex-stretch"></div> -->
+		<div class="flex-none nav-flex admim">
+			<ul>
+				<li><a href="product_list.php" style="font-style: italic">SHOP</a></li>
+				<li><a href="admin">Product List</a></li>
+				<li><a href="admin/?id=new">Add New</a></li>
+			</ul>
 		</div>
-	</header>
+	</div>
+	<h1 style="text-align: center; padding-bottom: 0.5em;">ADMIN PAGE</h1>
+</header>
+
 
 
 	<div class="container">
-		<?php 
 
-		$conn = makeConn();
+			<?php
 
-		if(isset($_GET['id'])){
+			$conn = makeConn();
 
-			if($_GET['id']=="new") {
-				makeProductForm($empty_product);
-			} else {
-				$rows = getRows($conn, "SELECT * FROM `products` WHERE `id`='{$_GET['id']}'");
+			if(isset($_GET['id'])){
+
+				if($_GET['id']=="new") {
+					makeProductForm($empty_product);
+				} else {
+					$rows = getRows($conn, "SELECT * FROM `products` WHERE `id`='{$_GET['id']}'");
 					makeProductForm($rows[0]);
-			}
+				}
 
-		} else {
 
-		?>
+			} else {
 
-		<div class="card">
-		<h2>Product List</h2>
-			<div class="itemlist">
+			?>
+
+			<div class="card">
+			<!-- <div class="itemlist"> -->
 			<?php
 
 			$rows = getRows($conn, "SELECT * FROM `products`");
@@ -315,15 +353,17 @@ HTML;
 			echo array_reduce($rows,'makeListItemTemplate');
 
 			?>
+			<!-- </div> -->
 			</div>
-		</div>
 
-		<?php 
+			<?php 
 
-		}
+			}
 
-		?>
+			?>
 	</div>
+
+	<?php include "../parts/footer.php" ?>
 
 </body>
 </html>
