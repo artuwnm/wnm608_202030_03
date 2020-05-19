@@ -6,6 +6,7 @@ WNM 608 Section 03 in 2020 Semester 30
 - http://janechoidesign.com/aau/wnm608/Choi.Aejin/recipes/index.html
 - http://janechoidesign.com/aau/wnm608/Choi.Aejin/Aejin_Styleguide/index.html#
 - http://janechoidesign.com/aau/wnm608/Choi.Aejin/index.php
+- http://janechoidesign.com/aau/wnm608/Choi.Aejin/Product_list.php
 - http://janechoidesign.com/aau/wnm608/Choi.Aejin/admin/users.php
 - http://janechoidesign.com/aau/wnm608/Choi.Aejin/index.php
 - http://janechoidesign.com/aau/wnm608/Choi.Aejin/admin/index.php
