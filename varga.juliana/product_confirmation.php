@@ -18,8 +18,8 @@
 			<div>
 				<a class="form-button" href="product_list.php">Continue Shopping</a>
 			</div>
-		</div>
 	</div>
+	
 
 	
 	<?php include "parts/footer.php" ?>
