@@ -202,7 +202,7 @@ echo <<<HTML
 	<ul class="display-flex flex-align-center flex-justify-center">
 		<li class="flex-none" style="list-style-type: none"><a href="{$_SERVER['PHP_SELF']}"><h5>< Back to the list</h5></a></li>
 		<li class="flex-stretch"></li>
-		<li class="flex-none">$deletebutton</li>
+		<li class="flex-none" >$deletebutton</li>
 	</ul>
 </nav>
 

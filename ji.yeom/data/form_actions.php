@@ -29,3 +29,5 @@ switch($_GET['action']) {
 		break;
 }
 
+
+// print_p($_SESSION);
