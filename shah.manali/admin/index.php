@@ -3,14 +3,21 @@
 include_once "../lib/php/functions.php";
 
 $empty_product = (object) [
-    "name"=>"scotch_whiskey_truffle",
-    "price"=>"21",
-    "category"=>"truffles",
-    "type"=>"dark chocolate",
-    "images"=>"scotch_whiskey_truffle.png",
-    "thumbnail"=>"scotch_whiskey_truffle_thumbnail.png",
-    "description"=>"solid caramel coating with melted dark chocoalte and whiskey ganache"
+	"name"=>"scotch whiskey truffle",
+	"price"=>"12.56",
+	"category"=>"truffles",
+	"description"=>"Caramel solid coating filled with whiskey chocolate ganache",
+	"thumbnail"=>"scotch_whiskey_truffle_thumbnail.png",
+	"images"=>"scotch_whiskey_truffle.png",
+	"type"=>"dark chocolate"
 ];
+
+
+
+
+
+
+
 
 
 
@@ -20,7 +27,7 @@ try {
 
 $conn = makePDOConn();
 switch(@$_GET['action']) {
-	case "edit":
+	case "update":
 		$statement = $conn->prepare("UPDATE
 		`products`
 		SET
@@ -30,7 +37,7 @@ switch(@$_GET['action']) {
 			`description`=? ,
 			`thumbnail`=? ,
 			`images`=? ,
-			`type`=? ,
+			`quantity`=? ,
 			`date_modify`=NOW()
 		WHERE `id`=?
 		");
@@ -57,7 +64,7 @@ switch(@$_GET['action']) {
 			`description`,
 			`thumbnail`,
 			`images`,
-			`quantity`,
+			`type`,
 			`date_create`,
 			`date_modify`
 		)
@@ -96,6 +103,10 @@ switch(@$_GET['action']) {
 
 
 
+
+
+
+
 // TEMPLATES
 
 function makeListItemTemplate($r,$o) {
@@ -109,15 +120,15 @@ return $r.<<<HTML
 	<div class="flex-stretch">
 		<div><strong>$o->name</strong></div>
 		<div><span>$o->category</span></div>
-		<div><span>$o->type</span></div>
 	</div>
 	<div class="flex-none display-flex">
-        <div><a class="form-button" href="admin/?id=$o->id">edit</a></div>
+		<div><a class="form-button" href="admin/?id=$o->id">edit</a></div>
 		<div><a class="form-button" href="product_item.php?id=$o->id">visit</a></div>
 	</div>
 </div>
 HTML;
 }
+
 
 function makeProductForm($o) {
 
@@ -136,7 +147,7 @@ $data_show = $id=="new" ? "" : <<<HTML
 <div class="card soft">
 
 <div class="product-main">
-<img src="images/<?= $o->thumbnail ?>" alt="">
+	<img src="images/$o->thumbnail">
 </div>
 <div class="product-thumbs">$images</div>
 
@@ -183,8 +194,8 @@ echo <<<HTML
 			<div class="card soft">
 			<h2>$addoredit Product</h2>
 			<div class="form-control">
-				<label class="form-label" for="product-name">Name</label>
-				<input class="form-input" id="product-name" name="name" value="$o->name">
+				<label class="form-label" for="product-name">name</label>
+				<input class="form-input" id="product-name" name="product-name" value="$o->name">
 			</div>
 			<div class="form-control">
 				<label class="form-label" for="product-price">Price</label>
@@ -193,10 +204,6 @@ echo <<<HTML
 			<div class="form-control">
 				<label class="form-label" for="product-category">Category</label>
 				<input class="form-input" id="product-category" name="product-category" value="$o->category">
-			</div>
-						<div class="form-control">
-				<label class="form-label" for="product-type">Type</label>
-				<input class="form-input" id="product-type" name="product-type" value="$o->type">
 			</div>
 			<div class="form-control">
 				<label class="form-label" for="product-description">Description</label>
@@ -209,7 +216,12 @@ echo <<<HTML
 			<div class="form-control">
 				<label class="form-label" for="product-images">Other Images</label>
 				<input class="form-input" id="product-images" name="product-images" value="$o->images">
-    		<div class="form-control">
+			</div>
+			<div class="form-control">
+				<label class="form-label" for="product-type">Type</label>
+				<input class="form-input" id="product-type" name="product-type" value="$o->type">
+			</div>
+			<div class="form-control">
 				<input type="submit" class="form-button" value="Submit">
 			</div>
 			</div>
@@ -220,10 +232,15 @@ HTML;
 
 }
 
+
+
+
+
+
+
 // LAYOUT
 
-?>
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Learning Data</title>
@@ -239,7 +256,7 @@ HTML;
 			</div>
 			<nav class="nav-flex flex-none">
 				<ul>
-					<li><a href="product_list.php/">Home</a></li>
+					<li><a href="./product_list.php">Home</a></li>
 					<li><a href="admin/">Product List</a></li>
 					<li><a href="admin/?id=new">Add New Product</a></li>
 				</ul>
@@ -259,7 +276,7 @@ HTML;
 					makeProductForm($empty_product);
 				} else {
 					$rows = getRows($conn, "SELECT * FROM `products` WHERE `id`='{$_GET['id']}'");
-                makeProductForm($rows[0]);
+					makeProductForm($rows[0]);
 				}
 
 
@@ -269,8 +286,7 @@ HTML;
 			<div class="card soft">
 			<h2>User List</h2>
 
-			<div class="itemList">
-			<ul>
+			<div class="itemlist">
 			<?php
 
 			$rows = getRows($conn, "SELECT * FROM `products`");

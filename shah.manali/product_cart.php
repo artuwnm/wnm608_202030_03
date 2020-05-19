@@ -34,12 +34,14 @@ $cartItems = getCartItems();
 				<div class="card flat">
 					<?= cartTotals() ?>
 					<div class="card-section">
-						<a href="product_checkout.php" class="form-button confirm">Checkout</a>
+						<a href="checkout_page.php" class="form-button confirm">Checkout</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	
+	<?php include "parts/footer.php" ?>
 	
 </body>
 </html>

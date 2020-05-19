@@ -7,7 +7,7 @@ return `
 			<div class="product-image"><img src="images/${o.thumbnail}" alt=""></div>
 			<figcaption class="product-description">
 				<div class="product-price">&dollar;${o.price}</div>
-				<div class="product-title">${o.name}</div>
+				<div class="product-name">${o.name}</div>
 			</figcaption>
 		</figure>
 	</a>
