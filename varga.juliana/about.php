@@ -17,7 +17,10 @@
 		<div class="card medium">
 
 
-			<h2>About Us</h2>
+			<div class="container">
+		<br>
+		<h4 style="text-align: center"> ABOUT US </h4>
+	</div>
 <br>
 			<div>
 				<p>We are a well-established jewelry store in San Francisco, CA.

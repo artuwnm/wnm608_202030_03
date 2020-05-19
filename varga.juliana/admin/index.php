@@ -170,10 +170,23 @@ HTML;
 
 
 echo <<<HTML
+<style>
+		.arrow {
+  border: solid grey;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+	</style>
 <nav class="nav-pills">
 	<div class="card medium">
 	<ul>
-		<li class="flex-none"><a href="{$_SERVER['PHP_SELF']}">Back</a></li>
+		<li class="flex-none"><a href="{$_SERVER['PHP_SELF']}"><i class="arrow left"></i> Back</a></li>
 		<li class="flex-stretch"></li>
 		$deletebutton
 	</ul>
@@ -272,7 +285,7 @@ HTML;
 
 			?>
 			<div class="card medium">
-			<h2>Product Admin</h2>
+			<h4 style="text-align: center; color: #f2b6a0;">Product Admin</h4>
 			<br>
 
 			<div class="itemlist">

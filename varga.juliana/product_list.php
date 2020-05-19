@@ -19,6 +19,14 @@ include_once "lib/php/functions.php";
 
 	<?php include "parts/navbar.php" ?>
 
+	<div class="container">
+		<br>
+		<h4 style="text-align: center"> JEWELRY </h4>
+		<p style="text-align: center; color: grey">Browse unique Jewelry in our largest selection for every budget,<br>
+		all with unique style, superior craftsmanship and hand-matched stones.</p>
+		<p style="text-align: center; color: grey; font-weight: bold;">From $25 to over $999</p>
+	</div>
+
 <br>
 	<div class="container">
 
@@ -66,6 +74,11 @@ include_once "lib/php/functions.php";
         <div class="col-xs-12 col-md-4">
 		<div class="grid gap productlist"></div>
         </div>
+	</div>
+
+        <div class="container">
+
+				<a href="admin/index.php"><button type="button" style="margin-left: 0.9em; width: 100%" class="form-button-blue js-filter" href="product_list.php">Product Admin page</button></a>
 	</div>
 
 	<?php include "parts/footer.php" ?>
