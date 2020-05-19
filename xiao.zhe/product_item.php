@@ -32,7 +32,7 @@ $images = explode(",",$o->images);
 
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-7">
-				<div class="card item1">
+				<div class="card soft">
 					<div class="product-main">
 						<img src="/aau/wnm608_202030_03/xiao.zhe/images/store/<?= $o->images ?>" alt="">
 					</div>
@@ -84,7 +84,12 @@ $images = explode(",",$o->images);
 			<h2>Recommended Products</h2>
 			<?php recommendedSimilar($o->category,$o->id) ?>
 		</div>
+
+        <div class="container"><?php include "parts/footage.php" ?><br><br></div>
+
 	</div>
-	
+
+
+ 
 </body>
 </html>

@@ -26,7 +26,7 @@ $selectamount = selectAmount($o->amount,10);
 return $r.<<<HTML
 <div class="display-flex card-section">
 	<div class="flex-none product-thumbs" style="margin-right:1em">
-		<img src="/images/store/$o->thumbnail">
+		<img src="/aau/wnm608_202030_03/xiao.zhe//images/store/$o->thumbnail">
 	</div>
 	<div class="flex-stretch">
 		<div class="display-flex">
@@ -132,7 +132,7 @@ function recommendedCategory($cat,$limit=3) {
 	$rows = getRows(makeConn(),"SELECT * FROM `products` WHERE category='$cat' ORDER BY `date_create` DESC LIMIT $limit");
 	recommendedProducts($rows);
 }
-function recommendedSimilar($cat,$id=0,$limit=3) {
+function recommendedSimilar($cat,$id=0,$limit=4) {
 	$rows = getRows(makeConn(),"SELECT * FROM `products` WHERE category='$cat' AND id <> $id ORDER BY rand() LIMIT $limit");
 	recommendedProducts($rows);
 }

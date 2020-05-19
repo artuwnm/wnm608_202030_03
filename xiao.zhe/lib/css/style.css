@@ -62,9 +62,10 @@ a:hover{
 
 .container{
 	max-width: 1000px;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 50px;
+    display: block;
 }
 
 .container1 {
@@ -127,7 +128,7 @@ a.navr {
 
 	a.navr:hover:before {
 		visibility: visible;
- /*	 	-webkit-transform: scaleX(1);*/
+ 	 	-webkit-transform: scaleX(1);
   		transform: scaleX(0.5);
   		color:black;
 	}
@@ -135,6 +136,7 @@ a.navr {
 	a.navr:hover {
 		font-weight: bold;
 		color:black;
+		border-radius: 5em;
 		transition: ease-in .2s;
 	    -o-transition: ease-in .2s;
 	    -moz-transition: ease-in .2s;
