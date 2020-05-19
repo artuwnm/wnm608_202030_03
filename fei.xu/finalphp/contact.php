@@ -1,3 +1,15 @@
+<?php
+
+include_once "../lib/php/functions1.php";
+include_once "finalparts/templates.php";
+
+
+
+
+// print_p($rows);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,8 +22,8 @@
 	<?php include "finalparts/navbar.php" ?>
 
 	<div class="container10">
-  <form action="action_page.php">
-
+  <form action="contact_confirmation.php">
+	<h5>Contact us through the below form, we'll quickly respond. </h5>
     <label for="fname" class="label1">First name:</label>
     <input type="text" id="fname" name="firstname" >
 	
@@ -23,9 +35,6 @@
 
      <label for="pnumber" class="label1">Phone number:</label>
     <input type="text" id="pnumber" name="phonenumber">
- 
-     <label for="onumber" class="label1">Order number:</label>
-    <input type="text" id="onumber" name="ordername">
 
     <label for="subject" class="label1">Comment:</label>
     <textarea id="subject" name="subject" placeholder="" style="height:100px"></textarea>

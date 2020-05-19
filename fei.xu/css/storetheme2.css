@@ -48,7 +48,7 @@
 .product-figure img {
 	width:100%;
 	object-fit:cover;
-	max-height:30vh;
+	max-height:40vh;
 	vertical-align: text-bottom;
 
 }
@@ -236,4 +236,8 @@
 		padding:1em 3em;
 		margin:0;
 	}
+	.nav li {
+    padding: 10px 4px 13px 13px;
+    margin: 0;
+	   }
 }

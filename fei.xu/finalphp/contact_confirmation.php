@@ -19,13 +19,11 @@ $_SESSION['cart'] = [];
 		<div class="card">
 			<br>
 			<div class="purchasing">
-				Thanks for purchasing! 
+				Thanks for contacting us! 
 			</div>
 			<br>
 			<div class="purchasing1">
-				A confirmation has been sent to your email. 
-				<br>
-				Your order hasn't shipped yet, but we'll send you an email when it does.
+				we're get back to you soon！  
 			</div>
 			<div>
 				<a class="form-button6" href="product_list.php">Continue Shopping</a>

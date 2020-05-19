@@ -15,7 +15,7 @@ if(!isset($data->type)) {
 			*
 			FROM `products`
 			ORDER BY `date_create` DESC
-			LIMIT 12
+			LIMIT 15
 			");
 		break;
 	case "product_from_id":
@@ -33,7 +33,7 @@ if(!isset($data->type)) {
 					`description` LIKE '%{$data->search}%' OR
 					`category` LIKE '%{$data->search}%'
 				ORDER BY `date_create` DESC
-				LIMIT 12
+				LIMIT 15
 				");
 		break;
 
@@ -44,7 +44,7 @@ if(!isset($data->type)) {
 				FROM `products`
 				WHERE `$data->column` = '$data->value'
 				ORDER BY `date_create` DESC
-				LIMIT 12
+				LIMIT 15
 				");
 		break;
 
@@ -54,7 +54,7 @@ if(!isset($data->type)) {
 				*
 				FROM `products`
 				ORDER BY `$data->column` $data->dir
-				LIMIT 12
+				LIMIT 15
 				");
 		break;
 

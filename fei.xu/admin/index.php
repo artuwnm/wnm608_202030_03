@@ -4,8 +4,8 @@ include_once "../lib/php/functions1.php";
 $empty_product = (object) [
 	"name"=>"Watermelon",
 	"price"=>"1.99",
-	"category"=>"water",
-	"description"=>"Pure flavored water, with delicious watermelon and other natural flavors.",
+	"category"=>"sparklings",
+	"description"=>"Pure flavored sparklings, with delicious watermelon and other natural flavors.",
 	"thumbnail"=>"water_watermelon1.png",
 	"images"=>"water_watermelon1.png",
 	"quantity"=>"30"
