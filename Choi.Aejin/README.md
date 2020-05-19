@@ -8,3 +8,5 @@
 - http://janechoidesign.com/aau/wnm608/Choi.Aejin/index.php
 - http://janechoidesign.com/aau/wnm608/Choi.Aejin/admin/users.php
 - http://janechoidesign.com/aau/wnm608/Choi.Aejin/index.php
+- http://janechoidesign.com/aau/wnm608/Choi.Aejin/admin/index.php
+- http://janechoidesign.com/aau/wnm608/Choi.Aejin/Aejin_Styleguide/index.html#
