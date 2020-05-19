@@ -32,6 +32,7 @@ body {
 	font-size:100%;
 	font-family:'Lato', sans-serif;
 
+
 }
 
 h1{
@@ -47,13 +48,15 @@ h2 {
 }
 
 h3{
-	font-size:3.5em;
+	font-size:2.5em;
 	font-family:'Poppins', sans-serif;
 	font-weight: 700;
 	padding-top: 5px;
 	line-height: 1em;
 	text-transform: uppercase;
 }
+
+	
 
 h4{
 	font-size: 2em;
@@ -75,8 +78,15 @@ h5{
 
 h6 {
 	
-	
 }
+
+@media only screen and (max-width: 354px) {
+	h3{
+		font-size:2em;
+	}
+}
+
+
 
 
 
@@ -120,6 +130,17 @@ img {
 
 }
 
+.image-cropper2 {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+
+
+}
+
 .profile-pic {
   display: inline;
   margin: 0 auto;
@@ -133,8 +154,8 @@ img {
 
 .logo
 {
-width:230px;
-height:90px;
+width:200px;
+height:auto;
 vertical-align: middle;
 padding-top:1em;
 padding-right: 30px;
@@ -188,13 +209,22 @@ padding-left: 0.1em;
 vertical-align: middle;
 }
 
+.icon-admin:hover
+{
+width:40px;
+padding-right: 0.1em;
+padding-left: 0.1em;
+vertical-align: middle;
+background-image: url(https://wbarrios.com/aau/wnm608/barrios.wilson/img/admin-hover.png);
+
+}
 
 
 /* CART BADGET */
 
 .cart-circle{
-	width: 30px;
-    height: 30px;
+	width: 35px;
+    height: 35px;
     background-image: url(https://wbarrios.com/aau/wnm608/barrios.wilson/img/cart2.png);
 	background-size: cover;
 	vertical-align: middle;
@@ -202,13 +232,44 @@ vertical-align: middle;
 
 }
 
+.cart-circle:hover{
+	width: 35px;
+    height: 35px;
+    background-image: url(https://wbarrios.com/aau/wnm608/barrios.wilson/img/cart2-hover.png);
+	background-size: cover;
+	vertical-align: middle;
+	margin: 0 auto;
+
+}
+
 .badge{
-	font-size: 0.7em;
-	position: relative;
-	bottom: 15px;
-	right: 13px;
+	font-size: 0.8em;
+	position: absolute;
+	display: block;
+	bottom: 1.2rem;
+	right: 1rem;
+	width: 1.2rem;
+	height: 1.2rem;
+	background-color: #ffffff;
+	border: solid 3px;
+	border-radius: 50%;
+	line-height: 1.2rem;
+	
+}
 
-
+.badge, .badge:hover {
+    font-size: 0.8em;
+    position: absolute;
+    display: block;
+    bottom: 1.2rem;
+    right: 1rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #ffffff;
+    border: solid 2px #000000;
+    border-radius: 50%;
+    line-height: 1.2rem;
+    color: #000000;
 }
 
 
@@ -234,7 +295,7 @@ size: cover;
 
 
 .bigpic {
-	size:cover; 
+	size:100%; 
  	width: auto;
  	vertical-align: middle;
 }
@@ -269,26 +330,29 @@ size: cover;
   height: 500px;
   background-color:#ffb91a;
   padding-top: 1em;
+  padding-bottom: 2em;
   text-align: center;
   align-items: center;
   margin-top: -40px;
+  overflow: hidden;
+
 
 }
 
 
 
 .slider {
-  height: 500px;
+  height: 550px;
   width: 680px;
   margin: 40px auto 0;
-  overflow: visible;
   position: relative;
+
 
 }
 
 .mask {
-  overflow: hidden;
-  height: 320px;
+  height: 400px;
+  width: auto;
 }
 
 .slider ul {
@@ -310,14 +374,12 @@ size: cover;
 }
 
 .slider .quote {
-  font-size: 25px;
   font-style: italic;
   color: white;
   padding-top: 20px;
 }
 
 .slider .source {
-  font-size: 20px;
   text-align: center;
   padding-top: 10px;
   color: white;
@@ -544,6 +606,7 @@ size: cover;
 	max-width:1200px;
 	margin-right: auto;
 	margin-left: auto;
+	overflow: hidden;
 
 }
 
@@ -567,7 +630,7 @@ size: cover;
 
 
 .wrapper {
-  background-color: #ffffff;
+ 
   display: flex;
   position: relative;
   margin: auto;
@@ -586,11 +649,16 @@ size: cover;
 .nested-wrapper1 {
   display: flex;
   width: 50%;
+  
 }
 
 .nested-wrapper2 {
   width: 50%;
+  height:50%;
 }
+
+
+
 
 
 
@@ -606,7 +674,7 @@ size: cover;
 
 .nested-wrapper2>[class='2'] {
   background-image: url(https://wbarrios.com/aau/wnm608/barrios.wilson/images/2.gif);
-  background-size: cover;
+  background-size:cover;
   background-repeat: no-repeat;
   padding: 6em;
 }
@@ -631,7 +699,7 @@ size: cover;
   background-image: url(https://wbarrios.com/aau/wnm608/barrios.wilson/img/shirt-left.jpg);
   background-size: cover;
 	padding: 14em;
-  flex: 1;
+
 }
 
 .wp-pic1:hover {
@@ -645,7 +713,7 @@ size: cover;
   background-image: url(https://wbarrios.com/aau/wnm608/barrios.wilson/img/shirt-center.jpg);
   background-size: cover;
   padding: 14em;
-  flex: 1;
+  
 }
 
 .wp-pic2:hover {
@@ -680,8 +748,42 @@ size: cover;
 	text-align: center;
 	color: white;
 
+}
+
+
+
+.slider-1 {
+  background-image: url(https://wbarrios.com/aau/wnm608/barrios.wilson/images/bp1.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  padding: 6em;
+  height: 800px;
 
 }
+
+
+
+.slider-2 {
+  background-image: url(https://wbarrios.com/aau/wnm608/barrios.wilson/images/2.gif);
+  background-size:cover;
+  background-repeat: no-repeat;
+  padding: 6em;
+  height: 285px;
+}
+
+
+
+.slider-3 {
+  background-image: url(https://wbarrios.com/aau/wnm608/barrios.wilson/images/3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 6em;
+  height: 283px;
+}
+
+
+
+
 
 
 
@@ -716,7 +818,7 @@ size: cover;
 .navbar-top {
 	background-color:#4ABDAC;
 	color:var(--color-neutral-light);
-	height: 40px;
+	height: 25px;
 
 	
 }
@@ -763,12 +865,11 @@ size: cover;
 
 .banner-image{
   background-image: url(https://wbarrios.com/aau/wnm608/barrios.wilson/img/bannerback.jpg);
-	height: auto;
-	background-position: center;
+	background-position:center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
-	margin-bottom: 10px;
+	margin-bottom: -80px;
 
 }
 
@@ -781,7 +882,33 @@ size: cover;
 	position: relative;
 	padding-top: 40px;
 	margin-bottom:-60px;
-	margin-top: -80px;
+	margin-top: -60px;
+
+}
+
+.banner-image4{
+  background-image: url(https://wbarrios.com/aau/wnm608/barrios.wilson/img/backpage1.jpg);
+	height: auto;
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	padding-top: 40px;
+	margin-bottom:-60px;
+	margin-top: -60px;
+
+}
+
+.banner-image5{
+  background-image: url(https://wbarrios.com/aau/wnm608/barrios.wilson/img/backpage2.png);
+	height: auto;
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	padding-top: 40px;
+	margin-bottom:-60px;
+	margin-top: -60px;
 
 }
 
@@ -799,7 +926,7 @@ size: cover;
 	background-color:#90dcea;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	margin-bottom: -40px;
+	margin-bottom: -60px;
 	margin-top: -40px;
 
 }
@@ -825,7 +952,7 @@ size: cover;
 
 
 
-/* TESTIMONIALS-QUOTATIONS */
+/* QUOTATIONS-ABOUT PAGE */
 
 .quotation{
   font-size:1.3em;
@@ -884,7 +1011,7 @@ size: cover;
 .nav-flex ul,
 .nav ul {
 	list-style-type:none;
-	margin-top: 2em;
+	margin-top: 1em;
 	margin-bottom: 0;
 	padding-left: 0;
 }
@@ -900,17 +1027,29 @@ size: cover;
 	.nav-stretch a:hover,
 	.nav-flex a:hover,
 	.nav a:hover {
-		background-color:#dadcdd;
+		background-color:#f7b733;
 		color:var(--color-white);
 		text-decoration:none;
 	}
-	.nav-pills li.active a,
+	.nav-pills li. a:active a,
 	.nav-stretch li.active a,
 	.nav-flex li.active a,
-	.nav li.active a {
-		background-color:var(--color-main-light);
-		color:inherit;
+	.nav li. a:active {
+		background-color:red;
+		color:var(--color-white);
+		text-decoration:none;
+	
 	}
+
+.nav-pills a {
+    padding: 0.1em 1.5em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    position: relative;
+    
+}
+
+
 
 .nav-crumbs ul,
 .nav-crumbs-1 ul,
@@ -925,11 +1064,6 @@ size: cover;
 	text-align:center;
 }
 
-.nav-pills a {
-	padding:0.1em 1.5em;
-	padding-top:0.3em;
-	padding-bottom: 0.3em;
-}
 
 
 
@@ -1011,6 +1145,32 @@ text-align:center;
 	}
 	.card-section+.card-section {
 		border-top:1px solid var(--color-neutral-light);
+	}
+
+
+	.card-team {
+		padding-top: 1em;
+		padding-right:1em;
+		padding-left: 1em;
+		padding-bottom:1em;
+		background-color:rgb(255, 255, 255, 0.5);
+		margin-bottom: 5em;
+	}
+
+	.team-member{
+		font-size: 1em;
+		font-family:'Poppins', sans-serif;
+		font-weight: 500;
+		text-align: center;
+		margin-top: 1em;
+	}
+
+	.title{
+		font-size: 0.7em;
+		font-family:'Poppins', sans-serif;
+		font-weight: 400;
+		text-align: center;
+
 	}
 
 
@@ -1229,13 +1389,14 @@ text-align:center;
 	margin: 0 auto;
 	width: 100%;
 
-	
 }
 
 .red{
 	border: 0.16em solid #fc4a1a;
 	color:#ffffff;
 	background-color: #fc4a1a;
+	margin: 0 auto;
+
 }
 
 .yellow{
@@ -1342,7 +1503,7 @@ text-align:center;
 
 .hotdog.light2 {
 	display:block;
-	width:95%;
+	width:90%;
 	padding:0.5em 0.5em;
 	background-color:#eeeeee;
 	border-width:0;
@@ -1352,6 +1513,13 @@ text-align:center;
 	margin-top: 1em;
 	margin-bottom: 0.5em;
 
+}
+
+@media all and (max-width:30em){
+ a.hotdog.lifht2 {
+  display:block;
+  margin:0.4em auto;
+ }
 }
 
 
@@ -1401,7 +1569,7 @@ margin-right: 10%;
 }
 .logo
 {
-	max-height: 6rem;
+	max-height: 4rem;
 	width: auto;
 }
 
@@ -1446,9 +1614,7 @@ margin-right: 10%;
 .footer {
 	position: absolute;
 	left: 0;
-	bottom:0px;
 	width: 100%;
-	margin-top: 2rem;
 	text-align: center;
 	font-family: 'lato', sans-serif;
 	font-size: 0.8em;
@@ -1465,16 +1631,7 @@ margin-right: 10%;
 	padding-top: 0.2px;
 }
 
-.vl{
-	border-left: 2px solid #fa6b44;
-  	height: 100px;
-  	position: absolute;
-  	left: 50%;
-  	margin-left: -3px;
-  	top: 30px;
 
-
-}
 
 /* social media - concept by Matt Henley https://codepen.io/mattbhenley*/
 
@@ -1560,6 +1717,22 @@ label {
 text-align:center;
 }
 
+/* SOCIAL ICONS */
+
+.fa {
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.team-social{
+	text-align: center;
+}
 
 
 
@@ -1574,3 +1747,29 @@ html, body {
   color:#696969;
 }
 
+
+/* */
+/*--------------------------------------------------------------
+General Media Queries WB
+--------------------------------------------------------------*/
+/* REsponsives: */
+@media only screen and (max-width: 768px) {
+
+.slider-1, .slider-2, .slider-3 {
+   padding: 1em;
+    height: auto;
+}
+
+.badge, .badge:hover {
+    left: 50%;
+  }
+
+  .container {
+    max-width: 100%;
+}
+.slider li
+{
+  width: 100%;
+}
+
+}

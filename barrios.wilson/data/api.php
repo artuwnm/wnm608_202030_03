@@ -15,7 +15,7 @@ if(!isset($data->type)) {
 			*
 			FROM `products`
 			ORDER BY `date_create` DESC
-			LIMIT 12
+			LIMIT 16
 			");
 		break;
 	case "product_from_id":

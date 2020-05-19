@@ -29,49 +29,48 @@ session_start();
 		<div class="nav-crumbs"></div>
 	</header>
 
-<div class="banner-color">
+<div class="banner-image5">
 	<div class="container">
-
-		<div class="grid gap">
+		<div class="grid nogap">
 			<div class="col-xs-12 col-md-6">
-		
-		<div class="picxl"><img src="img/contactback.jpg"></div>
-</div>
+				<div class="picxl"><img src="img/keychain-always.png"></div>
+			</div>
 
 		<div class="col-xs-12 col-md-6 card soft1">
-				
-					<h1> Drop us a line</h1>
-					<form class="form">
-						<p>Please fill the form below and we will get back to you<br> as soon as possible.</p>
-						<div class="form-control">
-							<label for="checkout-card-name" class="form-label">Name </label>
-							<input type="text" class="form-input" name="name">
-						</div>
-						<div class="form-control">
-							<label for="checkout-card-number" class="form-label">E-mail adrress</label>
-							<input type="text" class="form-input" name="email">
-						</div>
-						<div class="form-control">
-							<label for="checkout-card-expirationmonth" class="form-label">Subject</label>
-							<input type="text" class="form-input" name="subject">
-						</div>
-						<div class="form-control">
-							<label for="message"  class="form-label">Message</label>
-							<input type="text area" class="form-input" name="message" style="height: 150px;"><br><br>
+			<h1> Drop us a line</h1>
+				<form class="form">
+					<p>Please fill the form below and we will get back to you<br> as soon as possible.</p>
+
+					<div class="form-control">
+						<label for="checkout-card-name" class="form-label">Name </label>
+						<input type="text" class="form-input" name="name">
+					</div>
+
+					<div class="form-control">
+						<label for="checkout-card-number" class="form-label">E-mail adrress</label>
+						<input type="text" class="form-input" name="email">
+					</div>
+
+					<div class="form-control">
+						<label for="checkout-card-expirationmonth" class="form-label">Subject</label>
+						<input type="text" class="form-input" name="subject">
+					</div>
+
+					<div class="form-control">
+						<label for="message"  class="form-label">Message</label>
+						<input type="text area" class="form-input" name="message" style="height: 150px;"><br><br>
 
 						<div class="form-control">
-							<a class="form-button yellow" href="thankyou_message.php">Submit</a>
+						<a class="form-button yellow" href="thankyou_message.php">Submit</a>
 						</div>
+					</div>
 					
-					</form>
-				</div>
-			</div>
-		
+				</form>
+		</div>
+	</div>
+</div>
 
-  <?php include "parts/footer.php" ?>
-    </div>
-
-
+<?php include "parts/footer.php" ?>
 
 </body>
 </html>

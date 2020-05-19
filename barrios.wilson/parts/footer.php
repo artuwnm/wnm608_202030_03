@@ -6,7 +6,6 @@
 			<div class="col-xs-12 col-md-6">
 
   				<img class="logo-footer" src="img/coolkeychains-logo.png" alt="CoolKeychains">
-  				<div class="vl"></div>
   			</div>
   
 			<div class="col-xs-12 col-md-6">

@@ -25,28 +25,28 @@ session_start();
 	<?php include "parts/navbar.php" ?>
 
 
-	<div class="wrapper">
-    
-    <div class="nested-wrapper1">
-      <div class="1">
-        <h3 style="color:white">It's not just<br> a keychain...</h3>
-        <h4 style="color:white"> It's an statement!</h4>
-        <div class="form-button red" href="product_list.php">VISIT OUR STORE</a></div>
-    </div>
-  </div>
+	<div class="grid nogap">
+      <div class="col-xs-12 col-md-6">
+        <div class="slider-1">
+            <h3 style="color:white">It's not just a keychain...</h3>
+            <h4 style="color:white"> It's an statement!</h4>
+            <div class="form-button red" href="product_list.php">VISIT OUR STORE</a></div>
+        </div>
+      </div>
 
-  <div class="nested-wrapper2">
-    <div class="2">
-      <h3 style="color:white">Never loose<br> your keys<br> again!</h3>
-      <div class="form-button red" href="product_list.php">VISIT OUR STORE</a></div>
+      <div class="col-xs-12 col-md-6">
+        <div class="slider-2">
+          <h3 style="color:white">Never loose<br> your keys<br> again!</h3>
+          <div class="form-button red" href="product_list.php">VISIT OUR STORE</a></div>
+        </div>
+
+        <div class="slider-3">
+          <h3 style="color:white">We sell one of a kind keychains</h3>
+          <div class="form-button green" href="product_list.php">VISIT OUR STORE</a></div>
+          </div>
+      </div>
     </div>
 
-    <div class="3">
-      <h3 style="color:white">We sell one<br> of a kind<br> keychains</h3>
-      <div class="form-button green" href="product_list.php">VISIT OUR STORE</a></div>
-    </div>
-  </div>
-</div>
 
 
 
@@ -85,21 +85,12 @@ session_start();
 </div>
 
 
-    
-    
 
 
-
-
-
-
-	
-
-	
 
 <div class="content-slider">
-	<h3 style="color:white">Our Clients Say</h3>
-  <div class="slider">
+	             <h3 style="color:white">Our Clients Say</h3>
+  <div class="slider container">
     <div class="mask">
       <ul>
         <li class="anim1">
@@ -144,8 +135,8 @@ session_start();
     </div>
   </div>
 </div>
-</div>
-</div>
+
+
 
 
 <div class="banner-image">
@@ -161,6 +152,8 @@ session_start();
 			<input type="email" placeholder="Your e-mail address"></div>
 			<div class="form-button yellow" href="">Submit</div>
     </div>
+    <br>
+    <br>
     <br>
     <br>
 	

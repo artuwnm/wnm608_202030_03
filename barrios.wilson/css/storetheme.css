@@ -56,7 +56,7 @@ body {
 
 .pagename {
      display: flex;
-     justify-content:left;
+     justify-content:center;
      padding-bottom: 0;
 }
 
@@ -66,7 +66,9 @@ body {
 	font-size: 1.5em;
 	padding-top: 0.5em;
 	margin-bottom:1em;
+	padding-left: 0.5em;
 	text-transform: uppercase;
+
 }
 
 
@@ -86,7 +88,7 @@ body {
 }
 .product-figure figcaption {
 	padding: 1em 1em 2em;
-	background-color:white;
+	background-color:rgb(255, 255, 255, 0.7);
 }
 
 	.product-figure.soft {
@@ -152,7 +154,7 @@ body {
 
 
 .product-thumbs img {
-	width:215px;
+	width:33%;
 	height: auto;
 	object-fit:cover
 }
@@ -175,6 +177,7 @@ h2.product-name {
     margin: 0;
     font-size:2.5em;
     font-weight: 500;
+    text-align: center;
 }
 .product-category {
     margin-bottom: 1rem;

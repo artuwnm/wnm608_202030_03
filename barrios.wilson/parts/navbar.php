@@ -20,7 +20,7 @@ include_once "parts/templates.php";
 <input type="checkbox" id="hamburger"/>
 	<div id="logo-header" class="flex-stretch"><a href="index.php"><img class="logo" src="img/coolkeychains-logo.png" alt="CoolKeychains"></a></div>
 
-		<ul class= "nav-pills">
+		<ul class= "nav-pills" id="nav">
 			<li><a href="index.php">HOME</a></li>
 
 			<li><a href="about.php">ABOUT</a></li>
@@ -31,7 +31,7 @@ include_once "parts/templates.php";
 
 			<li><a href="admin/index.php"><img class="icon" src="img/admin.png" alt="user"></a></li>
 
-			<li><div class="cart-circle"><a href="product_cart.php"><span class="badge"><?= makeCartBadge();?></span></a></div></li>
+			<li><a href="product_cart.php"><img class="icon" src="img/cart.png" alt="cart"><span class="badge"><?= makeCartBadge();?></span></a></div></li>
 				
 		</ul>
 	</div>

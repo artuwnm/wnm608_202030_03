@@ -41,7 +41,7 @@ include_once "lib/php/functions.php";
 							<option value="2">Oldest</option>
 							<option value="3">Most Expensive</option>
 							<option value="4">Least Expensive</option>
-							<option value="5">Size</option>
+							<option value="5">Quantity</option>
 
 						</select>
 					</div>
