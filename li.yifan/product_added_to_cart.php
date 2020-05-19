@@ -24,7 +24,7 @@ $o = getRows(makeConn(),
 
 	<div class="container">
 		<div class="card soft">
-			<h2>Product Item</h2>
+			<h2>Successfully Added</h2>
 
 			<div>
 				Thank you for adding <?= $p->amount ?> of the <?= $o->title ?> to the cart.
@@ -43,6 +43,33 @@ $o = getRows(makeConn(),
 			</nav>
 		</div>
 	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<?php include "parts/footer.php" ?>	
 	
 </body>
 </html>

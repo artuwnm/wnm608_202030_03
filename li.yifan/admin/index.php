@@ -3,13 +3,13 @@
 include_once "../lib/php/functions.php";
 
 $empty_product = (object) [
-	"title"=>"Kiwi",
-	"price"=>"2.56",
-	"category"=>"fruit",
-	"description"=>"A small hairy flightless bird.",
-	"thumbnail"=>"fruit_kiwi_m.jpg",
-	"images"=>"fruit_kiwi_m.jpg",
-	"quantity"=>"576"
+	"title"=>"Leather",
+	"price"=>"40.00",
+	"category"=>"fabric",
+	"description"=>"Good quality and hard texture, perfect for making cloth with silhouette.",
+	"thumbnail"=>"fabric_leather.jpg",
+	"images"=>"fabric_leather_1.jpg",
+	"quantity"=>"100"
 ];
 
 
@@ -114,7 +114,7 @@ return $r.<<<HTML
 <div class="itemlist-item display-flex">
 	<div class="flex-none">
 		<div class="image-square">
-			<img src="/images/store/$o->thumbnail">
+			<img src="images/store/$o->thumbnail">
 		</div>
 	</div>
 	<div class="flex-stretch">
@@ -140,14 +140,14 @@ $deletebutton = $id=="new" ? '' : <<<HTML
 HTML;
 
 $images = array_reduce(explode(",",$o->images),function($r,$p){
-	return $r."<img src='/images/store/$p'>";
+	return $r."<img src='images/store/$p'>";
 });
 
 $data_show = $id=="new" ? "" : <<<HTML
 <div class="card soft">
 
 <div class="product-main">
-	<img src="/images/store/$o->thumbnail">
+	<img src="images/store/$o->thumbnail">
 </div>
 <div class="product-thumbs">$images</div>
 
@@ -256,7 +256,7 @@ HTML;
 			</div>
 			<nav class="nav-flex flex-none">
 				<ul>
-					<li><a href="./product_list.php">Home</a></li>
+					<li><a href="./product_list.php">Back</a></li>
 					<li><a href="admin/">Product List</a></li>
 					<li><a href="admin/?id=new">Add New Product</a></li>
 				</ul>

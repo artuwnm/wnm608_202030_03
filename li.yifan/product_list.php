@@ -10,16 +10,13 @@ include_once "lib/php/functions.php";
 	
 	<?php include "parts/meta.php" ?>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="lib/js/functions.js"></script>
-	<script src="js/templates.js"></script>
 	<script src="js/list.js"></script>
 
 </head>
 <body>
 
 	<?php include "parts/navbar.php" ?>
-	<section class>
+	<section class="container">
 		<div class="topshow">
 				
 			<img src="images/list_top.jpg">
@@ -31,39 +28,47 @@ include_once "lib/php/functions.php";
 	<div class="container">
 
 
-		
-
-		<div class="form-control">
-			<form class="hotdog light" id="product-search">
-				<input type="search" class="search" placeholder="Search Products">
-			</form>
-		</div>
-		<div class="form-control display-flex">
-			<div class="flex-none">
-				<button type="button" class="form-button js-filter" data-type="category" data-value="">All</button>
-			</div>
-			<div class="flex-none">
-				<button type="button" class="form-button js-filter" data-type="category" data-value="cloth">Cloth</button>
-			</div>
-			<div class="flex-none">
-				<button type="button" class="form-button js-filter" data-type="category" data-value="fabric">Fabric</button>
-			</div>
-		</div>
-		<div class="form-control">
-			<!-- .form-select>select>option -->
-			<div class="form-select">
-				<select class="js-sort">
-					<option value="1">Newest</option>
-					<option value="2">Oldest</option>
-					<option value="3">Most Expensive</option>
-					<option value="4">Least Expensive</option>
-				</select>
-			</div>
-		</div>
 		<h2>Product List</h2>
 
-		<div class="grid gap productlist">
-			<div class="col-xs-6 col-md-4">
+		
+		<div class="form-control2 col-xs-2 col-md-3">
+			<div class="flex-none">
+				<button type="button" class="form-button2 js-filter" data-type="category" data-value="">All</button>
+			</div>
+			<div class="flex-none">
+				<button type="button" class="form-button2 js-filter" data-type="category" data-value="cloth">Cloth</button>
+			</div>
+			<div class="flex-none">
+				<button type="button" class="form-button2 js-filter" data-type="category" data-value="fabric">Fabric</button>
+			</div>
+		</div>
+		
+		<div class="form-control3 flex-none col-xs-8 col-md-6">
+		<div class="form-control4 col-xs-2 col-md-3 col-lg-3">
+						<!-- .form-select>select>option -->
+						<div class="form-select2">
+							<select class="js-sort">
+								<option value="1">Newest</option>
+								<option value="2">Oldest</option>
+								<option value="3">Most Expensive</option>
+								<option value="4">Least Expensive</option>
+							</select>
+
+						</div>
+						
+					</div>
+			<div class="flex-stretch">         </div>
+			<div class="form-control3 col-xs-4 col-md-3 col-lg-8">
+				<form class="hotdog light" id="product-search">
+					<input type="search" class="search" placeholder="Search Products">
+				</form>
+			</div>
+			
+		</div>
+		
+
+		 <div class="grid gap productlist">
+			<!-- <div class="col-xs-6 col-md-4">
 				<a herf="product_item.php" class="display-block">
 					<figure class="product-figure soft">
 						<div class="product-image">
@@ -253,15 +258,18 @@ include_once "lib/php/functions.php";
 
 					</figure>
 				</a>
-			</div>
+			</div> -->
 
-		</div>
+		</div> 
 
 
-
+		<br>
+		
 		<div>
 			<a href="admin">Product Admin</a>
 		</div>
+		<br>
+		<br>
 	</div>
 
 	<?php include "parts/footer.php" ?>

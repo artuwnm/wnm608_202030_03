@@ -21,14 +21,35 @@ include_once "lib/php/functions.php";
 	<section class>
 		<div class="topads">
 			<div class="ads">
-				<img src="images/web-title.png">
+				<div class="msg_desc">
+					<img src="images/web-title.png">
+				</div>
 			</div>
 			
 		</div>
 	</section>
 
+	<section class>
+		<div class="msg_desc">
+			<img style="max-width:100%;overflow:hidden;" src="images/ad1.png" alt="">
+		</div>
+		<!-- <div class="topshow">
+			
+			<a href="product_list.php"><img src="images/ad1.png"></a>
+			
+			
+		</div> -->
+	</section>
+
+	<section class>
+		<div class="msg_desc">
+			<img style="max-width:100%;overflow:hidden;" src="images/ad2.png" alt="">
+		</div>
+	</section>
+
+
 	<!-- .container>p*2>lorem30 -->
-	<div class="container">
+	<!-- <div class="container">
 		<div class="card soft">
 			<img src="images/dresstop.jpg">
 			<p>Ready-to-wear</p>
@@ -49,19 +70,85 @@ include_once "lib/php/functions.php";
 			<p>Error corrupti omnis non quia ullam aut tenetur, nihil quam molestias incidunt illo, cum, provident debitis laboriosam aperiam at excepturi. Aut eum sunt eius? Quaerat eius recusandae ullam quis quos.</p>
 		</div>
 			
-	</div>
+	</div> -->
 		
 
 	<div class="view-window display-flex flex-align-center flex-justify-center" style="background-image: url('images/backimg.jpg')">
-		<div class="card soft">
-			<h2>COOL CONTENT</h2>
+		<!-- <div class="card soft">
+
+			<h2>COOL CONTENT</h2> 
+		</div> -->
+
+		<div class="container">
+			<h2>Recommended Products</h2>
+			<div class="msg_desc">
+				<div class="grid gap">
+					<div class="col-xs-6 col-md-3 col-lg-3 col-xl-3">
+					<a herf="product_item.php?id=10" class="display-block">
+						<figure class="product-figure">
+							<div class="product-image">
+								<a href="product_item.php?id=10">
+									<img src="images/store/fabric_silver.jpg" alt>
+								</a>
+							</div>
+							
+
+						</figure>
+					</a>
+					</div>
+
+
+					<div class="col-xs-6 col-md-3 col-lg-3 col-xl-3">
+					<a herf="product_item.php?id=11" class="display-block">
+						<figure class="product-figure">
+							<div class="product-image">
+								<a href="product_item.php?id=11">
+									<img src="images/store/fabric_tyvek.jpg" alt>
+								</a>
+							</div>
+							
+
+						</figure>
+					</a>
+					</div> 
+
+					<div class="col-xs-6 col-md-3 col-lg-3 col-xl-3">
+					<a herf="product_item.php?id=12" class="display-block">
+						<figure class="product-figure">
+							<div class="product-image">
+								<a href="product_item.php?id=12">
+									<img src="images/store/fabric_nylon.jpg" alt>
+								</a>
+							</div>
+							
+
+						</figure>
+					</a>
+					</div>
+					<div class="col-xs-6 col-md-3 col-lg-3 col-xl-3">
+					<a herf="product_item.php?id=8" class="display-block">
+						<figure class="product-figure">
+							<div class="product-image">
+								<a href="product_item.php?id=8">
+								<img src="images/store/fabric_origami.jpg" alt>
+							</a>
+
+							</div>
+							
+
+						</figure>
+					</a>
+				</div>
+
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="container">
+	<!-- <div class="container">
 		<div class="display-flex">
 			<div class="flex-stretch">
 				<div class="card soft">
-					<!-- p*2>lorem20 -->
+					<!-- p*2>lorem20 
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe minus praesentium iste porro molestias placeat nostrum beatae optio inventore consequuntur!</p>
 					<p>Fugiat, suscipit. Neque vel error quas animi, quod at praesentium molestiae veniam! Iste architecto perspiciatis, esse deserunt, nam nemo eveniet.</p>
 					
@@ -71,7 +158,7 @@ include_once "lib/php/functions.php";
 			<div class="flex-none" style="width: 1em"></div>
 			<div class="flex-stretch"> 
 				<div class="card soft">
-					<!-- p*2>lorem20 -->
+					<!-- p*2>lorem20 
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas beatae voluptate soluta nemo blanditiis. Repudiandae ad eaque blanditiis asperiores aliquam!</p>
 					<p>Commodi, voluptas! Accusamus qui illo incidunt nam fugiat repudiandae ipsam sint, commodi laboriosam, distinctio pariatur adipisci sed perferendis in error!</p>
 				</div>
@@ -144,7 +231,7 @@ include_once "lib/php/functions.php";
 	<div class="container">
 		<h2>Responsive Grid</h2>
 		<div class="grid">
-			<!-- .col-xs-6*2>.card.soft>lorem30 -->
+			<!-- .col-xs-6*2>.card.soft>lorem30 
 			<div class="col-xs-12 col-md-6">
 				<div class="card soft">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nemo et, quidem non exercitationem molestias consectetur similique eveniet sapiente. Laboriosam repellat facilis, expedita voluptatem velit ad voluptatibus ex possimus saepe.</div>
 			</div>
@@ -153,7 +240,7 @@ include_once "lib/php/functions.php";
 			</div>
 		</div>
 		<div class="grid">
-			<!-- .col-xs-6*2>.card.soft>lorem30 -->
+			<!-- .col-xs-6*2>.card.soft>lorem30 
 			<div class="col-xs-12 col-xl-6">
 				<div class="card soft">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nemo et, quidem non exercitationem molestias consectetur similique eveniet sapiente. Laboriosam repellat facilis, expedita voluptatem velit ad voluptatibus ex possimus saepe.</div>
 			</div>
@@ -162,7 +249,7 @@ include_once "lib/php/functions.php";
 			</div>
 		</div>
 		<div class="grid">
-			<!-- .col-xs-6*12>.card.soft>lorem30 -->
+			<!-- .col-xs-6*12>.card.soft>lorem30 
 			<div class="col-xs-12 col-md-6 col-lg-4 col-xl-3">
 				<div class="card soft">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nobis quaerat quae nemo quam impedit possimus labore mollitia illum perferendis aspernatur, nisi iste ad pariatur, consequuntur est voluptates, fuga laudantium.</div>
 			</div>
@@ -201,7 +288,7 @@ include_once "lib/php/functions.php";
 			</div>
 		</div>
 		<div class="grid gap">
-			<!-- .col-xs-12.col-md-4*3>.card.soft>lorem30 -->
+			<!-- .col-xs-12.col-md-4*3>.card.soft>lorem30 
 			<div class="col-xs-12 col-md-4">
 				<div class="card soft">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, expedita, eveniet accusamus itaque voluptate quae similique numquam! Inventore quo quidem ipsa magni autem reiciendis dolore, quae facere delectus error, provident.</div>
 			</div>
@@ -226,11 +313,11 @@ include_once "lib/php/functions.php";
 		</div>
 
 
-	</div>
+	</div> -->
 	
 	<?php include "parts/footer.php" ?>	
 	
 </body>
-
+	<!-- <script>alert(1)</script> -->
 
 </html>

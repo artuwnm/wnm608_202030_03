@@ -1,6 +1,6 @@
 <meta charset="UTF-8">
 
-<base href="https://oliviavierl.com/aau/wnm608/li.yifan/">
+<base href="http://oliviavierl.com/aau/wnm608/li.yifan/">
 
 <meta name="viewport" content="width=device-width">
 
@@ -10,3 +10,6 @@
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="js/products.js"></script>
+
+<script src="lib/js/functions.js"></script>
+<script src="js/templates.js"></script>

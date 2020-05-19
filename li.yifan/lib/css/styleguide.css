@@ -40,6 +40,10 @@ h6 {
 
 }
 
+h2{
+	text-align: center;
+}
+
 a {
 	color: inherit;
 	font-weight: bold;
@@ -60,6 +64,48 @@ code {
 
 
 /* LOGO */
+
+@media(max-width: 600px)img#logo{
+	margin-left: 43px;
+}
+
+@media(max-width: 600px)#logo{
+	display: block;
+	float:none;
+}
+
+#logo{
+	padding-left: 2.5em
+	padding-top: 6px;
+	padding-bottom: 10px;
+	margin-top: 6px;
+	margin-left: 3em;
+}
+
+.nav li{
+	display: inline-block;
+	
+	float: none;
+
+}
+
+.nav ul{
+	width: 100%;
+	text-align: right;
+	margin-right: 2em;
+}
+
+.nav2{
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	
+}
+
+.nav2 li{
+	list-style: none;
+	margin-top: 2em;
+}
 
 .logo {
 	position: relative;
@@ -86,7 +132,16 @@ code {
 	margin-right: 0;
 	margin-left: 0;
 	margin-top: 0;
+	
 
+}
+
+.topshow h1,h2{
+	text-align: center!important;
+}
+
+.topshow img{
+	max-width: 100%;
 }
 
 .ads {
@@ -107,6 +162,15 @@ code {
 
 }
 
+.msg_desc {
+	background-size:100% 100%;
+	} 
+
+.msg_desc img{
+    height: auto;
+    width: auto\9; 
+    width:100%; 
+}
 
 /* SMALL CLASSES */
 
@@ -247,7 +311,7 @@ code {
 
 .card.soft {
 	box-shadow: 6px 5px 15px 10px rgba(0,0,0,0.1);
-	border-radius: 0.3em;
+	border-radius: 0.1em;
 }
 
 .card.medium {
@@ -255,7 +319,7 @@ code {
 }
 
 .card.dark {
-	background-color: var(--color-neutral-dark);
+	background-color: var(--color-main-medium);
 	color:var(--color-neutral-light);
 }
 
@@ -402,10 +466,84 @@ table {
 .form-control {
 	margin: 1em 0;
 	/* padding: 0 5em; */
+	
+
 }
 
 
-.form-select select,
+.form-control2 {
+	display: inline-block;
+	max-width: 620px;
+
+	margin: 0 auto;
+	padding: 10px;
+	
+}
+
+.form-control3 {
+	display: inline-flex;
+	/* float: right;*/
+	margin: 3px;
+	padding: 14px;
+	
+	
+
+
+
+	
+}
+
+.form-control4 {
+	display: block;
+	/* float: right;*/
+	margin: 3px;
+	padding: 10px;
+	margin-right: 0;
+	
+
+
+
+}
+
+.form-select select{
+	display: block;
+	width: 100%;
+	border-width: 0;
+	color: black;
+	font: inherit;
+	padding: 0.5em 1em;
+	/* margin: 0 5em; */
+	-webkit-appearance: none;
+	outline: 0;
+	text-align: center;
+	background-color: white;
+	border-radius: 0.2em;
+	text-decoration: none;
+	cursor: pointer;
+	
+
+}
+
+.form-select2 select{
+	display: block;
+	width: 100%;
+	border-width: 0;
+	color: black;
+	font: inherit;
+	padding: 0.5em 1em;
+	/* margin: 0 5em; */
+	-webkit-appearance: none;
+	outline: 0;
+	text-align: center;
+	background-color: #F7F7F7;
+	border-radius:0;
+	text-decoration: none;
+	cursor: pointer;
+	border-top: 1px solid #9C5003;
+
+	
+
+}
 .form-button {
 	display: block;
 	width: 100%;
@@ -417,10 +555,30 @@ table {
 	-webkit-appearance: none;
 	outline: 0;
 	text-align: center;
-	background-color: #364127;
-	border-radius: 0.3em;
+	background-color: #778367;
+	border-radius: 0.7em;
 	text-decoration: none;
 	cursor: pointer;
+	
+}
+
+.form-button2 {
+	display: block;
+	width: 100%;
+	border-width: 0;
+	color: black;
+	font: inherit;
+	padding: 0.5em 1em;
+	/* margin: 0 5em; */
+	-webkit-appearance: none;
+	outline: 0;
+	text-align: center;
+	background-color: #F7F7F7;
+	border-radius: 0;
+	text-decoration: none;
+	cursor: pointer;
+	border-top: 1px solid #9C5003;
+	
 }
 
 .form-button.buy {
@@ -439,7 +597,7 @@ table {
 }
 
 .form-button.confirm {
-		background-color:var(--color-confirm-light);
+		background-color:var(--color-main-medium);
 	}
 .form-select {
     position: relative;
@@ -488,6 +646,58 @@ table {
 	background-color:var(--color-white);
 }
 
+/* LIST SEARCH NAV */
+
+
+
+/* ABOUT */
+
+.row{
+    display: inline-flex;
+}
+
+.col-lg-6{
+	padding: 2px;
+}
+
+.col-lg-6 img{
+	width: 80%;
+	padding-right: 1em;
+}
+
+.about.section-gap{
+	
+
+	margin: 20px;
+   
+}
+
+.align-items-center{
+	align-items: center!important;
+}
+
+.info-left,
+.info-right{
+	width: 50%;
+}
+
+.section-gap{
+	padding: 180px 0;
+}
+
+.about .col-lg-6 .info-left img{
+    width: 50%;
+    margin-left: 2em;
+    display: inline-block;
+}
+
+.about .col-lg-6 .info-right h6{
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-weight: 600;
+	margin-right: 2em;
+	display: inline-block;
+}
 
 
 footer{

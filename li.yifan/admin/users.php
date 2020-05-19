@@ -160,6 +160,7 @@ HTML;
 			</div>
 			<nav class="nav-flex flex-none">
 				<ul>
+					<li><a href="index.php">Home</a></li>
 					<li><a href="admin/users.php">User List</a></li>
 					<li><a href="admin/users.php?id=new">Add New User</a></li>
 				</ul>
@@ -187,7 +188,7 @@ HTML;
 			<div class="card soft">
 			<h2>User List</h2>
 
-			<nav class="nav">
+			<nav class="nav2">
 			<ul>
 			<?php
 
@@ -198,6 +199,7 @@ HTML;
 				</li>
 				";
 			}
+
 
 			?>
 			</ul>
