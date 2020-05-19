@@ -34,7 +34,7 @@ $images = explode(",",$o->images);
 			<div class="col-xs-12 col-md-7">
 				<div class="card soft">
 					<div class="product-main">
-						<img src="http://zijianliu.com/aau/wnm608/zijianliu/img<?= $o->images ?>" width="300"alt="">
+						<img src="http://zijianliu.com/aau/wnm608/zijianliu/<?= $o->images ?>" width="300"alt="">
 					</div>
 					<div class="product-thumbs">
 					<?=
