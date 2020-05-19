@@ -48,7 +48,7 @@
                             <div class="form-group-contact">
                                 <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
                             </div>
-                            <a href="./product_home.php"><button type="submit" class="btn south-btn" >Send Message</button></a>
+                           <button type="submit" class="btn btn-primary btn-outline2" > <a href="./product_contact.php">Send Message</a></button>
                         </form>
                     </div>
                 </div>
