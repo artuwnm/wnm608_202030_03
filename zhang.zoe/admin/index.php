@@ -3,12 +3,12 @@
 include_once "../lib/php/functions.php";
 
 $empty_product = [
-	"name"=>"",
-	"price"=>"",
-	"category"=>"",
-	"description"=>"",
-	"thumbnail"=>"",
-	"images"=>"",
+	"name"=>"The sea",
+	"price"=>"6.5",
+	"category"=>"Landscape",
+	"description"=>"Look at that beautiful reflection on the sea",
+	"thumbnail"=>"images_landscape_med_4.jpg",
+	"images"=>"images_landscape_med_4.jpg",
 ];
 
 
@@ -80,9 +80,9 @@ switch(@$_GET['action']) {
 		break;
 	case "delete":
 		$statement = $conn->prepare("DELETE FROM `products` WHERE id=?");
-		$statement->execute([$_GET['id']]);
-		$id = $conn->lastInsertId();
-
+		$statement->bind_param("i",$_GET['id']);
+		$statement->execute();
+		$id = mysqli_insert_id($conn);
 		header("location:{$_SERVER['PHP_SELF']}");
 		break;
 }
@@ -227,21 +227,21 @@ HTML;
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Learning Data</title>
+	<title>Admin Page</title>
 	
 	<?php include "../parts/meta.php" ?>
 </head>
 <body>
 
-	<header class="navbar" style="background: #fff;color: #3a56a4">
+	<header class="navbar" class="navbar" style="background: #fff;color: #3a56a4">
 		<div class="container display-flex">
 			<div class="flex-stretch">
 				<h1>Product Admin</h1>
 			</div>
 			<nav class="nav-flex flex-none">
 				<ul>
-					<li><a href="./index.php">Home</a></li>
-					<li><a href="admin.php">Product List</a></li>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="product_list.php">Product List</a></li>
 					<li><a href="admin/?id=new">Add New Product</a></li>
 				</ul>
 			</nav>

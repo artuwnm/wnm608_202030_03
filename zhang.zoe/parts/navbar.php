@@ -17,6 +17,7 @@ include_once "parts/templates.php";
 					<span>Cart</span>
 					<span class="badge"><?= makeCartBadge(); ?></span>
 				</a></li>
+				<li><a href="admin/index.php">For Admin</a></li>
 			</ul>
 		</nav>
 

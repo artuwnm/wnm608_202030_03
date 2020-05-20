@@ -38,7 +38,7 @@ include_once "lib/php/functions.php";
     </style>
 
 	<?php include "parts/navbar.php" ?>
-    <div style="max-width: 750px;margin: 0 auto">
+    <div style="max-width: 70%;margin: 0 auto">
         <img src="img/home.jpg" alt="" style="width: 100%;height:25em" >
 
         <div style="max-width: 100%;padding-top: 2em;">
