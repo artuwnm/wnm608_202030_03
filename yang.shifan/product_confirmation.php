@@ -7,7 +7,7 @@
 
 <div class="container">
     <div class="card">
-        <h2 style="text-align: center;"> Thank you for purchsing. </h2>
+        <h2 style="text-align: center;"> Thank you for purchasing. </h2>
         <div style="margin-top: 20px;">
             <a class="button" href="product.php"> Continue Shopping</a>
         </div>

@@ -24,23 +24,21 @@
 		</h3>
 	</div>
 
-	<div class="container" style="display: flex; flex-direction: row; margin-top: 100px;">
-		<img style="margin-left: 12%; margin-right: 2%; width: 50%; max-width: 400px;" src="img/summer.jpg">
+	<div class="sample-image1 container1">
+		<img src="img/summer.jpg">
 		<div style="margin: auto;">
 			<h2> Flowers shouldn't just be in the ground </h2>
 			<h2> they should be in front of everyone </h2>
 		</div>
 	</div>
 
-	<div class="container" style="display: flex; flex-direction: row; margin-top: 100px;">
+	<div class="sample-image2 container2">
 		<div style="margin: auto;">
 		<h2>Try to put a bottle of flowers </h2>
 		<h2>in your life just to please yourself, </h2>
 		<h2>brighten up your life and heal everything</h2>
 		</div>
-		<div style="margin-right: 12%; margin-left: 2%; width: 50%; max-width: 400px;">
-			<img src="img/sunshine2.jpg">
-		</div>
+		<img src="img/sunshine2.jpg">
 	</div>
 
 </div>
@@ -61,17 +59,65 @@
 	    opacity: 0.6;
 	}
 
-	.home .container {
+	.home .container1 {
 		max-width:100%;
 		margin-right: auto;
 		margin-left: auto;
+		display: flex;
+		flex-direction: row; 
+		margin-top: 100px;
+	}
+
+	.home .container2 {
+		max-width:100%;
+		margin-right: auto;
+		margin-left: auto;
+		display: flex;
+		flex-direction: row; 
+		margin-top: 100px;
+	}
+
+	.sample-image1 img {
+		width: 50%; 
+		max-width: 400px; 
+		object-fit: contain;
+		margin-left: 12%; 
+		margin-right: 2%;
+	}
+
+	.sample-image2 img {
+		width: 50%; 
+		max-width: 400px; 
+		object-fit: contain;
+		margin-right: 12%; 
+		margin-left: 2%;
 	}
 
 	@media screen and (max-width: 700px) {
-		.home .container {
+		.home .container1 {
 			max-width:80%;
 			margin-right: auto;
 			margin-left: auto;
+			display: flex;
+			flex-direction: column; 
+			margin-top: 100px;
+		}
+
+		.home .container2 {
+			max-width:80%;
+			margin-right: auto;
+			margin-left: auto;
+			display: flex;
+			flex-direction: column-reverse; 
+			margin-top: 100px;
+		}
+
+		.sample-image1 img {
+			margin: auto;
+		}
+
+		.sample-image2 img {
+			margin: auto;
 		}
 	}
 </style>

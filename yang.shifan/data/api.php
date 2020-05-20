@@ -19,7 +19,7 @@ if(!isset($data->type)) {
 				`title` like '%$data->search%' OR
 				`description` like '%$data->search%'
 			ORDER BY `date_create` DESC
-			LIMIT 12
+			LIMIT 20
 		");
 		break;
 	case 'product_filter':
@@ -27,14 +27,14 @@ if(!isset($data->type)) {
 			"SELECT * FROM `products` 
 			WHERE `$data->column` like '%$data->value%'
 			ORDER BY `date_create` DESC
-			LIMIT 12
+			LIMIT 20
 		");
 		break;
 	case 'product_sort':
 		$output['result'] = getRows(makeConn(), 
 			"SELECT * FROM `products` 
 			ORDER BY `$data->column` $data->dir
-			LIMIT 12
+			LIMIT 20
 		");
 		break;
 	default:
