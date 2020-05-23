@@ -72,7 +72,7 @@ $rows = getRows(
 
 
         <div class="grid gap productlist">
-
+        
         <?php
 
 
@@ -84,7 +84,7 @@ $rows = getRows(
 
         ?>
 
-
+     
         </div>
     </div>
 

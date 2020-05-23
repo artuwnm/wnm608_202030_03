@@ -5,7 +5,8 @@
 
 function productListTemplate($r,$o) {
 return $r.<<<HTML
-<div class="col-xs-6 col-md-4">
+<div class="col-xs-12 col-md-6 col-lg-4 col-xl-3">
+<div class="card softad1">
 	<a href="product_item.php?id=$o->id" class="display-block">
 		<figure class="product-figure soft">
 			<div class="product-image"><img src="/aau/wnm608_202030_03/xiao.zhe/images/store/$o->images" alt=""></div>
@@ -15,6 +16,7 @@ return $r.<<<HTML
 			</figcaption>
 		</figure>
 	</a>
+</div>	
 </div>
 HTML;
 }
