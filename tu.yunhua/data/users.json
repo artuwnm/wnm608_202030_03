@@ -1,0 +1,50 @@
+[
+	{
+	"id":[1],
+	"name": "Hamilton Cline",
+	"type": "Teacher",
+	"email": "hcline@academyart.edu",
+	"classes": [555,2424]
+	},
+
+	{
+	"id":[2],
+	"name": "Trista Tu",
+	"type": "Student",
+	"email": "tristatutu@gmail.com",
+	"classes": [415,866,5774]
+	},
+
+	{
+	"id":[3],
+	"name": "Fei Xu",
+	"type": "Student",
+	"email": "afei@gmail.com",
+	"classes": [415, 866, 5774]
+	},
+
+	{
+	"id":[4],
+	"name": "Shifan Yang",
+	"type": "Student",
+	"email": "yangshifan21@gmail.com",
+	"classes": [415, 866, 5774]
+	},
+
+	{
+	"id":[5],
+	"name": "Emily Hu",
+	"type": "Student",
+	"email": "babyemily@gmail.com",
+	"classes": [415, 866, 5774]
+	},
+
+	{
+	"id":[6],
+	"name": "Pan Zhou",
+	"type": "Student",
+	"email": "pppppppan@gmail.com",
+	"classes": [415, 866, 5774]
+	}
+
+]

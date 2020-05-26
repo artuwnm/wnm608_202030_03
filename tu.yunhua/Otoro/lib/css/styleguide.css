@@ -1,0 +1,453 @@
+/* ELEMENT RESETS */
+
+*,*::before,*::after {
+	box-sizing:inherit;
+}
+
+:root {
+    --color-neutral-dark: #332d2d;
+    --color-neutral-medium: #988c8c;
+    --color-neutral-light: #ece7e7;
+
+    --header-height:3rem;
+}
+
+
+body {
+	box-sizing:border-box;
+	margin:0;
+	font-size:100%;
+/*	font-family:Helvetica,Arial,sans-serif;*/
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+
+/* product */
+body {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7; 
+    color: #828282;
+    background: #c72101;
+}
+
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+
+h1{
+	color: #fff;
+	font-family:"Poppins", sans-serif;
+}
+
+
+h2 {
+    color: #fff;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-size: 12px;
+    font-family:Georgia,"Times New Roman",serif;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 1px;
+    margin-inline-end: 1px;
+}
+
+
+a {
+	color:#000;
+	font-weight:600;
+	text-decoration: none;
+    font-family:"Poppins", sans-serif;
+}
+
+
+
+a:hover {
+	text-decoration: underline;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* logo */
+
+.header-mobiles-wrapper .header-mobiles .site-logo img {
+    max-width: 200px;
+}
+
+.header-mobiles-wrapper .header-mobiles .site-logo img {
+    max-height: 3em;
+}
+
+.img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* SMALL CLASSES */
+
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.container {
+    width: 1280px;
+}
+
+
+
+
+/* ATOMIC CLASSES */
+
+.display-flex { display:flex; }
+.display-inline-flex { display:inline-flex; }
+.display-block { display:block; }
+.display-inline-block { display:inline-block; }
+
+
+.flex-stretch { flex: 1 1 auto; }
+.flex-none { 
+	flex: none;
+	padding: 18px 0;
+ }
+
+
+.flex-align-center { align-items:center; }
+.flex-justify-center { justify-content:center; }
+
+
+
+
+/* COMPONENT CLASSES */
+/* Basic Navbar */
+
+.navbar {
+    background-color: #c72101;
+    color: #fff;
+    line-height: 2em
+    font-family:"Poppins", sans-serif;
+}
+
+
+.navbar h1 {
+	margin:0;
+	font-size:1rem;
+}
+
+
+.navbar a {
+	padding: 0 1em;
+}
+
+
+.nav a:hover {
+        background-color:none;
+        color:var(--color-white);
+        text-decoration:none;
+}
+
+
+.nav ul {
+	list-style-type:none;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+
+ul {
+    line-height: 30px;
+    padding-left: 0px;
+}
+
+ul.display-flex1 {
+    display: flex;
+    float: left;
+}
+
+ul.display-flex2 {
+    display: flex;
+    float: right;
+}
+
+
+
+
+
+/* card */
+
+.card {
+    overflow: hidden;
+    position: relative;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+/*	.card>:first-child { margin-top:0; }
+	.card>:last-child { margin-bottom:0; }*/
+
+	.card.soft {
+	    /*box-shadow: 6px 5px 15px 10px rgba(0, 0, 0, 0.1);*/
+		border-radius:0.3em;
+	}
+	.card.medium {
+		background-color:var(--color-neutral-medium);
+	}
+	.card.dark {
+		background-color:var(--color-neutral-dark);
+		color:var(--color-neutral-light);
+	}
+	.card.flat {
+		padding:0;
+	}
+
+
+
+/* view window */
+.view-window {
+	height:100vh;
+	overflow:hidden;
+	position:relative;
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+}
+
+
+
+
+
+
+
+
+/* fh5co-product */
+
+#fh5co-services, #fh5co-started, #fh5co-testimonial, #fh5co-started, #fh5co-product, #fh5co-about, #fh5co-contact, #fh5co-footer {
+    padding: 7em 0;
+    clear: both;
+}
+
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+
+.js .animate-box {
+    opacity: 0;
+}
+
+.container:before, 
+.container:after {
+    content: " ";
+    display: table;
+}
+
+
+.container {
+    width: 1170px;
+}
+
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.col-xs-2 {
+    width: 16.66667%;
+}
+
+.col-md-3 {
+    width: 25%;
+}
+
+.col-xs-4 {
+    width: 25%;
+}
+
+.col-xs-6 {
+    width: 45%;
+}
+
+
+.fh5co-heading {
+    margin-bottom: 5em;
+}
+
+.fh5co-heading span {
+    display: block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+.fh5co-heading h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.fh5co-heading p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #828282;
+}
+
+
+/* Paragraphs */
+
+p {
+    margin-bottom: 80px;
+}
+
+
+
+.col-md-offset-2 {
+    margin-left: 16.66667%;
+}
+
+.col-md-8 {
+    width: 66.66667%;
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: right;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.text-right {
+    text-align: right;
+}
+
+* {
+    box-sizing: border-box;
+} 
+
+
+.product .desc h3 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-weight: bold;
+  line-height: 24px;
+}
+.product .desc h3 a {
+  color: #000;
+}
+.product .desc .price {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.product:hover .product-grid, .product:focus .product-grid {
+  -webkit-box-shadow: 0px 10px 24px -7px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 10px 24px -7px rgba(0, 0, 0, 0.35);
+  -ms-box-shadow: 0px 10px 24px -7px rgba(0, 0, 0, 0.35);
+  -o-box-shadow: 0px 10px 24px -7px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 10px 24px -7px rgba(0, 0, 0, 0.35);
+}
+.product:hover .inner, .product:focus .inner {
+  opacity: 1;
+}
+.product:hover .desc h3 a, .product:focus .desc h3 a {
+  color: #d1c286;
+}
+
+.product-carousel {
+  margin-bottom: 7em;
+}
+
+
+.product {
+  margin-bottom: 40px;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+
+[class*='col-']>.card{
+    height: 100%;
+    margin: 0;
+} 
+
+
+/*[class*="col-"]
+选择所有类名中含有"col-"的元素
+与此类似的还有：
+[class^="col-"]
+选择所有类名中以"col-"开头的元素
+[class$="-col"]
+选择所有类名中以"-col"结尾的元素*/
+
+
+
+
+
+
+
+
