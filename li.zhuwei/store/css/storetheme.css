@@ -56,7 +56,7 @@ input:hover,
 }
 
 .DescriptionText{
-  color:pink;
+  color:#283b54;
 }
 
 .price {
@@ -67,20 +67,21 @@ input:hover,
 .product-description-button {
   border: none;
   outline: 2;
-  padding: 15px 32px;
-  margin: 19px 19px;
   font-size: 16px;
   color: #ffffff;
+  margin-top: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
   background-color: #283b54;
   text-align: center;
   cursor: pointer;
-  width: 88%;
-  font-size: 18px;
+  width: 100%;
 }
 
 .product-description-button:hover {
-  opacity: 1.2;
-   background-color: #fb8ca9;
+  background-color: #fb8ca9;
 }
 
 form {border: 3px /*solid #ffffff*/;}
@@ -131,7 +132,7 @@ main {
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .img-container {
@@ -187,11 +188,11 @@ main {
 /* FIGURE */
 
 .figure {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
 }
 .product-figure {
   margin:0;
@@ -205,7 +206,14 @@ main {
 }
 
 .product-figure figcaption {
-  padding:1em;
+  padding-top:1em;
+  padding-bottom: 2em;
+  background-color:white;
+}
+
+.product-figure.no-bottom-padding figcaption {
+  padding-top:1em;
+  padding-bottom: 0;
   background-color:white;
 }
 
@@ -264,10 +272,11 @@ main {
 }
 
 .img-square img{
-  width: 5 em;
-  height: 5 em;
+  width: 10 em;
+  height: auto;
   object-fit: contain;
   object-position: center;
+  width: 200px;
 }
 
 .itemlist-item {
@@ -276,11 +285,6 @@ main {
   border: 1px solid var(--color-neutral-light);
 }
 
-@media (max-width:600px) {
-  .navbar .display-flex {
-    display:block;
-  }
-}
 .product-main img {
   width:100%;
   /*height:40vh;*/
@@ -293,13 +297,10 @@ main {
 }
 
 footer {
-  flex-grow: 0;
-  flex-shrink: 1;
   padding: 10px;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 0 0 0;
   bottom: 0px;
-  width: 100%;
   background-color: #283b54;
   color: white;
   text-align: center;

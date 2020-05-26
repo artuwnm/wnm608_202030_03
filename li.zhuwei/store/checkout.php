@@ -96,17 +96,6 @@ session_start();
       </div>
     </div>
 
-    <div class="col-8">
-      <div class="card soft">
-      <h4>Cart <span class="price" style="color:#fb8ca9"><i class="fa fa-shopping-cart" style="color:#fb8ca9;"></i> <b>4</b></span></h4>
-      <p><a href="#">Copious</a> <span class="price">$22.00</span></p>
-      <p><a href="#">Peacock</a> <span class="price">$27.00</span></p>
-      <p><a href="#">Autumn</a> <span class="price">$20.00</span></p>
-      <p><a href="#">Whale</a> <span class="price">$24.00</span></p>
-      <hr>
-      <p>Total <span class="price" style="color:#fb8ca9"><b>$93.00</b></span></p>
-    </div>
-  </div>
 
    <div class="container">
       <div class="card">

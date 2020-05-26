@@ -8,66 +8,57 @@
   <?php include "parts/navbar.php" ?>
   <main>
     <div class="container">
-       <nav class="nav-crumbs" style="margin:1em 0">
-        <ul>
-          <li><a href="index.php"><i class="fas fa-arrow-left" style="color:black;"></i> Back</a></li>    
-        </ul>
-      </nav>
-    </div>
-
-    <div class="container">
-      <h2 style="text-align:center">Login with Social Media or Manually</h2>
-      <div class="card">
-      <div class="imgcontainer">
-      <img src="img/Avatar.png" alt="Avatar" class="avatar">
+      <div class="grid">
+        <div class="col-xs-12 col-md-12 col-xl-12" style="padding:0; float:center; margin:auto;">
+          <h2 style="text-align:center">Login</h2>
+          <div class="card" style="padding-bottom: 0px; margin-bottom: 0px;">
+          <div class="image-square">
+            <img src="img/Avatar.png" alt="Avatar" class="avatar" style="width:150px; height:auto;">
+          </div>
       </div>
-      </div>
-    </div>
-
-    <form>
-      <div class="container">
-        <div class="card">
+        </div>
+        <div class="col-xs-12 col-md-4 col-xl-4" style="padding:0; float:center; margin:auto;">
           <a href="#" class="fb login-option">
-            <i class="fa fa-facebook fa-fw"></i> Login with Facebook
-           </a>
+            <i class="fa fa-facebook fa-fw"></i>Facebook
+          </a>
+        </div>
+        <div class="col-xs-12 col-md-4 col-xl-4" style="padding:0; float:center; margin:auto;">
           <a href="#" class="twitter login-option">
-            <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+            <i class="fa fa-twitter fa-fw"></i>Twitter
           </a>
+        </div>
+        <div class="col-xs-12 col-md-4 col-xl-4" style="padding:0; float:center; margin:auto;">
           <a href="#" class="google login-option"><i class="fa fa-google fa-fw">
-            </i> Login with Google+
+            </i>Google+
           </a>
         </div>
-      </div>
 
-      <div class="container">
-        <div class="card">
-          <p>Or sign in manually:</p>
-        </div>
-      </div>
+        <div class="col-xs-12 col-md-12 col-xl-12" style="padding:0">
+          <form>
+            <div class="card" style="padding:0;">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+            </div>
 
-      <div class="container">
-      	<div class="card">
-          <label for="uname"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="uname" required>
-        </div>
-
-      	<div class="card">
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
-        </div>
-     
-        <div class="card">
-          <a class="form-button" href="index.php">Login</a>
-        </div>
-     
-        <div class="container" style="background-color:#f1f1f1">
-          <span class="psw"><a href="#">Forgot password?</a></span>
-           <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-          </label>
+            <div class="card" style="padding:0;">
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+            </div>
+         
+            <div class="card" style="padding:0;">
+              <a class="form-button" href="index.php">Login</a>
+            </div>
+         
+            <div class="container" style="background-color:#f1f1f1">
+              <span class="psw"><a href="#">Forgot password?</a></span>
+               <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+          </form>
         </div>
       </div>
-    </form>
+    </div>
   </main>
 
   <?php include "parts/footer.php" ?>
