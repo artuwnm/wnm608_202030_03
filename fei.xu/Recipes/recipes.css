@@ -1,0 +1,137 @@
+h1{
+	font-size:20px;
+	margin:7px;
+
+}
+
+h2{
+	width:300px;
+	padding:10px;
+	margin:20px auto;
+	text-align: center;
+	width:60%;
+	font-family: 'Playfair Display', serif;
+}
+
+h3{
+	width:0px;
+	padding:0px;
+	margin:5px auto;
+	text-align: center;
+	width:60%;
+	font-size:15px;
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	color: #9D9C9C;
+}
+
+h4{
+	font-size:15px;
+	margin:2px;
+}
+
+ul{
+	list-style-type: circle;
+	font-family: 'Raleway', sans-serif;
+	font-size:25px;
+}
+
+ol{
+	font-size:14px;
+	margin-right:50px;
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+
+dt {
+  background-color:grey;
+  padding:0.2em 0.5em;
+  color:white;
+}
+dt~dt {
+  margin-top:0.5em;
+}
+dd {
+  padding:10px;
+  border:1px solid grey;
+  margin-left:0;
+  display:none;
+}
+dl, dt, dd {
+  width: 70%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.steak img{
+    float:left;
+    margin-top:20px;
+    margin-left:50px;
+    margin-right:50px;
+    margin-bottom:20px;
+}
+.steak{
+  width: 700px auto;
+  border:3px solid #060B2F;;
+  padding: 50px;
+  margin: 20px;
+  text-align: justify;
+}
+
+
+.fish img{
+	float:right;
+    margin-top:150px;
+    margin-left:50px;
+    margin-right:0px;
+    margin-bottom:20px;
+}
+.fishname{
+	list-style-type: circle;
+	font-family: 'Raleway', sans-serif;
+	font-size:25px;
+	color:black;
+	margin:21px;
+}
+
+.fish ul{
+	list-style-type: square;
+	font-family:'Roboto', sans-serif;
+	font-size:15px;
+	color:#28623C;
+	margin-top:0px;
+}
+
+.fish ol{
+	font-size:14px;
+	list-style-type: upper-roman;
+}
+
+.fish{
+  font-size:15px;
+  border:3px solid #F99C23;;
+  padding: 50px;
+  margin: 20px;
+  text-align: justify;
+}
+
+.dumpling img{
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top:100px;
+    margin-bottom:100px;
+    display:block;
+}
+
+.dumpling{
+  font-size:12px;
+  width: 700px auto;
+  border:3px solid #225095;;
+  padding: 50px;
+  margin: 20px;
+  text-align: justify;
+}
+.dumpling ol{
+	font-size:14px;
+	list-style-type: upper-alpha;
+}

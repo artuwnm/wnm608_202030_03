@@ -1,0 +1,140 @@
+/* ELEMENT RESETS */
+*,*::before,*::after {
+	box-sizing:inherit;
+}
+
+:root {
+    --color-neutral-dark: #332d2d;
+    --color-neutral-medium: #c2c0ce;
+    --color-neutral-light: #ece7e7;
+
+    --header-height:3rem;
+}
+
+body {
+	box-sizing:border-box;
+	margin:0;
+	font-size:100%;
+	font-family:Helvetica,Arial,sans-serif;
+}
+
+h1{
+	font-family: 'Cormorant Garamond', serif;
+}
+
+
+h2{
+	text-align:center;
+	font-size:150%;
+}
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+a {
+	color:inherit;
+	font-weight:thin;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/*Nav*/
+.navbar {
+	background-color:var(--color-neutral-dark);
+	color:var(--color-neutral-light);
+	line-height: var(--header-height);
+}
+.navbar h1 {
+	margin:0;
+	font-size:1rem;
+}
+.navbar a {
+	padding: 0 1em;
+}
+
+.nav ul {
+	list-style-type:none;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size:80%;
+}
+
+/*Atomic*/
+.display-flex { display:flex; }
+.display-inline-flex { display:inline-flex; }
+.display-block { display:block; }
+.display-inline-block { display:inline-block; }
+
+
+.flex-stretch { flex: 1 1 auto; }
+.flex-none { flex: none; }
+
+/* view window */
+.view-window {
+	height:50vh;
+	overflow:hidden;
+	position:relative;
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+}
+
+
+.flex-align-center { align-items:center; }
+.flex-justify-center { justify-content:center; }
+
+/*Container*/
+.container {
+	max-width:1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*Card*/
+.card {
+    background-color: #d6682df0;
+    overflow: hidden;
+    position: relative;
+    padding: 3em;
+    margin-top: 5em;
+    margin-bottom: 1em;
+    color:white;
+    text-align:center;
+}
+	.card>:first-child { margin-top:0; }
+	.card>:last-child { margin-bottom:0; }
+
+	.card.soft {
+	    box-shadow: 4px 6px 10px 5px rgba(117, 117, 117, 0.1);
+		border-radius:0.2em;
+		margin-bottom: 73px;
+		margin-top:73px;
+	}
+	.card.medium {
+		background-color:var(--color-neutral-medium);
+	}
+	.card.dark {
+		background-color:#f3f3f3;
+		color:var(--color-neutral-light);
+	}
+	.card.flat {
+		padding:0;
+	}
+
+	.card.soft.medium{
+		margin-bottom: 0px;
+		margin-top: 102px;
+		padding-top:35px;
+		padding-bottom:35px;
+		padding-right:52px;
+		padding-left:52px;
+	}
+
