@@ -1,0 +1,42 @@
+.titlepic
+{
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    width: 40%;
+    height: auto;
+   
+}
+.heropic
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+.foodpic
+{
+	position: relative;
+    width: 320px;
+    height: 320px;
+    padding-top: 40px;
+    left: 0;
+}
+p {
+    font-family: Roboto-Light;
+font-size: 14px;
+color: #3D3D3D;
+letter-spacing: 0.64px;
+line-height: 25px;
+width: 300px;
+}
+h2 {
+    font-family: Montserrat-Bold;
+font-size: 20px;
+color: #090909;
+letter-spacing: 1px;
+line-height: 58px;
+font-weight: bold;
+margin: 0;;
+}
