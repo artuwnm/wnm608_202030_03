@@ -1,0 +1,13 @@
+[	{
+		"name": "Sean Xiao",
+		"type": "Student",
+		"email": "zxiao3@art.edu",
+		"classes": [608, 613, 700]
+	},
+	{
+		"name": "Zhe Xiao",
+		"type": "Student",
+		"email": "zxiao3@art.edu",
+		"classes": [608, 613, 700]
+	}
+]
