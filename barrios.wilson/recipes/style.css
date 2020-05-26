@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800&display=swap');
+
+html
+{
+	font-family: 'Work Sans', sans-serif;
+	font-size:18px;
+}
+ body
+{
+
+font-family: 'Work Sans', sans-serif;
+}
+
+
+p {
+	 font-family: 'Work Sans', sans-serif;
+	 font-size: 16px;
+	 font-weight:400;
+	 color:#000000;
+	 margin:0;
+	 padding-top:20px;	
+}
+
+h1, h2, h3, h4, h5 { 
+	 font-family: Montserrat;
+}
+
+h1 { 
+	 font-size: 50px;
+	 font-weight:600;
+	 color:#dc002c;
+	 margin:0;
+	 padding-top:20px;
+}
+
+h2 { 
+	 font-size: 35px;
+	 font-weight:400;
+	 color:#000000;
+	 margin:0;
+	 padding-top: 10px;
+	 padding-bottom: 10px;
+}
+
+h3 { 
+	 font-size: 30px;
+	 font-weight:600;
+	 color:#336699;
+	 margin:0;
+}
+
+h4 { 
+	 font-size: 25px;
+	 font-weight:500;
+	 color:#336699;
+	 margin:0;
+}
+
+h5 { 
+	 font-size: 14px;
+	 font-weight:400;
+	 color:#336699;
+	 margin:0;
+}
+
+h1 span
+{
+color:#0c3293;
+font-weight:400;
+}
+
+h1 span
+{
+color:#336699;
+font-weight:500;
+}
+
+
+hr.new1 {
+  border-top: 5px solid;
+  padding-top: 0;
+  color:#336699;
+  }
+  
+
+.container
+
+{
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	padding-top:20px;
+	padding-bottom:20px;	
+}
+
+.section
+{
+	width: 80%;
+	height:auto;
+	margin:0 auto;
+	padding:20px;
+	margin-bottom:20px;
+	overflow:hidden;
+}
+
+.ingredients
+{
+	width: 80%;
+	height:auto;
+	margin:0 auto;
+	padding:10px;
+	margin-bottom:10px;
+	overflow:hidden;
+}
+
+ul
+{
+	margin-top:1rem;
+	margin-bottom:1rem;
+	padding-left:1rem;
+}
+
+ul li
+{
+	margin-bottom:1rem;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.image
+{
+float:left;
+width:200px;
+height:200px;
+}
+
+.dish
+{
+float:right;
+border-radius: 50%;
+width:320px;
+height:320px;
+}
+
+.flag
+{
+width: 2000px; 
+height:30px;
+}
+
+.horizontal
+{
+	margin:0;
+	padding:0;
+}
+.horizontal li
+{
+	display:inline-block;
+	margin:0;
+	padding:0;
+	line-height:1em;
+	margin-right:1rem;
+}
+.footer {
+	text-align: center;
+	padding-top: 3rem;
+	padding-bottom: 1rem;
+}
+
+
