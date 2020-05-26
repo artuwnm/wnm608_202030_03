@@ -81,7 +81,7 @@ $images = explode(",",$randomProduct->images);
         </div>
       </div>
 
-      <div class="card soft dark">
+      <div class="card">
         <h2>Description</h2>
         <div class=DescriptionText><?= $randomProduct->description ?></div>
       </div>

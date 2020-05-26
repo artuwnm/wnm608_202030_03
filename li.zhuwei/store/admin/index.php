@@ -88,21 +88,22 @@ switch(@$_GET['action']) {
 //TEMPLATES
 function makeListItemTemplate($r,$o) {
 return $r.<<<HTML
-<div class="itemlist-item display-flex">
-    <div class="flex-none">
-      <div class="image-square">
-        <img src="../$o->thumbnail">
+<div class="col-xs-12 col-md-12 col-xl-4">
+  <div class="itemlist-item display-flex" style="flex-direction: column; align-items: center;">
+      <div class="flex-none">
+        <div class="image-square">
+          <img src="../$o->thumbnail">
+        </div>
       </div>
-    </div>
-
-    <div class="flex-stretch">
-      <div><strong>$o->name</strong></div>
-      <div><strong>$o->category</strong></div>
-    </div>
-    <div class="flex-none display-flex">
-        <div><a class="form-button"  href="./?id=$o->id">edit</a></div>
-        <div><a class="form-button"  href="../product_item.php?id=$o->id">visit</a></div>
-    </div>
+      <div class="flex-stretch">
+        <div><strong>$o->name</strong></div>
+        <div><strong>$o->category</strong></div>
+      </div>
+      <div class="flex-stretch display-flex" style="margin-top: 8px; width: 100%; flex-direction: row; align-items: center; justify-content: center;">
+          <div><a class="form-button"  href="./?id=$o->id">edit</a></div>
+          <div><a class="form-button"  href="../product_item.php?id=$o->id" style="margin-left: 20px;">visit</a></div>
+      </div>
+  </div>
 </div>
 HTML;
 }
@@ -157,7 +158,7 @@ HTML;
 
 
 echo <<<HTML
-<div class="container" style="min-width: 1000px;">
+<div class="container" style="margin-left: 0; margin-right: 0">
   <nav class="nav-pills">
     <div class="card flat">
     <nav class="nav-crumbs">
@@ -182,7 +183,7 @@ HTML;
 }
 
 echo <<<HTML
-      <div class="col-xs-12 col-md-12">
+      <div class="col-xs-12 col-md-12 col-xl-12">
         <div class="card soft">
         <h2>$addoredit Product</h2>
         <div class="form-control">
@@ -287,6 +288,7 @@ include_once "../lib/php/functions.php";
 <head>
   <title>Learning Data</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
   <script src="https://kit.fontawesome.com/041ded284b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../lib/css/gridsystem.css" type="text/css">
   <link rel="stylesheet" href="../lib/css/styleguide.css" type="text/css">
@@ -308,11 +310,8 @@ include_once "../lib/php/functions.php";
   } else {
 echo "
 <div class='container'>
-  <div class='card soft'>
-    <h2>Product List</h2>
-
-    <ul class='itemlist'>
-    <ul>
+  <h2>Product List</h2>
+  <div class='grid'>
     ";
     $rows = getRows ($conn,"SELECT * FROM `products`");
     echo array_reduce($rows,'makeListItemTemplate');

@@ -4,7 +4,7 @@ include_once("lib/php/functions.php");
 
 function productListTemplate($r,$o) {
 return $r.<<<HTML
-<div class="col-xs-6 col-md-4">
+<div class="col-xs-12 col-md-6 col-xl-4">
   <a href="product_item.php?id=$o->id" class="display-block">
     <figure class="product-figure soft">
       <div class="product-image"><img src="$o->thumbnail" alt=""></div>
@@ -38,8 +38,9 @@ function cartListTemplate($r,$o) {
 $pricefixed = number_format($o->total, 2, '.', '');
 $selectamount = selectAmount($o->amount,10);
 return $r.<<<HTML
-<div class="display-flex card-section" style="flex-direction: row; justify-content: space-between; align-items: flex-start;">
-  <div style="margin-left: -4em; width:20em; flex-grow: 0">
+<div class="display-flex card-section" style="flex-direction: row; justify-content: space-between; align-items: flex-start;
+  flex-wrap: wrap;">
+  <div style="margin-left: -4em; width:20em; flex-grow: 0;">
     <img src="$o->thumbnail">
   </div>
   <div class="display-flex" style="flex-direction: column; margin-right:10em;

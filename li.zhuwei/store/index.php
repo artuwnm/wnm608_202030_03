@@ -25,7 +25,7 @@ session_start();
       </div>
     </div> 
 
-    <div class="container">
+    <div class="container center">
       <div class="card">
         <h2>Visit Our Store</h2><br>
         <img src="img/janstudiomockup.png" alt="Random Name">
@@ -65,41 +65,30 @@ session_start();
       <?php recommendedCategory('seasons'); ?>
     </div>
 
-  <div class="container">
-    <div class="display-flex" style="justify-content: center">
+    <div class="container">
+      <h2>Design Stories</h2>
 
-      <div class="display-flex" style="flex-direction: column;">
-        <h1 style="text-align:center">Design Stories</h1>
+      <div class="card" style="max-width: 370px">
+        <img src="img/fairystory.png" style="width:100%; height:auto; object-fit: contain; object-position: center;">
+        <h3>FairyLand</h3>
+        <p><b>BEST GIFT FOR GIRLFRIEND AND MOM!</b> <br>I wish you were a fairyland, hoping you are happy endlessly. I wish you can enjoy the fairyland atmosphere of the evenings here when the myriad stars twinkle as though in communication with the glittering lights.</p> 
+        <a class="form-button" href="http://janelleweiwei.org/aau/wnm608/li.zhuwei/store/product_item.php?id=2">Details</a>
+      </div>
 
-        <div class="card">
-          <img src="img/fairystory.png">
-          <h2>FairyLand</h2>
-          <p><b>BEST GIFT FOR GIRLFRIEND AND MOM!</b> <br>I wish you were a fairyland, hoping you are happy endlessly. I wish you can enjoy the fairyland atmosphere of the evenings here when the myriad stars twinkle as though in communication with the glittering lights.</p> 
-             <div class="card">
-             <a class="form-button" href="http://janelleweiwei.org/aau/wnm608/li.zhuwei/store/product_item.php?id=2">Details</a>
-             </div>
-        </div>
+      <div class="card" style="max-width: 370px">
+        <img src="img/peacockstory.png" style="width:100%; height:auto; object-fit: contain; object-position: center;">
+        <h3>Peacock</h3>
+        <p><b>A WONDERFUL GIFT FOR FRIENDS AND FAMILIES.</b> <br>The design inspired from Filoli Garden located in Redwood City. A steamy jungle covered it, but not with plants. This covering seemed to be made of peacock feathers, full of eyes and shimmering colors.</p>  
+        <a class="form-button" href="http://janelleweiwei.org/aau/wnm608/li.zhuwei/store/product_item.php?id=14">Details</a>
+      </div>
 
-        <div class="card">
-          <img src="img/peacockstory.png">
-          <h2>Peacock</h2>
-          <p><b>A WONDERFUL GIFT FOR FRIENDS AND FAMILIES.</b> <br>The design inspired from Filoli Garden located in Redwood City. A steamy jungle covered it, but not with plants. This covering seemed to be made of peacock feathers, full of eyes and shimmering colors.</p>  
-             <div class="card">
-             <a class="form-button" href="http://janelleweiwei.org/aau/wnm608/li.zhuwei/store/product_item.php?id=14">Details</a>
-             </div>
-        </div>
-
-        <div class="card">
-          <img src="img/Bluestory.png">
-          <h2>Ocean</h2>
-          <p><b>A STORY BETWEEN THE BLUE OCEAN AND LITTLE DAISY.</b> <br>The tiny little skylark stroked the daisy, and flew away to the wide and blue sky. It looked like an ocean of flowers. Is there any significance to this blue? Yes, it is little daisy's ocean dream.</p> 
-             <div class="card">
-             <a class="form-button" href="http://janelleweiwei.org/aau/wnm608/li.zhuwei/store/product_item.php?id=5">Details</a>
-             </div>
-        </div>
+      <div class="card" style="max-width: 370px">
+        <img src="img/Bluestory.png" style="width:100%; height:auto; object-fit: contain; object-position: center;">
+        <h3>Ocean</h3>
+        <p><b>A STORY BETWEEN THE BLUE OCEAN AND LITTLE DAISY.</b> <br>The tiny little skylark stroked the daisy, and flew away to the wide and blue sky. It looked like an ocean of flowers. Is there any significance to this blue? Yes, it is little daisy's ocean dream.</p> 
+        <a class="form-button" href="http://janelleweiwei.org/aau/wnm608/li.zhuwei/store/product_item.php?id=5">Details</a>
       </div>
     </div>
-  </div>
   </main>
 
   <?php include "parts/footer.php" ?>

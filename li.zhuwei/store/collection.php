@@ -31,7 +31,7 @@ $rows = getRows(
         </ul>
       </nav>
       <!-- First Photo Grid-->
-      <div class="container">
+      <div class="container" style="margin-left: auto; margin-right:auto;">
         <h2 style="text-align:center">Product List</h2>
 
         <div class="form-control">

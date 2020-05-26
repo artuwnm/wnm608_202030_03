@@ -54,7 +54,7 @@ function showUserPage($user, $id) {
 echo <<<HTML
 <div class="container">
   <div class="card flat">
-    <nav class="nav-crumbs" style="margin:2em 0">
+    <nav class="nav-crumbs">
       <ul>
         <li><a href="users.php"><i class="fas fa-arrow-left" style="color:black;"></i> Back</a></li>    
       </ul>
@@ -102,6 +102,7 @@ HTML;
 <head>
   <title>Learning Data</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
   <script src="https://kit.fontawesome.com/041ded284b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../lib/css/gridsystem.css" type="text/css">
   <link rel="stylesheet" href="../lib/css/styleguide.css" type="text/css">
@@ -118,7 +119,7 @@ HTML;
     } else {
 
 echo "
-  <div class='container' style='min-width:500px;'>
+  <div class='container' style='min-width:300px;'>
     <div class='card soft'>
      
       <h2>User List</h2>
