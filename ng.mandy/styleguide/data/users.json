@@ -1,0 +1,31 @@
+[{
+    "name": "Hamilton Cline",
+    "type": "Teacher",
+    "email": "hcline@academyart.edu",
+    "classes": [608, 617, 820]
+  },
+  {
+    "name": "Jiaxin Xie",
+    "type": "Student",
+    "email": "jiaxinxiedesign@gmail.com",
+    "classes": [608, 613, 700]
+  },
+  {
+    "name": "Yifan Li",
+    "type": "Student",
+    "email": "oliviavierl0305@gmail.com",
+    "classes": [608, 610, 635, 700]
+  },
+  {
+    "name": "Zimu Zhong",
+    "type": "student",
+    "email": "zzmu061@gmail.com",
+    "classes": [608]
+  },
+  {
+    "name": "Ji Yeom",
+    "type": "Student",
+    "email": "jwy617@gmail.com",
+    "classes": [608, 613, 621]
+  }
+]

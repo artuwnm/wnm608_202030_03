@@ -1,0 +1,142 @@
+*,*::before,*::after {
+	box-sizing:inherit;
+}
+
+:root {
+    --color-neutral-dark: #332d2d;
+    --color-neutral-medium: #988c8c;
+    --color-neutral-light: #ece7e7;
+
+    --header-height:3rem;
+}
+
+body {
+	box-sizing:border-box;
+	margin:0;
+	font-size:100%;
+	font-family:Helvetica,Arial,sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family:Georgia,"Times New Roman",serif;
+}
+
+
+a {
+	color:inherit;
+	font-weight:bold;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+/* SMALL CLASSES */
+
+.container {
+	max-width:1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+/* ATOMIC CLASSES */
+
+.display-flex { display:flex; }
+.display-inline-flex { display:inline-flex; }
+.display-block { display:block; }
+.display-inline-block { display:inline-block; }
+
+
+.flex-stretch { flex: 1 1 auto; }
+.flex-none { flex: none; }
+
+.flex-align-center { align-items:center; }
+.flex-justify-center { justify-content:center; }
+
+
+
+
+/* COMPONENT CLASSES */
+
+.navbar {
+	background-color:var(--color-neutral-light);
+	color:var(--color-neutral-dark);
+	line-height: var(--header-height);
+}
+.navbar h1 {
+	margin:0;
+	font-size:1rem;
+}
+.navbar a {
+	padding: 0 1em;
+}
+
+.nav ul {
+	list-style-type:none;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+
+
+
+/* card */
+
+.card {
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    padding: 0em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+	.card>:first-child { margin-top:0; }
+	.card>:last-child { margin-bottom:0; }
+
+	.card.soft {
+	    box-shadow: 6px 5px 15px 10px rgba(0, 0, 0, 0.1);
+		border-radius:0em;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.card.s_u_b{
+		background-color:var(--color-neutral-dark);
+		color:var(--color-neutral-light);
+	}
+	.card.medium {
+		background-color:var(--color-neutral-medium);
+	}
+	.card.dark {
+		background-color:var(--color-neutral-dark);
+		color:var(--color-neutral-light);
+	}
+	.card.flat {
+		padding:0;
+	}
+
+
+
+/* view window */
+.view-window {
+	height:100vh;
+	overflow:hidden;
+	position:relative;
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+}

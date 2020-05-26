@@ -1,0 +1,104 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+body {
+	text-align:center;
+	overflow: hidden;
+	position: fixed;
+}
+
+
+h1 {
+	font-size: 40pt;
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	color: #666666;
+}
+header {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.header-container {
+	display: flex;
+    align-items: center;
+}
+
+.header-container.nav {
+	margin-left: auto;
+}
+
+main {
+	padding-left: 50px;
+	padding-right: 50px;
+	overflow: auto;
+	height: 92%;
+}
+
+.content {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+main p {
+	width: 60%;
+}
+footer {
+	background-color: none;
+	color: #AAADA9;
+	height: 8%;
+}
+
+footer p {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.contact{
+	padding-left: 50px;
+}
+
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; 
+  width: 160px; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color:#F8F7EE; 
+  overflow-x: hidden; 
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #666666;
+  display: block;
+ 
+}
+
+
+.sidenav a:hover {
+  background-color: #8EBEBD
+}
+
+
+.main {
+  margin-left: 160px; 
+  padding: 0px 10px;
+}
+
+.img_pic {
+  width: 30%;
+}
