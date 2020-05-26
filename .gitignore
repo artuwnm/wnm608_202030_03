@@ -5,8 +5,4 @@
 
 *.DS_Store
 *sftp-config.json
-<<<<<<< HEAD
 *auth.php
-=======
-*auth.php
->>>>>>> c0e601db43341e64d58d4c9a10652cd8fc55bacb

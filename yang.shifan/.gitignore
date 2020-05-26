@@ -1,0 +1,8 @@
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+*.DS-Store
+*sftp-config.json
+*auth.php
