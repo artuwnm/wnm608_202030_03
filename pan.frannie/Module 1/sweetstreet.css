@@ -1,0 +1,158 @@
+
+body {
+  font-family: Cormorant Garamond;
+  color: #B755CE;
+  background: #FFFCF3;
+  margin:50px auto;
+  margin-bottom: 0;
+
+
+}
+
+p{
+   font-size: 25px;
+}
+
+
+.logo{
+    font-size: 40px;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Cormorant Garamond;
+    text-align:center;
+
+}
+
+
+.navtop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 0;
+    z-index: 1;
+    background: #FFE1EA;
+}
+
+
+.logo a {
+    padding: 0;
+    color: #B755CE;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 0px 20px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    text-decoration: none;
+}
+
+
+.logo a:hover, .logo a:focus, .logo a:active {
+    color: #FF69B1;
+    outline: none;
+    text-decoration: none;
+}
+
+
+main{
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	margin-top: 8em;
+	margin-left: 8em;
+	margin-right: 8em;
+    margin-bottom: 5em;
+
+}
+
+.ssfooter{
+    padding: 15px 0;
+    background: #FFE1EA;
+    font-size: 20px;
+    font-weight: 500;
+    text-align:center;
+}
+
+
+
+h1{
+	font-family:League Script;
+	text-align:center;
+	margin-top: 30px;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 50px;
+  margin-top: 20px;
+
+}
+
+
+.cake img{
+	width:90%;
+	margin: 0 auto;
+}
+
+.name {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+#page-content {
+    position: relative;
+}
+
+.flex-content {
+    display: flex;
+    margin-top: 70px;
+}
+
+
+.cakeimg img{
+  margin-left: 0em;
+  height: auto;
+  width:110%;
+}
+
+
+.cakeintro{
+	margin-left: 100px;
+	margin-top: -40px;
+}
+
+
+h2{
+    font-size: 40px;
+    font-weight: 600;
+
+}
+
+h3{
+	font-size: 25px;
+	font-weight: 600;
+	text-decoration: underline;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
