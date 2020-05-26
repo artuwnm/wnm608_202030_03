@@ -1,0 +1,964 @@
+/* ELEMENT RESETS */
+
+*,*::before,*::after {
+	box-sizing:inherit;
+}
+
+
+body {
+	box-sizing:border-box;
+	margin:0;
+	font-size:100%;
+	font-family:Catamaran,sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family:Oxanium;
+	color: #3042AD;
+}
+
+p {
+	font-family: Catamaran;
+	letter-spacing: 1px;
+}
+
+.black-link {
+	color: black;
+	text-decoration: none;
+}
+
+code {
+	white-space:pre-wrap;
+	text-align:left;
+}
+
+/* hearder */
+.navbar {
+	background-color:white;
+	box-shadow: 0 4px 18px 0 rgba(0,0,0,0.1);
+}
+/*.top-menu {
+	color: whitesmoke;
+	font-size: .80em;
+	font-weight: bolder;
+	text-transform: uppercase;
+	display: inline;
+}
+
+.top-menu a {
+	color: gray;
+	float: left;
+	padding: 15px;
+}
+
+.top-menu a:hover {
+	color: black;
+}
+
+.flash-right {
+	display: inline;
+}
+.flash-right li {
+	float: right;
+}
+
+hr {
+	color: gray;
+	border-width: .7px;
+	padding: 0;
+	width: 100%;
+}*/
+
+.nav {
+	text-align: center;
+	margin: auto;
+	margin-top: 35px;
+}
+
+.product-nav {
+	font-family:Oxanium;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 15px 30px 15px 15px;
+	/*text-decoration: none;*/
+}
+
+.product-nav li a {
+	padding: 0 55px 0 0;
+	text-decoration: none;
+	color: #3042AD;
+}
+
+.product-nav li a:hover{
+	color: rgba(48, 66, 173, 0.9)
+	/*text-decoration-line:underline;
+	text-decoration-style: wavy;*/
+}
+
+.product-nav a:active{
+	color: #3042AD;
+	/*text-decoration-line:underline;
+	text-decoration-style: wavy;*/
+}
+
+.product-nav a:visited{
+	color: #3042AD;
+}
+
+/* view window */
+.view-window {
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-attachment:fixed;	
+	z-index: -1;
+}
+
+.overlay {
+	font-family: Oxanium;
+	font-weight: 400;
+	font-size: 10vh;
+	letter-spacing: .1vh;
+	color: #3042AD;
+	text-align: center;
+	padding: 180px;
+	line-height: 13vh;
+	text-transform: uppercase;
+}
+
+/* arrow */
+/* https://codepen.io/raf187/pen/BvgGRQ */
+.arrow{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #3042AD;
+    border-right: 5px solid #3042AD;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+/* INTRO */
+.intro {
+	background-color: white;
+	padding: 80px 420px 100px 420px;
+}
+
+.intro p {
+	font-size: 30px;
+	text-align: center;
+	color: #3042AD;
+	font-weight: bold;
+}
+
+.wavy {
+	color: #3042AD;
+	border-width: 1px;
+	text-decoration: wavy;
+	padding: 0;
+	width: 100%;
+}
+
+/* SMALL CLASSES */
+
+.container {
+	max-width:1000px;
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+.hidden { display: none;}
+
+
+/* ATOMIC CLASSES */
+
+.display-flex { display:flex; }
+.display-inline-flex { display:inline-flex; }
+.display-block { display:block; }
+.display-inline-block { display:inline-block; }
+
+
+.flex-stretch { flex: 1 1 auto; }
+.flex-none { flex: none; }
+
+.flex-align-center { align-items:center; }
+.flex-justify-center { justify-content:center; }
+
+
+
+
+
+
+
+
+
+/* NAV */
+.nav-crumbs ul,
+.nav-pills ul,
+.nav-stretch ul,
+.nav-flex ul,
+.nav ul {
+	list-style-type:none;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+.nav-pills a,
+.nav-stretch a,
+.nav-flex a,
+.nav a {
+	display:block;
+	padding:0.5em 0.5em;
+}
+	.nav-pills a:hover,
+	.nav-stretch a:hover,
+	.nav-flex a:hover,
+	.nav a:hover { 
+		color:var(--color-white);
+		text-decoration:none;
+	}
+	.nav-pills li.active a,
+	.nav-stretch li.active a,
+	.nav-flex li.active a,
+	.nav li.active a {
+		/*background-color:var(--color-main-light);
+		color:white;*/
+	}
+
+.nav-crumbs ul,
+.nav-pills ul,
+.nav-stretch ul,
+.nav-flex ul {
+	display:flex;
+}
+
+.nav-stretch li {
+	flex: 1 1 auto;
+	text-align:center;
+}
+
+.nav-pills a {
+	border-radius:2em;
+	padding:0.5em 1em;
+}
+
+
+.nav-crumbs li:not(:first-child)::before {
+	content:'/';
+	margin:0 0.4em;
+}
+
+
+
+
+/* card */
+
+/* .card {
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+	.card>:first-child { margin-top:0; }
+	.card>:last-child { margin-bottom:0; }
+
+	.card.soft {
+	    box-shadow: 6px 5px 15px 10px rgba(0, 0, 0, 0.1);
+		border-radius:0.3em;
+	}
+	.card.medium {
+		background-color:var(--color-neutral-medium);
+	}
+	.card.dark {
+		background-color:var(--color-neutral-dark);
+		color:var(--color-neutral-light);
+	}
+	.card.flat {
+		padding:0;
+	} */
+
+
+
+/* view window */
+/* .view-window {
+	height:100vh;
+	overflow:hidden;
+	position:relative;
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+} */
+
+
+/* TABLE */
+.table {
+	width:100%;
+	border-collapse:collapse;
+}
+.table th,
+.table td {
+	text-align:left;
+	padding: 0.5em;
+}
+.table.striped tbody tr:nth-child(odd) {
+	background-color:rgba(0,0,0,0.1);
+}
+.table.striped tbody tr:hover {
+	background-color:rgba(0,0,0,0.2);
+}
+
+
+.table.lined.all tbody tr,
+.table.lined.horizontal tbody tr {
+	border-top:1px solid var(--color-neutral-light);
+}
+
+.table.lined.all th:not(:first-child),
+.table.lined.all td:not(:first-child),
+.table.lined.vertical th:not(:first-child),
+.table.lined.vertical td:not(:first-child) {
+	border-left:1px solid var(--color-neutral-light);
+}
+
+.table.lined.all,
+.table.lined.outline {
+	border:1px solid var(--color-neutral-light);
+}
+
+
+
+
+
+/* CHECKBOXES */
+
+.heart-toggle label {
+	color:gray;
+	transform:scale(1,1);
+	transition:all 0.3s;
+	display:inline-block;
+}
+.heart-toggle input:checked + label {
+	color:red;
+	transform:scale(1.3,1.3);
+}
+
+
+.toggle label {
+    display: inline-block;
+    width: 2em;
+    height: 1em;
+    /* border: 0.1em solid yellow; */
+    border-radius: 1em;
+    box-sizing: content-box;
+    position:relative;
+    background-color:gray;
+    transition:all 0.3s;
+}
+.toggle input:checked+label {
+	background-color: #3042AD;
+}
+.toggle label::before {
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	width:1.1em;
+	height:1.1em;
+	background-color:whitesmoke;
+	border-radius:1em;
+	border: none;
+	transition:all 0.3s;
+	transform:translateX(0);
+}
+.toggle input:checked + label::before {
+	transform:translateX(1em);
+}
+
+
+
+
+
+
+
+/* FORMS */
+
+.form-input {
+	display:block;
+	width:89%;
+	border-width:0;
+	border-bottom:1px solid var(--color-neutral-light);
+	color:inherit;
+	font:inherit;
+	padding:0.5em 1em;
+	-webkit-appearance:none;
+	outline:0;
+
+}
+
+.form-label {
+	display:block;
+	width:100%;
+	font-size:0.8em;
+	color:var(--color-neutral-medium);
+	margin: 0px 0px 15px 0px;}
+
+.form-control {
+	margin:1em 0;
+}
+
+/* .form-button {
+	display:block;
+	width:100%;
+	border-width:0;
+	color:inherit;
+	font:inherit;
+	padding:0.5em 1em;
+	-webkit-appearance:none;
+	outline:0;
+	text-align:center;
+	background-color:var(--color-neutral-secondbreakfast);
+	border-radius:0.3em;
+	text-decoration:none;
+	cursor:pointer;
+	border: 1px solid gray;
+}
+.form-button:hover {
+	text-decoration:none;
+	background-color: #3042AD;
+	color: white;
+}
+ */
+
+.form-button {
+	color: gray;
+	border: none;
+}
+
+
+.hotdog {
+	display:block;
+	width:100%;
+	padding:0.5em 1em;
+	background-color:var(--color-neutral-light);
+	border-radius:2em;
+	border-width:0;
+	font:inherit;
+	color:inherit;
+	outline:0;
+	display:flex;
+}
+.hotdog input {
+	border-width:0;
+	display:block;
+	color:inherit;
+	font:inherit;
+	background-color:transparent;
+	outline:0;
+	width:100%;
+}
+.hotdog .icon {
+	padding:0 1em;
+}
+
+/* product-figure.overlay figcaption */
+.product-figure.overlay {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+.product-figure.overlay img {
+    transition: all 0.5s;
+    transform: scale(1,1);
+}
+
+
+.product-figure img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 30vh;
+    vertical-align: text-bottom;
+}
+
+.product-figure.overlay figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    transition: all 0.3s;
+	opacity: 0;
+	text-align: center;
+}
+
+.product-figure.soft figcaption {
+    padding: 1em;
+	background-color: #3042AD;
+	color: white;
+}
+
+.product-figure.overlay:hover {
+	transition: all 0.5s;
+	transform: scale(1.1);
+}
+
+/* card */
+
+.card img {
+	width: 100%;
+}
+
+.card {
+	/*
+    background-color: white;
+	*/
+    overflow: hidden;
+    /* position: relative; */
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.card>:first-child { margin-top:0; }
+.card>:last-child { margin-bottom:0; }
+
+/* .card.soft {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #c4c4c4c4;
+	border-radius: 0.5em;
+} */
+.card.medium {
+	background-color:var(--color-neutral-medium);
+}
+.card.dark {
+	background-color:var(--color-neutral-dark);
+	color:var(--color-neutral-light);
+}
+.card.flat {
+	padding:0;
+}
+
+.card a {
+	text-decoration: none;
+}
+
+
+/*.card.soft:hover {
+	box-shadow: 0 4px 18px 0 rgba(0,0,0,0.1);
+	transition: 0.3s;
+	border-radius:0.5em;
+}*/
+
+.product-name-small {
+	font-family:Catamaran;
+	color: black;
+	text-align: center;
+	line-height: 0px;
+}
+
+.product-price-small {
+	font-family:Catamaran;
+	color: black;
+	text-align: center;
+	line-height: 0px;
+}
+
+.card-section {
+	margin:15px 0px 15px 0px;
+}
+
+/* button */
+.choice-button {
+	border: 1px solid #d8d8d8;
+	border-radius: 5px;
+	color: black;
+	font-size: 16px;
+	letter-spacing: 1px;
+	background: #fff;
+	text-transform: uppercase;
+	padding: 15px;
+	font-family: "Catamaran";
+	width: 29%;
+	display: inline;
+	text-align: center;
+	transition: all 200ms ease-out;
+}
+
+.choice-button:hover {
+	border-color: black;
+	transition: all 200ms ease-out;
+	cursor: pointer;
+}
+
+.large-button {
+	border: 1px solid #3042AD;
+	border-radius: 5px;
+	color: #3042AD;
+	font-size: 1.5em;
+	letter-spacing: 1px;
+	background: #fff;
+	text-transform: uppercase;
+	padding: 15px;
+	font-family: "Catamaran";
+	width: 89%;
+	display: block;
+	text-align: center;
+	transition: all 200ms ease-out;
+}
+
+.large-button:hover {
+	color: white;
+	border-color: none;
+	background-color: #3042AD;
+	transition: all 200ms ease-out;
+	cursor: pointer;
+}
+
+.large-button-reverse {
+	border: 1px solid #3042AD;
+	border-radius: 5px;
+	color: white;
+	font-size: 1.5em;
+	letter-spacing: 1px;
+	background: #3042AD;
+	text-transform: uppercase;
+	padding: 15px;
+	font-family: "Catamaran";
+	width: 89%;
+	display: block;
+	text-align: center;
+	transition: all 200ms ease-out;
+}
+
+.large-button-reverse:hover {
+	color: white;
+	border-color: rgba(48, 66, 173, 0);
+	background-color: rgba(48, 66, 173, 0.9);
+	transition: all 200ms ease-out;
+	cursor: pointer;
+}
+
+.small-button-reverse {
+	border: 1px solid #3042AD;
+	border-radius: 5px;
+	color: white;
+	font-size: 1.5em;
+	letter-spacing: 1px;
+	background: #3042AD;
+	text-transform: uppercase;
+	padding: 15px;
+	font-family: "Catamaran";
+	width: 29%;
+	display: block;
+	text-align: center;
+	transition: all 200ms ease-out;
+}
+
+.small-button-reverse:hover {
+	color: white;
+	border-color: rgba(48, 66, 173, 0);
+	background-color: rgba(48, 66, 173, 0.9);
+	transition: all 200ms ease-out;
+	cursor: pointer;
+}
+
+
+
+/* title */
+.title {
+	font-size: 5vh;
+}
+
+
+/* footer */
+.footer {
+  /*background-color: black;*/
+  height: 200px;
+  width: 100%;
+  position: relative;
+  margin-left: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-around;
+  padding-right: 500px;
+}
+
+.column {
+  width: 250px;
+}
+
+.a-footer {
+  color: black ;
+  text-decoration: none;
+}
+
+/* product item*/
+
+.card-section p {
+	color: black;
+    font-size: 3.5em;
+	letter-spacing: 1px;
+	font-family: "Catamaran";
+}
+
+.product-description {
+    margin-top: 22%;
+}
+
+/* product_added_to_cart.php */
+
+.continue-shopping {
+	border: 1px solid #3042AD;
+	border-radius: 5px;
+	color: #3042AD;
+	letter-spacing: 1px;
+	background: #fff;
+	text-transform: uppercase;
+	font-family: "Catamaran";
+	width: 100%;
+	display: block;
+	text-align: center;
+	transition: all 200ms ease-out;
+	text-decoration: none;
+}
+
+.continue-shopping:hover {
+	color: white;
+	border-color: none;
+	background-color: #3042AD;
+	transition: all 200ms ease-out;
+	cursor: pointer;
+}
+
+.continue-shopping a {
+	text-decoration: none;
+	color: #3042AD;
+}
+
+.view-cart {
+	margin-top: 10%;
+	border: 1px solid #3042AD;
+	border-radius: 5px;
+	color: white;
+	letter-spacing: 1px;
+	background: #3042AD;
+	text-transform: uppercase;
+	font-family: "Catamaran";
+	width: 100%;
+	display: block;
+	text-align: center;
+	transition: all 200ms ease-out;
+}
+
+.view-cart:hover {
+	color: white;
+	border-color: rgba(48, 66, 173, 0);
+	background-color: rgba(48, 66, 173, 0.9);
+	transition: all 200ms ease-out;
+	cursor: pointer;
+}
+
+.view-cart a {
+	text-decoration: none;
+	color: white;
+}
+
+/* users.php */
+.itemlist-item {
+    margin:1em;
+    padding:1em;
+
+    border-bottom:1px solid var(--color-neutral-light);
+}
+
+.product-main img {
+    width:100%;
+    height:50vh;
+    object-fit:cover;
+}
+.product-thumbs img {
+    height:75px;
+    width:100px;
+    object-fit:cover;
+}
+
+/* FIGURE */
+.product-figure {
+    margin:0;
+    height:100%;
+}
+.product-figure img {
+    width:100%;
+    object-fit:cover;
+    height:30vh;
+    vertical-align: text-bottom;
+
+}
+.product-figure figcaption {
+    padding:1em;
+    background-color:white;
+}
+
+.product-figure.soft {
+    border-radius:1em;
+    overflow:hidden;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product-figure.overlay {
+    position:relative;
+    overflow:hidden;
+    border-radius:1em;
+}
+.product-figure.overlay figcaption {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.5);
+    transition:all 0.3s;
+    opacity:0;
+}
+.product-figure.overlay:hover figcaption {
+    opacity:1;
+}
+.product-figure.overlay img {
+    transition:all 0.5s;
+    transform:scale(1,1);
+}
+.product-figure.overlay:hover img {
+    transform:scale(1.4,1.4);
+}
+
+.product-description {
+    font-weight:normal;
+    text-decoration:none;
+}
+
+
+.product-main img {
+    width:100%;
+    height:50vh;
+    object-fit:cover;
+}
+.thumbs img {
+    height:75px;
+    width:100px;
+    object-fit:cover;
+}
+
+a.form-button1 {
+    display: block;
+    width: 100%;
+    border-width: 0;
+    color: white;
+    font: inherit;
+    padding: 0.5em 1em;
+    -webkit-appearance: none;
+    outline: 0;
+    text-align: center;
+    background-color: #3042AD;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-button4 {
+    display: block;
+    width: 100%;
+    border-width: 0;
+    color: #3042AD;    
+    font: inherit;
+    padding: 0.5em 0.5em;
+    margin-top: 2em;
+    -webkit-appearance: none;
+    outline: 0;
+    text-align: center;
+    border: 1px solid #3042AD;
+    background-color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media (max-width:600px) {
+    .navbar .display-flex {
+        display:block;
+    }
+}
+
+a {
+	text-decoration: none;
+}
+
+/* product_cart.php */
+.checkout {
+	margin-top: 10%;
+	border: 1px solid #3042AD;
+	border-radius: 5px;
+	color: white;
+	letter-spacing: 1px;
+	background: #3042AD;
+	text-transform: uppercase;
+	font-family: "Catamaran";
+	width: 100%;
+	display: block;
+	text-align: center;
+	transition: all 200ms ease-out;
+	padding: 2%;
+}
+
+.checkout:hover {
+	color: white;
+	border-color: rgba(48, 66, 173, 0);
+	background-color: rgba(48, 66, 173, 0.9);
+	transition: all 200ms ease-out;
+	cursor: pointer;
+}
+
+.checkout a {
+	text-decoration: none;
+	color: white;
+}
+
