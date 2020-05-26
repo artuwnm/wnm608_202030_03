@@ -1,0 +1,17 @@
+:root {
+	--color-neutral-dark:#332d2d;;
+	--color-neutral-medium:#988c8c;
+	--color-neutral-light:#ece7e7;
+
+    --color-main-dark:#44083a;
+	--color-main--medium:#dcb550;
+	--color-main-light:#cddfe0;
+
+	 --color-confirm-dark:#502920;
+	--color-confirm--medium:#a25e5c;
+	--color-confirm-light:#e7c4a8;
+
+body {
+
+	background-color: var(--color-neutral-light);
+}

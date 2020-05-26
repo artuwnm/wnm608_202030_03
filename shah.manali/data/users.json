@@ -1,0 +1,20 @@
+[
+  {
+  	"name":"Manali Shah",
+  	"type":"Student",
+  	"email":"manalishah19691@gmail.com",
+  	"classes":[608,613,605]
+  },
+  {
+  	"name":"Melony Makwana",
+  	"type":"Student",
+  	"email":"melonymakwana@gmail.com",
+  	"classes":[608,613,605]
+  },
+  {
+  	"name":"Zalak Patel",
+  	"type":"Student",
+  	"email":"zalak@gmail.com",
+  	"classes":[608,613,605]
+  }
+]

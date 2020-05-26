@@ -1,0 +1,140 @@
+/*:root {*/
+	--color-neutral-dark:#333;
+	--color-neutral-medium:#999;
+	--color-neutral-light:#eee;
+
+	 --color-main-light: #e2ecec;
+    --color-main-medium: #41253c;
+    --color-main-dark: #0d1722;
+}
+
+/*body {*/
+
+	background-color: var(--color-main-light);
+	padding-bottom: 10em;
+}
+
+
+[class*='col-']>.card {
+	height: 100%;
+	margin: 0;
+}
+
+
+/* FIGURE */
+.product-figure {
+	margin:0;
+	height:100%;
+}
+.product-figure img {
+	width:100%;
+	object-fit:cover;
+	height:30vh;
+	vertical-align: text-bottom;
+
+}
+.product-figure figcaption {
+	padding:1em;
+	background-color:white;
+}
+
+	.product-figure.soft {
+		border-radius:1em;
+		overflow:hidden;
+		box-shadow:0 0px 3px 1px rgba(0,0,0,0.1);
+	}
+
+	.product-figure.overlay {
+		position:relative;
+		overflow:hidden;
+		border-radius:1em;
+	}
+	.product-figure.overlay figcaption {
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background-color:rgba(0,0,0,0.5);
+		transition:all 0.3s;
+		opacity:0;
+	}
+	.product-figure.overlay:hover figcaption {
+		opacity:1;
+	}
+	.product-figure.overlay img {
+		transition:all 0.5s;
+		transform:scale(1,1);
+	}
+	.product-figure.overlay:hover img {
+		transform:scale(1.4,1.4);
+	}
+
+	.product-description {
+		font-weight:normal;
+		text-decoration:none;
+		text-align:center;
+	}
+
+
+
+
+.product-main img {
+	width:100%;
+	height:50vh;
+	object-fit:cover;
+}
+.product-thumbs img {
+	height:75px;
+	width:100px;
+	object-fit:cover;
+}
+h2.product-title {
+    margin: 0;
+    font-size:2.5em;
+}
+.product-category {
+    margin-bottom: 1rem;
+    font-size: 0.9em;
+    color: var(--color-neutral-medium);
+}
+
+
+
+.home-image {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.image-square img {
+	width:5em;
+	height:5em;
+	object-fit:contain;
+	object-position:center;
+}
+.itemlist-item {
+	margin:1em;
+	padding:1em;
+	border-radius:0.5em;
+	border:1px solid var(--color-neutral-light);
+}
+.responsive {
+    padding-left:10em;
+    text-align: center;
+    background-position: center;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+@media (max-width:600px) {
+	.navbar .display-flex {
+		display:block;
+	}
+}
