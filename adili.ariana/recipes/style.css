@@ -1,0 +1,47 @@
+body {
+	background-color: white;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Raleway Dots', cursive;
+	font-size: 140px;
+	padding: 3px;
+	line-height: 115%;
+	margin: auto;
+}
+
+h2 {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 125px;
+    color: #F27279;
+    line-height: 180%;
+    margin: auto;
+}
+
+
+h3 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 39px;
+    color: #51C3C4;
+    line-height: 180%;
+    margin: auto;
+}
+
+
+p {
+	font-family: 'Oswald', sans-serif;
+	font-size: 34px;
+	color: #06837E;
+}
+
+
+li {
+	list-style: none;
+	font-family: avenir;
+	font-size: 30px;
+	text-align: center;
+}
+
+
+
